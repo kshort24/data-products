@@ -68,13 +68,6 @@ an external audience. A package's `00`/`06` file is where you'll find each gate'
   contract, referenced from that package's `README.md`.
 - `../_contract_run_inputs/` — inputs captured at contract-run time for reproducibility.
 
-## Irregular folders
-
-- `_layer1-batch-validation-2026-07-09/` — not a delivered product. A batch intake-validation sweep
-  across multiple pending use cases; kept as a receipt of that governance pass.
-- `dp_uc7_wheeler_mets/` — an early run that predates the `uc-<stream>-<id>` naming convention and
-  the standardized `00`–`07` file map. Still a valid receipt trail, just in an older shape.
-
 ## Reading a package
 
 Start with that folder's own `README.md` — it states what business question was answered, the
