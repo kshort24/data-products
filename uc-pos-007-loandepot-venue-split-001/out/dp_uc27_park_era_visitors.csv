@@ -1,0 +1,5 @@
+venue,park_era,plate_apps,pitches_per_pa,ba,obp,slg,ops,woba,xwoba,hard_hit_rate,barrel_rate,ev90,krate,bbrate,hr_rate,chase_rate,whiff_rate,bips
+All other MLB parks,2015-2019 (pre-reconfig),6224,4.03,0.281,0.36,0.518,0.878,0.371,0.42,0.423,0.099,106.5,0.216,0.105,0.049,0.265,0.252,4136
+All other MLB parks,2020-2026 (post-reconfig),16467,3.928,0.263,0.33,0.446,0.776,0.336,0.363,0.442,0.091,105.4,0.224,0.084,0.037,0.296,0.257,11179
+loanDepot park,2015-2019 (pre-reconfig),263,4.008,0.26,0.346,0.454,0.8,0.343,0.412,0.388,0.103,105.4,0.247,0.11,0.046,0.26,0.265,165
+loanDepot park,2020-2026 (post-reconfig),775,3.968,0.26,0.32,0.458,0.778,0.334,0.385,0.467,0.112,105.19,0.197,0.08,0.04,0.312,0.229,553

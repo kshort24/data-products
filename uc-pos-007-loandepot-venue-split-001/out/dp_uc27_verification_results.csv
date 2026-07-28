@@ -1,0 +1,257 @@
+check,recomputed,reported,delta,status,note
+pooled/Miami/plate_apps,1901.0,1901.0,0.0,PASS,
+pooled/Miami/ba,0.25,0.25,0.0,PASS,
+pooled/Miami/obp,0.308,0.308,0.0,PASS,
+pooled/Miami/slg,0.411,0.411,0.0,PASS,
+pooled/Miami/woba,0.311,0.311,0.0,PASS,
+pooled/Miami/xwoba,0.362,0.362,0.0,PASS,
+pooled/Miami/hard_hit_rate,0.407,0.407,0.0,PASS,
+pooled/Miami/barrel_rate,0.085,0.085,0.0,PASS,
+pooled/Miami/krate,0.201,0.201,0.0,PASS,
+pooled/Miami/pitches_per_pa,3.928,3.928,0.0,PASS,
+pooled/Miami/ev90,104.2,104.2,0.0,PASS,
+pooled/Miami/bip,1358.0,1358.0,0.0,PASS,
+pooled/Other/plate_apps,22691.0,22691.0,0.0,PASS,
+pooled/Other/ba,0.268,0.268,0.0,PASS,
+pooled/Other/obp,0.338,0.338,0.0,PASS,
+pooled/Other/slg,0.466,0.466,0.0,PASS,
+pooled/Other/woba,0.345,0.345,0.0,PASS,
+pooled/Other/xwoba,0.376,0.376,0.0,PASS,
+pooled/Other/hard_hit_rate,0.437,0.437,0.0,PASS,
+pooled/Other/barrel_rate,0.094,0.094,0.0,PASS,
+pooled/Other/krate,0.222,0.222,0.0,PASS,
+pooled/Other/pitches_per_pa,3.956,3.956,0.0,PASS,
+pooled/Other/ev90,105.7,105.7,0.0,PASS,
+pooled/Other/bip,15315.0,15315.0,0.0,PASS,
+visitors/Miami/plate_apps,1038.0,1038.0,0.0,PASS,
+visitors/Miami/woba,0.337,0.337,0.0,PASS,
+visitors/Miami/xwoba,0.391,0.391,0.0,PASS,
+visitors/Miami/hard_hit_rate,0.448,0.448,0.0,PASS,
+visitors/Miami/barrel_rate,0.11,0.11,0.0,PASS,
+visitors/Miami/slg,0.457,0.457,0.0,PASS,
+visitors/Miami/obp,0.327,0.327,0.0,PASS,
+split/Turner/MIA/plate_apps,211.0,211.0,0.0,PASS,
+split/Turner/MIA/woba,0.3,0.3,0.0,PASS,
+split/Turner/MIA/xwoba,0.345,0.345,0.0,PASS,
+split/Turner/MIA/slg,0.399,0.399,0.0,PASS,
+split/Turner/MIA/hard_hit_rate,0.407,0.407,0.0,PASS,
+split/Turner/MIA/barrel_rate,0.068,0.068,0.0,PASS,
+split/Turner/OTH/plate_apps,4084.0,4084.0,0.0,PASS,
+split/Turner/OTH/woba,0.346,0.346,0.0,PASS,
+split/Turner/OTH/xwoba,0.35,0.35,0.0,PASS,
+split/Turner/OTH/slg,0.466,0.466,0.0,PASS,
+split/Turner/OTH/hard_hit_rate,0.414,0.414,0.0,PASS,
+split/Turner/OTH/barrel_rate,0.067,0.067,0.0,PASS,
+split/Schwarber/MIA/plate_apps,134.0,134.0,0.0,PASS,
+split/Schwarber/MIA/woba,0.335,0.335,0.0,PASS,
+split/Schwarber/MIA/xwoba,0.434,0.434,0.0,PASS,
+split/Schwarber/MIA/slg,0.496,0.496,0.0,PASS,
+split/Schwarber/MIA/hard_hit_rate,0.564,0.564,0.0,PASS,
+split/Schwarber/MIA/barrel_rate,0.218,0.218,0.0,PASS,
+split/Schwarber/OTH/plate_apps,3820.0,3820.0,0.0,PASS,
+split/Schwarber/OTH/woba,0.368,0.368,0.0,PASS,
+split/Schwarber/OTH/xwoba,0.445,0.445,0.0,PASS,
+split/Schwarber/OTH/slg,0.528,0.528,0.0,PASS,
+split/Schwarber/OTH/hard_hit_rate,0.521,0.521,0.0,PASS,
+split/Schwarber/OTH/barrel_rate,0.175,0.175,0.0,PASS,
+split/Harper/MIA/plate_apps,245.0,245.0,0.0,PASS,
+split/Harper/MIA/woba,0.374,0.374,0.0,PASS,
+split/Harper/MIA/xwoba,0.446,0.446,0.0,PASS,
+split/Harper/MIA/slg,0.515,0.515,0.0,PASS,
+split/Harper/MIA/hard_hit_rate,0.5,0.5,0.0,PASS,
+split/Harper/MIA/barrel_rate,0.153,0.153,0.0,PASS,
+split/Harper/OTH/plate_apps,4070.0,4070.0,0.0,PASS,
+split/Harper/OTH/woba,0.396,0.396,0.0,PASS,
+split/Harper/OTH/xwoba,0.444,0.444,0.0,PASS,
+split/Harper/OTH/slg,0.557,0.557,0.0,PASS,
+split/Harper/OTH/hard_hit_rate,0.471,0.471,0.0,PASS,
+split/Harper/OTH/barrel_rate,0.135,0.135,0.0,PASS,
+split/Marsh/MIA/plate_apps,74.0,74.0,0.0,PASS,
+split/Marsh/MIA/woba,0.416,0.416,0.0,PASS,
+split/Marsh/MIA/xwoba,0.443,0.443,0.0,PASS,
+split/Marsh/MIA/slg,0.588,0.588,0.0,PASS,
+split/Marsh/MIA/hard_hit_rate,0.455,0.455,0.0,PASS,
+split/Marsh/MIA/barrel_rate,0.127,0.127,0.0,PASS,
+split/Marsh/OTH/plate_apps,1785.0,1785.0,0.0,PASS,
+split/Marsh/OTH/woba,0.344,0.344,0.0,PASS,
+split/Marsh/OTH/xwoba,0.376,0.376,0.0,PASS,
+split/Marsh/OTH/slg,0.453,0.453,0.0,PASS,
+split/Marsh/OTH/hard_hit_rate,0.475,0.475,0.0,PASS,
+split/Marsh/OTH/barrel_rate,0.093,0.093,0.0,PASS,
+split/Bohm/MIA/plate_apps,118.0,118.0,0.0,PASS,
+split/Bohm/MIA/woba,0.268,0.268,0.0,PASS,
+split/Bohm/MIA/xwoba,0.323,0.323,0.0,PASS,
+split/Bohm/MIA/slg,0.303,0.303,0.0,PASS,
+split/Bohm/MIA/hard_hit_rate,0.438,0.438,0.0,PASS,
+split/Bohm/MIA/barrel_rate,0.034,0.034,0.0,PASS,
+split/Bohm/OTH/plate_apps,2228.0,2228.0,0.0,PASS,
+split/Bohm/OTH/woba,0.301,0.301,0.0,PASS,
+split/Bohm/OTH/xwoba,0.348,0.348,0.0,PASS,
+split/Bohm/OTH/slg,0.375,0.375,0.0,PASS,
+split/Bohm/OTH/hard_hit_rate,0.447,0.447,0.0,PASS,
+split/Bohm/OTH/barrel_rate,0.054,0.054,0.0,PASS,
+split/Stott/MIA/plate_apps,96.0,96.0,0.0,PASS,
+split/Stott/MIA/woba,0.359,0.359,0.0,PASS,
+split/Stott/MIA/xwoba,0.368,0.368,0.0,PASS,
+split/Stott/MIA/slg,0.517,0.517,0.0,PASS,
+split/Stott/MIA/hard_hit_rate,0.385,0.385,0.0,PASS,
+split/Stott/MIA/barrel_rate,0.103,0.103,0.0,PASS,
+split/Stott/OTH/plate_apps,1868.0,1868.0,0.0,PASS,
+split/Stott/OTH/woba,0.303,0.303,0.0,PASS,
+split/Stott/OTH/xwoba,0.317,0.317,0.0,PASS,
+split/Stott/OTH/slg,0.386,0.386,0.0,PASS,
+split/Stott/OTH/hard_hit_rate,0.356,0.356,0.0,PASS,
+split/Stott/OTH/barrel_rate,0.049,0.049,0.0,PASS,
+split/Realmuto/MIA/plate_apps,907.0,907.0,0.0,PASS,
+split/Realmuto/MIA/woba,0.298,0.298,0.0,PASS,
+split/Realmuto/MIA/xwoba,0.345,0.345,0.0,PASS,
+split/Realmuto/MIA/slg,0.388,0.388,0.0,PASS,
+split/Realmuto/MIA/hard_hit_rate,0.377,0.377,0.0,PASS,
+split/Realmuto/MIA/barrel_rate,0.064,0.064,0.0,PASS,
+split/Realmuto/OTH/plate_apps,3294.0,3294.0,0.0,PASS,
+split/Realmuto/OTH/woba,0.341,0.341,0.0,PASS,
+split/Realmuto/OTH/xwoba,0.369,0.369,0.0,PASS,
+split/Realmuto/OTH/slg,0.46,0.46,0.0,PASS,
+split/Realmuto/OTH/hard_hit_rate,0.414,0.414,0.0,PASS,
+split/Realmuto/OTH/barrel_rate,0.079,0.079,0.0,PASS,
+split/Rincones Jr./OTH/plate_apps,74.0,74.0,0.0,PASS,
+split/Rincones Jr./OTH/woba,0.224,0.224,0.0,PASS,
+split/Rincones Jr./OTH/xwoba,0.219,0.219,0.0,PASS,
+split/Rincones Jr./OTH/slg,0.314,0.314,0.0,PASS,
+split/Rincones Jr./OTH/hard_hit_rate,0.367,0.367,0.0,PASS,
+split/Rincones Jr./OTH/barrel_rate,0.102,0.102,0.0,PASS,
+split/Crawford/MIA/plate_apps,10.0,10.0,0.0,PASS,
+split/Crawford/MIA/woba,0.215,0.215,0.0,PASS,
+split/Crawford/MIA/xwoba,0.33,0.33,0.0,PASS,
+split/Crawford/MIA/slg,0.3,0.3,0.0,PASS,
+split/Crawford/MIA/hard_hit_rate,0.375,0.375,0.0,PASS,
+split/Crawford/MIA/barrel_rate,0.0,0.0,0.0,PASS,
+split/Crawford/OTH/plate_apps,240.0,240.0,0.0,PASS,
+split/Crawford/OTH/woba,0.302,0.302,0.0,PASS,
+split/Crawford/OTH/xwoba,0.273,0.273,0.0,PASS,
+split/Crawford/OTH/slg,0.374,0.374,0.0,PASS,
+split/Crawford/OTH/hard_hit_rate,0.356,0.356,0.0,PASS,
+split/Crawford/OTH/barrel_rate,0.011,0.011,0.0,PASS,
+split/Hill/MIA/plate_apps,81.0,81.0,0.0,PASS,
+split/Hill/MIA/woba,0.225,0.225,0.0,PASS,
+split/Hill/MIA/xwoba,0.288,0.288,0.0,PASS,
+split/Hill/MIA/slg,0.253,0.253,0.0,PASS,
+split/Hill/MIA/hard_hit_rate,0.269,0.269,0.0,PASS,
+split/Hill/MIA/barrel_rate,0.058,0.058,0.0,PASS,
+split/Hill/OTH/plate_apps,370.0,370.0,0.0,PASS,
+split/Hill/OTH/woba,0.254,0.254,0.0,PASS,
+split/Hill/OTH/xwoba,0.269,0.269,0.0,PASS,
+split/Hill/OTH/slg,0.311,0.311,0.0,PASS,
+split/Hill/OTH/hard_hit_rate,0.335,0.335,0.0,PASS,
+split/Hill/OTH/barrel_rate,0.073,0.073,0.0,PASS,
+split/Sosa/MIA/plate_apps,25.0,25.0,0.0,PASS,
+split/Sosa/MIA/woba,0.191,0.191,0.0,PASS,
+split/Sosa/MIA/xwoba,0.224,0.224,0.0,PASS,
+split/Sosa/MIA/slg,0.136,0.136,0.0,PASS,
+split/Sosa/MIA/hard_hit_rate,0.231,0.231,0.0,PASS,
+split/Sosa/MIA/barrel_rate,0.0,0.0,0.0,PASS,
+split/Sosa/OTH/plate_apps,858.0,858.0,0.0,PASS,
+split/Sosa/OTH/woba,0.285,0.285,0.0,PASS,
+split/Sosa/OTH/xwoba,0.317,0.317,0.0,PASS,
+split/Sosa/OTH/slg,0.37,0.37,0.0,PASS,
+split/Sosa/OTH/hard_hit_rate,0.341,0.341,0.0,PASS,
+split/Sosa/OTH/barrel_rate,0.052,0.052,0.0,PASS,
+alcantara/Harper/plate_apps,57.0,57.0,0.0,PASS,
+alcantara/Harper/woba,0.427,0.427,0.0,PASS,
+alcantara/Harper/xwoba,0.516,0.516,0.0,PASS,
+alcantara/Schwarber/plate_apps,49.0,49.0,0.0,PASS,
+alcantara/Schwarber/woba,0.303,0.303,0.0,PASS,
+alcantara/Schwarber/xwoba,0.402,0.402,0.0,PASS,
+alcantara/Turner/plate_apps,46.0,46.0,0.0,PASS,
+alcantara/Turner/woba,0.421,0.421,0.0,PASS,
+alcantara/Turner/xwoba,0.405,0.405,0.0,PASS,
+alcantara/Realmuto/plate_apps,40.0,40.0,0.0,PASS,
+alcantara/Realmuto/woba,0.338,0.338,0.0,PASS,
+alcantara/Realmuto/xwoba,0.351,0.351,0.0,PASS,
+alcantara/Bohm/plate_apps,37.0,37.0,0.0,PASS,
+alcantara/Bohm/woba,0.388,0.388,0.0,PASS,
+alcantara/Bohm/xwoba,0.421,0.421,0.0,PASS,
+alcantara/Stott/plate_apps,36.0,36.0,0.0,PASS,
+alcantara/Stott/woba,0.236,0.236,0.0,PASS,
+alcantara/Stott/xwoba,0.303,0.303,0.0,PASS,
+alcantara/Marsh/plate_apps,27.0,27.0,0.0,PASS,
+alcantara/Marsh/woba,0.27,0.27,0.0,PASS,
+alcantara/Marsh/xwoba,0.276,0.276,0.0,PASS,
+alcantara/Sosa/plate_apps,10.0,10.0,0.0,PASS,
+alcantara/Sosa/woba,0.585,0.585,0.0,PASS,
+alcantara/Sosa/xwoba,0.443,0.443,0.0,PASS,
+alcantara/Crawford/plate_apps,3.0,3.0,0.0,PASS,
+alcantara/Crawford/woba,0.297,0.297,0.0,PASS,
+alcantara/Crawford/xwoba,0.154,0.154,0.0,PASS,
+alcantara/Rincones Jr./plate_apps,3.0,3.0,0.0,PASS,
+alcantara/Rincones Jr./woba,0.0,0.0,0.0,PASS,
+alcantara/Rincones Jr./xwoba,0.091,0.091,0.0,PASS,
+alcantara/Hill/plate_apps,1.0,1.0,0.0,PASS,
+alcantara/Hill/woba,0.0,0.0,0.0,PASS,
+alcantara/Hill/xwoba,0.398,0.398,0.0,PASS,
+alcantara_venue/Other/plate_apps,146.0,146.0,0.0,PASS,
+alcantara_venue/Other/woba,0.351,0.351,0.0,PASS,
+alcantara_venue/Other/xwoba,0.349,0.349,0.0,PASS,
+alcantara_venue/Other/hard_hit_rate,0.38,0.38,0.0,PASS,
+alcantara_venue/Other/slg,0.448,0.448,0.0,PASS,
+alcantara_venue/Miami/plate_apps,163.0,163.0,0.0,PASS,
+alcantara_venue/Miami/woba,0.354,0.354,0.0,PASS,
+alcantara_venue/Miami/xwoba,0.423,0.423,0.0,PASS,
+alcantara_venue/Miami/hard_hit_rate,0.475,0.475,0.0,PASS,
+alcantara_venue/Miami/slg,0.477,0.477,0.0,PASS,
+VD1/Marsh/woba,0.0717,0.0716,0.0001,PASS,4dp round-trip tolerance
+VD1/Marsh/xwoba,0.0669,0.0669,0.0,PASS,4dp round-trip tolerance
+VD1/Marsh/hard_hit_rate,-0.02,-0.02,0.0,PASS,4dp round-trip tolerance
+VD1/Marsh/barrel_rate,0.0346,0.0345,0.0001,PASS,4dp round-trip tolerance
+VD1/Marsh/ev90,-0.14,-0.14,0.0,PASS,4dp round-trip tolerance
+VD1/Stott/woba,0.056,0.056,0.0,PASS,4dp round-trip tolerance
+VD1/Stott/xwoba,0.0513,0.0514,-0.0001,PASS,4dp round-trip tolerance
+VD1/Stott/hard_hit_rate,0.0289,0.0289,0.0,PASS,4dp round-trip tolerance
+VD1/Stott/barrel_rate,0.0534,0.0534,0.0,PASS,4dp round-trip tolerance
+VD1/Stott/ev90,0.7,0.7,0.0,PASS,4dp round-trip tolerance
+VD1/Harper/woba,-0.0227,-0.0227,0.0,PASS,4dp round-trip tolerance
+VD1/Harper/xwoba,0.0019,0.0019,0.0,PASS,4dp round-trip tolerance
+VD1/Harper/hard_hit_rate,0.0285,0.0285,0.0,PASS,4dp round-trip tolerance
+VD1/Harper/barrel_rate,0.0188,0.0188,0.0,PASS,4dp round-trip tolerance
+VD1/Harper/ev90,-0.84,-0.84,0.0,PASS,4dp round-trip tolerance
+VD1/Hill/woba,-0.0286,-0.0285,-0.0001,PASS,4dp round-trip tolerance
+VD1/Hill/xwoba,0.0196,0.0196,0.0,PASS,4dp round-trip tolerance
+VD1/Hill/hard_hit_rate,-0.0657,-0.0656,-0.0001,PASS,4dp round-trip tolerance
+VD1/Hill/barrel_rate,-0.0157,-0.0157,0.0,PASS,4dp round-trip tolerance
+VD1/Hill/ev90,-3.29,-3.29,0.0,PASS,4dp round-trip tolerance
+VD1/Schwarber/woba,-0.0333,-0.0332,-0.0001,PASS,4dp round-trip tolerance
+VD1/Schwarber/xwoba,-0.0109,-0.0109,0.0,PASS,4dp round-trip tolerance
+VD1/Schwarber/hard_hit_rate,0.0433,0.0433,0.0,PASS,4dp round-trip tolerance
+VD1/Schwarber/barrel_rate,0.0429,0.043,-0.0001,PASS,4dp round-trip tolerance
+VD1/Schwarber/ev90,0.2,0.2,0.0,PASS,4dp round-trip tolerance
+VD1/Bohm/woba,-0.0338,-0.0339,0.0001,PASS,4dp round-trip tolerance
+VD1/Bohm/xwoba,-0.0254,-0.0254,0.0,PASS,4dp round-trip tolerance
+VD1/Bohm/hard_hit_rate,-0.0086,-0.0086,0.0,PASS,4dp round-trip tolerance
+VD1/Bohm/barrel_rate,-0.0201,-0.0201,0.0,PASS,4dp round-trip tolerance
+VD1/Bohm/ev90,-0.5,-0.5,0.0,PASS,4dp round-trip tolerance
+VD1/Realmuto/woba,-0.0436,-0.0436,0.0,PASS,4dp round-trip tolerance
+VD1/Realmuto/xwoba,-0.0239,-0.0239,0.0,PASS,4dp round-trip tolerance
+VD1/Realmuto/hard_hit_rate,-0.0366,-0.0366,0.0,PASS,4dp round-trip tolerance
+VD1/Realmuto/barrel_rate,-0.0155,-0.0155,0.0,PASS,4dp round-trip tolerance
+VD1/Realmuto/ev90,-2.1,-2.1,0.0,PASS,4dp round-trip tolerance
+VD1/Turner/woba,-0.0458,-0.0458,0.0,PASS,4dp round-trip tolerance
+VD1/Turner/xwoba,-0.0041,-0.0041,0.0,PASS,4dp round-trip tolerance
+VD1/Turner/hard_hit_rate,-0.007,-0.007,0.0,PASS,4dp round-trip tolerance
+VD1/Turner/barrel_rate,0.0009,0.0009,0.0,PASS,4dp round-trip tolerance
+VD1/Turner/ev90,-1.33,-1.33,0.0,PASS,4dp round-trip tolerance
+VD1/Crawford/woba,-0.0867,-0.0867,0.0,PASS,4dp round-trip tolerance
+VD1/Crawford/xwoba,0.0568,0.0568,0.0,PASS,4dp round-trip tolerance
+VD1/Crawford/hard_hit_rate,0.0191,0.0191,0.0,PASS,4dp round-trip tolerance
+VD1/Crawford/barrel_rate,-0.0113,-0.0113,0.0,PASS,4dp round-trip tolerance
+VD1/Crawford/ev90,-0.81,-0.81,0.0,PASS,4dp round-trip tolerance
+VD1/Sosa/woba,-0.0936,-0.0935,-0.0001,PASS,4dp round-trip tolerance
+VD1/Sosa/xwoba,-0.0932,-0.0931,-0.0001,PASS,4dp round-trip tolerance
+VD1/Sosa/hard_hit_rate,-0.1107,-0.1107,0.0,PASS,4dp round-trip tolerance
+VD1/Sosa/barrel_rate,-0.052,-0.052,0.0,PASS,4dp round-trip tolerance
+VD1/Sosa/ev90,-2.0,-2.0,0.0,PASS,4dp round-trip tolerance
+governance/no_dup_keys,0.0,0.0,0.0,PASS,
+governance/no_milb,0.0,0.0,0.0,PASS,
+governance/no_irma,0.0,0.0,0.0,PASS,
+governance/rhp_only,0.0,0.0,0.0,PASS,
+governance/regular_season_only,0.0,0.0,0.0,PASS,
+governance/entity_lock,0.0,0.0,0.0,PASS,

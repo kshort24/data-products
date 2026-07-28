@@ -1,0 +1,6 @@
+rule,rows_removed,rows_in,rows_out
+game_type != 'R' (spring / postseason),6439,150421,97235
+competition level != MLB (MiLB affiliate frames),7172,150421,97235
+venue integrity: 2017 Irma games at Miller Park,44,150421,97235
+p_throws != 'R' (out of use-case scope),39531,150421,97235
+TOTAL retained,53186,150421,97235

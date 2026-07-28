@@ -1,0 +1,4 @@
+source,max_game_date,note
+data/phillies/phils_2026.parquet,2026-07-22,Phillies 2026 season cache
+data/opponents/alcantara.parquet,2025-04-12,STALE — Alcantara's own pull; 2026 form only visible via PHI at-bats
+union (post-governance),2026-07-22,build date 2026-07-27; target game 2026-07-28

@@ -1,0 +1,22 @@
+player,venue,plate_apps,chase_rate,whiff_rate,z_swing_rate,zone_rate_seen,swing_rate
+"Bohm, Alec",All other MLB parks,2228,0.276,0.203,0.694,0.512,0.49
+"Bohm, Alec",loanDepot park,118,0.281,0.206,0.649,0.524,0.474
+"Crawford, Justin",All other MLB parks,240,0.371,0.191,0.705,0.508,0.541
+"Crawford, Justin",loanDepot park,10,0.6,0.16,0.591,0.524,0.595
+"Harper, Bryce",All other MLB parks,4070,0.29,0.281,0.757,0.415,0.483
+"Harper, Bryce",loanDepot park,245,0.301,0.281,0.764,0.419,0.495
+"Hill, Derek",All other MLB parks,370,0.349,0.326,0.678,0.485,0.508
+"Hill, Derek",loanDepot park,81,0.371,0.359,0.61,0.492,0.488
+"Marsh, Brandon",All other MLB parks,1785,0.282,0.261,0.669,0.471,0.464
+"Marsh, Brandon",loanDepot park,74,0.265,0.173,0.685,0.498,0.474
+"Realmuto, J.T.",All other MLB parks,3294,0.305,0.242,0.68,0.5,0.492
+"Realmuto, J.T.",loanDepot park,907,0.295,0.207,0.671,0.51,0.487
+"Rincones Jr., Gabriel",All other MLB parks,74,0.43,0.283,0.714,0.509,0.574
+"Schwarber, Kyle",All other MLB parks,3820,0.23,0.305,0.638,0.46,0.417
+"Schwarber, Kyle",loanDepot park,134,0.256,0.293,0.688,0.46,0.455
+"Sosa, Edmundo",All other MLB parks,858,0.413,0.286,0.727,0.483,0.564
+"Sosa, Edmundo",loanDepot park,25,0.354,0.34,0.688,0.5,0.521
+"Stott, Bryson",All other MLB parks,1868,0.287,0.163,0.59,0.512,0.442
+"Stott, Bryson",loanDepot park,96,0.301,0.127,0.559,0.512,0.433
+"Turner, Trea",All other MLB parks,4084,0.301,0.254,0.689,0.487,0.491
+"Turner, Trea",loanDepot park,211,0.291,0.206,0.721,0.524,0.516

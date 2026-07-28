@@ -1,0 +1,17 @@
+check_id,dimension,rule,blocking,result,detail
+DQ-01,Uniqueness,No duplicate pitch keys in the governed frame,True,PASS,0 duplicate keys after dedup
+DQ-02,Validity,Entity lock — every row maps to one of 11 roster MLBAM ids,True,PASS,11 distinct batter ids present
+DQ-03,Validity,game_type == 'R' only,True,PASS,game_types present: ['R']
+DQ-04,Validity,p_throws == 'R' only,True,PASS,p_throws present: ['R']
+DQ-05,Consistency,Competition level — all home_team codes are MLB clubs,True,PASS,0 non-MLB codes remain
+DQ-06,Accuracy,Venue integrity — no Irma-relocated games in the Miami cohort,True,PASS,0 relocated-game rows retained
+DQ-07,Accuracy,Miami cohort contains only home_team == 'MIA',True,PASS,codes in Miami cohort: ['MIA']
+DQ-08,Completeness,wOBA computable for every published hitter x venue cell,True,PASS,0 null wOBA cells
+DQ-09,Completeness,xwOBA coverage on the pitch log,False,PASS,80.2% of pitches have null estimated_woba (expected: only BIP/K carry it)
+DQ-10,Completeness,launch_speed present on >=95% of balls in play,False,PASS,99.4% of BIP carry launch_speed
+DQ-11,Validity,Every published hitter clears 40 PA in Miami and 100 PA elsewhere,False,WARN,"below gate (reported but banner-flagged): ['Crawford, Justin', 'Sosa, Edmundo']"
+DQ-12,Timeliness,Phillies cache within 7 days of build date,False,PASS,max game_date 2026-07-22 vs build 2026-07-27
+DQ-13,Timeliness,Alcantara source cache current for 2026,False,WARN,alcantara.parquet max game_date 2025-04-12; 2026 look-ins come from phils_2026 only
+DQ-14,Consistency,BIP denominators reconcile across hard_hit / barrel / bb_type,True,PASS,hard_hit_rate bips == get_stats bip for every cell
+DQ-15,Uniqueness,One MLBAM id per display name (no name collision),True,PASS,11 ids / 11 names
+DQ-16,Completeness,Alcantara H2H present for every rostered hitter,False,PASS,11 of 11 hitters have faced Alcantara in the log
