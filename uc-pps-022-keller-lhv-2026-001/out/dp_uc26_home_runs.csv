@@ -1,0 +1,6 @@
+game_date,stand,pitch_name,balls,strikes,release_speed,plate_x,plate_z,sz_top,sz_bot,launch_speed,launch_angle,n_thruorder_pitcher,inning,des,above_zone,in_heart
+2026-07-17,L,4-Seam Fastball,3,1,92.9,-0.218,2.753,3.366,1.699,102.3,32.0,1,1,Kameron Misner homers (14) on a fly ball to right center field.,False,True
+2026-06-18,L,Sinker,1,2,90.9,0.28,2.093,3.044,1.536,105.6,29.0,2,4,Tyler McDonough homers (2) on a fly ball to right field.,False,True
+2026-06-18,L,Cutter,0,0,87.7,0.53,2.849,3.24,1.635,98.4,30.0,2,4,Max Ferguson homers (1) on a fly ball to right field.,False,False
+2026-06-10,L,4-Seam Fastball,0,1,93.4,-0.577,3.108,3.292,1.661,97.7,36.0,2,4,Duke Ellis homers (3) on a fly ball to left field.,False,False
+2026-06-10,L,Curveball,1,1,79.0,-0.771,2.956,3.476,1.754,103.0,26.0,2,4,Ernesto Martinez Jr. homers (11) on a fly ball to center field. Oswaldo Cabrera scores.,False,False

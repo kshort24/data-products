@@ -1,0 +1,11 @@
+stand,pitch_name,n,swings,whiffs,ks,whiff_rate,putaway_rate,usage_within_stand
+L,4-Seam Fastball,49,33,6,9,0.182,0.184,0.576
+L,Curveball,1,1,1,1,1.0,1.0,0.012
+L,Cutter,13,8,2,4,0.25,0.308,0.153
+L,Sinker,9,6,1,1,0.167,0.111,0.106
+L,Slider,13,5,3,4,0.6,0.308,0.153
+R,4-Seam Fastball,44,26,7,11,0.269,0.25,0.611
+R,Curveball,1,1,0,0,0.0,0.0,0.014
+R,Cutter,2,0,0,2,,1.0,0.028
+R,Sinker,4,3,1,1,0.333,0.25,0.056
+R,Slider,21,11,5,5,0.455,0.238,0.292

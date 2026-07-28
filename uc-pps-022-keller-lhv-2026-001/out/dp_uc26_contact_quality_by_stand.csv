@@ -1,0 +1,10 @@
+stand,pitch_name,bip,ev,hard_hit_rate,xwobacon
+L,4-Seam Fastball,26,87.8,0.423,0.334
+L,Curveball,1,103.0,1.0,1.48
+L,Cutter,19,90.795,0.526,0.347
+L,Sinker,11,78.964,0.091,0.359
+L,Slider,4,81.275,0.25,0.464
+R,4-Seam Fastball,15,91.647,0.6,0.4
+R,Cutter,11,89.273,0.364,0.288
+R,Sinker,4,65.525,0.0,0.173
+R,Slider,5,77.24,0.0,0.195

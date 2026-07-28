@@ -1,0 +1,15 @@
+check,detail,observed,threshold,result,severity
+entity_lock_pitcher_id,pitcher == 662144 (Brian Keller),"1 distinct pitcher id(s), name(s)=['Keller, Brian']",exactly 1 id / 1 name,PASS,blocking
+entity_lock_no_brad_keller,Brad Keller 641745 must be absent,present=False; a name filter would have added 28 rows,absent,PASS,blocking
+dedup_pitch_key,"unique on (game_pk, at_bat_number, pitch_number)",0 dupes,0,PASS,blocking
+game_type_regular_season,game_type == 'R',['R'],['R'],PASS,blocking
+cde_location_completeness,plate_x/plate_z/sz_top/sz_bot/zone non-null,100.0%,>= 99%,PASS,blocking
+cde_velocity_completeness,release_speed non-null,100.0%,>= 99%,PASS,blocking
+cde_contact_quality_on_bip,launch_speed + estimated_woba populated on type=='X',"EV 100.0%, xwOBA 100.0% of 96 BIP",>= 95% of BIP,PASS,blocking
+cde_spin_completeness,release_spin_rate non-null,99.4%,>= 95%,PASS,warning
+bat_tracking_absent,bat_speed / swing_length not captured at AAA,bat_speed 0.0%,"documented, not required",WARN — documented,warning
+sample_size_bf,BF vs 100 BF publication convention for pitcher rates,146 BF over 8 starts,>= 100 BF,PASS,warning
+sample_size_subsplits,per-pitch and per-count splits fall below 100 BF,"slider 18 PA, sinker 19 PA, 2-strike-by-pitch cells 1-49 pitches",directional only; n printed on every line,WARN — mitigated by printing n,warning
+comparison_population_defined,LHV 2026 staff ex-Keller as benchmark,"41 pitchers, 14427 pitches, 3702 BF",same league / season / park mix,PASS,blocking
+level_translation_unmodelled,AAA->MLB translation factor not applied,no MLB tier exists for this pitcher (0 career MLB pitches),documented limitation,WARN — documented,warning
+sr_m1_ratification_status,SR-M1 Mayza Success Rate,PROVISIONAL; intent-vs-implementation gap quantified in dp_uc26_sr_m1_variants.csv,must be flagged PROVISIONAL wherever published,WARN — flagged,warning

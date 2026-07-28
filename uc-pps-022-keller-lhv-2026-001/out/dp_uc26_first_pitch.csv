@@ -1,0 +1,11 @@
+stand,pitch_name,n,strikes,strike_rate,usage_within_stand
+L,4-Seam Fastball,35,24,0.686,0.412
+L,Curveball,1,0,0.0,0.012
+L,Cutter,22,16,0.727,0.259
+L,Sinker,22,12,0.545,0.259
+L,Slider,5,3,0.6,0.059
+R,4-Seam Fastball,17,12,0.706,0.288
+R,Curveball,1,1,1.0,0.017
+R,Cutter,17,13,0.765,0.288
+R,Sinker,15,7,0.467,0.254
+R,Slider,9,3,0.333,0.153

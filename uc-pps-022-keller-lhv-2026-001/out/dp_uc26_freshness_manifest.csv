@@ -1,0 +1,6 @@
+source,entity,rows,pitchers,min_date,max_date,fitness,report_date
+data/opponents/lhvp26.parquet,LHV 2026 pitching (all),14960,42.0,2026-03-27,2026-07-23,FIT — primary + benchmark,2026-07-24
+data/opponents/lhvp26.parquet,Brian Keller 662144,533,1.0,2026-05-30,2026-07-17,FIT — primary tier,2026-07-24
+wOBA and FIP Constants.csv,FanGraphs 2026 wOBA weights,1,,2026,2026,FIT — MLB weights applied to AAA events; see 01_ caveat,2026-07-24
+(none),MLB tier for Brian Keller,0,0.0,n/a,n/a,ABSENT — 0 career MLB pitches,2026-07-24
+(none),AAA->MLB translation factors,0,0.0,n/a,n/a,ABSENT — deferred to a future UC,2026-07-24

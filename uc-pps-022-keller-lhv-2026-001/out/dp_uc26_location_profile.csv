@@ -1,0 +1,11 @@
+who,pitch,n,above_zone_rate,mean_plate_z,heart_rate,zone_edge_rate,shadow_rate,chase_zone_rate
+Keller,ALL,533,0.24,2.57,0.214,0.246,0.218,0.323
+LHV staff (ex-Keller),ALL,14427,0.161,2.26,0.179,0.254,0.219,0.348
+Keller,4-Seam Fastball,230,0.348,2.96,0.243,0.252,0.209,0.296
+LHV staff (ex-Keller),4-Seam Fastball,4735,0.255,2.65,0.203,0.278,0.223,0.297
+Keller,Cutter,128,0.195,2.58,0.25,0.352,0.195,0.203
+LHV staff (ex-Keller),Cutter,1277,0.185,2.37,0.192,0.265,0.226,0.317
+Keller,Sinker,97,0.134,2.05,0.124,0.144,0.299,0.433
+LHV staff (ex-Keller),Sinker,2322,0.138,2.35,0.206,0.288,0.228,0.278
+Keller,Slider,72,0.111,1.97,0.167,0.181,0.181,0.472
+LHV staff (ex-Keller),Slider,2559,0.1,2.0,0.169,0.234,0.22,0.377

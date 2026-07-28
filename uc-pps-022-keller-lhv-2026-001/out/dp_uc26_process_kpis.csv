@@ -1,0 +1,3 @@
+who,pitches,swings,whiffs,whiff_rate,ooz,chases,chase_rate,in_zone_rate,pitches2strikes,putaway_rate,first_pitch_strike_rate,bips,hard_hit_rate,edge_rate,ooz_called_strike_rate,gb_rate,fb_rate,ld_rate,pu_rate,air_rate,above_pitches,chase_up_rate,xwobacon,swstr_rate
+Keller,533,268,68,0.254,264,82,0.311,0.505,157,0.242,0.632,96,0.385,0.355,0.042,0.427,0.292,0.156,0.125,0.573,128,0.344,0.348,0.128
+LHV staff (ex-Keller),14427,6593,1738,0.264,7567,2017,0.267,0.475,4134,0.205,0.597,2385,0.379,0.35,0.027,0.472,0.234,0.231,0.063,0.528,2322,0.284,0.358,0.12
