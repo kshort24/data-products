@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrew Painter — Return Read · PHI @ BAL 2026-07-31</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--red:#E81828;--navy:#002D72;--gray:#8C8C8C;--lgray:#E6EAF0;--bg:#F7F9FC;}
+*{box-sizing:border-box;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+     color:#1a1a1a;background:var(--bg);font-size:14px;line-height:1.45;}
+header{background:var(--navy);color:#fff;padding:20px 26px 16px;border-bottom:5px solid var(--red);}
+header h1{margin:0 0 3px;font-size:22px;letter-spacing:-.2px;}
+header .sub{font-size:13px;opacity:.85;}
+header .gov{font-size:11px;opacity:.65;margin-top:7px;}
+.warn{background:#FFF4F5;border-left:4px solid var(--red);margin:18px 26px;padding:11px 15px;font-size:12px;}
+.warn b{color:var(--red);}
+nav{display:flex;flex-wrap:wrap;gap:6px;padding:0 26px;margin:16px 0 0;}
+nav button{border:1px solid var(--lgray);background:#fff;padding:7px 14px;border-radius:20px;
+   cursor:pointer;font-size:12.5px;color:var(--navy);font-weight:600;transition:.12s;}
+nav button:hover{border-color:var(--navy);}
+nav button.on{background:var(--navy);color:#fff;border-color:var(--navy);}
+main{padding:18px 26px 60px;}
+.panel{display:none;} .panel.on{display:block;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px;}
+.card{background:#fff;border:1px solid var(--lgray);border-radius:9px;padding:15px 17px;}
+.card h3{margin:0 0 3px;font-size:14px;color:var(--navy);}
+.card .note{font-size:11.5px;color:var(--gray);margin:0 0 11px;}
+.wide{grid-column:1/-1;}
+canvas{max-height:330px;}
+table{border-collapse:collapse;width:100%;font-size:12px;margin-top:4px;}
+th{background:var(--navy);color:#fff;text-align:left;padding:6px 8px;font-size:11.5px;position:sticky;top:0;}
+td{padding:5px 8px;border-bottom:1px solid var(--lgray);}
+tr:nth-child(even) td{background:#FAFBFD;}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px;}
+.kpi{background:#fff;border:1px solid var(--lgray);border-left:4px solid var(--red);
+     border-radius:7px;padding:11px 13px;}
+.kpi .lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--gray);}
+.kpi .val{font-size:23px;font-weight:700;color:var(--navy);line-height:1.15;margin:3px 0 1px;}
+.kpi .sub{font-size:11px;color:var(--gray);}
+.kpi.good{border-left-color:#2CA02C;} .kpi.bad{border-left-color:var(--red);}
+.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:14px;
+   background:#fff;border:1px solid var(--lgray);border-radius:9px;padding:11px 15px;}
+.controls label{font-size:12px;color:var(--navy);font-weight:600;margin-right:5px;}
+.controls select,.controls input{font-size:12.5px;padding:4px 7px;border:1px solid var(--lgray);
+   border-radius:5px;color:#1a1a1a;}
+.pill{display:inline-block;padding:1.5px 8px;border-radius:11px;font-size:10.5px;font-weight:700;}
+.PASS{background:#E7F6E9;color:#1D7A2B;} .WARN{background:#FFF6E0;color:#9A6A00;}
+.FAIL{background:#FDE9EA;color:#B3151F;}
+footer{padding:20px 26px;font-size:11px;color:var(--gray);border-top:1px solid var(--lgray);background:#fff;}
+</style></head><body>
+
+<header>
+  <h1>Andrew Painter — Return Read</h1>
+  <div class="sub">PHI @ BAL · Oriole Park at Camden Yards · 2026-07-31 · first start back from Triple-A</div>
+  <div class="gov">Use Case #29 · <code>uc-pps-023</code> · build artifact <code>dp_uc28</code> · every figure below reads from an <code>out/dp_uc28_*.csv</code> receipt</div>
+</header>
+
+<div class="warn">
+  <b>Tiers are never blended.</b> MLB = 1,141 pitches / 299 PA over 14 starts (2026-03-31 → 06-17).
+  AAA = 396 pitches / 101 PA over 5 starts (2026-06-28 → 07-26), <b>below the 100-BF convention</b> —
+  AAA rates carry their sample size everywhere. No expected-outcome (xwOBA) metric appears anywhere:
+  it is 26% populated and untrusted at pitch level. <b>No Orioles data exists in this repo</b> — there is
+  no opponent attack plan here, by design.
+</div>
+
+<nav>
+  <button class="on" data-p="overview">Overview</button>
+  <button data-p="arsenal">Arsenal &amp; stuff</button>
+  <button data-p="fastball">The fastball problem</button>
+  <button data-p="delivery">Delivery &amp; release</button>
+  <button data-p="platoon">Platoon &amp; sequencing</button>
+  <button data-p="starts">Start log</button>
+  <button data-p="gov">Governance</button>
+</nav>
+
+<main>
+  <section class="panel on" id="overview"><div class="kpis" id="ovKpis"></div>
+    <div class="grid">
+      <div class="card wide"><h3>What changed between the levels</h3>
+        <p class="note">Locked process KPIs, computed inside each level. Source: <code>dp_uc28_level_summary.csv</code></p>
+        <canvas id="cLevel"></canvas></div>
+      <div class="card"><h3>MLB arc — first 8 starts vs last 7</h3>
+        <p class="note">What broke before he was optioned. Source: <code>dp_uc28_mlb_arc.csv</code></p>
+        <div id="tMlbArc"></div></div>
+      <div class="card"><h3>AAA arc — early stretch-out vs late</h3>
+        <p class="note">Every process indicator improved. Source: <code>dp_uc28_aaa_arc.csv</code></p>
+        <div id="tAaaArc"></div></div>
+      <div class="card wide"><h3>Times through the order</h3>
+        <p class="note">Results are noisy; hard-hit rate climbs on every pass at both levels. Source: <code>dp_uc28_times_through_order.csv</code></p>
+        <canvas id="cTto"></canvas></div>
+    </div></section>
+
+  <section class="panel" id="arsenal">
+    <div class="controls">
+      <div><label for="selLevel">Level</label>
+        <select id="selLevel"><option value="both">Both (side by side)</option>
+          <option value="MLB">MLB only</option><option value="AAA">AAA only</option></select></div>
+      <div><label for="selMetric">Colour bars by</label>
+        <select id="selMetric">
+          <option value="usage">Usage share</option><option value="whiff_rate">Whiff / swing</option>
+          <option value="csw_rate">CSW rate</option><option value="chase_rate">Chase rate</option>
+          <option value="in_zone_rate">In-zone rate</option><option value="velo">Velocity</option>
+        </select></div>
+      <div style="font-size:11.5px;color:var(--gray);">AAA slider/sweeper tags are model-driven per level — read that boundary loosely.</div>
+    </div>
+    <div class="grid">
+      <div class="card wide"><h3>Arsenal by level</h3>
+        <p class="note">Source: <code>dp_uc28_arsenal_by_level.csv</code></p><canvas id="cArs"></canvas></div>
+      <div class="card wide"><h3>Movement map — bubble size is usage</h3>
+        <p class="note">Arm-side horizontal break positive. Filled = MLB, hollow = AAA.</p>
+        <canvas id="cMove"></canvas></div>
+      <div class="card"><h3>Cross-Level Stuff Delta <span style="color:var(--red)">(new KPI)</span></h3>
+        <p class="note">AAA minus MLB. Only the splitter moved outside noise in a meaningful way.</p>
+        <div id="tStuff"></div></div>
+      <div class="card"><h3>Velocity separation from the four-seam</h3>
+        <p class="note">The splitter lost 2.11 mph of separation. Source: <code>dp_uc28_velo_separation.csv</code></p>
+        <div id="tSep"></div></div>
+      <div class="card wide"><h3>Full arsenal table</h3><div id="tArs"></div></div>
+    </div></section>
+
+  <section class="panel" id="fastball"><div class="grid">
+    <div class="card wide"><h3>Four-seam vs the 2026 MLB RHP pool</h3>
+      <p class="note">31 RHP with ≥150 four-seams in 2026 Phillies games. Average shape, average location, bottom-quartile bat-missing. Source: <code>dp_uc28_ff_benchmark_painter.csv</code></p>
+      <canvas id="cBench"></canvas></div>
+    <div class="card"><h3>Benchmark detail</h3><div id="tBench"></div></div>
+    <div class="card"><h3>Four-seam whiff by location</h3>
+      <p class="note">At MLB, elevating did nothing (.101 up vs .111 down). At AAA it started working.</p>
+      <div id="tFfloc"></div></div>
+    <div class="card wide"><h3>Where each pitch goes</h3>
+      <p class="note">Location tier mix. Source: <code>dp_uc28_location_tiers.csv</code></p>
+      <canvas id="cLoc"></canvas></div>
+  </div></section>
+
+  <section class="panel" id="delivery"><div class="grid">
+    <div class="card wide"><h3>Velocity up, extension down — every AAA start</h3>
+      <p class="note">He is throwing harder by reaching, not by getting down the mound. Source: <code>dp_uc28_start_log.csv</code></p>
+      <canvas id="cVelo"></canvas></div>
+    <div class="card wide"><h3>Four-seam release point by start</h3>
+      <p class="note">13 MLB starts sit in a 2.1-inch band. 06-17 and 06-28 jump ~5 inches toward centre — the two shakiest outings — then he moves back. 06-28 and 07-10 were the same park, so this is mechanical, not calibration. Source: <code>dp_uc28_release_by_start.csv</code></p>
+      <canvas id="cRel"></canvas></div>
+    <div class="card"><h3>Arm angle by pitch type</h3>
+      <p class="note">The tipping hypothesis: his slot spread is 13.8° at MLB against a pool median of 4.25° — 96th percentile.</p>
+      <canvas id="cArm"></canvas></div>
+    <div class="card"><h3>Slot spread vs the pool</h3><div id="tSpread"></div>
+      <p class="note" style="margin-top:9px;">Caveat: <code>arm_angle</code> is derived from release coordinates, so some spread is unavoidable. The pool comparison is what makes it notable, not the raw number.</p></div>
+  </div></section>
+
+  <section class="panel" id="platoon">
+    <div class="controls"><div><label for="selStand">Batter stands</label>
+      <select id="selStand"><option value="L">Left-handed</option><option value="R">Right-handed</option></select></div>
+      <div style="font-size:11.5px;color:var(--gray);">AAA vs LHH is 65 PA and vs RHH is 36 PA — directional only.</div></div>
+    <div class="grid">
+      <div class="card wide"><h3>Usage by level against the selected handedness</h3>
+        <p class="note">The splitter — his best pitch vs lefties at .395 whiff on 76 MLB swings — was halved at Triple-A and replaced by the sweeper. Source: <code>dp_uc28_usage_by_stand.csv</code></p>
+        <canvas id="cStand"></canvas></div>
+      <div class="card wide"><h3>Detail</h3><div id="tStand"></div></div>
+    </div></section>
+
+  <section class="panel" id="starts"><div class="grid">
+    <div class="card wide"><h3>Every start, both levels</h3>
+      <p class="note">Navy rows are MLB, red rows are AAA. Source: <code>dp_uc28_start_log.csv</code></p>
+      <div id="tStarts"></div></div>
+  </div></section>
+
+  <section class="panel" id="gov"><div class="grid">
+    <div class="card wide"><h3>Data quality scorecard</h3>
+      <p class="note">Source: <code>dp_uc28_dq_scorecard.csv</code></p><div id="tDq"></div></div>
+    <div class="card wide"><h3>Freshness manifest</h3>
+      <p class="note">Source: <code>dp_uc28_freshness_manifest.csv</code></p><div id="tFresh"></div></div>
+  </div></section>
+</main>
+
+<footer>
+  Built by <code>dp_uc28_build_dashboard.py</code> from the CSV receipts in <code>out/</code>.
+  Entity lock: MLBAM <code>pitcher == 691725</code>. Governance trail:
+  <code>Agents for Data Products/data-products/uc-pps-painter-return-001/</code>.
+  Companion PDF: <code>dp_uc28_painter_vs_orioles_report.pdf</code>.
+</footer>
+
+<script>
+const D = {"arsenal": [{"level": "AAA", "pitch_name": "4-Seam Fastball", "n": 195, "velo": 97.181, "velo_max": 99.1, "eff_velo": 97.4, "spin": 2341.215, "spin_axis": 200.533, "ivb_in": 16.019, "hb_in": 2.017, "ext_ft": 6.375, "arm_angle": 46.246, "plate_x": 0.22, "plate_z": 2.739, "usage": 0.492, "swings": 113, "whiffs": 24, "whiff_rate": 0.212, "chase_rate": 0.319, "in_zone_rate": 0.533, "csw_rate": 0.215}, {"level": "AAA", "pitch_name": "Sinker", "n": 38, "velo": 95.353, "velo_max": 98.1, "eff_velo": 95.584, "spin": 2172.158, "spin_axis": 198.789, "ivb_in": 12.537, "hb_in": 10.863, "ext_ft": 6.368, "arm_angle": 46.174, "plate_x": -0.056, "plate_z": 2.416, "usage": 0.096, "swings": 19, "whiffs": 1, "whiff_rate": 0.053, "chase_rate": 0.3, "in_zone_rate": 0.474, "csw_rate": 0.132}, {"level": "AAA", "pitch_name": "Slider", "n": 33, "velo": 87.494, "velo_max": 89.3, "eff_velo": 87.903, "spin": 2659.606, "spin_axis": 118.273, "ivb_in": 2.215, "hb_in": -6.88, "ext_ft": 6.418, "arm_angle": 43.009, "plate_x": 0.292, "plate_z": 1.606, "usage": 0.083, "swings": 19, "whiffs": 5, "whiff_rate": 0.263, "chase_rate": 0.435, "in_zone_rate": 0.303, "csw_rate": 0.152}, {"level": "AAA", "pitch_name": "Sweeper", "n": 78, "velo": 83.047, "velo_max": 85.8, "eff_velo": 83.103, "spin": 2724.526, "spin_axis": 63.372, "ivb_in": 1.048, "hb_in": -15.789, "ext_ft": 6.31, "arm_angle": 35.25, "plate_x": 0.081, "plate_z": 2.044, "usage": 0.197, "swings": 33, "whiffs": 10, "whiff_rate": 0.303, "chase_rate": 0.395, "in_zone_rate": 0.513, "csw_rate": 0.41}, {"level": "AAA", "pitch_name": "Split-Finger", "n": 27, "velo": 90.156, "velo_max": 92.0, "eff_velo": 90.396, "spin": 1687.63, "spin_axis": 221.593, "ivb_in": 7.147, "hb_in": 12.209, "ext_ft": 6.352, "arm_angle": 40.867, "plate_x": -0.61, "plate_z": 2.239, "usage": 0.068, "swings": 14, "whiffs": 5, "whiff_rate": 0.357, "chase_rate": 0.409, "in_zone_rate": 0.185, "csw_rate": 0.185}, {"level": "AAA", "pitch_name": "Curveball", "n": 25, "velo": 81.012, "velo_max": 82.6, "eff_velo": 81.128, "spin": 2640.52, "spin_axis": 42.68, "ivb_in": -9.173, "hb_in": -8.218, "ext_ft": 6.316, "arm_angle": 50.216, "plate_x": -0.388, "plate_z": 2.145, "usage": 0.063, "swings": 6, "whiffs": 1, "whiff_rate": 0.167, "chase_rate": 0.143, "in_zone_rate": 0.44, "csw_rate": 0.32}, {"level": "MLB", "pitch_name": "4-Seam Fastball", "n": 378, "velo": 96.542, "velo_max": 99.1, "eff_velo": 96.851, "spin": 2256.817, "spin_axis": 196.632, "ivb_in": 16.267, "hb_in": 2.562, "ext_ft": 6.479, "arm_angle": 48.415, "plate_x": 0.231, "plate_z": 2.791, "usage": 0.331, "swings": 180, "whiffs": 19, "whiff_rate": 0.106, "chase_rate": 0.296, "in_zone_rate": 0.474, "csw_rate": 0.201}, {"level": "MLB", "pitch_name": "Sinker", "n": 123, "velo": 95.162, "velo_max": 97.0, "eff_velo": 95.49, "spin": 2136.78, "spin_axis": 193.967, "ivb_in": 14.241, "hb_in": 11.755, "ext_ft": 6.52, "arm_angle": 49.669, "plate_x": -0.441, "plate_z": 2.525, "usage": 0.108, "swings": 69, "whiffs": 6, "whiff_rate": 0.087, "chase_rate": 0.41, "in_zone_rate": 0.504, "csw_rate": 0.179}, {"level": "MLB", "pitch_name": "Slider", "n": 244, "velo": 88.104, "velo_max": 91.2, "eff_velo": 88.702, "spin": 2545.902, "spin_axis": 138.791, "ivb_in": 4.496, "hb_in": -6.314, "ext_ft": 6.606, "arm_angle": 43.919, "plate_x": 0.349, "plate_z": 1.948, "usage": 0.214, "swings": 106, "whiffs": 40, "whiff_rate": 0.377, "chase_rate": 0.287, "in_zone_rate": 0.443, "csw_rate": 0.32}, {"level": "MLB", "pitch_name": "Sweeper", "n": 130, "velo": 82.97, "velo_max": 86.0, "eff_velo": 83.136, "spin": 2606.469, "spin_axis": 64.054, "ivb_in": 2.234, "hb_in": -15.713, "ext_ft": 6.512, "arm_angle": 38.242, "plate_x": 0.545, "plate_z": 2.094, "usage": 0.114, "swings": 62, "whiffs": 13, "whiff_rate": 0.21, "chase_rate": 0.359, "in_zone_rate": 0.508, "csw_rate": 0.315}, {"level": "MLB", "pitch_name": "Split-Finger", "n": 164, "velo": 87.408, "velo_max": 90.1, "eff_velo": 87.907, "spin": 1593.287, "spin_axis": 212.189, "ivb_in": 8.142, "hb_in": 9.782, "ext_ft": 6.565, "arm_angle": 46.097, "plate_x": -0.168, "plate_z": 2.08, "usage": 0.144, "swings": 86, "whiffs": 33, "whiff_rate": 0.384, "chase_rate": 0.318, "in_zone_rate": 0.463, "csw_rate": 0.311}, {"level": "MLB", "pitch_name": "Curveball", "n": 102, "velo": 81.141, "velo_max": 84.6, "eff_velo": 81.575, "spin": 2639.5, "spin_axis": 51.539, "ivb_in": -7.551, "hb_in": -7.994, "ext_ft": 6.559, "arm_angle": 52.086, "plate_x": -0.017, "plate_z": 1.916, "usage": 0.089, "swings": 52, "whiffs": 13, "whiff_rate": 0.25, "chase_rate": 0.388, "in_zone_rate": 0.52, "csw_rate": 0.324}], "start_log": [{"level": "MLB", "game_date": "2026-03-31", "pitches": 84, "strike_rate": 0.679, "csw_rate": 0.321, "chase_rate": 0.378, "in_zone_rate": 0.464, "swings": 39, "whiffs": 9, "whiff_rate": 0.231, "pitches2strikes": 25, "putaway_rate": 0.32, "first_pitch_strike_rate": 0.524, "bips": 12, "hard_hits": 1, "hard_hit_rate": 0.083, "plate_apps": 21, "strikeouts": 8, "walks": 1.0, "hits": 4, "hrs": 0.0, "ff_velo": 96.732, "ff_velo_max": 98.7, "ff_ivb": 16.059, "ext_ft": 6.635, "arm_angle": 49.163, "futr": 0.765}, {"level": "MLB", "game_date": "2026-04-06", "pitches": 90, "strike_rate": 0.589, "csw_rate": 0.144, "chase_rate": 0.327, "in_zone_rate": 0.422, "swings": 44, "whiffs": 4, "whiff_rate": 0.091, "pitches2strikes": 20, "putaway_rate": 0.05, "first_pitch_strike_rate": 0.524, "bips": 19, "hard_hits": 8, "hard_hit_rate": 0.421, "plate_apps": 21, "strikeouts": 1, "walks": 1.0, "hits": 9, "hrs": 0.0, "ff_velo": 96.838, "ff_velo_max": 98.7, "ff_ivb": 15.356, "ext_ft": 6.552, "arm_angle": 48.809, "futr": 0.414}, {"level": "MLB", "game_date": "2026-04-12", "pitches": 80, "strike_rate": 0.675, "csw_rate": 0.362, "chase_rate": 0.375, "in_zone_rate": 0.5, "swings": 39, "whiffs": 14, "whiff_rate": 0.359, "pitches2strikes": 28, "putaway_rate": 0.25, "first_pitch_strike_rate": 0.632, "bips": 11, "hard_hits": 2, "hard_hit_rate": 0.182, "plate_apps": 19, "strikeouts": 7, "walks": 1.0, "hits": 3, "hrs": 0.0, "ff_velo": 96.307, "ff_velo_max": 98.4, "ff_ivb": 15.973, "ext_ft": 6.572, "arm_angle": 48.575, "futr": 0.679}, {"level": "MLB", "game_date": "2026-04-19", "pitches": 84, "strike_rate": 0.631, "csw_rate": 0.262, "chase_rate": 0.318, "in_zone_rate": 0.476, "swings": 41, "whiffs": 10, "whiff_rate": 0.244, "pitches2strikes": 35, "putaway_rate": 0.114, "first_pitch_strike_rate": 0.632, "bips": 13, "hard_hits": 6, "hard_hit_rate": 0.462, "plate_apps": 19, "strikeouts": 4, "walks": 1.0, "hits": 5, "hrs": 1.0, "ff_velo": 96.056, "ff_velo_max": 98.3, "ff_ivb": 18.021, "ext_ft": 6.576, "arm_angle": 48.718, "futr": 0.735}, {"level": "MLB", "game_date": "2026-04-24", "pitches": 96, "strike_rate": 0.646, "csw_rate": 0.188, "chase_rate": 0.433, "in_zone_rate": 0.375, "swings": 50, "whiffs": 6, "whiff_rate": 0.12, "pitches2strikes": 23, "putaway_rate": 0.043, "first_pitch_strike_rate": 0.714, "bips": 25, "hard_hits": 9, "hard_hit_rate": 0.36, "plate_apps": 28, "strikeouts": 1, "walks": 2.0, "hits": 9, "hrs": 1.0, "ff_velo": 96.698, "ff_velo_max": 98.1, "ff_ivb": 14.663, "ext_ft": 6.492, "arm_angle": 47.207, "futr": 0.561}, {"level": "MLB", "game_date": "2026-05-02", "pitches": 99, "strike_rate": 0.616, "csw_rate": 0.273, "chase_rate": 0.327, "in_zone_rate": 0.444, "swings": 45, "whiffs": 11, "whiff_rate": 0.244, "pitches2strikes": 30, "putaway_rate": 0.233, "first_pitch_strike_rate": 0.64, "bips": 15, "hard_hits": 5, "hard_hit_rate": 0.333, "plate_apps": 25, "strikeouts": 7, "walks": 3.0, "hits": 7, "hrs": 1.0, "ff_velo": 96.576, "ff_velo_max": 98.2, "ff_ivb": 17.656, "ext_ft": 6.123, "arm_angle": 46.051, "futr": 0.579}, {"level": "MLB", "game_date": "2026-05-07", "pitches": 88, "strike_rate": 0.58, "csw_rate": 0.239, "chase_rate": 0.231, "in_zone_rate": 0.409, "swings": 40, "whiffs": 10, "whiff_rate": 0.25, "pitches2strikes": 25, "putaway_rate": 0.08, "first_pitch_strike_rate": 0.55, "bips": 15, "hard_hits": 10, "hard_hit_rate": 0.667, "plate_apps": 20, "strikeouts": 2, "walks": 3.0, "hits": 7, "hrs": 3.0, "ff_velo": 96.219, "ff_velo_max": 98.1, "ff_ivb": 17.186, "ext_ft": 6.655, "arm_angle": 45.366, "futr": 0.281}, {"level": "MLB", "game_date": "2026-05-13", "pitches": 62, "strike_rate": 0.742, "csw_rate": 0.371, "chase_rate": 0.533, "in_zone_rate": 0.516, "swings": 35, "whiffs": 12, "whiff_rate": 0.343, "pitches2strikes": 15, "putaway_rate": 0.267, "first_pitch_strike_rate": 0.579, "bips": 14, "hard_hits": 6, "hard_hit_rate": 0.429, "plate_apps": 19, "strikeouts": 4, "walks": 0.0, "hits": 4, "hrs": 1.0, "ff_velo": 97.14, "ff_velo_max": 98.9, "ff_ivb": 16.096, "ext_ft": 6.568, "arm_angle": 44.065, "futr": 0.4}, {"level": "MLB", "game_date": "2026-05-18", "pitches": 69, "strike_rate": 0.638, "csw_rate": 0.188, "chase_rate": 0.258, "in_zone_rate": 0.551, "swings": 34, "whiffs": 3, "whiff_rate": 0.088, "pitches2strikes": 15, "putaway_rate": 0.2, "first_pitch_strike_rate": 0.591, "bips": 17, "hard_hits": 5, "hard_hit_rate": 0.294, "plate_apps": 22, "strikeouts": 3, "walks": 2.0, "hits": 3, "hrs": 0.0, "ff_velo": 96.217, "ff_velo_max": 97.6, "ff_ivb": 16.095, "ext_ft": 6.575, "arm_angle": 44.252, "futr": 0.542}, {"level": "MLB", "game_date": "2026-05-24", "pitches": 82, "strike_rate": 0.634, "csw_rate": 0.341, "chase_rate": 0.216, "in_zone_rate": 0.549, "swings": 32, "whiffs": 8, "whiff_rate": 0.25, "pitches2strikes": 18, "putaway_rate": 0.167, "first_pitch_strike_rate": 0.583, "bips": 19, "hard_hits": 6, "hard_hit_rate": 0.316, "plate_apps": 24, "strikeouts": 3, "walks": 2.0, "hits": 6, "hrs": 0.0, "ff_velo": 96.5, "ff_velo_max": 98.3, "ff_ivb": 17.303, "ext_ft": 6.665, "arm_angle": 46.261, "futr": 0.476}, {"level": "MLB", "game_date": "2026-05-31", "pitches": 80, "strike_rate": 0.65, "csw_rate": 0.25, "chase_rate": 0.263, "in_zone_rate": 0.525, "swings": 40, "whiffs": 8, "whiff_rate": 0.2, "pitches2strikes": 28, "putaway_rate": 0.107, "first_pitch_strike_rate": 0.5, "bips": 14, "hard_hits": 6, "hard_hit_rate": 0.429, "plate_apps": 18, "strikeouts": 3, "walks": 1.0, "hits": 7, "hrs": 2.0, "ff_velo": 97.396, "ff_velo_max": 98.8, "ff_ivb": 16.15, "ext_ft": 6.331, "arm_angle": 46.466, "futr": 0.625}, {"level": "MLB", "game_date": "2026-06-06", "pitches": 93, "strike_rate": 0.677, "csw_rate": 0.269, "chase_rate": 0.268, "in_zone_rate": 0.559, "swings": 51, "whiffs": 13, "whiff_rate": 0.255, "pitches2strikes": 31, "putaway_rate": 0.129, "first_pitch_strike_rate": 0.68, "bips": 18, "hard_hits": 3, "hard_hit_rate": 0.167, "plate_apps": 25, "strikeouts": 4, "walks": 2.0, "hits": 8, "hrs": 2.0, "ff_velo": 96.593, "ff_velo_max": 97.4, "ff_ivb": 16.96, "ext_ft": 6.643, "arm_angle": 43.855, "futr": 0.667}, {"level": "MLB", "game_date": "2026-06-12", "pitches": 78, "strike_rate": 0.59, "csw_rate": 0.256, "chase_rate": 0.267, "in_zone_rate": 0.423, "swings": 34, "whiffs": 8, "whiff_rate": 0.235, "pitches2strikes": 16, "putaway_rate": 0.188, "first_pitch_strike_rate": 0.667, "bips": 18, "hard_hits": 6, "hard_hit_rate": 0.333, "plate_apps": 24, "strikeouts": 3, "walks": 3.0, "hits": 6, "hrs": 1.0, "ff_velo": 96.281, "ff_velo_max": 99.1, "ff_ivb": 14.09, "ext_ft": 6.649, "arm_angle": 44.627, "futr": 0.387}, {"level": "MLB", "game_date": "2026-06-17", "pitches": 56, "strike_rate": 0.679, "csw_rate": 0.268, "chase_rate": 0.333, "in_zone_rate": 0.518, "swings": 31, "whiffs": 8, "whiff_rate": 0.258, "pitches2strikes": 16, "putaway_rate": 0.188, "first_pitch_strike_rate": 0.714, "bips": 9, "hard_hits": 4, "hard_hit_rate": 0.444, "plate_apps": 14, "strikeouts": 3, "walks": 2.0, "hits": 6, "hrs": 2.0, "ff_velo": 96.317, "ff_velo_max": 97.7, "ff_ivb": 17.15, "ext_ft": 6.507, "arm_angle": 45.2, "futr": 0.25}, {"level": "AAA", "game_date": "2026-06-28", "pitches": 80, "strike_rate": 0.55, "csw_rate": 0.188, "chase_rate": 0.233, "in_zone_rate": 0.462, "swings": 39, "whiffs": 10, "whiff_rate": 0.256, "pitches2strikes": 29, "putaway_rate": 0.138, "first_pitch_strike_rate": 0.588, "bips": 10, "hard_hits": 4, "hard_hit_rate": 0.4, "plate_apps": 17, "strikeouts": 4, "walks": 3.0, "hits": 2, "hrs": 0.0, "ff_velo": 96.559, "ff_velo_max": 97.9, "ff_ivb": 15.265, "ext_ft": 6.451, "arm_angle": 47.12, "futr": 0.568}, {"level": "AAA", "game_date": "2026-07-04", "pitches": 69, "strike_rate": 0.696, "csw_rate": 0.203, "chase_rate": 0.429, "in_zone_rate": 0.493, "swings": 44, "whiffs": 10, "whiff_rate": 0.227, "pitches2strikes": 16, "putaway_rate": 0.375, "first_pitch_strike_rate": 0.6, "bips": 14, "hard_hits": 7, "hard_hit_rate": 0.5, "plate_apps": 20, "strikeouts": 6, "walks": 0.0, "hits": 4, "hrs": 0.0, "ff_velo": 97.354, "ff_velo_max": 98.4, "ff_ivb": 15.535, "ext_ft": 6.397, "arm_angle": 45.397, "futr": 0.297}, {"level": "AAA", "game_date": "2026-07-10", "pitches": 70, "strike_rate": 0.543, "csw_rate": 0.171, "chase_rate": 0.189, "in_zone_rate": 0.471, "swings": 28, "whiffs": 2, "whiff_rate": 0.071, "pitches2strikes": 21, "putaway_rate": 0.048, "first_pitch_strike_rate": 0.684, "bips": 14, "hard_hits": 5, "hard_hit_rate": 0.357, "plate_apps": 19, "strikeouts": 1, "walks": 4.0, "hits": 8, "hrs": 1.0, "ff_velo": 97.614, "ff_velo_max": 99.1, "ff_ivb": 16.809, "ext_ft": 6.337, "arm_angle": 43.95, "futr": 0.571}, {"level": "AAA", "game_date": "2026-07-21", "pitches": 87, "strike_rate": 0.736, "csw_rate": 0.345, "chase_rate": 0.523, "in_zone_rate": 0.494, "swings": 47, "whiffs": 13, "whiff_rate": 0.277, "pitches2strikes": 30, "putaway_rate": 0.267, "first_pitch_strike_rate": 0.652, "bips": 14, "hard_hits": 2, "hard_hit_rate": 0.143, "plate_apps": 23, "strikeouts": 8, "walks": 1.0, "hits": 7, "hrs": 0.0, "ff_velo": 96.802, "ff_velo_max": 98.9, "ff_ivb": 16.244, "ext_ft": 6.334, "arm_angle": 42.199, "futr": 0.61}, {"level": "AAA", "game_date": "2026-07-26", "pitches": 90, "strike_rate": 0.678, "csw_rate": 0.289, "chase_rate": 0.327, "in_zone_rate": 0.456, "swings": 46, "whiffs": 11, "whiff_rate": 0.239, "pitches2strikes": 32, "putaway_rate": 0.188, "first_pitch_strike_rate": 0.682, "bips": 16, "hard_hits": 5, "hard_hit_rate": 0.312, "plate_apps": 22, "strikeouts": 6, "walks": 0.0, "hits": 5, "hrs": 1.0, "ff_velo": 97.771, "ff_velo_max": 99.1, "ff_ivb": 16.301, "ext_ft": 6.293, "arm_angle": 40.559, "futr": 0.452}], "stuff": [{"pitch_name": "4-Seam Fastball", "n_mlb": 378, "velo_mlb": 96.542, "velo_max_mlb": 99.1, "spin_mlb": 2256.817, "ivb_mlb": 16.267, "hb_mlb": 2.562, "usage_mlb": 0.331, "n_aaa": 195, "velo_aaa": 97.181, "velo_max_aaa": 99.1, "spin_aaa": 2341.215, "ivb_aaa": 16.019, "hb_aaa": 2.017, "usage_aaa": 0.492, "d_velo": 0.639, "d_spin": 84.398, "d_ivb": -0.248, "d_hb": -0.545, "d_usage_pp": 16.114, "coverage_ok": true, "noise_guard": "outside noise band"}, {"pitch_name": "Sinker", "n_mlb": 123, "velo_mlb": 95.162, "velo_max_mlb": 97.0, "spin_mlb": 2136.78, "ivb_mlb": 14.241, "hb_mlb": 11.755, "usage_mlb": 0.108, "n_aaa": 38, "velo_aaa": 95.353, "velo_max_aaa": 98.1, "spin_aaa": 2172.158, "ivb_aaa": 12.537, "hb_aaa": 10.863, "usage_aaa": 0.096, "d_velo": 0.191, "d_spin": 35.377, "d_ivb": -1.704, "d_hb": -0.892, "d_usage_pp": -1.184, "coverage_ok": true, "noise_guard": "outside noise band"}, {"pitch_name": "Slider", "n_mlb": 244, "velo_mlb": 88.104, "velo_max_mlb": 91.2, "spin_mlb": 2545.902, "ivb_mlb": 4.496, "hb_mlb": -6.314, "usage_mlb": 0.214, "n_aaa": 33, "velo_aaa": 87.494, "velo_max_aaa": 89.3, "spin_aaa": 2659.606, "ivb_aaa": 2.215, "hb_aaa": -6.88, "usage_aaa": 0.083, "d_velo": -0.61, "d_spin": 113.704, "d_ivb": -2.281, "d_hb": -0.566, "d_usage_pp": -13.051, "coverage_ok": true, "noise_guard": "outside noise band"}, {"pitch_name": "Sweeper", "n_mlb": 130, "velo_mlb": 82.97, "velo_max_mlb": 86.0, "spin_mlb": 2606.469, "ivb_mlb": 2.234, "hb_mlb": -15.713, "usage_mlb": 0.114, "n_aaa": 78, "velo_aaa": 83.047, "velo_max_aaa": 85.8, "spin_aaa": 2724.526, "ivb_aaa": 1.048, "hb_aaa": -15.789, "usage_aaa": 0.197, "d_velo": 0.077, "d_spin": 118.056, "d_ivb": -1.186, "d_hb": -0.077, "d_usage_pp": 8.303, "coverage_ok": true, "noise_guard": "outside noise band"}, {"pitch_name": "Split-Finger", "n_mlb": 164, "velo_mlb": 87.408, "velo_max_mlb": 90.1, "spin_mlb": 1593.287, "ivb_mlb": 8.142, "hb_mlb": 9.782, "usage_mlb": 0.144, "n_aaa": 27, "velo_aaa": 90.156, "velo_max_aaa": 92.0, "spin_aaa": 1687.63, "ivb_aaa": 7.147, "hb_aaa": 12.209, "usage_aaa": 0.068, "d_velo": 2.748, "d_spin": 94.343, "d_ivb": -0.995, "d_hb": 2.427, "d_usage_pp": -7.555, "coverage_ok": true, "noise_guard": "outside noise band"}, {"pitch_name": "Curveball", "n_mlb": 102, "velo_mlb": 81.141, "velo_max_mlb": 84.6, "spin_mlb": 2639.5, "ivb_mlb": -7.551, "hb_mlb": -7.994, "usage_mlb": 0.089, "n_aaa": 25, "velo_aaa": 81.012, "velo_max_aaa": 82.6, "spin_aaa": 2640.52, "ivb_aaa": -9.173, "hb_aaa": -8.218, "usage_aaa": 0.063, "d_velo": -0.129, "d_spin": 1.02, "d_ivb": -1.622, "d_hb": -0.223, "d_usage_pp": -2.626, "coverage_ok": true, "noise_guard": "outside noise band"}], "release": [{"level": "MLB", "game_date": "2026-03-31", "ff_pitches": 34, "sd_x_ft": 0.167, "sd_z_ft": 0.064, "mean_x_ft": -2.074, "mean_z_ft": 6.646, "rci_in": 1.385, "sd_x_ft_in": 2.0, "sd_z_ft_in": 0.77, "mean_x_ft_in": -24.89, "mean_z_ft_in": 79.75}, {"level": "MLB", "game_date": "2026-04-06", "ff_pitches": 29, "sd_x_ft": 0.143, "sd_z_ft": 0.062, "mean_x_ft": -2.13, "mean_z_ft": 6.553, "rci_in": 1.231, "sd_x_ft_in": 1.72, "sd_z_ft_in": 0.74, "mean_x_ft_in": -25.56, "mean_z_ft_in": 78.64}, {"level": "MLB", "game_date": "2026-04-12", "ff_pitches": 28, "sd_x_ft": 0.11, "sd_z_ft": 0.062, "mean_x_ft": -2.099, "mean_z_ft": 6.642, "rci_in": 1.037, "sd_x_ft_in": 1.33, "sd_z_ft_in": 0.75, "mean_x_ft_in": -25.19, "mean_z_ft_in": 79.71}, {"level": "MLB", "game_date": "2026-04-19", "ff_pitches": 34, "sd_x_ft": 0.118, "sd_z_ft": 0.061, "mean_x_ft": -2.156, "mean_z_ft": 6.666, "rci_in": 1.076, "sd_x_ft_in": 1.42, "sd_z_ft_in": 0.73, "mean_x_ft_in": -25.87, "mean_z_ft_in": 79.99}, {"level": "MLB", "game_date": "2026-04-24", "ff_pitches": 41, "sd_x_ft": 0.099, "sd_z_ft": 0.06, "mean_x_ft": -2.103, "mean_z_ft": 6.442, "rci_in": 0.951, "sd_x_ft_in": 1.18, "sd_z_ft_in": 0.72, "mean_x_ft_in": -25.24, "mean_z_ft_in": 77.31}, {"level": "MLB", "game_date": "2026-05-02", "ff_pitches": 38, "sd_x_ft": 0.134, "sd_z_ft": 0.073, "mean_x_ft": -2.213, "mean_z_ft": 6.38, "rci_in": 1.245, "sd_x_ft_in": 1.61, "sd_z_ft_in": 0.88, "mean_x_ft_in": -26.56, "mean_z_ft_in": 76.56}, {"level": "MLB", "game_date": "2026-05-07", "ff_pitches": 32, "sd_x_ft": 0.146, "sd_z_ft": 0.07, "mean_x_ft": -2.233, "mean_z_ft": 6.524, "rci_in": 1.295, "sd_x_ft_in": 1.75, "sd_z_ft_in": 0.84, "mean_x_ft_in": -26.79, "mean_z_ft_in": 78.29}, {"level": "MLB", "game_date": "2026-05-13", "ff_pitches": 15, "sd_x_ft": 0.183, "sd_z_ft": 0.05, "mean_x_ft": -2.078, "mean_z_ft": 6.401, "rci_in": 1.402, "sd_x_ft_in": 2.2, "sd_z_ft_in": 0.6, "mean_x_ft_in": -24.94, "mean_z_ft_in": 76.81}, {"level": "MLB", "game_date": "2026-05-18", "ff_pitches": 24, "sd_x_ft": 0.121, "sd_z_ft": 0.063, "mean_x_ft": -2.159, "mean_z_ft": 6.57, "rci_in": 1.1, "sd_x_ft_in": 1.45, "sd_z_ft_in": 0.75, "mean_x_ft_in": -25.91, "mean_z_ft_in": 78.84}, {"level": "MLB", "game_date": "2026-05-24", "ff_pitches": 21, "sd_x_ft": 0.125, "sd_z_ft": 0.067, "mean_x_ft": -2.118, "mean_z_ft": 6.601, "rci_in": 1.152, "sd_x_ft_in": 1.49, "sd_z_ft_in": 0.81, "mean_x_ft_in": -25.41, "mean_z_ft_in": 79.21}, {"level": "MLB", "game_date": "2026-05-31", "ff_pitches": 24, "sd_x_ft": 0.138, "sd_z_ft": 0.049, "mean_x_ft": -2.057, "mean_z_ft": 6.518, "rci_in": 1.117, "sd_x_ft_in": 1.65, "sd_z_ft_in": 0.58, "mean_x_ft_in": -24.68, "mean_z_ft_in": 78.22}, {"level": "MLB", "game_date": "2026-06-06", "ff_pitches": 15, "sd_x_ft": 0.09, "sd_z_ft": 0.062, "mean_x_ft": -2.157, "mean_z_ft": 6.585, "rci_in": 0.913, "sd_x_ft_in": 1.08, "sd_z_ft_in": 0.74, "mean_x_ft_in": -25.88, "mean_z_ft_in": 79.02}, {"level": "MLB", "game_date": "2026-06-12", "ff_pitches": 31, "sd_x_ft": 0.159, "sd_z_ft": 0.07, "mean_x_ft": -2.102, "mean_z_ft": 6.455, "rci_in": 1.376, "sd_x_ft_in": 1.91, "sd_z_ft_in": 0.84, "mean_x_ft_in": -25.22, "mean_z_ft_in": 77.46}, {"level": "MLB", "game_date": "2026-06-17", "ff_pitches": 12, "sd_x_ft": 0.224, "sd_z_ft": 0.053, "mean_x_ft": -1.708, "mean_z_ft": 6.575, "rci_in": null, "sd_x_ft_in": 2.69, "sd_z_ft_in": 0.64, "mean_x_ft_in": -20.5, "mean_z_ft_in": 78.9}, {"level": "AAA", "game_date": "2026-06-28", "ff_pitches": 44, "sd_x_ft": 0.121, "sd_z_ft": 0.067, "mean_x_ft": -1.67, "mean_z_ft": 6.642, "rci_in": 1.127, "sd_x_ft_in": 1.45, "sd_z_ft_in": 0.81, "mean_x_ft_in": -20.05, "mean_z_ft_in": 79.71}, {"level": "AAA", "game_date": "2026-07-04", "ff_pitches": 37, "sd_x_ft": 0.121, "sd_z_ft": 0.068, "mean_x_ft": -2.105, "mean_z_ft": 6.571, "rci_in": 1.13, "sd_x_ft_in": 1.45, "sd_z_ft_in": 0.81, "mean_x_ft_in": -25.26, "mean_z_ft_in": 78.85}, {"level": "AAA", "game_date": "2026-07-10", "ff_pitches": 42, "sd_x_ft": 0.146, "sd_z_ft": 0.049, "mean_x_ft": -2.136, "mean_z_ft": 6.673, "rci_in": 1.174, "sd_x_ft_in": 1.76, "sd_z_ft_in": 0.59, "mean_x_ft_in": -25.63, "mean_z_ft_in": 80.08}, {"level": "AAA", "game_date": "2026-07-21", "ff_pitches": 41, "sd_x_ft": 0.122, "sd_z_ft": 0.054, "mean_x_ft": -2.147, "mean_z_ft": 6.608, "rci_in": 1.057, "sd_x_ft_in": 1.46, "sd_z_ft_in": 0.65, "mean_x_ft_in": -25.76, "mean_z_ft_in": 79.29}, {"level": "AAA", "game_date": "2026-07-26", "ff_pitches": 31, "sd_x_ft": 0.174, "sd_z_ft": 0.077, "mean_x_ft": -2.106, "mean_z_ft": 6.586, "rci_in": 1.506, "sd_x_ft_in": 2.09, "sd_z_ft_in": 0.92, "mean_x_ft_in": -25.27, "mean_z_ft_in": 79.03}], "release_pitch": [{"level": "AAA", "pitch_name": "4-Seam Fastball", "n": 195, "rel_x_ft": -2.023, "rel_z_ft": 6.619, "ext_ft": 6.375, "arm_angle": 46.246, "eff_velo": 97.4, "velo": 97.181, "velo_added_by_ext": 0.22}, {"level": "AAA", "pitch_name": "Curveball", "n": 25, "rel_x_ft": -1.946, "rel_z_ft": 6.644, "ext_ft": 6.316, "arm_angle": 50.216, "eff_velo": 81.128, "velo": 81.012, "velo_added_by_ext": 0.12}, {"level": "AAA", "pitch_name": "Sinker", "n": 38, "rel_x_ft": -2.073, "rel_z_ft": 6.558, "ext_ft": 6.368, "arm_angle": 46.174, "eff_velo": 95.584, "velo": 95.353, "velo_added_by_ext": 0.23}, {"level": "AAA", "pitch_name": "Slider", "n": 33, "rel_x_ft": -2.15, "rel_z_ft": 6.428, "ext_ft": 6.418, "arm_angle": 43.009, "eff_velo": 87.903, "velo": 87.494, "velo_added_by_ext": 0.41}, {"level": "AAA", "pitch_name": "Split-Finger", "n": 27, "rel_x_ft": -2.334, "rel_z_ft": 6.41, "ext_ft": 6.352, "arm_angle": 40.867, "eff_velo": 90.396, "velo": 90.156, "velo_added_by_ext": 0.24}, {"level": "AAA", "pitch_name": "Sweeper", "n": 78, "rel_x_ft": -2.63, "rel_z_ft": 6.205, "ext_ft": 6.31, "arm_angle": 35.25, "eff_velo": 83.103, "velo": 83.047, "velo_added_by_ext": 0.06}, {"level": "MLB", "pitch_name": "4-Seam Fastball", "n": 378, "rel_x_ft": -2.119, "rel_z_ft": 6.536, "ext_ft": 6.479, "arm_angle": 48.415, "eff_velo": 96.851, "velo": 96.542, "velo_added_by_ext": 0.31}, {"level": "MLB", "pitch_name": "Curveball", "n": 102, "rel_x_ft": -2.051, "rel_z_ft": 6.537, "ext_ft": 6.559, "arm_angle": 52.086, "eff_velo": 81.575, "velo": 81.141, "velo_added_by_ext": 0.43}, {"level": "MLB", "pitch_name": "Sinker", "n": 123, "rel_x_ft": -2.049, "rel_z_ft": 6.55, "ext_ft": 6.52, "arm_angle": 49.669, "eff_velo": 95.49, "velo": 95.162, "velo_added_by_ext": 0.33}, {"level": "MLB", "pitch_name": "Slider", "n": 244, "rel_x_ft": -2.333, "rel_z_ft": 6.382, "ext_ft": 6.606, "arm_angle": 43.919, "eff_velo": 88.702, "velo": 88.104, "velo_added_by_ext": 0.6}, {"level": "MLB", "pitch_name": "Split-Finger", "n": 164, "rel_x_ft": -2.236, "rel_z_ft": 6.473, "ext_ft": 6.565, "arm_angle": 46.097, "eff_velo": 87.907, "velo": 87.408, "velo_added_by_ext": 0.5}, {"level": "MLB", "pitch_name": "Sweeper", "n": 130, "rel_x_ft": -2.641, "rel_z_ft": 6.227, "ext_ft": 6.512, "arm_angle": 38.242, "eff_velo": 83.136, "velo": 82.97, "velo_added_by_ext": 0.17}], "ffloc": [{"level": "AAA", "loc_tier": "chase", "pitches": 29, "swings": 11, "whiffs": 2, "whiff_rate": 0.182, "cut": "zone tier"}, {"level": "AAA", "loc_tier": "heart", "pitches": 104, "swings": 84, "whiffs": 14, "whiff_rate": 0.167, "cut": "zone tier"}, {"level": "AAA", "loc_tier": "shadow", "pitches": 28, "swings": 14, "whiffs": 5, "whiff_rate": 0.357, "cut": "zone tier"}, {"level": "AAA", "loc_tier": "waste", "pitches": 34, "swings": 4, "whiffs": 3, "whiff_rate": 0.75, "cut": "zone tier"}, {"level": "MLB", "loc_tier": "chase", "pitches": 72, "swings": 27, "whiffs": 5, "whiff_rate": 0.185, "cut": "zone tier"}, {"level": "MLB", "loc_tier": "heart", "pitches": 179, "swings": 121, "whiffs": 11, "whiff_rate": 0.091, "cut": "zone tier"}, {"level": "MLB", "loc_tier": "shadow", "pitches": 56, "swings": 27, "whiffs": 2, "whiff_rate": 0.074, "cut": "zone tier"}, {"level": "MLB", "loc_tier": "waste", "pitches": 71, "swings": 5, "whiffs": 1, "whiff_rate": 0.2, "cut": "zone tier"}, {"level": "AAA", "loc_tier": "lower_two_thirds", "pitches": 96, "swings": 59, "whiffs": 10, "whiff_rate": 0.169, "cut": "elevation band"}, {"level": "AAA", "loc_tier": "upper_third_or_above", "pitches": 99, "swings": 54, "whiffs": 14, "whiff_rate": 0.259, "cut": "elevation band"}, {"level": "MLB", "loc_tier": "lower_two_thirds", "pitches": 173, "swings": 81, "whiffs": 9, "whiff_rate": 0.111, "cut": "elevation band"}, {"level": "MLB", "loc_tier": "upper_third_or_above", "pitches": 205, "swings": 99, "whiffs": 10, "whiff_rate": 0.101, "cut": "elevation band"}], "bench": [{"metric": "velo", "painter_mlb": 96.542, "painter_aaa": 97.181, "pool_median": 96.09, "pool_p75": 97.536, "painter_mlb_pctile": 54.8, "pool_n": 31, "note": "4-seam average velocity, mph"}, {"metric": "ivb_in", "painter_mlb": 16.267, "painter_aaa": 16.019, "pool_median": 16.223, "pool_p75": 17.706, "painter_mlb_pctile": 51.6, "pool_n": 31, "note": "Induced vertical break, inches \u2014 ride"}, {"metric": "ext_ft", "painter_mlb": 6.479, "painter_aaa": 6.375, "pool_median": 6.47, "pool_p75": 6.685, "painter_mlb_pctile": 51.6, "pool_n": 31, "note": "Release extension, feet"}, {"metric": "futr", "painter_mlb": 0.542, "painter_aaa": 0.508, "pool_median": 0.542, "pool_p75": 0.61, "painter_mlb_pctile": 48.4, "pool_n": 31, "note": "NEW KPI \u2014 Fastball Upper-Third Rate"}, {"metric": "ff_whiff", "painter_mlb": 0.106, "painter_aaa": 0.212, "pool_median": 0.2, "pool_p75": 0.303, "painter_mlb_pctile": 25.8, "pool_n": 31, "note": "Whiff per swing on the 4-seam"}, {"metric": "ff_whiff_upper", "painter_mlb": 0.101, "painter_aaa": 0.259, "pool_median": 0.25, "pool_p75": 0.344, "painter_mlb_pctile": 22.6, "pool_n": 31, "note": "Whiff per swing on 4-seams in the upper third or above"}], "spread": [{"scope": "Painter MLB 2026", "arm_spread_deg": 13.845, "pool_median": 4.25, "pool_p90": 9.93, "pool_n": 23, "pctile_high_is_worse": 95.7}, {"scope": "Painter AAA 2026 (>=25 pitches/type)", "arm_spread_deg": 14.966, "pool_median": 4.25, "pool_p90": 9.93, "pool_n": 23, "pctile_high_is_worse": null}], "usage_stand": [{"level": "AAA", "stand": "L", "pitch_name": "4-Seam Fastball", "n": 124, "n_tot": 255, "usage": 0.486, "swings": 69, "whiffs": 8.0, "whiff_rate": 0.116}, {"level": "AAA", "stand": "L", "pitch_name": "Curveball", "n": 25, "n_tot": 255, "usage": 0.098, "swings": 6, "whiffs": 1.0, "whiff_rate": 0.167}, {"level": "AAA", "stand": "L", "pitch_name": "Sinker", "n": 18, "n_tot": 255, "usage": 0.071, "swings": 8, "whiffs": 0.0, "whiff_rate": 0.0}, {"level": "AAA", "stand": "L", "pitch_name": "Slider", "n": 16, "n_tot": 255, "usage": 0.063, "swings": 11, "whiffs": 2.0, "whiff_rate": 0.182}, {"level": "AAA", "stand": "L", "pitch_name": "Split-Finger", "n": 27, "n_tot": 255, "usage": 0.106, "swings": 14, "whiffs": 5.0, "whiff_rate": 0.357}, {"level": "AAA", "stand": "L", "pitch_name": "Sweeper", "n": 45, "n_tot": 255, "usage": 0.176, "swings": 19, "whiffs": 3.0, "whiff_rate": 0.158}, {"level": "AAA", "stand": "R", "pitch_name": "4-Seam Fastball", "n": 71, "n_tot": 141, "usage": 0.504, "swings": 44, "whiffs": 16.0, "whiff_rate": 0.364}, {"level": "AAA", "stand": "R", "pitch_name": "Sinker", "n": 20, "n_tot": 141, "usage": 0.142, "swings": 11, "whiffs": 1.0, "whiff_rate": 0.091}, {"level": "AAA", "stand": "R", "pitch_name": "Slider", "n": 17, "n_tot": 141, "usage": 0.121, "swings": 8, "whiffs": 3.0, "whiff_rate": 0.375}, {"level": "AAA", "stand": "R", "pitch_name": "Sweeper", "n": 33, "n_tot": 141, "usage": 0.234, "swings": 14, "whiffs": 7.0, "whiff_rate": 0.5}, {"level": "MLB", "stand": "L", "pitch_name": "4-Seam Fastball", "n": 271, "n_tot": 697, "usage": 0.389, "swings": 133, "whiffs": 10.0, "whiff_rate": 0.075}, {"level": "MLB", "stand": "L", "pitch_name": "Curveball", "n": 94, "n_tot": 697, "usage": 0.135, "swings": 49, "whiffs": 13.0, "whiff_rate": 0.265}, {"level": "MLB", "stand": "L", "pitch_name": "Sinker", "n": 16, "n_tot": 697, "usage": 0.023, "swings": 12, "whiffs": 0.0, "whiff_rate": 0.0}, {"level": "MLB", "stand": "L", "pitch_name": "Slider", "n": 136, "n_tot": 697, "usage": 0.195, "swings": 56, "whiffs": 18.0, "whiff_rate": 0.321}, {"level": "MLB", "stand": "L", "pitch_name": "Split-Finger", "n": 149, "n_tot": 697, "usage": 0.214, "swings": 76, "whiffs": 30.0, "whiff_rate": 0.395}, {"level": "MLB", "stand": "L", "pitch_name": "Sweeper", "n": 31, "n_tot": 697, "usage": 0.044, "swings": 14, "whiffs": 2.0, "whiff_rate": 0.143}, {"level": "MLB", "stand": "R", "pitch_name": "4-Seam Fastball", "n": 107, "n_tot": 444, "usage": 0.241, "swings": 47, "whiffs": 9.0, "whiff_rate": 0.191}, {"level": "MLB", "stand": "R", "pitch_name": "Curveball", "n": 8, "n_tot": 444, "usage": 0.018, "swings": 3, "whiffs": 0.0, "whiff_rate": 0.0}, {"level": "MLB", "stand": "R", "pitch_name": "Sinker", "n": 107, "n_tot": 444, "usage": 0.241, "swings": 57, "whiffs": 6.0, "whiff_rate": 0.105}, {"level": "MLB", "stand": "R", "pitch_name": "Slider", "n": 108, "n_tot": 444, "usage": 0.243, "swings": 50, "whiffs": 22.0, "whiff_rate": 0.44}, {"level": "MLB", "stand": "R", "pitch_name": "Split-Finger", "n": 15, "n_tot": 444, "usage": 0.034, "swings": 10, "whiffs": 3.0, "whiff_rate": 0.3}, {"level": "MLB", "stand": "R", "pitch_name": "Sweeper", "n": 99, "n_tot": 444, "usage": 0.223, "swings": 48, "whiffs": 11.0, "whiff_rate": 0.229}], "tto": [{"level": "AAA", "tto_lbl": "1st time", "pitches": 195, "strike_rate": 0.615, "csw_rate": 0.277, "chase_rate": 0.345, "in_zone_rate": 0.421, "swings": 92, "whiffs": 26, "whiff_rate": 0.283, "pitches2strikes": 73, "putaway_rate": 0.219, "first_pitch_strike_rate": 0.689, "bips": 23, "hard_hits": 6, "hard_hit_rate": 0.261, "plate_apps": 45, "strikeouts": 16, "walks": 6.0, "hrs": 0.0, "woba": 0.24}, {"level": "AAA", "tto_lbl": "2nd time", "pitches": 168, "strike_rate": 0.643, "csw_rate": 0.22, "chase_rate": 0.288, "in_zone_rate": 0.524, "swings": 87, "whiffs": 16, "whiff_rate": 0.184, "pitches2strikes": 46, "putaway_rate": 0.174, "first_pitch_strike_rate": 0.545, "bips": 34, "hard_hits": 12, "hard_hit_rate": 0.353, "plate_apps": 44, "strikeouts": 8, "walks": 2.0, "hrs": 0.0, "woba": 0.373}, {"level": "AAA", "tto_lbl": "3rd+ time", "pitches": 33, "strike_rate": 0.818, "csw_rate": 0.182, "chase_rate": 0.6, "in_zone_rate": 0.545, "swings": 25, "whiffs": 4, "whiff_rate": 0.16, "pitches2strikes": 9, "putaway_rate": 0.111, "first_pitch_strike_rate": 0.833, "bips": 11, "hard_hits": 5, "hard_hit_rate": 0.455, "plate_apps": 12, "strikeouts": 1, "walks": 0.0, "hrs": 2.0, "woba": 0.563}, {"level": "MLB", "tto_lbl": "1st time", "pitches": 500, "strike_rate": 0.632, "csw_rate": 0.264, "chase_rate": 0.32, "in_zone_rate": 0.468, "swings": 238, "whiffs": 54, "whiff_rate": 0.227, "pitches2strikes": 143, "putaway_rate": 0.168, "first_pitch_strike_rate": 0.606, "bips": 92, "hard_hits": 29, "hard_hit_rate": 0.315, "plate_apps": 127, "strikeouts": 24, "walks": 9.0, "hrs": 6.0, "woba": 0.372}, {"level": "MLB", "tto_lbl": "2nd time", "pitches": 460, "strike_rate": 0.654, "csw_rate": 0.259, "chase_rate": 0.325, "in_zone_rate": 0.491, "swings": 232, "whiffs": 50, "whiff_rate": 0.216, "pitches2strikes": 134, "putaway_rate": 0.142, "first_pitch_strike_rate": 0.598, "bips": 92, "hard_hits": 33, "hard_hit_rate": 0.359, "plate_apps": 122, "strikeouts": 19, "walks": 10.0, "hrs": 7.0, "woba": 0.43}, {"level": "MLB", "tto_lbl": "3rd+ time", "pitches": 181, "strike_rate": 0.635, "csw_rate": 0.276, "chase_rate": 0.33, "in_zone_rate": 0.464, "swings": 85, "whiffs": 20, "whiff_rate": 0.235, "pitches2strikes": 48, "putaway_rate": 0.208, "first_pitch_strike_rate": 0.66, "bips": 35, "hard_hits": 15, "hard_hit_rate": 0.429, "plate_apps": 50, "strikeouts": 10, "walks": 5.0, "hrs": 1.0, "woba": 0.303}], "aaa_arc": [{"arc": "AAA early (6/28, 7/4)", "pitches": 149, "strike_rate": 0.617, "csw_rate": 0.195, "chase_rate": 0.321, "in_zone_rate": 0.477, "swings": 83, "whiffs": 20, "whiff_rate": 0.241, "pitches2strikes": 45, "putaway_rate": 0.222, "first_pitch_strike_rate": 0.595, "bips": 24, "hard_hits": 11, "hard_hit_rate": 0.458, "plate_apps": 37, "strikeouts": 10, "walks": 3, "hrs": 0.0, "ff_velo": 96.922, "ff_usage_n": 81, "all_n": 149, "ff_usage": 0.544, "futr": 0.444, "above_zone_rate": 0.235}, {"arc": "AAA late (7/10, 7/21, 7/26)", "pitches": 247, "strike_rate": 0.66, "csw_rate": 0.275, "chase_rate": 0.354, "in_zone_rate": 0.474, "swings": 121, "whiffs": 26, "whiff_rate": 0.215, "pitches2strikes": 83, "putaway_rate": 0.181, "first_pitch_strike_rate": 0.672, "bips": 44, "hard_hits": 12, "hard_hit_rate": 0.273, "plate_apps": 64, "strikeouts": 15, "walks": 5, "hrs": 2.0, "ff_velo": 97.365, "ff_usage_n": 114, "all_n": 247, "ff_usage": 0.462, "futr": 0.553, "above_zone_rate": 0.377}], "mlb_arc": [{"arc": "MLB first 8 GS (2026-03-31..2026-05-13)", "pitches": 683, "strike_rate": 0.64, "csw_rate": 0.264, "chase_rate": 0.357, "in_zone_rate": 0.447, "swings": 333, "whiffs": 76, "whiff_rate": 0.228, "pitches2strikes": 201, "putaway_rate": 0.169, "first_pitch_strike_rate": 0.605, "bips": 124, "hard_hits": 47, "hard_hit_rate": 0.379, "plate_apps": 172, "strikeouts": 34, "walks": 12, "hrs": 7, "woba": 0.367, "krate": 0.198, "bbrate": 0.07, "ff_velo": 96.535, "ff_n": 251, "all_n": 683, "ff_usage": 0.367}, {"arc": "MLB last 7 GS (2026-05-18..2026-06-17)", "pitches": 458, "strike_rate": 0.644, "csw_rate": 0.264, "chase_rate": 0.265, "in_zone_rate": 0.522, "swings": 222, "whiffs": 48, "whiff_rate": 0.216, "pitches2strikes": 124, "putaway_rate": 0.153, "first_pitch_strike_rate": 0.622, "bips": 95, "hard_hits": 30, "hard_hit_rate": 0.316, "plate_apps": 127, "strikeouts": 19, "walks": 12, "hrs": 7, "woba": 0.408, "krate": 0.15, "bbrate": 0.094, "ff_velo": 96.556, "ff_n": 127, "all_n": 458, "ff_usage": 0.277}], "sep": [{"pitch_name": "Curveball", "AAA": 16.17, "MLB": 15.4, "d_sep_aaa_minus_mlb": 0.77}, {"pitch_name": "Sinker", "AAA": 1.83, "MLB": 1.38, "d_sep_aaa_minus_mlb": 0.45}, {"pitch_name": "Slider", "AAA": 9.69, "MLB": 8.44, "d_sep_aaa_minus_mlb": 1.25}, {"pitch_name": "Split-Finger", "AAA": 7.03, "MLB": 9.13, "d_sep_aaa_minus_mlb": -2.11}, {"pitch_name": "Sweeper", "AAA": 14.13, "MLB": 13.57, "d_sep_aaa_minus_mlb": 0.56}], "loc": [{"level": "AAA", "pitch_name": "4-Seam Fastball", "loc_tier": "chase", "n": 29, "n_tot": 195, "share": 0.149}, {"level": "AAA", "pitch_name": "4-Seam Fastball", "loc_tier": "heart", "n": 104, "n_tot": 195, "share": 0.533}, {"level": "AAA", "pitch_name": "4-Seam Fastball", "loc_tier": "shadow", "n": 28, "n_tot": 195, "share": 0.144}, {"level": "AAA", "pitch_name": "4-Seam Fastball", "loc_tier": "waste", "n": 34, "n_tot": 195, "share": 0.174}, {"level": "AAA", "pitch_name": "Curveball", "loc_tier": "chase", "n": 7, "n_tot": 25, "share": 0.28}, {"level": "AAA", "pitch_name": "Curveball", "loc_tier": "heart", "n": 11, "n_tot": 25, "share": 0.44}, {"level": "AAA", "pitch_name": "Curveball", "loc_tier": "shadow", "n": 2, "n_tot": 25, "share": 0.08}, {"level": "AAA", "pitch_name": "Curveball", "loc_tier": "waste", "n": 5, "n_tot": 25, "share": 0.2}, {"level": "AAA", "pitch_name": "Sinker", "loc_tier": "chase", "n": 8, "n_tot": 38, "share": 0.211}, {"level": "AAA", "pitch_name": "Sinker", "loc_tier": "heart", "n": 18, "n_tot": 38, "share": 0.474}, {"level": "AAA", "pitch_name": "Sinker", "loc_tier": "shadow", "n": 3, "n_tot": 38, "share": 0.079}, {"level": "AAA", "pitch_name": "Sinker", "loc_tier": "waste", "n": 9, "n_tot": 38, "share": 0.237}, {"level": "AAA", "pitch_name": "Slider", "loc_tier": "chase", "n": 9, "n_tot": 33, "share": 0.273}, {"level": "AAA", "pitch_name": "Slider", "loc_tier": "heart", "n": 10, "n_tot": 33, "share": 0.303}, {"level": "AAA", "pitch_name": "Slider", "loc_tier": "shadow", "n": 4, "n_tot": 33, "share": 0.121}, {"level": "AAA", "pitch_name": "Slider", "loc_tier": "waste", "n": 10, "n_tot": 33, "share": 0.303}, {"level": "AAA", "pitch_name": "Split-Finger", "loc_tier": "chase", "n": 6, "n_tot": 27, "share": 0.222}, {"level": "AAA", "pitch_name": "Split-Finger", "loc_tier": "heart", "n": 5, "n_tot": 27, "share": 0.185}, {"level": "AAA", "pitch_name": "Split-Finger", "loc_tier": "shadow", "n": 5, "n_tot": 27, "share": 0.185}, {"level": "AAA", "pitch_name": "Split-Finger", "loc_tier": "waste", "n": 11, "n_tot": 27, "share": 0.407}, {"level": "AAA", "pitch_name": "Sweeper", "loc_tier": "chase", "n": 18, "n_tot": 78, "share": 0.231}, {"level": "AAA", "pitch_name": "Sweeper", "loc_tier": "heart", "n": 40, "n_tot": 78, "share": 0.513}, {"level": "AAA", "pitch_name": "Sweeper", "loc_tier": "shadow", "n": 10, "n_tot": 78, "share": 0.128}, {"level": "AAA", "pitch_name": "Sweeper", "loc_tier": "waste", "n": 10, "n_tot": 78, "share": 0.128}, {"level": "MLB", "pitch_name": "4-Seam Fastball", "loc_tier": "chase", "n": 72, "n_tot": 378, "share": 0.19}, {"level": "MLB", "pitch_name": "4-Seam Fastball", "loc_tier": "heart", "n": 179, "n_tot": 378, "share": 0.474}, {"level": "MLB", "pitch_name": "4-Seam Fastball", "loc_tier": "shadow", "n": 56, "n_tot": 378, "share": 0.148}, {"level": "MLB", "pitch_name": "4-Seam Fastball", "loc_tier": "waste", "n": 71, "n_tot": 378, "share": 0.188}, {"level": "MLB", "pitch_name": "Curveball", "loc_tier": "chase", "n": 16, "n_tot": 102, "share": 0.157}, {"level": "MLB", "pitch_name": "Curveball", "loc_tier": "heart", "n": 53, "n_tot": 102, "share": 0.52}, {"level": "MLB", "pitch_name": "Curveball", "loc_tier": "shadow", "n": 13, "n_tot": 102, "share": 0.127}, {"level": "MLB", "pitch_name": "Curveball", "loc_tier": "waste", "n": 20, "n_tot": 102, "share": 0.196}, {"level": "MLB", "pitch_name": "Sinker", "loc_tier": "chase", "n": 21, "n_tot": 123, "share": 0.171}, {"level": "MLB", "pitch_name": "Sinker", "loc_tier": "heart", "n": 62, "n_tot": 123, "share": 0.504}, {"level": "MLB", "pitch_name": "Sinker", "loc_tier": "shadow", "n": 20, "n_tot": 123, "share": 0.163}, {"level": "MLB", "pitch_name": "Sinker", "loc_tier": "waste", "n": 20, "n_tot": 123, "share": 0.163}, {"level": "MLB", "pitch_name": "Slider", "loc_tier": "chase", "n": 43, "n_tot": 244, "share": 0.176}, {"level": "MLB", "pitch_name": "Slider", "loc_tier": "heart", "n": 108, "n_tot": 244, "share": 0.443}, {"level": "MLB", "pitch_name": "Slider", "loc_tier": "shadow", "n": 37, "n_tot": 244, "share": 0.152}, {"level": "MLB", "pitch_name": "Slider", "loc_tier": "waste", "n": 56, "n_tot": 244, "share": 0.23}, {"level": "MLB", "pitch_name": "Split-Finger", "loc_tier": "chase", "n": 32, "n_tot": 164, "share": 0.195}, {"level": "MLB", "pitch_name": "Split-Finger", "loc_tier": "heart", "n": 76, "n_tot": 164, "share": 0.463}, {"level": "MLB", "pitch_name": "Split-Finger", "loc_tier": "shadow", "n": 16, "n_tot": 164, "share": 0.098}, {"level": "MLB", "pitch_name": "Split-Finger", "loc_tier": "waste", "n": 40, "n_tot": 164, "share": 0.244}, {"level": "MLB", "pitch_name": "Sweeper", "loc_tier": "chase", "n": 30, "n_tot": 130, "share": 0.231}, {"level": "MLB", "pitch_name": "Sweeper", "loc_tier": "heart", "n": 66, "n_tot": 130, "share": 0.508}, {"level": "MLB", "pitch_name": "Sweeper", "loc_tier": "shadow", "n": 19, "n_tot": 130, "share": 0.146}, {"level": "MLB", "pitch_name": "Sweeper", "loc_tier": "waste", "n": 15, "n_tot": 130, "share": 0.115}], "dq": [{"check": "Entity lock", "dimension": "Accuracy", "scope": "both tiers", "result": "pitcher id set == {691725}", "status": "PASS", "note": "Locked on MLBAM id, never on player_name. No name-collision exposure."}, {"check": "Deduplication", "dimension": "Uniqueness", "scope": "both tiers", "result": "MLB 1141 rows / AAA 396 rows after drop_duplicates on (game_pk, at_bat_number, pitch_number)", "status": "PASS", "note": "Zero duplicate pitch keys survive the load."}, {"check": "Game type filter", "dimension": "Validity", "scope": "MLB tier", "result": "game_type == 'R' only; 52 spring-training pitches excluded", "status": "PASS", "note": "Spring rows would contaminate velo and usage baselines."}, {"check": "CDE completeness \u2014 release_speed", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 release_spin_rate", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 pfx_x", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 pfx_z", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 plate_x", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 plate_z", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 sz_top", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 sz_bot", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 release_pos_x", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 release_pos_z", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 release_extension", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 arm_angle", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 zone", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 100.0% / AAA 100.0%", "status": "PASS", "note": "Core stuff CDE; required for the report."}, {"check": "CDE completeness \u2014 launch_speed", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 35.9% / AAA 36.9%", "status": "WARN", "note": "Populated on batted balls only. Directional use only \u2014 never a headline rate."}, {"check": "CDE completeness \u2014 estimated_woba_using_speedangle", "dimension": "Completeness", "scope": "both tiers", "result": "MLB 25.9% / AAA 25.0%", "status": "WARN", "note": "Populated on batted balls only. Directional use only \u2014 never a headline rate."}, {"check": "Cross-level blending guard", "dimension": "Consistency", "scope": "report", "result": "All rate KPIs computed within level; no pooled MLB+AAA rate published", "status": "PASS", "note": "UC#11 multi-level rule enforced by construction."}, {"check": "Pitch-tag drift", "dimension": "Consistency", "scope": "AAA tier", "result": "Slider/Sweeper boundary differs across MiLB and MLB tagging models", "status": "WARN", "note": "Shape comparisons for SL/SW read loosely; flagged in report."}, {"check": "Opponent coverage", "dimension": "Completeness", "scope": "BAL", "result": "0 Orioles hitter rows in repo; 0 prior Painter-vs-BAL pitches", "status": "FAIL", "note": "NON-BLOCKING for this UC \u2014 scope excludes an opponent attack plan. Recorded as an intake gap; report carries no fabricated lineup."}, {"check": "Freshness \u2014 MLB", "dimension": "Timeliness", "scope": "phils_2026.parquet", "result": "max game_date 2026-06-17", "status": "PASS", "note": "Painter's last MLB pitch is 2026-06-17; file itself current to 2026-07-29."}, {"check": "Freshness \u2014 AAA", "dimension": "Timeliness", "scope": "lhvp26.parquet", "result": "max game_date 2026-07-26", "status": "PASS", "note": "Cache current through 2026-07-30, T-1 from game day."}, {"check": "Sample size \u2014 MLB", "dimension": "Validity", "scope": "MLB tier", "result": "1141 pitches / 299 PA", "status": "PASS", "note": "Above the 100 BF publication convention for pitcher rate stats."}, {"check": "Sample size \u2014 AAA", "dimension": "Validity", "scope": "AAA tier", "result": "396 pitches / 101 PA", "status": "WARN", "note": "Below the 100 BF convention. Every AAA rate is printed with its PA/BF."}], "fresh": [{"source": "data/phillies/phils_2026.parquet", "tier": "MLB", "filter": "phillies_role=='pitching' & pitcher==691725 & game_type=='R'", "rows": 1141, "window": "2026-03-31 .. 2026-06-17", "starts": 14, "fitness": "FIT \u2014 full Hawk-Eye tracking"}, {"source": "data/opponents/lhvp26.parquet", "tier": "AAA (supporting)", "filter": "pitcher==691725", "rows": 396, "window": "2026-06-28 .. 2026-07-26", "starts": 5, "fitness": "FIT for stuff/usage/whiff; LOW fidelity for EV/xwOBA"}, {"source": "(none available)", "tier": "Opponent \u2014 BAL", "filter": null, "rows": 0, "window": null, "starts": 0, "fitness": "ABSENT \u2014 no Orioles cache; opponent plan out of scope"}, {"source": "mlb.com starting lineups", "tier": "manual carry-in", "filter": null, "rows": 0, "window": "2026-07-31", "starts": 0, "fitness": "NOT CARRIED \u2014 BAL lineup not retrieved; nothing fabricated"}, {"source": "wOBA and FIP Constants.csv", "tier": "both", "filter": "Season==2026", "rows": 1, "window": "2026", "starts": 0, "fitness": "PRESENT"}], "level": [{"level": "AAA", "starts": 5, "pitches": 396, "plate_apps": 101, "bip": 68, "hits": 26, "hrs": 2, "walks": 8, "strikeouts": 25, "ba": 0.283, "obp": 0.337, "slg": 0.435, "ops": 0.771, "woba": 0.336, "krate": 0.248, "bbrate": 0.079, "hr_rate": 0.02, "strike_rate": 0.644, "csw_rate": 0.245, "chase_rate": 0.341, "in_zone_rate": 0.475, "swings": 204, "whiffs": 46, "whiff_rate": 0.225, "pitches2strikes": 128, "putaway_rate": 0.195, "first_pitch_strike_rate": 0.644, "bips": 68, "hard_hits": 23, "hard_hit_rate": 0.338}, {"level": "MLB", "starts": 14, "pitches": 1141, "plate_apps": 299, "bip": 219, "hits": 84, "hrs": 14, "walks": 24, "strikeouts": 53, "ba": 0.316, "obp": 0.371, "slg": 0.526, "ops": 0.898, "woba": 0.384, "krate": 0.177, "bbrate": 0.08, "hr_rate": 0.047, "strike_rate": 0.642, "csw_rate": 0.264, "chase_rate": 0.323, "in_zone_rate": 0.477, "swings": 555, "whiffs": 124, "whiff_rate": 0.223, "pitches2strikes": 325, "putaway_rate": 0.163, "first_pitch_strike_rate": 0.612, "bips": 219, "hard_hits": 77, "hard_hit_rate": 0.352}], "colors": {"4-Seam Fastball": "#E81828", "Sinker": "#FF7F0E", "Slider": "#002D72", "Sweeper": "#1F77B4", "Split-Finger": "#2CA02C", "Curveball": "#8C564B"}};
+const NAVY="#002D72", RED="#E81828", GRAY="#8C8C8C";
+const PC = D.colors;
+const charts = {};
+const f3 = v => (v===null||v===undefined||Number.isNaN(v)) ? "—" : (+v).toFixed(3);
+const f1 = v => (v===null||v===undefined||Number.isNaN(v)) ? "—" : (+v).toFixed(1);
+const f2 = v => (v===null||v===undefined||Number.isNaN(v)) ? "—" : (+v).toFixed(2);
+const pct = v => (v===null||v===undefined||Number.isNaN(v)) ? "—" : (100*v).toFixed(1)+"%";
+
+Chart.defaults.font.family = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
+Chart.defaults.font.size = 11;
+Chart.defaults.color = "#444";
+
+function mk(id, cfg){ if(charts[id]) charts[id].destroy();
+  charts[id] = new Chart(document.getElementById(id), cfg); return charts[id]; }
+
+function table(el, rows, cols){
+  if(!rows.length){ document.getElementById(el).innerHTML='<p class="note">No rows.</p>'; return; }
+  let h = '<div style="overflow:auto;max-height:520px"><table><thead><tr>';
+  cols.forEach(c => h += `<th class="${c.num?'num':''}">${c.label}</th>`);
+  h += '</tr></thead><tbody>';
+  rows.forEach(r => { h += '<tr>';
+    cols.forEach(c => { const v = c.get ? c.get(r) : r[c.key];
+      h += `<td class="${c.num?'num':''}"${c.style?` style="${c.style(r)}"`:''}>${v===null||v===undefined||v===''?'—':v}</td>`; });
+    h += '</tr>'; });
+  document.getElementById(el).innerHTML = h + '</tbody></table></div>';
+}
+
+/* ---------- OVERVIEW ---------- */
+(function(){
+  const bench = Object.fromEntries(D.bench.map(r=>[r.metric,r]));
+  const sp = D.spread[0]||{};
+  const mlb = D.level.find(r=>r.level==="MLB")||{}, aaa = D.level.find(r=>r.level==="AAA")||{};
+  const ff = D.arsenal.filter(r=>r.pitch_name==="4-Seam Fastball");
+  const ffM = ff.find(r=>r.level==="MLB")||{}, ffA = ff.find(r=>r.level==="AAA")||{};
+  const k = [
+    ["4-seam whiff, MLB", pct(ffM.whiff_rate), `${bench.ff_whiff?bench.ff_whiff.painter_mlb_pctile:''}th pctile · pool median ${f3(bench.ff_whiff?bench.ff_whiff.pool_median:null)}`, "bad"],
+    ["4-seam whiff, AAA", pct(ffA.whiff_rate), "vs AAA hitters — 84 swings", "good"],
+    ["Arm-slot spread, MLB", f1(sp.arm_spread_deg)+"°", `pool median ${f2(sp.pool_median)}° · ${f1(sp.pctile_high_is_worse)}th pctile`, "bad"],
+    ["4-seam usage shift", "+16.1 pts", `${pct(ffM.usage)} → ${pct(ffA.usage)}`, "good"],
+    ["Chase, MLB last 7 GS", ".265", "was .357 over the first 8", "bad"],
+    ["AAA sample", (aaa.plate_apps||0)+" PA", "5 starts · below the 100-BF convention", ""]
+  ];
+  document.getElementById("ovKpis").innerHTML = k.map(([l,v,s,c])=>
+    `<div class="kpi ${c}"><div class="lab">${l}</div><div class="val">${v}</div><div class="sub">${s}</div></div>`).join("");
+
+  const metrics=[["strike_rate","Strike"],["csw_rate","CSW"],["whiff_rate","Whiff/sw"],
+    ["chase_rate","Chase"],["in_zone_rate","In-zone"],["first_pitch_strike_rate","1st-pitch K"],
+    ["putaway_rate","Putaway"],["hard_hit_rate","Hard-hit"]];
+  mk("cLevel",{type:"bar",data:{labels:metrics.map(m=>m[1]),datasets:[
+    {label:`MLB (${mlb.plate_apps} PA)`,data:metrics.map(m=>mlb[m[0]]),backgroundColor:NAVY},
+    {label:`AAA (${aaa.plate_apps} PA)`,data:metrics.map(m=>aaa[m[0]]),backgroundColor:RED}]},
+    options:{responsive:true,scales:{y:{beginAtZero:true,ticks:{callback:v=>(100*v).toFixed(0)+"%"}}},
+    plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+": "+pct(c.raw)}}}}});
+
+  const arcCols = k2 => [{label:"Split",key:k2},{label:"PA",key:"plate_apps",num:true},
+    {label:"Strike",num:true,get:r=>pct(r.strike_rate)},{label:"CSW",num:true,get:r=>pct(r.csw_rate)},
+    {label:"Chase",num:true,get:r=>pct(r.chase_rate)},{label:"Hard-hit",num:true,get:r=>pct(r.hard_hit_rate)},
+    {label:"K/BB",num:true,get:r=>`${r.strikeouts}/${r.walks}`}];
+  table("tMlbArc", D.mlb_arc, arcCols("arc"));
+  table("tAaaArc", D.aaa_arc, arcCols("arc"));
+
+  const order=["1st time","2nd time","3rd+ time"];
+  const tt = l => order.map(o => (D.tto.find(r=>r.level===l&&r.tto_lbl===o)||{}).hard_hit_rate);
+  const tw = l => order.map(o => (D.tto.find(r=>r.level===l&&r.tto_lbl===o)||{}).whiff_rate);
+  mk("cTto",{type:"line",data:{labels:order,datasets:[
+    {label:"MLB hard-hit",data:tt("MLB"),borderColor:NAVY,backgroundColor:NAVY,tension:.25,borderWidth:3},
+    {label:"AAA hard-hit",data:tt("AAA"),borderColor:RED,backgroundColor:RED,tension:.25,borderWidth:3},
+    {label:"MLB whiff/sw",data:tw("MLB"),borderColor:NAVY,borderDash:[6,4],tension:.25,borderWidth:2},
+    {label:"AAA whiff/sw",data:tw("AAA"),borderColor:RED,borderDash:[6,4],tension:.25,borderWidth:2}]},
+    options:{responsive:true,scales:{y:{ticks:{callback:v=>(100*v).toFixed(0)+"%"}}},
+    plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+": "+pct(c.raw)}}}}});
+})();
+
+/* ---------- ARSENAL ---------- */
+const ORDER=["4-Seam Fastball","Sinker","Slider","Sweeper","Split-Finger","Curveball"];
+function drawArsenal(){
+  const lv = document.getElementById("selLevel").value;
+  const mt = document.getElementById("selMetric").value;
+  const levels = lv==="both" ? ["MLB","AAA"] : [lv];
+  const ds = levels.map((L,i)=>({label:L,backgroundColor:i===0&&lv==="both"?NAVY:(L==="MLB"?NAVY:RED),
+    data:ORDER.map(p=>{const r=D.arsenal.find(x=>x.level===L&&x.pitch_name===p);return r?r[mt]:null;})}));
+  const isPct = !["velo"].includes(mt);
+  mk("cArs",{type:"bar",data:{labels:ORDER,datasets:ds},options:{responsive:true,
+    scales:{y:{beginAtZero:!isPct?false:true,ticks:{callback:v=>isPct?(100*v).toFixed(0)+"%":v}}},
+    plugins:{tooltip:{callbacks:{label:c=>{
+      const r=D.arsenal.find(x=>x.level===c.dataset.label&&x.pitch_name===c.label)||{};
+      return `${c.dataset.label}: ${isPct?pct(c.raw):f1(c.raw)}  (n=${r.n}${r.swings?`, ${r.swings} sw`:''})`;}}}}}});
+
+  const pts = levels.flatMap(L => D.arsenal.filter(r=>r.level===L).map(r=>({
+    x:r.hb_in, y:r.ivb_in, r:6+34*r.usage, lvl:L, p:r.pitch_name, velo:r.velo, n:r.n})));
+  mk("cMove",{type:"bubble",data:{datasets: ORDER.flatMap(p => levels.map(L=>{
+      const s=pts.filter(q=>q.p===p&&q.lvl===L);
+      return {label:`${p.split(" ")[0]} (${L})`,data:s,
+        backgroundColor:L==="MLB"?PC[p]:"transparent",borderColor:PC[p],borderWidth:2.5};}))},
+    options:{responsive:true,scales:{
+      x:{title:{display:true,text:"Horizontal break — arm-side positive (in)"},grid:{color:"#eee"}},
+      y:{title:{display:true,text:"Induced vertical break (in)"},grid:{color:"#eee"}}},
+    plugins:{legend:{labels:{boxWidth:9,font:{size:10}}},tooltip:{callbacks:{
+      label:c=>`${c.dataset.label}: ${f1(c.raw.velo)} mph, IVB ${f1(c.raw.y)}", HB ${f1(c.raw.x)}", n=${c.raw.n}`}}}}});
+}
+document.getElementById("selLevel").onchange = drawArsenal;
+document.getElementById("selMetric").onchange = drawArsenal;
+drawArsenal();
+
+table("tStuff", D.stuff.filter(r=>r.coverage_ok), [
+  {label:"Pitch",key:"pitch_name"},{label:"Δ usage (pts)",num:true,get:r=>f1(r.d_usage_pp)},
+  {label:"Δ velo",num:true,get:r=>f2(r.d_velo)},{label:"Δ spin",num:true,get:r=>f1(r.d_spin)},
+  {label:"Δ ride",num:true,get:r=>f2(r.d_ivb)},{label:"Δ horiz",num:true,get:r=>f2(r.d_hb)},
+  {label:"Noise guard",key:"noise_guard"}]);
+table("tSep", D.sep, [{label:"Pitch",key:"pitch_name"},{label:"MLB",num:true,get:r=>f2(r.MLB)},
+  {label:"AAA",num:true,get:r=>f2(r.AAA)},{label:"Change",num:true,get:r=>f2(r.d_sep_aaa_minus_mlb),
+   style:r=>Math.abs(r.d_sep_aaa_minus_mlb)>1.5?"color:#B3151F;font-weight:700":""}]);
+table("tArs", D.arsenal, [{label:"Level",key:"level"},{label:"Pitch",key:"pitch_name"},
+  {label:"n",key:"n",num:true},{label:"Usage",num:true,get:r=>pct(r.usage)},
+  {label:"Velo",num:true,get:r=>f1(r.velo)},{label:"Max",num:true,get:r=>f1(r.velo_max)},
+  {label:"Spin",num:true,get:r=>f1(r.spin)},{label:"Ride",num:true,get:r=>f1(r.ivb_in)},
+  {label:"Horiz",num:true,get:r=>f1(r.hb_in)},{label:"In-zone",num:true,get:r=>pct(r.in_zone_rate)},
+  {label:"Whiff/sw",num:true,get:r=>pct(r.whiff_rate)},{label:"Chase",num:true,get:r=>pct(r.chase_rate)},
+  {label:"CSW",num:true,get:r=>pct(r.csw_rate)},{label:"Arm°",num:true,get:r=>f1(r.arm_angle)}]);
+
+/* ---------- FASTBALL ---------- */
+(function(){
+  const b = D.bench;
+  mk("cBench",{type:"bar",data:{labels:b.map(r=>r.note.split("—")[0].trim()),datasets:[
+    {label:"Painter percentile in pool",data:b.map(r=>r.painter_mlb_pctile),
+     backgroundColor:b.map(r=>r.painter_mlb_pctile<35?RED:NAVY)}]},
+    options:{indexAxis:"y",responsive:true,scales:{x:{min:0,max:100,
+      title:{display:true,text:"Percentile among 31 RHP (2026 Phillies games)"}}},
+    plugins:{legend:{display:false},tooltip:{callbacks:{
+      afterLabel:c=>{const r=b[c.dataIndex];
+        return `Painter MLB ${f3(r.painter_mlb)} · pool median ${f3(r.pool_median)} · AAA ${f3(r.painter_aaa)}`;}}}}}});
+  table("tBench", b, [{label:"Metric",key:"metric"},{label:"MLB",num:true,get:r=>f3(r.painter_mlb)},
+    {label:"AAA",num:true,get:r=>f3(r.painter_aaa)},{label:"Pool med",num:true,get:r=>f3(r.pool_median)},
+    {label:"Pool p75",num:true,get:r=>f3(r.pool_p75)},{label:"Pctile",num:true,
+     get:r=>f1(r.painter_mlb_pctile),style:r=>r.painter_mlb_pctile<35?"color:#B3151F;font-weight:700":""}]);
+  table("tFfloc", D.ffloc, [{label:"Cut",key:"cut"},{label:"Level",key:"level"},
+    {label:"Where",key:"loc_tier"},{label:"Pitches",key:"pitches",num:true},
+    {label:"Swings",key:"swings",num:true},{label:"Whiff/sw",num:true,get:r=>pct(r.whiff_rate)}]);
+
+  const tiers=["heart","shadow","chase","waste"], TC={heart:RED,shadow:NAVY,chase:"#1F77B4",waste:"#D9D9D9"};
+  const labs = [];
+  ["MLB","AAA"].forEach(L=>ORDER.forEach(p=>labs.push({L,p})));
+  mk("cLoc",{type:"bar",data:{labels:labs.map(o=>`${o.p.split(" ")[0]} (${o.L})`),
+    datasets:tiers.map(t=>({label:t,backgroundColor:TC[t],
+      data:labs.map(o=>{const r=D.loc.find(x=>x.level===o.L&&x.pitch_name===o.p&&x.loc_tier===t);return r?r.share:0;})}))},
+    options:{indexAxis:"y",responsive:true,scales:{x:{stacked:true,max:1,ticks:{callback:v=>(100*v).toFixed(0)+"%"}},
+      y:{stacked:true}},plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+": "+pct(c.raw)}}}}});
+})();
+
+/* ---------- DELIVERY ---------- */
+(function(){
+  const L = D.start_log.slice().sort((a,b)=>a.game_date<b.game_date?-1:1);
+  mk("cVelo",{type:"line",data:{labels:L.map(r=>r.game_date.slice(5)),datasets:[
+    {label:"4-seam velo (mph)",data:L.map(r=>r.ff_velo),yAxisID:"y",borderColor:NAVY,
+     backgroundColor:L.map(r=>r.level==="MLB"?NAVY:RED),pointRadius:5,borderWidth:2,tension:.2},
+    {label:"Extension (ft)",data:L.map(r=>r.ext_ft),yAxisID:"y1",borderColor:"#2CA02C",
+     borderDash:[5,4],pointRadius:3,borderWidth:2,tension:.2}]},
+    options:{responsive:true,scales:{
+      y:{position:"left",title:{display:true,text:"4-seam velocity (mph)"}},
+      y1:{position:"right",title:{display:true,text:"Extension (ft)"},grid:{drawOnChartArea:false}}},
+    plugins:{tooltip:{callbacks:{afterLabel:c=>`level: ${L[c.dataIndex].level}`}}}}});
+
+  const R = D.release.slice().sort((a,b)=>a.game_date<b.game_date?-1:1);
+  mk("cRel",{type:"line",data:{labels:R.map(r=>r.game_date.slice(5)),datasets:[
+    {label:"4-seam release-x (in)",data:R.map(r=>r.mean_x_ft_in),
+     borderColor:GRAY,borderWidth:2,tension:.15,pointRadius:6,
+     pointBackgroundColor:R.map(r=>Math.abs(r.mean_x_ft_in)<22?RED:(r.level==="MLB"?NAVY:"#1F77B4")),
+     pointBorderColor:"#fff",pointBorderWidth:1.5}]},
+    options:{responsive:true,scales:{y:{title:{display:true,text:"Mean horizontal release (inches)"}}},
+    plugins:{legend:{display:false},tooltip:{callbacks:{
+      afterLabel:c=>{const r=R[c.dataIndex];
+        return `${r.level} · ${r.ff_pitches} four-seams · RCI ${r.rci_in===null?"n/a":f2(r.rci_in)}"`;}}}}}});
+
+  const P = D.release_pitch;
+  mk("cArm",{type:"bar",data:{labels:ORDER,datasets:["MLB","AAA"].map((L2,i)=>({
+      label:L2,backgroundColor:i?RED:NAVY,
+      data:ORDER.map(p=>{const r=P.find(x=>x.level===L2&&x.pitch_name===p);return r?r.arm_angle:null;})}))},
+    options:{responsive:true,scales:{y:{title:{display:true,text:"Mean arm angle (degrees)"},min:30}},
+    plugins:{tooltip:{callbacks:{afterLabel:c=>{
+      const r=P.find(x=>x.level===c.dataset.label&&x.pitch_name===c.label)||{};
+      return `release-x ${f1(r.rel_x_ft*12)}"  ·  n=${r.n}`;}}}}}});
+
+  table("tSpread", D.spread, [{label:"Scope",key:"scope"},
+    {label:"Spread (°)",num:true,get:r=>f2(r.arm_spread_deg),style:()=>"color:#B3151F;font-weight:700"},
+    {label:"Pool median",num:true,get:r=>f2(r.pool_median)},{label:"Pool p90",num:true,get:r=>f2(r.pool_p90)},
+    {label:"Pool n",key:"pool_n",num:true},{label:"Pctile",num:true,get:r=>f1(r.pctile_high_is_worse)}]);
+})();
+
+/* ---------- PLATOON ---------- */
+function drawStand(){
+  const s = document.getElementById("selStand").value;
+  const rows = D.usage_stand.filter(r=>r.stand===s);
+  mk("cStand",{type:"bar",data:{labels:ORDER,datasets:["MLB","AAA"].map((L,i)=>({
+      label:L,backgroundColor:i?RED:NAVY,
+      data:ORDER.map(p=>{const r=rows.find(x=>x.level===L&&x.pitch_name===p);return r?r.usage:0;})}))},
+    options:{responsive:true,scales:{y:{beginAtZero:true,ticks:{callback:v=>(100*v).toFixed(0)+"%"}}},
+    plugins:{tooltip:{callbacks:{label:c=>{
+      const r=rows.find(x=>x.level===c.dataset.label&&x.pitch_name===c.label)||{};
+      return `${c.dataset.label}: ${pct(c.raw)}  (n=${r.n||0}, whiff ${r.whiff_rate!==undefined?pct(r.whiff_rate):"—"} on ${r.swings||0} sw)`;}}}}}});
+  table("tStand", rows, [{label:"Level",key:"level"},{label:"Pitch",key:"pitch_name"},
+    {label:"n",key:"n",num:true},{label:"Usage",num:true,get:r=>pct(r.usage)},
+    {label:"Swings",key:"swings",num:true},{label:"Whiff/sw",num:true,get:r=>pct(r.whiff_rate)}]);
+}
+document.getElementById("selStand").onchange = drawStand; drawStand();
+
+/* ---------- STARTS + GOVERNANCE ---------- */
+table("tStarts", D.start_log.slice().sort((a,b)=>a.game_date<b.game_date?-1:1), [
+  {label:"Level",key:"level",style:r=>`font-weight:700;color:${r.level==="MLB"?"#002D72":"#E81828"}`},
+  {label:"Date",key:"game_date"},{label:"Pitches",key:"pitches",num:true},
+  {label:"PA",key:"plate_apps",num:true},{label:"K",key:"strikeouts",num:true},
+  {label:"BB",key:"walks",num:true},{label:"Strike",num:true,get:r=>pct(r.strike_rate)},
+  {label:"CSW",num:true,get:r=>pct(r.csw_rate)},{label:"Whiff/sw",num:true,get:r=>pct(r.whiff_rate)},
+  {label:"Chase",num:true,get:r=>pct(r.chase_rate)},{label:"1st-pitch K",num:true,get:r=>pct(r.first_pitch_strike_rate)},
+  {label:"FF velo",num:true,get:r=>f1(r.ff_velo)},{label:"Max",num:true,get:r=>f1(r.ff_velo_max)},
+  {label:"Ext",num:true,get:r=>f2(r.ext_ft)},{label:"Upper-3rd",num:true,get:r=>pct(r.futr)}]);
+table("tDq", D.dq, [{label:"Check",key:"check"},{label:"Dimension",key:"dimension"},
+  {label:"Result",key:"result"},{label:"Status",get:r=>`<span class="pill ${r.status}">${r.status}</span>`},
+  {label:"Note",key:"note"}]);
+table("tFresh", D.fresh, [{label:"Source",key:"source"},{label:"Tier",key:"tier"},
+  {label:"Filter",key:"filter"},{label:"Rows",key:"rows",num:true},{label:"Window",key:"window"},
+  {label:"Starts",key:"starts",num:true},{label:"Fitness",key:"fitness"}]);
+
+/* ---------- NAV ---------- */
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => {
+  document.querySelectorAll("nav button").forEach(x=>x.classList.remove("on"));
+  document.querySelectorAll(".panel").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); document.getElementById(b.dataset.p).classList.add("on");
+  Object.values(charts).forEach(c=>c.resize());
+});
+</script></body></html>
