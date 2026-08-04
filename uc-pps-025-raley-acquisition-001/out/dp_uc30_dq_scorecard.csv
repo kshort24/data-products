@@ -1,0 +1,39 @@
+check,expected,actual,status,note
+entity lock: distinct pitcher ids in Raley frame,1,1,PASS,
+entity lock: pitcher id,548384,548384,PASS,
+entity lock: distinct player_name,1,1,PASS,
+entity lock: p_throws,L,L,PASS,
+game_type restricted to regular season,1,1,PASS,
+"dedup: duplicate (game_pk, at_bat, pitch) rows",0,0,PASS,
+Phillies rows in Raley frame (expected 0 — never pitched for PHI),0,0,PASS,"acquisition dossier, not an in-org self-scout"
+rows falling in REHAB GAP window,0,0,PASS,TJ rehab 2024-04-20 .. 2025-07-18; never interpolated
+coord: Phillies LHP mean release_pos_x > 0,>0,2.072,PASS,
+coord: Phillies RHP mean release_pos_x < 0,<0,-2.079,PASS,
+coord: HBP plate_x > 0 for LHH,>0,1.915,PASS,
+coord: HBP plate_x < 0 for RHH,<0,-2.198,PASS,
+pre-TJ pitches,>0,3162,PASS,
+post-TJ pitches,>0,1022,PASS,
+post-TJ BF (min 100 BF convention for published pitcher rates),>=100,269,PASS,
+untracked rows (automatic balls etc.) quarantined from usage/location,18,18,PASS,"excluded from mix + location, retained for PA outcomes"
+benchmark population size (Phillies LHP >= 300 pitches),>=20,28,PASS,
+Raley excluded from benchmark centroid (no circularity),True,True,PASS,
+RSA proxy correlates with native arm_angle (|r| >= 0.80),>=0.80,0.831,PASS,"if this fails, RSA must not be published as an arm-slot proxy"
+CDE completeness (post-TJ): release_speed,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): release_pos_x,>=0.95,0.996,PASS,
+CDE completeness (post-TJ): release_pos_z,>=0.95,0.996,PASS,
+CDE completeness (post-TJ): release_extension,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): pfx_x,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): pfx_z,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): release_spin_rate,reported,0.988,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): plate_x,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): plate_z,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): zone,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): stand,>=0.95,1.0,PASS,
+CDE completeness (post-TJ): description,>=0.95,1.0,PASS,
+CDE completeness (post-TJ): pitch_name,reported,0.996,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): arm_angle,reported,0.968,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): estimated_woba_using_speedangle,reported,0.26,PASS,non-blocking; coverage reported for transparency
+CDE completeness (post-TJ): launch_speed,reported,0.336,PASS,non-blocking; coverage reported for transparency
+xwOBAcon computed on BIP only (get_stats.xwoba quarantined),True,True,PASS,uc-pps-021 O1
+benchmark centroid excludes Raley,True,True,PASS,
+no pre-2020 (KBO) rows claimed as MLB evidence,0,0,PASS,

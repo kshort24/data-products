@@ -1,0 +1,39 @@
+stand,count_state,pitch_name,pitches,tot,usage
+L,ahead (pitcher ahead),Sweeper,25,47,0.532
+L,ahead (pitcher ahead),Cutter,15,47,0.319
+L,ahead (pitcher ahead),Sinker,7,47,0.149
+L,behind (hitter ahead),Sinker,39,76,0.513
+L,behind (hitter ahead),Cutter,25,76,0.329
+L,behind (hitter ahead),Sweeper,12,76,0.158
+L,even,Sweeper,15,39,0.385
+L,even,Sinker,13,39,0.333
+L,even,Cutter,10,39,0.256
+L,even,Changeup,1,39,0.026
+L,first pitch,Sinker,43,99,0.434
+L,first pitch,Cutter,35,99,0.354
+L,first pitch,Sweeper,20,99,0.202
+L,first pitch,Changeup,1,99,0.01
+L,two-strike,Sweeper,72,96,0.75
+L,two-strike,Sinker,10,96,0.104
+L,two-strike,Changeup,7,96,0.073
+L,two-strike,Cutter,7,96,0.073
+R,ahead (pitcher ahead),Changeup,39,103,0.379
+R,ahead (pitcher ahead),Sweeper,28,103,0.272
+R,ahead (pitcher ahead),Cutter,25,103,0.243
+R,ahead (pitcher ahead),Sinker,11,103,0.107
+R,behind (hitter ahead),Sweeper,52,124,0.419
+R,behind (hitter ahead),Cutter,37,124,0.298
+R,behind (hitter ahead),Sinker,32,124,0.258
+R,behind (hitter ahead),Changeup,3,124,0.024
+R,even,Cutter,25,68,0.368
+R,even,Changeup,22,68,0.324
+R,even,Sweeper,14,68,0.206
+R,even,Sinker,7,68,0.103
+R,first pitch,Sweeper,75,169,0.444
+R,first pitch,Sinker,56,169,0.331
+R,first pitch,Cutter,37,169,0.219
+R,first pitch,Changeup,1,169,0.006
+R,two-strike,Sweeper,88,197,0.447
+R,two-strike,Changeup,56,197,0.284
+R,two-strike,Cutter,40,197,0.203
+R,two-strike,Sinker,13,197,0.066

@@ -1,0 +1,4 @@
+seq_bucket,pitches,batters_faced,velo,whiff_rate,csw_rate,woba,k_rate,bb_rate,xwobacon,xwobacon_bip
+1st batter,282,75,85.03,0.277,0.309,0.26,0.307,0.067,0.336,45
+2nd batter,253,70,85.04,0.169,0.265,0.218,0.214,0.057,0.297,51
+3rd+ batter,487,124,84.85,0.208,0.302,0.239,0.218,0.089,0.297,82

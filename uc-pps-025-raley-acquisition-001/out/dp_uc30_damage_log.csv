@@ -1,0 +1,17 @@
+game_date,pitching_team,stand,pitch_name,release_speed,plate_x,plate_z,launch_speed,launch_angle,hit_distance_sc,events,balls,strikes,des
+2025-08-15,NYM,L,Sweeper,79.6,0.34,2.84,90.5,-1.0,43.0,double,1,1,Cole Young doubles (7) on a ground ball to right fielder Juan Soto. Mitch Garver scores. Dylan Moore scores.
+2025-08-15,NYM,R,Cutter,86.8,-0.35,2.41,96.9,32.0,350.0,double,0,1,Donovan Solano doubles (4) on a fly ball to left fielder Brandon Nimmo. Dominic Canzone scores. Mitch Garver to 3rd.
+2025-08-17,NYM,R,Sweeper,82.7,-0.03,2.04,99.3,18.0,270.0,double,1,2,Jorge Polanco doubles (15) on a line drive to left fielder Brandon Nimmo.
+2025-09-01,NYM,R,Changeup,83.6,0.96,2.22,81.2,17.0,202.0,double,2,2,Jahmai Jones doubles (9) on a line drive to left fielder Brandon Nimmo.
+2025-09-13,NYM,R,Sweeper,80.8,-0.2,2.13,95.4,28.0,337.0,double,0,1,Cody Freeman doubles (3) on a fly ball to left fielder Brandon Nimmo.
+2026-04-18,NYM,R,Cutter,86.7,-0.28,2.06,105.2,33.0,405.0,home_run,0,0,Carson Kelly homers (2) on a fly ball to left center field. Ian Happ scores. Seiya Suzuki scores.
+2026-05-12,NYM,L,Sweeper,81.1,0.16,2.84,92.9,18.0,212.0,double,1,1,Kevin McGonigle doubles (12) on a line drive to right fielder Carson Benge. Hao-Yu Lee to 3rd.
+2026-05-16,NYM,R,Sweeper,82.1,-0.77,2.53,87.5,15.0,180.0,double,1,0,Aaron Judge doubles (8) on a line drive to left fielder Juan Soto.
+2026-05-18,NYM,L,Sweeper,81.3,0.01,2.83,104.7,18.0,271.0,double,1,1,James Wood doubles (13) on a sharp line drive to right fielder Carson Benge.
+2026-06-01,NYM,L,Sweeper,81.4,-0.24,2.42,99.3,35.0,373.0,home_run,3,2,Josh Naylor homers (6) on a fly ball to right field.
+2026-06-12,NYM,R,Sweeper,80.2,0.13,2.46,110.5,18.0,321.0,double,2,2,Austin Riley doubles (11) on a sharp line drive to left fielder Juan Soto. Ozzie Albies to 3rd.
+2026-06-17,NYM,R,Sweeper,81.4,-0.25,2.33,107.0,15.0,218.0,double,1,2,Sal Stewart doubles (14) on a line drive to left fielder Juan Soto. JJ Bleday to 3rd.
+2026-06-24,NYM,R,Sinker,89.7,0.37,2.84,96.4,33.0,371.0,triple,2,0,Dansby Swanson triples (2) on a fly ball to center fielder A.J. Ewing. Pedro Ramírez scores.
+2026-06-24,NYM,R,Sweeper,79.1,1.14,1.48,68.7,23.0,182.0,double,0,2,Pedro Ramírez doubles (3) on a line drive to right fielder Brett Baty.
+2026-06-25,NYM,L,Sinker,89.0,0.01,2.13,106.7,13.0,234.0,double,1,0,Pete Crow-Armstrong doubles (13) on a sharp line drive to right fielder Carson Benge. Matt Shaw scores.
+2026-07-08,NYM,R,Sweeper,80.8,0.24,2.5,103.5,20.0,351.0,double,1,0,Lane Thomas doubles (14) on a sharp line drive to center fielder A.J. Ewing.

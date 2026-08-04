@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-08-04",
+  "uc": "uc-pps-025",
+  "build": "dp_uc30",
+  "pitcher_id": 548384,
+  "cache_max_date": "2026-08-02",
+  "dq_pass": 38,
+  "dq_total": 38,
+  "n_bench_lhp": 28,
+  "receipts": [
+    "arsenal_by_era",
+    "arsenal_post_tj",
+    "batter_sequence",
+    "count_usage",
+    "damage_log",
+    "deployment",
+    "dq_scorecard",
+    "era_summary",
+    "freshness_manifest",
+    "lhp_release_benchmark",
+    "monthly_arc",
+    "outing_log",
+    "pitch_by_hand",
+    "platoon",
+    "release_by_pitch",
+    "rest_workload",
+    "rsa_calibration",
+    "season_log",
+    "sightline",
+    "tracking_proxies",
+    "two_strike"
+  ]
+}

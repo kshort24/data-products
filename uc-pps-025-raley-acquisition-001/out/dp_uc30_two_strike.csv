@@ -1,0 +1,7 @@
+bats,pitch_name,two_strike_pitches,share_of_two_strike,whiff_rate,putaway_rate,chase_rate,in_zone_rate
+L,Sweeper,72,0.75,0.386,0.264,0.429,0.319
+L,Sinker,10,0.104,0.143,0.1,0.5,0.6
+R,Sweeper,88,0.447,0.115,0.239,0.314,0.602
+R,Changeup,56,0.284,0.194,0.125,0.467,0.196
+R,Cutter,40,0.203,0.48,0.3,0.4,0.375
+R,Sinker,13,0.066,0.143,0.154,0.286,0.462

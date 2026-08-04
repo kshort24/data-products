@@ -1,0 +1,5 @@
+source,role,entity_lock,filter,rows_after_lock,window,as_of,lag_days,fitness
+data/opponents/raley.parquet,subject,pitcher == 548384,game_type == 'R',4184.0,2020-07-24 .. 2026-08-02,2026-08-04,2.0,FIT — full Statcast-era MLB record; KBO 2015-19 is a recorded gap
+data/phillies/phils_2015..2026.parquet,benchmark,phillies_role == 'pitching' & p_throws == 'L',game_type == 'R'; >= 300 tracked pitches,65182.0,2015 .. 2026,2026-08-04,,FIT for release geometry; native arm_angle only 2025-26 — hence the RSA proxy
+wOBA and FIP Constants.csv,weights,Season join,n/a,,season constants,2026-08-04,,FIT — FanGraphs season weights
+MANUAL CARRY-IN,context,n/a,trade-deadline acquisition; no PHI role assigned as of build,,2026-08-04,2026-08-04,,Not machine-verified. Cache shows NYM through 2026-08-02.
