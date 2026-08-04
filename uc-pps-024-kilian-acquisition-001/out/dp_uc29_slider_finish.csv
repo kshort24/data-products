@@ -1,0 +1,7 @@
+stand,h_side,pitches,swings,whiffs,bip,avg_ev,xwobacon,hr,whiff_rate,share_of_sliders,excluded_null_loc
+L,arm side,8.0,4.0,3.0,0.0,,,0.0,0.75,0.242,0
+L,glove side,20.0,11.0,5.0,2.0,61.7,0.094,0.0,0.455,0.606,0
+L,middle,5.0,4.0,0.0,1.0,104.9,0.717,0.0,0.0,0.152,0
+R,arm side,15.0,10.0,3.0,5.0,98.42,0.868,3.0,0.3,0.246,0
+R,glove side,32.0,14.0,8.0,4.0,78.375,0.162,0.0,0.571,0.525,0
+R,middle,14.0,11.0,4.0,5.0,94.28,0.281,0.0,0.364,0.23,0

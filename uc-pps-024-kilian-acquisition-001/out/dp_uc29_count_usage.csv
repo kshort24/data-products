@@ -1,0 +1,9 @@
+stand,count_state,4-Seam Fastball,Knuckle Curve,Sinker,Slider,pitches
+L,0-0,0.55,0.312,0.083,0.055,109
+L,ahead/even,0.5,0.354,0.052,0.094,96
+L,behind,0.56,0.202,0.155,0.083,84
+L,two strikes,0.507,0.366,0.045,0.082,134
+R,0-0,0.524,0.098,0.244,0.134,82
+R,ahead/even,0.386,0.086,0.2,0.329,70
+R,behind,0.522,0.058,0.275,0.145,69
+R,two strikes,0.381,0.333,0.083,0.202,84

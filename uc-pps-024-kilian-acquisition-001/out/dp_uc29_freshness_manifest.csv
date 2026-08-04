@@ -1,0 +1,5 @@
+source,tier,rows_after_filter,window,as_of,lag_days,fitness
+data/opponents/kilian.parquet,MLB — both eras,1271.0,2022-06-04 .. 2026-08-01,2026-08-04,3.0,"FIT — full Hawk-Eye tracking >=98%; batted-ball quality ~31%, used directionally only"
+(none),2025 MiLB (Sacramento),0.0,n/a,2026-08-04,,"ABSENT — recorded true gap; no interpolation, no supporting tier"
+(none),Phillies rows for pitcher 668873,0.0,n/a,2026-08-04,,ABSENT — never pitched for the organisation; opponent dimension descoped as non-blocking
+manual carry-in,Roster / role context,,2026 deadline,2026-08-04,,"MANUAL — acquisition and intended role supplied by DPO, not derived from Statcast"

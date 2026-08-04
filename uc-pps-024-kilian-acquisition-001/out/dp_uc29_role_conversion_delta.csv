@@ -1,0 +1,11 @@
+kpi,prior_2022_24_start,current_2026_relief,delta,favourable_direction,improved,prior_PA,current_PA,prior_below_threshold
+K%,0.152,0.275,0.122,+,True,138,193,False
+BB%,0.138,0.093,-0.044,-,True,138,193,False
+Whiff%,0.177,0.288,0.111,+,True,138,193,False
+Chase%,0.211,0.32,0.109,+,True,138,193,False
+Zone%,0.477,0.486,0.009,+,True,138,193,False
+CSW%,0.217,0.296,0.079,+,True,138,193,False
+Putaway%,0.136,0.243,0.107,+,True,138,193,False
+1st-pitch strike%,0.587,0.632,0.045,+,True,138,193,False
+Hard-hit%,0.462,0.356,-0.106,-,True,138,193,False
+xwOBAcon,0.37,0.346,-0.024,-,True,138,193,False

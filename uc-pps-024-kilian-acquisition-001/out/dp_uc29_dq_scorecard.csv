@@ -1,0 +1,33 @@
+check,dimension,scope,value,threshold,status
+completeness::release_speed,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::release_spin_rate,Completeness,2026 tier / all pitches,0.9878,>= 0.95 (tracking),PASS
+completeness::pfx_x,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::pfx_z,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::plate_x,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::plate_z,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::sz_top,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::sz_bot,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::release_extension,Completeness,2026 tier / all pitches,0.9837,>= 0.95 (tracking),PASS
+completeness::arm_angle,Completeness,2026 tier / all pitches,0.9837,>= 0.95 (tracking),PASS
+completeness::zone,Completeness,2026 tier / all pitches,0.9891,>= 0.95 (tracking),PASS
+completeness::description,Completeness,2026 tier / all pitches,1.0,>= 0.95 (tracking),PASS
+completeness::stand,Completeness,2026 tier / all pitches,1.0,>= 0.95 (tracking),PASS
+completeness::launch_speed,Completeness,2026 tier / balls in play only,0.9915,>= 0.95 of BIP (contact-defined field),PASS
+completeness::estimated_woba_using_speedangle,Completeness,2026 tier / balls in play only,0.9746,>= 0.95 of BIP (contact-defined field),PASS
+completeness::launch_angle,Completeness,2026 tier / balls in play only,0.9915,>= 0.95 of BIP (contact-defined field),PASS
+completeness::events,Completeness,2026 tier / all pitches,0.2622,n/a — defined only on PA-terminal pitches,PASS — event-terminal by design; 193 events over 193 PAs
+"completeness::bat_speed (swing-side, informational)",Completeness,2026 tier,0.4647,informational — not used in any published KPI,PASS — excluded from all KPIs
+xwOBAcon::BIP-only (uc-pps-021 O1 hardening applied),Accuracy,2026 tier,118,pitch-level get_stats.xwoba must not be published,PASS — quarantined column never cited; xwobacon() used
+population::untracked automatic_ball rows identified,Validity,2026 tier,8,all null-pitch_name rows explained,"PASS — all 8 are description=='automatic_ball' (pitch-timer violations, no pitch thrown)"
+population::tracked pitches (pitch-mix + location denominator),Consistency,2026 tier,728,== total - automatic_ball,PASS — 728 tracked of 736 total
+zone_rate::locked in_zone_rate inflated by untracked rows (O2),Accuracy,2026 tier,0.0052,locked fn counts null zone as in-zone; publish strict variant,WARN — locked 0.4860 vs strict 0.4808; report publishes STRICT. Locked function left unmodified per inheritance rule. Tracked as O2.
+launch_speed::populated on non-BIP foul rows,Accuracy,2026 tier,114,all EV means must filter type=='X',PASS — 114 foul rows carry launch_speed; every published EV mean filters to balls in play
+entity_lock::pitcher==668873,Validity,all,1,== 1,PASS
+dedup::game_pk+at_bat+pitch,Uniqueness,all,0,== 0,PASS
+game_type::regular season only,Validity,all,R,== R,PASS
+gap::2025 absent (no MLB service),Consistency,all,0,== 0,"PASS — recorded true gap, never interpolated"
+orientation::sinker pfx_x<0 (arm side),Accuracy,2026 tier,-1.1,< 0,PASS
+orientation::slider pfx_x>0 (glove side),Accuracy,2026 tier,0.423,> 0,PASS
+sample::2026 BF >= 100 (publish threshold),Accuracy,2026 tier,193,>= 100,PASS
+sample::prior-era BF >= 100,Accuracy,2022-24 tier,138,>= 100,PASS — but 8 outings only; directional
+sample::slider vs RHH cell sizes,Accuracy,2026 tier,61,flag if < 100,WARN — 61 pitches; report as directional
