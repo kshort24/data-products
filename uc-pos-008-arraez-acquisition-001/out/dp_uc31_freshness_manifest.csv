@@ -1,0 +1,5 @@
+source,rows,min_date,max_date,entity,note
+data/opponents/arraez.parquet,15228,2019-05-18,2026-08-02,batter==650333,"regular season, deduped"
+data/phillies/phils_2026.parquet,16269,2026-03-26,2026-08-02,phillies_role=='batting',2026 comparison set
+wOBA and FIP Constants.csv,156,1871,2026,season weights,joined on game_year
+MANUAL CARRY-IN,0,,,roster/lineup context,"deadline acquisition; Mattingly cleanup decision; Harper to OF — user-provided, not in pitch log"

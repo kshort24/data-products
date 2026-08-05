@@ -1,0 +1,40 @@
+receipt,rows,cols,file,note
+a1_season_line,8,22,dp_uc31_a1_season_line.csv,"Season slash line; 2026 = primary, prior = shadow"
+a2_wrc,8,8,dp_uc31_a2_wrc.csv,SC-1 wRC / wRC+ approximation by season
+a3_pitches_per_pa,8,4,dp_uc31_a3_pitches_per_pa.csv,SC-2 P/PA — tests the 'wild at-bats' claim
+a4_window_headline,2,23,dp_uc31_a4_window_headline.csv,"Primary vs shadow headline; PA-spine computation, independent of get_stats"
+b1_discipline,8,10,dp_uc31_b1_discipline.csv,Swing/chase/contact panel by season
+b2_batted_ball,8,16,dp_uc31_b2_batted_ball.csv,Contact quality by season; xwoba_con_n is the honest denominator (O4)
+b3_spray,8,8,dp_uc31_b3_spray.csv,Spray distribution by season
+b4_bat_tracking,4,7,dp_uc31_b4_bat_tracking.csv,"Bat tracking, 2024+ only"
+b5_running_line,927,9,dp_uc31_b5_running_line.csv,RF-1 cumulative OPS trajectory
+c1_two_strike_by_year,8,17,dp_uc31_c1_two_strike_by_year.csv,AR-1 TSSR + AR-2 two-strike damage line by season
+c2_two_strike_economy,8,10,dp_uc31_c2_two_strike_economy.csv,How he survives two strikes: swing/foul/take economy
+c3_two_strike_vs_phillies,11,17,dp_uc31_c3_two_strike_vs_phillies.csv,AR-1/AR-2 benchmark: Arraez vs 2026 Phillies regulars (>=150 PA)
+d1_group_x_hand_2026,6,22,dp_uc31_d1_group_x_hand_2026.csv,"AR-3, primary window"
+d2_group_x_hand_career,6,22,dp_uc31_d2_group_x_hand_career.csv,"AR-3, full history — shadow only"
+d3_pitch_type_2026,8,13,dp_uc31_d3_pitch_type_2026.csv,"Pitch-type detail, primary window"
+d4_by_hand_2026,2,23,dp_uc31_d4_by_hand_2026.csv,"Overall platoon split, primary"
+e1_context_2026,3,26,dp_uc31_e1_context_2026.csv,"AR-4 by base context, primary"
+e2_context_by_year,24,27,dp_uc31_e2_context_by_year.csv,AR-4 by season — stability check
+e3_base_out_2026,15,25,dp_uc31_e3_base_out_2026.csv,"Base-out detail, primary"
+f1_slot_opportunity,9,14,dp_uc31_f1_slot_opportunity.csv,"AR-5 per-slot opportunity profile, 2026 Phillies"
+f2_slot_occupancy,48,25,dp_uc31_f2_slot_occupancy.csv,"Who actually hit where in 2026, with their line"
+f3_context_profiles,33,6,dp_uc31_f3_context_profiles.csv,AR-6 input: context-specific RE24/PA per hitter
+f4_slot_context_weights,27,3,dp_uc31_f4_slot_context_weights.csv,"AR-6 input: W(slot, context) from 2026 PHI"
+f5_sprc,99,8,dp_uc31_f5_sprc.csv,AR-6 Slot-Projected Run Contribution
+f6_table_setting,9,9,dp_uc31_f6_table_setting.csv,AR-7 (a) supply / (b) realisation by slot
+f8_table_setting_supply,9,13,dp_uc31_f8_table_setting_supply.csv,AR-7 extension: baserunner supply delta by slot x what the next two slots extract
+e4_spcr_vs_phillies,11,17,dp_uc31_e4_spcr_vs_phillies.csv,"AR-4 benchmark: RISP line + SPCR, Arraez vs 2026 Phillies regulars"
+g1_league_reference,9,11,dp_uc31_g1_league_reference.csv,"League reference, max year 2023. Explicitly not a primary-window benchmark"
+f9_observed_top_of_order,11,25,dp_uc31_f9_observed_top_of_order.csv,"Observed 2026 slot occupancy, slots 1-4. Consumer premise said Schwarber leads off; the log says Turner. Conflict escalated to DPO, not resolved here."
+f7_swap_scenario,35,6,dp_uc31_f7_swap_scenario.csv,AR-6 headline. Both lineup framings priced; premise conflict unresolved by design
+fig1_two_strike_survival,0,0,dp_uc31_fig1_two_strike_survival.png,figure — numbers trace to CSV receipts
+fig2_damage_group_hand,0,0,dp_uc31_fig2_damage_group_hand.png,figure — numbers trace to CSV receipts
+fig3_woba_vs_xwoba,0,0,dp_uc31_fig3_woba_vs_xwoba.png,figure — numbers trace to CSV receipts
+fig4_spcr_benchmark,0,0,dp_uc31_fig4_spcr_benchmark.png,figure — numbers trace to CSV receipts
+fig5_slot_decision,0,0,dp_uc31_fig5_slot_decision.png,figure — numbers trace to CSV receipts
+fig6_table_setting_supply,0,0,dp_uc31_fig6_table_setting_supply.png,figure — numbers trace to CSV receipts
+fig7_table_setting_cashed,0,0,dp_uc31_fig7_table_setting_cashed.png,figure — numbers trace to CSV receipts
+dq_scorecard,24,5,dp_uc31_dq_scorecard.csv,Build-time DQ assertions
+freshness_manifest,4,6,dp_uc31_freshness_manifest.csv,Data window and manual carry-ins

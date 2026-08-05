@@ -1,0 +1,369 @@
+check_id,description,recomputed,published,result
+V-001,Arraez rows are one batter id,1,1,PASS
+V-002,Entity id is 650333,650333,650333,PASS
+V-003,No duplicate pitch keys,0,0,PASS
+V-004,Regular-season pitch count,15228,15228,PASS
+V-005,2026 pitch count,1727,1727,PASS
+V-006,Cache max date,2026-08-02,2026-08-02,PASS
+V-007,All rows stand == L,0,0,PASS
+V-008,PHI comparison rows are 2026 only,0,0,PASS
+V-009a,2026 primary window has zero truncated_pa,0,0,PASS
+V-009b,truncated_pa confined to shadow years only,"[2021, 2025]","[2021, 2025]",PASS
+V-009-2019,2019 locked PA - strict PA == truncated_pa count,0,0,PASS
+V-010-2019,2019 PA,366,366,PASS
+V-011-2019,2019 AB,326,326,PASS
+V-012-2019,2019 H,109,109,PASS
+V-013-2019,2019 HR,4,4,PASS
+V-014-2019,2019 BB,35,35,PASS
+V-015-2019,2019 K,29,29,PASS
+V-016-2019,2019 BA,0.3344,0.3344,PASS
+V-017-2019,2019 SLG,0.4387,0.4387,PASS
+V-018-2019,2019 OBP,0.3962,0.3962,PASS
+V-019-2019,2019 K%,0.0792,0.0792,PASS
+V-009-2020,2020 locked PA - strict PA == truncated_pa count,0,0,PASS
+V-010-2020,2020 PA,121,121,PASS
+V-011-2020,2020 AB,112,112,PASS
+V-012-2020,2020 H,36,36,PASS
+V-013-2020,2020 HR,0,0,PASS
+V-014-2020,2020 BB,8,8,PASS
+V-015-2020,2020 K,11,11,PASS
+V-016-2020,2020 BA,0.3214,0.3214,PASS
+V-017-2020,2020 SLG,0.4018,0.4018,PASS
+V-018-2020,2020 OBP,0.3636,0.3636,PASS
+V-019-2020,2020 K%,0.0909,0.0909,PASS
+V-009-2021,2021 locked PA - strict PA == truncated_pa count,1,1,PASS
+V-010-2021,2021 PA,480,480,PASS
+V-011-2021,2021 AB,430,430,PASS
+V-012-2021,2021 H,126,126,PASS
+V-013-2021,2021 HR,2,2,PASS
+V-014-2021,2021 BB,41,41,PASS
+V-015-2021,2021 K,48,48,PASS
+V-016-2021,2021 BA,0.293,0.293,PASS
+V-017-2021,2021 SLG,0.3744,0.3744,PASS
+V-018-2021,2021 OBP,0.3521,0.3521,PASS
+V-019-2021,2021 K%,0.1,0.1,PASS
+V-009-2022,2022 locked PA - strict PA == truncated_pa count,0,0,PASS
+V-010-2022,2022 PA,603,603,PASS
+V-011-2022,2022 AB,547,547,PASS
+V-012-2022,2022 H,173,173,PASS
+V-013-2022,2022 HR,8,8,PASS
+V-014-2022,2022 BB,48,48,PASS
+V-015-2022,2022 K,43,43,PASS
+V-016-2022,2022 BA,0.3163,0.3163,PASS
+V-017-2022,2022 SLG,0.4205,0.4205,PASS
+V-018-2022,2022 OBP,0.3715,0.3715,PASS
+V-019-2022,2022 K%,0.0713,0.0713,PASS
+V-009-2023,2023 locked PA - strict PA == truncated_pa count,0,0,PASS
+V-010-2023,2023 PA,617,617,PASS
+V-011-2023,2023 AB,574,574,PASS
+V-012-2023,2023 H,203,203,PASS
+V-013-2023,2023 HR,10,10,PASS
+V-014-2023,2023 BB,25,25,PASS
+V-015-2023,2023 K,34,34,PASS
+V-016-2023,2023 BA,0.3537,0.3537,PASS
+V-017-2023,2023 SLG,0.4686,0.4686,PASS
+V-018-2023,2023 OBP,0.376,0.376,PASS
+V-019-2023,2023 K%,0.0551,0.0551,PASS
+V-009-2024,2024 locked PA - strict PA == truncated_pa count,0,0,PASS
+V-010-2024,2024 PA,672,672,PASS
+V-011-2024,2024 AB,637,637,PASS
+V-012-2024,2024 H,200,200,PASS
+V-013-2024,2024 HR,4,4,PASS
+V-014-2024,2024 BB,21,21,PASS
+V-015-2024,2024 K,29,29,PASS
+V-016-2024,2024 BA,0.314,0.314,PASS
+V-017-2024,2024 SLG,0.3925,0.3925,PASS
+V-018-2024,2024 OBP,0.3408,0.3408,PASS
+V-019-2024,2024 K%,0.0432,0.0432,PASS
+V-009-2025,2025 locked PA - strict PA == truncated_pa count,2,2,PASS
+V-010-2025,2025 PA,677,677,PASS
+V-011-2025,2025 AB,622,622,PASS
+V-012-2025,2025 H,181,181,PASS
+V-013-2025,2025 HR,8,8,PASS
+V-014-2025,2025 BB,34,34,PASS
+V-015-2025,2025 K,21,21,PASS
+V-016-2025,2025 BA,0.291,0.291,PASS
+V-017-2025,2025 SLG,0.3907,0.3907,PASS
+V-018-2025,2025 OBP,0.3205,0.3205,PASS
+V-019-2025,2025 K%,0.031,0.031,PASS
+V-009-2026,2026 locked PA - strict PA == truncated_pa count,0,0,PASS
+V-010-2026,2026 PA,464,464,PASS
+V-011-2026,2026 AB,420,420,PASS
+V-012-2026,2026 H,136,136,PASS
+V-013-2026,2026 HR,4,4,PASS
+V-014-2026,2026 BB,21,21,PASS
+V-015-2026,2026 K,21,21,PASS
+V-016-2026,2026 BA,0.3238,0.3238,PASS
+V-017-2026,2026 SLG,0.4405,0.4405,PASS
+V-018-2026,2026 OBP,0.347,0.347,PASS
+V-019-2026,2026 K%,0.0453,0.0453,PASS
+V-020-2025,2025 swing rate,0.4935,0.4935,PASS
+V-021-2025,2025 whiff rate,0.0525,0.0525,PASS
+V-022-2025,2025 chase rate,0.3415,0.3415,PASS
+V-023-2025,2025 z-contact,0.9588,0.9588,PASS
+V-024-2025,2025 BIP count,618,618,PASS
+V-025-2025,2025 avg EV,84.7107,84.7107,PASS
+V-026-2025,2025 hard-hit,0.1667,0.1667,PASS
+V-027-2025,2025 barrel,0.0113,0.0113,PASS
+V-028-2025,2025 xwOBAcon n (O4 guard),602,602,PASS
+V-020-2026,2026 swing rate,0.4887,0.4887,PASS
+V-021-2026,2026 whiff rate,0.0794,0.0794,PASS
+V-022-2026,2026 chase rate,0.3213,0.3213,PASS
+V-023-2026,2026 z-contact,0.934,0.934,PASS
+V-024-2026,2026 BIP count,414,414,PASS
+V-025-2026,2026 avg EV,86.0184,86.0184,PASS
+V-026-2026,2026 hard-hit,0.2029,0.2029,PASS
+V-027-2026,2026 barrel,0.0072,0.0072,PASS
+V-028-2026,2026 xwOBAcon n (O4 guard),408,408,PASS
+V-030-2024,2024 PA reaching 2K,291,291,PASS
+V-031-2024,2024 K in 2K,29,29,PASS
+V-032-2024,2024 TSSR,0.9003,0.9003,PASS
+V-033-2024,2024 hits in 2K,74,74,PASS
+V-034-2024,2024 BA in 2K,0.2691,0.2691,PASS
+V-035-2024,2024 SLG in 2K,0.3418,0.3418,PASS
+V-030-2025,2025 PA reaching 2K,285,285,PASS
+V-031-2025,2025 K in 2K,21,21,PASS
+V-032-2025,2025 TSSR,0.9263,0.9263,PASS
+V-033-2025,2025 hits in 2K,78,78,PASS
+V-034-2025,2025 BA in 2K,0.2868,0.2868,PASS
+V-035-2025,2025 SLG in 2K,0.375,0.375,PASS
+V-030-2026,2026 PA reaching 2K,213,213,PASS
+V-031-2026,2026 K in 2K,21,21,PASS
+V-032-2026,2026 TSSR,0.9014,0.9014,PASS
+V-033-2026,2026 hits in 2K,53,53,PASS
+V-034-2026,2026 BA in 2K,0.2637,0.2637,PASS
+V-035-2026,2026 SLG in 2K,0.3333,0.3333,PASS
+V-040-650333,Luis Arraez TSSR,0.9014,0.9014,PASS
+V-041-650333,Luis Arraez 2K hits,53,53,PASS
+V-040-681082,Bryson Stott TSSR,0.6696,0.6696,PASS
+V-041-681082,Bryson Stott 2K hits,47,47,PASS
+V-040-664761,Alec Bohm TSSR,0.6545,0.6545,PASS
+V-041-664761,Alec Bohm 2K hits,26,26,PASS
+V-040-624641,Edmundo Sosa TSSR,0.6455,0.6455,PASS
+V-041-624641,Edmundo Sosa 2K hits,18,18,PASS
+V-040-702222,Justin Crawford TSSR,0.6272,0.6272,PASS
+V-041-702222,Justin Crawford 2K hits,31,31,PASS
+V-040-592663,J.T. Realmuto TSSR,0.6235,0.6235,PASS
+V-041-592663,J.T. Realmuto 2K hits,26,26,PASS
+V-040-547180,Bryce Harper TSSR,0.5861,0.5861,PASS
+V-041-547180,Bryce Harper 2K hits,37,37,PASS
+V-040-607208,Trea Turner TSSR,0.581,0.581,PASS
+V-041-607208,Trea Turner 2K hits,36,36,PASS
+V-040-666969,Adolis García TSSR,0.4878,0.4878,PASS
+V-041-666969,Adolis García 2K hits,24,24,PASS
+V-040-669016,Brandon Marsh TSSR,0.4837,0.4837,PASS
+V-041-669016,Brandon Marsh 2K hits,30,30,PASS
+V-040-656941,Kyle Schwarber TSSR,0.4301,0.4301,PASS
+V-041-656941,Kyle Schwarber 2K hits,30,30,PASS
+V-042,Arraez has the best TSSR on the roster,Luis Arraez,Luis Arraez,PASS
+V-050-breaking-L,breaking-L PA ended,26,26,PASS
+V-051-breaking-L,breaking-L SLG,0.5,0.5,PASS
+V-052-breaking-L,breaking-L BA,0.2917,0.2917,PASS
+V-053-breaking-L,breaking-L BIP,25,25,PASS
+V-054-breaking-L,breaking-L hard-hit,0.08,0.08,PASS
+V-055-breaking-L,breaking-L pitches seen,143,143,PASS
+V-050-breaking-R,breaking-R PA ended,68,68,PASS
+V-051-breaking-R,breaking-R SLG,0.45,0.45,PASS
+V-052-breaking-R,breaking-R BA,0.3167,0.3167,PASS
+V-053-breaking-R,breaking-R BIP,59,59,PASS
+V-054-breaking-R,breaking-R hard-hit,0.1695,0.1695,PASS
+V-055-breaking-R,breaking-R pitches seen,248,248,PASS
+V-050-fastball-L,fastball-L PA ended,109,109,PASS
+V-051-fastball-L,fastball-L SLG,0.4,0.4,PASS
+V-052-fastball-L,fastball-L BA,0.32,0.32,PASS
+V-053-fastball-L,fastball-L BIP,93,93,PASS
+V-054-fastball-L,fastball-L hard-hit,0.1613,0.1613,PASS
+V-055-fastball-L,fastball-L pitches seen,344,344,PASS
+V-050-fastball-R,fastball-R PA ended,202,202,PASS
+V-051-fastball-R,fastball-R SLG,0.4811,0.4811,PASS
+V-052-fastball-R,fastball-R BA,0.3622,0.3622,PASS
+V-053-fastball-R,fastball-R BIP,187,187,PASS
+V-054-fastball-R,fastball-R hard-hit,0.2567,0.2567,PASS
+V-055-fastball-R,fastball-R pitches seen,781,781,PASS
+V-050-offspeed-L,offspeed-L PA ended,5,5,PASS
+V-051-offspeed-L,offspeed-L SLG,1.3333,1.3333,PASS
+V-052-offspeed-L,offspeed-L BA,0.3333,0.3333,PASS
+V-053-offspeed-L,offspeed-L BIP,4,4,PASS
+V-054-offspeed-L,offspeed-L hard-hit,0.5,0.5,PASS
+V-055-offspeed-L,offspeed-L pitches seen,19,19,PASS
+V-050-offspeed-R,offspeed-R PA ended,50,50,PASS
+V-051-offspeed-R,offspeed-R SLG,0.2708,0.2708,PASS
+V-052-offspeed-R,offspeed-R BA,0.2083,0.2083,PASS
+V-053-offspeed-R,offspeed-R BIP,46,46,PASS
+V-054-offspeed-R,offspeed-R hard-hit,0.1522,0.1522,PASS
+V-055-offspeed-R,offspeed-R pitches seen,175,175,PASS
+V-056,Thin-sample flag set only below 15 BIP,0,0,PASS
+V-060,RISP PA count,89,89,PASS
+V-061,RISP runners faced,108,108,PASS
+V-062,RISP runners scored,37.0,37.0,PASS
+V-063,SPCR,0.3426,0.3426,PASS
+V-064,RISP strikeouts,1,1,PASS
+V-065,RISP BA,0.3824,0.3824,PASS
+V-066,Context PA sums to season PA,464,464,PASS
+V-070-650333,Luis Arraez SPCR,0.3426,0.3426,PASS
+V-071-650333,Luis Arraez RISP PA,89,89,PASS
+V-070-681082,Bryson Stott SPCR,0.3017,0.3017,PASS
+V-071-681082,Bryson Stott RISP PA,97,97,PASS
+V-070-664761,Alec Bohm SPCR,0.2958,0.2958,PASS
+V-071-664761,Alec Bohm RISP PA,113,113,PASS
+V-070-624641,Edmundo Sosa SPCR,0.2857,0.2857,PASS
+V-071-624641,Edmundo Sosa RISP PA,50,50,PASS
+V-070-669016,Brandon Marsh SPCR,0.2821,0.2821,PASS
+V-071-669016,Brandon Marsh RISP PA,94,94,PASS
+V-070-702222,Justin Crawford SPCR,0.2692,0.2692,PASS
+V-071-702222,Justin Crawford RISP PA,81,81,PASS
+V-070-547180,Bryce Harper SPCR,0.2689,0.2689,PASS
+V-071-547180,Bryce Harper RISP PA,102,102,PASS
+V-070-607208,Trea Turner SPCR,0.2054,0.2054,PASS
+V-071-607208,Trea Turner RISP PA,92,92,PASS
+V-070-592663,J.T. Realmuto SPCR,0.2039,0.2039,PASS
+V-071-592663,J.T. Realmuto RISP PA,84,84,PASS
+V-070-666969,Adolis García SPCR,0.1806,0.1806,PASS
+V-071-666969,Adolis García RISP PA,57,57,PASS
+V-070-656941,Kyle Schwarber SPCR,0.15,0.15,PASS
+V-071-656941,Kyle Schwarber RISP PA,87,87,PASS
+V-080,PHI games,112,112,PASS
+V-081,Every game has 9 slots,0,0,PASS
+V-082,First 9 PA are 9 distinct batters in every game,0,0,PASS
+V-090-1,slot 1 PA,512,512,PASS
+V-091-1,slot 1 PA/g,4.5714,4.5714,PASS
+V-092-1,slot 1 RISP share,0.1758,0.1758,PASS
+V-093-1,slot 1 men-on share,0.3242,0.3242,PASS
+V-090-2,slot 2 PA,498,498,PASS
+V-091-2,slot 2 PA/g,4.4464,4.4464,PASS
+V-092-2,slot 2 RISP share,0.2028,0.2028,PASS
+V-093-2,slot 2 men-on share,0.3936,0.3936,PASS
+V-090-3,slot 3 PA,482,482,PASS
+V-091-3,slot 3 PA/g,4.3036,4.3036,PASS
+V-092-3,slot 3 RISP share,0.2178,0.2178,PASS
+V-093-3,slot 3 men-on share,0.4149,0.4149,PASS
+V-090-4,slot 4 PA,477,477,PASS
+V-091-4,slot 4 PA/g,4.2589,4.2589,PASS
+V-092-4,slot 4 RISP share,0.2495,0.2495,PASS
+V-093-4,slot 4 men-on share,0.478,0.478,PASS
+V-090-5,slot 5 PA,466,466,PASS
+V-091-5,slot 5 PA/g,4.1607,4.1607,PASS
+V-092-5,slot 5 RISP share,0.2425,0.2425,PASS
+V-093-5,slot 5 men-on share,0.4077,0.4077,PASS
+V-090-6,slot 6 PA,451,451,PASS
+V-091-6,slot 6 PA/g,4.0268,4.0268,PASS
+V-092-6,slot 6 RISP share,0.2106,0.2106,PASS
+V-093-6,slot 6 men-on share,0.4324,0.4324,PASS
+V-090-7,slot 7 PA,440,440,PASS
+V-091-7,slot 7 PA/g,3.9286,3.9286,PASS
+V-092-7,slot 7 RISP share,0.2568,0.2568,PASS
+V-093-7,slot 7 men-on share,0.4568,0.4568,PASS
+V-090-8,slot 8 PA,427,427,PASS
+V-091-8,slot 8 PA/g,3.8125,3.8125,PASS
+V-092-8,slot 8 RISP share,0.2646,0.2646,PASS
+V-093-8,slot 8 men-on share,0.4262,0.4262,PASS
+V-090-9,slot 9 PA,415,415,PASS
+V-091-9,slot 9 PA/g,3.7054,3.7054,PASS
+V-092-9,slot 9 RISP share,0.2578,0.2578,PASS
+V-093-9,slot 9 men-on share,0.4313,0.4313,PASS
+V-094,Slot PA strictly decreasing 1->9,True,True,PASS
+V-095,Slot 4 RISP share exceeds slot 1,True,True,PASS
+V-100-1,slot 1 context weights sum to 1,1.0,1.0,PASS
+V-100-2,slot 2 context weights sum to 1,1.0,1.0,PASS
+V-100-3,slot 3 context weights sum to 1,1.0,1.0,PASS
+V-100-4,slot 4 context weights sum to 1,1.0,1.0,PASS
+V-100-5,slot 5 context weights sum to 1,1.0,1.0,PASS
+V-100-6,slot 6 context weights sum to 1,0.9999,1.0,PASS
+V-100-7,slot 7 context weights sum to 1,1.0,1.0,PASS
+V-100-8,slot 8 context weights sum to 1,1.0,1.0,PASS
+V-100-9,slot 9 context weights sum to 1,1.0,1.0,PASS
+V-101-1-RISP,"W(slot 1, RISP)",0.1758,0.1758,PASS
+V-101-1-BASES_EMPTY,"W(slot 1, BASES_EMPTY)",0.6758,0.6758,PASS
+V-101-1-MEN_ON_NO_RISP,"W(slot 1, MEN_ON_NO_RISP)",0.1484,0.1484,PASS
+V-101-4-RISP,"W(slot 4, RISP)",0.2495,0.2495,PASS
+V-101-4-BASES_EMPTY,"W(slot 4, BASES_EMPTY)",0.522,0.522,PASS
+V-101-4-MEN_ON_NO_RISP,"W(slot 4, MEN_ON_NO_RISP)",0.2285,0.2285,PASS
+V-110-Luis-1,Luis Arraez slot 1 RE24/PA projected (from published inputs),0.0336,0.0336,PASS
+V-111-Luis-1,Luis Arraez slot 1 RE24/162 (from published inputs),24.9,24.89,PASS
+V-110-Luis-2,Luis Arraez slot 2 RE24/PA projected (from published inputs),0.0362,0.0361,PASS
+V-111-Luis-2,Luis Arraez slot 2 RE24/162 (from published inputs),26.045,26.033,PASS
+V-110-Luis-3,Luis Arraez slot 3 RE24/PA projected (from published inputs),0.0372,0.0372,PASS
+V-111-Luis-3,Luis Arraez slot 3 RE24/162 (from published inputs),25.937,25.927,PASS
+V-110-Luis-4,Luis Arraez slot 4 RE24/PA projected (from published inputs),0.0398,0.0398,PASS
+V-111-Luis-4,Luis Arraez slot 4 RE24/162 (from published inputs),27.455,27.441,PASS
+V-110-Luis-5,Luis Arraez slot 5 RE24/PA projected (from published inputs),0.038,0.038,PASS
+V-111-Luis-5,Luis Arraez slot 5 RE24/162 (from published inputs),25.639,25.627,PASS
+V-110-Luis-6,Luis Arraez slot 6 RE24/PA projected (from published inputs),0.0373,0.0373,PASS
+V-111-Luis-6,Luis Arraez slot 6 RE24/162 (from published inputs),24.319,24.311,PASS
+V-110-Luis-7,Luis Arraez slot 7 RE24/PA projected (from published inputs),0.0396,0.0396,PASS
+V-111-Luis-7,Luis Arraez slot 7 RE24/162 (from published inputs),25.228,25.216,PASS
+V-110-Luis-8,Luis Arraez slot 8 RE24/PA projected (from published inputs),0.0393,0.0393,PASS
+V-111-Luis-8,Luis Arraez slot 8 RE24/162 (from published inputs),24.277,24.268,PASS
+V-110-Luis-9,Luis Arraez slot 9 RE24/PA projected (from published inputs),0.0391,0.0391,PASS
+V-111-Luis-9,Luis Arraez slot 9 RE24/162 (from published inputs),23.497,23.487,PASS
+V-110-Kyle-1,Kyle Schwarber slot 1 RE24/PA projected (from published inputs),0.0619,0.0619,PASS
+V-111-Kyle-1,Kyle Schwarber slot 1 RE24/162 (from published inputs),45.811,45.813,PASS
+V-110-Kyle-2,Kyle Schwarber slot 2 RE24/PA projected (from published inputs),0.0667,0.0667,PASS
+V-111-Kyle-2,Kyle Schwarber slot 2 RE24/162 (from published inputs),48.068,48.063,PASS
+V-110-Kyle-3,Kyle Schwarber slot 3 RE24/PA projected (from published inputs),0.0674,0.0674,PASS
+V-111-Kyle-3,Kyle Schwarber slot 3 RE24/162 (from published inputs),47.02,47.017,PASS
+V-110-Kyle-4,Kyle Schwarber slot 4 RE24/PA projected (from published inputs),0.071,0.071,PASS
+V-111-Kyle-4,Kyle Schwarber slot 4 RE24/162 (from published inputs),49.012,49.009,PASS
+V-110-Kyle-5,Kyle Schwarber slot 5 RE24/PA projected (from published inputs),0.0637,0.0637,PASS
+V-111-Kyle-5,Kyle Schwarber slot 5 RE24/162 (from published inputs),42.951,42.952,PASS
+V-110-Kyle-6,Kyle Schwarber slot 6 RE24/PA projected (from published inputs),0.0703,0.0703,PASS
+V-111-Kyle-6,Kyle Schwarber slot 6 RE24/162 (from published inputs),45.855,45.857,PASS
+V-110-Kyle-7,Kyle Schwarber slot 7 RE24/PA projected (from published inputs),0.0677,0.0677,PASS
+V-111-Kyle-7,Kyle Schwarber slot 7 RE24/162 (from published inputs),43.107,43.103,PASS
+V-110-Kyle-8,Kyle Schwarber slot 8 RE24/PA projected (from published inputs),0.0633,0.0633,PASS
+V-111-Kyle-8,Kyle Schwarber slot 8 RE24/162 (from published inputs),39.083,39.08,PASS
+V-110-Kyle-9,Kyle Schwarber slot 9 RE24/PA projected (from published inputs),0.0647,0.0647,PASS
+V-111-Kyle-9,Kyle Schwarber slot 9 RE24/162 (from published inputs),38.817,38.813,PASS
+V-120-RISP,Arraez RE24/PA in RISP,0.0807,0.0807,PASS
+V-121-RISP,Arraez PA in RISP,89,89,PASS
+V-120-BASES_EMPTY,Arraez RE24/PA in BASES_EMPTY,0.0198,0.0198,PASS
+V-121-BASES_EMPTY,Arraez PA in BASES_EMPTY,301,301,PASS
+V-120-MEN_ON_NO_RISP,Arraez RE24/PA in MEN_ON_NO_RISP,0.0408,0.0408,PASS
+V-121-MEN_ON_NO_RISP,Arraez PA in MEN_ON_NO_RISP,74,74,PASS
+V-130a,Scenario A (Turner 1 / Arraez 4),28.476,28.476,PASS
+V-130b,Scenario A-swap (Arraez 1 / Turner 4),25.9,25.9,PASS
+V-131a,Scenario B (Schwarber 1 / Arraez 4),73.254,73.254,PASS
+V-131b,Scenario B-swap (Arraez 1 / Schwarber 4),73.899,73.899,PASS
+V-131c,Scenario C (Arraez 2 / Schwarber 4),75.043,75.043,PASS
+V-132a,Delta under the Turner framing,-2.576,-2.576,PASS
+V-132b,Delta under the Schwarber framing,0.645,0.645,PASS
+V-133a,Turner-framing swap is NEGATIVE (report claim),True,True,PASS
+V-133b,Schwarber-framing swap is under 2 runs per 162 (report claim),True,True,PASS
+V-133c,Scenario C beats both stated options (report claim),True,True,PASS
+V-133d,"Observed leadoff hitter is Trea Turner, not Schwarber",Trea Turner,Trea Turner,PASS
+V-134,Arraez slot spread under 5 runs per 162 (headline claim),True,True,PASS
+V-135,Schwarber outproduces Arraez in every slot,0,0,PASS
+V-140,Arraez OBP used by AR-7,0.3556,0.3556,PASS
+V-141-1,slot 1 incumbent OBP,0.3184,0.3184,PASS
+V-142-1,slot 1 incumbent on-base/g,1.4554,1.4554,PASS
+V-143-1,slot 1 Arraez supply/g,1.6256,1.6256,PASS
+V-141-2,slot 2 incumbent OBP,0.3394,0.3394,PASS
+V-142-2,slot 2 incumbent on-base/g,1.5089,1.5089,PASS
+V-143-2,slot 2 Arraez supply/g,1.5811,1.5812,PASS
+V-141-3,slot 3 incumbent OBP,0.3651,0.3651,PASS
+V-142-3,slot 3 incumbent on-base/g,1.5714,1.5714,PASS
+V-143-3,slot 3 Arraez supply/g,1.5304,1.5304,PASS
+V-141-4,slot 4 incumbent OBP,0.2872,0.2872,PASS
+V-142-4,slot 4 incumbent on-base/g,1.2232,1.2232,PASS
+V-143-4,slot 4 Arraez supply/g,1.5145,1.5145,PASS
+V-141-5,slot 5 incumbent OBP,0.279,0.279,PASS
+V-142-5,slot 5 incumbent on-base/g,1.1607,1.1607,PASS
+V-143-5,slot 5 Arraez supply/g,1.4795,1.4796,PASS
+V-141-6,slot 6 incumbent OBP,0.2882,0.2882,PASS
+V-142-6,slot 6 incumbent on-base/g,1.1607,1.1607,PASS
+V-143-6,slot 6 Arraez supply/g,1.4319,1.4319,PASS
+V-141-7,slot 7 incumbent OBP,0.2727,0.2727,PASS
+V-142-7,slot 7 incumbent on-base/g,1.0714,1.0714,PASS
+V-143-7,slot 7 Arraez supply/g,1.397,1.397,PASS
+V-141-8,slot 8 incumbent OBP,0.3068,0.3068,PASS
+V-142-8,slot 8 incumbent on-base/g,1.1696,1.1696,PASS
+V-143-8,slot 8 Arraez supply/g,1.3557,1.3557,PASS
+V-141-9,slot 9 incumbent OBP,0.2651,0.2651,PASS
+V-142-9,slot 9 incumbent on-base/g,0.9821,0.9821,PASS
+V-143-9,slot 9 Arraez supply/g,1.3176,1.3177,PASS
+V-144,Supply upper bound peaks at a top-third slot,True,True,PASS
+V-150,Every indexed receipt exists on disk,0,0,PASS
+V-151,No zero-byte receipts,0,0,PASS
+V-152,Seven figures present,7,7,PASS
+V-153,Build DQ scorecard has zero FAIL,0,0,PASS
+V-154,Freshness manifest declares manual carry-ins,True,True,PASS

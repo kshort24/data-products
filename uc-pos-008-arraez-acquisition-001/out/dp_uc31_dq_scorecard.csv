@@ -1,0 +1,25 @@
+rule_id,dimension,check,result,detail
+DQ-01,Uniqueness,Single batter id in Arraez source,PASS,n_ids=1
+DQ-02,Validity,Entity locked to MLBAM 650333,PASS,id=650333
+DQ-03,Uniqueness,No duplicate pitch keys,PASS,
+DQ-04,Validity,game_type == R only,PASS,
+DQ-05,Completeness,stand == L on every row (LHH),PASS,
+DQ-06,Timeliness,Cache max date == 2026-08-02,PASS,max=2026-08-02
+DQ-07,Consistency,ZERO Phillies rows for Arraez (pre-arrival dossier),PASS,
+DQ-08,Completeness,Primary window >= 400 PA,PASS,PA=464
+DQ-09,Validity,truncated_pa excluded from strict PA spine,PASS,
+DQ-10,Completeness,delta_run_exp populated on >=98% of PAs,PASS,0.9914
+DQ-11,Completeness,Base-state fields present on every PA,PASS,
+DQ-12,Accuracy,PA-spine slash reconciles to locked get_stats (BA),PASS,spine=0.3238 locked=0.3238
+DQ-13,Accuracy,PA-spine wOBA reconciles to locked get_stats,PASS,
+DQ-14,Consistency,Nine distinct slots in every PHI game,PASS,
+DQ-15,Consistency,First 9 PAs are 9 distinct batters in every PHI game,PASS,exceptions=0
+DQ-16,Validity,Slot PA counts decline monotonically 1->9,PASS,
+DQ-17,Consistency,RISP share rises from slot 1 to slot 4,PASS,s1=0.1758 s4=0.2495
+DQ-18,Validity,"SPCR bounded in [0,1]",PASS,
+DQ-19,Accuracy,Runs credited never exceed runners available+batter,PASS,
+DQ-20,Completeness,Every pitch mapped to a pitch group or explicitly null,PASS,mapped=1710/1711
+DQ-21,Consistency,PHI comparison set is 2026 regular season only,PASS,
+DQ-22,Timeliness,PHI set max date == cache max,PASS,
+DQ-23,Validity,xwoba_con_n <= bip everywhere (O4 guard),PASS,
+DQ-24,Consistency,Slot context weights sum to 1 per slot,PASS,

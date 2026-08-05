@@ -1,0 +1,36 @@
+hitter,slot,re24_per_162,re24_per_pa_projected,risp_weight,row_type
+Luis Arraez,1.0,24.8899,0.0336,0.1758,hitter_x_slot
+Luis Arraez,2.0,26.0332,0.0361,0.2028,hitter_x_slot
+Luis Arraez,3.0,25.927,0.0372,0.2178,hitter_x_slot
+Luis Arraez,4.0,27.4406,0.0398,0.2495,hitter_x_slot
+Luis Arraez,5.0,25.6274,0.038,0.2425,hitter_x_slot
+Luis Arraez,6.0,24.3105,0.0373,0.2106,hitter_x_slot
+Luis Arraez,7.0,25.2162,0.0396,0.2568,hitter_x_slot
+Luis Arraez,8.0,24.2679,0.0393,0.2646,hitter_x_slot
+Luis Arraez,9.0,23.487,0.0391,0.2578,hitter_x_slot
+Kyle Schwarber,1.0,45.8134,0.0619,0.1758,hitter_x_slot
+Kyle Schwarber,2.0,48.0632,0.0667,0.2028,hitter_x_slot
+Kyle Schwarber,3.0,47.0167,0.0674,0.2178,hitter_x_slot
+Kyle Schwarber,4.0,49.0093,0.071,0.2495,hitter_x_slot
+Kyle Schwarber,5.0,42.9517,0.0637,0.2425,hitter_x_slot
+Kyle Schwarber,6.0,45.8573,0.0703,0.2106,hitter_x_slot
+Kyle Schwarber,7.0,43.1031,0.0677,0.2568,hitter_x_slot
+Kyle Schwarber,8.0,39.0799,0.0633,0.2646,hitter_x_slot
+Kyle Schwarber,9.0,38.813,0.0647,0.2578,hitter_x_slot
+Trea Turner,1.0,1.0354,0.0014,0.1758,hitter_x_slot
+Trea Turner,2.0,1.0783,0.0015,0.2028,hitter_x_slot
+Trea Turner,3.0,1.0127,0.0015,0.2178,hitter_x_slot
+Trea Turner,4.0,1.0099,0.0015,0.2495,hitter_x_slot
+Trea Turner,5.0,0.7659,0.0011,0.2425,hitter_x_slot
+Trea Turner,6.0,1.0656,0.0016,0.2106,hitter_x_slot
+Trea Turner,7.0,0.8017,0.0013,0.2568,hitter_x_slot
+Trea Turner,8.0,0.6152,0.001,0.2646,hitter_x_slot
+Trea Turner,9.0,0.6611,0.0011,0.2578,hitter_x_slot
+A. OBSERVED 2026 (Turner 1 / Arraez 4),,28.476,,,scenario
+A-swap. Arraez 1 / Turner 4,,25.8998,,,scenario
+B. STATED premise (Schwarber 1 / Arraez 4),,73.254,,,scenario
+B-swap. Arraez 1 / Schwarber 4,,73.8992,,,scenario
+C. Arraez 2 / Schwarber 4 (model preference),,75.0425,,,scenario
+DELTA A-swap minus A (Turner framing),,-2.5762,,,delta
+DELTA B-swap minus B (Schwarber framing),,0.6452,,,delta
+SPREAD Arraez best slot minus worst slot,,3.9536,,,delta
