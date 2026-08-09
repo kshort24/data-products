@@ -1,0 +1,25 @@
+rule,dimension,result,detail
+DQ-01,uniqueness,PASS,0 duplicate pitch keys after dedup
+DQ-02,validity,PASS,batter ids present: [np.int64(656941)]
+DQ-03,validity,PASS,name-filter would have pulled extra ids: none
+DQ-04,validity,PASS,game_type values: ['R']
+DQ-05,consistency,PASS,stand values: ['L']
+DQ-06,completeness,PASS,launch_angle coverage on BIP: 0.995
+DQ-07,completeness,PASS,2026 bat_speed coverage on swings: 0.981
+DQ-08,accuracy,PASS,pre-2024 bat_speed values present: 0 (expected 0)
+DQ-09,accuracy,PASS,pre-2025 attack_angle values present: 0 (expected 0)
+DQ-10,accuracy,PASS,no bat_speed_mu published for any pre-sensor season (no-imputation policy)
+DQ-11,accuracy,PASS,no attack_angle_mu published for any pre-sensor season
+DQ-12,validity,PASS,"derived plate speed in [60,105] mph: 0.9987"
+DQ-13,accuracy,PASS,release minus plate speed mean = 7.18 mph (physics sanity: 5-12)
+DQ-14,validity,PASS,"squared_up_pct in [0,1.15]: 1.0000"
+DQ-15,consistency,PASS,season-spine BIP total 3285 == source BIP 3285
+DQ-16,consistency,PASS,phase-split BIP 242 == 2026 BIP 242
+DQ-17,timeliness,PASS,"max game_date 2026-08-07, 1 days stale"
+DQ-18,completeness,PASS,2026 BIP available: 242 (min 150 to publish phase splits)
+DQ-19,validity,PASS,launch_speed within physical bounds
+DQ-20,consistency,PASS,"measured seasons: [2024, 2025, 2026]"
+DQ-21,uniqueness,PASS,peer pool has one row per player-season (no join fan-out)
+DQ-22,completeness,PASS,22 receipts written
+DQ-23,accuracy,PASS,"zero-coverage seasons carry a null measured mean, not a filled one"
+DQ-24,validity,PASS,rolling window size held at 60 BIP throughout

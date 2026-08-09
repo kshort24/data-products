@@ -1,0 +1,19 @@
+la_bucket,bips,ev_mu,xwobacon,hard_hit,share,window
+Ideal high (20-32),26,99.238,1.243,0.692,0.217,A: through May 27
+Ideal low (8-20),22,97.364,0.736,0.682,0.183,A: through May 27
+Low drive (-10 to 8),17,92.994,0.266,0.647,0.142,A: through May 27
+Pop up (>50),20,87.79,0.008,0.05,0.167,A: through May 27
+Topped (<-10),12,78.55,0.088,0.083,0.1,A: through May 27
+Under (32-50),23,96.152,0.515,0.652,0.192,A: through May 27
+Ideal high (20-32),18,94.867,0.894,0.5,0.149,B: since May 27
+Ideal low (8-20),33,96.948,0.74,0.606,0.273,B: since May 27
+Low drive (-10 to 8),20,93.245,0.397,0.6,0.165,B: since May 27
+Pop up (>50),17,85.518,0.011,0.294,0.14,B: since May 27
+Topped (<-10),15,85.773,0.11,0.4,0.124,B: since May 27
+Under (32-50),18,97.072,0.481,0.722,0.149,B: since May 27
+Ideal high (20-32),75,99.592,1.233,0.76,0.184,2025 full season
+Ideal low (8-20),66,99.912,0.732,0.712,0.162,2025 full season
+Low drive (-10 to 8),82,96.496,0.364,0.695,0.201,2025 full season
+Pop up (>50),66,88.367,0.014,0.318,0.162,2025 full season
+Topped (<-10),51,81.133,0.106,0.235,0.125,2025 full season
+Under (32-50),68,96.056,0.615,0.721,0.167,2025 full season

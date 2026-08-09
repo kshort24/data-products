@@ -1,0 +1,13 @@
+game_year,swings,measured_n,measured_mu,measured_sd,imputed_mu,imputed_sd,coverage,fabricated_rows,mu_error,sd_shrinkage,policy_shipped,career_mean_used_for_imputation
+2015,521,0,,,74.493,0.0,0.0,521,,,not measured — suppress,74.493
+2016,11,0,,,74.493,0.0,0.0,11,,,not measured — suppress,74.493
+2017,941,0,,,74.493,0.0,0.0,941,,,not measured — suppress,74.493
+2018,892,0,,,74.493,0.0,0.0,892,,,not measured — suppress,74.493
+2019,1100,0,,,74.493,0.0,0.0,1100,,,not measured — suppress,74.493
+2020,410,0,,,74.493,0.0,0.0,410,,,not measured — suppress,74.493
+2021,823,0,,,74.493,0.0,0.0,823,,,not measured — suppress,74.493
+2022,1167,0,,,74.493,0.0,0.0,1167,,,not measured — suppress,74.493
+2023,1156,0,,,74.493,0.0,0.0,1156,,,not measured — suppress,74.493
+2024,1139,1060,75.045,9.376,75.006,9.046,0.931,79,-0.038,-0.33,measured — publish,74.493
+2025,1279,1268,74.211,10.921,74.213,10.874,0.991,11,0.002,-0.047,measured — publish,74.493
+2026,931,913,74.246,10.057,74.25,9.959,0.981,18,0.005,-0.098,measured — publish,74.493

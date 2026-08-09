@@ -1,0 +1,13 @@
+game_year,swings,bips,bat_speed_n,bat_speed_coverage,swing_length_n,attack_angle_n,attack_angle_coverage,swing_path_tilt_n,contact_depth_n,launch_angle_coverage,sensor_status
+2015,521,156,0,0.0,0,0,0.0,0,0,0.987,not measured
+2016,11,2,0,0.0,0,0,0.0,0,0,1.0,not measured
+2017,941,272,0,0.0,0,0,0.0,0,0,0.989,not measured
+2018,892,291,0,0.0,0,0,0.0,0,0,0.993,not measured
+2019,1100,379,0,0.0,0,0,0.0,0,0,0.992,not measured
+2020,410,125,0,0.0,0,0,0.0,0,0,0.976,not measured
+2021,823,274,0,0.0,0,0,0.0,0,0,0.996,not measured
+2022,1167,379,0,0.0,0,0,0.0,0,0,0.997,not measured
+2023,1156,373,0,0.0,0,0,0.0,0,0,1.0,not measured
+2024,1139,384,1060,0.931,1060,0,0.0,0,0,1.0,bat tracking only
+2025,1279,408,1268,0.991,1268,1268,0.991,1268,402,1.0,bat tracking + swing path
+2026,931,242,913,0.981,913,913,0.981,913,236,0.996,bat tracking + swing path

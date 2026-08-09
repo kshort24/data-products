@@ -1,0 +1,11 @@
+metric,schwarber,pool_n,pool_median,pool_max,pctile
+bat_speed_mu,74.246,5,69.935,74.246,80.0
+fast_swing_rate,0.674,5,0.154,0.674,80.0
+swing_length_mu,7.44,5,7.166,7.44,80.0
+attack_angle_mu,14.864,5,9.198,14.864,80.0
+swing_path_tilt_mu,29.324,5,31.013,37.376,20.0
+squared_up_rate,0.593,5,0.653,0.714,0.0
+ideal_contact_rate,0.269,5,0.206,0.269,80.0
+sweet_spot_rate,0.421,5,0.384,0.442,60.0
+barrel_rate,0.169,5,0.086,0.169,80.0
+ev90,108.9,5,103.62,108.9,80.0

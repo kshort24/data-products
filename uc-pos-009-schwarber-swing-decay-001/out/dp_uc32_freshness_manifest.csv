@@ -1,0 +1,5 @@
+source,rows_loaded,max_game_date,role
+data/phillies/phils_*.parquet,542661.0,2026-08-07,primary (2022-2026 PHI)
+data/opponents/schwarber.parquet,11449.0,2021-10-22,career backfill (2015-2021)
+entity lock,24891.0,2026-08-07,"batter==656941, game_type=R"
+build timestamp,,2026-08-08 14:24:57.966934,run time
