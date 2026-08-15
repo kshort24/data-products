@@ -1,0 +1,916 @@
+{
+  "as_of": "2026-08-13",
+  "games": 109,
+  "pitch_rows": 1323,
+  "season": {
+    "plate_apps": 362,
+    "at_bats": 333,
+    "hits": 88,
+    "walks": 21,
+    "strikeouts": 67,
+    "hrs": 2,
+    "ba": 0.26426426426426425,
+    "obp": 0.31197771587743733,
+    "slg": 0.35135135135135137,
+    "ops": 0.6633290672287887,
+    "iso": 0.08708708708708712,
+    "woba": 0.29461838440111415,
+    "krate": 0.1850828729281768,
+    "bbrate": 0.058011049723756904,
+    "babip": 0.3233082706766917
+  },
+  "monthly_woba": {
+    "3": 0.327,
+    "4": 0.31,
+    "5": 0.252,
+    "6": 0.308,
+    "7": 0.263,
+    "8": 0.356
+  },
+  "monthly_pa": {
+    "3": 13,
+    "4": 86,
+    "5": 83,
+    "6": 79,
+    "7": 59,
+    "8": 42
+  },
+  "months_below_floor": [
+    3,
+    8
+  ],
+  "window": {
+    "break": "2026-06-15",
+    "pre": {
+      "plate_apps": 211,
+      "ba": 0.2308,
+      "obp": 0.2891,
+      "slg": 0.3282,
+      "iso": 0.0974,
+      "woba": 0.2763,
+      "babip": 0.2886,
+      "krate": 0.2085,
+      "bbrate": 0.0664,
+      "gb_rate": 0.5894,
+      "mean_la": 2.2848,
+      "hard_hit_rate": 0.3377,
+      "xwobacon_bip": 0.2942,
+      "chase_rate": 0.3787,
+      "whiff_rate": 0.2048,
+      "swing_rate": 0.5233,
+      "hrs": 2
+    },
+    "post": {
+      "plate_apps": 151,
+      "ba": 0.3116,
+      "obp": 0.3446,
+      "slg": 0.3841,
+      "iso": 0.0725,
+      "woba": 0.3208,
+      "babip": 0.3675,
+      "krate": 0.1523,
+      "bbrate": 0.0464,
+      "gb_rate": 0.5333,
+      "mean_la": 2.2203,
+      "hard_hit_rate": 0.3583,
+      "xwobacon_bip": 0.3427,
+      "chase_rate": 0.3745,
+      "whiff_rate": 0.1588,
+      "swing_rate": 0.5585,
+      "hrs": 0
+    }
+  },
+  "breakpoint_scan": [
+    {
+      "breakpoint": "2026-05-01",
+      "pre_pa": 99,
+      "pre_woba": 0.3126,
+      "post_pa": 263,
+      "post_woba": 0.2878,
+      "delta_woba": -0.0248
+    },
+    {
+      "breakpoint": "2026-05-15",
+      "pre_pa": 135,
+      "pre_woba": 0.3318,
+      "post_pa": 227,
+      "post_woba": 0.2722,
+      "delta_woba": -0.0595
+    },
+    {
+      "breakpoint": "2026-06-01",
+      "pre_pa": 182,
+      "pre_woba": 0.2851,
+      "post_pa": 180,
+      "post_woba": 0.3044,
+      "delta_woba": 0.0193
+    },
+    {
+      "breakpoint": "2026-06-08",
+      "pre_pa": 199,
+      "pre_woba": 0.2795,
+      "post_pa": 163,
+      "post_woba": 0.3134,
+      "delta_woba": 0.0339
+    },
+    {
+      "breakpoint": "2026-06-15",
+      "pre_pa": 211,
+      "pre_woba": 0.2763,
+      "post_pa": 151,
+      "post_woba": 0.3208,
+      "delta_woba": 0.0445
+    },
+    {
+      "breakpoint": "2026-06-22",
+      "pre_pa": 230,
+      "pre_woba": 0.2851,
+      "post_pa": 132,
+      "post_woba": 0.3115,
+      "delta_woba": 0.0264
+    },
+    {
+      "breakpoint": "2026-07-01",
+      "pre_pa": 261,
+      "pre_woba": 0.292,
+      "post_pa": 101,
+      "post_woba": 0.3016,
+      "delta_woba": 0.0096
+    },
+    {
+      "breakpoint": "2026-07-15",
+      "pre_pa": 287,
+      "pre_woba": 0.2962,
+      "post_pa": 75,
+      "post_woba": 0.2884,
+      "delta_woba": -0.0079
+    },
+    {
+      "breakpoint": "2026-08-01",
+      "pre_pa": 320,
+      "pre_woba": 0.2868,
+      "post_pa": 42,
+      "post_woba": 0.3556,
+      "delta_woba": 0.0688
+    }
+  ],
+  "cf_pool_seasons": 9,
+  "cf_pool": [
+    {
+      "player_name": "Herrera, Od\u00fabel",
+      "game_year": 2015,
+      "uq_cf_games": 136,
+      "plate_apps": 525,
+      "ba": 0.297,
+      "obp": 0.342,
+      "woba": 0.333,
+      "bbrate": 0.051
+    },
+    {
+      "player_name": "Herrera, Od\u00fabel",
+      "game_year": 2016,
+      "uq_cf_games": 155,
+      "plate_apps": 652,
+      "ba": 0.287,
+      "obp": 0.362,
+      "woba": 0.338,
+      "bbrate": 0.097
+    },
+    {
+      "player_name": "Herrera, Od\u00fabel",
+      "game_year": 2017,
+      "uq_cf_games": 133,
+      "plate_apps": 555,
+      "ba": 0.278,
+      "obp": 0.317,
+      "woba": 0.326,
+      "bbrate": 0.049
+    },
+    {
+      "player_name": "Herrera, Od\u00fabel",
+      "game_year": 2018,
+      "uq_cf_games": 133,
+      "plate_apps": 555,
+      "ba": 0.259,
+      "obp": 0.313,
+      "woba": 0.321,
+      "bbrate": 0.063
+    },
+    {
+      "player_name": "Herrera, Od\u00fabel",
+      "game_year": 2021,
+      "uq_cf_games": 104,
+      "plate_apps": 426,
+      "ba": 0.25,
+      "obp": 0.297,
+      "woba": 0.299,
+      "bbrate": 0.052
+    },
+    {
+      "player_name": "Marsh, Brandon",
+      "game_year": 2023,
+      "uq_cf_games": 108,
+      "plate_apps": 399,
+      "ba": 0.275,
+      "obp": 0.357,
+      "woba": 0.348,
+      "bbrate": 0.108
+    },
+    {
+      "player_name": "Rojas, Johan",
+      "game_year": 2024,
+      "uq_cf_games": 119,
+      "plate_apps": 367,
+      "ba": 0.243,
+      "obp": 0.279,
+      "woba": 0.265,
+      "bbrate": 0.038
+    },
+    {
+      "player_name": "Marsh, Brandon",
+      "game_year": 2025,
+      "uq_cf_games": 88,
+      "plate_apps": 291,
+      "ba": 0.266,
+      "obp": 0.326,
+      "woba": 0.317,
+      "bbrate": 0.086
+    },
+    {
+      "player_name": "Crawford, Justin",
+      "game_year": 2026,
+      "uq_cf_games": 110,
+      "plate_apps": 361,
+      "ba": 0.265,
+      "obp": 0.313,
+      "woba": 0.295,
+      "bbrate": 0.058
+    }
+  ],
+  "crawford_ctx_pa": 361,
+  "matched_pa_snapshot": [
+    {
+      "season_key": "Herrera 2016",
+      "cum_pa": 361,
+      "cum_ba": 0.303,
+      "cum_obp": 0.388,
+      "cum_woba": 0.36,
+      "woba_rank": 1
+    },
+    {
+      "season_key": "Marsh 2023",
+      "cum_pa": 361,
+      "cum_ba": 0.284,
+      "cum_obp": 0.361,
+      "cum_woba": 0.353,
+      "woba_rank": 2
+    },
+    {
+      "season_key": "Herrera 2018",
+      "cum_pa": 361,
+      "cum_ba": 0.282,
+      "cum_obp": 0.334,
+      "cum_woba": 0.346,
+      "woba_rank": 3
+    },
+    {
+      "season_key": "Herrera 2015",
+      "cum_pa": 361,
+      "cum_ba": 0.291,
+      "cum_obp": 0.32,
+      "cum_woba": 0.325,
+      "woba_rank": 4
+    },
+    {
+      "season_key": "Herrera 2017",
+      "cum_pa": 361,
+      "cum_ba": 0.259,
+      "cum_obp": 0.291,
+      "cum_woba": 0.301,
+      "woba_rank": 5
+    },
+    {
+      "season_key": "Herrera 2021",
+      "cum_pa": 361,
+      "cum_ba": 0.246,
+      "cum_obp": 0.298,
+      "cum_woba": 0.3,
+      "woba_rank": 6
+    },
+    {
+      "season_key": "Crawford 2026",
+      "cum_pa": 361,
+      "cum_ba": 0.265,
+      "cum_obp": 0.313,
+      "cum_woba": 0.295,
+      "woba_rank": 7
+    },
+    {
+      "season_key": "Rojas 2024",
+      "cum_pa": 361,
+      "cum_ba": 0.243,
+      "cum_obp": 0.278,
+      "cum_woba": 0.265,
+      "woba_rank": 8
+    }
+  ],
+  "crawford_woba_rank": 7,
+  "cf_pool_n": 8,
+  "pool_n": 217,
+  "pool_players": 98,
+  "profile": [
+    {
+      "metric": "Swing Rate",
+      "column": "swing_rate",
+      "crawford": 0.537,
+      "pool_median": 0.486,
+      "pool_n": 217,
+      "percentile": 82.488
+    },
+    {
+      "metric": "Chase Rate",
+      "column": "chase_rate",
+      "crawford": 0.377,
+      "pool_median": 0.301,
+      "pool_n": 217,
+      "percentile": 84.332
+    },
+    {
+      "metric": "Whiff Rate",
+      "column": "whiff_rate",
+      "crawford": 0.186,
+      "pool_median": 0.262,
+      "pool_n": 217,
+      "percentile": 12.442
+    },
+    {
+      "metric": "Ground-Ball Rate",
+      "column": "gb_rate",
+      "crawford": 0.565,
+      "pool_median": 0.445,
+      "pool_n": 217,
+      "percentile": 89.401
+    },
+    {
+      "metric": "Mean Launch Angle",
+      "column": "mean_la",
+      "crawford": 2.257,
+      "pool_median": 12.506,
+      "pool_n": 186,
+      "percentile": 2.151
+    },
+    {
+      "metric": "BA",
+      "column": "ba",
+      "crawford": 0.264,
+      "pool_median": 0.245,
+      "pool_n": 217,
+      "percentile": 74.654
+    },
+    {
+      "metric": "OBP",
+      "column": "obp",
+      "crawford": 0.312,
+      "pool_median": 0.307,
+      "pool_n": 217,
+      "percentile": 54.378
+    },
+    {
+      "metric": "wOBA",
+      "column": "woba",
+      "crawford": 0.295,
+      "pool_median": 0.308,
+      "pool_n": 217,
+      "percentile": 39.171
+    },
+    {
+      "metric": "ISO",
+      "column": "iso",
+      "crawford": 0.087,
+      "pool_median": 0.15,
+      "pool_n": 217,
+      "percentile": 16.129
+    },
+    {
+      "metric": "K%",
+      "column": "krate",
+      "crawford": 0.185,
+      "pool_median": 0.236,
+      "pool_n": 217,
+      "percentile": 21.198
+    },
+    {
+      "metric": "BB%",
+      "column": "bbrate",
+      "crawford": 0.058,
+      "pool_median": 0.07,
+      "pool_n": 217,
+      "percentile": 32.258
+    },
+    {
+      "metric": "BABIP",
+      "column": "babip",
+      "crawford": 0.323,
+      "pool_median": 0.296,
+      "pool_n": 217,
+      "percentile": 73.733
+    }
+  ],
+  "archetype": [
+    {
+      "player_name": "Haseley, Adam",
+      "game_year": 2020,
+      "plate_apps": 91,
+      "mean_la": -0.636,
+      "gb_rate": 0.561,
+      "ba": 0.278,
+      "iso": 0.063,
+      "woba": 0.305
+    },
+    {
+      "player_name": "Kendrick, Howie",
+      "game_year": 2017,
+      "plate_apps": 156,
+      "mean_la": 1.145,
+      "gb_rate": 0.571,
+      "ba": 0.34,
+      "iso": 0.113,
+      "woba": 0.369
+    },
+    {
+      "player_name": "Williams, Luke",
+      "game_year": 2021,
+      "plate_apps": 108,
+      "mean_la": 1.32,
+      "gb_rate": 0.6,
+      "ba": 0.245,
+      "iso": 0.071,
+      "woba": 0.283
+    },
+    {
+      "player_name": "Jankowski, Travis",
+      "game_year": 2021,
+      "plate_apps": 153,
+      "mean_la": 2.01,
+      "gb_rate": 0.538,
+      "ba": 0.252,
+      "iso": 0.099,
+      "woba": 0.312
+    },
+    {
+      "player_name": "Crawford, Justin",
+      "game_year": 2026,
+      "plate_apps": 362,
+      "mean_la": 2.257,
+      "gb_rate": 0.565,
+      "ba": 0.264,
+      "iso": 0.087,
+      "woba": 0.295
+    },
+    {
+      "player_name": "Ramos, Wilson",
+      "game_year": 2018,
+      "plate_apps": 100,
+      "mean_la": 2.797,
+      "gb_rate": 0.625,
+      "ba": 0.337,
+      "iso": 0.146,
+      "woba": 0.374
+    },
+    {
+      "player_name": "Rojas, Johan",
+      "game_year": 2024,
+      "plate_apps": 369,
+      "mean_la": 2.811,
+      "gb_rate": 0.591,
+      "ba": 0.242,
+      "iso": 0.079,
+      "woba": 0.265
+    },
+    {
+      "player_name": "Herrera, Od\u00fabel",
+      "game_year": 2022,
+      "plate_apps": 197,
+      "mean_la": 3.071,
+      "gb_rate": 0.576,
+      "ba": 0.238,
+      "iso": 0.141,
+      "woba": 0.287
+    },
+    {
+      "player_name": "Revere, Ben",
+      "game_year": 2015,
+      "plate_apps": 388,
+      "mean_la": 3.091,
+      "gb_rate": 0.596,
+      "ba": 0.298,
+      "iso": 0.077,
+      "woba": 0.311
+    },
+    {
+      "player_name": "Rojas, Johan",
+      "game_year": 2025,
+      "plate_apps": 172,
+      "mean_la": 3.697,
+      "gb_rate": 0.555,
+      "ba": 0.224,
+      "iso": 0.066,
+      "woba": 0.254
+    }
+  ],
+  "lhp_share_halfmonth": [
+    {
+      "halfmonth": "2026-03b",
+      "L": 5,
+      "R": 8,
+      "pa": 13,
+      "lhp_share": 0.385
+    },
+    {
+      "halfmonth": "2026-04a",
+      "L": 4,
+      "R": 41,
+      "pa": 45,
+      "lhp_share": 0.089
+    },
+    {
+      "halfmonth": "2026-04b",
+      "L": 9,
+      "R": 32,
+      "pa": 41,
+      "lhp_share": 0.22
+    },
+    {
+      "halfmonth": "2026-05a",
+      "L": 3,
+      "R": 38,
+      "pa": 41,
+      "lhp_share": 0.073
+    },
+    {
+      "halfmonth": "2026-05b",
+      "L": 8,
+      "R": 34,
+      "pa": 42,
+      "lhp_share": 0.19
+    },
+    {
+      "halfmonth": "2026-06a",
+      "L": 4,
+      "R": 29,
+      "pa": 33,
+      "lhp_share": 0.121
+    },
+    {
+      "halfmonth": "2026-06b",
+      "L": 10,
+      "R": 36,
+      "pa": 46,
+      "lhp_share": 0.217
+    },
+    {
+      "halfmonth": "2026-07a",
+      "L": 4,
+      "R": 22,
+      "pa": 26,
+      "lhp_share": 0.154
+    },
+    {
+      "halfmonth": "2026-07b",
+      "L": 7,
+      "R": 26,
+      "pa": 33,
+      "lhp_share": 0.212
+    },
+    {
+      "halfmonth": "2026-08a",
+      "L": 1,
+      "R": 41,
+      "pa": 42,
+      "lhp_share": 0.024
+    }
+  ],
+  "platoon_splits": [
+    {
+      "hill_window": "post_hill",
+      "p_throws": "L",
+      "plate_apps": 23,
+      "ba": 0.333,
+      "obp": 0.391,
+      "slg": 0.333,
+      "woba": 0.333,
+      "krate": 0.217,
+      "bbrate": 0.043
+    },
+    {
+      "hill_window": "post_hill",
+      "p_throws": "R",
+      "plate_apps": 130,
+      "ba": 0.311,
+      "obp": 0.339,
+      "slg": 0.395,
+      "woba": 0.321,
+      "krate": 0.146,
+      "bbrate": 0.046
+    },
+    {
+      "hill_window": "pre_hill",
+      "p_throws": "L",
+      "plate_apps": 32,
+      "ba": 0.143,
+      "obp": 0.25,
+      "slg": 0.143,
+      "woba": 0.199,
+      "krate": 0.188,
+      "bbrate": 0.094
+    },
+    {
+      "hill_window": "pre_hill",
+      "p_throws": "R",
+      "plate_apps": 177,
+      "ba": 0.242,
+      "obp": 0.294,
+      "slg": 0.358,
+      "woba": 0.288,
+      "krate": 0.209,
+      "bbrate": 0.062
+    }
+  ],
+  "platoon_counterfactual": [
+    {
+      "metric": "ba",
+      "window": "post_hill",
+      "reference_mix": "pre_hill",
+      "actual": 0.3143,
+      "reweighted_to_reference": 0.3144,
+      "mix_effect": -0.0001
+    },
+    {
+      "metric": "obp",
+      "window": "post_hill",
+      "reference_mix": "pre_hill",
+      "actual": 0.3465,
+      "reweighted_to_reference": 0.3467,
+      "mix_effect": -0.0001
+    },
+    {
+      "metric": "woba",
+      "window": "post_hill",
+      "reference_mix": "pre_hill",
+      "actual": 0.3224,
+      "reweighted_to_reference": 0.3224,
+      "mix_effect": -0.0
+    }
+  ],
+  "hill_debut": "2026-06-13",
+  "lhp_share_pre_hill": 0.1531,
+  "lhp_share_post_hill": 0.1503,
+  "aug_lhp_pa": 1,
+  "aug_pa": 42,
+  "pitch_group_window": [
+    {
+      "window": "post_0615",
+      "pitch_group": "breaking",
+      "pitches": 138,
+      "plate_apps": 45,
+      "ba": 0.318,
+      "slg": 0.432,
+      "woba": 0.316,
+      "krate": 0.178,
+      "whiff_rate": 0.173,
+      "chase_rate": 0.453
+    },
+    {
+      "window": "post_0615",
+      "pitch_group": "fastball",
+      "pitches": 335,
+      "plate_apps": 89,
+      "ba": 0.308,
+      "slg": 0.372,
+      "woba": 0.327,
+      "krate": 0.157,
+      "whiff_rate": 0.142,
+      "chase_rate": 0.338
+    },
+    {
+      "window": "post_0615",
+      "pitch_group": "offspeed",
+      "pitches": 57,
+      "plate_apps": 17,
+      "ba": 0.312,
+      "slg": 0.312,
+      "woba": 0.303,
+      "krate": 0.059,
+      "whiff_rate": 0.226,
+      "chase_rate": 0.353
+    },
+    {
+      "window": "pre_0615",
+      "pitch_group": "breaking",
+      "pitches": 180,
+      "plate_apps": 63,
+      "ba": 0.22,
+      "slg": 0.356,
+      "woba": 0.275,
+      "krate": 0.238,
+      "whiff_rate": 0.188,
+      "chase_rate": 0.5
+    },
+    {
+      "window": "pre_0615",
+      "pitch_group": "fastball",
+      "pitches": 516,
+      "plate_apps": 110,
+      "ba": 0.263,
+      "slg": 0.364,
+      "woba": 0.314,
+      "krate": 0.209,
+      "whiff_rate": 0.213,
+      "chase_rate": 0.298
+    },
+    {
+      "window": "pre_0615",
+      "pitch_group": "offspeed",
+      "pitches": 97,
+      "plate_apps": 38,
+      "ba": 0.162,
+      "slg": 0.189,
+      "woba": 0.168,
+      "krate": 0.158,
+      "whiff_rate": 0.197,
+      "chase_rate": 0.5
+    }
+  ],
+  "pitch_type": [
+    {
+      "pitch_type": "FF",
+      "pitches": 533,
+      "plate_apps": 113,
+      "ba": 0.297,
+      "slg": 0.376,
+      "woba": 0.321,
+      "krate": 0.221,
+      "whiff_rate": 0.191,
+      "chase_rate": 0.274
+    },
+    {
+      "pitch_type": "SI",
+      "pitches": 230,
+      "plate_apps": 63,
+      "ba": 0.291,
+      "slg": 0.4,
+      "woba": 0.35,
+      "krate": 0.175,
+      "whiff_rate": 0.136,
+      "chase_rate": 0.349
+    },
+    {
+      "pitch_type": "SL",
+      "pitches": 132,
+      "plate_apps": 43,
+      "ba": 0.262,
+      "slg": 0.357,
+      "woba": 0.261,
+      "krate": 0.14,
+      "whiff_rate": 0.08,
+      "chase_rate": 0.479
+    },
+    {
+      "pitch_type": "CH",
+      "pitches": 112,
+      "plate_apps": 41,
+      "ba": 0.231,
+      "slg": 0.256,
+      "woba": 0.238,
+      "krate": 0.171,
+      "whiff_rate": 0.224,
+      "chase_rate": 0.48
+    },
+    {
+      "pitch_type": "CU",
+      "pitches": 89,
+      "plate_apps": 31,
+      "ba": 0.2,
+      "slg": 0.333,
+      "woba": 0.241,
+      "krate": 0.29,
+      "whiff_rate": 0.222,
+      "chase_rate": 0.489
+    },
+    {
+      "pitch_type": "FC",
+      "pitches": 88,
+      "plate_apps": 23,
+      "ba": 0.19,
+      "slg": 0.238,
+      "woba": 0.231,
+      "krate": 0.043,
+      "whiff_rate": 0.24,
+      "chase_rate": 0.417
+    },
+    {
+      "pitch_type": "ST",
+      "pitches": 76,
+      "plate_apps": 26,
+      "ba": 0.32,
+      "slg": 0.52,
+      "woba": 0.372,
+      "krate": 0.308,
+      "whiff_rate": 0.289,
+      "chase_rate": 0.55
+    },
+    {
+      "pitch_type": "FS",
+      "pitches": 41,
+      "plate_apps": 14,
+      "ba": 0.143,
+      "slg": 0.143,
+      "woba": 0.127,
+      "krate": 0.0,
+      "whiff_rate": 0.16,
+      "chase_rate": 0.375
+    }
+  ],
+  "count_state": [
+    {
+      "window": "post_0615",
+      "count_state": "ahead",
+      "plate_apps": 24,
+      "ba": 0.3,
+      "obp": 0.391,
+      "slg": 0.35,
+      "woba": 0.34,
+      "krate": 0.0
+    },
+    {
+      "window": "post_0615",
+      "count_state": "even_or_behind",
+      "plate_apps": 57,
+      "ba": 0.434,
+      "obp": 0.418,
+      "slg": 0.528,
+      "woba": 0.405,
+      "krate": 0.0
+    },
+    {
+      "window": "post_0615",
+      "count_state": "two_strike",
+      "plate_apps": 70,
+      "ba": 0.215,
+      "obp": 0.271,
+      "slg": 0.277,
+      "woba": 0.248,
+      "krate": 0.329
+    },
+    {
+      "window": "pre_0615",
+      "count_state": "ahead",
+      "plate_apps": 26,
+      "ba": 0.429,
+      "obp": 0.538,
+      "slg": 0.762,
+      "woba": 0.545,
+      "krate": 0.0
+    },
+    {
+      "window": "pre_0615",
+      "count_state": "even_or_behind",
+      "plate_apps": 72,
+      "ba": 0.239,
+      "obp": 0.25,
+      "slg": 0.338,
+      "woba": 0.256,
+      "krate": 0.0
+    },
+    {
+      "window": "pre_0615",
+      "count_state": "two_strike",
+      "plate_apps": 113,
+      "ba": 0.184,
+      "obp": 0.257,
+      "slg": 0.233,
+      "woba": 0.228,
+      "krate": 0.389
+    }
+  ],
+  "groundball": [
+    {
+      "window": "post_0615",
+      "gb": 64.0,
+      "gb_hits": 20.0,
+      "gb_ba": 0.312,
+      "gb_mean_ev": 80.447,
+      "gb_xba": 0.275,
+      "gb_hits_under_90ft": 17.0
+    },
+    {
+      "window": "pre_0615",
+      "gb": 89.0,
+      "gb_hits": 23.0,
+      "gb_ba": 0.258,
+      "gb_mean_ev": 84.878,
+      "gb_xba": 0.282,
+      "gb_hits_under_90ft": 18.0
+    }
+  ]
+}
