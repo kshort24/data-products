@@ -1,0 +1,5 @@
+source,max_game_date,note
+data/phillies/phils_2015-2026.parquet,2026-08-17,T-1 vs 2026-08-18 intake; Nola last start 2026-08-13 in-frame
+data/opponents/wheeler.parquet,2019-09-26,NYM years 2017-2019 only; used solely for Wheeler-vs-MIA pre-PHI coverage
+data/opponents/alcantara.parquet,2025-04-12,STALE (no 2026); used for entity lock only — all vs-PHI analysis from pos
+manual carry-in,2026-08-18,"game context (Nola vs Alcantara, CBP 2026-08-19) + display names for ids {453286: 'Scherzer, Max', 594798: 'deGrom, Jacob'} from DPO intake prose; ids annotation-only"

@@ -1,0 +1,11 @@
+check,frame,result,value
+"dedup (game_pk, at_bat_number, pitch_number)",pos+pps,PASS,0
+"entity lock Nola 605400 -> ""Nola, Aaron"" (mode of player_name)",pps,PASS,605400
+"entity lock Harper 547180 -> ""Harper, Bryce""",pos,PASS,547180
+"entity lock Alcantara 645261 (alcantara.parquet, sole id)",cache,PASS,645261
+"entity lock Wheeler 554430 (wheeler.parquet, sole id)",cache,PASS,554430
+Wheeler source overlap (cache years x pps years),wheeler_mia,PASS,0
+"game_type: S/E excluded, R+postseason retained",pos+pps,PASS,"D,F,L,R,W"
+launch_speed_angle null rate on 2026 BIP (barrel CDE),pos,INFO,0.0034
+"zone null rate all rows (chase CDE, O-2 open)",pos,INFO,0.0013
+bat_score/post_bat_score completeness (runs_created CDEs),pos,PASS,0
