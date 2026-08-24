@@ -1,0 +1,9 @@
+game_pk,game_date,game_year,pit_team,entry_inning,exit_inning,innings_appeared,total_pitches,uq_pas,innings_delta,is_start,is_bulk,entry_outs,entry_score_diff,rest_days
+778538,2025-03-29,2025,MIL,1,3,3,64,17,2,True,False,0,0,191.0
+778468,2025-04-03,2025,MIL,1,6,6,86,21,5,True,False,0,0,4.0
+776838,2025-08-06,2025,SD,1,5,5,76,20,4,True,False,0,0,124.0
+776767,2025-08-12,2025,SD,1,5,5,79,21,4,True,False,0,1,5.0
+776683,2025-08-18,2025,SD,1,6,6,90,27,5,True,False,0,0,5.0
+776617,2025-08-23,2025,SD,1,6,6,81,19,5,True,False,0,0,4.0
+776541,2025-08-29,2025,SD,1,4,4,66,15,3,True,False,0,0,5.0
+776465,2025-09-03,2025,SD,1,3,3,57,17,2,True,False,0,0,4.0

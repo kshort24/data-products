@@ -1,0 +1,6 @@
+source,tier,rows_after_filter,window,as_of,fitness
+data/opponents/cortes.parquet,MLB career (R rates),10087.0,2018-03-31 .. 2025-09-03,2026-08-20,FIT — career-complete through final 2025 appearance; arm_angle 2021+ only (sensor boundary)
+data/opponents/cortes.parquet,Postseason context,229.0,2019-2024 (D/L/W),2026-08-20,CONTEXT ONLY — never blended into rates
+(none),2026 (post-surgery),0.0,n/a,2026-08-20,ABSENT — TRUE GAP; zero competitive pitches since 2025-09-03
+(none),Phillies rows for pitcher 641482,0.0,n/a,2026-08-20,ABSENT — signed 2026-08-19; acquisition-variant standard
+manual carry-in,Roster/context facts,,2026-08-19/20,2026-08-20,"MANUAL — signing (1-yr prorated ML), Brian Keller DFA'd for the 40-man spot (DPO correction), surgery mid-Oct 2025, expected multi-inning relief role, 2022 All-Star selection. Sources logged in 07."

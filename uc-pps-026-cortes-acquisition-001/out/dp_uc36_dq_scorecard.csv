@@ -1,0 +1,30 @@
+check,dimension,scope,value,threshold,status
+completeness::release_speed,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::release_spin_rate,Completeness,2021+ / tracked pitches,0.9998,>= 0.95 (tracking),PASS
+completeness::pfx_x,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::pfx_z,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::plate_x,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::plate_z,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::sz_top,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::sz_bot,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::release_extension,Completeness,2021+ / tracked pitches,0.9998,>= 0.95 (tracking),PASS
+completeness::zone,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::description,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::stand,Completeness,2021+ / tracked pitches,1.0,>= 0.95 (tracking),PASS
+completeness::launch_speed,Completeness,2021+ / balls in play only,0.9979,>= 0.95 of BIP (contact-defined field),PASS
+completeness::estimated_woba_using_speedangle,Completeness,2021+ / balls in play only,0.9958,>= 0.95 of BIP (contact-defined field),PASS
+completeness::launch_angle,Completeness,2021+ / balls in play only,0.9979,>= 0.95 of BIP (contact-defined field),PASS
+sensor_boundary::arm_angle absent pre-2020,Completeness,all,2018-19: 0.000 / 2021+: 0.985,"uc-pos-009 standard: disclose, never impute","PASS — arm-angle trend reads start at 2021; pre-2020 cells are NULL by sensor boundary, not missing data"
+population::untracked rows identified,Validity,all R rows,10,all null-pitch_name rows enumerated,PASS — 10 rows (automatic_ball:8; ball:2); excluded from TRACKED denominators
+zone_rate::locked vs strict (O2),Accuracy,all R rows,0.001,publish STRICT only,PASS — locked 0.5040 vs strict 0.5030; report publishes STRICT
+launch_speed::populated on non-BIP rows (O3),Accuracy,all R rows,1743,all EV means filter type=='X',PASS — every published EV mean is BIP-only
+entity_lock::pitcher==641482,Validity,all,1,== 1,PASS
+handedness_lock::p_throws=='L',Validity,all,L,== L,PASS
+dedup::game_pk+at_bat+pitch,Uniqueness,all,0,== 0,PASS
+game_type::rates on R only,Validity,all,R,== R,PASS — postseason isolated to context receipts
+gap::2026 absent (no service since surgery),Consistency,all,0,== 0,"PASS — recorded true gap, never interpolated"
+gap::2025 in-season gap (Apr 4 - Aug 5),Consistency,2025,MIL 2 G (Mar-Apr) -> SD 6 G (Aug-Sep),stint boundary disclosed; appearance log splits stints,PASS — injury-interrupted season; season grain kept whole and disclosed
+orientation::LHP sinker/changeup pfx_x>0 (arm side),Accuracy,2021+,SI 0.996 / CH 1.129,> 0,PASS
+orientation::LHP sweeper pfx_x<0 (glove side),Accuracy,2021+,-1.258,< 0,PASS
+sample::2025 below full-season floor,Accuracy,2025,157,2025 quoted only with PA printed,"WARN — 2025 = 8 G / 599 pitches; directional only, every 2025 line prints its PA"
+sample::career BF >= 100 publish floor,Accuracy,career,2494,>= 100,PASS

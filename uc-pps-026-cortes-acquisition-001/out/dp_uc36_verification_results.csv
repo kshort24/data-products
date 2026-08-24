@@ -1,0 +1,185 @@
+check,got,want,pass
+lock::entity single id,1,1,True
+lock::hand L,L,L,True
+lock::no dupes,0,0,True
+lock::no 2026 rows,0,0,True
+lock::R rows,10087,10087,True
+lock::postseason rows,229,229,True
+lock::post D,153,153,True
+lock::post L,55,55,True
+lock::post W,21,21,True
+UD::2018 games,4,4,True
+UD::2018 starts,0,0.0,True
+UD::2018 bulks,0,0.0,True
+UD::2018 start_share,0.0,0.0,True
+UD::2018 bulk_share,0.0,0.0,True
+UD::2018 innings_per_gm,0.5,0.5,True
+UD::2018 plate_apps_per_gm,6.75,6.75,True
+UD::2019 games,33,33,True
+UD::2019 starts,1,1.0,True
+UD::2019 bulks,8,8.0,True
+UD::2019 start_share,0.03,0.03,True
+UD::2019 bulk_share,0.242,0.242,True
+UD::2019 innings_per_gm,1.455,1.455,True
+UD::2019 plate_apps_per_gm,9.03,9.03,True
+UD::2020 games,5,5,True
+UD::2020 starts,1,1.0,True
+UD::2020 bulks,0,0.0,True
+UD::2020 start_share,0.2,0.2,True
+UD::2020 bulk_share,0.0,0.0,True
+UD::2020 innings_per_gm,0.8,0.8,True
+UD::2020 plate_apps_per_gm,8.8,8.8,True
+UD::2021 games,22,22,True
+UD::2021 starts,15,15.0,True
+UD::2021 bulks,1,1.0,True
+UD::2021 start_share,0.682,0.682,True
+UD::2021 bulk_share,0.045,0.045,True
+UD::2021 innings_per_gm,3.5,3.5,True
+UD::2021 plate_apps_per_gm,17.0,17.0,True
+UD::2022 games,28,28,True
+UD::2022 starts,28,28.0,True
+UD::2022 bulks,0,0.0,True
+UD::2022 start_share,1.0,1.0,True
+UD::2022 bulk_share,0.0,0.0,True
+UD::2022 innings_per_gm,5.036,5.036,True
+UD::2022 plate_apps_per_gm,22.0,22.0,True
+UD::2023 games,12,12,True
+UD::2023 starts,12,12.0,True
+UD::2023 bulks,0,0.0,True
+UD::2023 start_share,1.0,1.0,True
+UD::2023 bulk_share,0.0,0.0,True
+UD::2023 innings_per_gm,4.833,4.833,True
+UD::2023 plate_apps_per_gm,22.25,22.25,True
+UD::2024 games,31,31,True
+UD::2024 starts,30,30.0,True
+UD::2024 bulks,1,1.0,True
+UD::2024 start_share,0.968,0.968,True
+UD::2024 bulk_share,0.032,0.032,True
+UD::2024 innings_per_gm,4.935,4.935,True
+UD::2024 plate_apps_per_gm,23.032,23.032,True
+UD::2025 games,8,8,True
+UD::2025 starts,8,8.0,True
+UD::2025 bulks,0,0.0,True
+UD::2025 start_share,1.0,1.0,True
+UD::2025 bulk_share,0.0,0.0,True
+UD::2025 innings_per_gm,3.75,3.75,True
+UD::2025 plate_apps_per_gm,19.625,19.625,True
+report::2019 bulk games,8,8,True
+report::2022-25 appearances,79,79,True
+report::2022-25 starts,78,78,True
+report::2025 mean pitches,74.9,74.9,True
+report::2025 min pitches,57,57,True
+report::2025 max pitches,90,90,True
+report::2025 all starts,8,8,True
+season::2018 PA,27,27,True
+season::2018 wOBA,0.541,0.541,True
+season::2018 K%,0.111,0.111,True
+season::2019 PA,298,298,True
+season::2019 wOBA,0.352,0.352,True
+season::2019 K%,0.232,0.232,True
+season::2020 PA,44,44,True
+season::2020 wOBA,0.535,0.535,True
+season::2020 K%,0.182,0.182,True
+season::2021 PA,374,374,True
+season::2021 wOBA,0.284,0.284,True
+season::2021 K%,0.275,0.275,True
+season::2022 PA,616,616,True
+season::2022 wOBA,0.245,0.245,True
+season::2022 K%,0.265,0.265,True
+season::2023 PA,266,266,True
+season::2023 wOBA,0.323,0.323,True
+season::2023 K%,0.252,0.252,True
+season::2024 PA,712,712,True
+season::2024 wOBA,0.305,0.305,True
+season::2024 K%,0.228,0.228,True
+season::2025 PA,157,157,True
+season::2025 wOBA,0.405,0.405,True
+season::2025 K%,0.185,0.185,True
+report::2022 wOBA .245,0.245,0.245,True
+report::2025 PA 157,157,157,True
+platoon::career L PA,533,533,True
+platoon::career L wOBA,0.301,0.301,True
+platoon::career R PA,1961,1961,True
+platoon::career R wOBA,0.309,0.309,True
+report::2022 vs L wOBA,0.161,0.161,True
+report::2022 vs L PA,89,89,True
+report::2022 vs R wOBA,0.259,0.259,True
+report::2022 vs R PA,527,527,True
+report::2023-24 vs L wOBA .233,0.233,0.233,True
+report::2023-24 vs L PA 198,198,198,True
+report::2023-24 vs R wOBA .329,0.329,0.329,True
+report::2023-24 vs R PA 780,780,780,True
+report::2022 vs L K% .371,0.371,0.371,True
+ED1::peak HH .347,0.347,0.347,True
+ED1::decline HH .430,0.43,0.43,True
+ED1::peak FPSR .672,0.672,0.672,True
+ED1::decline FPSR .607,0.607,0.607,True
+ED1::peak xwOBAcon .321,0.321,0.321,True
+ED1::decline xwOBAcon .360,0.36,0.36,True
+ED1::peak chase .309,0.309,0.309,True
+ED1::decline chase .271,0.271,0.271,True
+ED1::peak whiff .245,0.245,0.245,True
+ED1::decline whiff .242,0.242,0.242,True
+ED1::peak zone strict .514,0.514,0.514,True
+ED1::decline zone strict .509,0.509,0.509,True
+ED1::peak K .265,0.265,0.265,True
+ED1::decline K .234,0.234,0.234,True
+FF::velo 2019,89.61,89.61,True
+FF::velo 2021,90.73,90.73,True
+FF::velo 2022,91.75,91.75,True
+FF::velo 2023,91.59,91.59,True
+FF::velo 2024,92.08,92.08,True
+FF::velo 2025,90.13,90.13,True
+FF::IVB 2022,19.52,19.52,True
+FF::IVB 2023,19.43,19.43,True
+FF::IVB 2024,19.15,19.15,True
+FF::IVB 2025,19.31,19.31,True
+FF::2024-04 velo,91.55,91.55,True
+FF::2024-09 velo,92.66492537313432,92.665,True
+FF::2025-08 velo,90.12,90.12,True
+FF::2025-09 velo,89.5,89.5,True
+mech::arm_angle 2022,45.1,45.1,True
+mech::arm_angle 2025,51.2,51.2,True
+mech::rel_x 2019,1.97,1.97,True
+mech::rel_x 2025,1.11,1.11,True
+orient::SI pfx_x>0,1.0,1.0,True
+orient::CH pfx_x>0,1.0,1.0,True
+orient::ST pfx_x<0,1.0,1.0,True
+TTO::1st wOBA,0.28,0.28,True
+TTO::1st PA,855,855,True
+TTO::2nd wOBA,0.305,0.305,True
+TTO::2nd PA,814,814,True
+TTO::3rd+ wOBA,0.334,0.334,True
+TTO::3rd+ PA,400,400,True
+rest::4d starts,37,37,True
+rest::4d wOBA,0.276,0.276,True
+rest::6+d starts,18,18,True
+rest::6+d wOBA,0.343,0.343,True
+terc::outings total,114,114,True
+terc::good wOBA,0.173,0.173,True
+terc::bad wOBA,0.462,0.462,True
+terc::good whiff,0.269,0.269,True
+terc::bad whiff,0.212,0.212,True
+terc::good zone,0.517,0.517,True
+terc::bad zone,0.486,0.486,True
+terc::good FF velo,91.6,91.6,True
+terc::bad FF velo,91.0,91.0,True
+bat::FF-L pitches,449,449,True
+bat::FF-L xwOBAcon,0.457,0.457,True
+bat::FF-L HH,0.614,0.614,True
+bat::FF-L HR,7,7,True
+bat::ST-L xwOBAcon,0.247,0.247,True
+bat::ST-L whiff,0.351,0.351,True
+bat::CH-R plate_x,0.87,0.87,True
+bat::CH-R 2K whiff,0.327,0.327,True
+bat::L glove-side share,0.685,0.685,True
+bat::R behind cutter,0.448,0.448,True
+bat::L tracked,877,877,True
+bat::R tracked,3639,3639,True
+post::Freeman GS exists,1,1,True
+post::Freeman inning 10,10,10,True
+post::Freeman pitch FF,FF,FF,True
+post::Freeman velo 92.2,92.2,92.2,True
+post::Freeman 0-0 count,0,0,True
+post::D wOBA .283,0.283,0.283,True
+xmethod::career wOBA statcast-vs-FG within .02,1.0,1.0,True

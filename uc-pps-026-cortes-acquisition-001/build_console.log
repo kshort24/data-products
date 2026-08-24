@@ -1,0 +1,147 @@
+==============================================================================
+dp_uc36 — Nestor Cortes acquisition read | entity lock pitcher==641482
+==============================================================================
+
+R rows: 10087 | postseason context rows: 229
+
+--- UD FAMILY (usage & deployment, DPO definitions) ---
+ game_year  games  starts  bulks  start_share  bulk_share  relief_share  innings_per_gm  plate_apps_per_gm   role_label
+      2018      4       0      0        0.000       0.000         1.000           0.500              6.750 relief-heavy
+      2019     33       1      8        0.030       0.242         0.970           1.455              9.030  bulk/hybrid
+      2020      5       1      0        0.200       0.000         0.800           0.800              8.800 relief-heavy
+      2021     22      15      1        0.682       0.045         0.318           3.500             17.000  bulk/hybrid
+      2022     28      28      0        1.000       0.000         0.000           5.036             22.000  start-heavy
+      2023     12      12      0        1.000       0.000         0.000           4.833             22.250  start-heavy
+      2024     31      30      1        0.968       0.032         0.032           4.935             23.032  start-heavy
+      2025      8       8      0        1.000       0.000         0.000           3.750             19.625  start-heavy
+
+--- SEASON LOG ---
+ game_year  games  plate_apps  woba  krate  bbrate  whiff_rate  hard_hit_rate  xwobacon   role_label
+      2018      4          27 0.541  0.111   0.148       0.244          0.263     0.439 relief-heavy
+      2019     33         298 0.352  0.232   0.091       0.252          0.355     0.411  bulk/hybrid
+      2020      5          44 0.535  0.182   0.136       0.203          0.370     0.469 relief-heavy
+      2021     22         374 0.284  0.275   0.067       0.236          0.361     0.356  bulk/hybrid
+      2022     28         616 0.245  0.265   0.062       0.245          0.347     0.321  start-heavy
+      2023     12         266 0.323  0.252   0.075       0.242          0.415     0.359  start-heavy
+      2024     31         712 0.305  0.228   0.055       0.242          0.436     0.360  start-heavy
+      2025      8         157 0.405  0.185   0.127       0.250          0.462     0.440  start-heavy
+
+--- PHASE SUMMARY ---
+               phase  plate_apps  woba  krate  bbrate  whiff_rate  chase_rate  hard_hit_rate  xwobacon
+2019 NYY relief/bulk         298 0.352  0.232   0.091       0.252       0.256          0.355     0.411
+     2021 transition         374 0.284  0.275   0.067       0.236       0.267          0.361     0.356
+           2022 peak         616 0.245  0.265   0.062       0.245       0.309          0.347     0.321
+     2023-24 decline         978 0.310  0.234   0.060       0.242       0.271          0.430     0.360
+ 2025 final (MIL-SD)         157 0.405  0.185   0.127       0.250       0.207          0.462     0.440
+
+--- PLATOON, CAREER ---
+stand  plate_apps  woba  krate  bbrate  whiff_rate  hard_hit_rate  xwobacon
+    L         533 0.301  0.276   0.073       0.274          0.398     0.373
+    R        1961 0.309  0.233   0.071       0.235          0.388     0.361
+
+--- PLATOON BY PHASE ---
+               phase stand  plate_apps  woba  krate  whiff_rate  xwobacon
+2019 NYY relief/bulk     L          99 0.411  0.232       0.206     0.431
+2019 NYY relief/bulk     R         199 0.322  0.231       0.277     0.402
+     2021 transition     L          85 0.287  0.294       0.288     0.332
+     2021 transition     R         289 0.283  0.270       0.222     0.363
+           2022 peak     L          89 0.161  0.371       0.330     0.309
+           2022 peak     R         527 0.259  0.247       0.231     0.323
+     2023-24 decline     L         198 0.233  0.283       0.294     0.320
+     2023-24 decline     R         780 0.329  0.222       0.230     0.369
+ 2025 final (MIL-SD)     L          39 0.547  0.205       0.210     0.678
+ 2025 final (MIL-SD)     R         118 0.357  0.178       0.263     0.355
+
+--- ERA DELTA (2022 peak -> 2023-24) ---
+              kpi  peak_2022  decline_2023_24  delta favourable_direction  declined  prior_PA  current_PA
+               K%      0.265            0.234 -0.030                    +      True       616         978
+              BB%      0.062            0.060 -0.001                    -     False       616         978
+           Whiff%      0.245            0.242 -0.003                    +      True       616         978
+           Chase%      0.309            0.271 -0.038                    +      True       616         978
+   Zone% (strict)      0.514            0.509 -0.004                    +      True       616         978
+             CSW%      0.296            0.272 -0.024                    +      True       616         978
+         Putaway%      0.202            0.189 -0.013                    +      True       616         978
+1st-pitch strike%      0.672            0.607 -0.065                    +      True       616         978
+        Hard-hit%      0.347            0.430  0.083                    -      True       616         978
+         xwOBAcon      0.321            0.360  0.039                    -      True       616         978
+
+--- OUTING TERCILES ---
+tercile  outings  plate_apps  woba  xwobacon  ff_velo  ff_ivb_in  zone_strict  first_pitch_strike_rate  whiff_rate  chase_rate  hard_hit_rate  krate  bbrate
+   good       38         806 0.173     0.301     91.6      19.40        0.517                    0.636       0.269       0.280          0.355  0.297   0.048
+    mid       38         823 0.295     0.354     91.4      18.93        0.509                    0.635       0.243       0.281          0.396  0.241   0.075
+    bad       38         697 0.462     0.426     91.0      18.87        0.486                    0.612       0.212       0.252          0.426  0.182   0.089
+
+--- TTO (starts only) ---
+             tto  pitches  plate_apps  woba  krate  whiff_rate  hard_hit_rate  avg_ev  xwobacon  ff_velo
+1st time through     3494         855 0.280  0.277       0.253          0.377  88.029     0.349   91.582
+2nd time through     3285         814 0.305  0.219       0.231          0.414  89.326     0.353   91.495
+            3rd+     1509         400 0.334  0.218       0.235          0.416  89.697     0.383   91.611
+
+--- REST PERFORMANCE (starts) ---
+rest_days_before_start  starts  plate_apps  woba  krate  bbrate  hard_hit_rate  xwobacon
+                   <=3       1          13 0.455  0.154   0.077          0.400     0.462
+                     4      37         822 0.276  0.263   0.064          0.421     0.360
+                     5      39         877 0.303  0.244   0.060          0.400     0.359
+                    6+      18         357 0.343  0.196   0.084          0.354     0.342
+
+--- RELIEF ENTRY STATES 2019-21 ---
+score_state  entries
+    down 5+        7
+   down 2-4       14
+     down 1        5
+       tied        5
+       up 1        2
+     up 2-3        2
+      up 4+       12
+
+--- MONTHLY ARC 2024-25 ---
+  month  pitches  plate_apps  krate  bbrate  whiff_rate  chase_rate  csw_rate  hard_hit_rate  xwobacon  ff_velo  ff_n  outings
+2024-03       76          22  0.227   0.091       0.297       0.324     0.368          0.533     0.404   91.643    42        1
+2024-04      572         151  0.212   0.033       0.218       0.296     0.257          0.357     0.315   91.551   276        6
+2024-05      465         112  0.268   0.071       0.266       0.252     0.286          0.568     0.358   91.877   217        5
+2024-06      560         139  0.223   0.029       0.224       0.258     0.262          0.456     0.370   92.079   241        6
+2024-07      466         114  0.211   0.079       0.260       0.270     0.277          0.430     0.420   92.476   191        5
+2024-08      394          95  0.211   0.032       0.221       0.318     0.239          0.352     0.362   92.401   165        4
+2024-09      318          79  0.253   0.101       0.276       0.231     0.274          0.471     0.332   92.665   134        4
+2025-03       64          17  0.118   0.294       0.238       0.139     0.266          0.400     0.703   90.567    30        1
+2025-04       86          21  0.286   0.095       0.306       0.244     0.349          0.538     0.325   90.120    35        1
+2025-08      392         102  0.186   0.098       0.239       0.236     0.288          0.437     0.375   90.124   143        5
+2025-09       57          17  0.118   0.176       0.261       0.036     0.246          0.583     0.735   89.495    20        1
+
+--- 2025 STINT LOG ---
+ game_date pit_team  entry_inning  innings_delta  total_pitches  uq_pas
+2025-03-29      MIL             1              2             64      17
+2025-04-03      MIL             1              5             86      21
+2025-08-06       SD             1              4             76      20
+2025-08-12       SD             1              4             79      21
+2025-08-18       SD             1              5             90      27
+2025-08-23       SD             1              5             81      19
+2025-08-29       SD             1              3             66      15
+2025-09-03       SD             1              2             57      17
+
+--- POSTSEASON LINE (context only) ---
+game_type  pitches  plate_apps  bip  hits  hrs  walks  strikeouts    ba   obp   slg   ops  woba  krate  bbrate  hr_rate
+        D      153          42   33     9    1    4.0           5 0.243 0.310 0.324 0.634 0.283  0.119   0.095    0.024
+        L       55          11    6     2    1    3.0           2 0.250 0.455 0.625 1.080 0.457  0.182   0.273    0.091
+        W       21           8    6     1    1    0.0           1 0.143 0.125 0.571 0.696 0.256  0.125   0.000    0.125
+
+--- POSTSEASON CONTEXT (Freeman) ---
+ game_date game_type  inning  balls  strikes pitch_type  release_speed                                                                                                                 des
+2024-10-25         W      10      0        0         FF           92.2 Freddie Freeman hits a grand slam (1) to right field. Chris Taylor scores. Tommy Edman scores. Mookie Betts scores.
+
+--- STUFF: FF BY SEASON ---
+ game_year  pitches  usage   velo     spin  ivb_in  hb_in  ext_ft  arm_angle  whiff_rate  xwobacon
+      2018       67  0.620 87.864 2203.746  18.716  8.104   5.791        NaN       0.300     0.500
+      2019      607  0.467 89.614 2188.781  17.811  6.910   5.747        NaN       0.265     0.461
+      2020       66  0.400 88.176 2113.455  17.336  7.613   5.858     34.684       0.348     0.706
+      2021      653  0.428 90.728 2222.827  18.611  5.620   5.934     47.810       0.231     0.370
+      2022     1155  0.469 91.750 2270.183  19.520  4.525   5.850     50.804       0.258     0.324
+      2023      560  0.524 91.588 2272.896  19.432  4.055   5.979     54.614       0.251     0.314
+      2024     1266  0.444 92.079 2308.976  19.153  4.855   5.933     52.815       0.215     0.378
+      2025      228  0.381 90.127 2248.434  19.313  4.478   5.923     55.071       0.194     0.513
+
+--- DQ SCORECARD (non-PASS only) ---
+                               check dimension scope value                        threshold                                                                           status
+sample::2025 below full-season floor  Accuracy  2025   157 2025 quoted only with PA printed WARN — 2025 = 8 G / 599 pitches; directional only, every 2025 line prints its PA
+
+receipts written to /tmp/uc-pps-026-cortes-acquisition-001/out

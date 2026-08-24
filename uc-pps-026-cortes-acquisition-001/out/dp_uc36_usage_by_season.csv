@@ -1,0 +1,9 @@
+game_year,games,starts,bulks,total_innings_delta,total_innings_appeared,total_pas,total_pitches,start_share,bulk_share,innings_per_gm,innings_appeared_per_gm,plate_apps_per_gm,relief_share,role_label,small_season
+2018,4,0,0,2,6,27,108,0.0,0.0,0.5,1.5,6.75,1.0,relief-heavy,False
+2019,33,1,8,48,81,298,1305,0.03,0.242,1.455,2.455,9.03,0.97,bulk/hybrid,False
+2020,5,1,0,4,9,44,165,0.2,0.0,0.8,1.8,8.8,0.8,relief-heavy,False
+2021,22,15,1,77,99,374,1524,0.682,0.045,3.5,4.5,17.0,0.318,bulk/hybrid,False
+2022,28,28,0,141,169,616,2465,1.0,0.0,5.036,6.036,22.0,0.0,start-heavy,False
+2023,12,12,0,58,70,267,1070,1.0,0.0,4.833,5.833,22.25,0.0,start-heavy,False
+2024,31,30,1,153,184,714,2851,0.968,0.032,4.935,5.935,23.032,0.032,start-heavy,False
+2025,8,8,0,30,38,157,599,1.0,0.0,3.75,4.75,19.625,0.0,start-heavy,False

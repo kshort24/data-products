@@ -1,0 +1,11 @@
+kpi,peak_2022,decline_2023_24,delta,favourable_direction,declined,prior_PA,current_PA
+K%,0.265,0.234,-0.03,+,True,616,978
+BB%,0.062,0.06,-0.001,-,False,616,978
+Whiff%,0.245,0.242,-0.003,+,True,616,978
+Chase%,0.309,0.271,-0.038,+,True,616,978
+Zone% (strict),0.514,0.509,-0.004,+,True,616,978
+CSW%,0.296,0.272,-0.024,+,True,616,978
+Putaway%,0.202,0.189,-0.013,+,True,616,978
+1st-pitch strike%,0.672,0.607,-0.065,+,True,616,978
+Hard-hit%,0.347,0.43,0.083,-,True,616,978
+xwOBAcon,0.321,0.36,0.039,-,True,616,978
