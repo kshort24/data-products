@@ -1,0 +1,70 @@
+check,result,detail
+entity lock,PASS,"29,499 pitches, 311 starts"
+skeleton resolves the same catcher set,PASS,skeleton 7 rows / locked 7 rows
+skeleton == locked · total_pitches,PASS,max |Δ| = 0.000000
+skeleton == locked · uq_games,PASS,max |Δ| = 0.000000
+skeleton == locked · plate_apps,PASS,max |Δ| = 0.000000
+skeleton == locked · ba,PASS,max |Δ| = 0.000441
+skeleton == locked · obp,PASS,max |Δ| = 0.000424
+skeleton == locked · slg,PASS,max |Δ| = 0.000373
+skeleton == locked · ops,PASS,max |Δ| = 0.000381
+skeleton == locked · woba,PASS,max |Δ| = 0.000449
+skeleton == locked · krate,PASS,max |Δ| = 0.000494
+skeleton == locked · bbrate,PASS,max |Δ| = 0.000430
+skeleton == locked · hr_rate,PASS,max |Δ| = 0.000480
+skeleton == locked · chase_rate,PASS,max |Δ| = 0.000416
+skeleton == locked · whiff_rate,PASS,max |Δ| = 0.000443
+skeleton == locked · putaway_rate,PASS,max |Δ| = 0.000486
+skeleton == locked · first_pitch_strike_rate,PASS,max |Δ| = 0.000331
+skeleton inner-merge does not drop a catcher,PASS,an INNER merge on the pos frame would drop any catcher who never batted for PHI
+TR-1 ch_share · stubbs · before,PASS,raw 0.1190 vs receipt 0.1190 (n=269)
+TR-1 ch_share · stubbs · since,PASS,raw 0.2495 vs receipt 0.2495 (n=485)
+TR-1 ch_share · non_stubbs · before,PASS,raw 0.1281 vs receipt 0.1281 (n=1249)
+TR-1 ch_share · non_stubbs · since,PASS,raw 0.1983 vs receipt 0.1983 (n=363)
+TR-1 two_strike_fb_rate · stubbs · before,PASS,raw 0.4639 vs receipt 0.4639 (n=97)
+TR-1 two_strike_fb_rate · stubbs · since,PASS,raw 0.3525 vs receipt 0.3525 (n=139)
+TR-1 two_strike_fb_rate · non_stubbs · before,PASS,raw 0.4818 vs receipt 0.4818 (n=357)
+TR-1 two_strike_fb_rate · non_stubbs · since,PASS,raw 0.3551 vs receipt 0.3551 (n=107)
+TR-1 behind_ch_rate · stubbs · before,PASS,raw 0.0938 vs receipt 0.0938 (n=64)
+TR-1 behind_ch_rate · stubbs · since,PASS,raw 0.2846 vs receipt 0.2846 (n=123)
+TR-1 behind_ch_rate · non_stubbs · before,PASS,raw 0.1307 vs receipt 0.1307 (n=329)
+TR-1 behind_ch_rate · non_stubbs · since,PASS,raw 0.2778 vs receipt 0.2778 (n=90)
+TR-1 travel count matches the report's '10 of 12',PASS,
+TR-2 ch_delta positive at every scanned breakpoint,PASS,range 0.0903–0.1019
+TR-2 two_strike_fb_delta negative at every scanned breakpoint,PASS,range -0.1305–-0.0639
+OC-1 Stubbs slate harder than Realmuto's,PASS,0.3193 vs 0.3001
+LH-1 LHH walk rate · before,PASS,raw 0.1193 (PA=218)
+LH-1 LHH first-pitch strike rate · before,PASS,raw 0.5780 (first pitches=218)
+LH-1 changeup usage vs LHH · before,PASS,raw 0.1790
+LH-1 LHH walk rate · since,PASS,raw 0.0676 (PA=148)
+LH-1 LHH first-pitch strike rate · since,PASS,raw 0.5811 (first pitches=148)
+LH-1 changeup usage vs LHH · since,PASS,raw 0.2741
+CH-1 changeup whiff vs LHH · before,PASS,raw 0.2083 vs receipt 0.2083 (swings=72)
+CH-1 changeup whiff vs LHH · since,PASS,raw 0.3200 vs receipt 0.3200 (swings=75)
+exposure · Stubbs 5 starts since breakpoint,PASS,
+exposure · non-Stubbs 4 starts since breakpoint,PASS,"the travel test rests on these four games -- stated, not hidden"
+career CH share · 2020,PASS,raw 0.2735 vs receipt 0.2735
+career CH share · 2024,PASS,raw 0.0963 vs receipt 0.0963
+career CH share · 2026,PASS,raw 0.1621 vs receipt 0.1621
+monthly ch_share · 2026-03,PASS,raw 0.0659
+monthly KC share · 2026-03,PASS,raw 0.2967
+monthly ch_share · 2026-07,PASS,raw 0.2385
+monthly KC share · 2026-07,PASS,raw 0.3217
+monthly ch_share · 2026-08,PASS,raw 0.2148
+monthly KC share · 2026-08,PASS,raw 0.3043
+per-start kc_share · 2026-07-28,PASS,raw 0.2043 vs receipt 0.2043
+per-start kc_share · 2026-08-03,PASS,raw 0.1959 vs receipt 0.1959
+per-start kc_share · 2026-08-08,PASS,raw 0.2887 vs receipt 0.2887
+per-start kc_share · 2026-08-19,PASS,raw 0.3400 vs receipt 0.3400
+era overall K rate · before,PASS,raw 0.2302 (PA=378)
+era overall whiff rate · before,PASS,raw 0.2619
+era overall K rate · since,PASS,raw 0.2731 (PA=216)
+era overall whiff rate · since,PASS,raw 0.3155
+handedness bb_rate · L · before,PASS,raw 0.1193 (PA=218)
+handedness bb_rate · L · since,PASS,raw 0.0676 (PA=148)
+handedness bb_rate · R · before,PASS,raw 0.0187 (PA=160)
+handedness bb_rate · R · since,PASS,raw 0.0735 (PA=68)
+two-strike CH share · Stubbs · before,PASS,raw 0.0928 vs receipt 0.0928 (n=97)
+two-strike FB share · Stubbs · before,PASS,raw 0.4639
+two-strike CH share · Stubbs · since,PASS,raw 0.2158 vs receipt 0.2158 (n=139)
+two-strike FB share · Stubbs · since,PASS,raw 0.3525

@@ -1,0 +1,16 @@
+{
+  "as_of": "2026-08-19",
+  "game_day": "2026-08-26",
+  "recent_n_starts": 5,
+  "catchers_found": 7,
+  "stubbs_career_pitches": 2971,
+  "stubbs_career_games": 31,
+  "stubbs_career_woba": 0.307,
+  "figures": [
+    "dp_uc38_fig1_mix_by_catcher.png",
+    "dp_uc38_fig2_woba_by_battery.png",
+    "dp_uc38_fig3_start_log.png",
+    "dp_uc38_fig4_sequencing.png"
+  ],
+  "attribution_constraint": "pitch-call attribution NOT OBSERVABLE (G4)"
+}

@@ -1,0 +1,13 @@
+metric,stubbs_before,stubbs_since,stubbs_delta,non_stubbs_before,non_stubbs_since,non_stubbs_delta,travels,verdict,share_of_stubbs_delta_seen_in_non_stubbs
+ch_share,0.119,0.2495,0.1305,0.1281,0.1983,0.0702,True,pitcher-level (travels across catchers),0.5379
+kc_share,0.342,0.2701,-0.0719,0.3411,0.3719,0.0308,False,battery-specific candidate (Stubbs stratum only),-0.4284
+fb_share,0.539,0.4763,-0.0627,0.5188,0.4242,-0.0946,True,pitcher-level (travels across catchers),1.5088
+offspeed_share,0.119,0.2495,0.1305,0.1281,0.1983,0.0702,True,pitcher-level (travels across catchers),0.5379
+fp_offspeed_share,0.1186,0.2419,0.1233,0.1254,0.172,0.0466,True,pitcher-level (travels across catchers),0.3779
+first_pitch_strike_rate,0.6102,0.5968,-0.0134,0.6552,0.6344,-0.0208,True,pitcher-level (travels across catchers),1.5522
+two_strike_fb_rate,0.4639,0.3525,-0.1114,0.4818,0.3551,-0.1267,True,pitcher-level (travels across catchers),1.1373
+two_strike_ch_rate,0.0928,0.2158,0.123,0.0868,0.1495,0.0627,True,pitcher-level (travels across catchers),0.5098
+behind_ch_rate,0.0938,0.2846,0.1908,0.1307,0.2778,0.1471,True,pitcher-level (travels across catchers),0.771
+in_zone_rate,0.4498,0.4371,-0.0127,0.446,0.4187,-0.0273,True,pitcher-level (travels across catchers),2.1496
+whiff_rate,0.2358,0.3117,0.0759,0.2675,0.321,0.0535,True,pitcher-level (travels across catchers),0.7049
+chase_rate,0.3041,0.348,0.0439,0.3194,0.3223,0.0029,False,battery-specific candidate (Stubbs stratum only),0.0661

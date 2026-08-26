@@ -1,0 +1,5 @@
+indicator,source_uc,then,before_bp,since_bp,direction_wanted
+LHH walk rate,uc-pps-021 (2026-07-22),0.107,0.1193,0.0676,down
+LHH first-pitch strike rate,uc-pps-021,0.588,0.578,0.5811,up
+Changeup usage vs LHH,uc-pps-021,0.194,0.179,0.2741,up
+LHH wOBA allowed,uc-pps-021,,0.3853,0.3125,down

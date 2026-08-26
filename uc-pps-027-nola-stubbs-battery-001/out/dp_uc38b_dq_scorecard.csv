@@ -1,0 +1,6 @@
+check,result,detail,severity
+entity_lock,PASS,"pitcher==605400; 1 id(s); 29,499 pitches",INFO
+freshness,2026-08-19,T-7 vs game day 2026-08-26,INFO
+TR-1_travel_test,10/12 metrics travel,"G7: a delta seen in only one stratum is a hypothesis, not a finding",INFO
+TR-2_breakpoint_scan,8 boundaries scanned,ch_delta sign stable: True,INFO
+OC-1_opponent_control,COMPUTED,mean rest-of-staff wOBA vs each catcher's opponent slate; higher = harder slate,INFO

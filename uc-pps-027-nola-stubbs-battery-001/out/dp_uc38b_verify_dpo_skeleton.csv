@@ -1,0 +1,16 @@
+kpi,max_abs_delta,agrees
+total_pitches,0.0,True
+uq_games,0.0,True
+plate_apps,0.0,True
+ba,0.000441,True
+obp,0.000424,True
+slg,0.000373,True
+ops,0.000381,True
+woba,0.000449,True
+krate,0.000494,True
+bbrate,0.00043,True
+hr_rate,0.00048,True
+chase_rate,0.000416,True
+whiff_rate,0.000443,True
+putaway_rate,0.000486,True
+first_pitch_strike_rate,0.000331,True

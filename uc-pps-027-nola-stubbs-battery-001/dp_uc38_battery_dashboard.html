@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<title>The Nola–Stubbs Battery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+:root{
+  --paper:#F5F6F8;
+  --surface:#FFFFFF;
+  --surface-2:#EDEFF3;
+  --ink:#15181E;
+  --ink-2:#3D4450;
+  --muted:#6C7484;
+  --rule:#D8DCE4;
+  --rule-soft:#E6E9EF;
+  --red:#D51022;
+  --red-ink:#A50C1A;
+  --navy:#002D72;
+  --steel:#4C6A9C;
+  --amber:#9A6410;
+  --amber-bg:#F6EBD8;
+  --good-bg:#E4EFE6;
+  --good-ink:#2C6238;
+  --shadow:0 1px 0 rgba(21,24,30,.04), 0 8px 24px -18px rgba(21,24,30,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E1116;
+    --surface:#161A21;
+    --surface-2:#1D222B;
+    --ink:#E7EAF0;
+    --ink-2:#B4BCCA;
+    --muted:#8791A2;
+    --rule:#2A303B;
+    --rule-soft:#222833;
+    --red:#FF4E5E;
+    --red-ink:#FF7A86;
+    --navy:#8FB0E8;
+    --steel:#7C9BD0;
+    --amber:#E0A64B;
+    --amber-bg:#2B2317;
+    --good-bg:#152418;
+    --good-ink:#7FC08E;
+    --shadow:0 1px 0 rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E1116;
+  --surface:#161A21;
+  --surface-2:#1D222B;
+  --ink:#E7EAF0;
+  --ink-2:#B4BCCA;
+  --muted:#8791A2;
+  --rule:#2A303B;
+  --rule-soft:#222833;
+  --red:#FF4E5E;
+  --red-ink:#FF7A86;
+  --navy:#8FB0E8;
+  --steel:#7C9BD0;
+  --amber:#E0A64B;
+  --amber-bg:#2B2317;
+  --good-bg:#152418;
+  --good-ink:#7FC08E;
+  --shadow:0 1px 0 rgba(0,0,0,.4), 0 10px 30px -20px rgba(0,0,0,.9);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:17.5px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
+.col{max-width:660px}
+h1,h2,h3,h4,.grot{font-family:Archivo,"Helvetica Neue",Arial,sans-serif}
+h2,h3{text-wrap:balance}
+code,.mono,.num{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+a{color:var(--red-ink)}
+
+/* ---------- masthead ---------- */
+header.mast{padding:56px 0 34px;border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px 18px;
+}
+.eyebrow .tick{color:var(--red)}
+h1{
+  font-size:clamp(40px,7.2vw,78px);line-height:.94;letter-spacing:-.025em;
+  font-weight:800;margin:18px 0 0;text-wrap:balance;
+}
+h1 .amp{font-weight:500;color:var(--muted)}
+.dek{
+  margin:20px 0 0;max-width:640px;font-size:20px;line-height:1.5;color:var(--ink-2);
+}
+.mastmeta{
+  margin-top:30px;display:flex;flex-wrap:wrap;gap:0;
+  border-top:1px solid var(--rule);
+}
+.mastmeta div{
+  padding:14px 22px 14px 0;margin-right:22px;border-right:1px solid var(--rule-soft);
+}
+.mastmeta div:last-child{border-right:0}
+.mastmeta .k{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:block}
+.mastmeta .v{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;color:var(--ink)}
+
+/* ---------- constraint band ---------- */
+.constraint{
+  margin:38px 0 0;background:var(--surface);border:1px solid var(--rule);
+  border-left:4px solid var(--red);border-radius:2px;padding:22px 26px;box-shadow:var(--shadow);
+}
+.constraint h4{
+  margin:0 0 12px;font-size:12px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--red-ink);font-weight:700;
+}
+.constraint p{margin:0 0 10px;font-size:16px;line-height:1.55;color:var(--ink-2)}
+.constraint p:last-child{margin-bottom:0}
+.constraint b{color:var(--ink)}
+
+/* ---------- sections ---------- */
+section{padding-top:64px}
+.sechead{display:flex;align-items:baseline;gap:16px;margin-bottom:6px}
+.secnum{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--red);
+  font-weight:600;letter-spacing:.06em;flex:none;padding-top:6px;
+}
+h2{font-size:clamp(27px,3.6vw,36px);line-height:1.1;letter-spacing:-.018em;font-weight:700;margin:0}
+.subhead{color:var(--muted);font-size:16px;margin:8px 0 26px;font-style:italic}
+h3{font-size:20px;margin:38px 0 10px;letter-spacing:-.01em;font-weight:700}
+p{margin:0 0 18px}
+.col p:last-child{margin-bottom:0}
+strong{font-weight:600;color:var(--ink)}
+em.term{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.88em;color:var(--muted)}
+
+/* ---------- verdict cards ---------- */
+.verdicts{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:8px}
+.verdict{background:var(--surface);padding:24px 22px}
+.verdict .vnum{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--red);letter-spacing:.1em}
+.verdict h4{font-family:Archivo,sans-serif;font-size:17px;line-height:1.25;margin:8px 0 10px;font-weight:700;letter-spacing:-.01em}
+.verdict p{font-size:15px;line-height:1.5;color:var(--ink-2);margin:0}
+
+/* ---------- figures ---------- */
+figure{margin:34px 0;background:var(--surface);border:1px solid var(--rule);border-radius:2px;padding:26px 24px 20px;box-shadow:var(--shadow)}
+figure h4{font-family:Archivo,sans-serif;font-size:16px;margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
+figcaption{font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:14px;border-top:1px solid var(--rule-soft);padding-top:12px}
+figcaption .rcpt{font-family:"IBM Plex Mono",monospace;font-size:11.5px}
+
+/* dumbbell */
+.dumb{margin-top:20px}
+.drow{display:grid;grid-template-columns:minmax(122px,180px) 1fr;align-items:center;gap:14px;padding:5px 0}
+.dlab{font-family:Archivo,sans-serif;font-size:13px;text-align:right;color:var(--ink-2);line-height:1.2}
+.dtrack{position:relative;height:26px}
+.dtrack .zero{position:absolute;top:-3px;bottom:-3px;width:1px;background:var(--rule)}
+.dbar{position:absolute;top:12px;height:3px;background:var(--rule);border-radius:2px}
+.dot{position:absolute;top:6px;width:15px;height:15px;border-radius:50%;margin-left:-7.5px;border:2px solid var(--surface)}
+.dot.s{background:var(--red);z-index:3}
+.dot.n{background:var(--steel);z-index:2}
+.drow.nt .dlab{color:var(--amber);font-weight:600}
+.daxis{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);margin-top:10px;padding-left:calc(min(180px,32%) + 14px)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;font-family:Archivo,sans-serif;font-size:13px;color:var(--ink-2);margin-top:16px}
+.legend span{display:flex;align-items:center;gap:8px}
+.swatch{width:12px;height:12px;border-radius:50%;display:inline-block}
+
+/* ramp chart */
+.ramp{width:100%;height:auto;display:block;margin-top:14px;overflow:visible}
+
+/* ---------- tables ---------- */
+.tablewrap{overflow-x:auto;margin:30px 0;border:1px solid var(--rule);border-radius:2px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th,td{padding:11px 15px;text-align:right;border-bottom:1px solid var(--rule-soft)}
+th:first-child,td:first-child{text-align:left}
+thead th{
+  font-family:Archivo,sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;border-bottom:1.5px solid var(--rule);white-space:nowrap;
+}
+tbody td{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+tbody td:first-child{font-family:Archivo,sans-serif;font-weight:600;white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tr.hl td{background:color-mix(in srgb,var(--red) 7%,transparent)}
+tr.hl td:first-child{color:var(--red-ink)}
+tr.rule-top td{border-top:1.5px solid var(--rule)}
+caption{caption-side:top;text-align:left;padding:16px 15px 8px;font-family:Archivo,sans-serif;font-weight:700;font-size:15px}
+
+/* ---------- tripwire ---------- */
+.trip{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px;margin:26px 0}
+.tcard{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--good-ink);border-radius:2px;padding:18px}
+.tcard.miss{border-top-color:var(--amber)}
+.tcard .tname{font-family:Archivo,sans-serif;font-size:13.5px;font-weight:700;line-height:1.25;min-height:34px}
+.tvals{display:flex;align-items:baseline;gap:9px;margin:12px 0 8px}
+.tvals .from{font-family:"IBM Plex Mono",monospace;font-size:17px;color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}
+.tvals .arw{color:var(--muted);font-size:14px}
+.tvals .to{font-family:"IBM Plex Mono",monospace;font-size:25px;font-weight:600;letter-spacing:-.01em}
+.tag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;padding:3px 8px;border-radius:2px;background:var(--good-bg);color:var(--good-ink)}
+.tag.warn{background:var(--amber-bg);color:var(--amber)}
+
+/* ---------- watch list ---------- */
+.watch{counter-reset:w;margin:26px 0 0;padding:0;list-style:none;display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.watch li{background:var(--surface);padding:20px 22px;display:grid;grid-template-columns:38px 1fr;gap:16px;align-items:start}
+.watch li::before{
+  counter-increment:w;content:counter(w);
+  font-family:Archivo,sans-serif;font-weight:800;font-size:26px;color:var(--red);line-height:1;
+}
+.watch h4{font-family:Archivo,sans-serif;font-size:16px;margin:0 0 6px;font-weight:700}
+.watch p{font-size:15px;line-height:1.5;color:var(--ink-2);margin:0}
+
+/* ---------- limits ---------- */
+.limits{margin:26px 0 0;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.limits li{padding:14px 0;border-bottom:1px solid var(--rule-soft);display:grid;grid-template-columns:56px 1fr;gap:14px;font-size:15.5px;color:var(--ink-2)}
+.limits .lid{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--red);padding-top:3px}
+
+/* ---------- footer ---------- */
+footer{margin-top:80px;padding-top:26px;border-top:2px solid var(--ink);font-size:13.5px;color:var(--muted)}
+footer .frow{display:flex;flex-wrap:wrap;gap:8px 26px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+footer p{margin:16px 0 0;max-width:640px;font-size:14px}
+
+@media (max-width:720px){
+  body{font-size:16.5px}
+  .drow{grid-template-columns:96px 1fr;gap:10px}
+  .dlab{font-size:11.5px}
+  .daxis{padding-left:106px}
+  .mastmeta div{padding-right:16px;margin-right:16px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .dot{transition:transform .18s ease}
+  .dot:hover{transform:scale(1.22)}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">
+    <span class="tick">UC #38 · uc-pps-027 · dp_uc38</span>
+    <span>Phillies Pitching · advance</span>
+    <span>PHI @ SEA · T-Mobile Park · Wed 26 Aug 2026</span>
+  </div>
+  <h1>The Nola <span class="amp">&amp;</span> Stubbs Battery</h1>
+  <p class="dek">Nola has pitched better lately and Stubbs has caught most of it. The plan
+  really did change — but it changed in the starts Stubbs didn't catch, too.</p>
+
+  <div class="mastmeta">
+    <div><span class="k">Data through</span><span class="v">2026-08-19 · last start</span></div>
+    <div><span class="k">Frame</span><span class="v">29,499 pitches · 311 starts</span></div>
+    <div><span class="k">Verification</span><span class="v">117 / 117 pass</span></div>
+    <div><span class="k">DQ</span><span class="v">0 fail · 0 warn</span></div>
+  </div>
+
+  <div class="constraint">
+    <h4>Three constraints that shape every claim below</h4>
+    <p><b>Pitch-call attribution is not in the data.</b> Statcast carries no PitchCom sender
+    field. This measures <b>what was thrown</b>, never <b>who chose it</b>. Where the report
+    reasons about who is driving a change, it does so from a design — <em class="term">does the
+    change appear without Stubbs?</em> — not from a field that does not exist.</p>
+    <p><b>Catcher assignment is not random.</b> Stubbs is the backup; his starts differ in
+    opponent, venue, rest and date. A confound panel and an opponent-difficulty control ship
+    with every split.</p>
+    <p><b>The samples are small and they are printed.</b> Stubbs has caught Nola 31 times in
+    four seasons, <b>8 of them in 2026</b>. Every rate below rides with its PA or pitch count.</p>
+  </div>
+</header>
+
+<section>
+  <div class="col">
+    <div class="sechead"><span class="secnum">01</span><h2>The bottom line</h2></div>
+    <p class="subhead">Six findings, in the order a pitching coach would want them.</p>
+  </div>
+
+  <div class="verdicts">
+    <div class="verdict">
+      <div class="vnum">01</div>
+      <h4>The game plan changed — and it is Nola's change, not Stubbs's</h4>
+      <p>Since July 5: changeup <span class="mono">12.7% → 22.8%</span>, two-strike fastball
+      <span class="mono">47.8% → 35.4%</span>, changeup when behind
+      <span class="mono">12.5% → 28.2%</span>. Ten of twelve approach metrics move the same
+      direction with and without Stubbs behind the plate.</p>
+    </div>
+    <div class="verdict">
+      <div class="vnum">02</div>
+      <h4>What Stubbs adds is degree, not direction</h4>
+      <p>He carries the most extreme version of the same plan — changeup
+      <span class="mono">25.0%</span> in his starts since 7/5 against
+      <span class="mono">19.8%</span> for the others. Two things don't travel: the knuckle-curve
+      retreat and a 4.4-point chase gain. Both are thin.</p>
+    </div>
+    <div class="verdict">
+      <div class="vnum">03</div>
+      <h4>The results follow, and the slate objection fails</h4>
+      <p>2026 wOBA allowed: <span class="mono">.310</span> with Stubbs (8 GS),
+      <span class="mono">.363</span> Realmuto, <span class="mono">.391</span> Marchán. The rest
+      of the staff allowed <span class="mono">.319</span> against Stubbs's opponents and
+      <span class="mono">.300</span> against Realmuto's. His slate was the harder one.</p>
+    </div>
+    <div class="verdict">
+      <div class="vnum">04</div>
+      <h4>But the career panel says: careful</h4>
+      <p>Over four seasons the battery is a coin flip — Stubbs <span class="mono">.307</span>,
+      Realmuto <span class="mono">.300</span>. In 2024 they split Nola's starts
+      <span class="mono">16–16</span> and finished <span class="mono">.315</span> /
+      <span class="mono">.304</span>. The 2026 gap is new, and 8 starts cannot tell you why.</p>
+    </div>
+    <div class="verdict">
+      <div class="vnum">05</div>
+      <h4>July's prescription was adopted — three tripwires of four</h4>
+      <p>Changeup to lefties <span class="mono">.179 → .274</span>, lefty walk rate
+      <span class="mono">.119 → .068</span>, lefty wOBA <span class="mono">.385 → .313</span>.
+      The fourth did not move: first-pitch strikes to lefties are still
+      <span class="mono">58%</span>. He escapes those counts now; he doesn't avoid them.</p>
+    </div>
+    <div class="verdict">
+      <div class="vnum">06</div>
+      <h4>The bill is coming due on the other side</h4>
+      <p>Against righties the changeup is new (<span class="mono">4.5% → 12.7%</span>) and it is
+      costing him: walk rate <span class="mono">1.9% → 7.4%</span>, wOBA
+      <span class="mono">.340 → .369</span>. Home runs per PA are
+      <span class="mono">5.6%</span> since 7/5. The strikeouts are real; the damage is not solved.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <div class="sechead"><span class="secnum">02</span><h2>The travel test</h2></div>
+    <p class="subhead">The mechanism question, answered by design rather than by correlation.</p>
+    <p>Nola has PitchCom on his belt and can call his own pitches. Stubbs has been back there
+    for most of a good stretch. Which of them is the game plan?</p>
+    <p>There is no pitch-call field to read, and catcher assignment isn't random — so a
+    Stubbs-versus-others comparison confounds the catcher with everything else that differs
+    about those games. The design that works instead: hold the <strong>time</strong> split fixed
+    and ask whether each approach change shows up <strong>inside both strata</strong>. A change
+    that appears in the non-Stubbs starts cannot have been caused by Stubbs being there — he
+    wasn't.</p>
+  </div>
+
+  <figure>
+    <h4>Change since 2026-07-05, computed separately within each stratum</h4>
+    <div class="dumb" id="dumb"></div>
+    <div class="daxis"><span>−13 pts</span><span>0</span><span>+20 pts</span></div>
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--red)"></i> Stubbs starts <span class="mono">(3 GS before · 5 GS since)</span></span>
+      <span><i class="swatch" style="background:var(--steel)"></i> All other catchers <span class="mono">(14 GS before · 4 GS since)</span></span>
+      <span style="color:var(--amber)">Amber label = does <b>not</b> travel</span>
+    </div>
+    <figcaption>Ten of twelve travel. On the two-strike fastball retreat and the first-pitch
+    strike dip, the non-Stubbs move is <em>larger</em>. Governed by <strong>G7</strong>: a delta
+    that appears in only one stratum of a non-random split is a hypothesis, never a finding.
+    <span class="rcpt">dp_uc38b_travel_test.csv</span></figcaption>
+  </figure>
+
+  <div class="col">
+    <h3>The two that don't travel, examined honestly</h3>
+    <p>The knuckle-curve retreat looks like the strongest battery signature in the file — until
+    you look start by start. Stubbs's four starts since 7/5 run <span class="mono">20.4%</span>
+    (7/28), <span class="mono">19.6%</span> (8/3), <span class="mono">28.9%</span> (8/8),
+    <span class="mono">34.0%</span> (8/19). The last of those is <em>above</em> his career rate.
+    Two starts is a plan for two lineups, not a philosophy.</p>
+    <p>The chase-rate gain (+4.4 against +0.3) is the more interesting survivor, and it is what
+    a weakness-exploitation catcher should produce: more pitches designed to be chased, more
+    chases. It is also 485 pitches. Call it a hypothesis and test it forward.</p>
+    <h3>Is the breakpoint doing the work?</h3>
+    <p>An era boundary is a researcher's degree of freedom, so it gets scanned rather than
+    asserted. Across all eight candidate boundaries from 6/18 to 7/28 the changeup delta lands
+    between <span class="mono">+9.0</span> and <span class="mono">+10.2</span> points and never
+    changes sign. <strong>No headline here depends on where the line is drawn.</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <div class="sechead"><span class="secnum">03</span><h2>The changeup ramp</h2></div>
+    <p class="subhead">The largest composition change of Nola's 2026 — and it does not begin where the narrative expects.</p>
+  </div>
+
+  <figure>
+    <h4>Changeup share by start, 2026</h4>
+    <svg class="ramp" viewBox="0 0 900 300" role="img" aria-label="Changeup share by start across the 2026 season, rising sharply from July onward across all three catchers">
+      <g id="rampG"></g>
+    </svg>
+    <figcaption>The step is in <strong>July</strong>. The Stubbs-heavy stretch starts
+    <strong>July 28</strong>. The first three starts of the ramp — 7/05 (Stubbs, 19.4%), 7/10
+    (Marchán, 23.8%), 7/16 (Realmuto, 21.7%) — are caught by three different catchers.
+    <span class="rcpt">dp_uc38b_per_start_approach_2026.csv</span></figcaption>
+  </figure>
+
+  <div class="col">
+    <p>Career context matters: <strong>this is a return, not an invention.</strong> Nola's
+    changeup share by season runs <span class="mono">.115</span> (2015) →
+    <span class="mono">.198</span> (2018) → <span class="mono">.274</span> (2020) →
+    <span class="mono">.096</span> (2024) → <span class="mono">.162</span> (2026). The
+    second-half rate sits between his 2018 and 2020 selves.</p>
+    <p>And the pitch itself did not change — the <em>usage</em> did. Same velocity
+    (<span class="mono">85.7 → 85.5</span>), same zone rate
+    (<span class="mono">33.9% → 34.6%</span>), and the whiff rate against lefties jumped from
+    <span class="mono">20.8%</span> to <span class="mono">32.0%</span>. That is a sequencing and
+    expectation effect. But when it <em>is</em> hit, it's hit harder than before — xwOBAcon
+    <span class="mono">.285 → .351</span> on 26 balls in play. Whiff or damage, with less in
+    between.</p>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <div class="sechead"><span class="secnum">04</span><h2>By catcher</h2></div>
+    <p class="subhead">2026 first, because that's the question — then the four-year panel, because that's the counterweight.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>2026 · Nola by catcher</caption>
+      <thead><tr><th>Catcher</th><th>GS</th><th>PA</th><th>wOBA</th><th>K%</th><th>BB%</th><th>Whiff</th><th>2-str FB</th><th>Slate difficulty</th></tr></thead>
+      <tbody>
+        <tr class="hl"><td>Stubbs</td><td>8</td><td>182</td><td>.310</td><td>25.8%</td><td>5.5%</td><td>28.5%</td><td>39.8%</td><td>.319</td></tr>
+        <tr><td>Realmuto</td><td>12</td><td>276</td><td>.363</td><td>25.0%</td><td>7.2%</td><td>28.5%</td><td>46.7%</td><td>.300</td></tr>
+        <tr><td>Marchán</td><td>6</td><td>136</td><td>.391</td><td>22.1%</td><td>10.3%</td><td>26.6%</td><td>42.2%</td><td>.339</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col">
+    <p style="font-size:15px;color:var(--muted);margin-top:-14px">Slate difficulty = the wOBA
+    the <strong>rest of the Phillies staff</strong> allowed against the same opponents in 2026.
+    Higher is harder. Stubbs's opponents (KC, MIA ×3, PIT, SD, TOR, WSH) were harder on the
+    staff than Realmuto's — if anything the raw gap understates the pairing.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <caption>Season by season · Stubbs against Realmuto, same pitcher</caption>
+      <thead><tr><th>Season</th><th>Stubbs GS</th><th>Stubbs wOBA</th><th>Realmuto GS</th><th>Realmuto wOBA</th></tr></thead>
+      <tbody>
+        <tr><td>2022</td><td>4</td><td>.282</td><td>28</td><td>.259</td></tr>
+        <tr><td>2023</td><td>3</td><td>.289</td><td>29</td><td>.304</td></tr>
+        <tr class="hl"><td>2024</td><td>16</td><td>.315</td><td>16</td><td>.304</td></tr>
+        <tr><td>2025</td><td>0</td><td>—</td><td>12</td><td>.322</td></tr>
+        <tr><td>2026</td><td>8</td><td>.310</td><td>12</td><td>.363</td></tr>
+        <tr class="rule-top"><td>Career</td><td>31</td><td>.307</td><td>161</td><td>.300</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col">
+    <p><strong>2024 is the cleanest natural experiment in the file:</strong> the two split Nola's
+    starts 16–16 and landed within eleven points of each other. Whatever is happening in 2026
+    did not happen in 2024. And Stubbs did not catch Nola at <em>all</em> in 2025 — "prior work
+    with Stubbs" is mostly a 2024 conversation, and the pitcher who threw those 16 starts is not
+    the pitcher who takes the ball tonight.</p>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <div class="sechead"><span class="secnum">05</span><h2>The lefty tripwire</h2></div>
+    <p class="subhead">July's advance report reduced Nola's left-handed problem to one number — the free pass. Here is the scorecard.</p>
+  </div>
+
+  <div class="trip">
+    <div class="tcard">
+      <div class="tname">Changeup usage vs LHH</div>
+      <div class="tvals"><span class="from">.179</span><span class="arw">→</span><span class="to">.274</span></div>
+      <span class="tag">Adopted</span>
+    </div>
+    <div class="tcard">
+      <div class="tname">LHH walk rate</div>
+      <div class="tvals"><span class="from">.119</span><span class="arw">→</span><span class="to">.068</span></div>
+      <span class="tag">Moved</span>
+    </div>
+    <div class="tcard">
+      <div class="tname">LHH wOBA allowed</div>
+      <div class="tvals"><span class="from">.385</span><span class="arw">→</span><span class="to">.313</span></div>
+      <span class="tag">Moved</span>
+    </div>
+    <div class="tcard miss">
+      <div class="tname">LHH first-pitch strike rate</div>
+      <div class="tvals"><span class="from">.578</span><span class="arw">→</span><span class="to">.581</span></div>
+      <span class="tag warn">Flat</span>
+    </div>
+  </div>
+
+  <div class="col">
+    <p><strong>The walk leak closed without the first-pitch problem being solved.</strong> He
+    still falls behind lefties at the same rate — he now escapes those counts instead of walking
+    out of them, on a changeup-when-behind rate that went
+    <span class="mono">16.0% → 31.4%</span> against left-handed hitters. That is a real skill and
+    a real result. It is also <strong>a fix applied downstream of the failure</strong>, which
+    means it depends on the changeup continuing to miss bats.</p>
+  </div>
+</section>
+
+<section>
+  <div class="col">
+    <div class="sechead"><span class="secnum">06</span><h2>Tonight</h2></div>
+    <p class="subhead">A Mariners advance was priced and not taken — this is a battery product, not a lineup product. What the frame does hold, and the three things to watch.</p>
+    <p>Nola has faced Seattle twice, both on the road, both a lifetime ago: 2017-06-27 (7.0 IP,
+    28 PA, <span class="mono">.308</span>, Rupp catching) and 2022-05-10 (5.1 IP, 27 PA,
+    <span class="mono">.334</span>, Realmuto). Neither roster survives. The Phillies have seen
+    Seattle once in 2026 — the series opener on 8/24, 39 PA, in which Seattle put up a
+    <span class="mono">.483</span> wOBA against the staff on a 21 L / 18 R split. One game. It is
+    context, not a read.</p>
+  </div>
+
+  <ol class="watch">
+    <li>
+      <div>
+        <h4>First pitch to lefties</h4>
+        <p>The one tripwire that hasn't moved (<span class="mono">58.1%</span>). If he gets ahead
+        of left-handed hitters tonight, the changeup escape becomes a luxury instead of a
+        necessity.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h4>The changeup to righties</h4>
+        <p><span class="mono">12.7%</span> usage, <span class="mono">7.4%</span> walk rate — up
+        from a near-perfect <span class="mono">1.9%</span>. If the walks to righties show up
+        again, the plan is over-extended.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <h4>The knuckle curve's share with Stubbs</h4>
+        <p><span class="mono">20%</span> in the first two starts of the pairing, back to
+        <span class="mono">29%</span> and <span class="mono">34%</span> in the last two. If it
+        stays at 34%, the "Stubbs shelves the curve" hypothesis is dead and should be retired
+        rather than carried.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <div class="col">
+    <div class="sechead"><span class="secnum">07</span><h2>What this does not tell you</h2></div>
+    <p class="subhead">Stated up front rather than discovered later.</p>
+    <ul class="limits">
+      <li><span class="lid">L-1</span><span><strong>Who called any pitch.</strong> No PitchCom sender field exists. The travel test bounds the question; it does not resolve it.</span></li>
+      <li><span class="lid">L-2</span><span><strong>Whether Stubbs <em>causes</em> the 2026 gap.</strong> Catcher assignment is non-random and 8 starts is not a design. The opponent control rules out one confound, not all of them.</span></li>
+      <li><span class="lid">L-3</span><span><strong>Catcher framing, blocking or throwing.</strong> No catcher-defence model in this data plane.</span></li>
+      <li><span class="lid">L-4</span><span><strong>Anything about tonight's Seattle lineup.</strong> Explicitly de-scoped.</span></li>
+      <li><span class="lid">L-5</span><span><strong>Sequence effects beyond adjacent pairs.</strong> Repeat-pitch rate sees consecutive repeats; arsenal entropy is first-order. Neither sees three-pitch patterns.</span></li>
+      <li><span class="lid">L-6</span><span><strong>Postseason.</strong> Regular season only. Never blended.</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="frow">
+    <span>UC #38 · uc-pps-027 · dp_uc38</span>
+    <span>Company of Agents</span>
+    <span>Delivered 2026-08-26</span>
+    <span>117/117 verification · 0 DQ fail</span>
+  </div>
+  <p>Every number on this page traces to a CSV receipt written by
+  <span class="mono">dp_uc38_nola_stubbs_battery.py</span> or
+  <span class="mono">dp_uc38b_battery_addendum.py</span> in the delivery session. Nothing is
+  quoted from a prior product's cache except where labelled. Entity-locked to MLBAM 605400,
+  regular season only, deduped on <span class="mono">game_pk + at_bat_number + pitch_number</span>.</p>
+</footer>
+</div>
+
+<script>
+/* ---------- dumbbell: TR-1 travel test ---------- */
+const TT = [
+  ["Changeup when behind",      0.1908,  0.1471, true],
+  ["Changeup share",            0.1305,  0.0702, true],
+  ["First-pitch offspeed",      0.1233,  0.0466, true],
+  ["Two-strike changeup",       0.1230,  0.0627, true],
+  ["Whiff rate",                0.0759,  0.0535, true],
+  ["Chase rate",                0.0439,  0.0029, false],
+  ["In-zone rate",             -0.0127, -0.0273, true],
+  ["First-pitch strike rate",  -0.0134, -0.0208, true],
+  ["Fastball share",           -0.0627, -0.0946, true],
+  ["Knuckle-curve share",      -0.0719,  0.0308, false],
+  ["Two-strike fastball",      -0.1114, -0.1267, true]
+];
+const LO = -0.135, HI = 0.205;
+const pct = v => ((v - LO) / (HI - LO)) * 100;
+document.getElementById("dumb").innerHTML = TT.map(([lab, s, n, travels]) => {
+  const a = Math.min(pct(s), pct(n)), b = Math.max(pct(s), pct(n));
+  return `<div class="drow${travels ? "" : " nt"}">
+    <div class="dlab">${lab}</div>
+    <div class="dtrack">
+      <div class="zero" style="left:${pct(0)}%"></div>
+      <div class="dbar" style="left:${a}%;width:${b - a}%"></div>
+      <div class="dot n" style="left:${pct(n)}%" title="other catchers ${(n*100).toFixed(1)} pts"></div>
+      <div class="dot s" style="left:${pct(s)}%" title="Stubbs ${(s*100).toFixed(1)} pts"></div>
+    </div></div>`;
+}).join("");
+
+/* ---------- ramp: changeup share by start ---------- */
+const R = [
+  ["3/28","R",.0659],["4/03","R",.1684],["4/08","M",.1429],["4/14","R",.1149],
+  ["4/20","M",.1250],["4/26","M",.1089],["5/04","S",.1809],["5/09","R",.1596],
+  ["5/15","S",.1125],["5/20","R",.1299],["5/26","R",.0375],["6/02","S",.0632],
+  ["6/07","M",.1429],["6/13","R",.1176],["6/18","R",.1443],["6/24","R",.1628],
+  ["6/29","R",.1628],["7/05","S",.1939],["7/10","M",.2381],["7/16","R",.2165],
+  ["7/22","M",.1765],["7/28","S",.3656],["8/03","S",.2577],["8/08","S",.2371],
+  ["8/13","R",.1649],["8/19","S",.2000]
+];
+const W = 900, H = 300, PL = 46, PR = 14, PT = 24, PB = 44;
+const x = i => PL + i * (W - PL - PR) / (R.length - 1);
+const y = v => PT + (1 - v / 0.40) * (H - PT - PB);
+const COL = { S: "var(--red)", R: "var(--navy)", M: "var(--muted)" };
+let g = "";
+/* shaded post-breakpoint band, from 7/05 (index 17) */
+g += `<rect x="${x(17) - 8}" y="${PT - 8}" width="${W - PR - x(17) + 8}" height="${H - PT - PB + 16}" fill="var(--surface-2)"/>`;
+[0, .10, .20, .30, .40].forEach(v => {
+  g += `<line x1="${PL}" y1="${y(v)}" x2="${W - PR}" y2="${y(v)}" stroke="var(--rule-soft)" stroke-width="1"/>`;
+  g += `<text x="${PL - 9}" y="${y(v) + 4}" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="11" fill="var(--muted)">${(v * 100).toFixed(0)}%</text>`;
+});
+g += `<line x1="${x(17) - 8}" y1="${PT - 8}" x2="${x(17) - 8}" y2="${H - PB + 8}" stroke="var(--ink-2)" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+g += `<text x="${x(17) - 2}" y="${PT + 4}" font-family="Archivo,sans-serif" font-size="12" font-weight="700" fill="var(--ink-2)">breakpoint · 7/05</text>`;
+g += `<polyline points="${R.map((d, i) => `${x(i)},${y(d[2])}`).join(" ")}" fill="none" stroke="var(--rule)" stroke-width="2"/>`;
+R.forEach((d, i) => {
+  g += `<circle cx="${x(i)}" cy="${y(d[2])}" r="6" fill="${COL[d[1]]}" stroke="var(--surface)" stroke-width="2"><title>${d[0]} · ${{S:"Stubbs",R:"Realmuto",M:"Marchán"}[d[1]]} · ${(d[2]*100).toFixed(1)}%</title></circle>`;
+  if (i % 3 === 0 || i === R.length - 1)
+    g += `<text x="${x(i)}" y="${H - PB + 22}" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="var(--muted)">${d[0]}</text>`;
+});
+const LEG = [["S", "Stubbs"], ["R", "Realmuto"], ["M", "Marchán"]];
+LEG.forEach(([k, name], i) => {
+  const lx = PL + 8 + i * 118, ly = H - 6;
+  g += `<circle cx="${lx}" cy="${ly - 4}" r="6" fill="${COL[k]}"/>`;
+  g += `<text x="${lx + 13}" y="${ly}" font-family="Archivo,sans-serif" font-size="12.5" fill="var(--ink-2)">${name}</text>`;
+});
+document.getElementById("rampG").innerHTML = g;
+</script>
+</body>
+</html>

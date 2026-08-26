@@ -1,0 +1,2 @@
+source,entity_lock,filters,rows,games,seasons,max_game_date,game_day,woba_constants,manual_carry_in
+/tmp/mlbdata/data/phillies/phils_*.parquet,pitcher == 605400,game_type=='R'; dedup game_pk+at_bat_number+pitch_number,29499,311,2015-2026,2026-08-19,2026-08-26,/tmp/uc38/wOBA and FIP Constants.csv,"Tonight's start PHI@SEA 2026-08-26 and the Stubbs pairing are DPO prose, not a posted lineup — confirm pre-game"

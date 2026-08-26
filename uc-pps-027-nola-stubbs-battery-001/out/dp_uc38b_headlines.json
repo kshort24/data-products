@@ -1,0 +1,9 @@
+{
+  "breakpoint": "2026-07-05",
+  "game_day": "2026-08-26",
+  "as_of": "2026-08-19",
+  "metrics_that_travel": 10,
+  "metrics_tested": 12,
+  "stubbs_2026_starts": 8,
+  "attribution_constraint": "pitch-call attribution NOT OBSERVABLE (G4)"
+}

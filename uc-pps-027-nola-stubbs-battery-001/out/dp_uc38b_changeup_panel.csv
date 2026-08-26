@@ -1,0 +1,5 @@
+era,stand,changeups,velo,zone_rate,swings,whiffs,whiff_rate,chase_rate,bip,xwobacon
+before,L,165,85.7073,0.3394,72,15,0.2083,0.2844,31,0.285
+before,R,27,85.2444,0.3333,11,2,0.1818,0.1667,4,0.0585
+since,L,159,85.5132,0.3459,75,24,0.32,0.2788,26,0.3509
+since,R,34,85.4882,0.3824,17,7,0.4118,0.381,6,0.5695

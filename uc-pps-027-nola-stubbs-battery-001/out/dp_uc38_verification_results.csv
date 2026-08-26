@@ -1,0 +1,49 @@
+tier,check,result,detail
+A,BAT-5 pair count (cat 596117),PASS,PA1 gives 2 pairs + PA2 gives 1 = 3
+A,BAT-5 repeat count (cat 596117),PASS,only FF->FF repeats
+A,BAT-5 all-same-pitch group = 1.0,PASS,KC KC KC
+A,BAT-5 single-pitch PAs excluded from denominator,PASS,"8 pitches, 3 PAs -> 5 consecutive pairs"
+A,BAT-6 single-type group has zero entropy,PASS,and not -0.0
+A,BAT-6 active_types counted correctly,PASS,FF SI KC CH
+A,"BAT-6 normalised entropy in [0,1]",PASS,
+A,BAT-7 JSD(identical) == 0,PASS,
+A,BAT-7 JSD(disjoint) == 1,PASS,
+A,BAT-7 JSD symmetric,PASS,
+A,BAT-7 NaN when a side is empty,PASS,cat 592663 has zero ahead-count pitches
+A,CS-1 count_state domain closed,PASS,"[np.str_('ahead'), np.str_('behind'), np.str_('even')]"
+A,BAT-4 two-strike population correct,PASS,
+A,BAT-4 KC not counted as fastball,PASS,
+A,BAT-2 shares sum to 1 within group,PASS,
+A,"BAT-8 zone_rate bounded [0,1]",PASS,
+A,BAT-9 in-zone whiff uses same filter both sides,PASS,
+A,BAT-3 only PA-terminal two-strike rows,PASS,one two-strike terminal pitch in the fixture
+B,catcher_slot_coverage,PASS,7 shared / 7 built / 7 dpo-path
+B,col::total_pitches,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::uq_games,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::plate_apps,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::woba,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::krate,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::bbrate,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::hr_rate,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::chase_rate,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::whiff_rate,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::putaway_rate,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,col::first_pitch_strike_rate,PASS,max |delta| = 0.000000 over 7 slots (tolerance 0.0015 = the locked 3dp rounding boundary)
+B,receipt::dp_uc38_battery_career.csv,PASS,
+B,receipt::dp_uc38_battery_season.csv,PASS,
+B,receipt::dp_uc38_battery_window.csv,PASS,
+B,receipt::dp_uc38_nola_baseline.csv,PASS,
+B,receipt::dp_uc38_mix_by_catcher.csv,PASS,
+B,receipt::dp_uc38_mix_by_catcher_window.csv,PASS,
+B,receipt::dp_uc38_count_state_mix.csv,PASS,
+B,receipt::dp_uc38_first_pitch_mix.csv,PASS,
+B,receipt::dp_uc38_putaway_pitch_mix.csv,PASS,
+B,receipt::dp_uc38_zone_by_count_state.csv,PASS,
+B,receipt::dp_uc38_sequencing_window.csv,PASS,
+B,receipt::dp_uc38_window_sensitivity.csv,PASS,
+B,receipt::dp_uc38_confound_panel.csv,PASS,
+B,receipt::dp_uc38_start_log.csv,PASS,
+B,receipt::dp_uc38_catcher_identity.csv,PASS,
+B,receipt::dp_uc38_attribution_guard.csv,PASS,
+B,receipt::dp_uc38_dq_scorecard.csv,PASS,
+B,receipt::dp_uc38_freshness_manifest.csv,PASS,

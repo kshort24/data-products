@@ -1,0 +1,8 @@
+check,result,detail,severity
+entity_lock,PASS,pitcher==605400 only; 1 distinct pitcher id(s); 1 distinct player_name(s),INFO
+row_count,"29,499 pitches","311 games, 2015-2026",INFO
+fielder_2_null_rate,0.0000%,catcher CDE completeness,INFO
+freshness,2026-08-19,T-7 vs game day,INFO
+catcher_name_cross_check,PASS,7 ids; 0 disagreements; 0 unresolved,INFO
+catcher_split_games,4 of 311,starts where >1 catcher caught Nola (ambiguous for catcher attribution),INFO
+window_sensitivity,COMPUTED,"headline window = last 5 starts; variants (3, 5, 8)",INFO

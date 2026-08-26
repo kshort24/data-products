@@ -1,0 +1,7 @@
+era,count_state,pitches,changeups,ch_share
+before,ahead,436,53,0.1216
+before,behind,393,49,0.1247
+before,even,689,90,0.1306
+since,ahead,254,48,0.189
+since,behind,213,60,0.2817
+since,even,381,85,0.2231

@@ -1,0 +1,2 @@
+constraint,status,detail,governed_by
+pitch_call_attribution,NOT OBSERVABLE,Statcast carries no PitchCom sender / pitch-call attribution field. This build measures WHAT WAS THROWN at the pitcher x catcher grain. It CANNOT distinguish a pitch Nola called from a pitch Stubbs called. Any narrative attributing a mix change to a specific person is unsupported by this data product.,UC38 G4 / 03_governance.md AT-1

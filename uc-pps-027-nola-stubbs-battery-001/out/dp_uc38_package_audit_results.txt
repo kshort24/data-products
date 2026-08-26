@@ -1,0 +1,47 @@
+[PASS] every receipt cited in the report is written by a build  21 cited
+[PASS] a verification harness asserts every report receipt  34 asserted
+[PASS] figures are drawn only from receipts, never recomputed
+[PASS] BAT-1 traced (spec+glossary+lineage+function)  fn=mix_share
+[PASS] BAT-2 traced (spec+glossary+lineage+function)  fn=first_pitch_mix
+[PASS] BAT-3 traced (spec+glossary+lineage+function)  fn=putaway_pitch_mix
+[PASS] BAT-4 traced (spec+glossary+lineage+function)  fn=two_strike_fastball_rate
+[PASS] BAT-5 traced (spec+glossary+lineage+function)  fn=repeat_pitch_rate
+[PASS] BAT-6 traced (spec+glossary+lineage+function)  fn=arsenal_entropy
+[PASS] BAT-7 traced (spec+glossary+lineage+function)  fn=count_state_divergence
+[PASS] BAT-8 traced (spec+glossary+lineage+function)  fn=zone_rate_by_count_state
+[PASS] BAT-9 traced (spec+glossary+lineage+function)  fn=in_zone_whiff_rate
+[PASS] CS-1 traced (spec+glossary+lineage+function)  fn=count_state
+[PASS] TR-1 glossaried before use
+[PASS] TR-2 glossaried before use
+[PASS] OC-1 glossaried before use
+[PASS] LH-1 glossaried before use
+[PASS] CH-1 glossaried before use
+[PASS] TR-1 named in the report as the Q2 method
+[PASS] all 11 locked KPI functions present  verbatim block intact
+[PASS] entity lock uses MLBAM id
+[PASS] addendum carries the same entity lock
+[PASS] no player_name equality filter on Nola anywhere
+[PASS] G3 confound panel enforced in code
+[PASS] G4 attribution guard enforced in code
+[PASS] G5 floors as flags enforced in code
+[PASS] hard exit when data plane absent enforced in code
+[PASS] G6 breakpoint scan implemented enforced in code
+[PASS] G7 single-stratum rule implemented enforced in code
+[PASS] G6 and G7 registered in the glossary
+[PASS] O-12 accent fold present in the identity cross-check
+[PASS] report and certification agree on delivery state  0 FILL tokens · certify-ready=True
+[PASS] report ships filled (run-2 target state)  0 FILL tokens
+[PASS] run-1 NOT-READY verdict retained as history, not deleted  both states present, run 2 authoritative
+[PASS] prior-product figures labelled with their source
+[PASS] attribution limit stated in the report front matter
+[PASS] small samples printed with the report's rates
+[PASS] bid carries token + time + credit estimate
+[PASS] bid records the run-2 resumption and its overrun
+[PASS] telemetry bid total matches the bid doc
+[PASS] telemetry carries both runs
+[PASS] calibration finding C-1 (premise risk) recorded
+[PASS] governance spine 00-07 complete
+
+==================================================================
+43 PASS · 0 FAIL
+==================================================================
