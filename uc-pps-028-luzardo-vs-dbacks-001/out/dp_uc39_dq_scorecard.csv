@@ -1,0 +1,29 @@
+rule,scope,result,detail
+ENTITY-LOCK: pitcher id only,luzardo frame,PASS,"pitcher==666200, 1 distinct id(s), no name filter used"
+ENTITY-LOCK: single resolved name,luzardo frame,PASS,"['Luzardo, Jesús']"
+DEDUP: pitch grain unique,luzardo frame,PASS,"0 duplicate (game_pk, at_bat_number, pitch_number)"
+GAME-TYPE: regular season only,all frames,PASS,game_type values ['R']
+XWOBA-GRAIN: field populated on PA-terminating rows only,lz 2026,PASS,"664 non-null pitch rows == 664 non-null PA rows -> pitch-level mean IS a per-PA xwOBA, not xwOBAcon"
+XWOBA-COVERAGE: PA without an xwOBA value,lz 2026,PASS,"9/673 PA uncovered: {'sac_bunt': 4, 'truncated_pa': 3, 'field_out': 1, 'single': 1}"
+O-5 truncated_pa present (known open defect),lz 2026,WARN,3 truncated_pa counted as PA by locked get_stats
+O-8 hard_hit denominator (known open defect),lz 2026,WARN,2/408 BIP untracked; both locked and tracked-denominator rates emitted
+CDE completeness: zone @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: strikes @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: balls @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: pitch_number @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: n_thruorder_pitcher @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: description @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: pitch_name @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: stand @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: post_bat_score @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: bat_score @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: release_speed @ pitch,lz 2026,PASS,100.0% non-null of 2652 pitch rows
+CDE completeness: events @ PA-terminating,lz 2026,PASS,100.0% non-null of 673 PA-terminating rows
+CDE completeness: estimated_woba_using_speedangle @ PA-terminating,lz 2026,PASS,98.7% non-null of 673 PA-terminating rows
+CDE completeness: launch_speed @ ball-in-play,lz 2026,PASS,99.5% non-null of 408 ball-in-play rows
+CDE completeness: launch_angle @ ball-in-play,lz 2026,PASS,99.5% non-null of 408 ball-in-play rows
+START-LOG: every appearance is a start,lz 2026,PASS,27/27 appearances were games he started
+H2H-RECENCY: current-era tier isolated,ARI batter panel,PASS,15/34 batters faced in 2025-26; the rest are historical only
+H2H-NAMES: all resolved from des (no hand-keyed ids),ARI batter panel,PASS,0 unresolved/anomalous names
+CONTINUITY: reproduces uc-pps-017 published H1 line,17 metrics,PASS,17/17 match within tolerance
+FIGURES: rendered,5 figures,PASS,fig1..fig5 written to out/

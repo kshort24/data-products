@@ -1,0 +1,9 @@
+item,value,source,note
+phils_2026 parquet max game_date,2026-08-30,data/phillies/phils_2026.parquet,
+phils_2025 parquet max game_date,2025-09-28,data/phillies/phils_2025.parquet,
+Luzardo last start in log,2026-08-26,pitch log,T-6 vs the 2026-09-01 game date
+Luzardo 2026 starts in window,27,pitch log,
+game date / opponent,2026-09-01 vs AZ,DPO carry-in,MANUAL — not derivable from the log
+ARI confirmed lineup,NOT AVAILABLE,n/a,"UNVERIFIED — hitter panel is faced-batters + career H2H, labelled throughout"
+premise breakpoint,2026-05-01,DPO prose 'since the end of April',scanned across 8 boundaries (TR-2)
+build executed,2026-09-01 22:40,this run,

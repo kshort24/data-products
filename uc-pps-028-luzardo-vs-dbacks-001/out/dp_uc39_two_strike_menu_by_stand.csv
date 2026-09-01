@@ -1,0 +1,9 @@
+stand,pitch_name,pitches,share_2k,whiff_rate
+L,Sweeper,125,0.641,0.471
+L,4-Seam Fastball,39,0.2,0.208
+L,Sinker,17,0.087,0.222
+L,Changeup,14,0.072,0.5
+R,Sweeper,278,0.445,0.434
+R,4-Seam Fastball,202,0.323,0.197
+R,Changeup,135,0.216,0.3
+R,Sinker,10,0.016,0.2

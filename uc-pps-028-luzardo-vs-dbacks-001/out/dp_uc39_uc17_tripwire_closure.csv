@@ -1,0 +1,15 @@
+tripwire,watch_item,h1,h2,delta,desired_direction,status,note
+T1,first-pitch strike rate (uc-pps-017 early-warning gauge),0.6,0.654,0.054,up,IMPROVED,gauge for whether the out-of-zone plan stays affordable
+T2,chase rate (the identity the profile leans on),0.333,0.339,0.006,hold-or-up,HELD,"if hitters stop chasing, zone rate must come back up"
+T3,walk rate (the price of the out-of-zone plan),0.075,0.072,-0.003,down,IMPROVED,chase must be bought without walks
+T4,in-zone rate,0.468,0.457,-0.011,context,CONTEXT,read with T1/T2
+T5,hard-hit rate,0.305,0.382,0.077,down,DEGRADED,contact-quality floor
+T6.1,TTO 1 wOBA (uc-pps-017 flagged the 2nd-time cliff),0.198,0.198,0.0,down,HELD,H1 PA 172 / H2 PA 72
+T6.2,TTO 2 wOBA (uc-pps-017 flagged the 2nd-time cliff),0.368,0.279,-0.089,down,IMPROVED,H1 PA 171 / H2 PA 73
+T6.3,TTO 3 wOBA (uc-pps-017 flagged the 2nd-time cliff),0.331,0.277,-0.054,down,IMPROVED,H1 PA 122 / H2 PA 63
+T7.L,vs LHB wOBA,0.209,0.101,-0.108,down,IMPROVED,H1 PA 112 / H2 PA 51
+T7.R,vs RHB wOBA,0.323,0.299,-0.024,down,IMPROVED,H1 PA 353 / H2 PA 157
+T8.Sinker,Sinker usage share,0.174,0.178,0.004,context,CONTEXT,xwOBA 0.323 -> 0.335; whiff 0.122 -> 0.111
+T8.Sweeper,Sweeper usage share,0.371,0.407,0.036,context,CONTEXT,xwOBA 0.193 -> 0.163; whiff 0.509 -> 0.427
+T8.4-Seam Fastball,4-Seam Fastball usage share,0.252,0.272,0.02,context,CONTEXT,xwOBA 0.312 -> 0.288; whiff 0.170 -> 0.216
+T8.Changeup,Changeup usage share,0.203,0.143,-0.06,context,CONTEXT,xwOBA 0.284 -> 0.317; whiff 0.390 -> 0.345

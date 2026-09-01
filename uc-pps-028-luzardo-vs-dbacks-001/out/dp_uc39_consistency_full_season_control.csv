@@ -1,0 +1,6 @@
+window_start,who,starts,pa,outs,ip,mean_start_xwoba,agg_xwoba,ra9,cn1_xwoba_sd,cn1_xwoba_iqr,cn2_floor_rate,cn2_floor_n,cn3_blowup_rate,cn3_blowup_n,cn4_roll3_range,cn5_median_days_rest,cn5_long_gaps,cn5_pitch_min,cn5_pitch_max,cn5_pitch_sd,cn6_mean_outs,cn6_outs_sd,cn6_ip_per_start,woba,name
+2026-01-01 (full season control),554430,22,517,379,126.1,0.2715,0.2706,3.21,0.0731,0.0544,0.727,16,0.136,3,0.1084,6.0,0,68,116,9.7,17.23,3.18,5.74,0.289,"Wheeler, Zack"
+2026-01-01 (full season control),605400,27,617,421,140.1,0.318,0.3152,4.94,0.0688,0.0827,0.593,16,0.185,5,0.1292,6.0,0,77,101,6.8,15.59,2.42,5.2,0.35,"Nola, Aaron"
+2026-01-01 (full season control),650911,28,726,521,173.2,0.281,0.2806,2.54,0.0845,0.1009,0.786,22,0.107,3,0.1524,6.0,0,83,108,6.5,18.61,3.44,6.2,0.287,"Sánchez, Cristopher"
+2026-01-01 (full season control),666200,27,673,481,160.1,0.2624,0.2637,3.2,0.0736,0.0663,0.667,18,0.222,6,0.1236,6.0,0,86,110,6.0,17.81,2.93,5.94,0.281,"Luzardo, Jesús"
+2026-01-01 (full season control),691725,17,376,257,85.2,0.3308,0.3345,4.83,0.1087,0.1539,0.529,9,0.235,4,0.1751,6.0,2,62,103,11.6,15.12,3.03,5.04,0.349,"Painter, Andrew"
