@@ -1,0 +1,10 @@
+phase,description,bid_tokens_in,bid_tokens_out,bid_minutes,actual_tokens_in,actual_tokens_out,actual_minutes,note
+T1,Recon + intake + source profile + bid,70000,8000,25,52000,5200,15,"parent package + 5 memory files + kernel read; bid filed 17:04Z"
+T2,"Design: KPI specs, glossary deltas, model, lineage, DQ rules",12000,14000,15,9000,10600,7,"Rule-1 grep found OZ-3; 02+03 authored"
+T3,"Build: kernel + build script + 27 receipts + 6 figures",26000,22000,30,21000,17800,14,"kernel ~85% inherited verbatim from dp_uc37; 6 build passes"
+T4,Report + PDF,10000,16000,20,8500,10400,8,"PDF built in the cloud container (weasyprint unavailable on the device VM)"
+T5,Interactive dashboard (vendored),10000,14000,15,7500,9600,6,"chart.js copied from uc-pos-013, not re-fetched; QA by headless screenshot"
+T6,Independent verification + parent-reproduction check,12000,12000,20,10500,6800,7,"711 checks; 4 failures found, 3 report corrections + 1 new defect"
+T7,Governance spine 00-07 + README + telemetry + ledger patch + close,18000,24000,30,12500,13600,8,
+CONTINGENCY,Environmental (installs / retries / mount latency),16000,11000,16,0,0,0,"pyarrow redirect worked first time on the recorded recipe"
+TOTAL,,174000,121000,171,121000,74000,65,

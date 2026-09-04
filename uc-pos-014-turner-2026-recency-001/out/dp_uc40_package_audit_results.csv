@@ -1,0 +1,117 @@
+check,pass,detail
+file exists: 00_dpo_orchestration_record.md,True,
+file exists: 01_strategy_intake.md,True,
+file exists: 02_engineering_design.md,True,
+file exists: 03_governance.md,True,
+file exists: 04_engineering_build.md,True,
+file exists: 05_quality_certification.md,True,
+file exists: 06_consumer_success.md,True,
+file exists: 07_platform_marketing.md,True,
+file exists: README.md,True,
+file exists: BID_2026-09-03_uc-pos-014-turner.md,True,
+file exists: uc-pos-014-Trea Turner 20260903.md,True,
+file exists: uc_ledger_AI_PATCH_uc-pos-014-turner.md,True,
+file exists: dp_uc40_kernel.py,True,
+file exists: dp_uc40_turner_recency.py,True,
+file exists: dp_uc40_verification.py,True,
+file exists: dp_uc40_build_pdf.py,True,
+file exists: dp_uc40_build_dashboard.py,True,
+file exists: dp_uc40_turner_recency_report.md,True,
+file exists: dp_uc40_turner_recency_report.pdf,True,
+file exists: dp_uc40_turner_recency_dashboard.html,True,
+file exists: _chartjs_4.4.1.umd.js,True,
+file exists: telemetry/run_economics_ledger.csv,True,
+file exists: telemetry/calibration_report.md,True,
+receipts: 29 CSV present (27 analysis + verification + package audit),True,29
+receipts: 6 figures present,True,6
+receipts: headlines.json present,True,
+receipts: build console log present,True,
+receipt non-empty: dp_uc40_approach_differential_season.csv,True,
+receipt non-empty: dp_uc40_approach_differential_window.csv,True,
+receipt non-empty: dp_uc40_breakpoint_scan.csv,True,
+receipt non-empty: dp_uc40_career_approach.csv,True,
+receipt non-empty: dp_uc40_career_bat_tracking.csv,True,
+receipt non-empty: dp_uc40_career_by_season.csv,True,
+receipt non-empty: dp_uc40_career_contact.csv,True,
+receipt non-empty: dp_uc40_career_pull_air.csv,True,
+receipt non-empty: dp_uc40_count_state_window.csv,True,
+receipt non-empty: dp_uc40_dq_scorecard.csv,True,
+receipt non-empty: dp_uc40_monthly_master.csv,True,
+receipt non-empty: dp_uc40_package_audit_results.csv,True,
+receipt non-empty: dp_uc40_parent_reproduction.csv,True,
+receipt non-empty: dp_uc40_phi_reference_2023_2025.csv,True,
+receipt non-empty: dp_uc40_pitch_group_season.csv,True,
+receipt non-empty: dp_uc40_pitch_group_window.csv,True,
+receipt non-empty: dp_uc40_pitch_type_2026.csv,True,
+receipt non-empty: dp_uc40_platoon_counterfactual.csv,True,
+receipt non-empty: dp_uc40_platoon_exposure_season.csv,True,
+receipt non-empty: dp_uc40_platoon_exposure_window.csv,True,
+receipt non-empty: dp_uc40_platoon_season.csv,True,
+receipt non-empty: dp_uc40_platoon_window.csv,True,
+receipt non-empty: dp_uc40_population_pool.csv,True,
+receipt non-empty: dp_uc40_profile_percentiles.csv,True,
+receipt non-empty: dp_uc40_rolling_form.csv,True,
+receipt non-empty: dp_uc40_running_line.csv,True,
+receipt non-empty: dp_uc40_shift_tests_july_vs_recent.csv,True,
+receipt non-empty: dp_uc40_verification_results.csv,True,
+receipt non-empty: dp_uc40_window_split.csv,True,
+report figure resolves: dp_uc40_fig5.png,True,
+report figure resolves: dp_uc40_fig3.png,True,
+report figure resolves: dp_uc40_fig6.png,True,
+report figure resolves: dp_uc40_fig1.png,True,
+report figure resolves: dp_uc40_fig2.png,True,
+report figure resolves: dp_uc40_fig4.png,True,
+report cites all 6 figures,True,
+verification: all checks pass,True,711/711
+report quotes the true verification count,True,711/711
+dashboard quotes the true verification count,True,711/711
+README quotes the true verification count,True,711/711
+00 quotes the true verification count,True,711/711
+05 quotes the true verification count,True,711/711
+DQ has zero FAIL,True,0
+report quotes the true DQ split,True,22/3/0
+README quotes the true DQ split,True,22/3/0
+00 quotes the true DQ split,True,22/3/0
+report quotes the true parent-reproduction count,True,84/84
+README quotes the true parent-reproduction count,True,84/84
+dashboard quotes the true parent-reproduction count,True,84/84
+00 quotes the true parent-reproduction count,True,84/84
+AD-1 has a spec in 03,True,
+AD-1 is marked provisional or ratification-candidate somewhere in 03,True,
+ST-1 has a spec in 03,True,
+ST-1 is marked provisional or ratification-candidate somewhere in 03,True,
+BT-1 has a spec in 03,True,
+BT-1 is marked provisional or ratification-candidate somewhere in 03,True,
+RF-2 has a spec in 03,True,
+RF-2 is marked provisional or ratification-candidate somewhere in 03,True,
+03 records the Rule-1 grep,True,
+03 records the OZ-3 inheritance rather than redefining it,True,
+05 registers the new defect D-7 / O-13,True,
+report discloses D-7 to the consumer,True,
+dashboard discloses D-7 to the consumer,True,
+01 declares the three DPO discretionary calls,True,
+01 records zero blocking gaps,True,
+report declares the causation limit,True,
+dashboard declares the causation limit,True,
+report declares the 50-PA floor,True,
+dashboard declares the 50-PA floor,True,
+"no bare un-cohorted ""career worst"" survives in the report",True,
+dashboard has no external script src,True,
+dashboard has no external stylesheet,True,
+dashboard vendors chart.js inline,True,
+dashboard has a degrade path for charts,True,
+dashboard has no unreplaced build tokens,True,
+telemetry: bid_tokens_in sums to its TOTAL row,True,174000 vs 174000
+telemetry: bid_tokens_out sums to its TOTAL row,True,121000 vs 121000
+telemetry: bid_minutes sums to its TOTAL row,True,171 vs 171
+telemetry: actual_tokens_in sums to its TOTAL row,True,121000 vs 121000
+telemetry: actual_tokens_out sums to its TOTAL row,True,74000 vs 74000
+telemetry: actual_minutes sums to its TOTAL row,True,65 vs 65
+bid states the awarded status,True,
+bid ID reservation matches the package,True,
+07 reports bid vs actual,True,
+calibration report names the harness-overhead gap,True,
+ledger patch is a single pipe-delimited row,True,
+ledger patch advances the next-available pointer,True,
+ledger patch names the package path,True,
+ledger patch carries the verification count,True,

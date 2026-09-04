@@ -1,0 +1,13 @@
+metric,window,reference_mix,actual,reweighted_to_reference,mix_effect,from_label,to_label
+ba,W3_recent (Aug 1-Sep 2),W1_early (Mar 26-Jun 30),0.2078,0.2096,-0.0019,W1_early (Mar 26-Jun 30),W3_recent (Aug 1-Sep 2)
+obp,W3_recent (Aug 1-Sep 2),W1_early (Mar 26-Jun 30),0.2791,0.2833,-0.0043,W1_early (Mar 26-Jun 30),W3_recent (Aug 1-Sep 2)
+slg,W3_recent (Aug 1-Sep 2),W1_early (Mar 26-Jun 30),0.2765,0.278,-0.0014,W1_early (Mar 26-Jun 30),W3_recent (Aug 1-Sep 2)
+woba,W3_recent (Aug 1-Sep 2),W1_early (Mar 26-Jun 30),0.2511,0.2536,-0.0026,W1_early (Mar 26-Jun 30),W3_recent (Aug 1-Sep 2)
+ba,W3_recent (Aug 1-Sep 2),W2_july (Jul 1-31),0.2078,0.2083,-0.0006,W2_july (Jul 1-31),W3_recent (Aug 1-Sep 2)
+obp,W3_recent (Aug 1-Sep 2),W2_july (Jul 1-31),0.2791,0.2804,-0.0013,W2_july (Jul 1-31),W3_recent (Aug 1-Sep 2)
+slg,W3_recent (Aug 1-Sep 2),W2_july (Jul 1-31),0.2765,0.277,-0.0004,W2_july (Jul 1-31),W3_recent (Aug 1-Sep 2)
+woba,W3_recent (Aug 1-Sep 2),W2_july (Jul 1-31),0.2511,0.2519,-0.0008,W2_july (Jul 1-31),W3_recent (Aug 1-Sep 2)
+ba,W2_july (Jul 1-31),W1_early (Mar 26-Jun 30),0.2871,0.2876,-0.0005,W1_early (Mar 26-Jun 30),W2_july (Jul 1-31)
+obp,W2_july (Jul 1-31),W1_early (Mar 26-Jun 30),0.3333,0.3337,-0.0004,W1_early (Mar 26-Jun 30),W2_july (Jul 1-31)
+slg,W2_july (Jul 1-31),W1_early (Mar 26-Jun 30),0.5641,0.5629,0.0012,W1_early (Mar 26-Jun 30),W2_july (Jul 1-31)
+woba,W2_july (Jul 1-31),W1_early (Mar 26-Jun 30),0.3814,0.3813,0.0001,W1_early (Mar 26-Jun 30),W2_july (Jul 1-31)

@@ -1,0 +1,712 @@
+check,got,want,pass
+frame: single batter id,1,1,True
+frame: no duplicate pitch keys,0,0,True
+frame: 12 seasons present,12,12,True
+frame: 2026 R pitch rows,2276,2276,True
+frame: 2026 games,135,135,True
+frame: max game_date,2026-09-02,2026-09-02,True
+frame: min 2026 game_date,2026-03-26,2026-03-26,True
+frame: no spring/exhibition rows,0,0,True
+frame: postseason rows excluded from R,0,0,True
+frame: 2021 shows two batting teams,2,2,True
+sensor boundary: no bat_speed before 2023,0,0,True
+sensor boundary: no bat_speed in 2023,0,0,True
+sensor boundary: no attack_angle in 2024,0,0,True
+xwOBA is per-PA (non-null pitch rows == non-null PA rows),601,601,True
+2026 untracked BIP (O-8 exposure),0,0,True
+2026 untraced BIP hc_x/hc_y,0,0,True
+season 2015 plate_apps,44,44,True
+season 2015 at_bats,40,40,True
+season 2015 hits,9,9,True
+season 2015 hrs,1,1,True
+season 2015 strikeouts,12,12,True
+season 2015 ba,0.225,0.225,True
+season 2015 obp,0.29545454545454547,0.2955,True
+season 2015 slg,0.325,0.325,True
+season 2015 ops,0.6204545454545455,0.6205,True
+season 2015 woba,0.27809090909090906,0.2781,True
+season 2015 iso,0.1,0.1,True
+season 2015 babip,0.2962962962962963,0.2963,True
+season 2015 krate,0.2727272727272727,0.2727,True
+season 2015 bbrate,0.09090909090909091,0.0909,True
+season 2016 plate_apps,324,324,True
+season 2016 at_bats,307,307,True
+season 2016 hits,105,105,True
+season 2016 hrs,13,13,True
+season 2016 strikeouts,59,59,True
+season 2016 ba,0.34201954397394135,0.342,True
+season 2016 obp,0.37037037037037035,0.3704,True
+season 2016 slg,0.5667752442996743,0.5668,True
+season 2016 ops,0.9371456146700446,0.9371,True
+season 2016 woba,0.3950308641975308,0.395,True
+season 2016 iso,0.22475570032573294,0.2248,True
+season 2016 babip,0.3881856540084388,0.3882,True
+season 2016 krate,0.18209876543209877,0.1821,True
+season 2016 bbrate,0.043209876543209874,0.0432,True
+season 2017 plate_apps,447,447,True
+season 2017 at_bats,412,412,True
+season 2017 hits,117,117,True
+season 2017 hrs,11,11,True
+season 2017 strikeouts,80,80,True
+season 2017 ba,0.28398058252427183,0.284,True
+season 2017 obp,0.3378076062639821,0.3378,True
+season 2017 slg,0.45145631067961167,0.4515,True
+season 2017 ops,0.7892639169435938,0.7893,True
+season 2017 woba,0.33779418344519013,0.3378,True
+season 2017 iso,0.16747572815533984,0.1675,True
+season 2017 babip,0.32919254658385094,0.3292,True
+season 2017 krate,0.1789709172259508,0.179,True
+season 2017 bbrate,0.06711409395973154,0.0671,True
+season 2018 plate_apps,738,738,True
+season 2018 at_bats,665,665,True
+season 2018 hits,180,180,True
+season 2018 hrs,19,19,True
+season 2018 strikeouts,132,132,True
+season 2018 ba,0.2706766917293233,0.2707,True
+season 2018 obp,0.34103260869565216,0.341,True
+season 2018 slg,0.4150375939849624,0.415,True
+season 2018 ops,0.7560702026806145,0.7561,True
+season 2018 woba,0.3308505434782609,0.3309,True
+season 2018 iso,0.14436090225563913,0.1444,True
+season 2018 babip,0.3132295719844358,0.3132,True
+season 2018 krate,0.17886178861788618,0.1789,True
+season 2018 bbrate,0.08943089430894309,0.0894,True
+season 2019 plate_apps,567,567,True
+season 2019 at_bats,521,521,True
+season 2019 hits,155,155,True
+season 2019 hrs,19,19,True
+season 2019 strikeouts,113,113,True
+season 2019 ba,0.29750479846449135,0.2975,True
+season 2019 obp,0.3509700176366843,0.351,True
+season 2019 slg,0.4971209213051823,0.4971,True
+season 2019 ops,0.8480909389418666,0.8481,True
+season 2019 woba,0.35583950617283955,0.3558,True
+season 2019 iso,0.19961612284069097,0.1996,True
+season 2019 babip,0.34782608695652173,0.3478,True
+season 2019 krate,0.19929453262786595,0.1993,True
+season 2019 bbrate,0.07231040564373897,0.0723,True
+season 2020 plate_apps,259,259,True
+season 2020 at_bats,233,233,True
+season 2020 hits,78,78,True
+season 2020 hrs,12,12,True
+season 2020 strikeouts,36,36,True
+season 2020 ba,0.33476394849785407,0.3348,True
+season 2020 obp,0.3938223938223938,0.3938,True
+season 2020 slg,0.5879828326180258,0.588,True
+season 2020 ops,0.9818052264404196,0.9818,True
+season 2020 woba,0.4126833976833977,0.4127,True
+season 2020 iso,0.2532188841201717,0.2532,True
+season 2020 babip,0.35294117647058826,0.3529,True
+season 2020 krate,0.138996138996139,0.139,True
+season 2020 bbrate,0.08494208494208494,0.0849,True
+season 2021 plate_apps,644,644,True
+season 2021 at_bats,595,595,True
+season 2021 hits,195,195,True
+season 2021 hrs,28,28,True
+season 2021 strikeouts,110,110,True
+season 2021 ba,0.3277310924369748,0.3277,True
+season 2021 obp,0.37267080745341613,0.3727,True
+season 2021 slg,0.5361344537815126,0.5361,True
+season 2021 ops,0.9088052612349287,0.9088,True
+season 2021 woba,0.3862080745341615,0.3862,True
+season 2021 iso,0.2084033613445378,0.2084,True
+season 2021 babip,0.36225596529284165,0.3623,True
+season 2021 krate,0.17080745341614906,0.1708,True
+season 2021 bbrate,0.06055900621118013,0.0606,True
+season 2022 plate_apps,707,707,True
+season 2022 at_bats,652,652,True
+season 2022 hits,194,194,True
+season 2022 hrs,21,21,True
+season 2022 strikeouts,131,131,True
+season 2022 ba,0.29754601226993865,0.2975,True
+season 2022 obp,0.34184397163120567,0.3418,True
+season 2022 slg,0.4662576687116564,0.4663,True
+season 2022 ops,0.808101640342862,0.8081,True
+season 2022 woba,0.3496326241134752,0.3496,True
+season 2022 iso,0.16871165644171776,0.1687,True
+season 2022 babip,0.34189723320158105,0.3419,True
+season 2022 krate,0.18528995756718528,0.1853,True
+season 2022 bbrate,0.06223479490806223,0.0622,True
+season 2023 plate_apps,689,689,True
+season 2023 at_bats,639,639,True
+season 2023 hits,170,170,True
+season 2023 hrs,26,26,True
+season 2023 strikeouts,150,150,True
+season 2023 ba,0.26604068857589985,0.266,True
+season 2023 obp,0.3178519593613933,0.3179,True
+season 2023 slg,0.458528951486698,0.4585,True
+season 2023 ops,0.7763809108480912,0.7764,True
+season 2023 woba,0.333243831640058,0.3332,True
+season 2023 iso,0.19248826291079812,0.1925,True
+season 2023 babip,0.3103448275862069,0.3103,True
+season 2023 krate,0.21770682148040638,0.2177,True
+season 2023 bbrate,0.062409288824383166,0.0624,True
+season 2024 plate_apps,541,541,True
+season 2024 at_bats,507,507,True
+season 2024 hits,149,149,True
+season 2024 hrs,21,21,True
+season 2024 strikeouts,98,98,True
+season 2024 ba,0.2938856015779093,0.2939,True
+season 2024 obp,0.3364140480591497,0.3364,True
+season 2024 slg,0.46745562130177515,0.4675,True
+season 2024 ops,0.8038696693609249,0.8039,True
+season 2024 woba,0.3478170055452865,0.3478,True
+season 2024 iso,0.17357001972386588,0.1736,True
+season 2024 babip,0.32904884318766064,0.329,True
+season 2024 krate,0.18114602587800369,0.1811,True
+season 2024 bbrate,0.04990757855822551,0.0499,True
+season 2025 plate_apps,641,641,True
+season 2025 at_bats,592,592,True
+season 2025 hits,179,179,True
+season 2025 hrs,15,15,True
+season 2025 strikeouts,107,107,True
+season 2025 ba,0.30236486486486486,0.3024,True
+season 2025 obp,0.35257410296411856,0.3526,True
+season 2025 slg,0.4543918918918919,0.4544,True
+season 2025 ops,0.8069659948560104,0.807,True
+season 2025 woba,0.34979563182527307,0.3498,True
+season 2025 iso,0.15202702702702703,0.152,True
+season 2025 babip,0.3474576271186441,0.3475,True
+season 2025 krate,0.1669266770670827,0.1669,True
+season 2025 bbrate,0.0655226209048362,0.0655,True
+season 2026 plate_apps,602,602,True
+season 2026 at_bats,556,556,True
+season 2026 hits,133,133,True
+season 2026 hrs,17,17,True
+season 2026 strikeouts,131,131,True
+season 2026 ba,0.2392086330935252,0.2392,True
+season 2026 obp,0.292358803986711,0.2924,True
+season 2026 slg,0.37589928057553956,0.3759,True
+season 2026 ops,0.6682580845622506,0.6683,True
+season 2026 woba,0.29422129783693846,0.2942,True
+season 2026 iso,0.13669064748201437,0.1367,True
+season 2026 babip,0.2822384428223844,0.2822,True
+season 2026 krate,0.21760797342192692,0.2176,True
+season 2026 bbrate,0.06478405315614617,0.0648,True
+season 2020 bip,199,199,True
+season 2020 mean_ev,90.50663265306125,90.5066,True
+season 2020 mean_la,9.535714285714286,9.5357,True
+season 2020 hard_hit_rate,0.40703517587939697,0.407,True
+season 2020 barrel_rate,0.09547738693467336,0.0955,True
+season 2020 pu_rate,0.05527638190954774,0.0553,True
+season 2020 xwobacon,0.3942244897959184,0.3942,True
+season 2020 swing_rate,0.46853823814133594,0.4685,True
+season 2020 whiff_rate,0.1962809917355372,0.1963,True
+season 2020 chase_rate,0.2722117202268431,0.2722,True
+season 2020 z_swing,0.6746031746031746,0.6746,True
+season 2020 z_whiff,0.13529411764705881,0.1353,True
+season 2020 in_zone_rate_fix (D-7 corrected),0.4878993223620523,0.4879,True
+season 2020 D-7 exposure == zone_null_rate,0.0,0.0,True
+season 2020 srfp,0.2692307692307692,0.2692,True
+season 2020 fpsr,0.6423076923076924,0.6423,True
+season 2021 bip,489,489,True
+season 2021 mean_ev,89.57618069815194,89.5762,True
+season 2021 mean_la,11.371663244353183,11.3717,True
+season 2021 hard_hit_rate,0.4621676891615542,0.4622,True
+season 2021 barrel_rate,0.0736196319018405,0.0736,True
+season 2021 pu_rate,0.06339468302658487,0.0634,True
+season 2021 xwobacon,0.3941622176591376,0.3942,True
+season 2021 swing_rate,0.4917571371129875,0.4918,True
+season 2021 whiff_rate,0.22976287816843827,0.2298,True
+season 2021 chase_rate,0.2643312101910828,0.2643,True
+season 2021 z_swing,0.7238017871649066,0.7238,True
+season 2021 z_whiff,0.1537598204264871,0.1538,True
+season 2021 in_zone_rate_fix (D-7 corrected),0.4949738640932851,0.495,True
+season 2021 D-7 exposure == zone_null_rate,0.0,0.0,True
+season 2021 srfp,0.34520123839009287,0.3452,True
+season 2021 fpsr,0.6656346749226006,0.6656,True
+season 2023 bip,490,490,True
+season 2023 mean_ev,89.86061224489795,89.8606,True
+season 2023 mean_la,13.018367346938776,13.0184,True
+season 2023 hard_hit_rate,0.42244897959183675,0.4224,True
+season 2023 barrel_rate,0.0836734693877551,0.0837,True
+season 2023 pu_rate,0.05510204081632653,0.0551,True
+season 2023 xwobacon,0.382804081632653,0.3828,True
+season 2023 swing_rate,0.5312149532710281,0.5312,True
+season 2023 whiff_rate,0.2955665024630542,0.2956,True
+season 2023 chase_rate,0.35290055248618785,0.3529,True
+season 2023 z_swing,0.7416462917685411,0.7416,True
+season 2023 z_whiff,0.17802197802197803,0.178,True
+season 2023 in_zone_rate_fix (D-7 corrected),0.45869158878504673,0.4587,True
+season 2023 D-7 exposure == zone_null_rate,0.0,0.0,True
+season 2023 srfp,0.38816738816738816,0.3882,True
+season 2023 fpsr,0.6464646464646465,0.6465,True
+season 2024 bip,408,408,True
+season 2024 mean_ev,89.13832923832925,89.1383,True
+season 2024 mean_la,11.528255528255528,11.5283,True
+season 2024 hard_hit_rate,0.4068627450980392,0.4069,True
+season 2024 barrel_rate,0.06862745098039216,0.0686,True
+season 2024 pu_rate,0.051470588235294115,0.0515,True
+season 2024 xwobacon,0.3686609336609337,0.3687,True
+season 2024 swing_rate,0.5374449339207048,0.5374,True
+season 2024 whiff_rate,0.26138433515482695,0.2614,True
+season 2024 chase_rate,0.33935361216730037,0.3394,True
+season 2024 z_swing,0.7477295660948536,0.7477,True
+season 2024 z_whiff,0.1417004048582996,0.1417,True
+season 2024 in_zone_rate_fix (D-7 corrected),0.4850709740577582,0.4851,True
+season 2024 D-7 exposure == zone_null_rate,0.0,0.0,True
+season 2024 srfp,0.3900184842883549,0.39,True
+season 2024 fpsr,0.6635859519408502,0.6636,True
+season 2025 bip,484,484,True
+season 2025 mean_ev,89.34607438016529,89.3461,True
+season 2025 mean_la,9.111570247933884,9.1116,True
+season 2025 hard_hit_rate,0.4214876033057851,0.4215,True
+season 2025 barrel_rate,0.05785123966942149,0.0579,True
+season 2025 pu_rate,0.04338842975206612,0.0434,True
+season 2025 xwobacon,0.3613264462809917,0.3613,True
+season 2025 swing_rate,0.5143331948483589,0.5143,True
+season 2025 whiff_rate,0.24798061389337642,0.248,True
+season 2025 chase_rate,0.31062449310624496,0.3106,True
+season 2025 z_swing,0.7282793867120954,0.7283,True
+season 2025 z_whiff,0.1391812865497076,0.1392,True
+season 2025 in_zone_rate_fix (D-7 corrected),0.48774407976734524,0.4877,True
+season 2025 D-7 exposure == zone_null_rate,0.0,0.0,True
+season 2025 srfp,0.38221528861154447,0.3822,True
+season 2025 fpsr,0.6333853354134166,0.6334,True
+season 2026 bip,428,428,True
+season 2026 mean_ev,88.12710280373832,88.1271,True
+season 2026 mean_la,10.836448598130842,10.8364,True
+season 2026 hard_hit_rate,0.3925233644859813,0.3925,True
+season 2026 barrel_rate,0.0630841121495327,0.0631,True
+season 2026 pu_rate,0.07009345794392523,0.0701,True
+season 2026 xwobacon,0.34138317757009345,0.3414,True
+season 2026 swing_rate,0.5043936731107206,0.5044,True
+season 2026 whiff_rate,0.27439024390243905,0.2744,True
+season 2026 chase_rate,0.3427620632279534,0.3428,True
+season 2026 z_swing,0.6878504672897197,0.6879,True
+season 2026 z_whiff,0.15081521739130435,0.1508,True
+season 2026 in_zone_rate_fix (D-7 corrected),0.4709507042253521,0.471,True
+season 2026 D-7 exposure == zone_null_rate,0.0017574692442882249,0.0018,True
+season 2026 srfp,0.3283582089552239,0.3284,True
+season 2026 fpsr,0.615257048092869,0.6153,True
+windows partition 2026 exactly,2276,2276,True
+W1 plate_apps,371,371,True
+W1 ba,0.23699421965317918,0.237,True
+W1 obp,0.2857142857142857,0.2857,True
+W1 slg,0.3583815028901734,0.3584,True
+W1 ops,0.6440957886044592,0.6441,True
+W1 woba,0.2852614555256065,0.2853,True
+W1 iso,0.12138728323699421,0.1214,True
+W1 babip,0.2874015748031496,0.2874,True
+W1 krate,0.22641509433962265,0.2264,True
+W1 bbrate,0.05929919137466307,0.0593,True
+W1 hrs,9,9,True
+W1 bips,263,263,True
+W1 mean_ev,88.8958174904943,88.8958,True
+W1 mean_la,10.452471482889734,10.4525,True
+W1 hard_hit_rate,0.39923954372623577,0.3992,True
+W1 barrel_rate,0.057034220532319393,0.057,True
+W1 pu_rate,0.049429657794676805,0.0494,True
+W1 gb_rate,0.4714828897338403,0.4715,True
+W1 fb_rate,0.27756653992395436,0.2776,True
+W1 ld_rate,0.20152091254752852,0.2015,True
+W1 xwobacon_bip,0.3418631178707225,0.3419,True
+W1 swing_rate,0.5170697012802276,0.5171,True
+W1 whiff_rate,0.2723521320495186,0.2724,True
+W1 chase_rate,0.35838926174496644,0.3584,True
+W1 swing_rate_in_zone,0.6959152798789713,0.6959,True
+W1 whiff_rate_in_zone,0.15,0.15,True
+W1 ooz_whiff_rate,0.48314606741573035,0.4831,True
+W1 srfp,0.3423180592991914,0.3423,True
+W1 fpsr,0.628032345013477,0.628,True
+W1 in_zone_rate_fix (D-7 corrected),0.4701280227596017,0.4701,True
+W1 zone_null_rate,0.0,0.0,True
+W1 bat_speed_mu,70.06094420600859,70.0609,True
+W1 fast_swing_rate,0.1759656652360515,0.176,True
+W1 tracked_swings,699,699,True
+W2 plate_apps,102,102,True
+W2 ba,0.2872340425531915,0.2872,True
+W2 obp,0.3333333333333333,0.3333,True
+W2 slg,0.5638297872340425,0.5638,True
+W2 ops,0.8971631205673758,0.8972,True
+W2 woba,0.3814117647058824,0.3814,True
+W2 iso,0.276595744680851,0.2766,True
+W2 babip,0.30303030303030304,0.303,True
+W2 krate,0.21568627450980393,0.2157,True
+W2 bbrate,0.058823529411764705,0.0588,True
+W2 hrs,7,7,True
+W2 bips,73,73,True
+W2 mean_ev,88.47123287671232,88.4712,True
+W2 mean_la,7.52054794520548,7.5205,True
+W2 hard_hit_rate,0.4657534246575342,0.4658,True
+W2 barrel_rate,0.1095890410958904,0.1096,True
+W2 pu_rate,0.0410958904109589,0.0411,True
+W2 gb_rate,0.4657534246575342,0.4658,True
+W2 fb_rate,0.2328767123287671,0.2329,True
+W2 ld_rate,0.2602739726027397,0.2603,True
+W2 xwobacon_bip,0.39943835616438356,0.3994,True
+W2 swing_rate,0.5012722646310432,0.5013,True
+W2 whiff_rate,0.27411167512690354,0.2741,True
+W2 chase_rate,0.3112244897959184,0.3112,True
+W2 swing_rate_in_zone,0.6903553299492385,0.6904,True
+W2 whiff_rate_in_zone,0.17647058823529413,0.1765,True
+W2 ooz_whiff_rate,0.4918032786885246,0.4918,True
+W2 srfp,0.27450980392156865,0.2745,True
+W2 fpsr,0.6078431372549019,0.6078,True
+W2 in_zone_rate_fix (D-7 corrected),0.5012722646310432,0.5013,True
+W2 zone_null_rate,0.0,0.0,True
+W2 bat_speed_mu,70.84690721649484,70.8469,True
+W2 fast_swing_rate,0.23195876288659795,0.232,True
+W2 tracked_swings,194,194,True
+W3 plate_apps,129,129,True
+W3 ba,0.20689655172413793,0.2069,True
+W3 obp,0.27906976744186046,0.2791,True
+W3 slg,0.27586206896551724,0.2759,True
+W3 ops,0.5549318364073776,0.5549,True
+W3 woba,0.2507109375,0.2507,True
+W3 iso,0.06896551724137931,0.069,True
+W3 babip,0.25274725274725274,0.2527,True
+W3 krate,0.1937984496124031,0.1938,True
+W3 bbrate,0.08527131782945736,0.0853,True
+W3 hrs,1,1,True
+W3 bips,92,92,True
+W3 mean_ev,85.65652173913044,85.6565,True
+W3 mean_la,14.565217391304348,14.5652,True
+W3 hard_hit_rate,0.31521739130434784,0.3152,True
+W3 barrel_rate,0.043478260869565216,0.0435,True
+W3 pu_rate,0.15217391304347827,0.1522,True
+W3 gb_rate,0.44565217391304346,0.4457,True
+W3 fb_rate,0.2391304347826087,0.2391,True
+W3 ld_rate,0.16304347826086957,0.163,True
+W3 xwobacon_bip,0.29394565217391305,0.2939,True
+W3 swing_rate,0.469601677148847,0.4696,True
+W3 whiff_rate,0.28125,0.2812,True
+W3 chase_rate,0.3218390804597701,0.3218,True
+W3 swing_rate_in_zone,0.660377358490566,0.6604,True
+W3 whiff_rate_in_zone,0.12857142857142856,0.1286,True
+W3 ooz_whiff_rate,0.5357142857142857,0.5357,True
+W3 srfp,0.33076923076923076,0.3308,True
+W3 fpsr,0.5846153846153846,0.5846,True
+W3 in_zone_rate_fix (D-7 corrected),0.44820295983086683,0.4482,True
+W3 zone_null_rate,0.008385744234800839,0.0084,True
+W3 bat_speed_mu,69.21285714285715,69.2129,True
+W3 fast_swing_rate,0.1523809523809524,0.1524,True
+W3 tracked_swings,210,210,True
+month 3 plate_apps,23,23,True
+month 3 ops,0.44466403162055335,0.4447,True
+month 3 woba,0.20130434782608694,0.2013,True
+month 3 krate,0.21739130434782608,0.2174,True
+month 3 below_floor,True,True,True
+month 4 plate_apps,116,116,True
+month 4 ops,0.7552545155993432,0.7553,True
+month 4 woba,0.33391379310344826,0.3339,True
+month 4 krate,0.19827586206896552,0.1983,True
+month 4 below_floor,False,False,True
+month 5 plate_apps,117,117,True
+month 5 ops,0.5285285285285285,0.5285,True
+month 5 woba,0.23208547008547012,0.2321,True
+month 5 krate,0.23931623931623933,0.2393,True
+month 5 below_floor,False,False,True
+month 6 plate_apps,115,115,True
+month 6 ops,0.6926731078904993,0.6927,True
+month 6 woba,0.30707826086956524,0.3071,True
+month 6 krate,0.24347826086956523,0.2435,True
+month 6 below_floor,False,False,True
+month 7 plate_apps,102,102,True
+month 7 ops,0.8971631205673758,0.8972,True
+month 7 woba,0.3814117647058824,0.3814,True
+month 7 krate,0.21568627450980393,0.2157,True
+month 7 below_floor,False,False,True
+month 8 plate_apps,120,120,True
+month 8 ops,0.5720404984423676,0.572,True
+month 8 woba,0.2590672268907563,0.2591,True
+month 8 krate,0.18333333333333332,0.1833,True
+month 8 below_floor,False,False,True
+month 9 plate_apps,9,9,True
+month 9 ops,0.3333333333333333,0.3333,True
+month 9 woba,0.14022222222222222,0.1402,True
+month 9 krate,0.3333333333333333,0.3333,True
+month 9 below_floor,True,True,True
+platoon 2020 L pa,64,64,True
+platoon 2020 L ops,1.1852678571428572,1.1853,True
+platoon 2020 L woba,0.48889062499999997,0.4889,True
+platoon 2020 L krate,0.125,0.125,True
+platoon 2020 R pa,195,195,True
+platoon 2020 R ops,0.9167318557149066,0.9167,True
+platoon 2020 R woba,0.3876717948717949,0.3877,True
+platoon 2020 R krate,0.14358974358974358,0.1436,True
+platoon 2021 L pa,166,166,True
+platoon 2021 L ops,1.146153240412631,1.1462,True
+platoon 2021 L woba,0.47738554216867474,0.4774,True
+platoon 2021 L krate,0.1144578313253012,0.1145,True
+platoon 2021 R pa,478,478,True
+platoon 2021 R ops,0.8265775573183891,0.8266,True
+platoon 2021 R woba,0.35454393305439325,0.3545,True
+platoon 2021 R krate,0.1903765690376569,0.1904,True
+platoon 2022 L pa,182,182,True
+platoon 2022 L ops,0.8823260073260073,0.8823,True
+platoon 2022 L woba,0.37648351648351647,0.3765,True
+platoon 2022 L krate,0.2087912087912088,0.2088,True
+platoon 2022 R pa,525,525,True
+platoon 2022 R ops,0.7823388587772387,0.7823,True
+platoon 2022 R woba,0.34028871892925433,0.3403,True
+platoon 2022 R krate,0.17714285714285713,0.1771,True
+platoon 2023 L pa,205,205,True
+platoon 2023 L ops,0.7133367929423975,0.7133,True
+platoon 2023 L woba,0.3066536585365853,0.3067,True
+platoon 2023 L krate,0.2,0.2,True
+platoon 2023 R pa,484,484,True
+platoon 2023 R ops,0.8028623261439226,0.8029,True
+platoon 2023 R woba,0.3445061983471074,0.3445,True
+platoon 2023 R krate,0.22520661157024793,0.2252,True
+platoon 2024 L pa,169,169,True
+platoon 2024 L ops,0.8838225625555942,0.8838,True
+platoon 2024 L woba,0.37889349112426035,0.3789,True
+platoon 2024 L krate,0.17159763313609466,0.1716,True
+platoon 2024 R pa,372,372,True
+platoon 2024 R ops,0.7687716420630581,0.7688,True
+platoon 2024 R woba,0.3336989247311828,0.3337,True
+platoon 2024 R krate,0.18548387096774194,0.1855,True
+platoon 2025 L pa,204,204,True
+platoon 2025 L ops,0.8328664799253034,0.8329,True
+platoon 2025 L woba,0.362328431372549,0.3623,True
+platoon 2025 L krate,0.1568627450980392,0.1569,True
+platoon 2025 R pa,437,437,True
+platoon 2025 R ops,0.7948623311434266,0.7949,True
+platoon 2025 R woba,0.3439450800915332,0.3439,True
+platoon 2025 R krate,0.17162471395881007,0.1716,True
+platoon 2026 L pa,197,197,True
+platoon 2026 L ops,0.6296446700507614,0.6296,True
+platoon 2026 L woba,0.28516326530612246,0.2852,True
+platoon 2026 L krate,0.16243654822335024,0.1624,True
+platoon 2026 R pa,405,405,True
+platoon 2026 R ops,0.6855254204335569,0.6855,True
+platoon 2026 R woba,0.29860493827160495,0.2986,True
+platoon 2026 R krate,0.24444444444444444,0.2444,True
+platoon W1 L pa,126,126,True
+platoon W1 L ops,0.5535714285714286,0.5536,True
+platoon W1 L woba,0.2571825396825397,0.2572,True
+platoon W1 L below_floor,False,False,True
+platoon W1 R pa,245,245,True
+platoon W1 R ops,0.6874236874236874,0.6874,True
+platoon W1 R woba,0.29970204081632656,0.2997,True
+platoon W1 R below_floor,False,False,True
+platoon W2 L pa,32,32,True
+platoon W2 L ops,0.8770833333333333,0.8771,True
+platoon W2 L woba,0.37915625,0.3792,True
+platoon W2 L below_floor,True,True,True
+platoon W2 R pa,70,70,True
+platoon W2 R ops,0.9066964285714285,0.9067,True
+platoon W2 R woba,0.38244285714285714,0.3824,True
+platoon W2 R below_floor,False,False,True
+platoon W3 L pa,39,39,True
+platoon W3 L ops,0.662004662004662,0.662,True
+platoon W3 L woba,0.2987894736842105,0.2988,True
+platoon W3 L below_floor,True,True,True
+platoon W3 R pa,90,90,True
+platoon W3 R ops,0.5095046854082999,0.5095,True
+platoon W3 R woba,0.2304111111111111,0.2304,True
+platoon W3 R below_floor,False,False,True
+W3 vs RHP mean EV (report §7),83.86031746031748,83.86,True
+exposure W1 LHP share,0.33962264150943394,0.3396,True
+exposure W2 LHP share,0.3137254901960784,0.3137,True
+exposure W3 LHP share,0.3023255813953488,0.3023,True
+pg W1 fastball pitches,746,746,True
+pg W1 fastball usage,0.5305832147937412,0.5306,True
+pg W1 fastball pa,210,210,True
+pg W1 fastball ba,0.2789473684210526,0.2789,True
+pg W1 fastball slg,0.4368421052631579,0.4368,True
+pg W1 fastball woba,0.3425952380952381,0.3426,True
+pg W1 fastball whiff,0.1875,0.1875,True
+pg W1 breaking pitches,486,486,True
+pg W1 breaking usage,0.3456614509246088,0.3457,True
+pg W1 breaking pa,124,124,True
+pg W1 breaking ba,0.18487394957983194,0.1849,True
+pg W1 breaking slg,0.2857142857142857,0.2857,True
+pg W1 breaking woba,0.22304032258064516,0.223,True
+pg W1 breaking whiff,0.37142857142857144,0.3714,True
+pg W1 offspeed pitches,174,174,True
+pg W1 offspeed usage,0.12375533428165007,0.1238,True
+pg W1 offspeed pa,37,37,True
+pg W1 offspeed ba,0.1891891891891892,0.1892,True
+pg W1 offspeed slg,0.1891891891891892,0.1892,True
+pg W1 offspeed woba,0.16837837837837838,0.1684,True
+pg W1 offspeed whiff,0.3902439024390244,0.3902,True
+pg W2 fastball pitches,194,194,True
+pg W2 fastball usage,0.49363867684478374,0.4936,True
+pg W2 fastball pa,50,50,True
+pg W2 fastball ba,0.29545454545454547,0.2955,True
+pg W2 fastball slg,0.5681818181818182,0.5682,True
+pg W2 fastball woba,0.39311999999999997,0.3931,True
+pg W2 fastball whiff,0.2079207920792079,0.2079,True
+pg W2 breaking pitches,152,152,True
+pg W2 breaking usage,0.38676844783715014,0.3868,True
+pg W2 breaking pa,34,34,True
+pg W2 breaking ba,0.28125,0.2812,True
+pg W2 breaking slg,0.53125,0.5312,True
+pg W2 breaking woba,0.3668823529411765,0.3669,True
+pg W2 breaking whiff,0.34328358208955223,0.3433,True
+pg W2 offspeed pitches,47,47,True
+pg W2 offspeed usage,0.11959287531806616,0.1196,True
+pg W2 offspeed pa,18,18,True
+pg W2 offspeed ba,0.2777777777777778,0.2778,True
+pg W2 offspeed slg,0.6111111111111112,0.6111,True
+pg W2 offspeed woba,0.37633333333333335,0.3763,True
+pg W2 offspeed whiff,0.3448275862068966,0.3448,True
+pg W3 fastball pitches,248,248,True
+pg W3 fastball usage,0.519916142557652,0.5199,True
+pg W3 fastball pa,59,59,True
+pg W3 fastball ba,0.17307692307692307,0.1731,True
+pg W3 fastball slg,0.23076923076923078,0.2308,True
+pg W3 fastball woba,0.22566101694915253,0.2257,True
+pg W3 fastball whiff,0.21296296296296297,0.213,True
+pg W3 breaking pitches,192,192,True
+pg W3 breaking usage,0.4025157232704403,0.4025,True
+pg W3 breaking pa,59,59,True
+pg W3 breaking ba,0.2,0.2,True
+pg W3 breaking slg,0.2727272727272727,0.2727,True
+pg W3 breaking woba,0.23925423728813558,0.2393,True
+pg W3 breaking whiff,0.35353535353535354,0.3535,True
+pg W3 offspeed pitches,33,33,True
+pg W3 offspeed usage,0.06918238993710692,0.0692,True
+pg W3 offspeed pa,10,10,True
+pg W3 offspeed ba,0.4444444444444444,0.4444,True
+pg W3 offspeed slg,0.5555555555555556,0.5556,True
+pg W3 offspeed woba,0.46609999999999996,0.4661,True
+pg W3 offspeed whiff,0.29411764705882354,0.2941,True
+pt FF pitches,617,617,True
+pt FF woba,0.3657333333333333,0.3657,True
+pt FF whiff,0.22077922077922077,0.2208,True
+pt SI pitches,385,385,True
+pt SI woba,0.3121048387096774,0.3121,True
+pt SI whiff,0.11848341232227488,0.1185,True
+pt SL pitches,376,376,True
+pt SL woba,0.24343434343434345,0.2434,True
+pt SL whiff,0.359375,0.3594,True
+pt ST pitches,256,256,True
+pt ST woba,0.18220967741935484,0.1822,True
+pt ST whiff,0.4067796610169492,0.4068,True
+pt CH pitches,194,194,True
+pt CH woba,0.280265306122449,0.2803,True
+pt CH whiff,0.3333333333333333,0.3333,True
+pt FC pitches,186,186,True
+pt FC woba,0.2523111111111111,0.2523,True
+pt FC whiff,0.28888888888888886,0.2889,True
+pt CU pitches,138,138,True
+pt CU woba,0.30341463414634146,0.3034,True
+pt CU whiff,0.2916666666666667,0.2917,True
+pt FS pitches,54,54,True
+pt FS woba,0.26213333333333333,0.2621,True
+pt FS whiff,0.46875,0.4688,True
+pt KC pitches,46,46,True
+pt KC woba,0.46299999999999997,0.463,True
+pt KC whiff,0.4166666666666667,0.4167,True
+report §7: ST+SL share of all 2026 pitches,0.27768014059753954,0.278,True
+report §7: ST+SL pitch count,632,632,True
+scan 2026-06-01 pre_pa,256,256,True
+scan 2026-06-01 post_pa,346,346,True
+scan 2026-06-01 d_ops,0.08040780079891052,0.0804,True
+scan 2026-06-01 d_woba,0.03268109148550724,0.0327,True
+scan 2026-06-15 pre_pa,309,309,True
+scan 2026-06-15 post_pa,293,293,True
+scan 2026-06-15 d_ops,0.1443097523224749,0.1443,True
+scan 2026-06-15 d_woba,0.0576726404220419,0.0577,True
+scan 2026-07-01 pre_pa,371,371,True
+scan 2026-07-01 post_pa,231,231,True
+scan 2026-07-01 d_ops,0.06369641918774871,0.0637,True
+scan 2026-07-01 d_woba,0.0234124575178718,0.0234,True
+scan 2026-07-08 pre_pa,398,398,True
+scan 2026-07-08 post_pa,204,204,True
+scan 2026-07-08 d_ops,0.05178525159494818,0.0518,True
+scan 2026-07-08 d_woba,0.0194452558358294,0.0194,True
+scan 2026-07-16 pre_pa,415,415,True
+scan 2026-07-16 post_pa,187,187,True
+scan 2026-07-16 d_ops,0.09443021038185595,0.0944,True
+scan 2026-07-16 d_woba,0.03606341495012311,0.0361,True
+scan 2026-07-21 pre_pa,433,433,True
+scan 2026-07-21 post_pa,169,169,True
+scan 2026-07-21 d_ops,-0.08243540398319882,-0.0824,True
+scan 2026-07-21 d_woba,-0.03288363301440672,-0.0329,True
+scan 2026-08-01 pre_pa,473,473,True
+scan 2026-08-01 post_pa,129,129,True
+scan 2026-08-01 d_ops,-0.14332397754611081,-0.1433,True
+scan 2026-08-01 d_woba,-0.055284834170190256,-0.0553,True
+scan 2026-08-08 pre_pa,505,505,True
+scan 2026-08-08 post_pa,97,97,True
+scan 2026-08-08 d_ops,-0.17483558494127593,-0.1748,True
+scan 2026-08-08 d_woba,-0.06711965759075911,-0.0671,True
+scan 2026-08-15 pre_pa,529,529,True
+scan 2026-08-15 post_pa,73,73,True
+scan 2026-08-15 d_ops,-0.2223503883635063,-0.2224,True
+scan 2026-08-15 d_woba,-0.08743176328502414,-0.0874,True
+scan 2026-08-22 pre_pa,552,552,True
+scan 2026-08-22 post_pa,50,50,True
+scan 2026-08-22 d_ops,-0.2803509902240703,-0.2804,True
+scan 2026-08-22 d_woba,-0.11180268602540844,-0.1118,True
+report §3 claim: sign flips at 2026-07-21 (first negative cut),2026-07-21,2026-07-21,True
+report §3 claim: all cuts before 07-21 positive,True,True,True
+report §3 claim: all cuts from 07-21 negative,True,True,True
+report §3 claim: monotone worsening from 07-21,True,True,True
+parent repro: all checks pass,0,0,True
+parent repro: check count,84,84,True
+parent repro: zero definitional drift on 2026,0.0,0.0,True
+parent's July PA (as of 07-20),62,62,True
+parent's July BA,0.30357142857142855,0.304,True
+parent's July SLG,0.625,0.625,True
+parent's July OBP (parent definition: /PA),0.3548387096774194,0.355,True
+parent's July OPS (parent definition),0.9798387096774194,0.98,True
+RF-2 peak wOBA,0.4214,0.4212,True
+RF-2 peak date,2026-07-21,2026-07-21,True
+RF-2 last wOBA,0.2377,0.2385,True
+RF-2 peak-to-now drop (report §3: 183 pts),184,183,True
+RF-1 2023 final cum_woba == season woba,0.3332,0.333243831640058,True
+RF-1 2023 final cum_pa == season PA,689,689,True
+RF-1 2024 final cum_woba == season woba,0.3478,0.3478170055452865,True
+RF-1 2024 final cum_pa == season PA,541,541,True
+RF-1 2025 final cum_woba == season woba,0.3498,0.34979563182527307,True
+RF-1 2025 final cum_pa == season PA,641,641,True
+RF-1 2026 final cum_woba == season woba,0.2942,0.29422129783693846,True
+RF-1 2026 final cum_pa == season PA,602,602,True
+RF-1 2026 never reaches 2023-25 band after PA 100,True,True,True
+AD-1 2021,0.4594705769738238,0.4595,True
+AD-1 2023,0.3887457392823533,0.3887,True
+AD-1 2024,0.40837595392755327,0.4084,True
+AD-1 2025,0.4176548936058504,0.4177,True
+AD-1 2026,0.3450884040617663,0.3451,True
+AD-1 2026 rank among 11 qualified (2 = 2nd lowest),2,2,True
+ST-1 popup z vs PHI norm,4.1195,4.119,True
+ST-1 popup is the only measure clearing |z|>=2.5 vs the PHI norm,1,1,True
+ST-1 bat speed vs PHI norm is within noise,True,True,True
+pool: hitter-seasons,220,220,True
+pool: distinct players,100,100,True
+pool: none below the 50-PA floor,0,0,True
+pctile ops season recomputed,35.45454545454545,35.4545,True
+pctile woba season recomputed,38.18181818181819,38.1818,True
+pctile slg season recomputed,39.09090909090909,39.0909,True
+pctile iso season recomputed,42.72727272727273,42.7273,True
+report §4: W3 popup rate percentile,97.7273,97.727,True
+report §4: W3 popup would be 5th-highest of the 220 pool seasons,5,5,True
+D-7/O-13 exposure: 2026 published minus corrected in_zone_rate,0.0009,0.0009,True
+G8 cohort: 11 qualified seasons,11,11,True
+G8: 2026 is the lowest qualified season in ba,1,1,True
+G8: 2026 is the lowest qualified season in obp,1,1,True
+G8: 2026 is the lowest qualified season in slg,1,1,True
+G8: 2026 is the lowest qualified season in ops,1,1,True
+G8: 2026 is the lowest qualified season in iso,1,1,True
+G8: 2026 is the lowest qualified season in woba,1,1,True
+G8: 2026 is the lowest qualified season in babip,1,1,True
+G8: 2026 vs RHP is the lowest qualified RHP season,1,1,True
+G8: 2026 vs LHP is the lowest qualified LHP season (by <0.0003),1,1,True
+report §1: 2023 and 2026 K% within 0.001,True,True,True
+report §2: August is the best K% month above the 50-PA floor,8,8,True
+report §6: breaking usage rises across the three windows,True,True,True
+report §6: W3 fastball slg,0.2308,0.231,True
+PL-1: |mix effect| on wOBA into W3 < 0.003,True,True,True
+report mentions W3 slash (.207/.279/.276),True,True,True
+report mentions season slash (.239/.292/.376),True,True,True
+report mentions vs LHP OPS (.630),True,True,True
+report mentions vs RHP OPS (.686),True,True,True
+report mentions W3 popup rate (15.2%),True,True,True
+report mentions popup z (4.12),True,True,True
+report mentions popup percentile (97.7th percentile),True,True,True
+report mentions parent repro count (84),True,True,True
+report mentions peak/flip date (2026-07-21),True,True,True
+report mentions RF-2 peak (.421),True,True,True
+report mentions RF-2 now (.238),True,True,True
+report mentions AD-1 2026 (.345),True,True,True
+report mentions new defect disclosure (D-7 / O-13),True,True,True
+report mentions popup pool rank (fifth-highest),True,True,True
+report mentions D-7-corrected zone rate (44.8%),True,True,True
+"report carries no un-cohorted ""career worst""",True,True,True
+report discloses the 50-PA floor,True,True,True
+report discloses causation limit,True,True,True

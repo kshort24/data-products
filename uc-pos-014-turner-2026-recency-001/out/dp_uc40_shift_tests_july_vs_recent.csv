@@ -1,0 +1,13 @@
+baseline,measure,kind,n_baseline,n_recent,baseline_value,recent,delta,se,z,abs_z,band
+W2_july (102 PA),"bat speed (mph, tracked swings)",mean,194,210,70.8469,69.2129,-1.6341,0.7407,-2.2062,2.2062,suggestive
+W2_july (102 PA),"exit velocity (mph, tracked BIP)",mean,73,92,88.4712,85.6565,-2.8147,2.4642,-1.1423,1.1423,within noise
+W2_july (102 PA),"launch angle (deg, tracked BIP)",mean,73,92,7.5205,14.5652,7.0447,4.9634,1.4193,1.4193,within noise
+W2_july (102 PA),popup rate (of BIP),rate,73,92,0.0411,0.1522,0.1111,0.0476,2.3311,2.3311,suggestive
+W2_july (102 PA),hard-hit rate (of BIP),rate,73,92,0.4658,0.3152,-0.1505,0.0762,-1.9768,1.9768,suggestive
+W2_july (102 PA),fast-swing rate (of tracked swings),rate,194,210,0.232,0.1524,-0.0796,0.0391,-2.0346,2.0346,suggestive
+"PHI 2023-25 norm (1,871 PA)","bat speed (mph, tracked swings)",mean,2178,210,69.7291,69.2129,-0.5163,0.572,-0.9026,0.9026,within noise
+"PHI 2023-25 norm (1,871 PA)","exit velocity (mph, tracked BIP)",mean,1381,92,89.4674,85.6565,-3.8109,1.5818,-2.4093,2.4093,suggestive
+"PHI 2023-25 norm (1,871 PA)","launch angle (deg, tracked BIP)",mean,1381,92,11.21,14.5652,3.3552,3.7813,0.8873,0.8873,within noise
+"PHI 2023-25 norm (1,871 PA)",popup rate (of BIP),rate,1382,92,0.0499,0.1522,0.1022,0.0248,4.1195,4.1195,clearly beyond noise
+"PHI 2023-25 norm (1,871 PA)",hard-hit rate (of BIP),rate,1382,92,0.4175,0.3152,-0.1023,0.053,-1.9308,1.9308,suggestive
+"PHI 2023-25 norm (1,871 PA)",fast-swing rate (of tracked swings),rate,2178,210,0.1598,0.1524,-0.0074,0.0264,-0.2799,0.2799,within noise

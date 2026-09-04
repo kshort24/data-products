@@ -1,0 +1,26 @@
+rule,measure,observed,expected,status
+R-1 entity lock,batter ids in frame,1,1,PASS
+R-2 pitch-key uniqueness,"duplicate (game_pk,ab,pitch)",0,0,PASS
+R-3 game_type purity,non-R rows in rate frame,0,0,PASS
+R-4 season coverage,seasons present,12,12,PASS
+R-5 freshness,max game_date,2026-09-02,>=2026-09-01,PASS
+R-6 xwOBA grain (uc-pps-028),non-null pitch rows == non-null PA rows,601==601,equal,PASS
+R-7 coordinate convention,RHB pulled-GB median loc_x,-46.87,< 0,PASS
+R-8 wOBA weights joined,seasons missing weights,0,0,PASS
+R-9 completeness: events @ PA grain,null events on PA rows,0,0,PASS
+R-10 completeness: launch_speed @ tracked-BIP grain,null LS rate on 2026 BIP,0.0,<0.02,PASS
+R-11 completeness: zone,null zone rate 2026,0.0018,<0.02,PASS
+R-12 completeness: hc_x/hc_y @ BIP grain,untraced BIP 2026,0,0,PASS
+R-13 sensor boundary: bat_speed,2023 tracked swings (expect 0),0,0,PASS
+R-14 sensor boundary: attack_angle,2024 non-null (expect 0 - later sensor),0,0,PASS
+R-15 bat-tracking coverage stability,min coverage 2024-26,0.912,>0.85,PASS
+R-16 O-8 exposure,2026 untracked BIP counted as not-hard-hit,0,report only,WARN
+R-17 PA floor: window,windows below 50 PA,0,0,PASS
+R-18 PA floor: month,months below 50 PA,2,flagged,WARN
+R-19 era derivation,2021 shows both WSN and LAD,2,2,PASS
+R-20 schema asymmetry declared,PHI-only cols absent pre-2023,0,0,PASS
+R-21 parent reproduction,parent figures reproduced,84/84,84/84,PASS
+R-22 window partition,window PA sums to season PA,602,602,PASS
+R-23 platoon partition,L+R PA sums to season PA,602,602,PASS
+R-25 D-7/O-13 exposure,"in_zone_rate vs in_zone_rate_fix, 2026",0.0009,report only,WARN
+R-24 pool floor,pool rows below 50 PA,0,0,PASS
