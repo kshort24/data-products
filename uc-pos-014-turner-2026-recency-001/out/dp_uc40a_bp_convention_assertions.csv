@@ -1,0 +1,13 @@
+check,claim,statistic,value,rule,status,hard
+C1-R,intercept_side_in = lateral distance from the batter; an INSIDE pitch is met CLOSER to the body,"corr(intercept_side_in, inside-ness) | stand=R",-0.9527,r < -0.60,PASS,True
+C1-L,intercept_side_in = lateral distance from the batter; an INSIDE pitch is met CLOSER to the body,"corr(intercept_side_in, inside-ness) | stand=L",-0.8872,r < -0.60,PASS,True
+C2,intercept_depth_in = depth in front of the batter; a SLOWER pitch is met FURTHER out front,"corr(intercept_depth_in, release_speed)",-0.5566,r < -0.35,PASS,True
+C3,no vertical intercept component ships; neither axis tracks pitch height the way a height axis would,"|corr(intercept_side_in, plate_z)|",0.0898,|r| < 0.30,PASS,True
+C4,attack_direction is PULL-NEGATIVE / OPPO-POSITIVE in this data plane (O-15 — the INVERSE of the published MLB glossary convention),"corr(attack_direction, pull-side spray) on hard-hit air balls",-0.7901,r < -0.50,PASS,True
+C5,"attack_direction is stand-normalised: the sign means the same thing for LHH and RHH (so it is an inverted convention, not a field frame)",sign of corr for R and for L,-0.8159,both < 0,PASS,True
+C6a,attack_angle and attack_direction share ONE tracking gate exactly,rows where notna() disagrees,0.0,== 0,PASS,True
+C6b,swing_path_tilt gate agrees with attack_angle to within 0.2% (O-18: the disagreements are bunts and checked swings),share of swings where swing_path_tilt notna() disagrees,0.0001,< 0.002,PASS,True
+C6c,intercept_side_in gate agrees with attack_angle to within 0.2% (O-18: the disagreements are bunts and checked swings),share of swings where intercept_side_in notna() disagrees,0.0012,< 0.002,PASS,True
+C6d,"O-18: every swing_path_tilt gate disagreement is a bunt or a checked swing under 25 mph, never a normal swing",all disagreements explained,1.0,== 1,PASS,True
+C7,"O-17: hyper_speed == max(launch_speed, 88); it is NOT independent information and must never be reported as a separate measure",share of rows satisfying the identity,1.0,> 0.999,PASS,True
+C8,attack_angle (bat) predicts launch_angle (ball) on well-struck contact,"corr(attack_angle, launch_angle) on hard-hit BIP",0.4279,r > 0.25,PASS,True

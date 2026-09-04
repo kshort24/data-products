@@ -22,7 +22,7 @@ import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, 'out')
 DST = os.path.join(HERE, 'dp_uc40_turner_recency_dashboard.html')
-G = lambda n: pd.read_csv(os.path.join(OUT, f'dp_uc40_{n}.csv'))
+G = lambda n: pd.read_csv(os.path.join(OUT, f'dp_uc40{n}.csv' if n.startswith('a_') else f'dp_uc40_{n}.csv'))
 J = lambda df: df.where(pd.notna(df), None).to_dict('records')
 
 H = json.load(open(os.path.join(OUT, 'dp_uc40_headlines.json'), encoding='utf-8'))
@@ -54,6 +54,20 @@ D = {
     'parent': J(G('parent_reproduction')),
     'count': J(G('count_state_window')),
     'headlines': H,
+    # ── v1.1.0 bat-path addendum ──────────────────────────────────────────
+    'bpConv': J(G('a_bp_convention_assertions')),
+    'bpSeason': J(G('a_bp_subject_by_season')),
+    'bpGroup': J(G('a_bp_subject_by_pitch_group')),
+    'bpWindow': J(G('a_bp_subject_by_window_pitch_group')),
+    'bpPopRate': J(G('a_bp_popup_rate_by_pitch_group')),
+    'bpPopSig': J(G('a_bp_popup_signature_season')),
+    'bpPopSigGrp': J(G('a_bp_popup_signature_pitch_group')),
+    'bpPeer': J(G('a_bp_peer_delta')),
+    'bpPct': J(G('a_bp_population_percentiles')),
+    'bpBreakPool': J(G('a_bp_breaking_popup_headline')),
+    'bpShift': J(G('a_bp_shift_tests')),
+    'bpDq': J(G('a_bp_dq_scorecard')),
+    'bpCoverage': J(G('a_bp_coverage')),
 }
 
 CSS = """
@@ -437,6 +451,126 @@ table('tCount',[{h:'Window',k:'window',f:wl},{h:'Count state',k:'count_state'},
 tab('overview');
 """
 
+
+JS += r"""
+/* ══════════════════════ v1.1.0 BAT-PATH TAB ══════════════════════════ */
+const BPL={attack_angle:'Attack angle (°)',attack_direction:'Attack direction (°)',
+ pull_direction:'Pull direction (°, O-15 corrected)',swing_path_tilt:'Swing path tilt (°)',
+ intercept_side_in:'Contact point — inches from the body',
+ intercept_depth_in:'Contact point — inches out in front',
+ bat_speed:'Bat speed (mph)',swing_length:'Swing length (ft)',
+ ideal_aa_rate:'Attack angle in the ideal 5–20° band'};
+const bp25=D.bpSeason.find(r=>r.game_year===2025), bp26=D.bpSeason.find(r=>r.game_year===2026);
+const bpTilt=D.bpPeer.find(r=>r.metric==='swing_path_tilt');
+const bpSide=D.bpPeer.find(r=>r.metric==='intercept_side_in');
+const bpBS=D.bpPeer.find(r=>r.metric==='bat_speed');
+const bpPool26=D.bpBreakPool.find(r=>r.season===2026), bpPool25=D.bpBreakPool.find(r=>r.season===2025);
+const bpTiltPct=D.bpPct.find(r=>r.metric==='swing_path_tilt');
+const brk26=D.bpPopRate.find(r=>r.game_year===2026&&r.pitch_group==='breaking');
+const brk25=D.bpPopRate.find(r=>r.game_year===2025&&r.pitch_group==='breaking');
+cards('bpKpis',[
+ {k:'Swing path tilt',v:f1(bp26.swing_path_tilt)+'°',c:'bad',
+  d:'from '+f1(bp25.swing_path_tilt)+'° · peer-netted '+f2(bpTilt.peer_netted_delta)+'° · flattest of '+bpTiltPct.pool_n+' Phillies'},
+ {k:'Contact point, side',v:f1(bp26.intercept_side_in)+'″',c:'bad',
+  d:'+'+f2(bpSide.subject_delta)+'″ raw · +'+f2(bpSide.peer_netted_delta)+'″ peer-netted · largest in the cohort'},
+ {k:'Bat speed',v:f1(bp26.bat_speed),c:'good',
+  d:'+'+f2(bpBS.subject_delta)+' mph · still not the story'},
+ {k:'Breaking-ball popup rate',v:pc(brk26.pu_rate),c:'bad',
+  d:'from '+pc(brk25.pu_rate)+' · '+brk26.popups+' of '+brk26.bip+' BIP'},
+ {k:'Rank in the peer pool',v:bpPool26.subject_rank+' of '+bpPool26.qualifiers,c:'bad',
+  d:'was '+bpPool25.subject_rank+' of '+bpPool25.qualifiers+' · +'+pc(bpPool26.subject_minus_median)+' vs peer median'},
+ {k:'Ideal attack-angle rate',v:pc(bp26.ideal_aa_rate),c:'good',
+  d:'82nd percentile — the angle at contact is fine'}]);
+
+const peer=D.bpPeer.filter(r=>r.subject_in_cohort);
+chart('cBpPeer',{type:'bar',data:{labels:peer.map(r=>BPL[r.metric]||r.metric),datasets:[
+ {label:'raw 2025 → 2026',data:peer.map(r=>r.subject_delta),backgroundColor:RED},
+ {label:'net of the peer median (O-16 control)',data:peer.map(r=>r.peer_netted_delta),backgroundColor:NAVY}]},
+ options:{...BAR,scales:{y:{title:{display:true,text:'change'}}}}});
+table('tBpPeer',[{h:'Measure',k:'metric',f:v=>BPL[v]||v},
+ {h:'2025',k:'subject_2025',f:f2},{h:'2026',k:'subject_2026',f:f2},
+ {h:'Raw Δ',k:'subject_delta',f:v=>(v>0?'+':'')+f2(v)},
+ {h:'Peer median Δ',k:'peer_median_delta',f:v=>(v>0?'+':'')+f2(v)},
+ {h:'Peer-netted Δ',k:'peer_netted_delta',f:v=>(v>0?'+':'')+f2(v),
+  cls:v=>Math.abs(v)>=0.8?'hi':''},
+ {h:'Rank in cohort',k:'subject_rank_most_negative',f:(v,r)=>v+' of '+r.cohort_n}],peer);
+
+const GRPS3=['fastball','breaking','offspeed'];
+chart('cBpPop',{type:'bar',data:{labels:[2023,2024,2025,2026],datasets:GRPS3.map((g,i)=>({
+  label:g,data:[2023,2024,2025,2026].map(y=>{
+    const r=D.bpPopRate.find(x=>x.game_year===y&&x.pitch_group===g);return r?100*r.pu_rate:null;}),
+  backgroundColor:[TEAL,RED,AMBER][i]}))},
+ options:{...BAR,scales:{y:{title:{display:true,text:'popups, % of BIP'}}},
+  plugins:{...BAR.plugins,tooltip:{callbacks:{afterLabel:it=>{
+   const r=D.bpPopRate.find(x=>x.game_year===[2023,2024,2025,2026][it.dataIndex]
+     &&x.pitch_group===GRPS3[it.datasetIndex]);
+   return r?r.popups+' of '+r.bip+' balls in play':'';}}}}}});
+
+const BPM=['swing_path_tilt','attack_angle','intercept_side_in','intercept_depth_in','bat_speed',
+ 'swing_length','pull_direction','ideal_aa_rate'];
+const bpSel=document.getElementById('bpGrpMetric');
+bpSel.innerHTML=BPM.map(m=>'<option value="'+m+'">'+BPL[m]+'</option>').join('');
+function drawBpGrp(){
+  const k=bpSel.value;
+  chart('cBpGrp',{type:'line',data:{labels:['Fastball','Breaking','Offspeed'],datasets:[2025,2026].map((y,i)=>({
+    label:y+'',data:GRPS3.map(g=>{const r=D.bpGroup.find(x=>x.game_year===y&&x.pitch_group===g);
+      return r?r[k]:null;}),borderColor:[GREY,RED][i],backgroundColor:[GREY,RED][i],
+    tension:.2,pointRadius:5,borderWidth:2.4}))},
+   options:{...LINE,scales:{y:{title:{display:true,text:BPL[k]}}}}});
+}
+bpSel.addEventListener('change',drawBpGrp);drawBpGrp();
+table('tBpGroup',[{h:'Season',k:'game_year'},{h:'Pitch group',k:'pitch_group'},
+ {h:'Tracked swings',k:'tracked_swings'},{h:'Tilt',k:'swing_path_tilt',f:f2},
+ {h:'Attack angle',k:'attack_angle',f:f2},{h:'Pull direction',k:'pull_direction',f:f2},
+ {h:'Side (in)',k:'intercept_side_in',f:f2},{h:'Depth (in)',k:'intercept_depth_in',f:f2},
+ {h:'Bat speed',k:'bat_speed',f:f2},{h:'Ideal AA%',k:'ideal_aa_rate',f:pc},
+ {h:'BIP',k:'bip'},{h:'Popups',k:'popups'},
+ {h:'Popup rate',k:'pu_rate',f:pc,cls:v=>v>.10?'hi':''}],
+ D.bpGroup.filter(r=>r.game_year>=2025));
+table('tBpPool',[{h:'Season',k:'season'},{h:'Qualifiers',k:'qualifiers'},
+ {h:'Peer median',k:'pool_median',f:pc},{h:'Turner BIP',k:'subject_bip'},
+ {h:'Turner popups',k:'subject_popups'},{h:'Turner rate',k:'subject_rate',f:pc,cls:v=>v>.10?'hi':''},
+ {h:'Rank',k:'subject_rank',f:(v,r)=>v+' of '+r.qualifiers},
+ {h:'vs peer median',k:'subject_minus_median',f:v=>(v>0?'+':'')+pc(v)}],D.bpBreakPool);
+
+const sig=D.bpPopSig.filter(r=>r.game_year===2026);
+const sigO=sig.find(r=>r.is_popup===false||r.is_popup==='False');
+const sigP=sig.find(r=>r.is_popup===true||r.is_popup==='True');
+const SIGM=['attack_angle','swing_path_tilt','intercept_side_in','intercept_depth_in','bat_speed'];
+chart('cBpSig',{type:'bar',data:{labels:SIGM.map(m=>BPL[m]),datasets:[
+ {label:'every other ball in play (n='+sigO.n+')',data:SIGM.map(m=>sigO[m]),backgroundColor:NAVY},
+ {label:'popups (n='+sigP.n+')',data:SIGM.map(m=>sigP[m]),backgroundColor:RED}]},
+ options:{...BAR,scales:{y:{title:{display:true,text:'value (mixed units — see the table)'}}}}});
+table('tBpSig',[{h:'Season',k:'game_year'},{h:'Popup?',k:'is_popup',f:v=>(v===true||v==='True')?'popups':'other BIP'},
+ {h:'n',k:'n',f:(v,r)=>v+(r.below_floor?' <span class="flag">⚠</span>':'')},
+ {h:'Attack angle',k:'attack_angle',f:f2},{h:'Tilt',k:'swing_path_tilt',f:f2},
+ {h:'Side (in)',k:'intercept_side_in',f:f2},{h:'Depth (in)',k:'intercept_depth_in',f:f2},
+ {h:'Bat speed',k:'bat_speed',f:f2},{h:'Launch angle',k:'launch_angle',f:f1},
+ {h:'Exit velo',k:'launch_speed',f:f1},{h:'Pitch height (ft)',k:'plate_z',f:f2}],
+ D.bpPopSig.concat(D.bpPopSigGrp.filter(r=>r.pitch_group==='breaking').map(
+   r=>Object.assign({},r,{game_year:r.game_year+' breaking'}))));
+
+const pctRows=D.bpPct.filter(r=>r.metric!=='attack_direction');
+chart('cBpPct',{type:'bar',data:{labels:pctRows.map(r=>BPL[r.metric]||r.metric),datasets:[
+ {label:'percentile among Phillies with 200+ tracked swings, 2026',
+  data:pctRows.map(r=>r.pctile),
+  backgroundColor:pctRows.map(r=>r.pctile<=10||r.pctile>=90?RED:NAVY)}]},
+ options:{...BAR,indexAxis:'y',plugins:{...BAR.plugins,legend:{display:false}},
+  scales:{x:{min:0,max:100,title:{display:true,text:'percentile of the 2026 Phillies pool'}}}}});
+table('tBpPct',[{h:'Measure',k:'metric',f:v=>BPL[v]||v},{h:'Turner 2026',k:'turner_2026',f:f2},
+ {h:'Pool median',k:'pool_median',f:f2},{h:'Pool min',k:'pool_min',f:f2},
+ {h:'Pool max',k:'pool_max',f:f2},
+ {h:'Percentile',k:'pctile',f:f1,cls:v=>v<=10||v>=90?'hi':''},{h:'Pool n',k:'pool_n'}],D.bpPct);
+
+table('tBpConv',[{h:'Check',k:'check'},{h:'Claim proven against the data',k:'claim'},
+ {h:'Statistic',k:'statistic'},{h:'Value',k:'value',f:f3},{h:'Rule',k:'rule'},
+ {h:'Status',k:'status',f:v=>'<span class="chip '+v.toLowerCase()+'">'+v+'</span>'}],D.bpConv);
+table('tBpCov',[{h:'Season',k:'season'},{h:'Population',k:'population'},{h:'Swings',k:'swings'},
+ {h:'Bunts excluded',k:'bunts_excluded'},{h:'Degenerate (<25 mph)',k:'degenerate_under_25mph'},
+ {h:'bat_speed tracked',k:'bat_speed_tracked'},{h:'Path tracked',k:'path_tracked'},
+ {h:'Path coverage',k:'path_coverage',f:pc}],D.bpCoverage.filter(r=>r.season>=2023));
+"""
+
 HTML = """<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -445,8 +579,9 @@ HTML = """<!DOCTYPE html>
 <header>
   <h1>Trea Turner — The Power Outage</h1>
   <div class="sub">UC #40 · <code>uc-pos-014-turner-2026-recency-001</code> · <code>dp_uc40</code>
-   · Phillies Offense value stream · data as of <b>2026-09-02</b> · 602 PA / 135 G
-   · verification <b>711/711 PASS</b> · audit <b>116/116</b> · extends <code>uc-pos-006</code></div>
+   <b>v1.1.0</b> · Phillies Offense value stream · data as of <b>2026-09-02</b> · 602 PA / 135 G
+   · verification <b>711/711</b> + <b>180/180</b> (bat path) · conventions <b>12/12</b>
+   · extends <code>uc-pos-006</code></div>
 </header>
 <nav class="bar">
   <button data-t="overview" onclick="tab('overview')">Overview</button>
@@ -454,6 +589,7 @@ HTML = """<!DOCTYPE html>
   <button data-t="mechanism" onclick="tab('mechanism')">Mechanism</button>
   <button data-t="splits" onclick="tab('splits')">Pitches &amp; platoon</button>
   <button data-t="career" onclick="tab('career')">Career &amp; approach</button>
+  <button data-t="batpath" onclick="tab('batpath')">Bat path <span style="font-size:9px;vertical-align:super">v1.1</span></button>
   <button data-t="gov" onclick="tab('gov')">Governance</button>
 </nav>
 <main>
@@ -567,6 +703,68 @@ HTML = """<!DOCTYPE html>
   <div class="panel wrap" id="tBat"></div>
   <h3>Count leverage by window</h3>
   <div class="panel wrap" id="tCount"></div>
+</section>
+
+<section id="t-batpath">
+  <h2>How he is meeting the ball</h2>
+  <p class="note"><b>v1.1.0 addendum.</b> Statcast's bat-path columns describe the <em>swing</em>; the rest
+   of this dashboard describes the <em>outcome</em>. They ship from <b>2025 only</b> (bat speed and swing
+   length from 2024), so every comparison here is two seasons, not a career arc. All six columns were
+   defined and their conventions <b>proven against the data</b> before any number was produced —
+   <b>12/12 assertions pass</b> and the build refuses to publish if one fails.</p>
+  <div class="cards" id="bpKpis"></div>
+
+  <h2>What changed in the swing — raw vs peer-netted</h2>
+  <p class="note"><b>O-16:</b> swing-path tilt moved <em>team-wide</em> between 2025 and 2026, so a raw
+   year-over-year delta cannot separate a swing change from a calibration change. Every delta below is
+   also shown net of the median change for the 8 Phillies hitters with 200+ tracked swings in both years.
+   <b>Only two measures survive: the plane flattened and the contact point moved away from his body.</b></p>
+  <div class="panel"><div class="chart"><canvas id="cBpPeer"></canvas></div></div>
+  <div class="panel wrap" id="tBpPeer"></div>
+
+  <h2>Popups by pitch group — it is breaking balls</h2>
+  <div class="ctrl"><label for="bpGrpMetric">Measure</label><select id="bpGrpMetric"></select>
+   <span class="note" style="margin:0">Uses the data plane's own <code>pitch_group</code> mapping.</span></div>
+  <div class="grid2">
+   <div class="panel"><h3>Popup rate by pitch group, four seasons</h3><div class="chart"><canvas id="cBpPop"></canvas></div></div>
+   <div class="panel"><h3>Swing path by pitch group, 2025 vs 2026</h3><div class="chart"><canvas id="cBpGrp"></canvas></div></div>
+  </div>
+  <div class="panel wrap" id="tBpGroup"></div>
+  <h3>Against the Phillies peer pool (40+ breaking balls in play)</h3>
+  <p class="note">The peer median doubled too — that caveat belongs beside the finding. But he moved from
+   the middle of the clubhouse to the top of it.</p>
+  <div class="panel wrap" id="tBpPool"></div>
+
+  <h2>The popup swing itself</h2>
+  <p class="note">Popups versus every other tracked ball in play. <b>Not a slow swing</b> — a flatter plane
+   with a steeper barrel angle, met closer to the body and further out front, on a higher pitch.</p>
+  <div class="panel"><div class="chart"><canvas id="cBpSig"></canvas></div></div>
+  <div class="panel wrap" id="tBpSig"></div>
+
+  <h2>Where he sits on the roster</h2>
+  <div class="panel"><div class="chart"><canvas id="cBpPct"></canvas></div></div>
+  <div class="panel wrap" id="tBpPct"></div>
+
+  <h2>Conventions, coverage and open items</h2>
+  <p class="note">The assertion battery runs before every build. <b>O-15 is the one that leaves this
+   product:</b> <code>attack_direction</code> is pull-<em>negative</em> here, the inverse of the published
+   MLB glossary convention — a corrected <code>pull_direction</code> ships beside the raw column
+   everywhere.</p>
+  <div class="panel wrap" id="tBpConv"></div>
+  <div class="panel wrap" id="tBpCov"></div>
+  <div class="panel"><ul>
+   <li><b>O-15 · HIGH.</b> <code>attack_direction</code> is pull-negative in this data plane, against the
+    published glossary. Four independent anchors. Use <code>pull_direction</code>, or read
+    <code>03a</code> first.</li>
+   <li><b>O-16 · MEDIUM.</b> <code>swing_path_tilt</code> drifted team-wide 2025→2026. No year-over-year
+    bat-path comparison should be published without a peer control.</li>
+   <li><b>O-17 · LOW.</b> <code>hyper_speed</code> is exactly <code>max(launch_speed, 88)</code> — no
+    independent information. Used nowhere.</li>
+   <li><b>O-18 · MEDIUM.</b> Bat path is degenerate on bunts and checked swings. BP-0 excludes bunts and
+    flags sub-25 mph swings — and doing so <b>removed a 7 mph bat-speed "collapse" that was an artifact</b>.</li>
+   <li><b>Sensor boundary.</b> No bat path before 2025; <code>attack_angle</code> is empty in 2024 even
+    though the column exists. NULL, never imputed.</li>
+  </ul></div>
 </section>
 
 <section id="t-gov">
@@ -753,7 +951,7 @@ ART = """<title>Turner's Power Outage</title>
   <div class="sub">UC&nbsp;#40 &middot; <code>uc-pos-014-turner-2026-recency-001</code> &middot;
    <code>dp_uc40</code> &middot; Phillies Offense value stream &middot; data as of <b>2026-09-02</b>
    &middot; 602&nbsp;PA / 135&nbsp;G &middot; verification <b>711/711</b> &middot; package audit
-   <b>116/116</b> &middot; extends <code>uc-pos-006</code></div>
+   <b>175/175</b> &middot; extends <code>uc-pos-006</code></div>
 </header>
 __NAV__
 <main>__SECTIONS__</main>

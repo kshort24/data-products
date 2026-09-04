@@ -2,7 +2,9 @@
 
 **UC #40 · contract `uc-pos-014` · build `dp_uc40` · Phillies Offense (`pos`) value stream**
 **Requested and delivered 2026-09-03 · data as of 2026-09-02 · Human DPO: Kellen Short**
-**Status: CERTIFICATION READY · verification 711/711 PASS · package audit 116/116 PASS · DQ 22 PASS / 3 WARN / 0 FAIL**
+**Status: CERTIFICATION READY · v1.0.0 verification 711/711 · v1.1.0 addendum 180/180 · conventions 12/12
+· DQ 22/3/0 + 10/3/0**
+**v1.1.0 bat-path addendum delivered 2026-09-03 — see `ADDENDUM_v1.1.0_bat_path.md`, `03a`, `05a`.**
 
 ---
 
@@ -108,6 +110,33 @@ Two moments are worth recording, because both changed what shipped:
 | E-5 | **O-5 and O-8 remain open** repo-wide | Schedule kernel maintenance outside a use-case build |
 | E-6 | **F1** — third copy of the vendored Chart.js in `data-products/` | Approve a shared `_assets/` directory |
 | E-7 | **Tripwires TT-1…TT-6** are armed | Approve a re-run trigger (suggest: after ~120 further PA, or season end) |
+| **E-8** | **O-15 (v1.1.0)** — `attack_direction` is pull-**negative** in this data plane, the inverse of the published MLB glossary convention. Four independent anchors | Confirm against Savant methodology, then ratify the corrected `pull_direction` or a source-level fix. **Highest-priority item in this package** — it is wrong in the same direction for every future consumer |
+| **E-9** | **O-16 (v1.1.0)** — `swing_path_tilt` drifted team-wide 2025→2026 | Make peer-netting (PB-1) a standing rule for every instrumented year-over-year bat-path claim (recommended) |
+| **E-10** | **O-18 / BP-0** — bunt and checked-swing exclusion | Ratify the population rule. It changed a headline: it removed a 7 mph bat-speed "collapse" that was an artifact |
+| **E-11** | **BP-0/1/2, PU-1/2, PB-1** provisional | Ratify before a third reuse |
+| **E-12** | **O-17** — `hyper_speed` = `max(EV, 88)` | Add a deprecation note to the glossary |
+| **E-13** | **The open-item register has no ID allocator.** A concurrent session claimed **O-14** for an unrelated `bbrate` defect while this addendum was in flight; these items were renumbered O-15…O-18 before publication | Adopt an allocator so two builds cannot claim the same ID |
+
+## 7a · v1.1.0 addendum — what it added
+
+The DPO asked what Statcast's bat-path columns say about **how** Turner is meeting the ball, and asked
+that the `domain-steward-proxy` and `source-system-profiler` establish what the columns are before
+anything was built. That sequencing was honoured: six sourced semantic definitions, twelve conventions
+**proven against the data** (the build refuses to publish if one fails), a technical dictionary, KPI specs
+and column-level lineage — all in `03a` — before a single number was produced.
+
+**Finding.** Two measures changed and both clear the noise bar: the swing plane flattened
+**27.9° → 25.5°** (peer-netted −1.20°, largest in an 8-hitter cohort; **the flattest of 11 Phillies**,
+against an MLB average of ~32°) and the contact point moved **1.35″ further from his body**
+(**+1.70″ on breaking balls**). Popup rate on **breaking balls 3.9% → 12.1%** while fastball and offspeed
+were flat; he went from **rank 6 of 12 — exactly the peer median — to rank 1 of 10**. **Bat speed is up**,
+so the v1.0.0 conclusion survives from a second, independent direction.
+
+**And the governance argued with itself again.** An ungoverned swing population showed a 7 mph bat-speed
+collapse on breaking-ball popups — the most quotable number in the addendum. The **BP-0** population rule
+(O-18: exclude bunts, flag sub-25 mph checked swings) reduced it to −0.5 mph, inside noise. **In v1.0.0
+ST-1 killed a bat-speed story; in v1.1.0 BP-0 killed a bat-speed story.** Both times the surviving finding
+was geometric.
 
 ## 8 · Publish recommendation
 

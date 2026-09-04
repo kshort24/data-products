@@ -1,0 +1,5 @@
+game_year,swings,tracked_swings,attack_angle,attack_angle_med,attack_direction,swing_path_tilt,swing_path_tilt_med,intercept_side_in,intercept_depth_in,bat_speed,swing_length,ideal_aa_swings,tracking_coverage,ideal_aa_rate,pull_direction,below_swing_floor
+2023,1421,0,,,,,,,,,,0,0.0,,,True
+2024,1098,0,,,,,,,,,,0,0.0,,,True
+2025,1238,1176,7.5508,8.1502,-1.3356,27.8592,27.8529,37.8301,28.4587,69.517,7.4776,678,0.9499,0.5765,1.3356,False
+2026,1148,1100,8.2809,9.0455,-2.7661,25.5083,25.4187,39.1763,29.1646,70.1779,7.5301,679,0.9582,0.6173,2.7661,False

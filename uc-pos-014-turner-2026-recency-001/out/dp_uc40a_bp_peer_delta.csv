@@ -1,0 +1,8 @@
+metric,subject_in_cohort,cohort_n,subject_2025,subject_2026,subject_delta,peer_median_delta,peer_netted_delta,subject_rank_most_negative
+swing_path_tilt,True,8,27.8592,25.5083,-2.3509,-1.1485,-1.2024,1
+attack_angle,True,8,7.5508,8.2809,0.7301,0.5172,0.2129,7
+attack_direction,True,8,-1.3356,-2.7661,-1.4305,-1.0963,-0.3342,4
+intercept_side_in,True,8,37.8301,39.1763,1.3462,0.1763,1.1699,8
+intercept_depth_in,True,8,28.4587,29.1646,0.7059,0.7054,0.0006,5
+bat_speed,True,8,69.517,70.1779,0.6609,0.1704,0.4905,7
+swing_length,True,8,7.4776,7.5301,0.0525,0.0094,0.0431,7

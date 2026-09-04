@@ -1,0 +1,181 @@
+check,got,want,pass
+sensor: no attack_angle in 2023,0,0,True
+sensor: no attack_angle in 2024,0,0,True
+sensor: no bat_speed in 2023,0,0,True
+sensor: bat_speed present in 2024,True,True,True
+coverage 2025: swings,1238,1238,True
+coverage 2025: tracked,1177,1177,True
+coverage 2025: rate,0.9507269789983845,0.9507,True
+coverage 2025: bunts excluded,0,0,True
+coverage 2026: swings,1148,1148,True
+coverage 2026: tracked,1103,1103,True
+coverage 2026: rate,0.960801393728223,0.9608,True
+coverage 2026: bunts excluded,0,0,True
+conventions: all pass,0,0,True
+conventions: check count,12,12,True
+C1-R side axis corr recomputed,-0.9527105859904589,-0.9527,True
+C1-L side axis corr recomputed,-0.8871892938039677,-0.8872,True
+C2 depth axis corr recomputed,-0.5565909929020145,-0.5566,True
+C4 attack_direction sign corr recomputed,-0.7901156887759452,-0.7901,True
+O-15: attack_direction is pull-NEGATIVE (corr < 0),True,True,True
+C5 stand-normalised: sign is negative for R,True,True,True
+C5 stand-normalised: sign is negative for L,True,True,True
+"O-17: hyper_speed == max(launch_speed, 88)",1.0,1.0,True
+O-18: every tilt-gate disagreement is a bunt or a sub-25mph swing,True,True,True
+BP-1 2025 tracked_swings,1176,1176,True
+BP-1 2025 attack_angle,7.550813823253313,7.5508,True
+BP-1 2025 attack_direction,-1.3356211267051104,-1.3356,True
+BP-1 2025 swing_path_tilt,27.859220071138044,27.8592,True
+BP-1 2025 bat_speed,69.51700680272108,69.517,True
+BP-1 2025 swing_length,7.47763605442177,7.4776,True
+BP-1 2025 intercept_side_in,37.83005500275431,37.8301,True
+BP-1 2025 intercept_depth_in,28.458689294509373,28.4587,True
+BP-1 2025 pull_direction is the negated column,1.3356211267051104,1.3356,True
+BP-1 2025 ideal_aa_rate (5-20 deg),0.576530612244898,0.5765,True
+BP-1 2026 tracked_swings,1100,1100,True
+BP-1 2026 attack_angle,8.280906538872962,8.2809,True
+BP-1 2026 attack_direction,-2.7661413389814196,-2.7661,True
+BP-1 2026 swing_path_tilt,25.508302218415267,25.5083,True
+BP-1 2026 bat_speed,70.1779090909091,70.1779,True
+BP-1 2026 swing_length,7.53009090909091,7.5301,True
+BP-1 2026 intercept_side_in,39.17626845889571,39.1763,True
+BP-1 2026 intercept_depth_in,29.164633126351426,29.1646,True
+BP-1 2026 pull_direction is the negated column,2.7661413389814196,2.7661,True
+BP-1 2026 ideal_aa_rate (5-20 deg),0.6172727272727273,0.6173,True
+BP-2 2025/fastball tracked,612,612,True
+BP-2 2025/fastball attack_angle,4.527892913368222,4.5279,True
+BP-2 2025/fastball swing_path_tilt,27.298895668808246,27.2989,True
+BP-2 2025/fastball bat_speed,69.80081699346405,69.8008,True
+BP-2 2025/fastball intercept_side_in,36.7634842225749,36.7635,True
+BP-2 2025/breaking tracked,409,409,True
+BP-2 2025/breaking attack_angle,10.679257230726071,10.6793,True
+BP-2 2025/breaking swing_path_tilt,28.087401377911682,28.0874,True
+BP-2 2025/breaking bat_speed,68.6320293398533,68.632,True
+BP-2 2025/breaking intercept_side_in,39.31120539438761,39.3112,True
+BP-2 2025/offspeed tracked,153,153,True
+BP-2 2025/offspeed attack_angle,11.282112998784683,11.2821,True
+BP-2 2025/offspeed swing_path_tilt,29.447488353985356,29.4475,True
+BP-2 2025/offspeed bat_speed,70.72287581699347,70.7229,True
+BP-2 2025/offspeed intercept_side_in,38.19331207530352,38.1933,True
+BP-2 2026/fastball tracked,583,583,True
+BP-2 2026/fastball attack_angle,5.553125695923036,5.5531,True
+BP-2 2026/fastball swing_path_tilt,25.02363018109114,25.0236,True
+BP-2 2026/fastball bat_speed,70.26192109777016,70.2619,True
+BP-2 2026/fastball intercept_side_in,38.12425714975942,38.1243,True
+BP-2 2026/breaking tracked,390,390,True
+BP-2 2026/breaking attack_angle,11.297118534922083,11.2971,True
+BP-2 2026/breaking swing_path_tilt,25.586101886310885,25.5861,True
+BP-2 2026/breaking bat_speed,69.68358974358975,69.6836,True
+BP-2 2026/breaking intercept_side_in,41.012135563914626,41.0121,True
+BP-2 2026/offspeed tracked,127,127,True
+BP-2 2026/offspeed attack_angle,11.540540814311145,11.5405,True
+BP-2 2026/offspeed swing_path_tilt,27.494301645822176,27.4943,True
+BP-2 2026/offspeed bat_speed,71.31023622047245,71.3102,True
+BP-2 2026/offspeed intercept_side_in,38.36787808306169,38.3679,True
+PU-2 2023/fastball bip,276,276,True
+PU-2 2023/fastball popups,18,18,True
+PU-2 2023/fastball pu_rate,0.06521739130434782,0.0652,True
+PU-2 2023/breaking bip,151,151,True
+PU-2 2023/breaking popups,6,6,True
+PU-2 2023/breaking pu_rate,0.039735099337748346,0.0397,True
+PU-2 2023/offspeed bip,63,63,True
+PU-2 2023/offspeed popups,3,3,True
+PU-2 2023/offspeed pu_rate,0.047619047619047616,0.0476,True
+PU-2 2024/fastball bip,242,242,True
+PU-2 2024/fastball popups,10,10,True
+PU-2 2024/fastball pu_rate,0.04132231404958678,0.0413,True
+PU-2 2024/breaking bip,125,125,True
+PU-2 2024/breaking popups,9,9,True
+PU-2 2024/breaking pu_rate,0.072,0.072,True
+PU-2 2024/offspeed bip,39,39,True
+PU-2 2024/offspeed popups,2,2,True
+PU-2 2024/offspeed pu_rate,0.05128205128205128,0.0513,True
+PU-2 2025/fastball bip,257,257,True
+PU-2 2025/fastball popups,12,12,True
+PU-2 2025/fastball pu_rate,0.04669260700389105,0.0467,True
+PU-2 2025/breaking bip,155,155,True
+PU-2 2025/breaking popups,6,6,True
+PU-2 2025/breaking pu_rate,0.03870967741935484,0.0387,True
+PU-2 2025/offspeed bip,71,71,True
+PU-2 2025/offspeed popups,3,3,True
+PU-2 2025/offspeed pu_rate,0.04225352112676056,0.0423,True
+PU-2 2026/fastball bip,236,236,True
+PU-2 2026/fastball popups,10,10,True
+PU-2 2026/fastball pu_rate,0.0423728813559322,0.0424,True
+PU-2 2026/breaking bip,149,149,True
+PU-2 2026/breaking popups,18,18,True
+PU-2 2026/breaking pu_rate,0.12080536912751678,0.1208,True
+PU-2 2026/offspeed bip,43,43,True
+PU-2 2026/offspeed popups,2,2,True
+PU-2 2026/offspeed pu_rate,0.046511627906976744,0.0465,True
+PU-2 reconciles with the v1.0.0 popup rate,True,True,True
+report claim: breaking popups roughly tripled 2025 -> 2026,True,True,True
+report claim: fastball popup rate is flat,True,True,True
+PB-1 swing_path_tilt cohort size,8,8,True
+PB-1 swing_path_tilt subject delta,-2.3509178527227768,-2.3509,True
+PB-1 swing_path_tilt peer median delta,-1.1485319123766047,-1.1485,True
+PB-1 swing_path_tilt peer-netted delta,-1.202385940346172,-1.2024,True
+PB-1 attack_angle cohort size,8,8,True
+PB-1 attack_angle subject delta,0.7300927156196488,0.7301,True
+PB-1 attack_angle peer median delta,0.5171788304526519,0.5172,True
+PB-1 attack_angle peer-netted delta,0.21291388516699694,0.2129,True
+PB-1 bat_speed cohort size,8,8,True
+PB-1 bat_speed subject delta,0.660902288187998,0.6609,True
+PB-1 bat_speed peer median delta,0.17040373341396986,0.1704,True
+PB-1 bat_speed peer-netted delta,0.49049855477402815,0.4905,True
+PB-1 intercept_side_in cohort size,8,8,True
+PB-1 intercept_side_in subject delta,1.346213456141406,1.3462,True
+PB-1 intercept_side_in peer median delta,0.17631163485014412,0.1763,True
+PB-1 intercept_side_in peer-netted delta,1.169901821291262,1.1699,True
+PB-1 intercept_depth_in cohort size,8,8,True
+PB-1 intercept_depth_in subject delta,0.705943831842049,0.7059,True
+PB-1 intercept_depth_in peer median delta,0.7053834867691489,0.7054,True
+PB-1 intercept_depth_in peer-netted delta,0.000560345072900148,0.0006,True
+report claim: tilt drop is the largest in the cohort,1,1,True
+report claim: contact-side increase is the largest in the cohort,8,8,True
+"report claim: bat speed went UP, not down",True,True,True
+report claim: attack angle change is small once peer-netted,True,True,True
+O-16: the peer median tilt delta is itself materially negative,True,True,True
+"pool size (200+ tracked swings, 2026)",11,11,True
+pool: Turner tilt,25.508302218415267,25.5083,True
+report claim: Turner has the flattest plane in the pool,25.508302218415267,25.508302218415267,True
+report claim: tilt percentile is 0,0.0,0.0,True
+pool: contact-side percentile,72.72727272727273,72.7273,True
+breaking pool 2025: qualifiers,12,12,True
+breaking pool 2025: median,0.03822276323797931,0.0382,True
+breaking pool 2025: subject rate,0.03870967741935484,0.0387,True
+breaking pool 2025: subject rank,6,6,True
+breaking pool 2026: qualifiers,10,10,True
+breaking pool 2026: median,0.07484472049689442,0.0748,True
+breaking pool 2026: subject rate,0.12080536912751678,0.1208,True
+breaking pool 2026: subject rank,1,1,True
+report claim: 2026 subject is rank 1 of the breaking-ball popup pool,1,1,True
+report claim: 2025 subject sat at the peer median,True,True,True
+report claim: the peer median itself roughly doubled,True,True,True
+PU-1 2026 popup=False n,374,374,True
+PU-1 2026 popup=False attack_angle,6.886563588279224,6.8866,True
+PU-1 2026 popup=False tilt,25.231495846325068,25.2315,True
+PU-1 2026 popup=False side,39.51889170922648,39.5189,True
+PU-1 2026 popup=False depth,27.01263447244538,27.0126,True
+PU-1 2026 popup=False bat_speed,71.53048128342246,71.5305,True
+PU-1 2026 popup=True n,26,26,True
+PU-1 2026 popup=True attack_angle,10.729438072871677,10.7294,True
+PU-1 2026 popup=True tilt,23.42090741460225,23.4209,True
+PU-1 2026 popup=True side,37.2259282892688,37.2259,True
+PU-1 2026 popup=True depth,31.70776450383893,31.7078,True
+PU-1 2026 popup=True bat_speed,71.2,71.2,True
+report claim: popups come with a STEEPER attack angle,True,True,True
+report claim: popups are met CLOSER to the body,True,True,True
+report claim: popups are met FURTHER out front,True,True,True
+report claim: popups are NOT a bat-speed story,True,True,True
+report discloses inverted attack_direction convention,True,True,True
+report discloses team-wide tilt drift,True,True,True
+report discloses hyper_speed identity,True,True,True
+report discloses bunt / degenerate swing exclusion,True,True,True
+report discloses flattest plane,True,True,True
+report discloses breaking popup rate,True,True,True
+report discloses the O-16 control,True,True,True
+report discloses causation limit,True,True,True
+report discloses sensor boundary,True,True,True
+report does not claim a bat-speed collapse on popups,True,True,True
+report carries the ungoverned-population correction note,True,True,True

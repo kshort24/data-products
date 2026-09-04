@@ -2,7 +2,8 @@
 
 **Trea Turner — the 2026 season, and the six weeks since the last product on him shipped.**
 Phillies Offense (`pos`) value stream · delivered 2026-09-03 · data as of **2026-09-02**
-**Verification 711/711 PASS · package audit 116/116 PASS · DQ 22 PASS / 3 WARN / 0 FAIL · Certification READY**
+**v1.1.0** (bat-path addendum, 2026-09-03) · **Verification 711/711 + 180/180 PASS · conventions 12/12 ·
+DQ 22/3/0 (v1.0.0) + 10/3/0 (addendum) · Certification READY**
 
 Extends **`uc-pos-006-turner-2026-offense-001` / `dp_uc24`** (2026-07-21). All **84** of that product's
 published figures were reproduced exactly, on its own window and its own definitions, before a single new
@@ -15,6 +16,8 @@ claim was made.
 | If you want… | Open |
 |---|---|
 | The answer | `dp_uc40_turner_recency_report.pdf` (13 pp) — §1 is a verdict table, before any explanation |
+| **How** he is meeting the ball (**v1.1.0**) | `dp_uc40a_bat_path_report.pdf` — the bat-path addendum |
+| What the bat-path columns mean (**v1.1.0**) | `03a_bat_path_semantics_and_lineage.md` — sourced definitions, 12 proven conventions, dictionary, specs, lineage |
 | To explore it yourself | `dp_uc40_turner_recency_dashboard.html` — self-contained, no network, 6 tabs |
 | The one-paragraph finding and the escalations | `00_dpo_orchestration_record.md` §5 and §7 |
 | To reuse the code | `dp_uc40_kernel.py` — but read `05` §5.3 (defect register) first |
@@ -32,6 +35,22 @@ reads **.238**. The breakpoint scan flips sign on exactly that date.
 The mechanism is **contact point, not bat speed**: popup rate **15.2% of balls in play vs a 5.0% Phillies
 norm (z = 4.12)** — the only measure in the product that clearly clears sampling noise — with launch angle
 up and exit velocity down, while his strikeout and walk rates are the best of his season.
+
+## v1.1.0 — the bat-path addendum
+
+Statcast's bat-path columns describe the *swing*; v1.0.0 could only describe the *outcome*. The addendum
+defines all six columns for the data plane (none had a governed definition), proves their conventions
+against the data, and finds that **two things changed and both clear the noise bar**: his swing plane
+flattened **27.9° → 25.5°** — peer-netted −1.20°, the largest drop in the cohort, and the **flattest of
+all 11 Phillies** with 200+ tracked swings against an MLB average of ~32° — and his contact point moved
+**1.35″ further from his body**. Popup rate on **breaking balls went 3.9% → 12.1%** while fastball and
+offspeed sat still; he moved from **rank 6 of 12 (the peer median) to rank 1 of 10**.
+
+**Still not bat speed** (+0.49 mph peer-netted). v1.0.0 ruled it out from the outcome side; the path data
+rules it out from the input side.
+
+**Four new open items — O-15 is the one that leaves this product:** `attack_direction` is **pull-negative**
+here, the inverse of the published MLB glossary convention. See `03a` §3.
 
 ## Package contents
 
@@ -58,6 +77,18 @@ dp_uc40_turner_recency_report.md / .pdf
 dp_uc40_turner_recency_dashboard.html
 out/                              27 CSV receipts + 6 figures + headlines.json + build console log
 uc_ledger_AI_PATCH_uc-pos-014-turner.md    ledger row, pending paste into the MLB repo
+
+── v1.1.0 bat-path addendum ───────────────────────────────────────────────
+ADDENDUM_v1.1.0_bat_path.md              the addendum spine — ask, gates, package delta
+03a_bat_path_semantics_and_lineage.md    sourced semantics · 12 proven conventions · dictionary ·
+                                         KPI specs (BP-0/1/2, PU-1/2, PB-1) · column-level lineage
+05a_bat_path_certification.md            180-check design · DQ · O-15..O-18 · versioning · E-8..E-12
+dp_uc40a_kernel.py                       bat-path kernel; imports dp_uc40_kernel unchanged
+dp_uc40a_bat_path.py                     the addendum build
+dp_uc40a_verification.py                 180 independent checks
+dp_uc40a_bat_path_report.md / .pdf       the consumable
+out/dp_uc40a_*.csv                       17 receipts + headlines + console log
+out/dp_uc40a_fig1..4.png                 4 figures
 ```
 
 ## Reproducing it
@@ -77,6 +108,13 @@ python dp_uc40_build_pdf.py           # needs weasyprint (cloud container, not t
 - **No swing-measurable comparison to his 2020–21 peak.** Bat tracking begins in 2024 and exists only in
   the Phillies frames — a sensor boundary, left NULL and never imputed.
 - **Nothing ranked below the 50-PA floor.** March (23 PA) and September (9 PA) carry ⚠ everywhere.
+
+## Reproducing the addendum
+
+```bash
+DP_UC40_DATA="<MLB repo>" python dp_uc40a_bat_path.py      # build   → out/dp_uc40a_*
+DP_UC40_DATA="<MLB repo>" python dp_uc40a_verification.py  # verify  → 180/180
+```
 
 ## One new defect, disclosed not patched
 

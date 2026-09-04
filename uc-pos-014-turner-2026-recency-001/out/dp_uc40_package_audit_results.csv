@@ -22,10 +22,35 @@ file exists: dp_uc40_turner_recency_dashboard.html,True,
 file exists: _chartjs_4.4.1.umd.js,True,
 file exists: telemetry/run_economics_ledger.csv,True,
 file exists: telemetry/calibration_report.md,True,
-receipts: 29 CSV present (27 analysis + verification + package audit),True,29
-receipts: 6 figures present,True,6
+file exists: ADDENDUM_v1.1.0_bat_path.md,True,
+file exists: 03a_bat_path_semantics_and_lineage.md,True,
+file exists: 05a_bat_path_certification.md,True,
+file exists: dp_uc40a_kernel.py,True,
+file exists: dp_uc40a_bat_path.py,True,
+file exists: dp_uc40a_verification.py,True,
+file exists: dp_uc40a_bat_path_report.md,True,
+file exists: dp_uc40a_bat_path_report.pdf,True,
+receipts: 46 CSV present (v1.0.0 29 + bat-path addendum 17),True,46
+receipts: 10 figures present (6 + 4 bat path),True,10
 receipts: headlines.json present,True,
 receipts: build console log present,True,
+receipt non-empty: dp_uc40a_bp_breaking_popup_headline.csv,True,
+receipt non-empty: dp_uc40a_bp_breaking_popup_pool.csv,True,
+receipt non-empty: dp_uc40a_bp_convention_assertions.csv,True,
+receipt non-empty: dp_uc40a_bp_coverage.csv,True,
+receipt non-empty: dp_uc40a_bp_dq_scorecard.csv,True,
+receipt non-empty: dp_uc40a_bp_peer_cohort.csv,True,
+receipt non-empty: dp_uc40a_bp_peer_delta.csv,True,
+receipt non-empty: dp_uc40a_bp_population_percentiles.csv,True,
+receipt non-empty: dp_uc40a_bp_popup_rate_by_pitch_group.csv,True,
+receipt non-empty: dp_uc40a_bp_popup_signature_pitch_group.csv,True,
+receipt non-empty: dp_uc40a_bp_popup_signature_season.csv,True,
+receipt non-empty: dp_uc40a_bp_shift_tests.csv,True,
+receipt non-empty: dp_uc40a_bp_subject_by_pitch_group.csv,True,
+receipt non-empty: dp_uc40a_bp_subject_by_season.csv,True,
+receipt non-empty: dp_uc40a_bp_subject_by_window_pitch_group.csv,True,
+receipt non-empty: dp_uc40a_bp_v1_reconciliation.csv,True,
+receipt non-empty: dp_uc40a_verification_results.csv,True,
 receipt non-empty: dp_uc40_approach_differential_season.csv,True,
 receipt non-empty: dp_uc40_approach_differential_window.csv,True,
 receipt non-empty: dp_uc40_breakpoint_scan.csv,True,
@@ -55,12 +80,12 @@ receipt non-empty: dp_uc40_running_line.csv,True,
 receipt non-empty: dp_uc40_shift_tests_july_vs_recent.csv,True,
 receipt non-empty: dp_uc40_verification_results.csv,True,
 receipt non-empty: dp_uc40_window_split.csv,True,
-report figure resolves: dp_uc40_fig5.png,True,
 report figure resolves: dp_uc40_fig3.png,True,
-report figure resolves: dp_uc40_fig6.png,True,
-report figure resolves: dp_uc40_fig1.png,True,
 report figure resolves: dp_uc40_fig2.png,True,
+report figure resolves: dp_uc40_fig1.png,True,
 report figure resolves: dp_uc40_fig4.png,True,
+report figure resolves: dp_uc40_fig5.png,True,
+report figure resolves: dp_uc40_fig6.png,True,
 report cites all 6 figures,True,
 verification: all checks pass,True,711/711
 report quotes the true verification count,True,711/711
@@ -115,3 +140,37 @@ ledger patch is a single pipe-delimited row,True,
 ledger patch advances the next-available pointer,True,
 ledger patch names the package path,True,
 ledger patch carries the verification count,True,
+addendum: all verification checks pass,True,180/180
+addendum: all conventions pass,True,12
+addendum: 12 conventions asserted,True,12
+addendum: DQ has zero FAIL,True,0
+addendum report quotes the true addendum verification count,True,180/180
+05a quotes the true addendum verification count,True,180/180
+ADDENDUM spine quotes the true addendum verification count,True,180/180
+dashboard quotes the true addendum verification count,True,180/180
+addendum report discloses O-15,True,True
+03a specifies O-15,True,True
+dashboard discloses O-15,True,True
+addendum report discloses O-16,True,True
+03a specifies O-16,True,True
+dashboard discloses O-16,True,True
+addendum report discloses O-17,True,True
+03a specifies O-17,True,True
+dashboard discloses O-17,True,True
+addendum report discloses O-18,True,True
+03a specifies O-18,True,True
+dashboard discloses O-18,True,True
+03a cites a source for every bat-path term,True,True
+03a documents column-level lineage,True,True
+03a records the O-14 ID collision and its resolution,True,True
+no addendum file still CLAIMS O-14 (the two remaining mentions are the collision note in 03a and the E-13 escalation in 05a),True,True
+05a raises the ID-collision escalation E-13,True,True
+00 raises the ID-collision escalation E-13,True,True
+addendum uses the data plane pitch_group verbatim,True,True
+addendum figure resolves: dp_uc40a_fig3.png,True,
+addendum figure resolves: dp_uc40a_fig4.png,True,
+addendum figure resolves: dp_uc40a_fig2.png,True,
+addendum figure resolves: dp_uc40a_fig1.png,True,
+addendum cites all 4 figures,True,True
+dashboard has a Bat path tab,True,True
+README lists the v1.1.0 addendum,True,True

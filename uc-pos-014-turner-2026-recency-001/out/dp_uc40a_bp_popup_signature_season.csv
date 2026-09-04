@@ -1,0 +1,5 @@
+game_year,is_popup,n,attack_angle,attack_direction,swing_path_tilt,intercept_side_in,intercept_depth_in,bat_speed,swing_length,launch_angle,launch_speed,plate_z,pull_direction,below_floor
+2025,False,417,6.2924,0.2001,28.153,37.3511,27.7574,71.1153,7.4283,7.2398,88.8173,2.3702,-0.2001,False
+2025,True,21,10.2039,-8.0608,26.5042,35.5274,32.3153,69.219,7.581,66.2381,79.5476,2.6548,8.0608,False
+2026,False,374,6.8866,1.4372,25.2315,39.5189,27.0126,71.5305,7.4353,6.6791,88.6019,2.3395,-1.4372,False
+2026,True,26,10.7294,-6.2357,23.4209,37.2259,31.7078,71.2,7.4654,66.3462,77.55,2.6531,6.2357,False

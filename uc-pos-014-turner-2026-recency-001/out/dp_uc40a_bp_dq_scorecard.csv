@@ -1,0 +1,14 @@
+rule,measure,observed,expected,status
+A-1 sensor boundary: path columns absent pre-2025,subject non-null attack_angle in 2023-24,0,0,PASS
+A-2 sensor boundary: bat_speed absent pre-2024,subject non-null bat_speed in 2023,0,0,PASS
+A-3 path coverage 2026,tracked / swings,0.9608,>0.95,PASS
+A-4 coverage stability 2025 vs 2026,abs difference in coverage,0.0101,<0.02,PASS
+A-5 O-18 bunts excluded,bunt swings removed from the 2026 path population,0,report only,WARN
+A-6 O-18 degenerate swings,2026 tracked swings under 25 mph,3,report only,WARN
+A-7 conventions asserted,assertion checks passing,12/12,12/12,PASS
+A-8 v1.0.0 reconciliation,max |PU-2 - v1 pu_rate|,0.0,<1e-9,PASS
+A-9 O-16 peer control applied,metrics with a peer-netted delta published,7,7,PASS
+A-10 O-17 hyper_speed excluded,hyper_speed used as an independent measure,0,0,PASS
+A-11 swing floor,"below-floor cells in a bat-path season (2025+); pre-2025 cells are the sensor boundary, not a floor breach",1,0,WARN
+A-11b sensor-boundary cells,pre-2025 pitch-group cells NULL by sensor boundary,6,expected 6,PASS
+A-12 pitch_group provenance,map identical to the DPO repo PITCH_GROUP,verbatim,verbatim,PASS

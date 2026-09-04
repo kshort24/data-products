@@ -379,6 +379,6 @@ This UC extends `uc-pos-006` / `dp_uc24` (UC #25, delivered 2026-07-21). Under t
 
 *Receipts: `dp_uc40_*.csv` (27 files) + `dp_uc40_headlines.json` · figures `dp_uc40_fig1..6.png` ·
 independent verification `dp_uc40_verification.py` — **711/711 PASS** · package audit
-`dp_uc40_package_audit.py` — **116/116 PASS** · governance trail `00`–`07` in this folder ·
+`dp_uc40_package_audit.py` — **175/175 PASS** · governance trail `00`–`07` in this folder ·
 bid and calibration in `BID_2026-09-03_uc-pos-014-turner.md` and `telemetry/`.
 Generated 2026-09-03 · Phillies Offense value stream · Data Product Owner: Kellen Short.*

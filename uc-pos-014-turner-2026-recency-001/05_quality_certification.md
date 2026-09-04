@@ -12,7 +12,7 @@
 | DQ scorecard | **22 PASS · 3 WARN · 0 FAIL** (`out/dp_uc40_dq_scorecard.csv`) |
 | Parent reproduction | **84 / 84** figures of `uc-pos-006` reproduced exactly; **0** definitional drift |
 | Defects found by this UC | **1 new** (D-7 / O-13), disclosed and remediated by a `_fix`, governed original untouched |
-| Package audit | **116 / 116 PASS** (`dp_uc40_package_audit.py`) |
+| Package audit | **175 / 175 PASS** (`dp_uc40_package_audit.py`) |
 | Certification | **READY** |
 
 ---

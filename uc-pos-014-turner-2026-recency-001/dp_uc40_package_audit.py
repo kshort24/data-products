@@ -42,15 +42,20 @@ REQUIRED = ['00_dpo_orchestration_record.md', '01_strategy_intake.md',
             'dp_uc40_build_pdf.py', 'dp_uc40_build_dashboard.py',
             'dp_uc40_turner_recency_report.md', 'dp_uc40_turner_recency_report.pdf',
             'dp_uc40_turner_recency_dashboard.html', '_chartjs_4.4.1.umd.js',
-            'telemetry/run_economics_ledger.csv', 'telemetry/calibration_report.md']
+            'telemetry/run_economics_ledger.csv', 'telemetry/calibration_report.md',
+            # v1.1.0 bat-path addendum
+            'ADDENDUM_v1.1.0_bat_path.md', '03a_bat_path_semantics_and_lineage.md',
+            '05a_bat_path_certification.md', 'dp_uc40a_kernel.py', 'dp_uc40a_bat_path.py',
+            'dp_uc40a_verification.py', 'dp_uc40a_bat_path_report.md',
+            'dp_uc40a_bat_path_report.pdf']
 for f in REQUIRED:
     chk(f'file exists: {f}', os.path.exists(os.path.join(HERE, f)))
 
 CSVS = [f for f in os.listdir(OUT) if f.endswith('.csv')]
 PNGS = [f for f in os.listdir(OUT) if f.endswith('.png')]
-chk('receipts: 29 CSV present (27 analysis + verification + package audit)',
-    len(CSVS) == 29, str(len(CSVS)))
-chk('receipts: 6 figures present', len(PNGS) == 6, str(len(PNGS)))
+chk('receipts: 46 CSV present (v1.0.0 29 + bat-path addendum 17)',
+    len(CSVS) == 46, str(len(CSVS)))
+chk('receipts: 10 figures present (6 + 4 bat path)', len(PNGS) == 10, str(len(PNGS)))
 chk('receipts: headlines.json present', os.path.exists(os.path.join(OUT, 'dp_uc40_headlines.json')))
 chk('receipts: build console log present', os.path.exists(os.path.join(OUT, 'dp_uc40_build_console.log')))
 for f in CSVS:
@@ -83,8 +88,8 @@ chk('DQ has zero FAIL', nF == 0, str(nF))
 for surf, name in [(rpt, 'report'), (README := txt('README.md'), 'README'),
                    (txt('00_dpo_orchestration_record.md'), '00')]:
     chk(f'{name} quotes the true DQ split',
-        f'{nP} PASS' in surf and f'{nW} WARN' in surf and f'{nF} FAIL' in surf,
-        f'{nP}/{nW}/{nF}')
+        (f'{nP} PASS' in surf and f'{nW} WARN' in surf and f'{nF} FAIL' in surf)
+        or f'{nP}/{nW}/{nF}' in surf, f'{nP}/{nW}/{nF}')
 
 nrep = int(par.repro_pass.sum())
 for surf, name in [(rpt, 'report'), (README, 'README'), (dash, 'dashboard'),
@@ -144,6 +149,46 @@ chk('ledger patch is a single pipe-delimited row', led.count('\n| 40 |') == 1)
 chk('ledger patch advances the next-available pointer', 'UC #41' in led and 'dp_uc41' in led)
 chk('ledger patch names the package path', 'uc-pos-014-turner-2026-recency-001/' in led)
 chk('ledger patch carries the verification count', f'{npass}/{ntot}' in led)
+
+# ── 8 · v1.1.0 ADDENDUM ──────────────────────────────────────────────────
+arpt = txt('dp_uc40a_bat_path_report.md')
+aver = pd.read_csv(os.path.join(OUT, 'dp_uc40a_verification_results.csv'))
+aconv = pd.read_csv(os.path.join(OUT, 'dp_uc40a_bp_convention_assertions.csv'))
+adq = pd.read_csv(os.path.join(OUT, 'dp_uc40a_bp_dq_scorecard.csv'))
+an, at_ = int(aver['pass'].sum()), len(aver)
+chk('addendum: all verification checks pass', an == at_, f'{an}/{at_}')
+chk('addendum: all conventions pass', bool((aconv.status == 'PASS').all()), str(len(aconv)))
+chk('addendum: 12 conventions asserted', len(aconv) == 12, str(len(aconv)))
+chk('addendum: DQ has zero FAIL', int((adq.status == 'FAIL').sum()) == 0, str(int((adq.status=='FAIL').sum())))
+for surf, name in [(arpt, 'addendum report'), (txt('05a_bat_path_certification.md'), '05a'),
+                   (txt('ADDENDUM_v1.1.0_bat_path.md'), 'ADDENDUM spine'), (dash, 'dashboard')]:
+    chk(f'{name} quotes the true addendum verification count',
+        f'{an}/{at_}' in surf or f'{an} / {at_}' in surf, f'{an}/{at_}')
+# renumbered +1 on 2026-09-04 after a concurrent session claimed O-14 (see 03a §3)
+for oid in ('O-15', 'O-16', 'O-17', 'O-18'):
+    chk(f'addendum report discloses {oid}', oid in arpt, True)
+    chk(f'03a specifies {oid}', oid in txt('03a_bat_path_semantics_and_lineage.md'), True)
+    chk(f'dashboard discloses {oid}', oid in dash, True)
+chk('03a cites a source for every bat-path term',
+    txt('03a_bat_path_semantics_and_lineage.md').count('mlb.com/glossary/statcast') >= 5, True)
+chk('03a documents column-level lineage', 'technical-lineage-builder' in
+    txt('03a_bat_path_semantics_and_lineage.md'), True)
+chk('03a records the O-14 ID collision and its resolution',
+    'ID-collision note' in txt('03a_bat_path_semantics_and_lineage.md'), True)
+chk('no addendum file still CLAIMS O-14 (the two remaining mentions are the '
+    'collision note in 03a and the E-13 escalation in 05a)',
+    not any('O-14' in txt(f) for f in
+            ['dp_uc40a_bat_path_report.md', 'ADDENDUM_v1.1.0_bat_path.md',
+             'README.md', 'dp_uc40a_kernel.py']), True)
+chk('05a raises the ID-collision escalation E-13', 'E-13' in txt('05a_bat_path_certification.md'), True)
+chk('00 raises the ID-collision escalation E-13', 'E-13' in txt('00_dpo_orchestration_record.md'), True)
+chk('addendum uses the data plane pitch_group verbatim',
+    'verbatim' in txt('03a_bat_path_semantics_and_lineage.md'), True)
+for m in set(re.findall(r'!\[[^\]]*\]\(([^)]+)\)', arpt)):
+    chk(f'addendum figure resolves: {m}', os.path.exists(os.path.join(OUT, m)))
+chk('addendum cites all 4 figures', len(set(re.findall(r'dp_uc40a_fig\d', arpt))) == 4, True)
+chk('dashboard has a Bat path tab', 't-batpath' in dash, True)
+chk('README lists the v1.1.0 addendum', 'v1.1.0' in README, True)
 
 # ── report ────────────────────────────────────────────────────────────────
 res = pd.DataFrame(_r, columns=['check', 'pass', 'detail'])
