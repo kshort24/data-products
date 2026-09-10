@@ -1,0 +1,34 @@
+check,actual,expected,pass
+"(2023, 'outside') n_bip",99,99,True
+"(2023, 'outside') pull_n",41,41,True
+"(2023, 'outside') oppo_n",40,40,True
+"(2024, 'outside') n_bip",70,70,True
+"(2024, 'outside') pull_n",29,29,True
+"(2024, 'outside') oppo_n",25,25,True
+"(2025, 'outside') n_bip",71,71,True
+"(2025, 'outside') pull_n",34,34,True
+"(2025, 'outside') oppo_n",18,18,True
+"(2026, 'outside') n_bip",71,71,True
+"(2026, 'outside') pull_n",28,28,True
+"(2026, 'outside') oppo_n",25,25,True
+"(2023, 'in_zone') n_bip",391,391,True
+"(2023, 'in_zone') pull_n",185,185,True
+"(2023, 'in_zone') oppo_n",117,117,True
+"(2024, 'in_zone') n_bip",338,338,True
+"(2024, 'in_zone') pull_n",177,177,True
+"(2024, 'in_zone') oppo_n",86,86,True
+"(2025, 'in_zone') n_bip",413,413,True
+"(2025, 'in_zone') pull_n",181,181,True
+"(2025, 'in_zone') oppo_n",134,134,True
+"(2026, 'in_zone') n_bip",379,379,True
+"(2026, 'in_zone') pull_n",152,152,True
+"(2026, 'in_zone') oppo_n",133,133,True
+z_pull_outside_2026_vs_pooled,-0.583579459680774,-0.58,True
+z_oppo_outside_2026_vs_pooled,0.09762685080197335,0.1,True
+z_pull_inzone_2026_vs_pooled,-2.5203490799070676,-2.52,True
+z_oppo_inzone_2026_vs_pooled,2.0380391247070078,2.04,True
+2023 ooz_share,0.20204081632653062,0.202041,True
+2024 ooz_share,0.1715686274509804,0.171569,True
+2025 ooz_share,0.14669421487603307,0.146694,True
+2026 ooz_share,0.15777777777777777,0.157778,True
+median_loc_x_pull_negative,1.0,1.0,True
