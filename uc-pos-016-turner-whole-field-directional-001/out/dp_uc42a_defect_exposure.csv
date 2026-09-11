@@ -1,0 +1,5 @@
+defect,exposure_metric,value,affects_this_build
+D-1 hard_hit_rate inner merge drops zero-hard-hit groups,"player-seasons with >=1 BIP but 0 hard hits, dropped",3,True
+O-8 hard_hit_rate counts untracked BIP as not-hard-hit,BIP rows with NULL launch_speed in the 2023-26 pos pool,36,True
+O-8 (subject),Turner BIP rows with NULL launch_speed,1,True
+D-7/O-13 in_zone counts NULL zone as in-zone,Turner BIP rows with NULL zone (excluded from BOTH populations here),0,False

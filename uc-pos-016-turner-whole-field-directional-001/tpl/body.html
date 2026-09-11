@@ -1,0 +1,323 @@
+<header class="mast">
+  <div class="wrap">
+    <div class="eyebrow">uc-pos-016 · dp_uc42a · v1.1.0 · Phillies Offense (pos) value stream</div>
+    <h1>Trea Turner is hitting it the other way.<br>That is not why the runs stopped.</h1>
+    <p class="sub">A whole-field directional study of 1,832 regular-season balls in play, 2023&ndash;2026, with the
+      pitches that produced them. Iterates on <span class="num">dp_uc42 v1.0.0</span>; every published figure from the
+      parent build was reproduced before anything new was added.</p>
+    <div class="chips">
+      <span class="chip v">Premise not supported</span>
+      <span class="chip">Subject 607208 · Turner, Trea</span>
+      <span class="chip">Data as of <span id="asof"></span></span>
+      <span class="chip">READY&#8209;CONDITIONAL · diagnostic tier</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ============ VERDICT ============ -->
+<section id="verdict">
+  <div class="scene-no">The answer first</div>
+  <h2>Three questions, three answers</h2>
+  <div class="grid g3">
+    <div class="card verdict no">
+      <div class="q">Is Turner over-pulling <b>outside-zone</b> pitches in 2026?</div>
+      <div class="a">No.</div>
+      <div class="why">39.4% pull on out-of-zone contact (n&nbsp;=&nbsp;71) vs 43.3% pooled 2023&ndash;25 (n&nbsp;=&nbsp;240).
+        <span class="num">z&nbsp;=&nbsp;&minus;0.58</span> &mdash; indistinguishable from noise, and pointing the
+        <i>opposite</i> way from the premise. Underpowered, not disproven.</div>
+    </div>
+    <div class="card verdict yes">
+      <div class="q">Is there a real directional shift anywhere?</div>
+      <div class="a">Yes &mdash; <b>in</b> the zone.</div>
+      <div class="why">In-zone pull rate 40.1% vs 47.5% (<span class="num">z&nbsp;=&nbsp;&minus;2.52</span>), oppo
+        35.1% vs 29.5% (<span class="num">z&nbsp;=&nbsp;+2.04</span>). One zone category away from where the
+        premise looked.</div>
+    </div>
+    <div class="card verdict new">
+      <div class="q">Does that shift explain the down year?</div>
+      <div class="a">Mostly not &mdash; about a fifth.</div>
+      <div class="why">In-zone total bases per ball in play fell <span class="num">.622&nbsp;&rarr;&nbsp;.515</span>.
+        The directional mix change accounts for <b>20%</b> of that; <b>86%</b> is every direction producing less
+        than it used to. <span class="num">DC&#8209;1</span>, new in v1.1.0.</div>
+    </div>
+  </div>
+  <div class="note"><b>What changed since v1.0.0, and why.</b> The chart specified in v1 as a &ldquo;spray chart&rdquo;
+    was built as a <b>pitch map</b> (<span class="num">plate_x</span>/<span class="num">plate_z</span>) &mdash; a
+    human-in-the-loop specification error the DPO declared himself. Both views now ship, cross-linked on a shared
+    pitch key, because the link between them is where the finding physically lives. v1&rsquo;s open decision
+    &ldquo;static facet grid vs. animated frames&rdquo; has been answered: <b>season frames</b>. The
+    <span class="num">v1.0.0</span> finding itself is unchanged and was not re-litigated.</div>
+</section>
+
+<!-- ============ SCENE 1 : THE RUG ============ -->
+<section id="scene1">
+  <div class="scene-no">Scene 1 &mdash; the grain on the margin</div>
+  <h2>One tick in the rug is a whole season</h2>
+  <p class="lede">Every Phillies batter season since 2023 with at least 50 plate appearances, plotted by barrel rate
+    against run creation. The marks along the bottom axis are the rug: one tick per player-season. Turner&rsquo;s 2026
+    is one of them. Press play to walk his tick through four seasons &mdash; everything downstream on this page is
+    what is inside that single tick.</p>
+
+  <div class="controls">
+    <div class="ctl"><button class="play" id="p1" aria-pressed="false">▶ Play seasons</button></div>
+    <div class="ctl"><label for="s1">Season</label>
+      <input type="range" id="s1" min="0" max="3" step="1" value="3">
+      <span class="num" id="s1lab" style="min-width:3.2em">2026</span></div>
+    <div class="ctl"><label>Y axis</label>
+      <span class="seg" id="metric">
+        <button data-m="rc6" aria-pressed="true">Runs created / 600 PA</button>
+        <button data-m="rc" aria-pressed="false">Runs created (raw)</button>
+      </span></div>
+  </div>
+
+  <div class="chartcard">
+    <h3><span>Phillies batter seasons, 2023&ndash;2026 &middot; <span id="ctxTitleMetric">runs created per 600 PA</span>
+      as a function of barrel rate</span>
+      <span class="hint">bubble area = games played &middot; hover any point</span></h3>
+    <svg id="ctx" viewBox="0 0 900 470" role="img" aria-label="Scatter of Phillies batter seasons"></svg>
+    <div class="legend">
+      <span><i style="background:#E81828"></i>Trea Turner, selected season</span>
+      <span><i style="background:#002D72"></i>Turner, other seasons</span>
+      <span><i style="background:#6F7378"></i>All other Phillies player-seasons</span>
+      <span>│ rug tick on the x&nbsp;axis = one player-season</span>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card">
+      <h3>What the rug tick contains, season by season</h3>
+      <div class="tablewrap"><table id="ttSeasons"><thead><tr>
+        <th>Season</th><th class="num">PA</th><th class="num">Barrel&nbsp;rate</th><th class="num">Hard&#8209;hit</th>
+        <th class="num">wOBA</th><th class="num">OPS</th><th class="num">RC</th><th class="num">RC/600</th>
+      </tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="card">
+      <h3>Why this page normalizes run creation <span class="num" style="color:var(--ink3)">RC&#8209;1</span></h3>
+      <p style="font-size:13.5px;color:var(--ink2);margin:0 0 8px">The requested cell plots
+        <b>runs created</b> &mdash; a counting stat &mdash; against <b>barrel rate</b>, a rate. Playing time then
+        becomes the loudest signal on the y&nbsp;axis and the reader charges it to the x&nbsp;axis: a full-time
+        .060&#8209;barrel hitter always sits above a part-time .150&#8209;barrel hitter, and the chart reads as if
+        barrel rate buys runs.</p>
+      <p style="font-size:13.5px;color:var(--ink2);margin:0">RC&#8209;1 puts both axes on the same footing. It does not
+        replace the raw count &mdash; the toggle above keeps both, because the counting stat is the right answer to
+        <i>who drove in the most runs</i> and the wrong answer to <i>who creates runs best for his contact
+        profile</i>. On the normalized axis Turner&rsquo;s 2026 is the lowest of his four Phillies seasons; on the raw
+        axis it is not obviously anything.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCENE 2 : LINKED PAIR ============ -->
+<section id="scene2">
+  <div class="scene-no">Scene 2 &mdash; where the pitch was, where the ball went</div>
+  <h2>The spray chart and the pitch map are the same 450 events</h2>
+  <p class="lede">Left: every ball in play on the field, from Statcast hit coordinates. Right: the pitch that produced
+    it, at the plate. They share a pitch key, so hovering either side lights the same event on the other. The dashed
+    wedge on the field is the governed &plusmn;4.7&#8209;slope <span class="num">hit_direction</span> boundary &mdash;
+    drawn so the classification can be audited by eye rather than taken on trust.</p>
+
+  <div class="controls">
+    <div class="ctl"><button class="play" id="p2" aria-pressed="false">▶ Play seasons</button></div>
+    <div class="ctl"><label for="s2">Season</label>
+      <input type="range" id="s2" min="0" max="3" step="1" value="3">
+      <span class="num" id="s2lab" style="min-width:3.2em">2026</span></div>
+    <div class="ctl"><label>Pitch zone</label>
+      <span class="seg" id="zoneSeg">
+        <button data-z="all" aria-pressed="false">All</button>
+        <button data-z="in" aria-pressed="true">In zone</button>
+        <button data-z="out" aria-pressed="false">Out of zone</button>
+      </span></div>
+    <div class="ctl"><label for="dirSel">Direction</label>
+      <select id="dirSel">
+        <option value="all">All directions</option>
+        <option value="Pull">Pull only</option>
+        <option value="Straightaway">Straightaway only</option>
+        <option value="Oppo">Oppo only</option>
+      </select></div>
+    <div class="ctl"><label for="thSel">Pitcher</label>
+      <select id="thSel">
+        <option value="all">Both hands</option><option value="R">vs RHP</option><option value="L">vs LHP</option>
+      </select></div>
+    <div class="ctl"><label><input type="checkbox" id="showAll" checked style="accent-color:var(--navy)">
+      &nbsp;non&#8209;contact pitches</label></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="chartcard">
+      <h3><span>Spray chart &mdash; balls in play</span><span class="hint" id="sprayN"></span></h3>
+      <svg id="spray" viewBox="0 0 460 462" role="img" aria-label="Spray chart of balls in play"></svg>
+    </div>
+    <div class="chartcard">
+      <h3><span>Pitch map &mdash; plate location</span><span class="hint" id="pmN"></span></h3>
+      <svg id="pitchmap" viewBox="0 0 460 462" role="img" aria-label="Pitch location map"></svg>
+    </div>
+  </div>
+  <div class="legend">
+    <span><i style="background:#E81828"></i>Pull</span>
+    <span><i style="background:#6F7378"></i>Straightaway</span>
+    <span><i style="background:#002D72"></i>Oppo</span>
+    <span><i style="background:#c3cad3"></i>pitches that produced no ball in play (pitch map only)</span>
+    <span>│ catcher&rsquo;s view &mdash; Turner bats right, so the left of the plate is inside</span>
+  </div>
+
+  <div class="chartcard" style="margin-top:14px">
+    <h3><span>Direction mix on contact, by season</span><span class="hint">filtered by the zone selector above</span></h3>
+    <svg id="mixbars" viewBox="0 0 900 190" role="img" aria-label="Direction mix by season"></svg>
+  </div>
+</section>
+
+<!-- ============ SCENE 3 : ATTACK STABILITY ============ -->
+<section id="scene3">
+  <div class="scene-no">Scene 3 &mdash; the control</div>
+  <h2>Did the hitter move, or did the pitchers?</h2>
+  <p class="lede">A batted-ball direction change means nothing on its own: if opponents changed where they threw, the
+    ball would go somewhere else without the hitter changing at all. So the attack plan is held up as a control.
+    <span class="num">PM&#8209;1</span> compares Turner&rsquo;s 2026 pitch-location distribution against pooled
+    2023&ndash;25 &mdash; once for the whole plate, then conditionally inside the zone and outside it, because a pooled
+    test can be significant off an out-of-zone-only change and be read as if it licensed an in-zone explanation.</p>
+
+  <div class="grid g2">
+    <div class="chartcard">
+      <h3><span>Where the attack moved</span><span class="hint">2026 share minus pooled 2023&ndash;25, percentage points</span></h3>
+      <svg id="zoneshift" viewBox="0 0 460 320" role="img" aria-label="Zone share shift"></svg>
+    </div>
+    <div class="card">
+      <h3>PM&#8209;1 attack-location stability</h3>
+      <div class="tablewrap"><table id="stabTable"><thead><tr>
+        <th>Test</th><th class="num">n 2026</th><th class="num">&chi;&sup2;</th><th class="num">df</th>
+        <th class="num">p</th><th class="num">TVD</th></tr></thead><tbody></tbody></table></div>
+      <div class="note" style="margin-top:14px" id="pmNote"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCENE 4 : BANDS ============ -->
+<section id="scene4">
+  <div class="scene-no">Scene 4 &mdash; what clears the band</div>
+  <h2>The premise and the finding, on the same axis</h2>
+  <p class="lede">Pooled two-proportion <span class="num">z</span>, 2026 against pooled 2023&ndash;25, under the
+    repo&rsquo;s <span class="num">ST&#8209;1</span> convention: a descriptive uncertainty band on a self-selected
+    window, never a hypothesis test in the inferential sense. <span class="num">|z|&nbsp;&ge;&nbsp;1.5</span> is
+    moderate; <span class="num">|z|&nbsp;&ge;&nbsp;2.5</span> clears noise.</p>
+  <div class="chartcard">
+    <svg id="zchart" viewBox="0 0 900 240" role="img" aria-label="z scores by slice"></svg>
+  </div>
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card">
+      <h3>In-zone shift, decomposed by where the pitch was</h3>
+      <p style="font-size:13.5px;color:var(--ink2);margin:0 0 10px">If the pull loss were driven by one part of the
+        zone, it would concentrate. It does not: pull rate is down between 5.8 and 8.7 points in
+        <b>every</b> row and <b>every</b> column of the strike zone, and no single cell clears the band on its own.
+        The aggregate clears it because the sub-effects all point the same way &mdash; the signature of a
+        whole-zone change, not a location-specific one.</p>
+      <div class="tablewrap"><table id="cellTable"><thead><tr>
+        <th>Slice</th><th class="num">Pull 2026</th><th class="num">Pull 23&ndash;25</th><th class="num">&Delta; pp</th>
+        <th class="num">z</th><th class="num">n 2026</th></tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="card">
+      <h3>DC&#8209;1 &mdash; how much of the damage loss the mix change accounts for</h3>
+      <svg id="waterfall" class="waterfall" viewBox="0 0 430 210" role="img" aria-label="Value decomposition"></svg>
+      <p style="font-size:13px;color:var(--ink2);margin:8px 0 0"><b>This is arithmetic, not causation.</b> It answers
+        how much of the observed drop is bookkeeping-consistent with the mix change and nothing else. The interaction
+        term is reported rather than folded into either side, so the identity stays visible.</p>
+    </div>
+  </div>
+  <div class="chartcard" style="margin-top:14px">
+    <h3><span>Total bases per ball in play, by direction and season</span>
+      <span class="hint">in-zone contact only &middot; <span class="num">slg_bip</span>, denominator is BIP not at-bats</span></h3>
+    <svg id="valchart" viewBox="0 0 900 260" role="img" aria-label="Value by direction and season"></svg>
+  </div>
+</section>
+
+<!-- ============ GOVERNANCE ============ -->
+<section id="gov">
+  <div class="scene-no">Receipts</div>
+  <h2>Data position, defects, and what is provisional</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Verified at build time, not assumed</h3>
+      <dl class="kv" id="kvPos"></dl>
+    </div>
+    <div class="card">
+      <h3>Known kernel defects, measured against this build</h3>
+      <div class="tablewrap"><table id="defTable"><thead><tr>
+        <th>Defect</th><th>Exposure</th><th class="num">Count</th><th>Bites here?</th>
+      </tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+
+  <details>
+    <summary>Provisional objects introduced in v1.1.0 &mdash; unratified, do not reuse without DPO sign-off</summary>
+    <div class="tablewrap"><table><thead><tr><th>Object</th><th>Kind</th><th>What it is</th></tr></thead><tbody>
+      <tr><td class="num">RC&#8209;1</td><td>KPI candidate</td><td><span class="num">runs_created_per_600</span> &mdash;
+        PA&#8209;normalized run creation. Guards the rate&#8209;vs&#8209;counting&#8209;stat confound in the requested
+        context cell. 600 PA is a convention, not a league constant; it rescales and never reranks within a fixed PA.</td></tr>
+      <tr><td class="num">PM&#8209;1</td><td>Control test</td><td><span class="num">pitch_location_profile</span> +
+        the three-way &chi;&sup2; / total-variation stability test. Answers whether the opponent&rsquo;s attack plan
+        moved, split so an out-of-zone change can never be read as licensing an in-zone explanation.</td></tr>
+      <tr><td class="num">PM&#8209;2</td><td>Diagnostic</td><td><span class="num">zone_cell_direction_mix</span> &mdash;
+        in-zone batted-ball direction mix per Statcast zone cell. The bridge object between the two linked charts.
+        Cell counts are small by construction; not a KPI.</td></tr>
+      <tr><td class="num">DC&#8209;1</td><td>Diagnostic</td><td><span class="num">directional_value_decomposition</span>
+        &mdash; two-way (Oaxaca&#8209;style) split of the change in total bases per BIP into mix effect, rate effect and
+        interaction. Point estimates only; a decomposition of point estimates carries no uncertainty band.</td></tr>
+      <tr><td class="num">slg_bip</td><td>Metric</td><td>Total bases per ball in play. Named distinctly from slugging
+        percentage because the denominator is BIP, not at-bats &mdash; it must never be read as the league stat.</td></tr>
+      <tr><td class="num">sort_rank</td><td>Carried from v1.0.0</td><td>Handedness-aware facet ordering. Still
+        provisional, still pending the DPO&rsquo;s reconciliation against his own draft (gap G&#8209;1).</td></tr>
+    </tbody></table></div>
+  </details>
+
+  <details>
+    <summary>Inherited verbatim from the parent build &mdash; nothing here was re-derived</summary>
+    <div class="tablewrap"><table><thead><tr><th>Object</th><th>Source of truth</th></tr></thead><tbody>
+      <tr><td class="num">derive_loc</td><td><span class="num">dp_uc40_kernel.py</span> PA&#8209;L1, itself from
+        <span class="num">cbp-spray_AI.md</span> Data Quality rule 1</td></tr>
+      <tr><td class="num">hit_direction</td><td><span class="num">Baseball&nbsp;Functions.ipynb</span> cell 56
+        (<span class="num">pull_air_rate</span>) &mdash; the repo&rsquo;s one governed definition</td></tr>
+      <tr><td class="num">in_zone</td><td><span class="num">zone&nbsp;&lt;&nbsp;10</span>; NULL zone excluded from
+        <i>both</i> populations (the D&#8209;7/O&#8209;13 standard)</td></tr>
+      <tr><td class="num">get_stats · measure_calcs · mcgs · nresults · runs_created · hard_hit_rate · barrel_rate</td>
+        <td><span class="num">Baseball&nbsp;Functions.ipynb</span> cells 13/15/17/19/31/52/58, transcribed as-is,
+        defects included and disclosed rather than silently patched</td></tr>
+      <tr><td class="num">P_THROWS_COLORS · MARKER_SIZE</td><td>Locked in v1.0.0 per the DPO&rsquo;s correction</td></tr>
+      <tr><td class="num">pooled_two_prop_z</td><td>ST&#8209;1 convention, <span class="num">uc-pos-014</span></td></tr>
+    </tbody></table></div>
+  </details>
+
+  <details>
+    <summary>Honest limits on this build</summary>
+    <ul style="font-size:13.5px;color:var(--ink2);margin:6px 0 0;padding-left:20px">
+      <li>The out-of-zone test is <b>underpowered</b>: 71 balls in play in 2026 against 240 pooled. A true effect the
+        size the premise supposed could exist here without clearing the band. Absence of evidence, not evidence of absence.</li>
+      <li>Turner is <span class="num">stand == 'R'</span> on 100% of these rows. The left-handed branch of
+        <span class="num">hit_direction</span> and <span class="num">sort_rank</span> is implemented and documented
+        but never exercised, so it is untested by this build.</li>
+      <li>PM&#8209;1 is a distributional test on pitch <i>location</i> only. It does not control for pitch mix,
+        sequencing, velocity, or who was on the mound. &ldquo;The in-zone attack plan held&rdquo; means locations held,
+        nothing more.</li>
+      <li>DC&#8209;1 compares one season against a three-season pool and is a decomposition of point estimates.
+        It carries no uncertainty band and it is not a causal claim.</li>
+      <li>Season-over-season comparisons pool across parks and opponents. No park or opponent-quality control is
+        applied; the loanDepot venue study (<span class="num">uc-pos-007</span>) is the precedent for how much that
+        can matter.</li>
+      <li>This remains a <b>diagnostic-tier</b> build with a spot-verification harness, not the exhaustive
+        independent-recompute harness a full certification-tier hitter season gets. That gap is priced, not hidden.</li>
+    </ul>
+  </details>
+</section>
+
+<footer>
+  <div><b>uc-pos-016-turner-whole-field-directional-001</b> &middot; <span class="num">dp_uc42a</span> v1.1.0 &middot;
+    parent <span class="num">dp_uc42</span> v1.0.0 &middot; Phillies Offense (<span class="num">pos</span>) value stream</div>
+  <div>Human DPO: Kellen Short &middot; data as of <span class="asof2"></span> &middot;
+    source <span class="num">data/phillies/phils_{2023..2026}.parquet</span> &middot;
+    entity lock <span class="num">batter == 607208</span> &middot; regular season only
+    (<span class="num">game_type == 'R'</span>)</div>
+  <div style="margin-top:6px">Every number on this page is reproduced from the shipped extracts by
+    <span class="num">dp_uc42a_verification.py</span>. Provisional objects are unratified.</div>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
