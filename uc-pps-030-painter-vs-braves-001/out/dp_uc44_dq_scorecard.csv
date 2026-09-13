@@ -1,0 +1,20 @@
+check,dimension,rule,result,detail
+DQ-1,Uniqueness,"No duplicate (game_pk, at_bat_number, pitch_number) in the subject frame",PASS,"1861 rows, 0 duplicates"
+DQ-2,Validity,"Entity lock is an MLBAM id, and resolves to exactly one player_name",PASS,"691725 -> Painter, Andrew"
+DQ-3,Validity,"game_type == R only (no spring, no exhibition)",PASS,0 non-R rows excluded upstream
+DQ-4.plate_x,Completeness,plate_x populated on every post-option pitch,PASS,0/720 null
+DQ-4.plate_z,Completeness,plate_z populated on every post-option pitch,PASS,0/720 null
+DQ-4.zone,Completeness,zone populated on every post-option pitch,PASS,0/720 null
+DQ-4.release_speed,Completeness,release_speed populated on every post-option pitch,PASS,0/720 null
+DQ-4.pfx_x,Completeness,pfx_x populated on every post-option pitch,PASS,0/720 null
+DQ-4.pfx_z,Completeness,pfx_z populated on every post-option pitch,PASS,0/720 null
+DQ-5,Completeness,release_extension populated,WARN,"1/720 null — excluded from the mean, never imputed"
+DQ-6,Completeness,arm_angle populated,FAIL,387/720 null (54%) — arm-slot analysis DESCOPED for this UC
+DQ-7,Completeness,estimated_woba_using_speedangle populated on every PA-ending pitch,PASS,"2 PA-ending rows null (truncated_pa / sac_bunt) — xwOBA is a PA-level stat here, verified"
+DQ-8,Consistency,xwOBA on strikeouts == 0 and on walks == the season wBB,PASS,"confirms the field is true xwOBA, not xwOBAcon — both are reported separately"
+DQ-9,Accuracy,Every benchmark population meets GRADE_POP_MIN or is stamped THIN,PASS,FF: n=232 floor=100; ST: n=29 floor=50 THIN; CH: n=56 floor=100; SL: n=92 floor=100; SI: n=138 floor=100; CU: n=45 floor=100
+DQ-10,Validity,No grade published below the subject pitch/swing floor,PASS,CU: BELOW PITCH FLOOR (<50)
+DQ-11,Accuracy,20-80 normality: z-grade and rank-grade agree within 10 points,PASS,no divergence >= 10
+DQ-12,Timeliness,Log current through the anchor date; target game is D+1,PASS,anchor 2026-09-12 -> target 2026-09-13
+DQ-13,Validity,"Opponent starter id externally confirmed, not inferred",PASS,MLBAM 656550 = Grant Holmes (baseballsavant savant-player/grant-holmes-656550)
+DQ-14,Consistency,AAA rows carry no wOBA weights and never enter an MLB rate,PASS,396 AAA rows loaded unweighted; used for context only

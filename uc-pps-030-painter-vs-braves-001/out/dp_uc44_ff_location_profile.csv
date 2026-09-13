@@ -1,0 +1,3 @@
+window,n,above_zone_rate,below_zone_rate,in_zone_rate,mean_plate_z,whiff_rate,pop_n,pop_mean,pop_sd,elevation_grade,elevation_z
+Pre-Option,378,0.30688,0.09524,0.47354,2.79076,0.10556,232,0.20001,0.07599,65.0,1.40624
+Post-Option,218,0.34862,0.13761,0.42202,2.74584,0.21818,232,0.20001,0.07599,70.0,1.95556

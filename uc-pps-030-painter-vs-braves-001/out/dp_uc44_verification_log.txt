@@ -1,0 +1,251 @@
+[A] PASS  entity lock resolves to one player  — <ArrowStringArray>
+['Painter, Andrew']
+Length: 1, dtype: str
+[A] PASS  entity lock is Painter
+[A] PASS  no name filter anywhere in the build source
+[A] PASS  regular season only
+[A] PASS  no duplicate pitch rows
+[A] PASS  anchor date matches the pin
+[A] PASS  target game is D+1 of the anchor
+[A] PASS  windows partition the season
+[A] PASS  post-option window is 8 starts  — 8
+[A] PASS  pre-option window is 14 starts
+[A] PASS  post-option pitch count 720  — 720
+[A] PASS  post-option PA 185
+[A] PASS  opponent starter id is Holmes lock
+[A] PASS  ATL game_pk list has 12 games
+[B] PASS  grade at the population mean is 50
+[B] PASS  +1 SD is a 60  — z=1.000
+[B] PASS  -2 SD is a 30
+[B] PASS  grade clips at 80
+[B] PASS  grade clips at 20
+[B] PASS  direction flip inverts the grade
+[B] PASS  NaN subject returns NaN grade
+[B] PASS  population under 5 returns NaN
+[B] PASS  zero-variance population returns NaN
+[B] PASS  rounding is half-up not banker's
+[B] PASS  z-grade and rank-grade agree on a normal population
+[B] PASS  divergence flag fires at 10 and not at 9
+[B] PASS  skewed population trips the divergence flag  — div=10.0
+[B] PASS  pitch_grade is the mean of stuff and command
+[B] PASS  pitch_grade is NaN when either input is NaN
+[B] PASS  grade_label vocabulary is monotone
+[C] PASS  FF population size reproduces  — 232 vs 232
+[C] PASS  FF floor rule honoured
+[C] PASS  FF THIN flag set iff floor was lowered
+[C] PASS  FF every population member clears the floor
+[C] PASS  FF population is RHP only
+[C] PASS  ST population size reproduces  — 29 vs 29
+[C] PASS  ST floor rule honoured
+[C] PASS  ST THIN flag set iff floor was lowered
+[C] PASS  ST every population member clears the floor
+[C] PASS  ST population is RHP only
+[C] PASS  CH population size reproduces  — 56 vs 56
+[C] PASS  CH floor rule honoured
+[C] PASS  CH THIN flag set iff floor was lowered
+[C] PASS  CH every population member clears the floor
+[C] PASS  CH population is RHP only
+[C] PASS  SL population size reproduces  — 92 vs 92
+[C] PASS  SL floor rule honoured
+[C] PASS  SL THIN flag set iff floor was lowered
+[C] PASS  SL every population member clears the floor
+[C] PASS  SL population is RHP only
+[C] PASS  SI population size reproduces  — 138 vs 138
+[C] PASS  SI floor rule honoured
+[C] PASS  SI THIN flag set iff floor was lowered
+[C] PASS  SI every population member clears the floor
+[C] PASS  SI population is RHP only
+[C] PASS  CU population size reproduces  — 45 vs 45
+[C] PASS  CU floor rule honoured
+[C] PASS  CU THIN flag set iff floor was lowered
+[C] PASS  CU every population member clears the floor
+[C] PASS  CU population is RHP only
+[C] PASS  sweeper is the only THIN population  — ['ST']
+[C] PASS  pitcher-season grain: population has no duplicate (year, pitcher)
+[C] PASS  population spans more than one club
+[C] PASS  FF whiff-rate Shapiro p reproduces  — 0.0616
+[C] PASS  FF in-zone Shapiro p reproduces  — 0.0777
+[C] PASS  SL whiff-rate Shapiro p reproduces  — 0.2102
+[C] PASS  SL in-zone Shapiro p reproduces  — 0.3099
+[C] PASS  ST whiff-rate Shapiro p reproduces  — 0.0153
+[C] PASS  ST in-zone Shapiro p reproduces  — 0.2099
+[C] PASS  CU whiff-rate Shapiro p reproduces  — 0.2767
+[C] PASS  CU in-zone Shapiro p reproduces  — 0.0591
+[C] PASS  CH whiff-rate Shapiro p reproduces  — 0.1077
+[C] PASS  CH in-zone Shapiro p reproduces  — 0.0064
+[C] PASS  SI whiff-rate Shapiro p reproduces  — 0.2870
+[C] PASS  SI in-zone Shapiro p reproduces  — 0.0009
+[C] PASS  report names exactly the three populations that fail normality
+[C] PASS  11 of 12 grades identical z-derived and rank-derived  — [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -5.0, 0.0, 0.0, 0.0, 0.0]
+[C] PASS  the one divergence is slider command at 5 points
+[C] PASS  no grade trips the 10-point SKEW flag
+[D] PASS  FF n reproduces
+[D] PASS  FF whiff reproduces
+[D] PASS  FF in-zone reproduces
+[D] PASS  FF velo reproduces
+[D] PASS  FF usage reproduces
+[D] PASS  FF stuff grade reproduces
+[D] PASS  FF pitch grade = mean(stuff, command)
+[D] PASS  ST n reproduces
+[D] PASS  ST whiff reproduces
+[D] PASS  ST in-zone reproduces
+[D] PASS  ST velo reproduces
+[D] PASS  ST usage reproduces
+[D] PASS  ST stuff grade reproduces
+[D] PASS  ST pitch grade = mean(stuff, command)
+[D] PASS  CH n reproduces
+[D] PASS  CH whiff reproduces
+[D] PASS  CH in-zone reproduces
+[D] PASS  CH velo reproduces
+[D] PASS  CH usage reproduces
+[D] PASS  CH stuff grade reproduces
+[D] PASS  CH pitch grade = mean(stuff, command)
+[D] PASS  SL n reproduces
+[D] PASS  SL whiff reproduces
+[D] PASS  SL in-zone reproduces
+[D] PASS  SL velo reproduces
+[D] PASS  SL usage reproduces
+[D] PASS  SL stuff grade reproduces
+[D] PASS  SL pitch grade = mean(stuff, command)
+[D] PASS  SI n reproduces
+[D] PASS  SI whiff reproduces
+[D] PASS  SI in-zone reproduces
+[D] PASS  SI velo reproduces
+[D] PASS  SI usage reproduces
+[D] PASS  SI stuff grade reproduces
+[D] PASS  SI pitch grade = mean(stuff, command)
+[D] PASS  CU n reproduces
+[D] PASS  CU whiff reproduces
+[D] PASS  CU in-zone reproduces
+[D] PASS  CU velo reproduces
+[D] PASS  CU usage reproduces
+[D] PASS  CU stuff grade reproduces
+[D] PASS  CU pitch grade = mean(stuff, command)
+[D] PASS  grade gates: nothing under the pitch floor is graded
+[D] PASS  curveball is ungraded
+[D] PASS  usage sums to 1 across the arsenal
+[D] PASS  arsenal grade is the usage-weighted pitch grade
+[D] PASS  platoon Pre-Option/L pitches
+[D] PASS  platoon Pre-Option/L PA
+[D] PASS  platoon Pre-Option/L whiff
+[D] PASS  platoon Pre-Option/L xwOBA
+[D] PASS  platoon Pre-Option/R pitches
+[D] PASS  platoon Pre-Option/R PA
+[D] PASS  platoon Pre-Option/R whiff
+[D] PASS  platoon Pre-Option/R xwOBA
+[D] PASS  platoon Post-Option/L pitches
+[D] PASS  platoon Post-Option/L PA
+[D] PASS  platoon Post-Option/L whiff
+[D] PASS  platoon Post-Option/L xwOBA
+[D] PASS  platoon Post-Option/R pitches
+[D] PASS  platoon Post-Option/R PA
+[D] PASS  platoon Post-Option/R whiff
+[D] PASS  platoon Post-Option/R xwOBA
+[D] PASS  platoon Full 2026/L pitches
+[D] PASS  platoon Full 2026/L PA
+[D] PASS  platoon Full 2026/L whiff
+[D] PASS  platoon Full 2026/L xwOBA
+[D] PASS  platoon Full 2026/R pitches
+[D] PASS  platoon Full 2026/R PA
+[D] PASS  platoon Full 2026/R whiff
+[D] PASS  platoon Full 2026/R xwOBA
+[D] PASS  start log covers every start
+[D] PASS  start log BF sums to season PA
+[D] PASS  start log pitches sum to season pitches
+[D] PASS  mix_by_stand n sums to window pitches per stand
+[D] PASS  turnover detail usages each sum to 1
+[D] PASS  AR-1 index = added_share + dropped_share
+[D] PASS  AR-1 added is exactly [CH]
+[D] PASS  AR-1 dropped is exactly [FS]
+[D] PASS  lineup PA descend
+[D] PASS  H2H PA total is 47
+[D] PASS  H2H comes only from the two April starts
+[E] PASS  report FF whiff .218
+[E] PASS  report FF ride 17.0"
+[E] PASS  report FF elevation .349
+[E] PASS  report FF pre elevation .307
+[E] PASS  report FF in-zone .422
+[E] PASS  report FF pre whiff .106
+[E] PASS  report splitter-vs-LHB .395 on 76 swings
+[E] PASS  report zero splitters post-option
+[E] PASS  report last splitter date is 2026-06-17
+[E] PASS  report changeup-vs-LHB .301 on 73 swings
+[E] PASS  report CH xwOBA .160
+[E] PASS  report CH-vs-LHB xwOBA .178
+[E] PASS  report CH-vs-RHB .452 whiff / .130 xwOBA
+[E] PASS  report sweeper-vs-LHH .645 zone / .200 whiff / .523 xwOBA on 9 PA
+[E] PASS  report platoon whiff .322 / .238
+[E] PASS  report K rate 29.7% RHH / 18.1% LHH
+[E] PASS  report platoon z=-1.78 p=0.075
+[E] PASS  report FS-vs-CH lefty z=1.20 p=0.23
+[E] PASS  report HOU 27 BF / 6 K / 2 BB / 2 HR
+[E] PASS  report HOU .438 xwOBA / .550 xwOBAcon
+[E] PASS  report HOU hard-hit 8 of 19 tracked
+[E] PASS  report "two starts over .400 are the only two with 2+ HR"
+[E] PASS  report 4 of 5 post-option HR came in those two starts
+[E] PASS  report breaking IZR .477 and grade 55
+[E] PASS  report efficiency 90.0 pitches / 23.1 BF per start
+[E] PASS  report FPSR .612 -> .638
+[E] PASS  report 6 of Atlanta's 9 most-used bats are LHH  — 6
+[E] PASS  report Acuna .447 / Harris .436 / Riley .374
+[E] PASS  report Holmes 260 pitches / 69 PA / .372 xwOBA
+[E] PASS  report Holmes SL+FF = 87% vs RHH
+[E] PASS  report league FS share did not fall (4.1% Jun -> 5.4% Sep)
+[E] PASS  every reconciliation row reconciles
+[E] PASS  report arsenal grade 50 post / 45 pre
+[E] PASS  report turnover index 0.37
+[E] PASS  report H2H turnover 0.33
+[E] PASS  report max H2H PA for one hitter is 7
+[F] PASS  D-7/O-13 claim: zero null zone in the graded window
+[F] PASS  O-8 claim: every post-option BIP is tracked
+[F] PASS  O-5 claim: exactly one truncated_pa
+[F] PASS  D-1 claim: kernel whiff_rate drops no post-option pitch type
+[F] PASS  D-1 still reproduces as a live defect on a zero-whiff group
+[F] PASS  xwOBA field is PA-level, not contact-level
+[F] PASS  arm_angle descope is warranted (>50% null)
+[F] PASS  AAA rows carry no wOBA weight columns
+[G] PASS  receipt present: dp_uc44_fig1_notecard.png
+[G] PASS  receipt present: dp_uc44_fig2_arsenal_turnover.png
+[G] PASS  receipt present: dp_uc44_fig3_grade_shift.png
+[G] PASS  receipt present: dp_uc44_fig4_ff_trade.png
+[G] PASS  receipt present: dp_uc44_fig5_start_log.png
+[G] PASS  receipt present: dp_uc44_payload.json
+[G] PASS  receipt present: dp_uc44_grades.csv
+[G] PASS  receipt present: dp_uc44_platoon_splits.csv
+[G] PASS  receipt present: dp_uc44_start_log.csv
+[G] PASS  receipt present: dp_uc44_dq_scorecard.csv
+[G] PASS  receipt present: dp_uc44_defect_exposure.csv
+[G] PASS  receipt present: dp_uc44_freshness_manifest.csv
+[G] PASS  receipt present: dp_uc44_notecard_reconciliation.csv
+[G] PASS  receipt present: dp_uc44_arsenal_turnover.csv
+[G] PASS  receipt present: dp_uc44_tag_drift.csv
+[G] PASS  receipt present: dp_uc44_mix_by_stand.csv
+[G] PASS  receipt present: dp_uc44_benchmark_population_moments.csv
+[G] PASS  receipt present: dp_uc44_holmes_profile.csv
+[G] PASS  receipt present: dp_uc44_breaking_izr_pooled.csv
+[G] PASS  receipt present: dp_uc44_ff_location_profile.csv
+[G] PASS  receipt present: dp_uc44_efficiency.csv
+[G] PASS  receipt present: dp_uc44_pitch_map_centroids.csv
+[G] PASS  receipt present: dp_uc44_atl_lineup_vs_phi.csv
+[G] PASS  receipt present: dp_uc44_h2h_atl.csv
+[G] PASS  receipt present: dp_uc44_grades_pre_option.csv
+[G] PASS  receipt present: dp_uc44_pitch_locations_post.csv
+[G] PASS  receipt present: dp_uc44_splitter_vs_changeup.csv
+[G] PASS  receipt present: dp_uc44_arsenal_turnover_detail.csv
+[G] PASS  receipt present: dp_uc44_pitch_map_centroids_pre.csv
+[G] PASS  deliverable present: dp_uc44_painter_vs_braves_report.md
+[G] PASS  deliverable present: dp_uc44_painter_vs_braves_report.pdf
+[G] PASS  deliverable present: dp_uc44_painter_scouting_card.html
+[G] PASS  deliverable present: dp_uc44_kernel.py
+[G] PASS  deliverable present: dp_uc44_painter_vs_braves.py
+[G] PASS  deliverable present: dp_uc44_build_figs.py
+[G] PASS  deliverable present: dp_uc44_build_pdf.py
+[G] PASS  deliverable present: dp_uc44_build_dashboard.py
+[G] PASS  PDF is non-trivial
+[G] PASS  dashboard is self-contained (no external fetch)
+[G] PASS  every figure the report references exists
+[G] PASS  report declares the entity lock
+[G] PASS  report declares the population
+[G] PASS  report prints denominators on the small cells
+
+247 PASS · 0 FAIL

@@ -1,0 +1,64 @@
+<div class="wrap">
+<header class="hd">
+  <div class="hdtop">
+    <div>
+      <h1>Andrew Painter</h1>
+      <p class="sub">RHP · Phillies · at Atlanta, Game 3 · 2026-09-13 &nbsp;|&nbsp; vs RHP Grant Holmes
+        &nbsp;·&nbsp; <strong>UC #44 · uc-pps-030 · dp_uc44</strong></p>
+    </div>
+    <div class="arsenal">
+      <div class="g" id="arsGrade">—</div>
+      <div class="l" id="arsLab"></div>
+    </div>
+  </div>
+  <div class="rulebar"></div>
+</header>
+
+<div class="controls">
+  <div class="cgroup"><span class="clab">Window</span><span id="winSeg" style="display:flex;gap:6px"></span></div>
+  <div class="cgroup"><span class="clab">Side</span><span id="standSeg" style="display:flex;gap:6px"></span></div>
+  <div class="cgroup"><span class="clab">Pitches</span><span id="pitchChips" style="display:flex;gap:6px;flex-wrap:wrap"></span></div>
+</div>
+
+<div class="grid">
+  <section class="panel">
+    <h2>Pitch maps</h2>
+    <div class="maps" id="maps"></div>
+    <p class="note">Catcher's view — third base at left, so negative <code>plate_x</code> is inside to a right-handed hitter.
+      Bubble = mean location sized by usage (hover for counts); haze = every tracked pitch. Zone drawn at ±0.83 ft ×
+      this pitcher's own mean <code>sz_bot</code>/<code>sz_top</code> in the post-option window.</p>
+  </section>
+
+  <section class="panel">
+    <h2>The arsenal</h2>
+    <div class="railhead"><span>stuff</span><span>cmd</span><span>pitch</span></div>
+    <div class="rail" id="rail"></div>
+    <p class="note" id="railnote"></p>
+    <div class="legend">
+      <span><i style="background:#1a7f37"></i>60+ plus</span>
+      <span><i style="background:#5FA052"></i>55 above avg</span>
+      <span><i style="background:#8A8A8A"></i>45–50 average</span>
+      <span><i style="background:#D08C2E"></i>40 below avg</span>
+      <span><i style="background:#E81828"></i>≤35 well below</span>
+    </div>
+  </section>
+</div>
+
+<section class="panel full">
+  <div class="tabs" id="tabs"></div>
+  <div id="tbl"></div>
+</section>
+
+<footer>
+  <strong>How to read the grades.</strong> The 20-80 scale is a z-score in costume:
+  <code>grade = clip(50 + 10 × z, 20, 80)</code>, rounded to the nearest 5, against a declared population —
+  every right-handed pitcher who threw in a Phillies regular-season game 2015–2026 with ≥100 pitches of that type in
+  that season. This is a <em>Phillies-schedule</em> population, not a league population; a 60 here is not a Savant 60.
+  Shape (velocity, ride, run) is reported but deliberately not scored into the pitch grade — a pitch is worth what it
+  misses and where it lands.<br>
+  <strong>Data.</strong> <code>data/phillies/phils_2026.parquet</code>, regular season, entity lock
+  <code>pitcher == 691725</code>, current through 2026-09-12. Every number on this page traces to a CSV receipt in
+  <code>out/</code>. Full argument in <code>dp_uc44_painter_vs_braves_report.pdf</code>; governance trail
+  <code>00</code>–<code>07</code>.
+</footer>
+</div>

@@ -1,0 +1,7 @@
+defect,desc,exposed,detail,remediation
+D-1/D-2,whiff_rate inner join drops zero-whiff groups,NO,every post-option pitch type recorded >=1 whiff,build-local wr_safe(); kernel untouched
+D-7/O-13,chase_rate in_zone_rate counts NULL zone as in-zone,NO,0 null zone values in the graded window,in_zone_rate computed as (zone<=9) directly
+O-8,hard_hit_rate counts untracked BIP as not-hard-hit,NO,0/123 post-option BIP untracked,hard-hit reported as hits/tracked-BIP with both counts printed
+O-5,truncated_pa counted as a plate appearance by get_stats,YES,1 truncated_pa in the graded window,PA counts print the truncated_pa count alongside
+O-3,launch_speed present on fouls,NOT APPLICABLE,no exit-velocity KPI in this UC,—
+O-7,pull_air_rate not executable (no loc_x/loc_y),NOT APPLICABLE,no directional KPI in this UC,—
