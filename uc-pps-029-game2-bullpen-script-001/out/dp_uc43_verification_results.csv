@@ -1,0 +1,180 @@
+family,check,status,detail
+A,PHI log is regular season only,PASS,['R']
+A,PHI log is pitching-role only,PASS,['pitching']
+A,PHI log max date is the anchor,PASS,2026-09-11
+A,AAA log max date,PASS,2026-09-06
+A,no duplicate pitch keys in pps,PASS,
+A,no duplicate pitch keys in lhv,PASS,
+A,wOBA weights present on MLB frame,PASS,
+A,wOBA weights ABSENT on AAA frame (DQ-5),PASS,
+A,"entity lock resolves: Mayza, Tim == 641835",PASS,987 pitches
+A,"entity lock resolves: Holman, Grant == 680880",PASS,348 pitches
+A,"entity lock resolves: Raley, Brooks == 548384",PASS,152 pitches
+A,"entity lock resolves: Shugart, Chase == 663767",PASS,778 pitches
+A,"entity lock resolves: Kerkering, Orion == 689147",PASS,1004 pitches
+A,"entity lock resolves: Alvarado, José == 621237",PASS,1032 pitches
+A,"entity lock resolves: Duran, Jhoan == 661395",PASS,866 pitches
+A,"entity lock resolves: McFarlane, Alex == 686934",PASS,210 pitches
+A,"entity lock resolves: Bowlan, Jonathan == 680742",PASS,935 pitches
+A,Holman has ZERO MLB pitches (supporting tier is the only evidence),PASS,
+A,Holman not present in LHV 2025 either,PASS,
+A,opposing starter 641816 has exactly 3 looks at PHI in 2026,PASS,
+A,no name-based filtering anywhere in the build,PASS,
+B,Holman usage L/FS,PASS,83 vs 83
+B,Holman usage L/FF,PASS,80 vs 80
+B,Holman usage L/SL,PASS,25 vs 25
+B,Holman usage R/FF,PASS,72 vs 72
+B,Holman usage R/SL,PASS,52 vs 52
+B,Holman usage R/FS,PASS,36 vs 36
+B,whiff L/FF,PASS,8/52 vs 8/52
+B,whiff L/FS,PASS,15/43 vs 15/43
+B,whiff L/SL,PASS,8/16 vs 8/16
+B,whiff R/FF,PASS,5/37 vs 5/37
+B,whiff R/FS,PASS,7/21 vs 7/21
+B,whiff R/SL,PASS,10/27 vs 10/27
+B,chase L/FF,PASS,11/25
+B,chase L/FS,PASS,20/52
+B,chase L/SL,PASS,7/13
+B,chase R/FF,PASS,6/25
+B,chase R/FS,PASS,11/25
+B,chase R/SL,PASS,8/27
+B,"appearance ledger covers every (pitcher, game)",PASS,632/632
+B,pitch counts agree,PASS,
+B,batters faced agree,PASS,
+B,innings spanned agree,PASS,
+B,days_of_rest recomputed for 641835,PASS,
+B,days_of_rest recomputed for 548384,PASS,
+B,days_of_rest recomputed for 663767,PASS,
+B,days_of_rest recomputed for 689147,PASS,
+B,days_of_rest recomputed for 621237,PASS,
+B,days_of_rest recomputed for 661395,PASS,
+B,days_of_rest recomputed for 686934,PASS,
+B,days_of_rest recomputed for 680742,PASS,
+B,"avg_bf for Mayza, Tim",PASS,4.36 vs 4.36
+B,"avg_bf for Holman, Grant",PASS,5.2 vs 5.2
+B,"avg_bf for Raley, Brooks",PASS,3.15 vs 3.15
+B,"avg_bf for Shugart, Chase",PASS,4.95 vs 4.95
+B,"avg_bf for Kerkering, Orion",PASS,4.12 vs 4.12
+B,"avg_bf for Alvarado, José",PASS,4.03 vs 4.03
+B,"avg_bf for Duran, Jhoan",PASS,3.89 vs 3.89
+B,BS-2 capacity = sum over distinct arms,PASS,29.700000000000003 vs 29.7
+B,regulation-game count,PASS,106
+B,median staff BF = 37,PASS,37.0
+B,median staff pitches = 147,PASS,
+B,capacity mode client_average,PASS,29.700000000000003 vs 29.7
+B,capacity mode client_ceiling,PASS,38.14 vs 38.14
+B,capacity mode revised_average,PASS,29.700000000000003 vs 29.7
+B,capacity mode revised_ceiling,PASS,37.39 vs 37.39
+B,"multi-inning count Mayza, Tim",PASS,16 vs 16
+B,"relief app count Mayza, Tim",PASS,50 vs 50
+B,"multi-inning count Holman, Grant",PASS,8 vs 8
+B,"relief app count Holman, Grant",PASS,20 vs 20
+B,"multi-inning count Raley, Brooks",PASS,1 vs 1
+B,"relief app count Raley, Brooks",PASS,13 vs 13
+B,"multi-inning count Shugart, Chase",PASS,15 vs 15
+B,"relief app count Shugart, Chase",PASS,40 vs 40
+B,"multi-inning count Kerkering, Orion",PASS,8 vs 8
+B,"relief app count Kerkering, Orion",PASS,59 vs 59
+B,"multi-inning count Alvarado, José",PASS,1 vs 1
+B,"relief app count Alvarado, José",PASS,61 vs 61
+B,"multi-inning count Duran, Jhoan",PASS,1 vs 1
+B,"relief app count Duran, Jhoan",PASS,56 vs 56
+B,"multi-inning count McFarlane, Alex",PASS,1 vs 1
+B,"relief app count McFarlane, Alex",PASS,14 vs 14
+B,"multi-inning count Bowlan, Jonathan",PASS,6 vs 6
+B,"relief app count Bowlan, Jonathan",PASS,57 vs 57
+C,sensitivity table matches both ledgers,PASS,
+C,five tiers move between framings,PASS,5
+C,Alvarado is AMBER under both,PASS,
+C,anchor game used 5 relievers + 1 starter,PASS,
+C,Alvarado pitched the anchor game and was NOT client-named,PASS,
+C,all four client-named arms appear in the anchor game,PASS,4
+C,nine-man order resolved,PASS,
+C,three of the first four bat L vs LHP,PASS,
+C,exactly one switch hitter flagged in the order,PASS,
+C,opposing starter reached the 6th in all three looks,PASS,"[6, 6, 6]"
+C,all four Holman AAA home runs were to LHB,PASS,
+C,freshness manifest logs the manual carry-in,PASS,
+C,DQ scorecard carries the D+2 timeliness FAIL,PASS,['PHI log max date vs session date D+2']
+C,DQ scorecard flags the inferred opponent identity,PASS,
+D,D-8 recorded as NEW and measured,PASS,
+D,D-8 reproduces: is_start is <NA> for relievers,PASS,
+D,D-8 reproduces: relievers_only returns an empty frame,PASS,
+D,D-9 reproduces: nresults cannot group on `batter`,PASS,
+D,D-9 recorded,PASS,
+D,"O-8 exposure measured, hard_hit_rate NOT shipped for AAA",PASS,
+D,D-1 exposure measured and zero groups dropped here,PASS,
+D,D-7/O-13 exposure quantified for both frames,PASS,
+D,no xwOBA/wOBA computed anywhere on the AAA tier,PASS,
+E,deliverable present: dp_uc43_bullpen_script_report.md,PASS,
+E,deliverable present: dp_uc43_bullpen_script_report.pdf,PASS,
+E,deliverable present: dp_uc43_bullpen_control_room.html,PASS,
+E,deliverable present: dp_uc43_kernel.py,PASS,
+E,deliverable present: dp_uc43_bullpen_script.py,PASS,
+E,deliverable present: dp_uc43_build_figs.py,PASS,
+E,deliverable present: dp_uc43_build_pdf.py,PASS,
+E,deliverable present: dp_uc43_build_dashboard.py,PASS,
+E,figure present: fig1_holman_pitch_maps.png,PASS,
+E,figure present: fig2_availability.png,PASS,
+E,figure present: fig3_coverage.png,PASS,
+E,figure present: fig4_multi_inning.png,PASS,
+E,dashboard loads no external code (fonts-only allowance),PASS,[]
+E,dashboard is self-contained: data inlined,PASS,
+E,dashboard declares both themes at token level,PASS,
+E,dashboard paints an explicit body background,PASS,
+E,PDF is non-trivial,PASS,
+E,receipt count,PASS,37
+F,"report figure ""29.7"" recomputes",PASS,"report says 29.7, receipts say 29.7"
+F,"report prose actually contains ""29.7""",PASS,
+F,"report figure ""37"" recomputes",PASS,"report says 37, receipts say 37"
+F,"report prose actually contains ""37""",PASS,
+F,"report figure ""7.3"" recomputes",PASS,"report says 7.3, receipts say 7.3"
+F,"report prose actually contains ""7.3""",PASS,
+F,"report figure ""2.4"" recomputes",PASS,"report says 2.4, receipts say 2.4"
+F,"report prose actually contains ""2.4""",PASS,
+F,"report figure ""147"" recomputes",PASS,"report says 147, receipts say 147"
+F,"report prose actually contains ""147""",PASS,
+F,"report figure ""106"" recomputes",PASS,"report says 106, receipts say 106"
+F,"report prose actually contains ""106""",PASS,
+F,"report figure ""38.1"" recomputes",PASS,"report says 38.1, receipts say 38.1"
+F,"report prose actually contains ""38.1""",PASS,
+F,"report figure ""37.4"" recomputes",PASS,"report says 37.4, receipts say 37.4"
+F,"report prose actually contains ""37.4""",PASS,
+F,"report figure ""1 of 56"" recomputes",PASS,"report says 1 of 56, receipts say 1 of 56"
+F,"report prose actually contains ""1 of 56""",PASS,
+F,"report figure ""1 of 61"" recomputes",PASS,"report says 1 of 61, receipts say 1 of 61"
+F,"report prose actually contains ""1 of 61""",PASS,
+F,"report figure ""15 of 40"" recomputes",PASS,"report says 15 of 40, receipts say 15 of 40"
+F,"report prose actually contains ""15 of 40""",PASS,
+F,"report figure ""16 of 50"" recomputes",PASS,"report says 16 of 50, receipts say 16 of 50"
+F,"report prose actually contains ""16 of 50""",PASS,
+F,"report figure ""8 of 20"" recomputes",PASS,"report says 8 of 20, receipts say 8 of 20"
+F,"report prose actually contains ""8 of 20""",PASS,
+F,"§3 7-day load for Alvarado, José",PASS,61p/4 vs 61p/4
+F,"§3 7-day load for Bowlan, Jonathan",PASS,62p/3 vs 62p/3
+F,"§3 7-day load for McFarlane, Alex",PASS,43p/3 vs 43p/3
+F,"§3 7-day load for Mayza, Tim",PASS,15p/1 vs 15p/1
+F,"§2 anchor pitch count Alvarado, José",PASS,
+F,"§2 anchor pitch count McFarlane, Alex",PASS,
+F,"§2 anchor pitch count Bowlan, Jonathan",PASS,
+F,"§2 anchor pitch count Shugart, Chase",PASS,
+F,"§2 anchor pitch count Raley, Brooks",PASS,
+F,§7 Holman L/FS usage+velo,PASS,44.1/87.8
+F,§7 Holman L/FF usage+velo,PASS,42.6/95.0
+F,§7 Holman R/FF usage+velo,PASS,45.0/94.9
+F,§7 Holman R/SL usage+velo,PASS,32.5/86.3
+F,§7 FPSR figures,PASS,
+F,§8 splitter drift 23.4 -> 26.8 -> 39.4,PASS,"[23.4, 26.8, 39.4]"
+F,§8 opponent platoon split .192 / .419,PASS,
+F,§8 zero HR allowed to PHI in 70 PA,PASS,70
+F,dashboard verdict quotes 38.1,PASS,
+F,dashboard warning names the AAA ceiling,PASS,
+F,"README figure ""29.7"" present and consistent",PASS,
+F,"README figure ""37"" present and consistent",PASS,
+F,"README figure ""7.3"" present and consistent",PASS,
+F,"README figure ""2.4"" present and consistent",PASS,
+F,"README figure ""147"" present and consistent",PASS,
+F,"README figure ""106"" present and consistent",PASS,
+F,"README figure ""38.1"" present and consistent",PASS,
+F,"README figure ""37.4"" present and consistent",PASS,
+F,report/README verification-count claim matches this run,PASS,"claims (179, 179), actual 179/179"

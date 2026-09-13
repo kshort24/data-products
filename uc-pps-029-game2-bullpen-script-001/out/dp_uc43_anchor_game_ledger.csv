@@ -1,0 +1,7 @@
+player_name,pitcher,is_start,pitches,batters_faced,inning_entered,inning_exited,innings_spanned,days_of_rest,pitches_last_3d,appearances_last_3d,pitches_last_7d,appearances_last_7d,client_named_as_spent
+"Nola, Aaron",605400,True,101,27,1,7,7,4.0,0,0,93,1,False
+"Alvarado, José",621237,False,9,2,7,7,1,0.0,41,2,52,3,False
+"McFarlane, Alex",686934,False,15,4,8,8,1,1.0,15,1,36,3,True
+"Bowlan, Jonathan",680742,False,22,6,9,9,1,1.0,21,1,40,2,True
+"Shugart, Chase",663767,False,9,4,10,11,2,2.0,11,1,11,1,True
+"Raley, Brooks",548384,False,9,3,11,11,1,2.0,22,1,31,2,True

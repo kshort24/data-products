@@ -1,0 +1,29 @@
+script,mode,arm,innings,bf,basis,total_bf,required_bf,shortfall_bf
+client,average,"Mayza, Tim",2,4.36,mean outing,29.7,37.0,7.3
+client,average,"Holman, Grant",2,5.2,mean outing,29.7,37.0,7.3
+client,average,"Raley, Brooks",1,3.15,mean outing,29.7,37.0,7.3
+client,average,"Shugart, Chase",1,4.95,mean outing,29.7,37.0,7.3
+client,average,"Kerkering, Orion",1,4.12,mean outing,29.7,37.0,7.3
+client,average,"Alvarado, José",1,4.03,mean outing,29.7,37.0,7.3
+client,average,"Duran, Jhoan",1,3.89,mean outing,29.7,37.0,7.3
+client,ceiling,"Mayza, Tim",2,8.0,season max BF (2 innings asked),38.14,37.0,-1.14
+client,ceiling,"Holman, Grant",2,10.0,season max BF (2 innings asked),38.14,37.0,-1.14
+client,ceiling,"Raley, Brooks",1,3.15,mean outing,38.14,37.0,-1.14
+client,ceiling,"Shugart, Chase",1,4.95,mean outing,38.14,37.0,-1.14
+client,ceiling,"Kerkering, Orion",1,4.12,mean outing,38.14,37.0,-1.14
+client,ceiling,"Alvarado, José",1,4.03,mean outing,38.14,37.0,-1.14
+client,ceiling,"Duran, Jhoan",1,3.89,mean outing,38.14,37.0,-1.14
+revised,average,"Mayza, Tim",2,4.36,mean outing,29.7,37.0,7.3
+revised,average,"Holman, Grant",1,5.2,mean outing,29.7,37.0,7.3
+revised,average,"Shugart, Chase",2,4.95,mean outing,29.7,37.0,7.3
+revised,average,"Kerkering, Orion",1,4.12,mean outing,29.7,37.0,7.3
+revised,average,"Raley, Brooks",1,3.15,mean outing,29.7,37.0,7.3
+revised,average,"Alvarado, José",1,4.03,mean outing,29.7,37.0,7.3
+revised,average,"Duran, Jhoan",1,3.89,mean outing,29.7,37.0,7.3
+revised,ceiling,"Mayza, Tim",2,8.0,season max BF (2 innings asked),37.39,37.0,-0.39
+revised,ceiling,"Holman, Grant",1,5.2,mean outing,37.39,37.0,-0.39
+revised,ceiling,"Shugart, Chase",2,9.0,season max BF (2 innings asked),37.39,37.0,-0.39
+revised,ceiling,"Kerkering, Orion",1,4.12,mean outing,37.39,37.0,-0.39
+revised,ceiling,"Raley, Brooks",1,3.15,mean outing,37.39,37.0,-0.39
+revised,ceiling,"Alvarado, José",1,4.03,mean outing,37.39,37.0,-0.39
+revised,ceiling,"Duran, Jhoan",1,3.89,mean outing,37.39,37.0,-0.39

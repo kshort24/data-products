@@ -1,0 +1,13 @@
+dimension,check,result,status
+completeness,PHI pitching rows with null pitch_type,48/22021,PASS
+completeness,Holman AAA rows with null release_speed/pfx,0/348,PASS
+validity,"entity lock — every subject resolved by MLBAM id, zero name filters",9/9 ids,PASS
+uniqueness,"duplicate (game_pk, at_bat_number, pitch_number) in pps",0,PASS
+consistency,game_type — regular season only,['R'],PASS
+timeliness,PHI log max date vs target game D+1,2026-09-11 vs 2026-09-12 (T-1),PASS
+timeliness,PHI log max date vs session date D+2,"2026-09-11 vs 2026-09-13 (T-2 — a 09-12 game, if played, is NOT in the cache)",FAIL
+timeliness,LHV log max date vs target,2026-09-06 vs 2026-09-12 (T-6); Holman last logged 2026-08-30 (T-13),WARN
+comparability,AAA wOBA/xwOBA suppressed (LV-1 / DQ-5),wBB..wHR absent from lhvp26; MLB constants NOT applied,PASS
+accuracy,opposing starter identity (client name -> MLBAM id),641816 inferred from 3-start log + RHP + FF/FS/FC arsenal + SF->ATL mid-season move; NOT independently confirmed,WARN
+traceability,every report figure traceable to a shipped receipt,verified by dp_uc43_verification.py family F,PASS
+volume,Holman AAA sample vs the repo 50-PA batter floor / pitcher analogue,"104 PA, 348 pitches, 20 outings",PASS

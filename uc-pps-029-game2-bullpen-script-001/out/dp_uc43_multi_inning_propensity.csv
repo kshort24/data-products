@@ -1,0 +1,10 @@
+player_name,pitcher,evidence_tier,relief_apps,multi_inning_apps,multi_inning_rate,apps_ge_6bf,rate_ge_6bf,apps_ge_floor,rate_ge_floor,max_pitches,max_bf,p80_pitches
+"Mayza, Tim",641835,MLB,50,16,0.32,16,0.32,5,0.1,36,8,24.200000000000003
+"Holman, Grant",680880,AAA (supporting tier),20,8,0.4,9,0.45,1,0.05,39,10,23.200000000000003
+"Raley, Brooks",548384,MLB,13,1,0.077,1,0.077,0,0.0,23,6,15.800000000000004
+"Shugart, Chase",663767,MLB,40,15,0.375,13,0.325,6,0.15,44,9,28.0
+"Kerkering, Orion",689147,MLB,59,8,0.136,9,0.153,1,0.017,33,7,22.0
+"Alvarado, José",621237,MLB,61,1,0.016,6,0.098,2,0.033,35,8,22.0
+"Duran, Jhoan",661395,MLB,56,1,0.018,3,0.054,1,0.018,33,9,20.0
+"McFarlane, Alex",686934,MLB,14,1,0.071,1,0.071,0,0.0,26,6,19.200000000000003
+"Bowlan, Jonathan",680742,MLB,57,6,0.105,7,0.123,2,0.035,35,7,21.0

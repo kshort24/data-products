@@ -1,0 +1,55 @@
+reliever,name,batter_id,pitches,plate_apps,hits,strikeouts,walks,ba,woba
+"Alvarado, José",Drake Baldwin,686948,12,4,1.0,1.0,0.0,0.25,0.222
+"Alvarado, José",Matt Olson,621566,15,3,1.0,1.0,0.0,0.333,0.421
+"Alvarado, José",Ozzie Albies,645277,8,2,1.0,0.0,0.0,0.5,0.631
+"Alvarado, José",Ronald Acuña Jr.,660670,10,2,0.0,1.0,0.0,0.0,0.0
+"Alvarado, José",Austin Riley,663586,4,1,0.0,1.0,0.0,0.0,0.0
+"Alvarado, José",Michael Harris II,671739,2,1,0.0,0.0,0.0,0.0,0.0
+"Bowlan, Jonathan",Austin Riley,663586,11,2,1.0,1.0,0.0,0.5,1.026
+"Bowlan, Jonathan",Mike Yastrzemski,573262,3,1,1.0,0.0,0.0,1.0,0.89
+"Bowlan, Jonathan",Matt Olson,621566,1,1,0.0,0.0,0.0,0.0,0.0
+"Bowlan, Jonathan",Ozzie Albies,645277,4,1,0.0,0.0,0.0,0.0,0.0
+"Bowlan, Jonathan",Ronald Acuña Jr.,660670,4,1,0.0,0.0,0.0,0.0,0.0
+"Bowlan, Jonathan",Sean Murphy,669221,2,1,1.0,0.0,0.0,1.0,0.89
+"Bowlan, Jonathan",Drake Baldwin,686948,6,1,0.0,0.0,0.0,,0.729
+"Duran, Jhoan",Ozzie Albies,645277,4,2,1.0,0.0,0.0,0.5,0.631
+"Duran, Jhoan",Mike Yastrzemski,573262,5,1,0.0,1.0,0.0,0.0,0.0
+"Duran, Jhoan",Mauricio Dubón,643289,6,1,0.0,0.0,0.0,0.0,0.0
+"Duran, Jhoan",Austin Riley,663586,1,1,1.0,0.0,0.0,1.0,1.597
+"Duran, Jhoan",Sean Murphy,669221,2,1,0.0,0.0,0.0,0.0,0.0
+"Duran, Jhoan",Michael Harris II,671739,3,1,0.0,1.0,0.0,0.0,0.0
+"Duran, Jhoan",Drake Baldwin,686948,3,1,0.0,1.0,0.0,0.0,0.0
+"Kerkering, Orion",Mauricio Dubón,643289,10,4,1.0,0.0,0.0,0.25,0.513
+"Kerkering, Orion",Ronald Acuña Jr.,660670,11,3,0.0,0.0,1.0,0.0,0.233
+"Kerkering, Orion",Mike Yastrzemski,573262,11,2,0.0,1.0,1.0,0.0,0.349
+"Kerkering, Orion",Matt Olson,621566,10,2,0.0,0.0,0.0,0.0,0.0
+"Kerkering, Orion",Austin Riley,663586,6,2,0.0,0.0,0.0,0.0,0.0
+"Kerkering, Orion",Michael Harris II,671739,8,2,1.0,0.0,1.0,1.0,1.375
+"Kerkering, Orion",Sean Murphy,669221,5,1,0.0,0.0,0.0,0.0,0.0
+"Kerkering, Orion",Drake Baldwin,686948,7,1,1.0,0.0,0.0,1.0,0.89
+"Mayza, Tim",Drake Baldwin,686948,20,5,1.0,0.0,1.0,0.25,0.318
+"Mayza, Tim",Mike Yastrzemski,573262,13,3,1.0,1.0,0.0,0.333,0.297
+"Mayza, Tim",Matt Olson,621566,14,3,0.0,0.0,0.0,0.0,0.0
+"Mayza, Tim",Ozzie Albies,645277,7,3,2.0,0.0,0.0,0.667,0.717
+"Mayza, Tim",Ronald Acuña Jr.,660670,14,3,0.0,0.0,0.0,0.0,0.0
+"Mayza, Tim",Michael Harris II,671739,13,3,1.0,0.0,0.0,0.333,0.297
+"Mayza, Tim",Mauricio Dubón,643289,2,2,0.0,0.0,0.0,0.0,0.0
+"Mayza, Tim",Austin Riley,663586,1,1,1.0,0.0,0.0,1.0,0.89
+"McFarlane, Alex",Ozzie Albies,645277,4,2,0.0,0.0,0.0,0.0,0.0
+"McFarlane, Alex",Ronald Acuña Jr.,660670,8,2,2.0,0.0,0.0,1.0,1.471
+"McFarlane, Alex",Michael Harris II,671739,6,2,0.0,0.0,0.0,0.0,0.0
+"McFarlane, Alex",Drake Baldwin,686948,5,2,1.0,1.0,0.0,0.5,0.631
+"McFarlane, Alex",Mike Yastrzemski,573262,1,1,1.0,0.0,0.0,1.0,0.89
+"McFarlane, Alex",Matt Olson,621566,4,1,0.0,0.0,0.0,0.0,0.0
+"McFarlane, Alex",Mauricio Dubón,643289,5,1,1.0,0.0,0.0,1.0,0.89
+"McFarlane, Alex",Austin Riley,663586,3,1,0.0,0.0,0.0,0.0,0.0
+"Raley, Brooks",Matt Olson,621566,4,1,0.0,0.0,0.0,0.0,0.0
+"Raley, Brooks",Mauricio Dubón,643289,2,1,0.0,0.0,0.0,0.0,0.0
+"Raley, Brooks",Michael Harris II,671739,3,1,1.0,0.0,0.0,1.0,0.89
+"Raley, Brooks",Drake Baldwin,686948,5,1,1.0,0.0,0.0,1.0,1.262
+"Shugart, Chase",Austin Riley,663586,12,3,1.0,0.0,0.0,0.5,0.927
+"Shugart, Chase",Mauricio Dubón,643289,10,2,0.0,1.0,0.0,0.0,0.0
+"Shugart, Chase",Ozzie Albies,645277,8,2,0.0,0.0,0.0,0.0,0.0
+"Shugart, Chase",Ronald Acuña Jr.,660670,11,2,0.0,1.0,1.0,0.0,0.349
+"Shugart, Chase",Michael Harris II,671739,4,2,1.0,0.0,0.0,0.5,0.445
+"Shugart, Chase",Drake Baldwin,686948,2,1,0.0,0.0,0.0,0.0,0.0

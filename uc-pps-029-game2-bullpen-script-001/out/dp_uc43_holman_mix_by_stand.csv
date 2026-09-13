@@ -1,0 +1,7 @@
+stand,pitch_type,pitch_name,count,usage,release_speed,release_spin_rate,horiz,vert,plate_x,plate_z,zone
+L,FS,Split-Finger,83,44.1,87.8,1177.4,-12.0,-0.0,-0.1,1.6,10.4
+L,FF,4-Seam Fastball,80,42.6,95.0,1981.5,-9.6,14.4,-0.1,2.4,7.1
+L,SL,Slider,25,13.3,86.5,2047.6,-2.4,1.2,0.1,1.7,10.0
+R,FF,4-Seam Fastball,72,45.0,94.9,1982.1,-8.4,15.6,0.1,2.6,7.2
+R,SL,Slider,52,32.5,86.3,1998.6,-1.2,2.4,0.4,1.7,10.4
+R,FS,Split-Finger,36,22.5,87.8,1154.2,-12.0,-0.0,0.1,1.4,11.3

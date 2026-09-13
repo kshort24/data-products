@@ -1,0 +1,5 @@
+source,grain,rows,max_game_date,note
+data/phillies/phils_2026.parquet,pitch,22021.0,2026-09-11,"regular season, PHI pitching, wOBA-weighted"
+data/phillies/phils_2026.parquet,pitch,21718.0,2026-09-11,"regular season, PHI batting (opponent-starter tier)"
+data/opponents/lhvp26.parquet,pitch,20319.0,2026-09-06,"AAA supporting tier, NO wOBA weights (DQ-5)"
+client prompt,manual carry-in,,2026-09-12,"opening pitcher (Mayza), opposing starter name (Mahle), Luzardo scratch, Holman promotion"

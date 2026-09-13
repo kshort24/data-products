@@ -1,0 +1,160 @@
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">uc-pps-029 · dp_uc43 · v1.0.0 · Phillies pitching value stream</div>
+  <h1>Game 2 Bullpen Control Room</h1>
+  <p class="sub">Mayza opens, Holman debuts. Nine innings, seven arms. This page prices the script against
+  the 2026 log and lets you rebuild it inning by inning.</p>
+  <div class="metarow">
+    <span class="pill" id="pill-anchor">anchor —</span>
+    <span class="pill" id="pill-log">log —</span>
+    <span class="pill" id="pill-aaa">AAA log —</span>
+    <span class="pill">receipts: out/dp_uc43_*.csv</span>
+  </div>
+</header>
+
+<section class="verdict">
+  <h2>Right about who. Fragile about how much.</h2>
+  <p>Priced at each arm's own 2026 average outing, nine innings from seven arms delivers
+  <b id="v-cap">—</b> batters faced against a <b id="v-need">—</b>-batter regulation median: a
+  <b id="v-short">—</b> shortfall, roughly <b id="v-shortinn">—</b> innings. Priced at every arm's season
+  high it delivers <b>38.1</b> and just covers. So it works — if everyone reaches his high-water mark on the
+  same night, and <b>the biggest ceiling in it is Holman's Triple-A high of 10 batters, in his debut</b>.</p>
+  <p>Two premises don't survive the log. <b>Five</b> relievers threw on 2026-09-11, not four — Alvarado was
+  the unnamed one, and he is the most-worked arm in the pen (61 pitches, 4 appearances in 7 days) while
+  Shugart and Raley threw <b>nine pitches each</b>. And Duran, the pick to go multiple, has gone two innings
+  in <b>1 of 56</b> relief outings this year.</p>
+</section>
+
+<div class="controls">
+  <div class="ctl">
+    <span class="eyebrow">Which night was “last night”?</span>
+    <div class="seg" role="group" aria-label="Target game framing">
+      <button type="button" id="btn-d1" data-frame="d1" aria-pressed="true">D+1 · 2026-09-12</button>
+      <button type="button" id="btn-d2" data-frame="d2" aria-pressed="false">D+2 · 2026-09-13</button>
+    </div>
+  </div>
+  <div class="ctl">
+    <span class="eyebrow">Price each arm at</span>
+    <div class="seg" role="group" aria-label="Capacity basis">
+      <button type="button" id="btn-avg" data-basis="average" aria-pressed="true">His average outing</button>
+      <button type="button" id="btn-max" data-basis="ceiling" aria-pressed="false">His season high</button>
+    </div>
+  </div>
+  <div class="ctl">
+    <span class="eyebrow">Script</span>
+    <div class="seg" role="group" aria-label="Script preset">
+      <button type="button" id="btn-client" data-preset="client" aria-pressed="true">Yours</button>
+      <button type="button" id="btn-revised" data-preset="revised" aria-pressed="false">Revised</button>
+      <button type="button" id="btn-clear" data-preset="clear" aria-pressed="false">Clear</button>
+    </div>
+  </div>
+</div>
+
+<div class="rail" id="rail" role="list" aria-label="Inning assignments"></div>
+<p class="tip" id="railhint">Click an inning, then pick an arm below. Each arm delivers one outing however
+many innings you give him — that is the whole point of the meter.</p>
+<p class="tip" id="basis-note" style="color:var(--ink-3)">—</p>
+
+<div class="meter">
+  <div class="meterhead">
+    <div><span class="big" id="m-cap">—</span> <span class="lbl">batters the script can expect to cover</span></div>
+    <div><span class="lbl">needs</span> <span class="big" id="m-need" style="font-size:22px">—</span>
+         <span class="lbl">for a regulation nine</span></div>
+  </div>
+  <div class="bar" id="bar"><div class="fill" id="fill"></div><div class="need" id="needmark"></div>
+    <div class="needlbl" id="needlbl"></div></div>
+  <div class="meterfoot">
+    <span><b id="m-arms">—</b> distinct arms</span>
+    <span><b id="m-inn">—</b> innings assigned</span>
+    <span>benchmark: median of <b id="m-games">—</b> regulation games, 2026</span>
+    <span>bullpen-game precedents: <b>5.0</b> and <b>7.1</b> BF per arm</span>
+  </div>
+  <div class="warnline" id="warn" hidden></div>
+  <div class="pool" id="pool"></div>
+</div>
+
+<div class="grid">
+  <section class="panel">
+    <h3>BS-1 · Availability</h3>
+    <p class="note" id="avail-note">—</p>
+    <div class="scroll"><table id="t-avail"><thead><tr>
+      <th>Arm</th><th>Last</th><th class="n">Rest</th><th class="n">P / 7d</th><th class="n">App / 7d</th><th>Tier</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="panel">
+    <h3>BS-3 · Who actually stretches</h3>
+    <p class="note">Share of 2026 relief outings spanning two innings or more. Teal = AAA supporting tier.</p>
+    <div class="scroll"><table id="t-mip"><thead><tr>
+      <th>Arm</th><th style="width:44%">Multi-inning rate</th><th class="n">Max P</th><th class="n">Max BF</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="panel wide">
+    <h3>The premise, adjudicated</h3>
+    <p class="note">Every Phillies pitcher who appeared in the anchor game, 2026-09-11 at Atlanta (11 innings).
+      Rest and rolling load are measured <em>entering</em> that outing.</p>
+    <div class="scroll"><table id="t-anchor"><thead><tr>
+      <th>Arm</th><th class="n">Inn</th><th class="n">Pitches</th><th class="n">BF</th><th class="n">Rest</th>
+      <th class="n">P / 3d</th><th class="n">P / 7d</th><th>Named as spent?</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="panel wide">
+    <h3>Grant Holman · Lehigh Valley 2026</h3>
+    <p class="note" id="holman-note">—</p>
+    <div class="controls" style="margin-bottom:10px">
+      <div class="ctl"><span class="eyebrow">Batter side</span>
+        <div class="seg" role="group" aria-label="Batter handedness">
+          <button type="button" id="btn-lhb" data-stand="L" aria-pressed="true">vs LHB</button>
+          <button type="button" id="btn-rhb" data-stand="R" aria-pressed="false">vs RHB</button>
+        </div></div>
+      <div class="ctl"><span class="eyebrow">Pitches</span><div class="legend" id="legend"></div></div>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px">
+      <div class="mapwrap">
+        <svg class="map" id="map" viewBox="0 0 340 330" role="img" aria-label="Holman pitch locations"></svg>
+        <div class="tip" id="maptip">Hover a pitch for its type, velocity and result.</div>
+      </div>
+      <div class="scroll"><table id="t-holman"><thead><tr>
+        <th>Pitch</th><th class="n">Usage</th><th class="n">Velo</th><th class="n">Horiz</th><th class="n">Vert</th>
+        <th class="n">Whiff</th><th class="n">Chase</th>
+      </tr></thead><tbody></tbody></table>
+      <p class="note" id="holman-count" style="margin-top:12px">—</p></div>
+    </div>
+  </section>
+
+  <section class="panel wide">
+    <h3>Opponent card</h3>
+    <p class="note">The opposing starter (client-named “Mahle”, resolved to MLBAM 641816 — inferred, not
+      confirmed) has taken six innings in all three looks at the Phillies this season.</p>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px">
+      <div><div class="eyebrow" style="margin-bottom:6px">Splitter usage, look by look</div>
+        <div class="scroll"><table id="t-drift"><thead><tr><th>Look</th><th class="n">FF</th><th class="n">FS</th>
+          <th class="n">FC</th><th class="n">Pitches</th><th class="n">Last inn</th></tr></thead><tbody></tbody></table></div>
+        <p class="note" style="margin-top:8px">Phillies hitters chase the splitter out of the zone at
+          <b>54.2%</b> (26 of 48) and whiff on it at 25.0%.</p></div>
+      <div><div class="eyebrow" style="margin-bottom:6px">Atlanta's order, 2026-09-11 card</div>
+        <div class="scroll"><table id="t-order"><thead><tr><th class="n">#</th><th>Hitter</th>
+          <th>vs RHP</th><th>vs LHP</th></tr></thead><tbody></tbody></table></div>
+        <p class="note" style="margin-top:8px">Three of the first four bat left-handed against a lefty —
+          the case for Mayza opening.</p></div>
+    </div>
+  </section>
+
+  <section class="panel wide">
+    <h3>Data quality &amp; defects found in this build</h3>
+    <p class="note">Certification is READY-CONDITIONAL. Two governed-kernel defects were found here and
+      remediated build-locally rather than patched in place.</p>
+    <div class="scroll"><table id="t-dq"><thead><tr><th>Dimension</th><th>Check</th><th>Result</th><th>Status</th>
+      </tr></thead><tbody></tbody></table></div>
+  </section>
+</div>
+
+<footer class="foot">
+  Built by the agentified data product organization · <code>dp_uc43_bullpen_script.py</code> ·
+  every figure on this page traces to a CSV in <code>out/</code>. AAA rates are a supporting tier and are
+  never blended with MLB rates; wOBA is not computed at AAA (DQ-5, comparability).
+  Opponent-pitcher identity is inferred — see the report's §10.
+</footer>
+</div>

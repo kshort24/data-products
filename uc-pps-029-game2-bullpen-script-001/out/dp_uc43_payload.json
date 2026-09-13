@@ -1,0 +1,4875 @@
+{
+ "meta": {
+  "uc": "uc-pps-029",
+  "build": "dp_uc43",
+  "version": "1.0.0",
+  "anchor_game": "2026-09-11",
+  "target_primary": "2026-09-12",
+  "target_alt": "2026-09-13",
+  "phi_log_max": "2026-09-11",
+  "lhv_log_max": "2026-09-06"
+ },
+ "coverage": {
+  "distinct_arms": 7,
+  "innings_scripted": 9,
+  "expected_bf_capacity": 29.7,
+  "required_bf_median_regulation_game": 37.0,
+  "shortfall_bf": 7.3,
+  "shortfall_innings": 2.4,
+  "median_staff_pitches": 147.0,
+  "median_arms_used": 4.0,
+  "regulation_games_in_benchmark": 106
+ },
+ "capacity_modes": {
+  "client_average": {
+   "total": 29.7,
+   "short": 7.3
+  },
+  "client_ceiling": {
+   "total": 38.14,
+   "short": -1.14
+  },
+  "revised_average": {
+   "total": 29.7,
+   "short": 7.3
+  },
+  "revised_ceiling": {
+   "total": 37.39,
+   "short": -0.39
+  }
+ },
+ "max_bf": {
+  "Mayza, Tim": 8.0,
+  "Holman, Grant": 10.0,
+  "Raley, Brooks": 6.0,
+  "Shugart, Chase": 9.0,
+  "Kerkering, Orion": 7.0,
+  "Alvarado, Jos\u00e9": 8.0,
+  "Duran, Jhoan": 9.0,
+  "McFarlane, Alex": 6.0,
+  "Bowlan, Jonathan": 7.0
+ },
+ "revised": [
+  {
+   "inning": 1,
+   "arm": "Mayza, Tim"
+  },
+  {
+   "inning": 2,
+   "arm": "Mayza, Tim"
+  },
+  {
+   "inning": 3,
+   "arm": "Holman, Grant"
+  },
+  {
+   "inning": 4,
+   "arm": "Shugart, Chase"
+  },
+  {
+   "inning": 5,
+   "arm": "Shugart, Chase"
+  },
+  {
+   "inning": 6,
+   "arm": "Kerkering, Orion"
+  },
+  {
+   "inning": 7,
+   "arm": "Raley, Brooks"
+  },
+  {
+   "inning": 8,
+   "arm": "Alvarado, Jos\u00e9"
+  },
+  {
+   "inning": 9,
+   "arm": "Duran, Jhoan"
+  }
+ ],
+ "d8_na_appearances": 484,
+ "anchor": [
+  {
+   "player_name": "Nola, Aaron",
+   "pitcher": 605400,
+   "is_start": true,
+   "pitches": 101,
+   "batters_faced": 27,
+   "inning_entered": 1,
+   "inning_exited": 7,
+   "innings_spanned": 7,
+   "days_of_rest": 4.0,
+   "pitches_last_3d": 0,
+   "appearances_last_3d": 0,
+   "pitches_last_7d": 93,
+   "appearances_last_7d": 1,
+   "client_named_as_spent": false
+  },
+  {
+   "player_name": "Alvarado, Jos\u00e9",
+   "pitcher": 621237,
+   "is_start": false,
+   "pitches": 9,
+   "batters_faced": 2,
+   "inning_entered": 7,
+   "inning_exited": 7,
+   "innings_spanned": 1,
+   "days_of_rest": 0.0,
+   "pitches_last_3d": 41,
+   "appearances_last_3d": 2,
+   "pitches_last_7d": 52,
+   "appearances_last_7d": 3,
+   "client_named_as_spent": false
+  },
+  {
+   "player_name": "McFarlane, Alex",
+   "pitcher": 686934,
+   "is_start": false,
+   "pitches": 15,
+   "batters_faced": 4,
+   "inning_entered": 8,
+   "inning_exited": 8,
+   "innings_spanned": 1,
+   "days_of_rest": 1.0,
+   "pitches_last_3d": 15,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 36,
+   "appearances_last_7d": 3,
+   "client_named_as_spent": true
+  },
+  {
+   "player_name": "Bowlan, Jonathan",
+   "pitcher": 680742,
+   "is_start": false,
+   "pitches": 22,
+   "batters_faced": 6,
+   "inning_entered": 9,
+   "inning_exited": 9,
+   "innings_spanned": 1,
+   "days_of_rest": 1.0,
+   "pitches_last_3d": 21,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 40,
+   "appearances_last_7d": 2,
+   "client_named_as_spent": true
+  },
+  {
+   "player_name": "Shugart, Chase",
+   "pitcher": 663767,
+   "is_start": false,
+   "pitches": 9,
+   "batters_faced": 4,
+   "inning_entered": 10,
+   "inning_exited": 11,
+   "innings_spanned": 2,
+   "days_of_rest": 2.0,
+   "pitches_last_3d": 11,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 11,
+   "appearances_last_7d": 1,
+   "client_named_as_spent": true
+  },
+  {
+   "player_name": "Raley, Brooks",
+   "pitcher": 548384,
+   "is_start": false,
+   "pitches": 9,
+   "batters_faced": 3,
+   "inning_entered": 11,
+   "inning_exited": 11,
+   "innings_spanned": 1,
+   "days_of_rest": 2.0,
+   "pitches_last_3d": 22,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 31,
+   "appearances_last_7d": 2,
+   "client_named_as_spent": true
+  }
+ ],
+ "availability_d1": [
+  {
+   "player_name": "Mayza, Tim",
+   "pitcher": 641835,
+   "last_outing": "2026-09-08",
+   "days_of_rest": 3.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 0,
+   "appearances_last_3d": 0,
+   "pitches_last_7d": 15,
+   "appearances_last_7d": 1,
+   "season_avg_pitches": 17.68,
+   "tier": "GREEN",
+   "reason": "3 days rest, 0p in last 3d",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "Holman, Grant",
+   "pitcher": 680880,
+   "last_outing": null,
+   "days_of_rest": null,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 0,
+   "appearances_last_3d": 0,
+   "pitches_last_7d": 0,
+   "appearances_last_7d": 0,
+   "season_avg_pitches": null,
+   "tier": "GREEN",
+   "reason": "debut/no prior 2026 outing",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "Raley, Brooks",
+   "pitcher": 548384,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 0.0,
+   "pitches_yesterday": 9,
+   "pitches_last_3d": 9,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 40,
+   "appearances_last_7d": 3,
+   "season_avg_pitches": 11.69,
+   "tier": "AMBER",
+   "reason": "9p on 0 days rest, below his 12p average",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "Shugart, Chase",
+   "pitcher": 663767,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 0.0,
+   "pitches_yesterday": 9,
+   "pitches_last_3d": 9,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 20,
+   "appearances_last_7d": 2,
+   "season_avg_pitches": 19.45,
+   "tier": "AMBER",
+   "reason": "9p on 0 days rest, below his 19p average",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "Kerkering, Orion",
+   "pitcher": 689147,
+   "last_outing": "2026-09-04",
+   "days_of_rest": 7.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 0,
+   "appearances_last_3d": 0,
+   "pitches_last_7d": 0,
+   "appearances_last_7d": 0,
+   "season_avg_pitches": 17.02,
+   "tier": "GREEN",
+   "reason": "7 days rest, 0p in last 3d",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "Alvarado, Jos\u00e9",
+   "pitcher": 621237,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 0.0,
+   "pitches_yesterday": 9,
+   "pitches_last_3d": 29,
+   "appearances_last_3d": 2,
+   "pitches_last_7d": 61,
+   "appearances_last_7d": 4,
+   "season_avg_pitches": 16.92,
+   "tier": "AMBER",
+   "reason": "9p on 0 days rest, below his 17p average",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "Duran, Jhoan",
+   "pitcher": 661395,
+   "last_outing": "2026-09-10",
+   "days_of_rest": 1.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 31,
+   "appearances_last_3d": 2,
+   "pitches_last_7d": 55,
+   "appearances_last_7d": 4,
+   "season_avg_pitches": 15.46,
+   "tier": "AMBER",
+   "reason": "2 apps in last 3d",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "McFarlane, Alex",
+   "pitcher": 686934,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 0.0,
+   "pitches_yesterday": 15,
+   "pitches_last_3d": 30,
+   "appearances_last_3d": 2,
+   "pitches_last_7d": 43,
+   "appearances_last_7d": 3,
+   "season_avg_pitches": 15.0,
+   "tier": "RED",
+   "reason": "15p on 0 days rest (season avg 15p)",
+   "target_game": "2026-09-12"
+  },
+  {
+   "player_name": "Bowlan, Jonathan",
+   "pitcher": 680742,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 0.0,
+   "pitches_yesterday": 22,
+   "pitches_last_3d": 43,
+   "appearances_last_3d": 2,
+   "pitches_last_7d": 62,
+   "appearances_last_7d": 3,
+   "season_avg_pitches": 16.4,
+   "tier": "RED",
+   "reason": "22p on 0 days rest (season avg 16p)",
+   "target_game": "2026-09-12"
+  }
+ ],
+ "availability_d2": [
+  {
+   "player_name": "Mayza, Tim",
+   "pitcher": 641835,
+   "last_outing": "2026-09-08",
+   "days_of_rest": 4.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 0,
+   "appearances_last_3d": 0,
+   "pitches_last_7d": 15,
+   "appearances_last_7d": 1,
+   "season_avg_pitches": 17.68,
+   "tier": "GREEN",
+   "reason": "4 days rest, 0p in last 3d",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "Holman, Grant",
+   "pitcher": 680880,
+   "last_outing": null,
+   "days_of_rest": null,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 0,
+   "appearances_last_3d": 0,
+   "pitches_last_7d": 0,
+   "appearances_last_7d": 0,
+   "season_avg_pitches": null,
+   "tier": "GREEN",
+   "reason": "debut/no prior 2026 outing",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "Raley, Brooks",
+   "pitcher": 548384,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 1.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 9,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 40,
+   "appearances_last_7d": 3,
+   "season_avg_pitches": 11.69,
+   "tier": "GREEN",
+   "reason": "1 days rest, 9p in last 3d",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "Shugart, Chase",
+   "pitcher": 663767,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 1.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 9,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 20,
+   "appearances_last_7d": 2,
+   "season_avg_pitches": 19.45,
+   "tier": "GREEN",
+   "reason": "1 days rest, 9p in last 3d",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "Kerkering, Orion",
+   "pitcher": 689147,
+   "last_outing": "2026-09-04",
+   "days_of_rest": 8.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 0,
+   "appearances_last_3d": 0,
+   "pitches_last_7d": 0,
+   "appearances_last_7d": 0,
+   "season_avg_pitches": 17.02,
+   "tier": "GREEN",
+   "reason": "8 days rest, 0p in last 3d",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "Alvarado, Jos\u00e9",
+   "pitcher": 621237,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 1.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 29,
+   "appearances_last_3d": 2,
+   "pitches_last_7d": 50,
+   "appearances_last_7d": 3,
+   "season_avg_pitches": 16.92,
+   "tier": "AMBER",
+   "reason": "2 apps in last 3d",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "Duran, Jhoan",
+   "pitcher": 661395,
+   "last_outing": "2026-09-10",
+   "days_of_rest": 2.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 17,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 44,
+   "appearances_last_7d": 3,
+   "season_avg_pitches": 15.46,
+   "tier": "GREEN",
+   "reason": "2 days rest, 17p in last 3d",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "McFarlane, Alex",
+   "pitcher": 686934,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 1.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 15,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 43,
+   "appearances_last_7d": 3,
+   "season_avg_pitches": 15.0,
+   "tier": "GREEN",
+   "reason": "1 days rest, 15p in last 3d",
+   "target_game": "2026-09-13"
+  },
+  {
+   "player_name": "Bowlan, Jonathan",
+   "pitcher": 680742,
+   "last_outing": "2026-09-11",
+   "days_of_rest": 1.0,
+   "pitches_yesterday": 0,
+   "pitches_last_3d": 22,
+   "appearances_last_3d": 1,
+   "pitches_last_7d": 43,
+   "appearances_last_7d": 2,
+   "season_avg_pitches": 16.4,
+   "tier": "GREEN",
+   "reason": "1 days rest, 22p in last 3d",
+   "target_game": "2026-09-13"
+  }
+ ],
+ "season": [
+  {
+   "pitcher": 621237,
+   "player_name": "Alvarado, Jos\u00e9",
+   "game_year": 2026,
+   "appearances": 61,
+   "total_pitches": 1032,
+   "total_bf": 246,
+   "avg_pitches": 16.92,
+   "avg_bf": 4.03,
+   "avg_days_of_rest": 1.78,
+   "median_days_of_rest": 2.0,
+   "b2b_appearances": 11,
+   "three_in_four": 8,
+   "multi_inning_apps": 1,
+   "pct_b2b": 0.18
+  },
+  {
+   "pitcher": 689147,
+   "player_name": "Kerkering, Orion",
+   "game_year": 2026,
+   "appearances": 59,
+   "total_pitches": 1004,
+   "total_bf": 243,
+   "avg_pitches": 17.02,
+   "avg_bf": 4.12,
+   "avg_days_of_rest": 1.59,
+   "median_days_of_rest": 1.0,
+   "b2b_appearances": 11,
+   "three_in_four": 11,
+   "multi_inning_apps": 8,
+   "pct_b2b": 0.186
+  },
+  {
+   "pitcher": 680742,
+   "player_name": "Bowlan, Jonathan",
+   "game_year": 2026,
+   "appearances": 57,
+   "total_pitches": 935,
+   "total_bf": 227,
+   "avg_pitches": 16.4,
+   "avg_bf": 3.98,
+   "avg_days_of_rest": 2.02,
+   "median_days_of_rest": 1.0,
+   "b2b_appearances": 10,
+   "three_in_four": 6,
+   "multi_inning_apps": 6,
+   "pct_b2b": 0.175
+  },
+  {
+   "pitcher": 661395,
+   "player_name": "Duran, Jhoan",
+   "game_year": 2026,
+   "appearances": 56,
+   "total_pitches": 866,
+   "total_bf": 218,
+   "avg_pitches": 15.46,
+   "avg_bf": 3.89,
+   "avg_days_of_rest": 2.05,
+   "median_days_of_rest": 1.0,
+   "b2b_appearances": 13,
+   "three_in_four": 8,
+   "multi_inning_apps": 1,
+   "pct_b2b": 0.232
+  },
+  {
+   "pitcher": 641835,
+   "player_name": "Mayza, Tim",
+   "game_year": 2026,
+   "appearances": 50,
+   "total_pitches": 884,
+   "total_bf": 218,
+   "avg_pitches": 17.68,
+   "avg_bf": 4.36,
+   "avg_days_of_rest": 2.1,
+   "median_days_of_rest": 1.0,
+   "b2b_appearances": 6,
+   "three_in_four": 5,
+   "multi_inning_apps": 16,
+   "pct_b2b": 0.12
+  },
+  {
+   "pitcher": 663767,
+   "player_name": "Shugart, Chase",
+   "game_year": 2026,
+   "appearances": 40,
+   "total_pitches": 778,
+   "total_bf": 198,
+   "avg_pitches": 19.45,
+   "avg_bf": 4.95,
+   "avg_days_of_rest": 2.85,
+   "median_days_of_rest": 2.0,
+   "b2b_appearances": 6,
+   "three_in_four": 7,
+   "multi_inning_apps": 15,
+   "pct_b2b": 0.15
+  },
+  {
+   "pitcher": 686934,
+   "player_name": "McFarlane, Alex",
+   "game_year": 2026,
+   "appearances": 14,
+   "total_pitches": 210,
+   "total_bf": 56,
+   "avg_pitches": 15.0,
+   "avg_bf": 4.0,
+   "avg_days_of_rest": 2.92,
+   "median_days_of_rest": 2.0,
+   "b2b_appearances": 2,
+   "three_in_four": 2,
+   "multi_inning_apps": 1,
+   "pct_b2b": 0.143
+  },
+  {
+   "pitcher": 548384,
+   "player_name": "Raley, Brooks",
+   "game_year": 2026,
+   "appearances": 13,
+   "total_pitches": 152,
+   "total_bf": 41,
+   "avg_pitches": 11.69,
+   "avg_bf": 3.15,
+   "avg_days_of_rest": 2.08,
+   "median_days_of_rest": 2.0,
+   "b2b_appearances": 3,
+   "three_in_four": 0,
+   "multi_inning_apps": 1,
+   "pct_b2b": 0.231
+  }
+ ],
+ "mip": [
+  {
+   "player_name": "Mayza, Tim",
+   "pitcher": 641835,
+   "evidence_tier": "MLB",
+   "relief_apps": 50,
+   "multi_inning_apps": 16,
+   "multi_inning_rate": 0.32,
+   "apps_ge_6bf": 16,
+   "rate_ge_6bf": 0.32,
+   "apps_ge_floor": 5,
+   "rate_ge_floor": 0.1,
+   "max_pitches": 36,
+   "max_bf": 8,
+   "p80_pitches": 24.2
+  },
+  {
+   "player_name": "Holman, Grant",
+   "pitcher": 680880,
+   "evidence_tier": "AAA (supporting tier)",
+   "relief_apps": 20,
+   "multi_inning_apps": 8,
+   "multi_inning_rate": 0.4,
+   "apps_ge_6bf": 9,
+   "rate_ge_6bf": 0.45,
+   "apps_ge_floor": 1,
+   "rate_ge_floor": 0.05,
+   "max_pitches": 39,
+   "max_bf": 10,
+   "p80_pitches": 23.2
+  },
+  {
+   "player_name": "Raley, Brooks",
+   "pitcher": 548384,
+   "evidence_tier": "MLB",
+   "relief_apps": 13,
+   "multi_inning_apps": 1,
+   "multi_inning_rate": 0.077,
+   "apps_ge_6bf": 1,
+   "rate_ge_6bf": 0.077,
+   "apps_ge_floor": 0,
+   "rate_ge_floor": 0.0,
+   "max_pitches": 23,
+   "max_bf": 6,
+   "p80_pitches": 15.8
+  },
+  {
+   "player_name": "Shugart, Chase",
+   "pitcher": 663767,
+   "evidence_tier": "MLB",
+   "relief_apps": 40,
+   "multi_inning_apps": 15,
+   "multi_inning_rate": 0.375,
+   "apps_ge_6bf": 13,
+   "rate_ge_6bf": 0.325,
+   "apps_ge_floor": 6,
+   "rate_ge_floor": 0.15,
+   "max_pitches": 44,
+   "max_bf": 9,
+   "p80_pitches": 28.0
+  },
+  {
+   "player_name": "Kerkering, Orion",
+   "pitcher": 689147,
+   "evidence_tier": "MLB",
+   "relief_apps": 59,
+   "multi_inning_apps": 8,
+   "multi_inning_rate": 0.136,
+   "apps_ge_6bf": 9,
+   "rate_ge_6bf": 0.153,
+   "apps_ge_floor": 1,
+   "rate_ge_floor": 0.017,
+   "max_pitches": 33,
+   "max_bf": 7,
+   "p80_pitches": 22.0
+  },
+  {
+   "player_name": "Alvarado, Jos\u00e9",
+   "pitcher": 621237,
+   "evidence_tier": "MLB",
+   "relief_apps": 61,
+   "multi_inning_apps": 1,
+   "multi_inning_rate": 0.016,
+   "apps_ge_6bf": 6,
+   "rate_ge_6bf": 0.098,
+   "apps_ge_floor": 2,
+   "rate_ge_floor": 0.033,
+   "max_pitches": 35,
+   "max_bf": 8,
+   "p80_pitches": 22.0
+  },
+  {
+   "player_name": "Duran, Jhoan",
+   "pitcher": 661395,
+   "evidence_tier": "MLB",
+   "relief_apps": 56,
+   "multi_inning_apps": 1,
+   "multi_inning_rate": 0.018,
+   "apps_ge_6bf": 3,
+   "rate_ge_6bf": 0.054,
+   "apps_ge_floor": 1,
+   "rate_ge_floor": 0.018,
+   "max_pitches": 33,
+   "max_bf": 9,
+   "p80_pitches": 20.0
+  },
+  {
+   "player_name": "McFarlane, Alex",
+   "pitcher": 686934,
+   "evidence_tier": "MLB",
+   "relief_apps": 14,
+   "multi_inning_apps": 1,
+   "multi_inning_rate": 0.071,
+   "apps_ge_6bf": 1,
+   "rate_ge_6bf": 0.071,
+   "apps_ge_floor": 0,
+   "rate_ge_floor": 0.0,
+   "max_pitches": 26,
+   "max_bf": 6,
+   "p80_pitches": 19.2
+  },
+  {
+   "player_name": "Bowlan, Jonathan",
+   "pitcher": 680742,
+   "evidence_tier": "MLB",
+   "relief_apps": 57,
+   "multi_inning_apps": 6,
+   "multi_inning_rate": 0.105,
+   "apps_ge_6bf": 7,
+   "rate_ge_6bf": 0.123,
+   "apps_ge_floor": 2,
+   "rate_ge_floor": 0.035,
+   "max_pitches": 35,
+   "max_bf": 7,
+   "p80_pitches": 21.0
+  }
+ ],
+ "coverage_rows": [
+  {
+   "arm": "Mayza, Tim",
+   "innings_scripted": 2,
+   "season_avg_bf": 4.36,
+   "season_avg_pitches": 17.7,
+   "bf_needed_by_script": 6,
+   "bf_expected": 4.36,
+   "gap_bf": 1.64
+  },
+  {
+   "arm": "Holman, Grant",
+   "innings_scripted": 2,
+   "season_avg_bf": 5.2,
+   "season_avg_pitches": 17.4,
+   "bf_needed_by_script": 6,
+   "bf_expected": 5.2,
+   "gap_bf": 0.8
+  },
+  {
+   "arm": "Raley, Brooks",
+   "innings_scripted": 1,
+   "season_avg_bf": 3.15,
+   "season_avg_pitches": 11.7,
+   "bf_needed_by_script": 3,
+   "bf_expected": 3.15,
+   "gap_bf": -0.15
+  },
+  {
+   "arm": "Shugart, Chase",
+   "innings_scripted": 1,
+   "season_avg_bf": 4.95,
+   "season_avg_pitches": 19.4,
+   "bf_needed_by_script": 3,
+   "bf_expected": 4.95,
+   "gap_bf": -1.95
+  },
+  {
+   "arm": "Kerkering, Orion",
+   "innings_scripted": 1,
+   "season_avg_bf": 4.12,
+   "season_avg_pitches": 17.0,
+   "bf_needed_by_script": 3,
+   "bf_expected": 4.12,
+   "gap_bf": -1.12
+  },
+  {
+   "arm": "Alvarado, Jos\u00e9",
+   "innings_scripted": 1,
+   "season_avg_bf": 4.03,
+   "season_avg_pitches": 16.9,
+   "bf_needed_by_script": 3,
+   "bf_expected": 4.03,
+   "gap_bf": -1.03
+  },
+  {
+   "arm": "Duran, Jhoan",
+   "innings_scripted": 1,
+   "season_avg_bf": 3.89,
+   "season_avg_pitches": 15.5,
+   "bf_needed_by_script": 3,
+   "bf_expected": 3.89,
+   "gap_bf": -0.89
+  },
+  {
+   "arm": "\u2014 TOTAL \u2014",
+   "innings_scripted": 9,
+   "season_avg_bf": 29.7,
+   "season_avg_pitches": 115.6,
+   "bf_needed_by_script": 27,
+   "bf_expected": 29.7,
+   "gap_bf": -2.7
+  }
+ ],
+ "script": [
+  {
+   "inning": 1,
+   "arm": "Mayza, Tim"
+  },
+  {
+   "inning": 2,
+   "arm": "Mayza, Tim"
+  },
+  {
+   "inning": 3,
+   "arm": "Holman, Grant"
+  },
+  {
+   "inning": 4,
+   "arm": "Holman, Grant"
+  },
+  {
+   "inning": 5,
+   "arm": "Raley, Brooks"
+  },
+  {
+   "inning": 6,
+   "arm": "Shugart, Chase"
+  },
+  {
+   "inning": 7,
+   "arm": "Kerkering, Orion"
+  },
+  {
+   "inning": 8,
+   "arm": "Alvarado, Jos\u00e9"
+  },
+  {
+   "inning": 9,
+   "arm": "Duran, Jhoan"
+  }
+ ],
+ "mayza_opener": [
+  {
+   "game_date": "2026-04-30",
+   "pitches": 33,
+   "batters_faced": 9,
+   "inning_exited": 2,
+   "innings_spanned": 2
+  },
+  {
+   "game_date": "2026-06-22",
+   "pitches": 24,
+   "batters_faced": 6,
+   "inning_exited": 1,
+   "innings_spanned": 1
+  },
+  {
+   "game_date": "2026-06-27",
+   "pitches": 26,
+   "batters_faced": 5,
+   "inning_exited": 2,
+   "innings_spanned": 2
+  },
+  {
+   "game_date": "2026-07-25",
+   "pitches": 20,
+   "batters_faced": 6,
+   "inning_exited": 2,
+   "innings_spanned": 2
+  }
+ ],
+ "mayza_platoon": [
+  {
+   "stand": "L",
+   "pitches": 411,
+   "plate_apps": 105,
+   "bip": 77,
+   "hits": 21,
+   "hrs": 2,
+   "walks": 5,
+   "strikeouts": 22,
+   "ba": 0.214,
+   "obp": 0.257,
+   "slg": 0.327,
+   "ops": 0.584,
+   "woba": 0.257,
+   "krate": 0.21,
+   "bbrate": 0.048,
+   "hr_rate": 0.019,
+   "swings": 169,
+   "whiffs": 33,
+   "whiff_rate": 0.195,
+   "chases": 57,
+   "ooz": 213,
+   "chase_rate": 0.268,
+   "in_zone_rate": 0.482
+  },
+  {
+   "stand": "R",
+   "pitches": 576,
+   "plate_apps": 139,
+   "bip": 92,
+   "hits": 29,
+   "hrs": 4,
+   "walks": 8,
+   "strikeouts": 37,
+   "ba": 0.228,
+   "obp": 0.266,
+   "slg": 0.386,
+   "ops": 0.652,
+   "woba": 0.281,
+   "krate": 0.266,
+   "bbrate": 0.058,
+   "hr_rate": 0.029,
+   "swings": 275,
+   "whiffs": 72,
+   "whiff_rate": 0.262,
+   "chases": 85,
+   "ooz": 298,
+   "chase_rate": 0.285,
+   "in_zone_rate": 0.483
+  }
+ ],
+ "mayza_mix": [
+  {
+   "pitch_type": "SI",
+   "pitch_name": "Sinker",
+   "count": 258,
+   "release_speed": 94.3,
+   "release_spin_rate": 2059.5,
+   "zone": 9.0,
+   "pfx_x": 1.2,
+   "plate_x": 0.2,
+   "pfx_z": 0.8,
+   "plate_z": 2.1,
+   "usage": 62.8,
+   "stand": "L",
+   "horiz": 14.4,
+   "vert": 9.6
+  },
+  {
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "count": 144,
+   "release_speed": 87.7,
+   "release_spin_rate": 2224.1,
+   "zone": 10.1,
+   "pfx_x": -0.1,
+   "plate_x": -0.7,
+   "pfx_z": -0.1,
+   "plate_z": 1.9,
+   "usage": 35.0,
+   "stand": "L",
+   "horiz": -1.2,
+   "vert": -1.2
+  },
+  {
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "count": 8,
+   "release_speed": 95.5,
+   "release_spin_rate": 2048.0,
+   "zone": 9.9,
+   "pfx_x": 0.6,
+   "plate_x": -0.6,
+   "pfx_z": 1.1,
+   "plate_z": 2.8,
+   "usage": 1.9,
+   "stand": "L",
+   "horiz": 7.2,
+   "vert": 13.2
+  },
+  {
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "count": 1,
+   "release_speed": 91.4,
+   "release_spin_rate": 2039.0,
+   "zone": 2.0,
+   "pfx_x": 1.3,
+   "plate_x": -0.2,
+   "pfx_z": 0.6,
+   "plate_z": 2.9,
+   "usage": 0.2,
+   "stand": "L",
+   "horiz": 15.6,
+   "vert": 7.2
+  },
+  {
+   "pitch_type": "SI",
+   "pitch_name": "Sinker",
+   "count": 300,
+   "release_speed": 94.2,
+   "release_spin_rate": 2032.9,
+   "zone": 8.4,
+   "pfx_x": 1.2,
+   "plate_x": 0.2,
+   "pfx_z": 0.8,
+   "plate_z": 2.3,
+   "usage": 52.1,
+   "stand": "R",
+   "horiz": 14.4,
+   "vert": 9.6
+  },
+  {
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "count": 158,
+   "release_speed": 87.1,
+   "release_spin_rate": 2219.5,
+   "zone": 11.0,
+   "pfx_x": -0.1,
+   "plate_x": -0.5,
+   "pfx_z": -0.1,
+   "plate_z": 1.3,
+   "usage": 27.4,
+   "stand": "R",
+   "horiz": -1.2,
+   "vert": -1.2
+  },
+  {
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "count": 89,
+   "release_speed": 94.6,
+   "release_spin_rate": 2051.0,
+   "zone": 7.8,
+   "pfx_x": 0.7,
+   "plate_x": -0.3,
+   "pfx_z": 1.1,
+   "plate_z": 3.1,
+   "usage": 15.5,
+   "stand": "R",
+   "horiz": 8.4,
+   "vert": 13.2
+  },
+  {
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "count": 21,
+   "release_speed": 91.3,
+   "release_spin_rate": 1580.2,
+   "zone": 11.2,
+   "pfx_x": 1.2,
+   "plate_x": 0.6,
+   "pfx_z": 0.6,
+   "plate_z": 1.7,
+   "usage": 3.6,
+   "stand": "R",
+   "horiz": 14.4,
+   "vert": 7.2
+  }
+ ],
+ "holman_mix": [
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "count": 83,
+   "usage": 44.1,
+   "release_speed": 87.8,
+   "release_spin_rate": 1177.4,
+   "horiz": -12.0,
+   "vert": 0.0,
+   "plate_x": -0.1,
+   "plate_z": 1.6,
+   "zone": 10.4
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "count": 80,
+   "usage": 42.6,
+   "release_speed": 95.0,
+   "release_spin_rate": 1981.5,
+   "horiz": -9.6,
+   "vert": 14.4,
+   "plate_x": -0.1,
+   "plate_z": 2.4,
+   "zone": 7.1
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "count": 25,
+   "usage": 13.3,
+   "release_speed": 86.5,
+   "release_spin_rate": 2047.6,
+   "horiz": -2.4,
+   "vert": 1.2,
+   "plate_x": 0.1,
+   "plate_z": 1.7,
+   "zone": 10.0
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "count": 72,
+   "usage": 45.0,
+   "release_speed": 94.9,
+   "release_spin_rate": 1982.1,
+   "horiz": -8.4,
+   "vert": 15.6,
+   "plate_x": 0.1,
+   "plate_z": 2.6,
+   "zone": 7.2
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "count": 52,
+   "usage": 32.5,
+   "release_speed": 86.3,
+   "release_spin_rate": 1998.6,
+   "horiz": -1.2,
+   "vert": 2.4,
+   "plate_x": 0.4,
+   "plate_z": 1.7,
+   "zone": 10.4
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "count": 36,
+   "usage": 22.5,
+   "release_speed": 87.8,
+   "release_spin_rate": 1154.2,
+   "horiz": -12.0,
+   "vert": 0.0,
+   "plate_x": 0.1,
+   "plate_z": 1.4,
+   "zone": 11.3
+  }
+ ],
+ "holman_wc": [
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "swings": 52,
+   "whiffs": 8,
+   "whiff_rate": 0.154,
+   "chases": 11,
+   "ooz": 25,
+   "pitches": 80,
+   "chase_rate": 0.44,
+   "in_zone_rate": 0.688
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "swings": 43,
+   "whiffs": 15,
+   "whiff_rate": 0.349,
+   "chases": 20,
+   "ooz": 52,
+   "pitches": 83,
+   "chase_rate": 0.385,
+   "in_zone_rate": 0.373
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "swings": 16,
+   "whiffs": 8,
+   "whiff_rate": 0.5,
+   "chases": 7,
+   "ooz": 13,
+   "pitches": 25,
+   "chase_rate": 0.538,
+   "in_zone_rate": 0.48
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "swings": 37,
+   "whiffs": 5,
+   "whiff_rate": 0.135,
+   "chases": 6,
+   "ooz": 25,
+   "pitches": 72,
+   "chase_rate": 0.24,
+   "in_zone_rate": 0.653
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "swings": 21,
+   "whiffs": 7,
+   "whiff_rate": 0.333,
+   "chases": 11,
+   "ooz": 25,
+   "pitches": 36,
+   "chase_rate": 0.44,
+   "in_zone_rate": 0.306
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "swings": 27,
+   "whiffs": 10,
+   "whiff_rate": 0.37,
+   "chases": 8,
+   "ooz": 27,
+   "pitches": 52,
+   "chase_rate": 0.296,
+   "in_zone_rate": 0.481
+  }
+ ],
+ "holman_apps": [
+  {
+   "game_date": "2026-05-10",
+   "pitches": 9,
+   "batters_faced": 3,
+   "innings_spanned": 1,
+   "days_of_rest": null
+  },
+  {
+   "game_date": "2026-05-14",
+   "pitches": 25,
+   "batters_faced": 8,
+   "innings_spanned": 2,
+   "days_of_rest": 3.0
+  },
+  {
+   "game_date": "2026-05-19",
+   "pitches": 39,
+   "batters_faced": 10,
+   "innings_spanned": 2,
+   "days_of_rest": 4.0
+  },
+  {
+   "game_date": "2026-05-22",
+   "pitches": 17,
+   "batters_faced": 4,
+   "innings_spanned": 1,
+   "days_of_rest": 2.0
+  },
+  {
+   "game_date": "2026-05-24",
+   "pitches": 23,
+   "batters_faced": 5,
+   "innings_spanned": 1,
+   "days_of_rest": 1.0
+  },
+  {
+   "game_date": "2026-07-08",
+   "pitches": 19,
+   "batters_faced": 8,
+   "innings_spanned": 2,
+   "days_of_rest": 44.0
+  },
+  {
+   "game_date": "2026-07-11",
+   "pitches": 12,
+   "batters_faced": 5,
+   "innings_spanned": 1,
+   "days_of_rest": 2.0
+  },
+  {
+   "game_date": "2026-07-19",
+   "pitches": 24,
+   "batters_faced": 6,
+   "innings_spanned": 2,
+   "days_of_rest": 7.0
+  },
+  {
+   "game_date": "2026-07-23",
+   "pitches": 7,
+   "batters_faced": 3,
+   "innings_spanned": 1,
+   "days_of_rest": 3.0
+  },
+  {
+   "game_date": "2026-07-29",
+   "pitches": 18,
+   "batters_faced": 6,
+   "innings_spanned": 1,
+   "days_of_rest": 5.0
+  },
+  {
+   "game_date": "2026-08-01",
+   "pitches": 25,
+   "batters_faced": 6,
+   "innings_spanned": 2,
+   "days_of_rest": 2.0
+  },
+  {
+   "game_date": "2026-08-04",
+   "pitches": 10,
+   "batters_faced": 3,
+   "innings_spanned": 1,
+   "days_of_rest": 2.0
+  },
+  {
+   "game_date": "2026-08-07",
+   "pitches": 20,
+   "batters_faced": 6,
+   "innings_spanned": 1,
+   "days_of_rest": 2.0
+  },
+  {
+   "game_date": "2026-08-09",
+   "pitches": 20,
+   "batters_faced": 6,
+   "innings_spanned": 2,
+   "days_of_rest": 1.0
+  },
+  {
+   "game_date": "2026-08-12",
+   "pitches": 16,
+   "batters_faced": 4,
+   "innings_spanned": 1,
+   "days_of_rest": 2.0
+  },
+  {
+   "game_date": "2026-08-15",
+   "pitches": 18,
+   "batters_faced": 7,
+   "innings_spanned": 2,
+   "days_of_rest": 2.0
+  },
+  {
+   "game_date": "2026-08-19",
+   "pitches": 8,
+   "batters_faced": 3,
+   "innings_spanned": 1,
+   "days_of_rest": 3.0
+  },
+  {
+   "game_date": "2026-08-23",
+   "pitches": 12,
+   "batters_faced": 3,
+   "innings_spanned": 1,
+   "days_of_rest": 3.0
+  },
+  {
+   "game_date": "2026-08-28",
+   "pitches": 11,
+   "batters_faced": 4,
+   "innings_spanned": 1,
+   "days_of_rest": 4.0
+  },
+  {
+   "game_date": "2026-08-30",
+   "pitches": 15,
+   "batters_faced": 4,
+   "innings_spanned": 2,
+   "days_of_rest": 1.0
+  }
+ ],
+ "holman_count": [
+  {
+   "stand": "L",
+   "pa": 56,
+   "k": 16,
+   "bb": 2,
+   "hr": 4,
+   "hits": 14,
+   "k_rate": 0.286,
+   "bb_rate": 0.036,
+   "hr_rate": 0.071
+  },
+  {
+   "stand": "R",
+   "pa": 48,
+   "k": 9,
+   "bb": 3,
+   "hr": 0,
+   "hits": 8,
+   "k_rate": 0.188,
+   "bb_rate": 0.062,
+   "hr_rate": 0.0
+  }
+ ],
+ "holman_pitches": [
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.8187915524,
+   "plate_z": 2.2546567533,
+   "release_speed": 95.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.0095954013,
+   "plate_z": 1.2045081461,
+   "release_speed": 85.5,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.9947915052,
+   "plate_z": 1.9420666223,
+   "release_speed": 86.3,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.0497767162,
+   "plate_z": 1.2611288034,
+   "release_speed": 88.2,
+   "description": "foul_tip"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3038113571,
+   "plate_z": 2.3053752138,
+   "release_speed": 85.6,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 1.1399974209,
+   "plate_z": 2.9522168658,
+   "release_speed": 95.9,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.0302209218,
+   "plate_z": 3.0519937139,
+   "release_speed": 94.8,
+   "description": "foul_tip"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3260120139,
+   "plate_z": 3.7798339811,
+   "release_speed": 96.3,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.8872048626,
+   "plate_z": 3.1001701854,
+   "release_speed": 85.5,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.5040072605,
+   "plate_z": 1.940468104,
+   "release_speed": 86.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.4291076631,
+   "plate_z": 1.1130105759,
+   "release_speed": 88.9,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.7259654188,
+   "plate_z": 4.6474960506,
+   "release_speed": 96.2,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3995657661,
+   "plate_z": 2.7363345425,
+   "release_speed": 96.0,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4865671039,
+   "plate_z": 2.6331805547,
+   "release_speed": 95.4,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.0647288733,
+   "plate_z": 3.0323798129,
+   "release_speed": 84.0,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.6680984708,
+   "plate_z": 1.7559326691,
+   "release_speed": 88.1,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.2460384648,
+   "plate_z": 2.1602129681,
+   "release_speed": 88.5,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.4792937556,
+   "plate_z": 2.4101804273,
+   "release_speed": 86.6,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2077256881,
+   "plate_z": 2.717702596,
+   "release_speed": 94.3,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.3034622156,
+   "plate_z": 2.9506495419,
+   "release_speed": 94.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1655385577,
+   "plate_z": 4.9469418096,
+   "release_speed": 94.5,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.1875384705,
+   "plate_z": 0.9257531551,
+   "release_speed": 87.6,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.2312661433,
+   "plate_z": 0.5623030843,
+   "release_speed": 87.9,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.6664217645,
+   "plate_z": 3.0582588129,
+   "release_speed": 95.1,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.0344916089,
+   "plate_z": 2.8904837227,
+   "release_speed": 94.8,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4251965409,
+   "plate_z": 0.8964780558,
+   "release_speed": 94.0,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2019045267,
+   "plate_z": 2.7888807388,
+   "release_speed": 94.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.8079160608,
+   "plate_z": 3.2740384485,
+   "release_speed": 95.9,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 1.1804528095,
+   "plate_z": 3.1846842828,
+   "release_speed": 93.7,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.7101889158,
+   "plate_z": 2.4482871397,
+   "release_speed": 94.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.9723235837,
+   "plate_z": 2.5410041208,
+   "release_speed": 95.4,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.6356904623,
+   "plate_z": 1.7301545341,
+   "release_speed": 87.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3993543858,
+   "plate_z": 2.6133969637,
+   "release_speed": 95.0,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.298546187,
+   "plate_z": 3.2847288052,
+   "release_speed": 94.5,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.5641448687,
+   "plate_z": 2.2526074469,
+   "release_speed": 87.2,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.9556543493,
+   "plate_z": 1.6467483708,
+   "release_speed": 88.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.1605961639,
+   "plate_z": 1.3491637658,
+   "release_speed": 86.9,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0452335768,
+   "plate_z": 2.7293746929,
+   "release_speed": 94.8,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.9318765092,
+   "plate_z": 1.5515918794,
+   "release_speed": 86.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.1153142021,
+   "plate_z": 0.8762966087,
+   "release_speed": 85.1,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5659223493,
+   "plate_z": 1.4434966009,
+   "release_speed": 88.3,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.354262897,
+   "plate_z": 2.309270886,
+   "release_speed": 94.9,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0838086123,
+   "plate_z": 2.3304087614,
+   "release_speed": 95.5,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.0585683468,
+   "plate_z": 2.7018598207,
+   "release_speed": 86.7,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4906736347,
+   "plate_z": 1.4118088178,
+   "release_speed": 87.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.7075950554,
+   "plate_z": 2.7150797326,
+   "release_speed": 94.6,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.0819628331,
+   "plate_z": 1.3167199172,
+   "release_speed": 88.1,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.2669374728,
+   "plate_z": 2.4389945068,
+   "release_speed": 84.0,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.2460242275,
+   "plate_z": 2.7304116405,
+   "release_speed": 86.9,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2555462289,
+   "plate_z": 2.4750662846,
+   "release_speed": 95.4,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.5487415397,
+   "plate_z": 0.2214281907,
+   "release_speed": 85.1,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2108961064,
+   "plate_z": 1.6196979424,
+   "release_speed": 95.4,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4944040669,
+   "plate_z": 2.0847520948,
+   "release_speed": 88.7,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.2453414241,
+   "plate_z": 2.8899208064,
+   "release_speed": 88.0,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0453453096,
+   "plate_z": 3.0331422477,
+   "release_speed": 95.6,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.1214799002,
+   "plate_z": 0.2454779529,
+   "release_speed": 86.1,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.3003543633,
+   "plate_z": 1.3075527254,
+   "release_speed": 88.8,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.7720053969,
+   "plate_z": 1.8296813983,
+   "release_speed": 87.4,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.1725904977,
+   "plate_z": 0.7834463441,
+   "release_speed": 88.8,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.6241722826,
+   "plate_z": 1.9222561136,
+   "release_speed": 88.3,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.6353301262,
+   "plate_z": 2.8689835734,
+   "release_speed": 84.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.8713799778,
+   "plate_z": 2.1572200466,
+   "release_speed": 89.2,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.1311732895,
+   "plate_z": 1.7748816399,
+   "release_speed": 88.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4472868624,
+   "plate_z": 1.592310423,
+   "release_speed": 95.3,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.5186854461,
+   "plate_z": 2.4922507515,
+   "release_speed": 94.0,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.5344183231,
+   "plate_z": 3.9793629097,
+   "release_speed": 93.9,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.4239458412,
+   "plate_z": 0.8212502227,
+   "release_speed": 87.2,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3806066262,
+   "plate_z": 2.0839374263,
+   "release_speed": 83.6,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.5208953139,
+   "plate_z": 2.0520400929,
+   "release_speed": 84.7,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.9117077263,
+   "plate_z": 0.723080243,
+   "release_speed": 87.8,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.6149210254,
+   "plate_z": 1.3023206917,
+   "release_speed": 95.1,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 1.0994564648,
+   "plate_z": 3.0042871393,
+   "release_speed": 94.7,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.5515279552,
+   "plate_z": 1.6046993999,
+   "release_speed": 86.3,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.543992139,
+   "plate_z": 2.8219778946,
+   "release_speed": 95.2,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.6707978848,
+   "plate_z": 2.6657372819,
+   "release_speed": 86.2,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.5763357671,
+   "plate_z": 0.49115348,
+   "release_speed": 88.5,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1910682364,
+   "plate_z": 1.5947272365,
+   "release_speed": 94.9,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3551102796,
+   "plate_z": 2.1298405479,
+   "release_speed": 86.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2419041166,
+   "plate_z": 2.7906310785,
+   "release_speed": 94.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.0708748969,
+   "plate_z": 1.1968119479,
+   "release_speed": 87.7,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2442070405,
+   "plate_z": 1.7829206769,
+   "release_speed": 94.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.0828343747,
+   "plate_z": 2.3536162115,
+   "release_speed": 89.0,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.181015515,
+   "plate_z": 2.0317328214,
+   "release_speed": 85.7,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1441000267,
+   "plate_z": 1.8358024708,
+   "release_speed": 95.1,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -1.4217597886,
+   "plate_z": 3.8559058332,
+   "release_speed": 94.8,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.5565810891,
+   "plate_z": 0.3774404094,
+   "release_speed": 86.8,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3453694471,
+   "plate_z": 1.3057675864,
+   "release_speed": 86.3,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.1459295559,
+   "plate_z": 0.3964386814,
+   "release_speed": 87.3,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.4360489707,
+   "plate_z": 1.6602085966,
+   "release_speed": 85.6,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.2886941906,
+   "plate_z": 2.6572113868,
+   "release_speed": 87.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4389372266,
+   "plate_z": 1.4580320471,
+   "release_speed": 95.0,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.215275425,
+   "plate_z": 2.6001439162,
+   "release_speed": 95.6,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.5368480561,
+   "plate_z": 2.6185916485,
+   "release_speed": 87.5,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1257996653,
+   "plate_z": 2.0872839687,
+   "release_speed": 95.3,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.2312950326,
+   "plate_z": 1.7531866483,
+   "release_speed": 94.7,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4009245822,
+   "plate_z": 0.9413900556,
+   "release_speed": 94.7,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1113059034,
+   "plate_z": 1.3219761467,
+   "release_speed": 96.4,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.0641021925,
+   "plate_z": 1.2106171433,
+   "release_speed": 94.6,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.1092030103,
+   "plate_z": 1.7281625048,
+   "release_speed": 85.9,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.5313865829,
+   "plate_z": 1.5912537709,
+   "release_speed": 85.2,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.8447532598,
+   "plate_z": 3.0264175219,
+   "release_speed": 93.4,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.7338702762,
+   "plate_z": 2.5100767092,
+   "release_speed": 94.6,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.5978419465,
+   "plate_z": 1.8062379857,
+   "release_speed": 94.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.705932747,
+   "plate_z": 1.0112887924,
+   "release_speed": 95.3,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.0123171242,
+   "plate_z": 1.7390425294,
+   "release_speed": 87.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.515226659,
+   "plate_z": 1.6536297452,
+   "release_speed": 93.9,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.4964395869,
+   "plate_z": 2.0119447591,
+   "release_speed": 86.8,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2870751617,
+   "plate_z": 1.9310157921,
+   "release_speed": 94.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4944039704,
+   "plate_z": 2.1523304894,
+   "release_speed": 95.0,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1450674885,
+   "plate_z": 2.262474962,
+   "release_speed": 95.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.9368633432,
+   "plate_z": 1.5633955176,
+   "release_speed": 86.9,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.6602121351,
+   "plate_z": 3.0959245267,
+   "release_speed": 94.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.5713802225,
+   "plate_z": 2.310734671,
+   "release_speed": 95.6,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0029313367,
+   "plate_z": 2.7921307913,
+   "release_speed": 93.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.1351644922,
+   "plate_z": 2.2371535573,
+   "release_speed": 87.6,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3585990365,
+   "plate_z": 2.3536403688,
+   "release_speed": 86.3,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4675578019,
+   "plate_z": 2.8101462525,
+   "release_speed": 94.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.8282097557,
+   "plate_z": 2.9653121721,
+   "release_speed": 87.4,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.9849937828,
+   "plate_z": -0.1107462482,
+   "release_speed": 86.5,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4148996511,
+   "plate_z": 2.1288082687,
+   "release_speed": 94.7,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2703462201,
+   "plate_z": 1.8452899409,
+   "release_speed": 94.7,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.139694148,
+   "plate_z": 3.5421078618,
+   "release_speed": 85.8,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4731744576,
+   "plate_z": 3.1533821036,
+   "release_speed": 94.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.6923293241,
+   "plate_z": 3.5833119502,
+   "release_speed": 94.6,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.8727903116,
+   "plate_z": 3.0972522297,
+   "release_speed": 85.8,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2288038265,
+   "plate_z": 3.3264730503,
+   "release_speed": 95.1,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.4387260748,
+   "plate_z": 1.8124776405,
+   "release_speed": 86.9,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3408903544,
+   "plate_z": 5.2615239846,
+   "release_speed": 94.1,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.1047758476,
+   "plate_z": 1.9570824979,
+   "release_speed": 87.3,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.6562775036,
+   "plate_z": 1.9425040467,
+   "release_speed": 86.6,
+   "description": "foul_tip"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.0140972473,
+   "plate_z": 2.082915559,
+   "release_speed": 88.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3792848896,
+   "plate_z": 2.7953074707,
+   "release_speed": 97.0,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0522344369,
+   "plate_z": 3.1518744194,
+   "release_speed": 96.1,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0703542605,
+   "plate_z": 2.6399793923,
+   "release_speed": 95.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1546663023,
+   "plate_z": 1.9155770003,
+   "release_speed": 95.9,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4164964596,
+   "plate_z": 2.4386628152,
+   "release_speed": 94.5,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -1.3048310612,
+   "plate_z": 2.9799862766,
+   "release_speed": 85.1,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.5806032476,
+   "plate_z": 2.6653026251,
+   "release_speed": 95.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5338255089,
+   "plate_z": 0.8413817955,
+   "release_speed": 88.6,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1202262182,
+   "plate_z": 1.7212298523,
+   "release_speed": 95.2,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1601550051,
+   "plate_z": 3.4551460054,
+   "release_speed": 95.3,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0347073438,
+   "plate_z": 3.4044540388,
+   "release_speed": 97.2,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1419447662,
+   "plate_z": 3.4140681547,
+   "release_speed": 96.9,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.1473615947,
+   "plate_z": 1.4760185492,
+   "release_speed": 90.1,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.0858746201,
+   "plate_z": 0.2132699631,
+   "release_speed": 89.7,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.6622321571,
+   "plate_z": 2.7649614814,
+   "release_speed": 97.2,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.6196520845,
+   "plate_z": 0.7121688902,
+   "release_speed": 87.6,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.3829260266,
+   "plate_z": 2.8002628934,
+   "release_speed": 96.7,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.191261323,
+   "plate_z": 1.7690105357,
+   "release_speed": 87.1,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.7768739673,
+   "plate_z": 3.0464164203,
+   "release_speed": 95.2,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3059452993,
+   "plate_z": 2.8114249562,
+   "release_speed": 95.5,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2859624702,
+   "plate_z": 3.4025319124,
+   "release_speed": 97.4,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.7133289012,
+   "plate_z": 0.6475806153,
+   "release_speed": 89.7,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1241849748,
+   "plate_z": 2.491819469,
+   "release_speed": 96.6,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1609746218,
+   "plate_z": 2.5422024474,
+   "release_speed": 95.6,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.1167198639,
+   "plate_z": 0.9382625398,
+   "release_speed": 85.3,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.1013197303,
+   "plate_z": 1.8088745088,
+   "release_speed": 84.3,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.080267559,
+   "plate_z": 1.8839979286,
+   "release_speed": 94.1,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.6150286963,
+   "plate_z": 3.1434589815,
+   "release_speed": 94.5,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3707726429,
+   "plate_z": 1.9134896192,
+   "release_speed": 85.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3365629193,
+   "plate_z": 1.4001143262,
+   "release_speed": 85.9,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.942592428,
+   "plate_z": -0.3927132834,
+   "release_speed": 93.8,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.4628622372,
+   "plate_z": -0.8038361485,
+   "release_speed": 88.2,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3538753328,
+   "plate_z": 1.8117867572,
+   "release_speed": 87.1,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.0095802717,
+   "plate_z": 1.0160959383,
+   "release_speed": 88.6,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.7766032498,
+   "plate_z": 1.9128138776,
+   "release_speed": 93.3,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.8068417076,
+   "plate_z": 3.3663514965,
+   "release_speed": 91.9,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 3.0720385232,
+   "plate_z": 2.6954104267,
+   "release_speed": 80.7,
+   "description": "hit_by_pitch"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5942373509,
+   "plate_z": 1.1957288354,
+   "release_speed": 87.4,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.648596537,
+   "plate_z": 1.7003018743,
+   "release_speed": 95.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0707883703,
+   "plate_z": 1.8172523246,
+   "release_speed": 93.9,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.5589814749,
+   "plate_z": 1.2284170977,
+   "release_speed": 95.0,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3374530192,
+   "plate_z": 0.7502086055,
+   "release_speed": 87.4,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.1368508118,
+   "plate_z": 2.9132964155,
+   "release_speed": 87.3,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2484827664,
+   "plate_z": 2.6335318291,
+   "release_speed": 96.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.8725033371,
+   "plate_z": 1.2868713452,
+   "release_speed": 86.9,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.2254994863,
+   "plate_z": 2.5380119757,
+   "release_speed": 88.0,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -1.3746266147,
+   "plate_z": 2.854403974,
+   "release_speed": 94.8,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.0284544315,
+   "plate_z": 0.3577813242,
+   "release_speed": 88.1,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3388863881,
+   "plate_z": 2.1344447369,
+   "release_speed": 95.0,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5433382383,
+   "plate_z": 2.0793023758,
+   "release_speed": 87.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4727597246,
+   "plate_z": 3.4036607548,
+   "release_speed": 96.1,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.3600842095,
+   "plate_z": 1.4478066132,
+   "release_speed": 86.4,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.9315051255,
+   "plate_z": 3.5553288745,
+   "release_speed": 95.2,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.8114681366,
+   "plate_z": 1.8866112867,
+   "release_speed": 95.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.1666224126,
+   "plate_z": 2.2595931454,
+   "release_speed": 86.5,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3602874846,
+   "plate_z": 3.6101313304,
+   "release_speed": 95.8,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4394411701,
+   "plate_z": 2.5218035001,
+   "release_speed": 95.6,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.0591177452,
+   "plate_z": 2.8761343915,
+   "release_speed": 88.1,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5508058311,
+   "plate_z": 3.2615486172,
+   "release_speed": 88.4,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.8448157272,
+   "plate_z": 2.4129437925,
+   "release_speed": 87.1,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.6348579053,
+   "plate_z": 2.2757521251,
+   "release_speed": 86.0,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.5210399202,
+   "plate_z": 2.7569461118,
+   "release_speed": 96.0,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.101208577,
+   "plate_z": 1.2125377572,
+   "release_speed": 89.1,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.31233902,
+   "plate_z": 2.2608106045,
+   "release_speed": 86.9,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0592245835,
+   "plate_z": 1.8172561283,
+   "release_speed": 96.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.512800448,
+   "plate_z": 1.9236773396,
+   "release_speed": 86.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.2214484524,
+   "plate_z": 0.3506302079,
+   "release_speed": 89.4,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.1130384661,
+   "plate_z": 1.6914454495,
+   "release_speed": 87.6,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.0536509181,
+   "plate_z": 1.6219073784,
+   "release_speed": 87.6,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.5540578719,
+   "plate_z": 3.1300044536,
+   "release_speed": 96.8,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.925821774,
+   "plate_z": 3.0445518028,
+   "release_speed": 87.9,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.6126312716,
+   "plate_z": 1.2228695303,
+   "release_speed": 88.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3531570817,
+   "plate_z": 0.6833025588,
+   "release_speed": 87.1,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4969808497,
+   "plate_z": 1.1155752385,
+   "release_speed": 89.2,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.2774291795,
+   "plate_z": 2.0650822855,
+   "release_speed": 89.5,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.1596105242,
+   "plate_z": -0.2884507123,
+   "release_speed": 89.1,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.0476569342,
+   "plate_z": 1.8317254045,
+   "release_speed": 95.6,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.317462044,
+   "plate_z": 1.6438249201,
+   "release_speed": 89.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4179385771,
+   "plate_z": 2.3038673556,
+   "release_speed": 96.1,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.26902932,
+   "plate_z": 1.0319873086,
+   "release_speed": 88.2,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.0634929671,
+   "plate_z": 1.2706444832,
+   "release_speed": 88.0,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.671196944,
+   "plate_z": 2.3104755064,
+   "release_speed": 96.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.6507184047,
+   "plate_z": 2.1399278252,
+   "release_speed": 88.9,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3825372079,
+   "plate_z": 1.3658092436,
+   "release_speed": 88.3,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.5965556467,
+   "plate_z": 2.1128977779,
+   "release_speed": 95.7,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.6157545534,
+   "plate_z": 1.5423510086,
+   "release_speed": 89.2,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.715209967,
+   "plate_z": 1.2490943206,
+   "release_speed": 88.7,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.6762165066,
+   "plate_z": 1.1891174822,
+   "release_speed": 88.6,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.3319953043,
+   "plate_z": 2.99672101,
+   "release_speed": 95.6,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.5834437982,
+   "plate_z": 2.273389706,
+   "release_speed": 89.5,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.6258626509,
+   "plate_z": 2.1303350506,
+   "release_speed": 89.1,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4800017378,
+   "plate_z": 2.2483909343,
+   "release_speed": 96.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.0148905478,
+   "plate_z": 1.2091325563,
+   "release_speed": 89.4,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4775548284,
+   "plate_z": 1.757322538,
+   "release_speed": 89.4,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.9342999777,
+   "plate_z": 1.2202015267,
+   "release_speed": 87.5,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -1.2319824312,
+   "plate_z": 2.2143093555,
+   "release_speed": 96.0,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.2135521182,
+   "plate_z": 2.3750014171,
+   "release_speed": 88.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3645118814,
+   "plate_z": 2.4864461623,
+   "release_speed": 95.3,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.4700171461,
+   "plate_z": 2.1924668183,
+   "release_speed": 88.4,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.7431078064,
+   "plate_z": 1.7817494442,
+   "release_speed": 87.0,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.0647603941,
+   "plate_z": 2.0667937006,
+   "release_speed": 96.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1596174857,
+   "plate_z": 1.7648701545,
+   "release_speed": 96.9,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.2084093648,
+   "plate_z": 2.7164088339,
+   "release_speed": 97.1,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2393084272,
+   "plate_z": 1.8218211882,
+   "release_speed": 96.4,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.0892393854,
+   "plate_z": 0.4393659639,
+   "release_speed": 87.2,
+   "description": "swinging_strike_blocked"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.4535833305,
+   "plate_z": 1.5571580224,
+   "release_speed": 86.5,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3578949602,
+   "plate_z": 0.9049376394,
+   "release_speed": 86.8,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3394492706,
+   "plate_z": 0.2165110729,
+   "release_speed": 87.1,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.2034679799,
+   "plate_z": 0.9684578735,
+   "release_speed": 86.3,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 1.3364324241,
+   "plate_z": -0.090038491,
+   "release_speed": 87.4,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.0175345206,
+   "plate_z": 2.0565446524,
+   "release_speed": 85.2,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.7960647229,
+   "plate_z": 1.8057238607,
+   "release_speed": 86.4,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -1.2173492443,
+   "plate_z": 3.2062005117,
+   "release_speed": 93.2,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.6804617283,
+   "plate_z": 2.4922794744,
+   "release_speed": 93.1,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.8511605438,
+   "plate_z": 1.8880481959,
+   "release_speed": 87.0,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.1968763842,
+   "plate_z": 0.5539845278,
+   "release_speed": 87.9,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.5385802608,
+   "plate_z": 1.8952436545,
+   "release_speed": 85.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -1.6003258579,
+   "plate_z": 3.6986369072,
+   "release_speed": 94.2,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3951619625,
+   "plate_z": 1.236075165,
+   "release_speed": 87.4,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.3950560946,
+   "plate_z": 2.6758481886,
+   "release_speed": 86.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.9008661574,
+   "plate_z": 1.9100065309,
+   "release_speed": 87.1,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.1807842843,
+   "plate_z": 2.0848516789,
+   "release_speed": 95.4,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.1239558054,
+   "plate_z": 1.1733405622,
+   "release_speed": 88.5,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.710890807,
+   "plate_z": 0.0894342118,
+   "release_speed": 88.2,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.931998597,
+   "plate_z": 2.1013345566,
+   "release_speed": 94.3,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.6595605224,
+   "plate_z": 0.5266271585,
+   "release_speed": 87.2,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.8378051401,
+   "plate_z": 0.4268157231,
+   "release_speed": 86.4,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.2265874898,
+   "plate_z": 1.1574609611,
+   "release_speed": 88.8,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.6360350318,
+   "plate_z": -0.4940058956,
+   "release_speed": 88.5,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2464299016,
+   "plate_z": 2.9312880178,
+   "release_speed": 95.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.5271313007,
+   "plate_z": 1.6276418647,
+   "release_speed": 87.4,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.375601119,
+   "plate_z": 0.7556822524,
+   "release_speed": 88.7,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.7773263485,
+   "plate_z": 2.0165186917,
+   "release_speed": 87.4,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.347178768,
+   "plate_z": 2.2555450481,
+   "release_speed": 96.1,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.6584104592,
+   "plate_z": 1.8603927285,
+   "release_speed": 93.7,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.2250598337,
+   "plate_z": 0.7331104177,
+   "release_speed": 95.5,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.3226650547,
+   "plate_z": 1.2224822538,
+   "release_speed": 88.3,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4699521951,
+   "plate_z": 1.4147498707,
+   "release_speed": 95.1,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3507059112,
+   "plate_z": 1.0007817297,
+   "release_speed": 88.9,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.6562777692,
+   "plate_z": 3.0569135905,
+   "release_speed": 96.2,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.4198761271,
+   "plate_z": 2.7346739781,
+   "release_speed": 87.5,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.1423519021,
+   "plate_z": 2.5688373354,
+   "release_speed": 88.1,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.8600561317,
+   "plate_z": 1.885700585,
+   "release_speed": 87.7,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.9182368749,
+   "plate_z": 2.6244188758,
+   "release_speed": 94.9,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.8887995661,
+   "plate_z": 2.4716617051,
+   "release_speed": 93.7,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5479106582,
+   "plate_z": 2.0272836602,
+   "release_speed": 87.2,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.8944859025,
+   "plate_z": 1.217956252,
+   "release_speed": 86.8,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -1.7222012034,
+   "plate_z": 1.9204443929,
+   "release_speed": 85.5,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.2832687034,
+   "plate_z": 3.0858603974,
+   "release_speed": 86.5,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.0471562638,
+   "plate_z": 2.1143528565,
+   "release_speed": 86.4,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4634659284,
+   "plate_z": 2.9328249835,
+   "release_speed": 94.1,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -1.3459976972,
+   "plate_z": 3.0686272757,
+   "release_speed": 86.8,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5539829509,
+   "plate_z": 1.6932098531,
+   "release_speed": 86.9,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.2606567866,
+   "plate_z": 1.2233984961,
+   "release_speed": 87.1,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.9764416918,
+   "plate_z": 0.9936360701,
+   "release_speed": 86.6,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3352863498,
+   "plate_z": 0.8748078368,
+   "release_speed": 87.9,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.0492417164,
+   "plate_z": 2.2474189912,
+   "release_speed": 87.2,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1134319126,
+   "plate_z": 2.2117552441,
+   "release_speed": 93.9,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1927816426,
+   "plate_z": 2.802408183,
+   "release_speed": 94.8,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.6489308392,
+   "plate_z": 1.3136902758,
+   "release_speed": 87.9,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.1309341626,
+   "plate_z": 0.5244292797,
+   "release_speed": 85.9,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.2052800745,
+   "plate_z": 1.3992078858,
+   "release_speed": 87.6,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4551501795,
+   "plate_z": 1.5706217226,
+   "release_speed": 87.7,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.007792404,
+   "plate_z": 1.4890704924,
+   "release_speed": 88.6,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.5918403148,
+   "plate_z": 1.3951718831,
+   "release_speed": 94.3,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.9709101118,
+   "plate_z": 1.4729983798,
+   "release_speed": 87.2,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.3125573259,
+   "plate_z": 3.0979792664,
+   "release_speed": 95.0,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.2996559106,
+   "plate_z": 1.4360773112,
+   "release_speed": 86.3,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3921934564,
+   "plate_z": 3.1169463482,
+   "release_speed": 94.4,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0560363636,
+   "plate_z": 2.0493343522,
+   "release_speed": 95.1,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.0905142514,
+   "plate_z": 1.8089283306,
+   "release_speed": 88.0,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2924012545,
+   "plate_z": 1.5845544992,
+   "release_speed": 94.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4940342371,
+   "plate_z": 0.9085141641,
+   "release_speed": 87.3,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.8518209484,
+   "plate_z": 2.8335692397,
+   "release_speed": 94.3,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.2528393839,
+   "plate_z": 1.7003292711,
+   "release_speed": 87.2,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.2170610028,
+   "plate_z": 2.1033264341,
+   "release_speed": 94.6,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.3979013143,
+   "plate_z": 0.4372593278,
+   "release_speed": 88.0,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.8493599596,
+   "plate_z": 1.6725145357,
+   "release_speed": 96.3,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.5114294616,
+   "plate_z": 1.4674296933,
+   "release_speed": 87.2,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.8502530151,
+   "plate_z": 0.8250977285,
+   "release_speed": 86.7,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.6452918042,
+   "plate_z": 2.8650623337,
+   "release_speed": 95.0,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 2.3498452337,
+   "plate_z": 1.7225193974,
+   "release_speed": 88.2,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.0562872947,
+   "plate_z": 1.7229095129,
+   "release_speed": 85.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.1072872395,
+   "plate_z": 2.9538509641,
+   "release_speed": 86.3,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.238837859,
+   "plate_z": 3.6880863337,
+   "release_speed": 91.9,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4756107765,
+   "plate_z": 3.3404920059,
+   "release_speed": 92.8,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4018591984,
+   "plate_z": 1.8435764224,
+   "release_speed": 91.2,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.3862986324,
+   "plate_z": 2.6128719929,
+   "release_speed": 85.6,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4184352716,
+   "plate_z": 2.4661955369,
+   "release_speed": 93.0,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.5096596896,
+   "plate_z": 3.3465302981,
+   "release_speed": 93.5,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4020701354,
+   "plate_z": 1.6987306912,
+   "release_speed": 86.3,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4637681495,
+   "plate_z": 1.909371731,
+   "release_speed": 86.0,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.1938260566,
+   "plate_z": 1.5000732844,
+   "release_speed": 86.4,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.0340193302,
+   "plate_z": 1.5570863719,
+   "release_speed": 87.3,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.4300185102,
+   "plate_z": 3.6074751825,
+   "release_speed": 92.8,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.0070637688,
+   "plate_z": -0.1712103315,
+   "release_speed": 87.1,
+   "description": "blocked_ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.3525523251,
+   "plate_z": 3.3791486405,
+   "release_speed": 93.3,
+   "description": "swinging_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.0693230118,
+   "plate_z": 2.0981291984,
+   "release_speed": 92.7,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.8238783734,
+   "plate_z": 0.9580613534,
+   "release_speed": 93.3,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.5423049736,
+   "plate_z": 2.4235879958,
+   "release_speed": 93.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.961378613,
+   "plate_z": 2.5244565478,
+   "release_speed": 86.6,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.7308377552,
+   "plate_z": 0.6471264433,
+   "release_speed": 86.3,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.1880380221,
+   "plate_z": 0.8804477824,
+   "release_speed": 93.2,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.259332934,
+   "plate_z": 1.6719031139,
+   "release_speed": 88.6,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.003583635,
+   "plate_z": 2.044991765,
+   "release_speed": 87.7,
+   "description": "foul_tip"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": 0.1060415713,
+   "plate_z": 2.2987534639,
+   "release_speed": 87.4,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.82746715,
+   "plate_z": 2.008468659,
+   "release_speed": 94.9,
+   "description": "called_strike"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": -0.6544312646,
+   "plate_z": 0.8431459428,
+   "release_speed": 86.6,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.3399115233,
+   "plate_z": 2.4558127122,
+   "release_speed": 86.7,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.2359199162,
+   "plate_z": 4.4194481201,
+   "release_speed": 93.6,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 0.7109271001,
+   "plate_z": 3.1616539846,
+   "release_speed": 85.9,
+   "description": "ball"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4301458009,
+   "plate_z": 3.0535410124,
+   "release_speed": 86.8,
+   "description": "called_strike"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FS",
+   "pitch_name": "Split-Finger",
+   "plate_x": -0.4900384293,
+   "plate_z": 1.7647861309,
+   "release_speed": 86.7,
+   "description": "foul"
+  },
+  {
+   "stand": "L",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.0666686422,
+   "plate_z": 3.37866424,
+   "release_speed": 93.6,
+   "description": "foul"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": 0.2520153446,
+   "plate_z": 2.8970328789,
+   "release_speed": 94.9,
+   "description": "hit_into_play"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "SL",
+   "pitch_name": "Slider",
+   "plate_x": 1.1619106277,
+   "plate_z": 0.8783299111,
+   "release_speed": 86.9,
+   "description": "ball"
+  },
+  {
+   "stand": "R",
+   "pitch_type": "FF",
+   "pitch_name": "4-Seam Fastball",
+   "plate_x": -0.4611088551,
+   "plate_z": 2.375415629,
+   "release_speed": 94.6,
+   "description": "foul"
+  }
+ ],
+ "holman_sz": {
+  "top": 3.2083340263333335,
+  "bot": 1.6191592281551723
+ },
+ "atl_order": [
+  {
+   "spot": 1,
+   "name": "Drake Baldwin",
+   "batter": 686948,
+   "stand_vs_rhp": "L",
+   "stand_vs_lhp": "L",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 17
+  },
+  {
+   "spot": 2,
+   "name": "Ronald Acu\u00f1a Jr.",
+   "batter": 660670,
+   "stand_vs_rhp": "R",
+   "stand_vs_lhp": "R",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 15
+  },
+  {
+   "spot": 3,
+   "name": "Matt Olson",
+   "batter": 621566,
+   "stand_vs_rhp": "L",
+   "stand_vs_lhp": "L",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 18
+  },
+  {
+   "spot": 4,
+   "name": "Michael Harris II",
+   "batter": 671739,
+   "stand_vs_rhp": "L",
+   "stand_vs_lhp": "L",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 10
+  },
+  {
+   "spot": 5,
+   "name": "Mauricio Dub\u00f3n",
+   "batter": 643289,
+   "stand_vs_rhp": "R",
+   "stand_vs_lhp": "R",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 13
+  },
+  {
+   "spot": 6,
+   "name": "Ozzie Albies",
+   "batter": 645277,
+   "stand_vs_rhp": "L",
+   "stand_vs_lhp": "R",
+   "switch_hitter": true,
+   "pa_vs_phi_lhp": 15
+  },
+  {
+   "spot": 7,
+   "name": "Austin Riley",
+   "batter": 663586,
+   "stand_vs_rhp": "R",
+   "stand_vs_lhp": "R",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 12
+  },
+  {
+   "spot": 8,
+   "name": "Mike Yastrzemski",
+   "batter": 573262,
+   "stand_vs_rhp": "L",
+   "stand_vs_lhp": "L",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 3
+  },
+  {
+   "spot": 9,
+   "name": "Sean Murphy",
+   "batter": 669221,
+   "stand_vs_rhp": "R",
+   "stand_vs_lhp": "R",
+   "switch_hitter": false,
+   "pa_vs_phi_lhp": 3
+  }
+ ],
+ "opp_games": [
+  {
+   "game_date": "2026-04-08",
+   "pitches": 94,
+   "bf": 24,
+   "last_inning": 6,
+   "home": "SF",
+   "away": "PHI"
+  },
+  {
+   "game_date": "2026-04-28",
+   "pitches": 82,
+   "bf": 22,
+   "last_inning": 6,
+   "home": "PHI",
+   "away": "SF"
+  },
+  {
+   "game_date": "2026-09-06",
+   "pitches": 94,
+   "bf": 24,
+   "last_inning": 6,
+   "home": "PHI",
+   "away": "ATL"
+  }
+ ],
+ "opp_drift": [
+  {
+   "game_date": "2026-04-08",
+   "FC": 0.223,
+   "FF": 0.447,
+   "FS": 0.234,
+   "SI": 0.053,
+   "SL": 0.043
+  },
+  {
+   "game_date": "2026-04-28",
+   "FC": 0.146,
+   "FF": 0.549,
+   "FS": 0.268,
+   "SI": 0.0,
+   "SL": 0.037
+  },
+  {
+   "game_date": "2026-09-06",
+   "FC": 0.106,
+   "FF": 0.479,
+   "FS": 0.394,
+   "SI": 0.0,
+   "SL": 0.021
+  }
+ ],
+ "opp_by_stand": [
+  {
+   "stand": "L",
+   "pitches": 179,
+   "plate_apps": 47,
+   "bip": 32,
+   "hits": 5,
+   "hrs": 0.0,
+   "walks": 6,
+   "strikeouts": 9,
+   "ba": 0.128,
+   "obp": 0.234,
+   "slg": 0.154,
+   "ops": 0.388,
+   "woba": 0.192,
+   "krate": 0.191,
+   "bbrate": 0.128,
+   "hr_rate": 0.0
+  },
+  {
+   "stand": "R",
+   "pitches": 91,
+   "plate_apps": 23,
+   "bip": 18,
+   "hits": 8,
+   "hrs": 0.0,
+   "walks": 2,
+   "strikeouts": 3,
+   "ba": 0.381,
+   "obp": 0.435,
+   "slg": 0.524,
+   "ops": 0.959,
+   "woba": 0.419,
+   "krate": 0.13,
+   "bbrate": 0.087,
+   "hr_rate": 0.0
+  }
+ ],
+ "precedents": [
+  {
+   "game_pk": 823435,
+   "game_date": "2026-07-25",
+   "staff_bf": 35,
+   "staff_pitches": 133,
+   "arms": 7,
+   "max_inn": 9,
+   "bf_per_arm": 5.0
+  },
+  {
+   "game_pk": 823471,
+   "game_date": "2026-04-30",
+   "staff_bf": 50,
+   "staff_pitches": 193,
+   "arms": 7,
+   "max_inn": 10,
+   "bf_per_arm": 7.14
+  },
+  {
+   "game_pk": 824807,
+   "game_date": "2026-08-02",
+   "staff_bf": 19,
+   "staff_pitches": 88,
+   "arms": 3,
+   "max_inn": 5,
+   "bf_per_arm": 6.33
+  }
+ ],
+ "dq": [
+  {
+   "dimension": "completeness",
+   "check": "PHI pitching rows with null pitch_type",
+   "result": "48/22021",
+   "status": "PASS"
+  },
+  {
+   "dimension": "completeness",
+   "check": "Holman AAA rows with null release_speed/pfx",
+   "result": "0/348",
+   "status": "PASS"
+  },
+  {
+   "dimension": "validity",
+   "check": "entity lock \u2014 every subject resolved by MLBAM id, zero name filters",
+   "result": "9/9 ids",
+   "status": "PASS"
+  },
+  {
+   "dimension": "uniqueness",
+   "check": "duplicate (game_pk, at_bat_number, pitch_number) in pps",
+   "result": "0",
+   "status": "PASS"
+  },
+  {
+   "dimension": "consistency",
+   "check": "game_type \u2014 regular season only",
+   "result": "['R']",
+   "status": "PASS"
+  },
+  {
+   "dimension": "timeliness",
+   "check": "PHI log max date vs target game D+1",
+   "result": "2026-09-11 vs 2026-09-12 (T-1)",
+   "status": "PASS"
+  },
+  {
+   "dimension": "timeliness",
+   "check": "PHI log max date vs session date D+2",
+   "result": "2026-09-11 vs 2026-09-13 (T-2 \u2014 a 09-12 game, if played, is NOT in the cache)",
+   "status": "FAIL"
+  },
+  {
+   "dimension": "timeliness",
+   "check": "LHV log max date vs target",
+   "result": "2026-09-06 vs 2026-09-12 (T-6); Holman last logged 2026-08-30 (T-13)",
+   "status": "WARN"
+  },
+  {
+   "dimension": "comparability",
+   "check": "AAA wOBA/xwOBA suppressed (LV-1 / DQ-5)",
+   "result": "wBB..wHR absent from lhvp26; MLB constants NOT applied",
+   "status": "PASS"
+  },
+  {
+   "dimension": "accuracy",
+   "check": "opposing starter identity (client name -> MLBAM id)",
+   "result": "641816 inferred from 3-start log + RHP + FF/FS/FC arsenal + SF->ATL mid-season move; NOT independently confirmed",
+   "status": "WARN"
+  },
+  {
+   "dimension": "traceability",
+   "check": "every report figure traceable to a shipped receipt",
+   "result": "verified by dp_uc43_verification.py family F",
+   "status": "PASS"
+  },
+  {
+   "dimension": "volume",
+   "check": "Holman AAA sample vs the repo 50-PA batter floor / pitcher analogue",
+   "result": "104 PA, 348 pitches, 20 outings",
+   "status": "PASS"
+  }
+ ],
+ "defects": [
+  {
+   "defect": "D-1 whiff_rate inner-join",
+   "where": "Holman AAA stand x pitch",
+   "exposure": "6 groups present, 6 returned",
+   "impact": "0 dropped"
+  },
+  {
+   "defect": "D-1 whiff_rate inner-join",
+   "where": "Mayza MLB stand",
+   "exposure": "2 groups present, 2 returned",
+   "impact": "0 dropped"
+  },
+  {
+   "defect": "O-8 hard_hit_rate untracked BIP",
+   "where": "Holman AAA BIP",
+   "exposure": "6 of 73 BIP have null launch_speed",
+   "impact": "hard_hit_rate understated by up to 8.2% \u2014 KPI NOT SHIPPED for AAA tier"
+  },
+  {
+   "defect": "D-7/O-13 in_zone_rate NULL zone",
+   "where": "Holman AAA",
+   "exposure": "0 null zone of 348",
+   "impact": "0 exposure"
+  },
+  {
+   "defect": "D-7/O-13 in_zone_rate NULL zone",
+   "where": "PHI pitching 2026",
+   "exposure": "48 null zone of 22021",
+   "impact": "in_zone_rate inflated by <= 0.0022"
+  },
+  {
+   "defect": "O-14 bbrate intent_walk",
+   "where": "PHI pitching 2026",
+   "exposure": "11 intentional walks in the frame",
+   "impact": "bbrate is UNintentional-BB/PA; reported as such"
+  },
+  {
+   "defect": "O-3 launch_speed on fouls",
+   "where": "Holman AAA",
+   "exposure": "61 non-BIP rows carry launch_speed",
+   "impact": "never filter EV without type=='X' \u2014 respected"
+  },
+  {
+   "defect": "D-8 (NEW) is_start is pd.NA for relievers",
+   "where": "Bullpen_Functions.appearance_summary",
+   "exposure": "484 of 632 appearances return <NA>",
+   "impact": "pitcher_season_workload(relievers_only=True) returns an EMPTY frame, silently. Remediated build-local with .fillna(False)"
+  },
+  {
+   "defect": "D-9 (NEW) nresults cannot group on `batter`",
+   "where": "Baseball Functions.measure_calcs",
+   "exposure": "measure_calcs renames any column named 'batter' to 'pitches'",
+   "impact": "nresults(['batter'],df) -> KeyError \"['batter'] not in index\". Remediated build-local by aliasing to batter_id"
+  },
+  {
+   "defect": "DQ-5 comparability (uc-pos-015 LV-1)",
+   "where": "lhvp26.parquet",
+   "exposure": "no wBB/wHBP/w1B.. columns present; MLB wOBA constants would be the only source",
+   "impact": "wOBA/xwOBA NOT computed for the AAA tier; usage/velo/shape/whiff/chase/counting only"
+  }
+ ],
+ "pitch_colors": {
+  "4-Seam Fastball": "#D22D49",
+  "Sinker": "#FE9D00",
+  "Cutter": "#933F2C",
+  "Slider": "#EEE716",
+  "Sweeper": "#DDB33A",
+  "Slurve": "#93AFD4",
+  "Curveball": "#00D1ED",
+  "Knuckle Curve": "#6236CD",
+  "Slow Curve": "#274BA7",
+  "Changeup": "#1DBE3A",
+  "Split-Finger": "#3BACAC",
+  "Forkball": "#3BACAC",
+  "Screwball": "#60DB33",
+  "Knuckleball": "#3C44CF",
+  "Eephus": "#888888",
+  "Pitch Out": "#888888",
+  "Other": "#999999"
+ }
+}

@@ -1,0 +1,11 @@
+defect,where,exposure,impact
+D-1 whiff_rate inner-join,Holman AAA stand x pitch,"6 groups present, 6 returned",0 dropped
+D-1 whiff_rate inner-join,Mayza MLB stand,"2 groups present, 2 returned",0 dropped
+O-8 hard_hit_rate untracked BIP,Holman AAA BIP,6 of 73 BIP have null launch_speed,hard_hit_rate understated by up to 8.2% — KPI NOT SHIPPED for AAA tier
+D-7/O-13 in_zone_rate NULL zone,Holman AAA,0 null zone of 348,0 exposure
+D-7/O-13 in_zone_rate NULL zone,PHI pitching 2026,48 null zone of 22021,in_zone_rate inflated by <= 0.0022
+O-14 bbrate intent_walk,PHI pitching 2026,11 intentional walks in the frame,bbrate is UNintentional-BB/PA; reported as such
+O-3 launch_speed on fouls,Holman AAA,61 non-BIP rows carry launch_speed,never filter EV without type=='X' — respected
+D-8 (NEW) is_start is pd.NA for relievers,Bullpen_Functions.appearance_summary,484 of 632 appearances return <NA>,"pitcher_season_workload(relievers_only=True) returns an EMPTY frame, silently. Remediated build-local with .fillna(False)"
+D-9 (NEW) nresults cannot group on `batter`,Baseball Functions.measure_calcs,measure_calcs renames any column named 'batter' to 'pitches',"nresults(['batter'],df) -> KeyError ""['batter'] not in index"". Remediated build-local by aliasing to batter_id"
+DQ-5 comparability (uc-pos-015 LV-1),lhvp26.parquet,no wBB/wHBP/w1B.. columns present; MLB wOBA constants would be the only source,wOBA/xwOBA NOT computed for the AAA tier; usage/velo/shape/whiff/chase/counting only
