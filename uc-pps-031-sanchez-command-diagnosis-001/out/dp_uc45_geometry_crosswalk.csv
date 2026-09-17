@@ -1,0 +1,5 @@
+check,pitches,disagree,disagree_share
+SZ shadow vs OZ rectangular band (corners),10985,38,0.0035
+geometric zone vs Statcast zone attribute,10985,440,0.0401
+"edge_rate_twin == governed edge_rate (max abs diff, by season)",10985,0,0.0004
+Attack Zone (uc-pps-022) 0.33 ft shadow vs SZ 0.245 ft edge_out,10985,604,0.055

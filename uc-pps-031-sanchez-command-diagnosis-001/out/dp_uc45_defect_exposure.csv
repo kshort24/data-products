@@ -1,0 +1,9 @@
+defect,grain,exposed,note
+D-1/D-2 whiff_rate inner join drops zero-whiff groups,subject start,2,groups lost
+D-7/O-13 chase_rate counts NULL zone as in-zone,subject pitch,1,2025 only; 1 pitch
+O-8 hard_hit_rate counts untracked BIP as not-hard-hit,subject BIP,8,untracked BIP
+O-14 bbrate excludes intent_walk from numerator,subject PA,0,IBB count 2021-26
+fpsr returns only groups with >=1 first-pitch ball,subject start,1,groups lost
+chase_rate inner i/j merge -> NaN for zero-chase groups,subject month,0,groups NaN
+O-18 NEW: 2026 zone rails redefined (ABS) — YoY zone metrics confounded,league,1,controlled with PN-1 + ZC-1; see zone_rail_audit
+D-9 nresults(['batter']) KeyError,n/a,0,not called at batter grain

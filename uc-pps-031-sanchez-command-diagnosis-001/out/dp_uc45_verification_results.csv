@@ -1,0 +1,437 @@
+family,check,status,detail
+A,subject maps to one player_name,PASS,
+A,subject rows are all pitching-role,PASS,
+A,subject throws L only,PASS,
+A,subject pitches 2021,PASS,211
+A,subject pitches 2022,PASS,662
+A,subject pitches 2023,PASS,1460
+A,subject pitches 2024,PASS,2797
+A,subject pitches 2025,PASS,2896
+A,subject pitches 2026,PASS,2960
+A,anchor date 2026-09-15,PASS,2026-09-15
+A,no duplicate keys in raw R rows,PASS,
+A,2026 appearances = 31,PASS,
+A,excluded non-R subject pitches = 50 spring + 315 post,PASS,"{'D': 277, 'S': 50, 'L': 38}"
+A,subject intentional walks = 0,PASS,
+A,subject untracked location = 1,PASS,
+A,2026 arsenal = sinker/changeup/slider only,PASS,"{'Slider', 'Sinker', 'Changeup'}"
+B,season 2021-22 pitches,PASS,873 vs 873
+B,season 2021-22 plate_apps,PASS,236 vs 236
+B,season 2021-22 walks,PASS,23 vs 23
+B,season 2021-22 bbrate,PASS,0.09745762711864407 vs 0.097
+B,season 2021-22 in_zone_rate,PASS,0.47880870561282934 vs 0.479
+B,season 2021-22 chase_rate,PASS,0.2923076923076923 vs 0.292
+B,season 2021-22 pitch_share_ahead,PASS,0.27491408934707906 vs 0.2749
+B,season 2021-22 pitch_share_behind,PASS,0.290950744558992 vs 0.291
+B,season 2021-22 edge_rate,PASS,0.33906071019473083 vs 0.339
+B,season 2021-22 shadow_zone_rate,PASS,0.6036655211912944 vs 0.6037
+B,season 2021-22 shadow_miss_rate,PASS,0.3963344788087056 vs 0.3963
+B,season 2021-22 beyond_shadow_chase_rate,PASS,0.24566473988439305 vs 0.2457
+B,season 2021-22 n_beyond,PASS,346 vs 346
+B,season 2021-22 xwoba,PASS,0.33439622641509437 vs 0.3343962264150943
+B,season 2021-22 fpsr,PASS,0.576271186440678 vs 0.576271186440678
+B,season 2023 pitches,PASS,1460 vs 1460
+B,season 2023 plate_apps,PASS,396 vs 396
+B,season 2023 walks,PASS,16 vs 16
+B,season 2023 bbrate,PASS,0.04040404040404041 vs 0.04
+B,season 2023 in_zone_rate,PASS,0.5075342465753425 vs 0.508
+B,season 2023 chase_rate,PASS,0.3477051460361613 vs 0.348
+B,season 2023 pitch_share_ahead,PASS,0.31575342465753425 vs 0.3158
+B,season 2023 pitch_share_behind,PASS,0.22397260273972602 vs 0.224
+B,season 2023 edge_rate,PASS,0.3527397260273973 vs 0.353
+B,season 2023 shadow_zone_rate,PASS,0.6171232876712329 vs 0.6171
+B,season 2023 shadow_miss_rate,PASS,0.38287671232876713 vs 0.3829
+B,season 2023 beyond_shadow_chase_rate,PASS,0.33273703041144903 vs 0.3327
+B,season 2023 n_beyond,PASS,559 vs 559
+B,season 2023 xwoba,PASS,0.37160498220640564 vs 0.3716049822064057
+B,season 2023 fpsr,PASS,0.6649874055415617 vs 0.6649874055415617
+B,season 2024 pitches,PASS,2797 vs 2797
+B,season 2024 plate_apps,PASS,755 vs 755
+B,season 2024 walks,PASS,44 vs 44
+B,season 2024 bbrate,PASS,0.05827814569536424 vs 0.058
+B,season 2024 in_zone_rate,PASS,0.4966035037540222 vs 0.497
+B,season 2024 chase_rate,PASS,0.3643465909090909 vs 0.364
+B,season 2024 pitch_share_ahead,PASS,0.328923846978906 vs 0.3289
+B,season 2024 pitch_share_behind,PASS,0.23846978905970684 vs 0.2385
+B,season 2024 edge_rate,PASS,0.3535931355023239 vs 0.354
+B,season 2024 shadow_zone_rate,PASS,0.6271004647836969 vs 0.6271
+B,season 2024 shadow_miss_rate,PASS,0.3728995352163032 vs 0.3729
+B,season 2024 beyond_shadow_chase_rate,PASS,0.2914669223394056 vs 0.2915
+B,season 2024 n_beyond,PASS,1043 vs 1043
+B,season 2024 xwoba,PASS,0.2938836853333333 vs 0.2938836853333333
+B,season 2024 fpsr,PASS,0.6578249336870027 vs 0.6578249336870027
+B,season 2025 pitches,PASS,2896 vs 2896
+B,season 2025 plate_apps,PASS,809 vs 809
+B,season 2025 walks,PASS,44 vs 44
+B,season 2025 bbrate,PASS,0.054388133498145856 vs 0.054
+B,season 2025 in_zone_rate,PASS,0.5189917127071824 vs 0.519
+B,season 2025 chase_rate,PASS,0.31586503948312994 vs 0.316
+B,season 2025 pitch_share_ahead,PASS,0.31146408839779005 vs 0.3115
+B,season 2025 pitch_share_behind,PASS,0.22790055248618785 vs 0.2279
+B,season 2025 edge_rate,PASS,0.36511226252158896 vs 0.365
+B,season 2025 shadow_zone_rate,PASS,0.6556131260794473 vs 0.6556
+B,season 2025 shadow_miss_rate,PASS,0.34438687392055267 vs 0.3444
+B,season 2025 beyond_shadow_chase_rate,PASS,0.2587763289869609 vs 0.2588
+B,season 2025 n_beyond,PASS,997 vs 997
+B,season 2025 xwoba,PASS,0.2785198827930175 vs 0.2785198827930175
+B,season 2025 fpsr,PASS,0.6534653465346535 vs 0.6534653465346535
+B,season 2026 pitches,PASS,2960 vs 2960
+B,season 2026 plate_apps,PASS,805 vs 805
+B,season 2026 walks,PASS,44 vs 44
+B,season 2026 bbrate,PASS,0.0546583850931677 vs 0.055
+B,season 2026 in_zone_rate,PASS,0.4652027027027027 vs 0.465
+B,season 2026 chase_rate,PASS,0.36197094125078966 vs 0.362
+B,season 2026 pitch_share_ahead,PASS,0.31317567567567567 vs 0.3132
+B,season 2026 pitch_share_behind,PASS,0.24493243243243243 vs 0.2449
+B,season 2026 edge_rate,PASS,0.3584459459459459 vs 0.358
+B,season 2026 shadow_zone_rate,PASS,0.5925675675675676 vs 0.5926
+B,season 2026 shadow_miss_rate,PASS,0.40743243243243243 vs 0.4074
+B,season 2026 beyond_shadow_chase_rate,PASS,0.30597014925373134 vs 0.306
+B,season 2026 n_beyond,PASS,1206 vs 1206
+B,season 2026 xwoba,PASS,0.2859297841907152 vs 0.2859297841907152
+B,season 2026 fpsr,PASS,0.6496894409937888 vs 0.6496894409937888
+B,half 20231H pitches,PASS,
+B,half 20231H plate_apps,PASS,
+B,half 20231H walks,PASS,
+B,half 20231H bbrate,PASS,
+B,half 20231H in_zone_rate,PASS,
+B,half 20231H chase_rate,PASS,
+B,half 20231H pitch_share_ahead,PASS,
+B,half 20231H edge_rate,PASS,
+B,half 20231H shadow_miss_rate,PASS,
+B,half 20231H beyond_shadow_chase_rate,PASS,
+B,half 20231H n_beyond,PASS,
+B,half 20232H pitches,PASS,
+B,half 20232H plate_apps,PASS,
+B,half 20232H walks,PASS,
+B,half 20232H bbrate,PASS,
+B,half 20232H in_zone_rate,PASS,
+B,half 20232H chase_rate,PASS,
+B,half 20232H pitch_share_ahead,PASS,
+B,half 20232H edge_rate,PASS,
+B,half 20232H shadow_miss_rate,PASS,
+B,half 20232H beyond_shadow_chase_rate,PASS,
+B,half 20232H n_beyond,PASS,
+B,half 20241H pitches,PASS,
+B,half 20241H plate_apps,PASS,
+B,half 20241H walks,PASS,
+B,half 20241H bbrate,PASS,
+B,half 20241H in_zone_rate,PASS,
+B,half 20241H chase_rate,PASS,
+B,half 20241H pitch_share_ahead,PASS,
+B,half 20241H edge_rate,PASS,
+B,half 20241H shadow_miss_rate,PASS,
+B,half 20241H beyond_shadow_chase_rate,PASS,
+B,half 20241H n_beyond,PASS,
+B,half 20242H pitches,PASS,
+B,half 20242H plate_apps,PASS,
+B,half 20242H walks,PASS,
+B,half 20242H bbrate,PASS,
+B,half 20242H in_zone_rate,PASS,
+B,half 20242H chase_rate,PASS,
+B,half 20242H pitch_share_ahead,PASS,
+B,half 20242H edge_rate,PASS,
+B,half 20242H shadow_miss_rate,PASS,
+B,half 20242H beyond_shadow_chase_rate,PASS,
+B,half 20242H n_beyond,PASS,
+B,half 20251H pitches,PASS,
+B,half 20251H plate_apps,PASS,
+B,half 20251H walks,PASS,
+B,half 20251H bbrate,PASS,
+B,half 20251H in_zone_rate,PASS,
+B,half 20251H chase_rate,PASS,
+B,half 20251H pitch_share_ahead,PASS,
+B,half 20251H edge_rate,PASS,
+B,half 20251H shadow_miss_rate,PASS,
+B,half 20251H beyond_shadow_chase_rate,PASS,
+B,half 20251H n_beyond,PASS,
+B,half 20252H pitches,PASS,
+B,half 20252H plate_apps,PASS,
+B,half 20252H walks,PASS,
+B,half 20252H bbrate,PASS,
+B,half 20252H in_zone_rate,PASS,
+B,half 20252H chase_rate,PASS,
+B,half 20252H pitch_share_ahead,PASS,
+B,half 20252H edge_rate,PASS,
+B,half 20252H shadow_miss_rate,PASS,
+B,half 20252H beyond_shadow_chase_rate,PASS,
+B,half 20252H n_beyond,PASS,
+B,half 20261H pitches,PASS,
+B,half 20261H plate_apps,PASS,
+B,half 20261H walks,PASS,
+B,half 20261H bbrate,PASS,
+B,half 20261H in_zone_rate,PASS,
+B,half 20261H chase_rate,PASS,
+B,half 20261H pitch_share_ahead,PASS,
+B,half 20261H edge_rate,PASS,
+B,half 20261H shadow_miss_rate,PASS,
+B,half 20261H beyond_shadow_chase_rate,PASS,
+B,half 20261H n_beyond,PASS,
+B,half 20262H pitches,PASS,
+B,half 20262H plate_apps,PASS,
+B,half 20262H walks,PASS,
+B,half 20262H bbrate,PASS,
+B,half 20262H in_zone_rate,PASS,
+B,half 20262H chase_rate,PASS,
+B,half 20262H pitch_share_ahead,PASS,
+B,half 20262H edge_rate,PASS,
+B,half 20262H shadow_miss_rate,PASS,
+B,half 20262H beyond_shadow_chase_rate,PASS,
+B,half 20262H n_beyond,PASS,
+B,month 3 pitches,PASS,
+B,month 3 shadow_miss_rate,PASS,
+B,month 3 beyond_shadow_chase_rate,PASS,
+B,month 3 pitch_share_ahead,PASS,
+B,month 4 pitches,PASS,
+B,month 4 shadow_miss_rate,PASS,
+B,month 4 beyond_shadow_chase_rate,PASS,
+B,month 4 pitch_share_ahead,PASS,
+B,month 5 pitches,PASS,
+B,month 5 shadow_miss_rate,PASS,
+B,month 5 beyond_shadow_chase_rate,PASS,
+B,month 5 pitch_share_ahead,PASS,
+B,month 6 pitches,PASS,
+B,month 6 shadow_miss_rate,PASS,
+B,month 6 beyond_shadow_chase_rate,PASS,
+B,month 6 pitch_share_ahead,PASS,
+B,month 7 pitches,PASS,
+B,month 7 shadow_miss_rate,PASS,
+B,month 7 beyond_shadow_chase_rate,PASS,
+B,month 7 pitch_share_ahead,PASS,
+B,month 8 pitches,PASS,
+B,month 8 shadow_miss_rate,PASS,
+B,month 8 beyond_shadow_chase_rate,PASS,
+B,month 8 pitch_share_ahead,PASS,
+B,month 9 pitches,PASS,
+B,month 9 shadow_miss_rate,PASS,
+B,month 9 beyond_shadow_chase_rate,PASS,
+B,month 9 pitch_share_ahead,PASS,
+B,league 20251H in_zone_rate,PASS,
+B,league 20251H chase_rate,PASS,
+B,league 20251H shadow_miss_rate,PASS,
+B,league 20251H beyond_shadow_chase_rate,PASS,
+B,league 20251H pitch_share_ahead,PASS,
+B,league 20252H in_zone_rate,PASS,
+B,league 20252H chase_rate,PASS,
+B,league 20252H shadow_miss_rate,PASS,
+B,league 20252H beyond_shadow_chase_rate,PASS,
+B,league 20252H pitch_share_ahead,PASS,
+B,league 20261H in_zone_rate,PASS,
+B,league 20261H chase_rate,PASS,
+B,league 20261H shadow_miss_rate,PASS,
+B,league 20261H beyond_shadow_chase_rate,PASS,
+B,league 20261H pitch_share_ahead,PASS,
+B,league 20262H in_zone_rate,PASS,
+B,league 20262H chase_rate,PASS,
+B,league 20262H shadow_miss_rate,PASS,
+B,league 20262H beyond_shadow_chase_rate,PASS,
+B,league 20262H pitch_share_ahead,PASS,
+B,"start log has 31 rows, 11 in 2H",PASS,
+B,start log pitches sum = 2960,PASS,
+B,start log walks match per start,PASS,
+C,pitch log rows = tracked 2025-26 subject pitches,PASS,"(5855, 5855)"
+C,independent region distribution equals receipt (2025-26),PASS,
+C,edge_rate twin = governed edge_rate (all seasons),PASS,
+C,corner disagreement = 38,PASS,38
+C,every corner disagreement is a corner pitch,PASS,
+C,geometric vs zone attribute disagreement = 440,PASS,
+C,0.33 ft shadow would reclaim 604 beyond pitches,PASS,
+C,regions partition located pitches,PASS,
+C,sign rule: RHB HBP plate_x < 0 < LHB,PASS,
+C,2026 2H low-miss share,PASS,0.4349775784753363
+C,2026 2H glove-side share (LHP: plate_x<0),PASS,0.23766816143497757
+D,rail constancy share 2025,PASS,0.0
+D,rail constancy share 2026,PASS,1.0
+D,same-batter cohort n = 32,PASS,
+D,same-batter median dtop = -0.2344,PASS,-0.23438320199999985
+D,84% of same batters have a lower top,PASS,
+D,ZC-1 2025 coverage = 0.78,PASS,0.7799654576856649
+D,ZC-1 2025 native shadow miss (covered),PASS,
+D,ZC-1 2025 on 2026 rails shadow miss,PASS,
+D,league common-rail shadow-miss drift,PASS,0.010829498513973301
+D,decomposition identity (shadow miss),PASS,
+D,subject-specific share 64%,PASS,
+D,"geo zone: 50% own, 34% rail",PASS,
+D,PN-1 native cohort = 12,PASS,
+D,PN-1 native peer median shadow-miss delta,PASS,0.06003108025413306
+D,PN-1/CR chase-beyond: subject ranks last (largest rise) of 11,PASS,
+D,"PN-1/CR shadow miss netted +.027, 4th-largest rise",PASS,
+D,"PN-1/CR geo zone netted -.031, 3rd-largest drop",PASS,
+D,league in-zone .503 -> .465,PASS,
+E,P1 half z/p,PASS,"(np.float64(1.2031162044961092), np.float64(0.22893135548960863))"
+E,P3 half z/p,PASS,"(np.float64(-2.6691923688526504), np.float64(0.007603388886489704))"
+E,P4 half z/p,PASS,"(np.float64(-3.062576903325727), np.float64(0.0021944008180876384))"
+E,E1 half z/p (the proof),PASS,"(np.float64(-2.648704297766396), np.float64(0.008080099575690447))"
+E,E1 half significant at .05,PASS,
+E,verdict P1 season = not supported,PASS,
+E,verdict P3 season = contradicted,PASS,
+E,verdict P3/P4/E1 half = supported,PASS,
+E,verdict K2 both windows = flat,PASS,
+E,verdict K1 season survives netting,PASS,
+E,split n_beyond Changeup,PASS,
+E,split n_beyond vs RHB,PASS,
+E,split n_beyond pitcher ahead (balls < strikes),PASS,
+E,changeup chase-beyond p = .013,PASS,0.013189219950130893
+G,reproduction row count (3 seasons + 7 months),PASS,
+G,"notebook (2023, 'All') pitches",PASS,1460 vs 1460
+G,"notebook (2023, 'All') plate_apps",PASS,396 vs 396
+G,"notebook (2023, 'All') bbrate",PASS,0.04 vs 0.04
+G,"notebook (2023, 'All') in_zone_rate",PASS,0.508 vs 0.508
+G,"notebook (2023, 'All') chase_rate",PASS,0.348 vs 0.348
+G,"notebook (2023, 'All') barrel_rate",PASS,0.082 vs 0.082
+G,"notebook (2023, 'All') hard_hit_rate",PASS,0.40213523131672596 vs 0.402
+G,"notebook (2023, 'All') First Pitch Strike Rate",PASS,0.6649874055415617 vs 0.665
+G,"notebook (2024, 'All') pitches",PASS,2797 vs 2797
+G,"notebook (2024, 'All') plate_apps",PASS,755 vs 755
+G,"notebook (2024, 'All') bbrate",PASS,0.058 vs 0.058
+G,"notebook (2024, 'All') in_zone_rate",PASS,0.497 vs 0.497
+G,"notebook (2024, 'All') chase_rate",PASS,0.364 vs 0.364
+G,"notebook (2024, 'All') barrel_rate",PASS,0.054 vs 0.054
+G,"notebook (2024, 'All') hard_hit_rate",PASS,0.34470377019748655 vs 0.345
+G,"notebook (2024, 'All') First Pitch Strike Rate",PASS,0.6578249336870027 vs 0.658
+G,"notebook (2025, 'All') pitches",PASS,2896 vs 2896
+G,"notebook (2025, 'All') plate_apps",PASS,809 vs 809
+G,"notebook (2025, 'All') bbrate",PASS,0.054 vs 0.054
+G,"notebook (2025, 'All') in_zone_rate",PASS,0.519 vs 0.519
+G,"notebook (2025, 'All') chase_rate",PASS,0.316 vs 0.316
+G,"notebook (2025, 'All') barrel_rate",PASS,0.057 vs 0.057
+G,"notebook (2025, 'All') hard_hit_rate",PASS,0.3981651376146789 vs 0.398
+G,"notebook (2025, 'All') First Pitch Strike Rate",PASS,0.6534653465346535 vs 0.653
+G,"notebook (2026, '3') pitches",PASS,87 vs 87
+G,"notebook (2026, '3') plate_apps",PASS,21 vs 21
+G,"notebook (2026, '3') bbrate",PASS,0.0 vs 0.0
+G,"notebook (2026, '3') in_zone_rate",PASS,0.517 vs 0.517
+G,"notebook (2026, '3') chase_rate",PASS,0.31 vs 0.31
+G,"notebook (2026, '3') barrel_rate",PASS,0.182 vs 0.182
+G,"notebook (2026, '3') hard_hit_rate",PASS,0.7272727272727273 vs 0.727
+G,"notebook (2026, '3') First Pitch Strike Rate",PASS,0.6666666666666666 vs 0.667
+G,"notebook (2026, '4') pitches",PASS,562 vs 562
+G,"notebook (2026, '4') plate_apps",PASS,159 vs 159
+G,"notebook (2026, '4') bbrate",PASS,0.082 vs 0.082
+G,"notebook (2026, '4') in_zone_rate",PASS,0.475 vs 0.475
+G,"notebook (2026, '4') chase_rate",PASS,0.359 vs 0.359
+G,"notebook (2026, '4') barrel_rate",PASS,0.104 vs 0.104
+G,"notebook (2026, '4') hard_hit_rate",PASS,0.41509433962264153 vs 0.415
+G,"notebook (2026, '4') First Pitch Strike Rate",PASS,0.6918238993710691 vs 0.692
+G,"notebook (2026, '5') pitches",PASS,504 vs 504
+G,"notebook (2026, '5') plate_apps",PASS,143 vs 143
+G,"notebook (2026, '5') bbrate",PASS,0.021 vs 0.021
+G,"notebook (2026, '5') in_zone_rate",PASS,0.478 vs 0.478
+G,"notebook (2026, '5') chase_rate",PASS,0.388 vs 0.388
+G,"notebook (2026, '5') barrel_rate",PASS,0.053 vs 0.053
+G,"notebook (2026, '5') hard_hit_rate",PASS,0.43617021276595747 vs 0.436
+G,"notebook (2026, '5') First Pitch Strike Rate",PASS,0.6713286713286714 vs 0.671
+G,"notebook (2026, '6') pitches",PASS,564 vs 564
+G,"notebook (2026, '6') plate_apps",PASS,152 vs 152
+G,"notebook (2026, '6') bbrate",PASS,0.046 vs 0.046
+G,"notebook (2026, '6') in_zone_rate",PASS,0.465 vs 0.465
+G,"notebook (2026, '6') chase_rate",PASS,0.417 vs 0.417
+G,"notebook (2026, '6') barrel_rate",PASS,0.078 vs 0.078
+G,"notebook (2026, '6') hard_hit_rate",PASS,0.4077669902912621 vs 0.408
+G,"notebook (2026, '6') First Pitch Strike Rate",PASS,0.6447368421052632 vs 0.645
+G,"notebook (2026, '7') pitches",PASS,386 vs 386
+G,"notebook (2026, '7') plate_apps",PASS,103 vs 103
+G,"notebook (2026, '7') bbrate",PASS,0.049 vs 0.049
+G,"notebook (2026, '7') in_zone_rate",PASS,0.451 vs 0.451
+G,"notebook (2026, '7') chase_rate",PASS,0.377 vs 0.377
+G,"notebook (2026, '7') barrel_rate",PASS,0.067 vs 0.067
+G,"notebook (2026, '7') hard_hit_rate",PASS,0.4266666666666667 vs 0.427
+G,"notebook (2026, '7') First Pitch Strike Rate",PASS,0.6310679611650486 vs 0.631
+G,"notebook (2026, '8') pitches",PASS,570 vs 570
+G,"notebook (2026, '8') plate_apps",PASS,148 vs 148
+G,"notebook (2026, '8') bbrate",PASS,0.074 vs 0.074
+G,"notebook (2026, '8') in_zone_rate",PASS,0.451 vs 0.451
+G,"notebook (2026, '8') chase_rate",PASS,0.313 vs 0.313
+G,"notebook (2026, '8') barrel_rate",PASS,0.033 vs 0.033
+G,"notebook (2026, '8') hard_hit_rate",PASS,0.36666666666666664 vs 0.367
+G,"notebook (2026, '8') First Pitch Strike Rate",PASS,0.6148648648648649 vs 0.615
+G,"notebook (2026, '9') pitches",PASS,287 vs 287
+G,"notebook (2026, '9') plate_apps",PASS,79 vs 79
+G,"notebook (2026, '9') bbrate",PASS,0.063 vs 0.063
+G,"notebook (2026, '9') in_zone_rate",PASS,0.456 vs 0.456
+G,"notebook (2026, '9') chase_rate",PASS,0.308 vs 0.308
+G,"notebook (2026, '9') barrel_rate",PASS,0.1 vs 0.1
+G,"notebook (2026, '9') hard_hit_rate",PASS,0.35 vs 0.35
+G,"notebook (2026, '9') First Pitch Strike Rate",PASS,0.620253164556962 vs 0.62
+H,Section A byte-identical to dp_uc44 Section A (barrel_rate insert only),PASS,
+H,A2 edge_rate byte-identical to dp_uc38,PASS,
+H,barrel_rate byte-identical to notebook cell 58,PASS,
+H,BALL_FT is the ratified 2.94/12,PASS,
+H,edge_rate absent from Baseball Functions notebook (E-2),PASS,
+H,dashboard has no external script/link/fetch,PASS,
+H,"dashboard embeds 5,855 pitches",PASS,
+H,figure fig1_premise_scorecard exists,PASS,
+H,figure fig2_shadow_map exists,PASS,
+H,figure fig3_chase_beyond_shadow exists,PASS,
+H,figure fig4_rail_decomposition exists,PASS,
+H,figure fig5_where_it_leaks exists,PASS,
+H,figure fig6_start_log exists,PASS,
+H,report figure resolves out/dp_uc45_fig1_premise_scorecard.png,PASS,
+H,report figure resolves out/dp_uc45_fig2_shadow_map.png,PASS,
+H,report figure resolves out/dp_uc45_fig4_rail_decomposition.png,PASS,
+H,report figure resolves out/dp_uc45_fig6_start_log.png,PASS,
+H,report figure resolves out/dp_uc45_fig3_chase_beyond_shadow.png,PASS,
+H,report figure resolves out/dp_uc45_fig5_where_it_leaks.png,PASS,
+H,PDF exists and > 500 KB,PASS,
+H,DQ scorecard has 0 FAIL,PASS,"{'PASS': 16, 'WARN': 1}"
+H,defect exposure D-1/D-2 = 2 appearances,PASS,
+F,month chase values match receipt,PASS,
+F,narrative: season walk .054 → .055,PASS,**.054 → .055**
+F,narrative: season chase .316 → .362,PASS,(.316 → .362)
+F,narrative: season in-zone .519 → .465,PASS,**.519 → .465**
+F,narrative: ahead .312 → .313,PASS,"(.311 → .313, essentially flat)"
+F,narrative: half walks .048 → .068,PASS,Walks **.048 → .068**
+F,narrative: half in-zone,PASS,in-zone **.472 → .452**
+F,narrative: half chase,PASS,chase **.386 → .320**
+F,narrative: half ahead,PASS,**.333 → .278**
+F,narrative: edge flat,PASS,(**.365 → .358**)
+F,narrative: shadow miss .344 to .407,PASS,from **.344 to .407**
+F,narrative: own +.038 (64%),PASS,**+.038 of that is his own (64%)**
+F,narrative: 1H chase beyond 33.3%,PASS,**33.3%**
+F,narrative: 2H chase beyond 26.0%,PASS,**26.0%**
+F,narrative: E1 z/p,PASS,"(z = −2.65, p = .008)"
+F,narrative: league beyond chase .274 → .276,PASS,.274 → .276
+F,narrative: ahead chase .401 to .307,PASS,**.401 to .307**
+F,narrative: ahead league .320,PASS,(.320)
+F,narrative: walks counts,PASS,(25/525 → 19/280)
+F,narrative: BB+HBP .051 → .082,PASS,.051 → .082
+F,narrative: behind .229 → .273,PASS,.229 to .273
+F,narrative: three-ball .149 → .196,PASS,.149 to .196
+F,narrative: FPSR .661 → .629,PASS,**.661 → .629**
+F,narrative: wOBA .263 → .298,PASS,**.263 (2025) to .298 (2026)**
+F,narrative: xwOBA .279 → .286,PASS,**.279 to .286**
+F,narrative: K .262 → .267,PASS,(.262 → .267)
+F,narrative: half xwOBA .279 → .299,PASS,xwOBA **.279 → .299**
+F,narrative: half K,PASS,K% .274 → .254
+F,narrative: region heart 2026 2H,PASS,"| heart | inside, > 1 ball from every edge | .291 | .238 | .228 |"
+F,narrative: region beyond row,PASS,| **.344** | **.399** | **.422** |
+F,narrative: crosswalk corners,PASS,"**38 of 10,985**"
+F,narrative: crosswalk attack-zone 5.5%,PASS,**5.5%**
+F,narrative: crosswalk zone attr 4.0%,PASS,**4.0%**
+F,narrative: rail audit dtop,PASS,a median **0.234 ft**
+F,narrative: rail audit 84%,PASS,**84%**
+F,narrative: ZC-1 .348 → .359,PASS,from **.348 to .359**
+F,narrative: PN-1 native,PASS,(+.063) matches the peer median (+.060)
+F,narrative: decomp row shadow,PASS,| Shadow Miss Rate | .348 | +.011 | +.011 | **+.038 (64%)** | .407 |
+F,narrative: decomp row geo,PASS,"| Zone rate, geometric | .490 | −.022 | −.010 | **−.032 (50%)** | .425 |"
+F,narrative: PN-1/CR netted,PASS,**+.027 more than the peer median**
+F,narrative: PN-1/CR geo netted,PASS,**−.031 more**
+F,narrative: PN-1/CR chase netted,PASS,"**+.039 more, the largest rise in the group**"
+F,narrative: miss depth,PASS,**43.5%**
+F,narrative: glove share,PASS,from **14.9% to 23.8%**
+F,narrative: high share,PASS,from 2.9% to 5.4%
+F,narrative: RHB 2H BB,PASS,BB% **.080**
+F,narrative: month chase,PASS,**.319 / .332 / .344 / .329**
+F,narrative: miss depth 2H,PASS,**0.659 ft**
+F,narrative: miss depth 1H,PASS,up from 0.595
+F,narrative: start medians 2025,PASS,**.371** of the time in the first half and **.311**
+F,narrative: start medians 2026,PASS,**.401 / .418** against a field median of **.413 / .415**
+F,narrative: CH vs RHB miss,PASS,**.541 → .621** (695 → 330 pitches)
+F,narrative: CH vs RHB chase,PASS,**.399 → .302**
+F,narrative: CH vs RHB whiff,PASS,whiff **.438 → .465**
+F,narrative: SI vs RHB,PASS,(**.270 → .256**)
+F,narrative: SI zone,PASS,**.597** of the time
+F,narrative: BL5 62.1% / 54.1%,PASS,**62.1%** of the changeups he throws to righties miss the shadow (up from 54.1%)
+F,narrative: BL5 30.2% / 39.9%,PASS,"**30.2%** of the time, down from 39.9%"
+F,narrative: xwOBAcon,PASS,(xwOBA on contact is only .361 → .365 across the break)
+F,receipt count stated in report footer,PASS,29

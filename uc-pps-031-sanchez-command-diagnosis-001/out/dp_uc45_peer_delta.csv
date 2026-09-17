@@ -1,0 +1,28 @@
+metric,y0,y1,cohort_n,min_pitches,peer_median_delta,subject_in_cohort,subject_2024,subject_2025,subject_delta,peer_netted_delta,subject_rank_most_negative,basis,subject_2026
+in_zone_rate,2024,2025,13,200,0.026,True,0.497,0.519,0.022,-0.004,6,native_rails,
+chase_rate,2024,2025,13,200,0.0,True,0.364,0.316,-0.048,-0.048,1,native_rails,
+shadow_zone_rate,2024,2025,13,200,0.0072,True,0.6271,0.6556,0.0285,0.0213,11,native_rails,
+shadow_miss_rate,2024,2025,13,200,-0.0072,True,0.3729,0.3444,-0.0285,-0.0213,3,native_rails,
+beyond_shadow_chase_rate,2024,2025,13,200,-0.0053,True,0.2915,0.2588,-0.0327,-0.0274,2,native_rails,
+edge_out_chase_rate,2024,2025,13,200,-0.0021,True,0.5832,0.4896,-0.0936,-0.0915,3,native_rails,
+edge_rate,2024,2025,13,200,0.005,True,0.354,0.365,0.011,0.006,9,native_rails,
+geo_zone_rate,2024,2025,13,200,0.0193,True,0.4616,0.4891,0.0275,0.0082,9,native_rails,
+bbrate,2024,2025,13,200,-0.004,True,0.058,0.054,-0.004,0.0,7,native_rails,
+pitch_share_ahead,2024,2025,13,200,-0.004,True,0.3289,0.3115,-0.0174,-0.0134,2,native_rails,
+First Pitch Strike Rate,2024,2025,13,200,-0.0044,True,0.6578,0.6535,-0.0044,0.0,7,native_rails,
+in_zone_rate,2025,2026,12,200,-0.06,True,,0.519,-0.054,0.006,7,native_rails,0.465
+chase_rate,2025,2026,12,200,0.032,True,,0.316,0.046,0.014,9,native_rails,0.362
+shadow_zone_rate,2025,2026,12,200,-0.06,True,,0.6556,-0.063,-0.003,6,native_rails,0.5926
+shadow_miss_rate,2025,2026,12,200,0.06,True,,0.3444,0.063,0.003,7,native_rails,0.4074
+beyond_shadow_chase_rate,2025,2026,12,200,0.0381,True,,0.2588,0.0472,0.0091,11,native_rails,0.306
+edge_out_chase_rate,2025,2026,12,200,0.0462,True,,0.4896,0.0568,0.0106,8,native_rails,0.5464
+edge_rate,2025,2026,12,200,-0.0055,True,,0.365,-0.007,-0.0015,6,native_rails,0.358
+geo_zone_rate,2025,2026,12,200,-0.0606,True,,0.4891,-0.0641,-0.0035,6,native_rails,0.425
+bbrate,2025,2026,12,200,0.02,True,,0.054,0.001,-0.019,3,native_rails,0.055
+pitch_share_ahead,2025,2026,12,200,-0.0186,True,,0.3115,0.0017,0.0202,8,native_rails,0.3132
+First Pitch Strike Rate,2025,2026,12,200,-0.0109,True,,0.6535,-0.0038,0.0071,7,native_rails,0.6497
+shadow_zone_rate,2025,2026,11,200,-0.0219,True,,0.6413,-0.0487,-0.0268,4,2026_abs_rails,0.5926
+shadow_miss_rate,2025,2026,11,200,0.0219,True,,0.3587,0.0487,0.0268,8,2026_abs_rails,0.4074
+beyond_shadow_chase_rate,2025,2026,11,200,0.0086,True,,0.258,0.048,0.0394,11,2026_abs_rails,0.306
+edge_out_chase_rate,2025,2026,11,200,0.001,True,,0.5204,0.026,0.025,7,2026_abs_rails,0.5464
+geo_zone_rate,2025,2026,11,200,-0.012,True,,0.4677,-0.0427,-0.0307,3,2026_abs_rails,0.425

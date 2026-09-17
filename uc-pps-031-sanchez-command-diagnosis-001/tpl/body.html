@@ -1,0 +1,46 @@
+<div class="wrap">
+<header class="hd">
+  <h1>Cristopher Sánchez — is he near the zone?</h1>
+  <p class="sub">LHP · Phillies · 2026 command diagnosis · data through 2026-09-15 &nbsp;·&nbsp; <strong>UC #45 · uc-pps-031 · dp_uc45</strong> · v1.0.0</p>
+  <div class="rulebar"></div>
+</header>
+<div class="warn"><strong>Read first:</strong> the 2026 strike zone is a fixed, height-based (ABS) zone per hitter, and its top sits about 2.8 in lower than 2025's (O-18). A 2025 → 2026 zone delta on this page is <em>raw</em>. The rail-controlled split is in the report (§3): <strong>64%</strong> of the shadow-miss rise is Sánchez's own. The 2026 1H → 2H comparison uses the same rails on both sides.</div>
+
+<div class="controls" role="group" aria-label="Filters">
+  <div class="cgroup"><span class="clab">Window</span><span id="winSeg" class="cgroup"></span></div>
+  <div class="cgroup"><span class="clab">Compare to</span><span id="cmpSeg" class="cgroup"></span></div>
+  <div class="cgroup"><span class="clab">Batter</span><span id="standSeg" class="cgroup"></span></div>
+  <div class="cgroup"><span class="clab">Pitch</span><span id="pitchSeg" class="cgroup"></span></div>
+</div>
+
+<div class="tiles" id="tiles"></div>
+
+<div class="grid">
+  <section class="panel">
+    <h2>The shadow map</h2>
+    <div class="tabs" id="mapTabs"></div>
+    <div class="legend" id="mapLegend"></div>
+    <div id="map"></div>
+    <p class="note">Black = rulebook zone (±0.83 ft × each pitch's own rails, drawn at the window median). Red dashed = the zone grown by one baseball (2.94 in), rounded at the corners, the same geometry as the governed Edge Rate. Vertical position is shifted to each hitter's zone floor. Each pitch's colour comes from its own hitter's rails. Catcher's view: +x is the first-base side, which is Sánchez's arm side.</p>
+  </section>
+  <section class="panel">
+    <h2>Chase beyond the shadow, by window</h2>
+    <div id="bars"></div>
+    <p class="note">Swings on pitches more than one baseball outside the zone, divided by those pitches (SZ-3). Grey ticks: every pitcher in a Phillies game over the same window, for all pitch types and both sides (payload receipt). Bars follow the batter and pitch filters.</p>
+    <h2 style="margin-top:14px">Trend</h2>
+    <div class="tabs"><select id="trendSel" aria-label="Trend metric"></select></div>
+    <div id="trend"></div>
+    <p class="note">2026 by month (March holds one start). Filters don't apply here: these are receipt values (<code>dp_uc45_month_panel_2026.csv</code>).</p>
+  </section>
+  <section class="panel full">
+    <h2>The premises, adjudicated</h2>
+    <div class="scroll"><table class="tbl" id="premTbl"></table></div>
+  </section>
+  <section class="panel full">
+    <h2>2026 start log</h2>
+    <div class="scroll"><table class="tbl" id="startTbl"></table></div>
+  </section>
+</div>
+<footer>Self-contained page: no external code or data calls. Every figure is computed in the browser from the embedded pitch log (<code>dp_uc45_pitch_locations.csv</code>, 5,855 tracked pitches from 2025–26), or read from the payload receipts. PA-based rates under a pitch filter count PAs that ended on the selected pitch type. Walk rate is unintentional walks per PA (kernel <code>bbrate</code>). Built <span id="built"></span>.</footer>
+</div>
+<div class="tip" id="tip"></div>
