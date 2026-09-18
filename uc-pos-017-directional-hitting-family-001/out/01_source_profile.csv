@@ -1,0 +1,4 @@
+game_year,bip_all,bip_classifiable,bip_untracked,untracked_pct,bb_type_null,la_null,la_null_pct,ev_null,ev_null_pct,dist_null,dist_null_pct,dist_zero
+2024,4217,4217,0,0.0,0,8,0.19,11,0.261,16,0.379,8
+2025,4238,4232,6,0.142,0,6,0.142,8,0.189,9,0.212,3
+2026,3905,3902,3,0.077,0,12,0.307,12,0.307,15,0.384,11

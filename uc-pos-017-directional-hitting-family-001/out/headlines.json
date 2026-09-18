@@ -1,0 +1,34 @@
+{
+  "2024": {
+    "n_bip": 4217,
+    "pull_rate": 0.474982,
+    "straight_rate": 0.213659,
+    "oppo_rate": 0.311359,
+    "oppo_ld_rate": 0.257426,
+    "oppo_bip": 1313,
+    "pull_air_rate_v1": 0.194214,
+    "pull_air_rate_v0": 0.194214
+  },
+  "2025": {
+    "n_bip": 4232,
+    "pull_rate": 0.47259,
+    "straight_rate": 0.234877,
+    "oppo_rate": 0.292533,
+    "oppo_ld_rate": 0.254443,
+    "oppo_bip": 1238,
+    "pull_air_rate_v1": 0.195652,
+    "pull_air_rate_v0": 0.195375
+  },
+  "2026": {
+    "n_bip": 3902,
+    "pull_rate": 0.456945,
+    "straight_rate": 0.244746,
+    "oppo_rate": 0.298309,
+    "oppo_ld_rate": 0.251718,
+    "oppo_bip": 1164,
+    "pull_air_rate_v1": 0.182471,
+    "pull_air_rate_v0": 0.18233
+  },
+  "qualified_hitters_2026": 17,
+  "verification": "49/49"
+}

@@ -1,0 +1,4 @@
+game_year,n_bip,pull_n,straight_n,oppo_n,pull_rate,straight_rate,oppo_rate,below_floor
+2024,4217,2003,901,1313,0.474982,0.213659,0.311359,False
+2025,4232,2000,994,1238,0.47259,0.234877,0.292533,False
+2026,3902,1783,955,1164,0.456945,0.244746,0.298309,False

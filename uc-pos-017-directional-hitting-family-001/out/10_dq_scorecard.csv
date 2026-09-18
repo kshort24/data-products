@@ -1,0 +1,19 @@
+rule_id,dimension,cde,rule,status,observed,threshold
+DQ-01,completeness,"hc_x, hc_y",Untracked BIP share of all BIP <= 2%,PASS,9/12360 = 0.073%,<=2%
+DQ-02,completeness,bb_type,bb_type is never NULL on a BIP (complete classifier),PASS,0 NULL,0
+DQ-03.la,completeness,launch_angle,"launch_angle NULL share on BIP <= 2% (sensor boundary, reported not filled)",PASS,26/12360 = 0.210%,<=2%
+DQ-03.ev,completeness,launch_speed,"launch_speed NULL share on BIP <= 2% (sensor boundary, reported not filled)",PASS,31/12360 = 0.251%,<=2%
+DQ-03.dist,completeness,hit_distance_sc,"hit_distance_sc NULL share on BIP <= 2% (sensor boundary, reported not filled)",PASS,40/12360 = 0.324%,<=2%
+DQ-04,uniqueness,PITCH_KEY,No duplicate game_pk/at_bat_number/pitch_number in the BIP frame,PASS,0 duplicates,0
+DQ-05,validity,launch_angle,"launch_angle within [-90, 90]",PASS,"[-90.0, 89.0]","[-90,90]"
+DQ-06,validity,launch_speed,"launch_speed within [5, 130] mph",PASS,"[11.5, 117.2]","[5,130]"
+DQ-07,accuracy,hit_distance_sc,"hit_distance_sc == 0 is a sensor placeholder, not a measurement; count must be disclosed",WARN,"22 rows, by bb_type {'ground_ball': 22}",disclose
+DQ-08,validity,hit_direction,Every classifiable BIP receives one of Pull/Straightaway/Oppo,PASS,"0 ""not grouped""",0
+DQ-09,validity,stand,"stand is exactly {'L','R'}",PASS,"['L', 'R']","{'L','R'}"
+DQ-10,consistency,direction rates,pull_rate + straight_rate + oppo_rate == 1 in every cell (DR-3),PASS,max |dev| = 0.00e+00,1.0
+DQ-11,consistency,direction counts,pull_n + straight_n + oppo_n == n_bip in every cell,PASS,all cells match,exact
+DQ-12,consistency,bb_type share,bb_type shares sum to 1 within each level cell,PASS,max |dev| = 0.00e+00,1.0
+DQ-13,consistency,profile n,Each n_* <= bips in its cell (a sensor count cannot exceed the population),PASS,0 violations,0
+DQ-14,traceability,profile n,"Cells where a sensor n is below the cell population are visible, not zero-filled",PASS,8 cells carry a visible sensor gap,>0 disclosed
+DQ-15,timeliness,game_date,Source parquet current within 7 days of run date,PASS,max game_date 2026-09-16,<=7d
+DQ-16,conformity,below_floor,FL-1 flag present and populated on every published directional frame,PASS,3 of 20 player cells suppressed,flag present

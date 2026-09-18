@@ -1,0 +1,10 @@
+phase,description,bid_tokens_in,bid_tokens_out,bid_minutes,actual_tokens_in,actual_tokens_out,actual_minutes
+T1,"Intake, Rule-1 receipt, source profile, ratification decisions",35000,8000,20,41000,7000,14
+T2,"Specs: hit_direction extraction, direction_rate, bb_type_profile, oppo_ld materialisation",20000,22000,25,9000,6000,4
+T3,Implementation + hand-computed fixtures + validation run receipts,25000,20000,25,22000,19000,12
+T4,Governance pack 00-08 + Function Certification Checklist + DQ execution,18000,28000,30,14000,31000,16
+T5,Directional notecards (hand-drawn SVG),12000,14000,18,6000,9000,5
+T6,"Verification A-E (49) + family F (74) + remediation of V-2..V-6",15000,10000,15,17000,12000,9
+T7,"Close: README, notebook patch, telemetry, ledger",10000,16000,15,8000,11000,6
+CONTINGENCY,Environmental contingency 5%,7000,6000,7,0,0,0
+TOTAL,,142000,124000,155,117000,95000,66
