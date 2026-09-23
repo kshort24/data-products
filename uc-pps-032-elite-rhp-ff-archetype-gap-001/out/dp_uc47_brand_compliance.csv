@@ -1,0 +1,43 @@
+figure,check,status,note,score,can_publish
+fig1_archetype_map,color_palette_used,pass,"Brand colors used: #002D72, #E81828",100.0,True
+fig1_archetype_map,plotly_conventions_met,pass,plotly_white template + Arial font detected,100.0,True
+fig1_archetype_map,voice_consistent,pass,Tone reads factual; no corporate-speak terms,100.0,True
+fig1_archetype_map,title_factual,pass,Title is specific (subject + qualifier/date),100.0,True
+fig1_archetype_map,governance_tags_applied,pass,All governance tag dimensions present,100.0,True
+fig1_archetype_map,hover_fields_complete,n/a,aggregate chart — brand-center REQUIRED_HOVER sets apply to pitch/batted-ball charts only,,
+fig2_wheeler_velo,color_palette_used,pass,"Brand colors used: #002D72, #E81828",100.0,True
+fig2_wheeler_velo,plotly_conventions_met,pass,plotly_white template + Arial font detected,100.0,True
+fig2_wheeler_velo,voice_consistent,pass,Tone reads factual; no corporate-speak terms,100.0,True
+fig2_wheeler_velo,title_factual,pass,Title is specific (subject + qualifier/date),100.0,True
+fig2_wheeler_velo,governance_tags_applied,pass,All governance tag dimensions present,100.0,True
+fig2_wheeler_velo,hover_fields_complete,n/a,aggregate chart — brand-center REQUIRED_HOVER sets apply to pitch/batted-ball charts only,,
+fig3_painter_halves,color_palette_used,pass,"Brand colors used: #8C8C8C, #E81828",100.0,True
+fig3_painter_halves,plotly_conventions_met,pass,plotly_white template + Arial font detected,100.0,True
+fig3_painter_halves,voice_consistent,pass,Tone reads factual; no corporate-speak terms,100.0,True
+fig3_painter_halves,title_factual,pass,Title is specific (subject + qualifier/date),100.0,True
+fig3_painter_halves,governance_tags_applied,pass,All governance tag dimensions present,100.0,True
+fig3_painter_halves,hover_fields_complete,n/a,aggregate chart — brand-center REQUIRED_HOVER sets apply to pitch/batted-ball charts only,,
+fig4_external_board,color_palette_used,pass,"Brand colors used: #002D72, #8C8C8C, #E81828",100.0,True
+fig4_external_board,plotly_conventions_met,pass,plotly_white template + Arial font detected,100.0,True
+fig4_external_board,voice_consistent,pass,Tone reads factual; no corporate-speak terms,100.0,True
+fig4_external_board,title_factual,pass,Title is specific (subject + qualifier/date),100.0,True
+fig4_external_board,governance_tags_applied,pass,All governance tag dimensions present,100.0,True
+fig4_external_board,hover_fields_complete,n/a,aggregate chart — brand-center REQUIRED_HOVER sets apply to pitch/batted-ball charts only,,
+fig5_needle,color_palette_used,pass,"Brand colors used: #002D72, #8C8C8C, #E81828",100.0,True
+fig5_needle,plotly_conventions_met,pass,plotly_white template + Arial font detected,100.0,True
+fig5_needle,voice_consistent,pass,Tone reads factual; no corporate-speak terms,100.0,True
+fig5_needle,title_factual,pass,Title is specific (subject + qualifier/date),100.0,True
+fig5_needle,governance_tags_applied,pass,All governance tag dimensions present,100.0,True
+fig5_needle,hover_fields_complete,n/a,aggregate chart — brand-center REQUIRED_HOVER sets apply to pitch/batted-ball charts only,,
+fig6_weight_sensitivity,color_palette_used,pass,Brand colors used: #E81828,100.0,True
+fig6_weight_sensitivity,plotly_conventions_met,pass,plotly_white template + Arial font detected,100.0,True
+fig6_weight_sensitivity,voice_consistent,pass,Tone reads factual; no corporate-speak terms,100.0,True
+fig6_weight_sensitivity,title_factual,pass,Title is specific (subject + qualifier/date),100.0,True
+fig6_weight_sensitivity,governance_tags_applied,pass,All governance tag dimensions present,100.0,True
+fig6_weight_sensitivity,hover_fields_complete,n/a,aggregate chart — brand-center REQUIRED_HOVER sets apply to pitch/batted-ball charts only,,
+fig7_stabilization,color_palette_used,pass,"Brand colors used: #002D72, #E81828",100.0,True
+fig7_stabilization,plotly_conventions_met,pass,plotly_white template + Arial font detected,100.0,True
+fig7_stabilization,voice_consistent,pass,Tone reads factual; no corporate-speak terms,100.0,True
+fig7_stabilization,title_factual,pass,Title is specific (subject + qualifier/date),100.0,True
+fig7_stabilization,governance_tags_applied,pass,All governance tag dimensions present,100.0,True
+fig7_stabilization,hover_fields_complete,n/a,aggregate chart — brand-center REQUIRED_HOVER sets apply to pitch/batted-ball charts only,,

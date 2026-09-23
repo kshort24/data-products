@@ -1,0 +1,11 @@
+step,rows
+phils_rows,554289
+nphl_files,128
+nphl_rows,905751
+nphl_milb_files,15
+nphl_rows_milb_removed,164755
+nphl_rows_dup_of_phils,30229
+nphl_rows_internal_dup,17464
+union_rows_all_game_types,1247592
+union_rows_regular_season,1219975
+union_dup_pitch_keys,0

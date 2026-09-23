@@ -1,0 +1,252 @@
+dp_uc47 verification — 241/241 PASS
+
+  family A: 22/22
+  family B: 11/11
+  family C: 41/41
+  family D: 19/19
+  family E: 28/28
+  family F: 120/120
+
+FAILURES:
+
+[A] PASS  parent kernel sha256 pinned
+[A] PASS  SG-1 mean -> 50
+[A] PASS  SG-1 +1 SD -> 60
+[A] PASS  SG-1 clips at 80
+[A] PASS  SG-1 lower-is-better flips sign
+[A] PASS  SG-1 NaN in -> NaN out
+[A] PASS  SG-1 n<5 -> NaN
+[A] PASS  _round5 half-up 57.5 -> 60
+[A] PASS  SG-5 labels
+[A] PASS  SG-7 shrink halfway at n=k
+[A] PASS  SG-7 large n barely moves
+[A] PASS  SG-7 NaN stays NaN
+[A] PASS  SG-6 adjusts a drifting metric
+[A] PASS  SG-6 leaves a flat metric alone
+[A] PASS  SG-6 ref-year rows unchanged
+[A] PASS  AF-3 archetype flag = both axes plus
+[A] PASS  AF-3 thin flag below pop floor
+[A] PASS  AF-3 thin arm excluded from population
+[A] PASS  AF-5 share = 100/1000
+[A] PASS  AF-6 displaces the lowest RP
+[A] PASS  AF-6 delta EFS = V/T
+[A] PASS  AF-6 delta score = V*(60-45)/T
+[B] PASS  no duplicate pitch keys
+[B] PASS  no MiLB rows
+[B] PASS  regular season only
+[B] PASS  row accounting closes
+[B] PASS  receipt matches rebuild
+[B] PASS  15 MiLB files identified
+[B] PASS  team pull giants-of-rangers-of-24 is batter-keyed
+[B] PASS  pdodgers is pitcher-keyed
+[B] PASS  independent dedup gives same row count
+[B] PASS  population = 405 pitcher-seasons >=100 FF
+[B] PASS  population count via plain groupby
+[C] PASS  680742 2026 n
+[C] PASS  680742 2026 velo
+[C] PASS  680742 2026 ride
+[C] PASS  680742 2026 spin
+[C] PASS  680742 2026 whiff
+[C] PASS  680742 2026 rv100
+[C] PASS  680742 2026 whiff == Baseball Functions whiff_rate
+[C] PASS  554430 2023 n
+[C] PASS  554430 2023 velo
+[C] PASS  554430 2023 ride
+[C] PASS  554430 2023 spin
+[C] PASS  554430 2023 whiff
+[C] PASS  554430 2023 rv100
+[C] PASS  554430 2023 whiff == Baseball Functions whiff_rate
+[C] PASS  661395 2026 n
+[C] PASS  661395 2026 velo
+[C] PASS  661395 2026 ride
+[C] PASS  661395 2026 spin
+[C] PASS  661395 2026 whiff
+[C] PASS  661395 2026 rv100
+[C] PASS  661395 2026 whiff == Baseball Functions whiff_rate
+[C] PASS  691725 2026 n
+[C] PASS  691725 2026 velo
+[C] PASS  691725 2026 ride
+[C] PASS  691725 2026 spin
+[C] PASS  691725 2026 whiff
+[C] PASS  691725 2026 rv100
+[C] PASS  691725 2026 whiff == Baseball Functions whiff_rate
+[C] PASS  686934 2026 n
+[C] PASS  686934 2026 velo
+[C] PASS  686934 2026 ride
+[C] PASS  686934 2026 spin
+[C] PASS  686934 2026 whiff
+[C] PASS  686934 2026 rv100
+[C] PASS  686934 2026 whiff == Baseball Functions whiff_rate
+[C] PASS  staff RHP FF total = 4,201
+[C] PASS  Bowlan PHI FF = 467
+[C] PASS  EFS = 467/4201
+[C] PASS  anchor = 2026-09-20
+[C] PASS  Misiorowski 2026 = 1 game, 69 FF, 23/40 whiffs
+[C] PASS  Misiorowski start date 2026-06-12
+[D] PASS  payload rows = graded receipt rows
+[D] PASS  slider formula at w=0.5 reproduces efc_score
+[D] PASS  cohort ranks reproduce at w=0.0
+[D] PASS  cohort ranks reproduce at w=0.25
+[D] PASS  cohort ranks reproduce at w=0.5
+[D] PASS  cohort ranks reproduce at w=0.75
+[D] PASS  cohort ranks reproduce at w=1.0
+[D] PASS  dashboard is offline (no external src/href)
+[D] PASS  dashboard embeds plotly.js
+[D] PASS  fig1_archetype_map png+json both exist
+[D] PASS  fig2_wheeler_velo png+json both exist
+[D] PASS  fig3_painter_halves png+json both exist
+[D] PASS  fig4_external_board png+json both exist
+[D] PASS  fig5_needle png+json both exist
+[D] PASS  fig6_weight_sensitivity png+json both exist
+[D] PASS  fig7_stabilization png+json both exist
+[D] PASS  fig2 box medians == receipt
+[D] PASS  no RANKED candidate out-scores Bowlan 2026
+[D] PASS  ranked board all >=100 FF; watch all 50-99
+[E] PASS  DQ: zero FAIL
+[E] PASS  DQ: 16 PASS / 3 WARN
+[E] PASS  brand-center: all scored checks pass
+[E] PASS  brand-center: 7 figures x 5 checks
+[E] PASS  palette validator: light mode passes
+[E] PASS  report figure exists: out/dp_uc47_fig1_archetype_map.png
+[E] PASS  report figure exists: out/dp_uc47_fig2_wheeler_velo.png
+[E] PASS  report figure exists: out/dp_uc47_fig3_painter_halves.png
+[E] PASS  report figure exists: out/dp_uc47_fig6_weight_sensitivity.png
+[E] PASS  report figure exists: out/dp_uc47_fig4_external_board.png
+[E] PASS  report figure exists: out/dp_uc47_fig5_needle.png
+[E] PASS  report figure exists: out/dp_uc47_fig7_stabilization.png
+[E] PASS  no 'ff_elite_stuff_flag' used as a live name in kernel
+[E] PASS  entity locks are ids
+[E] PASS  package file present: 00_dpo_orchestration_record.md
+[E] PASS  package file present: 01_strategy_intake.md
+[E] PASS  package file present: 02_engineering_design.md
+[E] PASS  package file present: 03_governance.md
+[E] PASS  package file present: 04_engineering_build.md
+[E] PASS  package file present: 05_quality_certification.md
+[E] PASS  package file present: 06_consumer_success.md
+[E] PASS  package file present: 07_platform_marketing.md
+[E] PASS  package file present: README.md
+[E] PASS  package file present: BID_2026-09-22_uc-pps-032-elite-rhp-ff-archetype-gap.md
+[E] PASS  package file present: uc-pps-032-Elite RHP FF Archetype Gap 20260922.md
+[E] PASS  package file present: uc_ledger_AI_PATCH_uc-pps-032-elite-rhp-ff-archetype-gap.md
+[E] PASS  package file present: dp_uc47_elite_ff_archetype_gap_report.pdf
+[E] PASS  package file present: dp_uc47_archetype_explorer.html
+[F] PASS  universe MiLB removed
+[F] PASS  universe dup of phils
+[F] PASS  universe internal dup
+[F] PASS  union rows
+[F] PASS  phils rows
+[F] PASS  nphl rows
+[F] PASS  pop 405
+[F] PASS  elite 11
+[F] PASS  tier table elite
+[F] PASS  tier results-only
+[F] PASS  tier shape-only
+[F] PASS  tier neither
+[F] PASS  bowlan velo
+[F] PASS  bowlan rv
+[F] PASS  bowlan grades
+[F] PASS  bowlan rank
+[F] PASS  bowlan component grades
+[F] PASS  bowlan whiff/rv grades
+[F] PASS  Buehler 2020 is #1
+[F] PASS  efs total
+[F] PASS  efs elite
+[F] PASS  efs share
+[F] PASS  efs shape flag
+[F] PASS  efs results flag
+[F] PASS  ohtani score
+[F] PASS  bowlan score
+[F] PASS  duran score
+[F] PASS  gap vs bowlan
+[F] PASS  gap bowlan out
+[F] PASS  misiorowski velo
+[F] PASS  misiorowski detail
+[F] PASS  misiorowski stab
+[F] PASS  misiorowski score
+[F] PASS  misiorowski raw->gov
+[F] PASS  V_SP
+[F] PASS  casparius efs
+[F] PASS  elite SP efs
+[F] PASS  rotation scores
+[F] PASS  nola
+[F] PASS  needle Shohei Ohtani
+[F] PASS  needle Dylan Cease
+[F] PASS  needle Chase Burns
+[F] PASS  needle kopech
+[F] PASS  needle casparius
+[F] PASS  needle misiorowski
+[F] PASS  board size
+[F] PASS  only one ranked ELITE = Casparius
+[F] PASS  board row Shohei Ohtani
+[F] PASS  board row Michael Kopech
+[F] PASS  board row Dylan Cease
+[F] PASS  board row Ben Casparius
+[F] PASS  board row Chase Burns
+[F] PASS  board row Emmet Sheehan
+[F] PASS  board row Mick Abel
+[F] PASS  casparius detail
+[F] PASS  skenes
+[F] PASS  skenes 8th
+[F] PASS  cohort best Jonathan Bowlan
+[F] PASS  cohort latest Jonathan Bowlan
+[F] PASS  cohort best Zack Wheeler
+[F] PASS  cohort latest Zack Wheeler
+[F] PASS  cohort best Jhoan Duran
+[F] PASS  cohort latest Jhoan Duran
+[F] PASS  cohort best Alex McFarlane
+[F] PASS  cohort latest Alex McFarlane
+[F] PASS  cohort best Seranthony Domínguez
+[F] PASS  cohort latest Seranthony Domínguez
+[F] PASS  cohort best Andrew Painter
+[F] PASS  cohort latest Andrew Painter
+[F] PASS  cohort ranks in population
+[F] PASS  Wheeler 9 seasons, 0 elite, 8 results-only
+[F] PASS  Wheeler shape never above 55; results 65-70 since 2021
+[F] PASS  Duran velo 75-80, ride 35-45, spin 30-40
+[F] PASS  mcfarlane
+[F] PASS  painter whiff
+[F] PASS  painter rv
+[F] PASS  Seranthony 2022 whiff 70; 2024 55/55
+[F] PASS  weight winners (Duran@0, Bowlan@.25-.75, McFarlane@1)
+[F] PASS  Bowlan 2nd at both extremes
+[F] PASS  HP-1a
+[F] PASS  HP-1a receipt
+[F] PASS  HP-1b receipt
+[F] PASS  HP-1b
+[F] PASS  HP-1c 2021 3.7% and 0 since 2023
+[F] PASS  HP-2
+[F] PASS  HP-3
+[F] PASS  HP-3 prose
+[F] PASS  HP-4
+[F] PASS  HP-4 prose
+[F] PASS  HP-5
+[F] PASS  HP-6a
+[F] PASS  HP-6b
+[F] PASS  HP-6c
+[F] PASS  HP verdicts in report match receipt
+[F] PASS  frame dups
+[F] PASS  frame milb
+[F] PASS  frame lhp
+[F] PASS  frame 63.6% vs 64.5%
+[F] PASS  frame pct
+[F] PASS  name agreement
+[F] PASS  5 unnamed pop seasons
+[F] PASS  whiff k
+[F] PASS  rv k
+[F] PASS  velo drift
+[F] PASS  drift shift
+[F] PASS  drift p-values < .01; ride/whiff/rv not adjusted
+[F] PASS  sensitivity: Bowlan #1 in all 6
+[F] PASS  sensitivity: board #1 Ohtani x4, Kopech x2
+[F] PASS  sensitivity row in report: governed (stabilized + trend-a
+[F] PASS  sensitivity row in report: no stabilization (trend only)
+[F] PASS  sensitivity row in report: no trend adjustment (stabilize
+[F] PASS  sensitivity row in report: ungoverned (raw values)
+[F] PASS  sensitivity row in report: SG-2 classic population (Phill
+[F] PASS  sensitivity row in report: COMPLETE-coverage population o
+[F] PASS  normality: ride & rv fail p<.001; others pass
+[F] PASS  twin agreement
+[F] PASS  twin max div 5, skew flags 0
+[F] PASS  dq
+[F] PASS  partial coverage
+[F] PASS  shape-flag / results-flag seasons sum

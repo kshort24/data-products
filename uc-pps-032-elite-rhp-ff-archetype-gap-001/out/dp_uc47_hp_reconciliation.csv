@@ -1,0 +1,11 @@
+id,claim,source,client_value,governed_value,verdict
+HP-1a,"Wheeler FF velocity ""clearly trending down""",September 2026.ipynb c101 chart 1,visual,"median 97.0 (2020) -> 95.2 (2026); slope -0.30 mph/season, p=0.021",SUPPORTED
+HP-1b,"""the middle 50% of his FFs in 2026 roughly matches 2024""",same subtitle,band drawn at 94.7-95.9,2024 IQR 94.6-96.0 vs 2026 IQR 94.7-95.9; overlap 86%,SUPPORTED
+HP-1c,"""Not approaching that 99 mph mark like prior years""",same subtitle,99 mph reference line,"99+ share: 2020 1.7%, 2021 3.7%, 2022 0.1%, 2023 0.0%, 2024 0.0%, 2025 0.0%, 2026 0.0%; 2026 max 97.8",SUPPORTED
+HP-2,"Painter ""has elite velo""",c101 chart 2 subtitle,visual vs Wheeler 2026 band,velo 96.6 mph -> grade 55 (above average),PARTLY
+HP-3,"Painter FF spin: ""Clear difference after his demotion""",c101 chart 3,2257 vs 2401 rpm (his >=1500 filter removes 1 pitch),"delta +144 rpm = 1.07 population SD, Welch t=-14.87, p=3.8e-42",SUPPORTED
+HP-4,"Painter FF ride: ""Noticeably more after going down to AAA""",c101 chart 4,16.3 vs 17.0 in,"delta +0.76 in = 0.34 population SD (~3.4 grade pts), Welch t=-5.26, p=2e-07",SUPPORTED (small)
+HP-5,"Duran index card (9/17): ""70 FF""",September 2026.ipynb c85,70,"shape 50 / results 75 / composite 65; velo 75, ride 40, spin 30, whiff 80, RV 65",PARTLY
+HP-6a,"Bowlan ""gets exceptional vert on his Four-Seam Fastball""","Brand Guidelines & Graph Samples, Bowlan violin/histogram","his frame: Bowlan's 25th-pctile ride sits above 63.6% of all FF (480,913 pitches, all hands, MiLB + dups incl.)","governed frame: 64.5% of 414,697; ride grade 60 (2025) / 60 (2026)",SUPPORTED
+HP-6b,"Bowlan spin: ""Does he also spin it exceptionally? Not really.""","same, commented-out cell",not exceptional,spin grade 50 (2025) / 55 (2026),SUPPORTED
+HP-6c,"Bowlan: ""his FF whiff rate is ridiculous?"" / ""in 2025 his FF got a ton of whiff""",same,question,2025 whiff 0.435 on 124 swings -> grade 80; 2026 0.370 -> 75,SUPPORTED

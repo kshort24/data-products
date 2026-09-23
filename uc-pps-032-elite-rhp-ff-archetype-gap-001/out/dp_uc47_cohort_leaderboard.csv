@@ -1,0 +1,7 @@
+arm,pitcher,graded_seasons,elite_seasons,best_year,best_efc,best_composite,best_shape,best_results,best_tier,best_rank_in_population,latest_year,latest_efc,latest_composite,latest_shape,latest_results,latest_tier,latest_thin,latest_n,latest_is_phi,cohort_rank_best,cohort_rank_latest
+Jonathan Bowlan,680742,2,1,2026,65.0013,70.0,60.0,75.0,ELITE,2,2026,65.0013,70.0,60.0,75.0,ELITE,False,467,True,1,1
+Zack Wheeler,554430,9,0,2023,62.43,65.0,55.0,70.0,RESULTS-ONLY,7,2026,57.071,60.0,50.0,65.0,RESULTS-ONLY,False,877,True,2,4
+Jhoan Duran,661395,5,0,2026,60.4263,65.0,50.0,75.0,RESULTS-ONLY,14,2026,60.4263,65.0,50.0,75.0,RESULTS-ONLY,False,241,True,3,2
+Alex McFarlane,686934,1,0,2026,58.6078,60.0,60.0,55.0,SHAPE-ONLY,31,2026,58.6078,60.0,60.0,55.0,SHAPE-ONLY,True,94,True,4,3
+Seranthony Domínguez,622554,5,0,2022,57.8757,60.0,55.0,65.0,RESULTS-ONLY,39,2024,52.3231,55.0,55.0,55.0,NOT ELITE,False,263,True,5,5
+Andrew Painter,691725,1,0,2026,44.7914,50.0,55.0,40.0,NOT ELITE,339,2026,44.7914,50.0,55.0,40.0,NOT ELITE,False,665,True,6,6

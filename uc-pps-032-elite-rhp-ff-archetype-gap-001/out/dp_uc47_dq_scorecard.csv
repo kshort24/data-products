@@ -1,0 +1,20 @@
+rule,dimension,description,result,observed
+DQ-01,uniqueness,No duplicate PITCH_KEY in the governed union,PASS,0
+DQ-02,validity,No MiLB rows survive the level gate,PASS,0
+DQ-03,validity,Regular season only,PASS,['R']
+DQ-04,consistency,Entity locks: each cohort id has rows and resolves to one display name,PASS,"{'Zack Wheeler': 9, 'Andrew Painter': 1, 'Alex McFarlane': 1, 'Jhoan Duran': 5, 'Jonathan Bowlan': 4, 'Seranthony Domínguez': 8}"
+DQ-05,accuracy,NR-1 tier-2 name parse agrees with keyed names (accent-folded) >= 97%,PASS,0.979 on 242
+DQ-06,completeness,Unresolved pitcher names in the population (WARN if any),WARN,5
+DQ-07,completeness,FF release_speed / pfx_z / spin non-null >= 99% (grain: tracked pitch),PASS,0.9976
+DQ-08,completeness,delta_run_exp non-null on FF pitches (grain: pitch),PASS,1.0
+DQ-09,validity,"xwOBA populated only on PA-ending rows (grain-aware, D-1)",PASS,0
+DQ-10,validity,"RHP arm side is negative pfx_x (asserted, not assumed)",PASS,-0.64
+DQ-11,consistency,Population >= 25 pitcher-seasons (SG-2 floor rule never triggers),PASS,405
+DQ-12,distribution,Population normality (Shapiro) — WARN per failing metric; twin grade published,WARN,"ivb_in,rv100"
+DQ-13,distribution,SG-3 skew flag (|z-grade minus rank-grade| >= 10) fires on no population member,PASS,0
+DQ-14,comparability,"Population is a bounded sampling frame, not MLB-wide (permanent WARN, DPO decision 11)",WARN,139 of 405 population pitcher-seasons are PARTIAL coverage
+DQ-15,comparability,Velocity/spin drift adjusted (SG-6) — every cross-season grade is in 2026 terms,PASS,"[{'metric': 'velo', 'adjusted': True}, {'metric': 'ivb_in', 'adjusted': False}, {'metric': 'spin', 'adjusted': True}, {'metric': 'whiff_rate', 'adjusted': False}, {'metric': 'rv100', 'adjusted': False}]"
+DQ-16,accuracy,Staff FF volume uses Phillies-log pitches only (mid-season adds not inflated),PASS,416
+DQ-17,timeliness,Phillies log current through anchor 2026-09-20,PASS,2026-09-20
+DQ-18,completeness,"Cohort subject floor: McFarlane graded THIN (>=50, <100 FF)",PASS,94
+DQ-19,validity,Parent kernel sha256 matches the pinned uc-pps-030 hash,PASS,a2c119096db2

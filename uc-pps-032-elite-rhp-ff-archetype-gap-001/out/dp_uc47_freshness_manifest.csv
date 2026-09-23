@@ -1,0 +1,5 @@
+source,max_game_date,note
+phils_2026.parquet,2026-09-20,Phillies log; anchor
+nphl (128 files),2026-08-02,most player files end 2025
+identity lookup,2026-09-22,"MLBAM 694819 = Jacob Misiorowski (Baseball Savant player page via web search) — identity only, no data"
+carry-in,2026-09-17,Bowlan left 9/17 vs NYM with a suspected oblique (client notebook c85) — not in data
