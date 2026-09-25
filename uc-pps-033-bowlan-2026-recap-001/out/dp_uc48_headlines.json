@@ -1,0 +1,755 @@
+{
+ "anchor": "2026-09-23",
+ "spring_rows_excluded": 47,
+ "dup_vs_phi": 19,
+ "career_pitches": 1818,
+ "seasons": [
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "y2023": {
+  "pitches": 56,
+  "plate_apps": 14,
+  "ba": 0.357,
+  "obp": 0.357,
+  "slg": 0.571,
+  "ops": 0.929,
+  "woba": 0.395,
+  "krate": 0.214,
+  "bbrate": 0.0,
+  "hr_rate": 0.071,
+  "runs_created": 1,
+  "games": 2,
+  "rc_per_pa": 0.071,
+  "rc_per_gm": 0.5,
+  "ff_vert": 17.182,
+  "ff_velo": 94.855,
+  "ff_spin": 2153.636,
+  "whiff_rate_breaking": 0.5,
+  "whiff_rate_iz_ff": 0.25,
+  "strikeouts": 3,
+  "walks": 0,
+  "hrs": 1,
+  "whiff_rate": 0.303,
+  "chase_rate": 0.24,
+  "in_zone_rate": 0.554,
+  "ff_vert_notebook": 16.8,
+  "ff_n": 22
+ },
+ "y2024": {
+  "pitches": 68,
+  "plate_apps": 17,
+  "ba": 0.429,
+  "obp": 0.529,
+  "slg": 1.071,
+  "ops": 1.601,
+  "woba": 0.639,
+  "krate": 0.176,
+  "bbrate": 0.176,
+  "hr_rate": 0.176,
+  "runs_created": 4,
+  "games": 1,
+  "rc_per_pa": 0.235,
+  "rc_per_gm": 4.0,
+  "ff_vert": 18.774,
+  "ff_velo": 95.59,
+  "ff_spin": 2248.483,
+  "whiff_rate_breaking": 0.333,
+  "whiff_rate_iz_ff": 0.333,
+  "strikeouts": 3,
+  "walks": 3,
+  "hrs": 3,
+  "whiff_rate": 0.312,
+  "chase_rate": 0.306,
+  "in_zone_rate": 0.471,
+  "ff_vert_notebook": 19.2,
+  "ff_n": 29
+ },
+ "y2025": {
+  "pitches": 727,
+  "plate_apps": 181,
+  "ba": 0.228,
+  "obp": 0.298,
+  "slg": 0.395,
+  "ops": 0.693,
+  "woba": 0.302,
+  "krate": 0.254,
+  "bbrate": 0.094,
+  "hr_rate": 0.033,
+  "runs_created": 18,
+  "games": 34,
+  "rc_per_pa": 0.099,
+  "rc_per_gm": 0.529,
+  "ff_vert": 17.671,
+  "ff_velo": 95.529,
+  "ff_spin": 2345.222,
+  "whiff_rate_breaking": 0.369,
+  "whiff_rate_iz_ff": 0.412,
+  "strikeouts": 46,
+  "walks": 17,
+  "hrs": 6,
+  "whiff_rate": 0.337,
+  "chase_rate": 0.314,
+  "in_zone_rate": 0.448,
+  "ff_vert_notebook": 18.0,
+  "ff_n": 243
+ },
+ "y2026": {
+  "pitches": 967,
+  "plate_apps": 232,
+  "ba": 0.204,
+  "obp": 0.267,
+  "slg": 0.346,
+  "ops": 0.613,
+  "woba": 0.272,
+  "krate": 0.315,
+  "bbrate": 0.065,
+  "hr_rate": 0.034,
+  "runs_created": 30,
+  "games": 59,
+  "rc_per_pa": 0.129,
+  "rc_per_gm": 0.508,
+  "ff_vert": 18.033,
+  "ff_velo": 97.039,
+  "ff_spin": 2410.634,
+  "whiff_rate_breaking": 0.322,
+  "whiff_rate_iz_ff": 0.32,
+  "strikeouts": 73,
+  "walks": 15,
+  "hrs": 8,
+  "whiff_rate": 0.313,
+  "chase_rate": 0.352,
+  "in_zone_rate": 0.453,
+  "ff_vert_notebook": 18.0,
+  "ff_n": 467
+ },
+ "prior_career_games": 37,
+ "career_games": 96,
+ "tests": {
+  "K rate (K / PA)": {
+   "r25": 0.254,
+   "r26": 0.315,
+   "p": 0.178,
+   "n25": 181,
+   "n26": 232
+  },
+  "BB rate (BB / PA)": {
+   "r25": 0.094,
+   "r26": 0.065,
+   "p": 0.27,
+   "n25": 181,
+   "n26": 232
+  },
+  "HR rate (HR / PA)": {
+   "r25": 0.033,
+   "r26": 0.034,
+   "p": 0.941,
+   "n25": 181,
+   "n26": 232
+  },
+  "Whiff rate (all pitches, per swing)": {
+   "r25": 0.337,
+   "r26": 0.313,
+   "p": 0.455,
+   "n25": 350,
+   "n26": 483
+  },
+  "Chase rate (swings / out-of-zone)": {
+   "r25": 0.314,
+   "r26": 0.352,
+   "p": 0.232,
+   "n25": 401,
+   "n26": 529
+  },
+  "Breaking whiff (per swing)": {
+   "r25": 0.369,
+   "r26": 0.322,
+   "p": 0.435,
+   "n25": 130,
+   "n26": 118
+  },
+  "In-zone four-seam whiff (per swing)": {
+   "r25": 0.412,
+   "r26": 0.32,
+   "p": 0.162,
+   "n25": 80,
+   "n26": 153
+  },
+  "First-pitch strike rate": {
+   "r25": 0.67,
+   "r26": 0.603,
+   "p": 0.155,
+   "n25": 182,
+   "n26": 234
+  },
+  "Four-seam share, 2K counts": {
+   "r25": 0.353,
+   "r26": 0.525,
+   "p": 0.0,
+   "n25": 224,
+   "n26": 326
+  },
+  "Four-seam share, behind counts": {
+   "r25": 0.331,
+   "r26": 0.516,
+   "p": 0.001,
+   "n25": 151,
+   "n26": 192
+  }
+ },
+ "ff_velo_delta": 1.51,
+ "ff_velo_p": 9.764757609100918e-55,
+ "ff_spin_delta": 65.4,
+ "ff_spin_p": 1.1406281454730334e-15,
+ "ff_ivb_delta": 0.362,
+ "ff_velo_iqr_2026": [
+  96.3,
+  97.8
+ ],
+ "ff_velo_by_year": {
+  "2023": 94.855,
+  "2024": 95.59,
+  "2025": 95.529,
+  "2026": 97.039
+ },
+ "arsenal": {
+  "2025_FF": {
+   "n": 243.0,
+   "usage": 0.334,
+   "velo": 95.529,
+   "spin": 2345.222,
+   "ivb_in": 17.671,
+   "hb_in": -7.967,
+   "whiff_rate": 0.435,
+   "xwobacon": 0.446,
+   "rv100": 0.109,
+   "zone_rate": 0.477,
+   "chase_rate": 0.346
+  },
+  "2025_SL": {
+   "n": 227.0,
+   "usage": 0.312,
+   "velo": 85.83,
+   "spin": 2488.868,
+   "ivb_in": -1.031,
+   "hb_in": 3.399,
+   "whiff_rate": 0.402,
+   "xwobacon": 0.441,
+   "rv100": 0.679,
+   "zone_rate": 0.414,
+   "chase_rate": 0.368
+  },
+  "2025_SI": {
+   "n": 126.0,
+   "usage": 0.173,
+   "velo": 96.133,
+   "spin": 2224.19,
+   "ivb_in": 12.51,
+   "hb_in": -14.001,
+   "whiff_rate": 0.176,
+   "xwobacon": 0.187,
+   "rv100": 4.263,
+   "zone_rate": 0.532,
+   "chase_rate": 0.322
+  },
+  "2025_CU": {
+   "n": 70.0,
+   "usage": 0.096,
+   "velo": 80.997,
+   "spin": 2403.743,
+   "ivb_in": -7.164,
+   "hb_in": 12.237,
+   "whiff_rate": 0.167,
+   "xwobacon": 0.301,
+   "rv100": 0.334,
+   "zone_rate": 0.3,
+   "chase_rate": 0.163
+  },
+  "2025_CH": {
+   "n": 61.0,
+   "usage": 0.084,
+   "velo": 88.352,
+   "spin": 1519.377,
+   "ivb_in": 4.641,
+   "hb_in": -12.431,
+   "whiff_rate": 0.143,
+   "xwobacon": 0.399,
+   "rv100": -3.411,
+   "zone_rate": 0.459,
+   "chase_rate": 0.182
+  },
+  "2026_FF": {
+   "n": 467.0,
+   "usage": 0.483,
+   "velo": 97.039,
+   "spin": 2410.634,
+   "ivb_in": 18.033,
+   "hb_in": -7.875,
+   "whiff_rate": 0.37,
+   "xwobacon": 0.321,
+   "rv100": 2.271,
+   "zone_rate": 0.488,
+   "chase_rate": 0.377
+  },
+  "2026_SL": {
+   "n": 179.0,
+   "usage": 0.185,
+   "velo": 86.807,
+   "spin": 2487.877,
+   "ivb_in": -1.497,
+   "hb_in": 2.444,
+   "whiff_rate": 0.344,
+   "xwobacon": 0.299,
+   "rv100": -0.485,
+   "zone_rate": 0.408,
+   "chase_rate": 0.358
+  },
+  "2026_CH": {
+   "n": 126.0,
+   "usage": 0.13,
+   "velo": 90.475,
+   "spin": 1572.563,
+   "ivb_in": 5.315,
+   "hb_in": -12.067,
+   "whiff_rate": 0.299,
+   "xwobacon": 0.324,
+   "rv100": -0.003,
+   "zone_rate": 0.437,
+   "chase_rate": 0.31
+  },
+  "2026_SI": {
+   "n": 109.0,
+   "usage": 0.113,
+   "velo": 97.142,
+   "spin": 2299.183,
+   "ivb_in": 12.515,
+   "hb_in": -15.223,
+   "whiff_rate": 0.055,
+   "xwobacon": 0.393,
+   "rv100": -1.416,
+   "zone_rate": 0.514,
+   "chase_rate": 0.453
+  },
+  "2026_ST": {
+   "n": 77.0,
+   "usage": 0.08,
+   "velo": 84.69,
+   "spin": 2592.416,
+   "ivb_in": -1.46,
+   "hb_in": 15.058,
+   "whiff_rate": 0.269,
+   "xwobacon": 0.492,
+   "rv100": -6.099,
+   "zone_rate": 0.299,
+   "chase_rate": 0.204
+  },
+  "2026_CU": {
+   "n": 8.0,
+   "usage": 0.008,
+   "velo": 82.362,
+   "spin": 2517.625,
+   "ivb_in": -10.695,
+   "hb_in": 5.925,
+   "whiff_rate": 0.0,
+   "xwobacon": 0.116,
+   "rv100": -12.9,
+   "zone_rate": 0.25,
+   "chase_rate": 0.167
+  }
+ },
+ "mix_by_stand": {
+  "2025_L_FF": 0.427,
+  "2025_L_SL": 0.189,
+  "2025_L_CH": 0.155,
+  "2025_L_CU": 0.155,
+  "2025_L_SI": 0.074,
+  "2025_R_SL": 0.426,
+  "2025_R_SI": 0.265,
+  "2025_R_FF": 0.249,
+  "2025_R_CU": 0.042,
+  "2025_R_CH": 0.019,
+  "2026_L_FF": 0.59,
+  "2026_L_CH": 0.226,
+  "2026_L_SL": 0.154,
+  "2026_L_CU": 0.015,
+  "2026_L_ST": 0.011,
+  "2026_L_SI": 0.004,
+  "2026_R_FF": 0.352,
+  "2026_R_SI": 0.246,
+  "2026_R_SL": 0.223,
+  "2026_R_ST": 0.163,
+  "2026_R_CH": 0.014
+ },
+ "ff_share_by_count": {
+  "2025_2K": 0.353,
+  "2025_ahead": 0.31,
+  "2025_behind": 0.331,
+  "2025_even": 0.329,
+  "2026_2K": 0.525,
+  "2026_ahead": 0.331,
+  "2026_behind": 0.516,
+  "2026_even": 0.479
+ },
+ "ff_upper_third_2025": 0.671,
+ "fps_2025": 0.67,
+ "xwobacon_2025": 0.364,
+ "pitches_by_stand_2025": {
+  "R": 378,
+  "L": 349
+ },
+ "ff_upper_third_2026": 0.696,
+ "fps_2026": 0.603,
+ "xwobacon_2026": 0.34,
+ "pitches_by_stand_2026": {
+  "L": 532,
+  "R": 435
+ },
+ "usage": {
+  "2025": {
+   "appearances": 34.0,
+   "pitches_per_app": 21.382,
+   "multi_inning_share": 0.471,
+   "clean_entry_share": 0.647,
+   "start_of_inning_share": 0.647,
+   "late_entry_share": 0.588,
+   "close_late_share": 0.353,
+   "back_to_backs": 5.0,
+   "median_rest": 3.0,
+   "batters_per_app": 5.353
+  },
+  "2026": {
+   "appearances": 59.0,
+   "pitches_per_app": 16.39,
+   "multi_inning_share": 0.102,
+   "clean_entry_share": 0.746,
+   "start_of_inning_share": 0.78,
+   "late_entry_share": 0.78,
+   "close_late_share": 0.39,
+   "back_to_backs": 6.0,
+   "median_rest": 2.0,
+   "batters_per_app": 3.966
+  }
+ },
+ "entry_inning_2026": {
+  "4": 1,
+  "5": 4,
+  "6": 8,
+  "7": 17,
+  "8": 24,
+  "9": 5
+ },
+ "apps_7th_8th_2026": 41,
+ "rc_by_entry": {
+  "2025_clean": {
+   "apps": 22,
+   "rc": 11
+  },
+  "2025_dirty": {
+   "apps": 12,
+   "rc": 7
+  },
+  "2026_clean": {
+   "apps": 44,
+   "rc": 17
+  },
+  "2026_dirty": {
+   "apps": 15,
+   "rc": 13
+  }
+ },
+ "scoreless_apps_2026": 38,
+ "velo_bucket": {
+  "2025_1-10": {
+   "n": 114,
+   "velo": 95.232
+  },
+  "2025_11-20": {
+   "n": 81,
+   "velo": 95.988
+  },
+  "2025_21+": {
+   "n": 48,
+   "velo": 95.462
+  },
+  "2026_1-10": {
+   "n": 279,
+   "velo": 96.728
+  },
+  "2026_11-20": {
+   "n": 156,
+   "velo": 97.602
+  },
+  "2026_21+": {
+   "n": 32,
+   "velo": 97.003
+  }
+ },
+ "monthly": {
+  "3": {
+   "pa": 11,
+   "woba": 0.357,
+   "krate": 0.091,
+   "ff_velo": 97.612,
+   "games": 2
+  },
+  "4": {
+   "pa": 24,
+   "woba": 0.273,
+   "krate": 0.333,
+   "ff_velo": 96.963,
+   "games": 6
+  },
+  "5": {
+   "pa": 38,
+   "woba": 0.231,
+   "krate": 0.184,
+   "ff_velo": 97.192,
+   "games": 9
+  },
+  "6": {
+   "pa": 35,
+   "woba": 0.272,
+   "krate": 0.4,
+   "ff_velo": 97.582,
+   "games": 10
+  },
+  "7": {
+   "pa": 45,
+   "woba": 0.241,
+   "krate": 0.333,
+   "ff_velo": 96.754,
+   "games": 13
+  },
+  "8": {
+   "pa": 50,
+   "woba": 0.24,
+   "krate": 0.34,
+   "ff_velo": 96.985,
+   "games": 12
+  },
+  "9": {
+   "pa": 29,
+   "woba": 0.397,
+   "krate": 0.379,
+   "ff_velo": 96.733,
+   "games": 7
+  }
+ },
+ "last5_ff_velo": 96.919,
+ "season_ff_velo_2026": 97.039,
+ "last5_dates": [
+  "2026-09-05",
+  "2026-09-09",
+  "2026-09-11",
+  "2026-09-15",
+  "2026-09-17"
+ ],
+ "last_app_ff_velo": 96.691,
+ "min_app_ff_velo_2026": 95.583,
+ "kp": {
+  "krate": {
+   "pct": 92,
+   "rank": 15,
+   "n": 198,
+   "staff_rank": 2,
+   "staff_n": 15,
+   "value": 0.315
+  },
+  "bbrate": {
+   "pct": 67,
+   "rank": 65,
+   "n": 198,
+   "staff_rank": 4,
+   "staff_n": 15,
+   "value": 0.065
+  },
+  "woba": {
+   "pct": 84,
+   "rank": 30,
+   "n": 198,
+   "staff_rank": 2,
+   "staff_n": 15,
+   "value": 0.272
+  },
+  "whiff_rate": {
+   "pct": 84,
+   "rank": 31,
+   "n": 198,
+   "staff_rank": 5,
+   "staff_n": 15,
+   "value": 0.313
+  },
+  "chase_rate": {
+   "pct": 93,
+   "rank": 12,
+   "n": 198,
+   "staff_rank": 3,
+   "staff_n": 15,
+   "value": 0.352
+  },
+  "hr_rate": {
+   "pct": 39,
+   "rank": 114,
+   "n": 198,
+   "staff_rank": 10,
+   "staff_n": 15,
+   "value": 0.034
+  }
+ },
+ "staff_k_leader": "Duran, Jhoan",
+ "staff_k_leader_rate": 0.352,
+ "ivb_2017": 17.325,
+ "ivb_other_years_range": [
+  14.83,
+  15.936
+ ],
+ "ivb_2017_z": 5.076,
+ "staff_ff_seasons_n": 132,
+ "staff_ff_ivb_rank": 7,
+ "staff_ff_ivb_pct": 94,
+ "staff_ff_velo_rank": 21,
+ "staff_ff_ivb_top5": [
+  {
+   "name": "Rangel, Alan",
+   "year": 2026,
+   "ivb": 19.594,
+   "n": 168
+  },
+  {
+   "name": "Velasquez, Vince",
+   "year": 2020,
+   "ivb": 19.158,
+   "n": 338
+  },
+  {
+   "name": "Hinojosa, Dalier",
+   "year": 2015,
+   "ivb": 18.618,
+   "n": 202
+  },
+  {
+   "name": "Velasquez, Vince",
+   "year": 2021,
+   "ivb": 18.314,
+   "n": 772
+  },
+  {
+   "name": "Asher, Alec",
+   "year": 2015,
+   "ivb": 18.112,
+   "n": 223
+  }
+ ],
+ "client_band": [
+  17.16,
+  18.96
+ ],
+ "other_rhp_ff_pitches": 60016,
+ "share_other_above_q1": 0.283,
+ "share_other_above_median": 0.175,
+ "density_pitch_types": [
+  "CH",
+  "CU",
+  "FF",
+  "SI",
+  "SL",
+  "ST"
+ ],
+ "arch": {
+  "2025": {
+   "shape": 55,
+   "results": 65,
+   "g_velo": 50,
+   "g_ivb": 60,
+   "g_spin": 50,
+   "g_whiff": 80,
+   "g_rv": 50,
+   "tier": "RESULTS-ONLY",
+   "rank": 20
+  },
+  "2026": {
+   "shape": 60,
+   "results": 75,
+   "g_velo": 60,
+   "g_ivb": 60,
+   "g_spin": 55,
+   "g_whiff": 75,
+   "g_rv": 70,
+   "tier": "ELITE",
+   "rank": 2
+  }
+ },
+ "arch_pop_n": 405,
+ "probe_269_dates": [
+  "2026-07-04"
+ ],
+ "probe_269_games": [
+  29
+ ],
+ "hp_verdicts": {
+  "HELD": 14,
+  "PARTLY": 4,
+  "HELD (\u00b1.003)": 1,
+  "HELD \u2014 gap filled": 1,
+  "HELD (direction)": 1,
+  "HAZARD": 1
+ },
+ "ledger": {
+  "FO-1": {
+   "persona": "Front Office",
+   "strength": "STRONG",
+   "verdicts": "PRESENT \u00b7 PRESENT \u00b7 PRESENT"
+  },
+  "PC-1": {
+   "persona": "Pitching Coach",
+   "strength": "STRONG",
+   "verdicts": "PRESENT \u00b7 PRESENT \u00b7 PRESENT \u00b7 PRESENT \u00b7 PRESENT"
+  },
+  "MG-1": {
+   "persona": "Manager",
+   "strength": "STRONG",
+   "verdicts": "PRESENT \u00b7 PRESENT \u00b7 PRESENT \u00b7 PRESENT"
+  },
+  "AN-1": {
+   "persona": "Pitching Analyst",
+   "strength": "STRONG",
+   "verdicts": "PRESENT \u00b7 PRESENT \u00b7 PRESENT \u00b7 PRESENT"
+  },
+  "CA-1": {
+   "persona": "Catcher",
+   "strength": "SUPPORTED",
+   "verdicts": "PRESENT \u00b7 PRESENT \u00b7 WEAK"
+  },
+  "CA-2": {
+   "persona": "Catcher",
+   "strength": "UNSUPPORTED",
+   "verdicts": "CONTRA \u00b7 WEAK"
+  },
+  "PI-1": {
+   "persona": "Pitcher",
+   "strength": "SUPPORTED",
+   "verdicts": "WEAK \u00b7 PRESENT"
+  },
+  "WA-1": {
+   "persona": "Pitching Coach",
+   "strength": "STRONG",
+   "verdicts": "PRESENT \u00b7 PRESENT"
+  },
+  "WA-2": {
+   "persona": "Pitching Analyst",
+   "strength": "STRONG",
+   "verdicts": "PRESENT"
+  },
+  "MG-2": {
+   "persona": "Manager",
+   "strength": "UNSUPPORTED",
+   "verdicts": "ABSENT"
+  }
+ },
+ "dq": {
+  "PASS": 16,
+  "WARN": 3
+ }
+}

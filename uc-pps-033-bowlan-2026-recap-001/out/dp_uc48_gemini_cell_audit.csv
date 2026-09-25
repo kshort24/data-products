@@ -1,0 +1,7 @@
+id,area,finding,why_it_matters,disposition
+GM-1,imports,Re-imports numpy and graph_objects but not make_subplots,Runs in the notebook only because cell 4 imports make_subplots; fails as a standalone cell,FIXED in dp_uc48_build_figs.py
+GM-2,units,Horizontal/vertical break plotted in feet,Every other Kellen chart uses inches (pfx × 12); 1.5 ft reads as nothing next to 18 in,FIXED — inches
+GM-3,sample size,Box plots for 2023 (22 FF) and 2024 (29 FF) look as solid as 2026 (467),Thin boxes invite over-reading,FIXED — n printed under each season
+GM-4,state,Reuses the leaked `gy` from the client's loop,Same hazard as HP-18,FIXED — explicit RECAP_SEASON
+GM-5,subtitle,'Velocity trending up to a career-high 97.0 mph',Holds (HP-17),KEPT
+GM-6,form,2×2 box grid of four metrics,Sound. The client's reply keeps it simpler: velo × spin scatter + movement scatter. Both ship; the grid is the dashboard's detail view,KEPT

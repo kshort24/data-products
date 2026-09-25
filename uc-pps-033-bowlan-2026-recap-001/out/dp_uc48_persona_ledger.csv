@@ -1,0 +1,11 @@
+persona,hyp_id,hypothesis,verdicts,n_signatures,strength,what_would_confirm
+Front Office,FO-1,"Bought the carry, not the ERA: acquired a four-seam whose shape and whiff were already plus while his run prevention looked ordinary",PRESENT · PRESENT · PRESENT,3,STRONG,Pro-scouting reports and trade rationale (not in either repo)
+Pitching Coach,PC-1,"Added velocity to the whole arsenal (strength, mechanics, intent)",PRESENT · PRESENT · PRESENT · PRESENT · PRESENT,5,STRONG,"Strength program, bullpen/lab sessions, mechanical cues — velocity at every stage of an outing is the only trace in the log"
+Manager,MG-1,"Gave him one job: one inning, late, mostly clean",PRESENT · PRESENT · PRESENT · PRESENT,4,STRONG,The role conversation itself; leverage index (not in the log — close-and-late is the proxy)
+Pitching Analyst,AN-1,"Built the arsenal by platoon: four-seam + changeup to lefties, a sweeper for righties, curveball shelved",PRESENT · PRESENT · PRESENT · PRESENT,4,STRONG,Pitch-design sessions and grip changes; the sweeper's first appearance is the only trace
+Catcher,CA-1,Called the four-seam when it mattered: two strikes and behind in the count,PRESENT · PRESENT · WEAK,3,SUPPORTED,"Pitch calls and PitchCom sequences; outcome of the call is visible, the call itself is not"
+Catcher,CA-2,Cut walks by getting ahead early,CONTRA · WEAK,2,UNSUPPORTED,—
+Pitcher,PI-1,Got hitters to expand: more chase without living in the zone more,WEAK · PRESENT,2,SUPPORTED,The pitcher's own intent
+Pitching Coach,WA-1,WATCH for 2027: the sinker stopped working,PRESENT · PRESENT,2,STRONG,Grip/usage intent behind the sinker
+Pitching Analyst,WA-2,WATCH for 2027: the new sweeper has not earned its keep yet,PRESENT,1,STRONG,"Pitch-design intent for the sweeper; 77 pitches is a thin sample for run value (uc-pps-032 SG-7: RV needs ~1,084)"
+Manager,MG-2,Workload preceded the 9/17 exit (velocity tell in the final outings),ABSENT,1,UNSUPPORTED,"Medical and workload records — carry-in only (reported right groin strain, no IL)"

@@ -1,0 +1,154 @@
+family,check,result,detail
+A,runs_created sums max(post)-min(bat) per PA,PASS,"{'pid': {0: 1}, 'runs_created': {0: 4}}"
+A,signature PRESENT on threshold move (+1),PASS,
+A,signature WEAK when p >= .05,PASS,
+A,signature CONTRA on opposite move,PASS,
+A,signature ABSENT when |Δ| < threshold/4,PASS,
+A,signature direction −1 PRESENT,PASS,
+A,rollup STRONG / SUPPORTED / MIXED / UNSUPPORTED,PASS,
+A,house_percentile higher-better,PASS,
+A,house_percentile lower-better,PASS,
+A,count_state precedence (2K first),PASS,"['even', 'behind', '2K', 'behind', '2K']"
+A,"B-1 regression: clean entry stays clean (head(1), not first())",PASS,
+A,O-25: pitch_mix rounds pfx_z to 0.1 ft → 18.0 in (true 17.64),PASS,
+A,rv100 sign flip (pitcher POV),PASS,
+B,career frame rows == independent union,PASS,"(1818, 1818)"
+B,rows per season match,PASS,"{np.int64(2026): 967, np.int64(2025): 727, np.int64(2024): 68, np.int64(2023): 56}"
+B,19 cross-source duplicates dropped,PASS,
+B,spring rows excluded = 47,PASS,
+B,anchor = max R game_date in phils_2026,PASS,
+B,'Bowlan' name filter == id lock (client frame),PASS,
+B,no duplicate keys in receipt pitch table,PASS,
+B,parquet sha256 of subject file stable across reads,PASS,
+C,2025 PA,PASS,"(181, np.int64(181))"
+C,2025 K rate (nresults publishes 3 dp),PASS,"(np.float64(0.2541436464088398), np.float64(0.254))"
+C,2025 BB rate (nresults publishes 3 dp),PASS,"(np.float64(0.09392265193370165), np.float64(0.094))"
+C,2025 BA,PASS,"(np.float64(0.22839506172839505), np.float64(0.228))"
+C,2025 wOBA,PASS,"(np.float64(0.3018839779005525), np.float64(0.302))"
+C,2025 games,PASS,
+C,2025 runs created,PASS,
+C,2025 FF velo,PASS,
+C,2025 FF spin,PASS,
+C,2025 FF ride (unrounded),PASS,
+C,2025 in-zone FF whiff,PASS,
+C,2025 first-pitch strike,PASS,
+C,2026 PA,PASS,"(232, np.int64(232))"
+C,2026 K rate (nresults publishes 3 dp),PASS,"(np.float64(0.3146551724137931), np.float64(0.315))"
+C,2026 BB rate (nresults publishes 3 dp),PASS,"(np.float64(0.06465517241379311), np.float64(0.065))"
+C,2026 BA,PASS,"(np.float64(0.2037914691943128), np.float64(0.204))"
+C,2026 wOBA,PASS,"(np.float64(0.2721853448275862), np.float64(0.272))"
+C,2026 games,PASS,
+C,2026 runs created,PASS,
+C,2026 FF velo,PASS,
+C,2026 FF spin,PASS,
+C,2026 FF ride (unrounded),PASS,
+C,2026 in-zone FF whiff,PASS,
+C,2026 first-pitch strike,PASS,
+C,velo delta +1.51,PASS,
+C,KP-1 population n = 198,PASS,198
+C,KP-1 K percentile 92 / rank 15,PASS,
+C,staff K rank 2 behind Duran (661395),PASS,
+C,staff ride rank #7 of 132,PASS,
+C,2017 ride level shift z > 5,PASS,5.08
+C,VE-1 pitches 1–10: 95.2 → 96.7,PASS,
+C,multi-inning share 2026,PASS,
+C,7th/8th entries = 41,PASS,
+C,dirty entries 15 → 13 runs,PASS,
+C,FF share at 2 strikes 2026,PASS,
+D,payload recap == receipt,PASS,
+D,payload ledger == receipt,PASS,
+D,payload hp == receipt,PASS,
+D,payload headlines == headlines.json,PASS,
+D,fig7 sweeper bar == receipt,PASS,
+D,every report figure exists as PNG and JSON,PASS,
+D,repo dashboard is offline (no external src/href outside plotly.js),PASS,
+D,artifact variant has no <html>/<body> skeleton and has a <title>,PASS,
+D,artifact variant only loads Google Fonts externally,PASS,
+D,dashboard < 16 MB,PASS,5973601
+D,drill density has all arsenal pitch types,PASS,
+E,DQ 0 FAIL,PASS,"{'PASS': 16, 'WARN': 3}"
+E,brand compliance: no fails,PASS,{'pass': 58}
+E,parent kernel hash pinned,PASS,
+E,"entity lock is an id, not a name",PASS,
+E,control-plane package manifest (10 docs),PASS,[]
+E,carry-ins appear only as carry-ins in the report,PASS,
+F,report: 2025 wOBA,PASS,.302
+F,report: 2026 wOBA,PASS,.272
+F,report: 2025 K%,PASS,25.4%
+F,report: 2026 K%,PASS,31.5%
+F,report: 2025 BB%,PASS,9.4%
+F,report: 2026 BB%,PASS,6.5%
+F,report: games 59,PASS,59 appearances
+F,report: games 34,PASS,| 34 | 59 |
+F,report: ride grade 2025,PASS,graded 60 on ride and 80 on whiff
+F,report: velo grade,PASS,velocity grade of 50
+F,report: rank 2025,PASS,#20 of 405
+F,report: rank 2026,PASS,#2 of 405
+F,report: shape 55→60,PASS,shape went 55 → 60
+F,report: results 75,PASS,60 / 75
+F,report: FF velo,PASS,95.5 to 97.0 mph (+1.51
+F,report: spin +65,PASS,65 more rpm
+F,report: spin values,PASS,2345 → 2411 rpm
+F,report: ride,PASS,17.7 → 18.0 in
+F,report: 2023 ride,PASS,| 94.9 | 17.2 |
+F,report: 2024 ride,PASS,| 95.6 | 18.8 |
+F,report: VE-1,PASS,95.2 to 96.7 mph
+F,report: lefty FF+CH,PASS,58% to 82%
+F,report: sweeper vs R,PASS,new sweeper (16%)
+F,report: 2K share,PASS,35.3% | 52.5%
+F,report: behind share,PASS,33.1% | 51.6%
+F,report: K p,PASS,p = 0.18 and 0.27
+F,report: chase,PASS,31.4% | 35.2% | 0.23
+F,report: FPS,PASS,67.0% | 60.3% | 0.16
+F,report: FPS short,PASS,67% → 60%
+F,report: K pct,PASS,92nd house percentile
+F,report: K rank,PASS,15th of 198
+F,report: ppa,PASS,| 21.4 | 16.4 |
+F,report: multi,PASS,| 47% | 10% |
+F,report: start inn,PASS,| 65% | 78% |
+F,report: late,PASS,| 59% | 78% |
+F,report: b2b,PASS,| 5 | 6 |
+F,report: rest,PASS,| 3 | 2 |
+F,report: 7th/8th,PASS,(41 began in the 7th or 8th)
+F,report: scoreless,PASS,38 of 59 outings were scoreless
+F,report: dirty,PASS,15 outings he began with men on base produced 13 of his 30 runs
+F,report: rc/pa,PASS,(.099 → .129)
+F,report: last5,PASS,averaged 96.9 mph
+F,report: season velo,PASS,against 97.0 for the season
+F,report: staff ride,PASS,#7 of 132
+F,report: share above,PASS,"Only 17.5% of 60,016 other"
+F,report: 2017,PASS,average 17.3 in of ride against 14.8–15.9 in
+F,report: 2017 z,PASS,z = 5.1
+F,report: FF whiff,PASS,.435 → .370
+F,report: FF xwobacon,PASS,.446 → .321
+F,report: FF rv,PASS,+0.1 → +2.3
+F,report: SI whiff,PASS,.176 → .055
+F,report: SI xwobacon,PASS,.187 → .393
+F,report: ST rv,PASS,−6.1 RV/100 on 77 pitches
+F,report: CH whiff,PASS,.143 → .299
+F,report: CH velo,PASS,88.4 → 90.5
+F,report: SI velo,PASS,96.1 → 97.1
+F,report: SL velo,PASS,85.8 → 86.8
+F,report: usage FF,PASS,four-seam 48.3%
+F,report: prior career,PASS,1.6×
+F,report: prior games,PASS,(37 games)
+F,report: IZ FF,PASS,(.412 → .320)
+F,report: HP tally,PASS,"17 held, 4 partly held"
+F,report: slg,PASS,"SLG fell 49 points, more than OBP (31 points)"
+F,report: spring,PASS,47 spring-training rows
+F,report: dups,PASS,19 duplicated pitches
+F,report ledger FO-1 = STRONG,PASS,
+F,report ledger PC-1 = STRONG,PASS,
+F,report ledger MG-1 = STRONG,PASS,
+F,report ledger AN-1 = STRONG,PASS,
+F,report ledger CA-1 = SUPPORTED,PASS,
+F,report ledger CA-2 = UNSUPPORTED,PASS,
+F,report ledger PI-1 = SUPPORTED,PASS,
+F,report ledger WA-1 = STRONG,PASS,
+F,report ledger WA-2 = STRONG,PASS,
+F,report ledger MG-2 = UNSUPPORTED,PASS,
+F,dashboard: #2 of 405,PASS,
+F,dashboard: 92th percentile,PASS,
+F,dashboard: 41 of 59,PASS,
+F,dashboard: 95.2 to 96.7 mph,PASS,
+F,dashboard: #7 of 132,PASS,

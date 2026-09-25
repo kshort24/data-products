@@ -1,0 +1,23 @@
+id,kpi,client_claim,governed_value,verdict,note
+HP-01,pitches,About 200 more pitches thrown,967 vs 727 (+240),HELD,"Understated: +240, not ~200"
+HP-02,plate_apps,~50 more PAs,232 vs 181 (+51),HELD,
+HP-03,ba,20 point drop in BA,0.228 → 0.204 (−24 pts),HELD,
+HP-04,obp,Big cut to OBP,0.298 → 0.267 (−31 pts),HELD,
+HP-05,slg,slightly less slug,0.395 → 0.346 (−49 pts),PARTLY,"Direction right, size wrong: the SLG cut is larger than the OBP cut"
+HP-06,woba,a really solid .269 wOBA,"0.272 on the anchored log. The last three cuts read 0.267 (thru 09-11), 0.273 (thru 09-15), 0.272 (thru 09-17); .269 appears only on the cut through 2026-07-04 (29 G)",HELD (±.003),Not reproducible from any season-end state of the log; the claim (solid) holds at .272
+HP-07,krate,Boost to an elite 32% K Rate (xxth Percentile),"31.5%; house percentile 92 (rank 15 of 198 Phillies pitcher-seasons ≥100 PA, 2015–26); #2 on the 2026 staff",HELD — gap filled,"xx → 92 (house frame, not MLB-wide)"
+HP-08,bbrate,Cut BB Rate to a much more manageable 6%,9.4% → 6.5% (p = 0.27),HELD (direction),"6.5%, not 6%; the cut is not statistically distinguishable at these PA"
+HP-09,hr_rate,Similar amount of homers,6 HR / 181 PA → 8 HR / 232 PA (0.033 → 0.034),HELD,
+HP-10,runs_created,"Gave up 30 runs while on the mound, one every other outing",30 runs in 59 games (0.508 per game),HELD,Runs Created = runs scored during his PAs (includes inherited runners; not runs charged)
+HP-11,games,"Pitched in 60 games, nearly doubled his career to date",59 games; prior career 37 → 2026 alone is 1.6× his prior career,PARTLY,"59, not 60 (no cut of the anchored log reaches 60); 'nearly doubled' understates (1.6× prior career)"
+HP-12,rc_per_pa / rc_per_gm,Up from last year in per PA but down a hair in per GM,per PA 0.099 → 0.129; per G 0.529 → 0.508,HELD,Per-PA runs rose while wOBA fell — see rc_by_entry_state (inherited runners)
+HP-13,ff_vert,Vert remained elite at 18 inches,notebook 18.0 → 18.0 (quantized); unrounded 17.7 → 18.0; IVB grade 60 → 60,HELD,Notebook value is quantized in 1.2-inch steps (O-25): pitch_mix rounds pfx_z to 0.1 ft before ×12
+HP-14,ff_velo,Added a tick and half to FF velo,"95.5 → 97.0 (+1.51 mph, p < .001)",HELD,
+HP-15,ff_spin,and spun it more,"2345 → 2411 rpm (+65, p < .001)",HELD,
+HP-16,whiff_rate_breaking / whiff_rate_iz_ff,Breaking Ball and In-Zone Fastball Whiff down a touch from last year's elite level,breaking 0.369 → 0.322 (p = 0.43); in-zone FF 0.412 → 0.320 (p = 0.16),PARTLY,"Breaking: 'a touch' is right. In-zone four-seam: −9 points is more than a touch, but not significant on 80 → 153 swings"
+HP-17,subtitle (velo box),Definitely trending up to a career high 97.0 mph Average in 2026,2023: 94.9 → 2024: 95.6 → 2025: 95.5 → 2026: 97.0,HELD,Career high yes; 'trending' is really a step: 2024→2025 was flat
+HP-18,notebook state,gy used in the subtitle after `for gy in jb.game_year.unique()`,the loop leaves gy = last season in concat order (= 2026),HAZARD,Correct only because nphl is concatenated before pps. Reverse the concat and the subtitle reads 2025. SR-1 removes the leak
+HP-19,subtitle (velo × spin),Clearly threw the ball harder and with more spin in 2026,velo +1.51 mph (Welch p = 9.8e-55); spin +65 rpm (p = 1.1e-15),HELD,
+HP-20,subtitle (FF profile),Right in Line with Career Average. Still Elite overall. Maintained elite shape with added spin and velo.,IVB 17.7 → 18.0 in; shape grade 55 → 60 (RESULTS-ONLY → ELITE),PARTLY,"Carry was maintained; by the uc-pps-032 bar the shape BECAME elite in 2026, because of the velocity"
+HP-21,subtitle (staff plot),Bowlan gets exceptional carry on his four-seam fastball.,"18.0 in: #7 of 132 Phillies RHP four-seam seasons (≥100 FF, 2015–26 ex-2017)",HELD,
+HP-22,2017 exclusion,filter out outlier data in 2017,2017 staff four-seam IVB 17.3 in vs 14.8–15.9 in other seasons (z = 5.1),HELD,"A level shift in the whole season, not outliers. Cause not asserted"

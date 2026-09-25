@@ -1,0 +1,35 @@
+Palette validation — dp_uc48 (brand-center Phillies palette; gray = context/baseline, not a category)
+
+Palette (light, surface #fcfcfb, categorical): 2 slots
+  [FAIL] Lightness band         outside band: [["#002D72",0.32]]
+  [PASS] Chroma floor           all 2 >= 0.1
+  [PASS] CVD separation         worst adjacent #E81828↔#002D72 ΔE 22.4 (protan) · tritan 42.9
+  [PASS] Normal-vision floor    worst adjacent #E81828↔#002D72 ΔE 42.4 (normal)
+  [PASS] Contrast vs surface    all 2 >= 3:1
+
+  → FAILED — fix the marked checks  (CVD in the 6–8 floor band is legal ONLY with secondary encoding: direct labels, gaps, or texture)
+  scope: categorical palettes only. For a lone status/text color check WCAG text contrast; for a sequential ramp, lightness monotonicity.
+
+
+Palette (dark, surface #1a1a19, categorical): 2 slots
+  [FAIL] Lightness band         outside band: [["#8FB0FF",0.764],["#FF5A66",0.69]]
+  [PASS] Chroma floor           all 2 >= 0.1
+  [PASS] CVD separation         worst adjacent #FF5A66↔#8FB0FF ΔE 21.2 (deutan) · tritan 33.5
+  [PASS] Normal-vision floor    worst adjacent #FF5A66↔#8FB0FF ΔE 28.1 (normal)
+  [PASS] Contrast vs surface    all 2 >= 3:1
+
+  → FAILED — fix the marked checks  (CVD in the 6–8 floor band is legal ONLY with secondary encoding: direct labels, gaps, or texture)
+  scope: categorical palettes only. For a lone status/text color check WCAG text contrast; for a sequential ramp, lightness monotonicity.
+
+Pitch colors (house PITCH_COLORS, verbatim — brand-mandated, not re-stepped):
+
+Palette (dark, surface #1a1a19, categorical): 6 slots
+  [FAIL] Lightness band         outside band: [["#FE9D00",0.778],["#1DBE3A",0.699],["#EEE716",0.904],["#DDB33A",0.784],["#00D1ED",0.79]]
+  [PASS] Chroma floor           all 6 >= 0.1
+  [FAIL] CVD separation         worst adjacent #1DBE3A↔#FE9D00 ΔE 2.0 (protan) · tritan 12.8
+  [FAIL] Normal-vision floor    worst adjacent #DDB33A↔#EEE716 ΔE 14.1 (normal) — below 15, hard to tell apart even with full color vision
+  [PASS] Contrast vs surface    all 6 >= 3:1
+
+  → FAILED — fix the marked checks  (CVD in the 6–8 floor band is legal ONLY with secondary encoding: direct labels, gaps, or texture)
+  scope: categorical palettes only. For a lone status/text color check WCAG text contrast; for a sequential ramp, lightness monotonicity.
+

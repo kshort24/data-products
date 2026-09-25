@@ -1,0 +1,20 @@
+rule,dimension,grain,rule_text,result,observed
+DQ-01,uniqueness,pitch,no duplicate PITCH_KEY in the governed career frame,PASS,0
+DQ-02,consistency,pitch,entity lock: every row pitcher == 680742,PASS,[680742]
+DQ-03,validity,pitch,regular season only (game_type == 'R'),PASS,['R']
+DQ-04,timeliness,file,Phillies log current through the pinned anchor,PASS,2026-09-23
+DQ-05,validity,pitch,p_throws == 'R' on every row,PASS,['R']
+DQ-06,consistency,pitcher-season,client frame (name filter) == governed frame (id lock) on 16 non-shape KPIs,PASS,4 seasons x 16 KPIs
+DQ-07,comparability,pitcher-season,"KP-1 population is Phillies-only, not MLB-wide (permanent)",WARN,"198 pitcher-seasons >= 100 PA, 2015-2026"
+DQ-08,consistency,pitcher-season,"inherited uc-pps-032 FF n matches this frame's FF count (2025, 2026)",PASS,"{2025: (243, 243), 2026: (467, 467)}"
+DQ-09,completeness,pitch,four-seam velo/spin/pfx jointly non-null ≥ 99%,PASS,1.0
+DQ-10,completeness,pitch,bat_score/post_bat_score non-null (runs_created precondition),PASS,0
+DQ-11,comparability,season,2017 Phillies RHP four-seam IVB is a level shift (client exclusion justified),PASS,"2017 mean 17.325 in vs [14.83, 15.936] other years (z=5.1)"
+DQ-12,validity,pitch,"xwOBA published only as xwOBAcon (BIP), per uc-pps-021 O1",PASS,get_stats.xwoba quarantined
+DQ-13,validity,pitch,RHP arm-side four-seam pfx_x negative,PASS,-0.66
+DQ-14,consistency,pitch,cross-source duplicates removed by precedence (PHI > FILE > VS_PHI),PASS,19
+DQ-15,validity,pitcher-season,D-1 exposure: no season loses a whiff_rate row to the inner join,PASS,all 4 seasons have ≥1 whiff in each subset
+DQ-16,completeness,pitch,zone NULL share (D-7/O-13 exposure on in_zone_rate),WARN,0.0006
+DQ-17,consistency,pitcher-season,small seasons flagged: 2023 (14 PA) and 2024 (17 PA) are context only,WARN,2023/2024 printed with PA everywhere
+DQ-18,validity,pitch,spring training rows excluded (47 in 2026),PASS,47
+DQ-19,validity,file,parent kernel sha256 = pinned uc-pps-030 hash,PASS,a2c119096db2

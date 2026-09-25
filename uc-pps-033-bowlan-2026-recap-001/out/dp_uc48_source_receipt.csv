@@ -1,0 +1,6 @@
+game_year,src,rows,kept,dropped_as_duplicate
+2023,FILE,56,56.0,0.0
+2024,FILE,68,68.0,0.0
+2025,FILE,727,727.0,0.0
+2025,VS_PHI,19,0.0,19.0
+2026,PHI,967,967.0,0.0
