@@ -1,0 +1,10 @@
+figure,template,font_arial,has_title,has_subtitle,axis_titles,palette_ok,off_palette
+fig1_the_chase,True,True,True,True,True,True,
+fig2_command,True,True,True,True,True,True,
+fig3_career_arc,True,True,True,True,True,True,
+fig4_season_by_start,True,True,True,True,True,True,
+fig5_laborday_pitch_by_pitch,True,True,True,True,True,True,
+fig6_two_game_plans,True,True,True,True,True,True,
+fig7_pitch_map,True,True,True,True,True,True,
+fig8_career_game_scores,True,True,True,True,True,True,
+fig9_notecard,True,True,True,True,True,True,

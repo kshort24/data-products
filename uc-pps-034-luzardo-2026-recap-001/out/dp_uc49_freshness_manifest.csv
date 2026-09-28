@@ -1,0 +1,10 @@
+source,max_game_date,rows,note
+data/phillies/phils_2015..2026.parquet,2026-09-26,555760,regular-season anchor (Game 161); build refuses any other
+data/opponents/luzardo.parquet,2024-06-16,8553,"pitcher-keyed pull, OAK/MIA 2019-2024 (regular season)"
+data/opponents/* (id scan),,9562,21 files hold pitcher==666200; 0 regular-season pitches survive dedup beyond PHI+FILE
+carry-in: MLB.com 2024-12,2024-12,0,acquired from MIA for Starlyn Caba and Emaarion Boyd (context only)
+carry-in: MLB.com 2026-03-10,2026-03-10,0,"5-yr / $135M extension covering 2027-2031, 2032 club option (context only)"
+carry-in: MLB.com 2026-07-07,2026-07-14,0,first career All-Star selection (named 7/7 as a replacement); ASG at Citizens Bank Park 7/14
+carry-in: MLB.com 2026-09-07,2026-09-07,0,"Labor Day box: CG SHO, 2 H, 1 BB, 12 K, 1:51, Schwarber solo HR 8th off Didier Fuentes; NL Pitcher of the Month (Aug)"
+carry-in: Phillies Nation 2026-09-24,2026-09-24,0,"scratched 9/12 (shoulder stiffness); 15-day IL 9/15 (shoulder inflammation); 2.87 ERA in 29 starts, 1.84 post-ASB"
+carry-in: SI 2026-09-27,2026-09-27,0,"activated for Game 162, available out of the bullpen (Mattingly)"

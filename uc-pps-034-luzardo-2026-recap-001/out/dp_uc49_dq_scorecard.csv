@@ -1,0 +1,24 @@
+rule,dimension,grain,rule_text,result,observed
+DQ-01,uniqueness,pitch,no duplicate PITCH_KEY in the governed career frame (CF-2),PASS,0
+DQ-02,consistency,pitch,entity lock: every row pitcher == 666200,PASS,[666200]
+DQ-03,validity,pitch,regular season only in the rate frame (game_type == 'R'),PASS,['R']
+DQ-04,timeliness,file,Phillies log current through the pinned anchor,PASS,2026-09-26
+DQ-05,validity,pitch,p_throws == 'L' on every row,PASS,['L']
+DQ-06,timeliness,pitch,no 2026 appearance after the Labor Day game (carry-in: IL 9/15),PASS,2026-09-07
+DQ-07,consistency,season,2026 appearances == 29 (carry-in: '2.87 ERA in 29 starts'),PASS,29
+DQ-08,completeness,file,opponent id scan finds every file the name filter finds,PASS,"['adolis.parquet', 'alfaro.parquet', 'arraez.parquet', 'bader.parquet', 'bdlc.parquet', 'bdodgers.parquet', 'castellanos.parquet', 'castro.parquet', 'crawford.parquet', 'dahl.parquet', 'derek_hill.parquet', 'dmoore.parquet', 'franco.parquet', 'hays.parquet', 'luzardo.parquet', 'marlins-of-24-25.parquet', 'marsh.parquet', 'mccutchen.parquet', 'santana.parquet', 'turner.parquet', 'whit.parquet']"
+DQ-09,consistency,pitch,client frame (regular season) + O-26 losses == CF-2 governed frame,PASS,14196 + 230 vs 14426
+DQ-10,validity,game,OU-1: no inning credits more than 3 outs (2026),PASS,per game-inning
+DQ-11,consistency,game,every 2026 appearance is a start (entered in the 1st),PASS,29
+DQ-12,consistency,season,parent reproduction: uc-pps-017 first-half figures recomputed from CF-2,PASS,4/4
+DQ-13,consistency,game,Labor Day OU-1 outs == 27 (a nine-inning complete game),PASS,27
+DQ-14,consistency,game,Labor Day log reconciles to the published box (MLB.com carry-in),PASS,"[{'item': 'pitches', 'log': 109, 'carry_in': 109}, {'item': 'h', 'log': 2, 'carry_in': 2}, {'item': 'bb', 'log': 1, 'carry_in': 1}, {'item': 'k', 'log': 12, 'carry_in': 12}, {'item': 'whiffs', 'log': 23, 'carry_in': 23}, {'item': 'phi_runs', 'log': 1, 'carry_in': 1}, {'item': 'atl_runs', 'log': 0, 'carry_in': 0}, {'item': 'hr_inning', 'log': 8, 'carry_in': 8}]"
+DQ-15,completeness,pitch,FF velo/spin/pfx jointly non-null >= 99% (2026),PASS,1.0
+DQ-16,completeness,pitch,NULL zone share (D-7/O-13 exposure; governed in_zone uses tracked denominator),PASS,0.0
+DQ-17,validity,pitch,LHP arm-side FF pfx_x positive (catcher view),PASS,0.997
+DQ-18,comparability,pitcher-season,CX-1/KP-1 populations are Phillies-only (permanent),WARN,259 / 198 pitcher-seasons
+DQ-19,validity,pitch,spring and exhibition rows excluded,PASS,165
+DQ-20,consistency,file,"parent kernels sha256 pinned (K48, K44)",PASS,0f63857a1032 / a2c119096db2
+DQ-21,validity,pitch,D-1 exposure: no whiff subset drops a season (inner join),PASS,8 seasons
+DQ-22,consistency,pitcher-season,O-26: pitches the client's nphl name filter loses to keep-first dedup,WARN,230
+DQ-23,validity,pitch,postseason pitches never enter a rate (ledger only),PASS,"380 postseason pitches, 6 games"

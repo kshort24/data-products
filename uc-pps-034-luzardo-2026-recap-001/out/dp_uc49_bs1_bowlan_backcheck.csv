@@ -1,0 +1,4 @@
+file,rows,seasons,game_types,player_name_is_subject,player_name_modal
+arraez.parquet,3,2026,R,False,"Arraez, Luis"
+bowlan.parquet,851,"2023,2024,2025",R,True,"Bowlan, Jonathan"
+lhvp26.parquet,16,2026,R,True,"Bowlan, Jonathan"

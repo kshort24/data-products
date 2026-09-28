@@ -1,0 +1,227 @@
+family,check,result,observed,expected
+A,dp_uc44_kernel sha256 pinned,PASS,,
+A,dp_uc48_kernel sha256 pinned,PASS,,
+A,dp_uc49_kernel present and hashed,PASS,a4ad5191a653,
+A,anchor 2026-09-26,PASS,2026-09-26,
+A,DQ scorecard has 0 FAIL,PASS,"{'PASS': 21, 'WARN': 2}",
+B,Phillies log max regular-season date == anchor,PASS,,
+B,id scan: 21 opponent files hold his pitches,PASS,21,
+B,"career regular-season pitches == 14,426",PASS,14426,
+B,"duplicates removed across sources == 1,188",PASS,1188,
+B,postseason pitches == 380 in 6 games,PASS,"(380, 6)",
+B,no rows added by batter-keyed files beyond PHI+FILE,PASS,0,
+B,throws L on every row (pfx_x of FF > 0 in 2026),PASS,,
+B,"2026: 29 games, 2,860 pitches, last 2026-09-07",PASS,,
+B,2019 PA,PASS,46,46
+B,2019 K rate,PASS,0.3478,0.348
+B,2019 BB rate,PASS,0.0652,0.065
+B,2019 whiff,PASS,0.3768,0.3768115942028985
+B,2019 chase,PASS,0.2529,0.253
+B,2019 in-zone (tracked),PASS,0.4912,0.4912280701754385
+B,2020 PA,PASS,248,248
+B,2020 K rate,PASS,0.2379,0.238
+B,2020 BB rate,PASS,0.0645,0.065
+B,2020 whiff,PASS,0.2955,0.2955082742316784
+B,2020 chase,PASS,0.2629,0.263
+B,2020 in-zone (tracked),PASS,0.466,0.4659574468085106
+B,2021 PA,PASS,436,436
+B,2021 K rate,PASS,0.2248,0.225
+B,2021 BB rate,PASS,0.1078,0.108
+B,2021 whiff,PASS,0.2993,0.2992610837438423
+B,2021 chase,PASS,0.2749,0.275
+B,2021 in-zone (tracked),PASS,0.4545,0.4545454545454545
+B,2022 PA,PASS,401,401
+B,2022 K rate,PASS,0.2993,0.299
+B,2022 BB rate,PASS,0.0873,0.087
+B,2022 whiff,PASS,0.3166,0.3165562913907285
+B,2022 chase,PASS,0.2801,0.28
+B,2022 in-zone (tracked),PASS,0.4702,0.4701946472019465
+B,2023 PA,PASS,740,740
+B,2023 K rate,PASS,0.2811,0.281
+B,2023 BB rate,PASS,0.073,0.073
+B,2023 whiff,PASS,0.3136,0.3135768435561681
+B,2023 chase,PASS,0.3127,0.313
+B,2023 in-zone (tracked),PASS,0.4746,0.4745649263721553
+B,2024 PA,PASS,274,274
+B,2024 K rate,PASS,0.208,0.208
+B,2024 BB rate,PASS,0.0803,0.08
+B,2024 whiff,PASS,0.2962,0.2962264150943396
+B,2024 chase,PASS,0.2984,0.298
+B,2024 in-zone (tracked),PASS,0.4801,0.4801477377654663
+B,2025 PA,PASS,759,759
+B,2025 K rate,PASS,0.2846,0.285
+B,2025 BB rate,PASS,0.0751,0.075
+B,2025 whiff,PASS,0.3083,0.3083333333333333
+B,2025 chase,PASS,0.3045,0.304
+B,2025 in-zone (tracked),PASS,0.5051,0.5051443743776967
+B,2026 PA,PASS,730,730
+B,2026 K rate,PASS,0.3027,0.303
+B,2026 BB rate,PASS,0.0712,0.071
+B,2026 whiff,PASS,0.3195,0.3194864048338368
+B,2026 chase,PASS,0.3368,0.337
+B,2026 in-zone (tracked),PASS,0.4654,0.4653846153846154
+B,"2026 in-zone is lowest since 2021, not career-lowest",PASS,,
+B,2026 chase is a career high,PASS,,
+B,in-zone p (2025 v 2026) ≈ 0.002,PASS,,
+B,chase p ≈ 0.057,PASS,,
+B,K p ≈ 0.44,PASS,,
+B,O-26: nphl name rows lost to keep-first dedup == 230,PASS,230,
+B,client frame carries 380 postseason pitches,PASS,380,
+B,"V-3: Bowlan has 16 AAA pitches in lhvp26 (one game, 2026-04-26)",PASS,,
+B,"V-3: client-frame Bowlan 2026 = 60 G, wOBA .269",PASS,"[{'frame': 'MLB log only (uc-pps-033 governed)', 'games': 59, 'pitches': 967, 'pa': 232, 'woba': 0.272, 'krate': 0.315, 'aaa_rows': 0, 'aaa_game': nan}, {'frame",
+C,CX-1 n == 259,PASS,259,
+C,chase rank #28,PASS,28,
+C,whiff rank #31,PASS,31,
+C,dominated by 10,PASS,10,
+C,"none of the 10 has a starter's workload (<2,000 pitches)",PASS,1126,
+C,plus/plus quadrant holds 76,PASS,,
+C,starter workloads n == 41,PASS,41,
+C,starter workloads: whiff #1,PASS,,
+C,starter workloads: chase #8,PASS,,
+C,next whiff among starters is Wheeler 2025 at 31.5%,PASS,,
+C,sensitivity: at >= 1500 pitches Luzardo 2026 is still #1 in whiff among 51,PASS,"n=51, rank=1",
+C,sensitivity: at >= 2500 pitches Luzardo 2026 is still #1 in whiff among 26,PASS,"n=26, rank=1",
+C,"KP-1 K rate 89th pct, rank 21/198, staff #3",PASS,,
+C,"KP-1 whiff 86th, staff #2",PASS,,
+C,KP-1 chase 87th; wOBA 80th,PASS,,
+C,"command: expected BB 9.2%, actual 7.1%, residual −2.0 pts",PASS,,
+C,command residual better than 79% of LHP seasons,PASS,,
+D,109 pitches,PASS,,
+D,"2 H, 1 BB, 12 K, 1 HBP",PASS,,
+D,30 batters,PASS,,
+D,23 whiffs = 22 swinging strikes + 1 foul tip,PASS,,
+D,28 chases on 61 out-of-zone (45.9%),PASS,,
+D,42 CSW (38.5%),PASS,,
+D,"FF avg 96.3, 9th 97.4, max 98.1",PASS,,
+D,innings took 8 to 17 pitches,PASS,"{np.int64(1): 11, np.int64(2): 12, np.int64(3): 10, np.int64(4): 13, np.int64(5): 11, np.int64(6): 17, np.int64(7): 10, np.int64(8): 8, np.int64(9): 17}",
+D,ATL scored 0 on his watch,PASS,,
+D,PHI scored 1; the run is a Schwarber HR in the 8th,PASS,,
+D,"RHB changeups by time through: 2/19, 8/23, 2/21, 1/7",PASS,"({np.int64(1): 2, np.int64(2): 8, np.int64(3): 2, np.int64(4): 1}, {np.int64(1): 19, np.int64(2): 23, np.int64(3): 21, np.int64(4): 7})",
+D,RHB four-seams third time through: 11,PASS,,
+D,24 first-pitch strikes of 30 (type != 'B'),PASS,,
+E,"150 career starts, 166 games",PASS,"(150, 166)",
+E,"Labor Day GS 100, #1; next best 86 (2026-04-28)",PASS,,
+E,only 27-out game; next most 24,PASS,,
+E,career K high 13,PASS,,
+E,"first half 19 starts, 46 R / 325 outs (3.82)",PASS,,
+E,"second half 10 starts, 14 R / 202 outs (1.87)",PASS,,
+E,"August 5 starts, 7 R / 101 outs",PASS,,
+E,August K 34.6% (133 PA),PASS,,
+E,"second half K 32.1%, BB 6.4% (265 PA)",PASS,,
+E,"pitch counts 86–110, SD 6.2; Labor Day 109 is second-highest",PASS,,
+E,8/26 FF avg 95.4; 7.0 IP 1 H 0 R,PASS,,
+E,"first-15 FF: median 97.0, p25 96.2, Labor Day 96.9; one start with none (6/23)",PASS,,
+E,"postseason: 6 games, 66 outs, 10 R",PASS,,
+E,"2025 NLDS: 23 outs, 0 R",PASS,,
+E,"2023 Wild Card at PHI: 11 outs, 8 H, 3 R",PASS,,
+E,OC bars: 96.2 mph / 29.2% / 12.0 / 10.7%,PASS,,
+E,backtest 21 on / 7 off / 1 incomplete,PASS,,
+E,backtest: off-script allowed fewer runs (2.34 vs 3.13 per 27),PASS,,
+E,"postseason history 5 on-script, 1 off (2020-10-07)",PASS,,
+E,uc-pps-017 reproduction 4/4,PASS,,
+E,TTO PA 262 / 262 / 197,PASS,,
+F,report states 2026 K rate: '30.3%',PASS,,
+F,report states 2026 BB rate: '7.1%',PASS,,
+F,report states 2026 whiff: '31.9%',PASS,,
+F,report states 2026 chase: '33.7%',PASS,,
+F,report states 2026 in-zone: '46.5%',PASS,,
+F,report states 2025 in-zone: '50.5%',PASS,,
+F,report states 2025 K: '28.5%',PASS,,
+F,report states 2025 BB: '7.5%',PASS,,
+F,report states K counts: '216 of 759',PASS,,
+F,report states K counts 26: '221 of 730',PASS,,
+F,report states expected BB: '9.2%',PASS,,
+F,report states residual pct: '79%',PASS,,
+F,report states chase rank: '#28',PASS,,
+F,report states whiff rank: '#31',PASS,,
+F,report states n 259: '259',PASS,,
+F,report states starters 41: '41',PASS,,
+F,report states next whiff: '31.5%',PASS,,
+F,report states dominated 10: '**10**',PASS,,
+F,report states LHP chase #7: 'chase #7',PASS,,
+F,report states LHP whiff #9: 'whiff #9',PASS,,
+F,report states plus/plus 76: '76 seasons',PASS,,
+F,report states 89th: '89th house percentile',PASS,,
+F,report states #21 of 198: '#21 of 198',PASS,,
+F,report states 86th: '86th',PASS,,
+F,report states 87th: '87th',PASS,,
+F,report states 80th: '80th',PASS,,
+F,report states first-half r27: '3.82',PASS,,
+F,report states second-half r27: '1.87',PASS,,
+F,report states second-half K: '32.1%',PASS,,
+F,report states second-half wOBA: '.239',PASS,,
+F,report states Aug K: '34.6%',PASS,,
+F,report states Aug runs: '7 / 101',PASS,,
+F,report states TTO1: '.197 (262 PA)',PASS,,
+F,report states TTO2: '.333 (262)',PASS,,
+F,report states TTO3: '.305 (197)',PASS,,
+F,"report states GS 100: '100, #1 of 150 career starts'",PASS,,
+F,report states next GS: '86',PASS,,
+F,report states K high: '(13)',PASS,,
+F,report states 27-out: '27-out',PASS,,
+F,report states next most 24: 'next most: 24',PASS,,
+F,report states LD chase: '28 of his 61',PASS,,
+F,report states LD 45.9: '45.9%',PASS,,
+F,report states LD CSW: '42 of his 109',PASS,,
+F,report states LD 38.5: '38.5%',PASS,,
+F,report states LD ff: '96.3',PASS,,
+F,report states LD 9th: '97.4',PASS,,
+F,report states LD max: '98.1',PASS,,
+F,report states LD whiffs: '23 whiffs',PASS,,
+F,report states CH 2 of 19: '2 changeups in 19',PASS,,
+F,report states CH 8 in 23: '**8 in 23**',PASS,,
+F,report states FF 11 of 21: '11 of 21',PASS,,
+F,report states first15 LD: '**96.9 mph**',PASS,,
+F,report states first15 med: 'median of 97.0',PASS,,
+F,report states p25: '96.2',PASS,,
+F,report states SEA: '95.4 mph',PASS,,
+F,report states SEA15: '95.7',PASS,,
+F,"report states post: 'Six games, 94 batters, 66 outs, 10 runs'",PASS,,
+F,report states OC-B bar: '29.2%',PASS,,
+F,report states OC-D bar: '10.7%',PASS,,
+F,report states OC-C bar: '12.0',PASS,,
+F,"report states backtest: '21 on-script, 7 off-script and 1 incomplete'",PASS,,
+F,report states bt r27: '(2.34 per 27 outs against 3.13)',PASS,,
+F,report states O-26: '230 regular-season pitches',PASS,,
+F,report states post 380: '380 postseason pitches',PASS,,
+F,"report states dups: '1,188 duplicates removed'",PASS,,
+F,report states spring: '165 spring-training rows',PASS,,
+F,report states sweeper 38.2: '38.2%',PASS,,
+F,report states sweeper whiff: '47.6%',PASS,,
+F,report states LHB ST: '48.4%',PASS,,
+F,report states LHB whiff: '55.7%',PASS,,
+F,report states FF share: '34.1% → 26.2%',PASS,,
+F,report states SI share: '10.0% → 17.3%',PASS,,
+F,report states repro: '4/4',PASS,,
+F,report states pitch band: '86 to 110 pitches',PASS,,
+F,report states SD: '6.2',PASS,,
+F,report states p in-zone: 'p = 0.002',PASS,,
+F,report states p chase: 'p = 0.057',PASS,,
+F,report states FPS: '67.2%',PASS,,
+F,report states FPS26: '62.6%',PASS,,
+F,dashboard states '30.3%',PASS,,
+F,dashboard states '33.7%',PASS,,
+F,dashboard states '#28 of 259',PASS,,
+F,dashboard states '#1 of 150 career starts',PASS,,
+F,dashboard states '89th house percentile',PASS,,
+F,dashboard states '3.82',PASS,,
+F,dashboard states '1.87',PASS,,
+F,dashboard states '7 runs in 101 outs',PASS,,
+F,dashboard states '23 whiffs',PASS,,
+F,dashboard states '28 chases on 61',PASS,,
+F,dashboard states '97.4',PASS,,
+F,dashboard states '96.9 mph',PASS,,
+F,dashboard states '95.4 mph',PASS,,
+F,dashboard states '2.34 vs 3.13',PASS,,
+F,dashboard states 'missed more bats than any Phillies starter',PASS,,
+F,report makes no 'lowest of his career' in-zone claim,PASS,,
+F,report makes no MLB-wide rank claim,PASS,,
+G,carry-in logged in freshness manifest: Caba,PASS,,
+G,carry-in logged in freshness manifest: 135M,PASS,,
+G,carry-in logged in freshness manifest: All-Star,PASS,,
+G,carry-in logged in freshness manifest: Schwarber,PASS,,
+G,carry-in logged in freshness manifest: IL 9/15,PASS,,
+G,carry-in logged in freshness manifest: Game 162,PASS,,
+G,ERA appears only as a carry-in,PASS,,
+G,no injury inference language,PASS,,
+G,report says the shoulder is not modeled,PASS,,

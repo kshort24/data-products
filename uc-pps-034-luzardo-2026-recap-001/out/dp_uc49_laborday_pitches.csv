@@ -1,0 +1,110 @@
+pitch_of_game,inning,at_bat_number,pitch_number,batter,batter_name,stand,n_thruorder_pitcher,count,pitch_type,pitch_name,release_speed,release_spin_rate,plate_x,plate_z,zone,description,events,is_whiff,is_swing,is_csw,launch_speed,estimated_woba_using_speedangle,delta_run_exp,outs_when_up,des
+1,1,1,1,660670,Ronald Acuña Jr.,R,1,0-0,FF,4-Seam Fastball,97.3,2389.0,-0.813126750995198,3.0476835893335243,1.0,hit_into_play,field_out,False,True,False,90.5,0.003,-0.26,0,Ronald Acuña Jr. pops out to first baseman Alec Bohm in foul territory.
+2,1,2,1,686948,Drake Baldwin,L,1,0-0,SI,Sinker,95.8,2343.0,-0.2439730999722429,1.4901959419437976,13.0,ball,,False,False,False,,,0.041,1,
+3,1,2,2,686948,Drake Baldwin,L,1,1-0,ST,Sweeper,87.8,2644.0,-1.777175809405406,0.0333941986092654,13.0,ball,,False,False,False,,,0.077,1,
+4,1,2,3,686948,Drake Baldwin,L,1,2-0,SI,Sinker,97.0,2319.0,0.4450548856712455,2.1596979498086464,6.0,foul,,False,True,False,80.8,,-0.069,1,
+5,1,2,4,686948,Drake Baldwin,L,1,2-1,SI,Sinker,97.3,2363.0,1.0798067115541568,2.83540905498389,12.0,hit_into_play,field_out,False,True,False,60.6,0.154,-0.31,1,"Drake Baldwin grounds out, shortstop Trea Turner to first baseman Alec Bohm."
+6,1,3,1,645277,Ozzie Albies,R,1,0-0,CH,Changeup,86.9,1737.0,-0.2095789873813707,2.1895685462706407,5.0,foul,,False,True,False,84.1,,-0.044,2,
+7,1,3,2,645277,Ozzie Albies,R,1,0-1,ST,Sweeper,88.2,2578.0,-1.446086175607234,0.3791667658764872,13.0,swinging_strike,,True,True,True,,,-0.062,2,
+8,1,3,3,645277,Ozzie Albies,R,1,0-2,ST,Sweeper,88.7,2607.0,-1.094166469922628,2.4454693222920487,11.0,foul,,False,True,False,81.8,,0.0,2,
+9,1,3,4,645277,Ozzie Albies,R,1,0-2,ST,Sweeper,88.4,2634.0,-1.1218677650260591,0.1297128451730578,13.0,ball,,False,False,False,,,0.026,2,
+10,1,3,5,645277,Ozzie Albies,R,1,1-2,FF,4-Seam Fastball,97.5,2366.0,1.734678834232719,4.406076164377215,12.0,ball,,False,False,False,,,0.041,2,
+11,1,3,6,645277,Ozzie Albies,R,1,2-2,FF,4-Seam Fastball,98.1,2396.0,0.1228833791442503,3.2312265975802283,12.0,swinging_strike,strikeout,True,True,True,,0.0,-0.221,2,Ozzie Albies strikes out swinging.
+12,2,10,1,621566,Matt Olson,L,1,0-0,FF,4-Seam Fastball,95.2,2279.0,0.1316019839951159,3.4493914341226675,2.0,called_strike,,False,False,True,,,-0.042,0,
+13,2,10,2,621566,Matt Olson,L,1,0-1,ST,Sweeper,85.5,2572.0,-0.2819412302364822,3.028897229865065,1.0,foul,,False,True,False,,,-0.053,0,
+14,2,10,3,621566,Matt Olson,L,1,0-2,FF,4-Seam Fastball,97.0,2312.0,-0.8248267696858944,3.299407275278609,1.0,called_strike,strikeout,False,False,True,,0.0,-0.165,0,"J.T. Realmuto challenged (pitch result), call on the field was overturned: Matt Olson called out on strikes."
+15,2,11,1,657041,Lane Thomas,R,1,0-0,FF,4-Seam Fastball,96.1,2234.0,-0.8242619207576196,3.4324225897965035,11.0,swinging_strike,,True,True,True,,,-0.041,1,
+16,2,11,2,657041,Lane Thomas,R,1,0-1,FF,4-Seam Fastball,96.3,2263.0,-1.2605354173529788,1.374046053781697,13.0,ball,,False,False,False,,,0.032,1,
+17,2,11,3,657041,Lane Thomas,R,1,1-1,ST,Sweeper,86.3,2552.0,-0.4176596550240656,2.2182350507222206,4.0,hit_into_play,field_out,False,True,False,55.5,0.134,-0.253,1,"Lane Thomas grounds out, shortstop Trea Turner to first baseman Alec Bohm."
+18,2,12,1,671739,Michael Harris II,L,1,0-0,SI,Sinker,96.4,2274.0,-0.0618387210375805,1.6074845313623003,8.0,called_strike,,False,False,True,,,-0.044,2,
+19,2,12,2,671739,Michael Harris II,L,1,0-1,SI,Sinker,98.2,2217.0,0.6918211780006289,3.127654991802534,3.0,foul,,False,True,False,69.9,,-0.062,2,
+20,2,12,3,671739,Michael Harris II,L,1,0-2,FF,4-Seam Fastball,97.9,2311.0,-1.319791142829435,4.6193501624626085,11.0,ball,,False,False,False,,,0.026,2,
+21,2,12,4,671739,Michael Harris II,L,1,1-2,ST,Sweeper,88.1,2635.0,-2.3189874632834577,-0.4743235063229791,13.0,ball,,False,False,False,,,0.041,2,
+22,2,12,5,671739,Michael Harris II,L,1,2-2,ST,Sweeper,86.8,2573.0,-0.2719825345161049,2.232638316442643,5.0,foul,,False,True,False,78.6,,0.0,2,
+23,2,12,6,671739,Michael Harris II,L,1,2-2,ST,Sweeper,87.5,2590.0,-2.702525829932976,0.6975371992748469,13.0,swinging_strike_blocked,strikeout,True,True,True,,0.0,-0.221,2,Michael Harris II strikes out swinging.
+24,3,16,1,643289,Mauricio Dubón,R,1,0-0,FF,4-Seam Fastball,95.3,2235.0,-0.5653856396217347,3.629097825326318,11.0,hit_into_play,field_out,False,True,False,71.8,0.518,-0.26,0,Mauricio Dubón flies out to left fielder Brandon Marsh.
+25,3,17,1,663586,Austin Riley,R,1,0-0,SI,Sinker,93.0,2246.0,0.2044022928574249,2.873299360298698,2.0,called_strike,,False,False,True,,,-0.041,1,
+26,3,17,2,663586,Austin Riley,R,1,0-1,FF,4-Seam Fastball,95.3,2218.0,-1.1175514522889445,3.251331026496911,11.0,ball,,False,False,False,,,0.032,1,
+27,3,17,3,663586,Austin Riley,R,1,1-1,ST,Sweeper,86.9,2521.0,-2.1309393751860184,0.6558928614358566,13.0,hit_by_pitch,hit_by_pitch,False,False,False,,0.729295,0.431,1,Austin Riley hit by pitch.
+28,3,18,1,673490,Ha-Seong Kim,R,1,0-0,SI,Sinker,93.9,2163.0,-0.7808211633412507,1.4229111882977066,13.0,ball,,False,False,False,,,0.036,1,
+29,3,18,2,673490,Ha-Seong Kim,R,1,1-0,FF,4-Seam Fastball,95.8,2247.0,-0.5332569403831302,2.8814336359532087,1.0,called_strike,,False,False,True,,,-0.047,1,
+30,3,18,3,673490,Ha-Seong Kim,R,1,1-1,CH,Changeup,86.0,1734.0,-0.3280861732821467,1.5294850875520565,7.0,swinging_strike,,True,True,True,,,-0.069,1,
+31,3,18,4,673490,Ha-Seong Kim,R,1,1-2,ST,Sweeper,86.1,2467.0,-0.55880492875567,1.253116487036685,13.0,foul,,False,True,False,97.7,,0.0,1,
+32,3,18,5,673490,Ha-Seong Kim,R,1,1-2,FF,4-Seam Fastball,96.1,2224.0,0.0977853979763008,2.801924164417871,2.0,swinging_strike,strikeout,True,True,True,,0.0,-0.178,1,Ha-Seong Kim strikes out swinging.
+33,3,19,1,660670,Ronald Acuña Jr.,R,2,0-0,CH,Changeup,86.0,1732.0,-0.5304483747480013,2.1456490627922875,4.0,hit_into_play,field_out,False,True,False,97.8,0.456,-0.275,2,Ronald Acuña Jr. flies out to right fielder Bryce Harper.
+34,4,23,1,686948,Drake Baldwin,L,2,0-0,ST,Sweeper,85.3,2447.0,-0.4196974708836276,2.776895875126692,1.0,called_strike,,False,False,True,,,-0.042,0,
+35,4,23,2,686948,Drake Baldwin,L,2,0-1,ST,Sweeper,85.2,2524.0,-2.3111893518326654,1.7733815290362007,13.0,swinging_strike,,True,True,True,,,-0.053,0,
+36,4,23,3,686948,Drake Baldwin,L,2,0-2,ST,Sweeper,85.3,2590.0,-1.4967753397885135,1.34153635404014,13.0,swinging_strike,strikeout,True,True,True,,0.0,-0.165,0,Drake Baldwin strikes out swinging.
+37,4,24,1,645277,Ozzie Albies,R,2,0-0,CH,Changeup,85.2,1761.0,-0.4027133558940332,1.5749233993286942,7.0,swinging_strike,,True,True,True,,,-0.041,1,
+38,4,24,2,645277,Ozzie Albies,R,2,0-1,FF,4-Seam Fastball,95.8,2294.0,-0.5498523414489792,2.7821205809799183,1.0,foul,,False,True,False,64.4,,-0.058,1,
+39,4,24,3,645277,Ozzie Albies,R,2,0-2,ST,Sweeper,87.5,2400.0,-0.2920911468795543,1.851825023315416,7.0,hit_into_play,field_out,False,True,False,84.1,0.151,-0.163,1,"Ozzie Albies grounds out, second baseman Luis Arraez to first baseman Alec Bohm."
+40,4,25,1,621566,Matt Olson,L,2,0-0,ST,Sweeper,85.3,2555.0,-1.0379881138661302,1.476279777958934,13.0,swinging_strike,,True,True,True,,,-0.044,2,
+41,4,25,2,621566,Matt Olson,L,2,0-1,SI,Sinker,97.4,2372.0,0.1000370773419854,2.047430090784624,8.0,called_strike,,False,False,True,,,-0.062,2,
+42,4,25,3,621566,Matt Olson,L,2,0-2,ST,Sweeper,86.6,2548.0,-1.253520926712382,1.620266803795389,13.0,foul,,False,True,False,71.4,,0.0,2,
+43,4,25,4,621566,Matt Olson,L,2,0-2,FF,4-Seam Fastball,96.3,2263.0,-0.6957562345391493,3.283402436553059,1.0,hit_into_play,single,False,True,False,102.8,0.534,0.437,2,Matt Olson singles on a ground ball to center fielder Justin Crawford.
+44,4,26,1,657041,Lane Thomas,R,2,0-0,FF,4-Seam Fastball,97.0,2274.0,-0.0296523580613814,2.862054226624637,2.0,swinging_strike,,True,True,True,,,-0.04,2,
+45,4,26,2,657041,Lane Thomas,R,2,0-1,ST,Sweeper,86.8,2569.0,-1.0161944006712829,1.797761275347312,13.0,swinging_strike,,True,True,True,,,-0.061,2,
+46,4,26,3,657041,Lane Thomas,R,2,0-2,ST,Sweeper,87.1,2552.0,-0.5073648382492921,1.5154998951919487,7.0,called_strike,strikeout,False,False,True,,0.0,-0.175,2,Lane Thomas called out on strikes.
+47,5,30,1,671739,Michael Harris II,L,2,0-0,SI,Sinker,94.4,2173.0,1.4143045038421225,2.1097744497299904,14.0,ball,,False,False,False,,,0.043,0,
+48,5,30,2,671739,Michael Harris II,L,2,1-0,SI,Sinker,93.8,2166.0,0.3324015170754457,2.59216533962952,6.0,hit_into_play,field_out,False,True,False,61.6,0.248,-0.303,0,"Michael Harris II grounds out, pitcher Jesús Luzardo to first baseman Alec Bohm."
+49,5,31,1,643289,Mauricio Dubón,R,2,0-0,FF,4-Seam Fastball,95.1,2196.0,-0.272255258611606,2.919099850594985,2.0,called_strike,,False,False,True,,,-0.041,1,
+50,5,31,2,643289,Mauricio Dubón,R,2,0-1,CH,Changeup,85.7,1630.0,0.1240129189436716,1.155789909218634,14.0,ball,,False,False,False,,,0.032,1,
+51,5,31,3,643289,Mauricio Dubón,R,2,1-1,FF,4-Seam Fastball,94.7,2225.0,-0.4028484084239054,3.9563417714236606,11.0,ball,,False,False,False,,,0.057,1,
+52,5,31,4,643289,Mauricio Dubón,R,2,2-1,CH,Changeup,85.5,1665.0,0.2909877567403112,2.006533749708828,9.0,hit_into_play,field_out,False,True,False,76.2,0.062,-0.31,1,Mauricio Dubón flies out to right fielder Bryce Harper.
+53,5,32,1,663586,Austin Riley,R,2,0-0,CH,Changeup,83.8,1547.0,-0.5398304387778778,0.8331912853576324,13.0,ball,,False,False,False,,,0.041,2,
+54,5,32,2,663586,Austin Riley,R,2,1-0,ST,Sweeper,84.6,2633.0,-0.8436672939215183,1.2641969087119516,13.0,ball,,False,False,False,,,0.066,2,
+55,5,32,3,663586,Austin Riley,R,2,2-0,CH,Changeup,85.6,1674.0,-0.2193031351083638,1.3890161402707797,13.0,called_strike,,False,False,True,,,-0.067,2,
+56,5,32,4,663586,Austin Riley,R,2,2-1,CH,Changeup,86.3,1769.0,-0.1243563144444017,2.266338751243588,5.0,foul,,False,True,False,77.4,,-0.079,2,
+57,5,32,5,663586,Austin Riley,R,2,2-2,FF,4-Seam Fastball,96.4,2212.0,0.7514108420766337,3.4951942456048237,12.0,swinging_strike,strikeout,True,True,True,,0.0,-0.221,2,Austin Riley strikes out swinging.
+58,6,36,1,673490,Ha-Seong Kim,R,2,0-0,FF,4-Seam Fastball,93.7,2195.0,-0.7092903733702531,2.8359587668244943,1.0,foul,,False,True,False,,,-0.042,0,
+59,6,36,2,673490,Ha-Seong Kim,R,2,0-1,CH,Changeup,84.5,1621.0,1.192722458414286,2.271432895951388,14.0,ball,,False,False,False,,,0.03,0,
+60,6,36,3,673490,Ha-Seong Kim,R,2,1-1,ST,Sweeper,83.7,2459.0,-0.8085798330740128,2.631583281806709,4.0,called_strike,,False,False,True,,,-0.061,0,
+61,6,36,4,673490,Ha-Seong Kim,R,2,1-2,FF,4-Seam Fastball,95.9,2168.0,-0.261761054424939,4.138390164713718,11.0,ball,,False,False,False,,,0.046,0,
+62,6,36,5,673490,Ha-Seong Kim,R,2,2-2,ST,Sweeper,86.1,2496.0,-0.8570492026224261,1.5464154912140642,13.0,foul,,False,True,False,63.7,,0.0,0,
+63,6,36,6,673490,Ha-Seong Kim,R,2,2-2,ST,Sweeper,84.5,2384.0,2.036551112471237,3.341940707391024,12.0,ball,,False,False,False,,,0.114,0,
+64,6,36,7,673490,Ha-Seong Kim,R,2,3-2,FF,4-Seam Fastball,97.1,2258.0,0.4416546667255844,2.9556908679008025,3.0,swinging_strike,strikeout,True,True,True,,0.0,-0.347,0,Ha-Seong Kim strikes out swinging.
+65,6,37,1,660670,Ronald Acuña Jr.,R,3,0-0,FF,4-Seam Fastball,96.8,2299.0,-0.1694255566478657,3.401906307879792,11.0,called_strike,,False,False,True,,,-0.041,1,
+66,6,37,2,660670,Ronald Acuña Jr.,R,3,0-1,FF,4-Seam Fastball,97.3,2262.0,-0.1545465632227429,2.537395881871273,5.0,swinging_strike,,True,True,True,,,-0.058,1,
+67,6,37,3,660670,Ronald Acuña Jr.,R,3,0-2,ST,Sweeper,88.3,2622.0,-1.053641220866992,1.7078460018793722,13.0,swinging_strike,strikeout,True,True,True,,0.0,-0.163,1,Ronald Acuña Jr. strikes out swinging.
+68,6,38,1,686948,Drake Baldwin,L,3,0-0,ST,Sweeper,86.6,2534.0,-1.589246904626518,0.3658502847412959,13.0,swinging_strike,,True,True,True,,,-0.044,2,
+69,6,38,2,686948,Drake Baldwin,L,3,0-1,SI,Sinker,97.6,2314.0,-0.0417989944736112,3.4192749459754386,11.0,ball,,False,False,False,,,0.03,2,
+70,6,38,3,686948,Drake Baldwin,L,3,1-1,SI,Sinker,97.1,2372.0,0.3554573382631303,1.563525895509532,9.0,called_strike,,False,False,True,,,-0.065,2,
+71,6,38,4,686948,Drake Baldwin,L,3,1-2,ST,Sweeper,88.1,2636.0,-3.6788559308965887,-0.7929089088584216,13.0,ball,,False,False,False,,,0.041,2,
+72,6,38,5,686948,Drake Baldwin,L,3,2-2,ST,Sweeper,87.3,2454.0,-0.0306948707770807,2.941303885829615,2.0,foul,,False,True,False,73.9,,0.0,2,
+73,6,38,6,686948,Drake Baldwin,L,3,2-2,ST,Sweeper,86.9,2477.0,-2.497998567234402,0.5134664144134229,13.0,ball,,False,False,False,,,0.082,2,
+74,6,38,7,686948,Drake Baldwin,L,3,3-2,SI,Sinker,96.6,2297.0,0.849580731825361,2.199861637622593,14.0,hit_into_play,field_out,False,True,False,78.2,0.065,-0.303,2,"Drake Baldwin grounds out, second baseman Luis Arraez to first baseman Alec Bohm."
+75,7,43,1,645277,Ozzie Albies,R,3,0-0,FF,4-Seam Fastball,93.9,2189.0,-0.1416524811885151,2.032336967594203,5.0,foul,,False,True,False,76.0,,-0.042,0,
+76,7,43,2,645277,Ozzie Albies,R,3,0-1,CH,Changeup,84.6,1632.0,0.7911807903781582,1.4263473750274236,9.0,hit_into_play,field_out,False,True,False,71.5,0.189,-0.218,0,Ozzie Albies flies out to second baseman Luis Arraez.
+77,7,44,1,621566,Matt Olson,L,3,0-0,FF,4-Seam Fastball,95.3,2300.0,0.0587123946520129,3.269374336335207,2.0,foul_tip,,True,True,True,,,-0.041,1,
+78,7,44,2,621566,Matt Olson,L,3,0-1,SI,Sinker,95.3,2392.0,0.909051982620767,2.868888170911571,12.0,hit_into_play,field_out,False,True,False,70.9,0.05,-0.221,1,"Matt Olson grounds out, second baseman Luis Arraez to first baseman Alec Bohm."
+79,7,45,1,657041,Lane Thomas,R,3,0-0,FF,4-Seam Fastball,96.0,2233.0,-0.3897985933221186,3.410456657811272,11.0,called_strike,,False,False,True,,,-0.044,2,
+80,7,45,2,657041,Lane Thomas,R,3,0-1,ST,Sweeper,86.1,2536.0,-0.2354126631322307,1.134896203831936,13.0,ball,,False,False,False,,,0.03,2,
+81,7,45,3,657041,Lane Thomas,R,3,1-1,ST,Sweeper,84.8,2471.0,-0.0232928274709716,2.8048234685168274,2.0,called_strike,,False,False,True,,,-0.065,2,
+82,7,45,4,657041,Lane Thomas,R,3,1-2,FF,4-Seam Fastball,96.2,2251.0,-0.8953672970137376,3.7303861991099634,11.0,foul,,False,True,False,,,0.0,2,
+83,7,45,5,657041,Lane Thomas,R,3,1-2,ST,Sweeper,83.0,2409.0,1.7082817584702463,3.3155409215240588,12.0,ball,,False,False,False,,,0.041,2,
+84,7,45,6,657041,Lane Thomas,R,3,2-2,ST,Sweeper,86.9,2568.0,-1.7001405400594232,0.5743982316892211,13.0,swinging_strike_blocked,strikeout,True,True,True,,0.0,-0.221,2,Lane Thomas strikes out swinging.
+85,8,49,1,671739,Michael Harris II,L,3,0-0,SI,Sinker,93.4,2053.0,0.8294372359600872,1.4602644809762209,14.0,foul,,False,True,False,97.7,,-0.042,0,
+86,8,49,2,671739,Michael Harris II,L,3,0-1,SI,Sinker,94.9,2259.0,0.3403772994504095,1.9260381881965196,9.0,hit_into_play,single,False,True,False,105.6,0.327,0.488,0,Michael Harris II singles on a ground ball to right fielder Bryce Harper.
+87,8,50,1,643289,Mauricio Dubón,R,3,0-0,FF,4-Seam Fastball,94.7,2187.0,-0.2996618934241126,2.534981392542049,4.0,swinging_strike,,True,True,True,,,-0.04,0,
+88,8,50,2,643289,Mauricio Dubón,R,3,0-1,ST,Sweeper,84.9,2318.0,-0.4502396803786209,1.5057891419216416,7.0,foul,,False,True,False,63.3,,-0.049,0,
+89,8,50,3,643289,Mauricio Dubón,R,3,0-2,FF,4-Seam Fastball,96.3,2293.0,0.2188092977610265,3.331297879574459,12.0,hit_into_play,grounded_into_double_play,False,True,False,96.4,0.255,-0.257,0,"Mauricio Dubón grounds into a double play, second baseman Luis Arraez to first baseman Alec Bohm. Michael Harris II out at 2nd. Mauricio Dubón out at 1st."
+90,8,51,1,663586,Austin Riley,R,3,0-0,ST,Sweeper,84.1,2462.0,-0.7475080215853729,1.3573518649292091,13.0,swinging_strike,,True,True,True,,,-0.044,2,
+91,8,51,2,663586,Austin Riley,R,3,0-1,FF,4-Seam Fastball,96.0,2269.0,-0.2288521598423298,3.331631463878475,2.0,foul,,False,True,False,82.6,,-0.062,2,
+92,8,51,3,663586,Austin Riley,R,3,0-2,ST,Sweeper,88.0,2518.0,0.4428415276890605,1.919983347829429,9.0,called_strike,strikeout,False,False,True,,0.0,-0.154,2,Austin Riley called out on strikes.
+93,9,56,1,673490,Ha-Seong Kim,R,3,0-0,FF,4-Seam Fastball,97.1,2262.0,0.7434851159782893,2.8559505033610084,3.0,ball,,False,False,False,,,0.043,0,
+94,9,56,2,673490,Ha-Seong Kim,R,3,1-0,FF,4-Seam Fastball,97.0,2283.0,-0.397221334175323,2.372135877422509,4.0,foul,,False,True,False,62.3,,-0.055,0,
+95,9,56,3,673490,Ha-Seong Kim,R,3,1-1,CH,Changeup,86.4,1728.0,-0.3430147092486664,0.8107313252931521,13.0,foul,,False,True,False,89.3,,-0.061,0,
+96,9,56,4,673490,Ha-Seong Kim,R,3,1-2,FF,4-Seam Fastball,97.5,2362.0,0.3947722150307864,3.4380616469840737,12.0,hit_into_play,field_out,False,True,False,93.8,0.236,-0.187,0,Ha-Seong Kim flies out to center fielder Justin Crawford.
+97,9,57,1,660670,Ronald Acuña Jr.,R,4,0-0,FF,4-Seam Fastball,97.9,2284.0,-0.1715256057759437,3.809114840988845,11.0,ball,,False,False,False,,,0.041,1,
+98,9,57,2,660670,Ronald Acuña Jr.,R,4,1-0,ST,Sweeper,86.4,2568.0,-1.119949425293186,2.0515824554329223,13.0,swinging_strike,,True,True,True,,,-0.05,1,
+99,9,57,3,660670,Ronald Acuña Jr.,R,4,1-1,FF,4-Seam Fastball,98.0,2365.0,0.3390837080125528,4.445955468613794,12.0,ball,,False,False,False,,,0.057,1,
+100,9,57,4,660670,Ronald Acuña Jr.,R,4,2-1,FF,4-Seam Fastball,97.1,2321.0,0.1170420863962555,4.2832271119472,12.0,ball,,False,False,False,,,0.13,1,
+101,9,57,5,660670,Ronald Acuña Jr.,R,4,3-1,ST,Sweeper,86.1,2573.0,-0.5549685247846252,1.9624596764640545,7.0,called_strike,,False,False,True,,,-0.095,1,
+102,9,57,6,660670,Ronald Acuña Jr.,R,4,3-2,ST,Sweeper,88.0,2613.0,-1.5102726604969945,1.1600817479370815,13.0,ball,walk,False,False,False,,0.698334,0.338,1,Ronald Acuña Jr. walks.
+103,9,58,1,686948,Drake Baldwin,L,4,0-0,ST,Sweeper,85.5,2547.0,-1.6012284803909265,0.7968436896498261,13.0,swinging_strike,,True,True,True,,,-0.039,1,
+104,9,58,2,686948,Drake Baldwin,L,4,0-1,ST,Sweeper,86.5,2636.0,-1.0712398242117809,1.2648512256281927,13.0,ball,,False,False,False,,,0.028,1,
+105,9,58,3,686948,Drake Baldwin,L,4,1-1,ST,Sweeper,86.3,2601.0,-0.96724980242229,1.5663866638580246,13.0,ball,,False,False,False,,,0.067,1,
+106,9,58,4,686948,Drake Baldwin,L,4,2-1,SI,Sinker,96.3,2362.0,1.1664971061240483,3.213557218414492,12.0,ball,,False,False,False,,,0.099,1,
+107,9,58,5,686948,Drake Baldwin,L,4,3-1,SI,Sinker,94.7,2267.0,0.4500680650233264,2.120597573009299,6.0,called_strike,,False,False,True,,,-0.103,1,
+108,9,58,6,686948,Drake Baldwin,L,4,3-2,SI,Sinker,96.4,2364.0,0.1044186760368821,3.04983037955646,2.0,called_strike,strikeout,False,False,True,,0.0,-0.309,1,Drake Baldwin called out on strikes.
+109,9,59,1,645277,Ozzie Albies,R,4,0-0,CH,Changeup,87.0,1702.0,0.2236842138314729,2.112924549376957,5.0,hit_into_play,field_out,False,True,False,86.9,0.0,-0.275,2,Ozzie Albies flies out to left fielder Brandon Marsh.

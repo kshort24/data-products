@@ -1,0 +1,9 @@
+stand,pitch_type,pitch_name,n,plate_x,plate_z,usage,dispersion_ft,untracked_dropped
+L,CH,Changeup,18,0.1892,1.9005,0.0063,0.8294,0
+L,FF,4-Seam Fastball,90,-0.4427,2.7533,0.0315,0.8881,0
+L,SI,Sinker,239,0.1899,2.1042,0.0836,0.7485,0
+L,ST,Sweeper,325,-0.9591,1.711,0.1136,1.2629,0
+R,CH,Changeup,504,0.3369,1.9514,0.1762,0.9421,0
+R,FF,4-Seam Fastball,659,-0.3778,2.7582,0.2304,0.8906,0
+R,SI,Sinker,257,0.2261,2.0179,0.0899,0.818,0
+R,ST,Sweeper,768,-0.3466,1.6796,0.2685,1.1112,0

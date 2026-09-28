@@ -1,0 +1,65 @@
+[
+ {
+  "figure": "fig1_the_chase",
+  "title": "The Chase: he gets hitters to swing at balls, and miss",
+  "subtitle": "Phillies pitcher-seasons 2015\u20132026, regular season, \u2265150 pitches (n = 259). Marker size = pitches. Luzardo 2026: chase 33.7% (#28), whiff 31.9% (#31). Only 10 pitcher-seasons beat him on both, none with a starter's workload; among the 41 starter workloads (\u22652,000 pitches) his whiff rate is #1 and none beats him on both. Green = above the population mean on both.",
+  "population": "CX-1, n=259",
+  "receipt": "dp_uc49_context_population.csv"
+ },
+ {
+  "figure": "fig2_command",
+  "title": "He doesn't need the zone: fewer strikes, no extra walks",
+  "subtitle": "Phillies LHP seasons, \u2265150 pitches (n = 63). At his 2026 in-zone rate (46.5%) the fit expects a 9.2% walk rate; he walked 7.1%. His in-zone rate fell from 50.5% (2025), p = 0.002; walks did not rise.",
+  "population": "CX-1 LHP, n=63",
+  "receipt": "dp_uc49_command_ols.csv"
+ },
+ {
+  "figure": "fig3_career_arc",
+  "title": "Eight seasons: the chase kept climbing, and in 2026 the zone let go",
+  "subtitle": "Regular season, id-locked career frame (CF-2). Gray = OAK/MIA, blue = 2025, red = 2026 (both Phillies). 2019 is 46 PA and 2024 is 274 PA (injury-shortened): context only. PA in the hover.",
+  "population": "CF-2 by season",
+  "receipt": "dp_uc49_recap_governed.csv"
+ },
+ {
+  "figure": "fig4_season_by_start",
+  "title": "Twenty-nine starts: the summer turned, then Labor Day",
+  "subtitle": "First half (19 starts): 3.82 runs on watch per 27 outs, K 29.2%. Second half (10): 1.87, K 32.1%. August (navy): 7 runs in 101 outs. Blue band = his first-15 velocity at or above his own 25th percentile (96.2 mph). The 6/23 gap: no four-seam in his first 15 pitches. No start after 9/7 (IL 9/15, carry-in).",
+  "population": "29 starts",
+  "receipt": "dp_uc49_starts_2026.csv"
+ },
+ {
+  "figure": "fig5_laborday_pitch_by_pitch",
+  "title": "Labor Day, 109 pitches: 27 outs, 23 whiffs, 1 hour 51 minutes",
+  "subtitle": "PHI 1, ATL 0 \u00b7 2026-09-07 \u00b7 9 IP, 2 H, 0 R, 1 BB, 12 K. Filled marker = whiff (house definition: swinging strikes + foul tips). He chased 28 of 61 out-of-zone pitches (45.9%; season 33.7%). Four-seam averaged 96.3 mph and 97.4 in the 9th. The run: Schwarber, solo HR in the 8th. Game time is a carry-in (MLB.com).",
+  "population": "game_pk 823415",
+  "receipt": "dp_uc49_laborday_pitches.csv"
+ },
+ {
+  "figure": "fig6_two_game_plans",
+  "title": "Two game plans: the changeup arrived the second time through",
+  "subtitle": "Labor Day, pitches to right-handed hitters only, by time through the order (counts in the bars). Changeups: 2 of 19 the first time, 8 of 23 the second. Descriptive, one game; the 'two game plans' framing is from post-game reporting (Metro Philadelphia) and the log is consistent with it.",
+  "population": "Labor Day RHB pitches",
+  "receipt": "dp_uc49_laborday_mix_by_tto.csv"
+ },
+ {
+  "figure": "fig7_pitch_map",
+  "title": "Where the pitches live: sweeper away, sinker in, changeup down",
+  "subtitle": "2026 regular season, 2860 pitches. Marker = average location (unrounded, PM-1), size = usage share within that batter side (AR-2). Box = average zone (1.61\u20133.20 ft). vs LHB the sweeper is 48.4% of pitches with a 55.7% whiff rate.",
+  "population": "2026 by stand",
+  "receipt": "dp_uc49_pitch_map_2026.csv"
+ },
+ {
+  "figure": "fig8_career_game_scores",
+  "title": "The best start of his career, by fourteen points",
+  "subtitle": "All 150 regular-season career starts, id-locked (CF-2). Game Score = 40 + 2\u00d7outs + K \u2212 2\u00d7BB \u2212 2\u00d7H \u2212 3\u00d7R \u2212 6\u00d7HR (Tango v2 form; R = runs on watch). Labor Day is the only 27-out game of his career (next most: 24). Next best: 86 on 2026-04-28. His career high in strikeouts is 13, so 12 K is not the record; the game is.",
+  "population": "150 starts",
+  "receipt": "dp_uc49_career_game_scores.csv"
+ },
+ {
+  "figure": "fig9_notecard",
+  "title": "Jes\u00fas Luzardo, Labor Day 2026",
+  "subtitle": "Complete-game shutout, the first of his career",
+  "population": "game_pk 823415",
+  "receipt": "dp_uc49_headlines.json"
+ }
+]

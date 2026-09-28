@@ -1,0 +1,5 @@
+signature,label,column,direction,quantile,bar,season_median,season_min,season_max,outings,registered_on,anchor
+OC-A,Arm: four-seam velocity over the first 15 pitches,first_n_ff_velo,higher,0.25,96.21875,97.00571428571428,95.66666666666667,98.76666666666667,28,2026-09-27,2026-09-26
+OC-B,The chase: share of out-of-zone pitches swung at,chase_rate,higher,0.25,0.2916666666666667,0.32608695652173914,0.13636363636363635,0.5087719298245614,29,2026-09-27,2026-09-26
+OC-C,Swing-and-miss: whiffs per 100 pitches,whiff_per_100,higher,0.25,12.0,13.953488372093023,8.080808080808081,23.232323232323232,29,2026-09-27,2026-09-26
+OC-D,Control: walks per plate appearance,bb_rate,lower,0.75,0.10714285714285714,0.07142857142857142,0.0,0.16666666666666666,29,2026-09-27,2026-09-26

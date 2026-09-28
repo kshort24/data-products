@@ -1,0 +1,9 @@
+pitch_type,pitch_name,count,release_speed,release_spin_rate,zone,pfx_x,plate_x,pfx_z,plate_z,usage,stand
+ST,Sweeper,325,86.4,2468.3,10.4,-0.7,-1.0,-0.1,1.7,48.4,L
+SI,Sinker,239,96.2,2241.3,8.7,1.5,0.2,0.5,2.1,35.6,L
+FF,4-Seam Fastball,90,96.9,2211.1,6.8,1.0,-0.4,1.1,2.8,13.4,L
+CH,Changeup,18,86.4,1620.3,9.8,1.3,0.2,0.3,1.9,2.7,L
+ST,Sweeper,768,85.9,2433.1,10.2,-0.7,-0.3,-0.1,1.7,35.1,R
+FF,4-Seam Fastball,659,96.8,2229.0,8.0,1.0,-0.4,1.1,2.8,30.1,R
+CH,Changeup,504,86.0,1666.2,9.9,1.3,0.3,0.2,2.0,23.0,R
+SI,Sinker,257,95.4,2207.3,9.3,1.5,0.2,0.5,2.0,11.7,R

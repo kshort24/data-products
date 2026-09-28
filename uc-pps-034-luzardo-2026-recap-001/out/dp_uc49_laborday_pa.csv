@@ -1,0 +1,31 @@
+at_bat_number,inning,batter_name,stand,tto,pitches,sequence,whiffs,result,des
+1,1,Ronald Acuña Jr.,R,1,1,FF,0,field_out,Ronald Acuña Jr. pops out to first baseman Alec Bohm in foul territory.
+2,1,Drake Baldwin,L,1,4,SI-ST-SI-SI,0,field_out,"Drake Baldwin grounds out, shortstop Trea Turner to first baseman Alec Bohm."
+3,1,Ozzie Albies,R,1,6,CH-ST-ST-ST-FF-FF,2,strikeout,Ozzie Albies strikes out swinging.
+10,2,Matt Olson,L,1,3,FF-ST-FF,0,strikeout,"J.T. Realmuto challenged (pitch result), call on the field was overturned: Matt Olson called out on strikes."
+11,2,Lane Thomas,R,1,3,FF-FF-ST,1,field_out,"Lane Thomas grounds out, shortstop Trea Turner to first baseman Alec Bohm."
+12,2,Michael Harris II,L,1,6,SI-SI-FF-ST-ST-ST,1,strikeout,Michael Harris II strikes out swinging.
+16,3,Mauricio Dubón,R,1,1,FF,0,field_out,Mauricio Dubón flies out to left fielder Brandon Marsh.
+17,3,Austin Riley,R,1,3,SI-FF-ST,0,hit_by_pitch,Austin Riley hit by pitch.
+18,3,Ha-Seong Kim,R,1,5,SI-FF-CH-ST-FF,2,strikeout,Ha-Seong Kim strikes out swinging.
+19,3,Ronald Acuña Jr.,R,2,1,CH,0,field_out,Ronald Acuña Jr. flies out to right fielder Bryce Harper.
+23,4,Drake Baldwin,L,2,3,ST-ST-ST,2,strikeout,Drake Baldwin strikes out swinging.
+24,4,Ozzie Albies,R,2,3,CH-FF-ST,1,field_out,"Ozzie Albies grounds out, second baseman Luis Arraez to first baseman Alec Bohm."
+25,4,Matt Olson,L,2,4,ST-SI-ST-FF,1,single,Matt Olson singles on a ground ball to center fielder Justin Crawford.
+26,4,Lane Thomas,R,2,3,FF-ST-ST,2,strikeout,Lane Thomas called out on strikes.
+30,5,Michael Harris II,L,2,2,SI-SI,0,field_out,"Michael Harris II grounds out, pitcher Jesús Luzardo to first baseman Alec Bohm."
+31,5,Mauricio Dubón,R,2,4,FF-CH-FF-CH,0,field_out,Mauricio Dubón flies out to right fielder Bryce Harper.
+32,5,Austin Riley,R,2,5,CH-ST-CH-CH-FF,1,strikeout,Austin Riley strikes out swinging.
+36,6,Ha-Seong Kim,R,2,7,FF-CH-ST-FF-ST-ST-FF,1,strikeout,Ha-Seong Kim strikes out swinging.
+37,6,Ronald Acuña Jr.,R,3,3,FF-FF-ST,2,strikeout,Ronald Acuña Jr. strikes out swinging.
+38,6,Drake Baldwin,L,3,7,ST-SI-SI-ST-ST-ST-SI,1,field_out,"Drake Baldwin grounds out, second baseman Luis Arraez to first baseman Alec Bohm."
+43,7,Ozzie Albies,R,3,2,FF-CH,0,field_out,Ozzie Albies flies out to second baseman Luis Arraez.
+44,7,Matt Olson,L,3,2,FF-SI,1,field_out,"Matt Olson grounds out, second baseman Luis Arraez to first baseman Alec Bohm."
+45,7,Lane Thomas,R,3,6,FF-ST-ST-FF-ST-ST,1,strikeout,Lane Thomas strikes out swinging.
+49,8,Michael Harris II,L,3,2,SI-SI,0,single,Michael Harris II singles on a ground ball to right fielder Bryce Harper.
+50,8,Mauricio Dubón,R,3,3,FF-ST-FF,1,grounded_into_double_play,"Mauricio Dubón grounds into a double play, second baseman Luis Arraez to first baseman Alec Bohm. Michael Harris II out at 2nd. Mauricio Dubón out at 1st."
+51,8,Austin Riley,R,3,3,ST-FF-ST,1,strikeout,Austin Riley called out on strikes.
+56,9,Ha-Seong Kim,R,3,4,FF-FF-CH-FF,0,field_out,Ha-Seong Kim flies out to center fielder Justin Crawford.
+57,9,Ronald Acuña Jr.,R,4,6,FF-ST-FF-FF-ST-ST,1,walk,Ronald Acuña Jr. walks.
+58,9,Drake Baldwin,L,4,6,ST-ST-ST-SI-SI-SI,1,strikeout,Drake Baldwin called out on strikes.
+59,9,Ozzie Albies,R,4,1,CH,0,field_out,Ozzie Albies flies out to left fielder Brandon Marsh.
