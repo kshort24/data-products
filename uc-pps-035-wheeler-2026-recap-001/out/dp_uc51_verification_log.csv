@@ -1,0 +1,205 @@
+family,check,result,observed,expected
+A,dp_uc49_kernel.py sha256 pinned,PASS,a4ad5191a653,a4ad5191a653
+A,dp_uc50_kernel.py sha256 pinned,PASS,8084cb172d0c,8084cb172d0c
+A,dp_uc48_kernel.py sha256 pinned,PASS,0f63857a1032,0f63857a1032
+A,dp_uc44_kernel.py sha256 pinned,PASS,a2c119096db2,a2c119096db2
+A,barrel_rate.py sha256 pinned,PASS,6282f090394a,6282f090394a
+A,IX-1 segment dp_uc8_nola_vs_nationals.py:PLATE_HALF re-hashed independently,PASS,8ed1a2a2c85c,
+A,IX-1 segment dp_uc8_nola_vs_nationals.py:BALL_FT re-hashed independently,PASS,f14f22431b7f,
+A,IX-1 segment dp_uc8_nola_vs_nationals.py:_dist_to_zone_edge re-hashed independently,PASS,0564cc8e76ee,
+A,IX-1 segment dp_uc8_nola_vs_nationals.py:edge_rate re-hashed independently,PASS,c8da8544f6fc,
+A,IX-1 segment Baseball Functions.ipynb:jam_rate re-hashed independently,PASS,fe08ed2608d2,
+A,IX-1 segment dp_uc28_painter_vs_orioles.py:release_consistency re-hashed independently,PASS,e7d58d42b85a,
+A,anchor == Game 162 (2026-09-27),PASS,2026-09-27,
+A,DQ scorecard has 0 FAIL,PASS,"{'PASS': 26, 'WARN': 4}",
+B,Phillies log max regular-season date == anchor,PASS,,
+B,2026 regular-season pitches,PASS,2649,
+B,2026 games == 28,PASS,28,
+B,2026 window 4/25 .. 9/27,PASS,,
+B,Phillies-era frame size == recap receipt,PASS,17973,
+B,id scan: 24 opponent files hold his pitches,PASS,24,
+B,"MI-1: lhvp26 holds 148 Wheeler rows in 3 games, all tagged 'R'",PASS,"148 rows, 3 games",
+B,MI-1 receipt matches (148 excluded),PASS,,
+B,NM-1: CF-2 stamps SUBJECT_NAME (Luzardo) on every frame it builds (static check),PASS,,
+B,"client frame = governed + postseason rows (1,065)",PASS,19038 = 17973 + 1065,
+C,2020 pa,PASS,286.0,286.0
+C,2020 krate,PASS,0.1853,0.185
+C,2020 bbrate,PASS,0.049,0.049
+C,2020 woba,PASS,0.2902,0.29
+C,2020 xwoba,PASS,0.2889,0.2889
+C,2020 in_zone,PASS,0.4921,0.4921
+C,2020 chase,PASS,0.3272,0.327
+C,2020 edge,PASS,0.3658,0.366
+C,2020 hh,PASS,0.3396,0.3396
+C,2020 barrel,PASS,0.0377,0.038
+C,2020 ld,PASS,0.2736,0.2736
+C,2020 whiff,PASS,0.2263,0.2263
+C,2020 velo,PASS,96.9439,96.9439
+C,2021 pa,PASS,849.0,849.0
+C,2021 krate,PASS,0.2909,0.291
+C,2021 bbrate,PASS,0.053,0.053
+C,2021 woba,PASS,0.2545,0.255
+C,2021 xwoba,PASS,0.2565,0.2565
+C,2021 in_zone,PASS,0.5145,0.5145
+C,2021 chase,PASS,0.304,0.304
+C,2021 edge,PASS,0.3813,0.381
+C,2021 hh,PASS,0.2847,0.2847
+C,2021 barrel,PASS,0.0456,0.046
+C,2021 ld,PASS,0.2427,0.2427
+C,2021 whiff,PASS,0.2676,0.2676
+C,2021 velo,PASS,97.176,97.176
+C,2022 pa,PASS,608.0,608.0
+C,2022 krate,PASS,0.2681,0.268
+C,2022 bbrate,PASS,0.0543,0.054
+C,2022 woba,PASS,0.2742,0.274
+C,2022 xwoba,PASS,0.2748,0.2748
+C,2022 in_zone,PASS,0.5021,0.5021
+C,2022 chase,PASS,0.3279,0.328
+C,2022 edge,PASS,0.3643,0.364
+C,2022 hh,PASS,0.3449,0.3449
+C,2022 barrel,PASS,0.0769,0.077
+C,2022 ld,PASS,0.2432,0.2432
+C,2022 whiff,PASS,0.2513,0.2513
+C,2022 velo,PASS,95.9205,95.9205
+C,2023 pa,PASS,787.0,787.0
+C,2023 krate,PASS,0.2681,0.268
+C,2023 bbrate,PASS,0.0496,0.05
+C,2023 woba,PASS,0.2776,0.278
+C,2023 xwoba,PASS,0.278,0.278
+C,2023 in_zone,PASS,0.497,0.497
+C,2023 chase,PASS,0.3214,0.321
+C,2023 edge,PASS,0.3727,0.373
+C,2023 hh,PASS,0.3643,0.3643
+C,2023 barrel,PASS,0.0512,0.051
+C,2023 ld,PASS,0.2372,0.2372
+C,2023 whiff,PASS,0.2863,0.2863
+C,2023 velo,PASS,95.7924,95.7924
+C,2024 pa,PASS,788.0,788.0
+C,2024 krate,PASS,0.2843,0.284
+C,2024 bbrate,PASS,0.066,0.066
+C,2024 woba,PASS,0.2557,0.256
+C,2024 xwoba,PASS,0.2656,0.2656
+C,2024 in_zone,PASS,0.4941,0.4941
+C,2024 chase,PASS,0.3382,0.338
+C,2024 edge,PASS,0.3664,0.366
+C,2024 hh,PASS,0.336,0.336
+C,2024 barrel,PASS,0.0835,0.083
+C,2024 ld,PASS,0.2087,0.2087
+C,2024 whiff,PASS,0.2754,0.2754
+C,2024 velo,PASS,95.2673,95.2673
+C,2025 pa,PASS,587.0,587.0
+C,2025 krate,PASS,0.3322,0.332
+C,2025 bbrate,PASS,0.0562,0.056
+C,2025 woba,PASS,0.2625,0.262
+C,2025 xwoba,PASS,0.2529,0.2529
+C,2025 in_zone,PASS,0.5008,0.5008
+C,2025 chase,PASS,0.3121,0.312
+C,2025 edge,PASS,0.3551,0.355
+C,2025 hh,PASS,0.341,0.341
+C,2025 barrel,PASS,0.0716,0.072
+C,2025 ld,PASS,0.2378,0.2378
+C,2025 whiff,PASS,0.3145,0.3145
+C,2025 velo,PASS,96.0726,96.0726
+C,2025 tied-up (JR-1 re-implemented),PASS,0.3296,0.33
+C,2026 pa,PASS,645.0,645.0
+C,2026 krate,PASS,0.2992,0.299
+C,2026 bbrate,PASS,0.0729,0.073
+C,2026 woba,PASS,0.2783,0.278
+C,2026 xwoba,PASS,0.2627,0.2627
+C,2026 in_zone,PASS,0.4205,0.4205
+C,2026 chase,PASS,0.3622,0.362
+C,2026 edge,PASS,0.3601,0.36
+C,2026 hh,PASS,0.3516,0.3516
+C,2026 barrel,PASS,0.0599,0.06
+C,2026 ld,PASS,0.2319,0.2319
+C,2026 whiff,PASS,0.3086,0.3086
+C,2026 velo,PASS,95.2203,95.2203
+C,2026 tied-up (JR-1 re-implemented),PASS,0.3198,0.32
+C,2026 BB rate is the highest of the seven Phillies seasons,PASS,,
+C,"2026 in-zone is the lowest, chase the highest, FF velo the lowest of the seven",PASS,,
+C,xwOBA 2026 == client's Savant .263 (3 dp),PASS,0.2627,
+C,"2026 K == 193, BB == 47 (carry-in)",PASS,,
+C,in-zone 2026 vs 2021-25 p < .001,PASS,1.554312234475219e-14,
+C,BB 2026 vs 2021-25 p,PASS,0.0889,
+C,Hard-hit per BIP 2026 vs 2021-25 p > .4 (noise),PASS,0.457,
+C,Barrel per BIP 2026 vs 2021-25 p > .4 (noise),PASS,0.732,
+C,Line drive per BIP 2026 vs 2021-25 p > .4 (noise),PASS,0.946,
+D,OU-2 re-implemented: 486 outs (= 162.0 IP carry-in),PASS,486,
+D,"exactly one six-start post-break window reconciles to 8.51, and it is 7/27-8/24",PASS,"[('2026-07-27', '2026-08-24', np.float64(8.506849315068493))]",
+D,"slide BB 13.4% vs 5.9%, p = .004",PASS,0.1345 / 0.0589 / p 0.0042,
+D,slide K not different (p > .2),PASS,,
+D,"finish BB 6.2%, 1.67 runs per 27 outs",PASS,0.0616,
+D,"arm-side share of clear misses 25.5% vs 17.8%, p = .033",PASS,"38/149 vs 112/628, p 0.0330",
+D,release point did not move (Welch p > .2 on x and height),PASS,0.278 / 0.311,
+D,"Game 162: 6.0 IP, 1 run on watch",PASS,,
+D,"WC G3: 4.0 IP, 2 runs, Albies HR in the 4th, 68 pitches",PASS,,
+E,starter workloads n = 41; Wheeler 2026 xwOBA #6,PASS,"n 41, rank 6",
+E,6 of the top-10 starter xwOBA seasons are Wheeler's,PASS,,
+E,K-BB #6 of 41,PASS,,
+E,tied-up population: #11 of 45; #6 of 14 with >= 500 swings,PASS,,
+E,"sinker vs RHB tied up: 124 swings, 55 in play, 14 hits",PASS,,
+E,platoon: wOBA L .304 / R .242; hard-hit p < .01,PASS,,
+E,card bars recomputed (OC-1 quantiles of 2026 starts),PASS,"{'A': np.float64(95.304), 'B': np.float64(0.308), 'C': np.float64(13.042), 'D': np.float64(0.12)}",
+E,backtest: 20 on-script / 8 off; on-script runs per 27 outs 2.16,PASS,20 on,
+E,finish 6/6 on-script,PASS,,
+E,"parent uc-pps-020: 15 starts, wOBA .246, K 30.4%, BB 6.2%, chase 36.2%",PASS,,
+F,report states xwOBA .263,PASS,.263,
+F,report states BB 7.3%,PASS,7.3%,
+F,report states in-zone 42.1%,PASS,42.1%,
+F,report states chase 36.2%,PASS,36.2%,
+F,report states edge 36.0%,PASS,36.0%,
+F,report states tied-up 32.0%,PASS,32.0%,
+F,report states slide BB 13.4%,PASS,13.4%,
+F,report states rest BB 5.9%,PASS,5.9%,
+F,report states finish BB 6.2%,PASS,6.2%,
+F,report states slide p 0.004,PASS,0.004,
+F,report states arm 25.5%,PASS,25.5%,
+F,report states arm 17.8%,PASS,17.8%,
+F,report states arm p 0.033,PASS,0.033,
+F,report states IP 162.0,PASS,162.0,
+F,report states rank #6 of 41,PASS,#6 of 41,
+F,report states FF 95.2,PASS,95.2,
+F,report states hh L 41.9%,PASS,41.9%,
+F,report states hh R 25.7%,PASS,25.7%,
+F,report states wOBA L .304,PASS,.304,
+F,report states wOBA R .242,PASS,.242,
+F,report states on r27 2.16,PASS,2.16,
+F,report states 8.51,PASS,8.51,
+F,report states 1.67,PASS,1.67,
+F,report states #11 of 45,PASS,#11 of 45,
+F,report states OU-1 480,PASS,480,
+F,report states MI-1 148,PASS,148,
+F,dashboard states xwOBA .263,PASS,.263,
+F,dashboard states BB 7.3%,PASS,7.3%,
+F,dashboard states in-zone 42.1%,PASS,42.1%,
+F,dashboard states chase 36.2%,PASS,36.2%,
+F,dashboard states slide BB 13.4%,PASS,13.4%,
+F,dashboard states finish BB 6.2%,PASS,6.2%,
+F,dashboard states IP 162.0,PASS,162.0,
+F,dashboard states rank #6 of 41,PASS,#6 of 41,
+F,dashboard states 8.51,PASS,8.51,
+F,dashboard states 1.67,PASS,1.67,
+F,dashboard states wOBA L .304,PASS,.304,
+F,dashboard states MI-1 148,PASS,148,
+F,13 figures shipped with brand checks passing,PASS,,
+F,banned phrase absent: 'lowest of his career',PASS,,
+F,banned phrase absent: 'MLB-best',PASS,,
+F,banned phrase absent: 'best in baseball',PASS,,
+F,banned phrase absent: 'league-leading',PASS,,
+F,banned phrase absent: 'highest of his career',PASS,,
+F,"18 HP rows, each with a verdict",PASS,,
+G,freshness manifest carries the carry-in 'thoracic',PASS,,
+G,freshness manifest carries the carry-in '$126M',PASS,,
+G,freshness manifest carries the carry-in '3.00 ERA',PASS,,
+G,freshness manifest carries the carry-in '8.51',PASS,,
+G,freshness manifest carries the carry-in 'Albies',PASS,,
+G,freshness manifest carries the carry-in '42.4',PASS,,
+G,freshness manifest carries the carry-in 'Game 162',PASS,,
+G,"ERA appears only as a carry-in (3.00 / 8.51), never computed",PASS,,
+G,no causal injury language: 'because of the surgery',PASS,,
+G,no causal injury language: 'due to his injury',PASS,,
+G,no causal injury language: 'injury caused',PASS,,
+G,no causal injury language: 'the clot caused',PASS,,
+G,no causal injury language: 'fatigue caused',PASS,,
+G,no causal injury language: 'was hurt',PASS,,
+G,the glove claim is always tagged as reported (carry-in) in both products,PASS,,

@@ -1,0 +1,31 @@
+rule,dimension,grain,rule_text,result,observed
+DQ-01,uniqueness,pitch,no duplicate PITCH_KEY in the governed career frame (CF-2b),PASS,0
+DQ-02,consistency,pitch,entity lock: every row pitcher == 554430,PASS,[554430]
+DQ-03,validity,pitch,regular season only in the rate frame,PASS,['R']
+DQ-04,timeliness,file,Phillies log current through the pinned anchor (Game 162),PASS,2026-09-27
+DQ-05,validity,pitch,p_throws == 'R' on every row,PASS,['R']
+DQ-06,validity,game,MI-1: no minor-league game in the governed frame (both clubs MLB),PASS,148 AAA rows excluded (3 games)
+DQ-07,consistency,season,2026 appearances == 28 (carry-in: 28 GS),PASS,28
+DQ-08,timeliness,season,2026 window = 4/25 .. 9/27 (debut after rehab; Game 162),PASS,2026-04-25 .. 2026-09-27
+DQ-09,consistency,pitch,Phillies-era rows all come from the house log (src == PHI),PASS,{'PHI': 17973}
+DQ-10,completeness,pitch,"EN-1: woba_denom present on >= 99% of PA-ending rows, every Phillies-era season",PASS,"{np.int64(2020): 0.993, np.int64(2021): 0.998, np.int64(2022): 0.997, np.int64(2023): 1.0, np.int64(2024): 0.997, np.int64(2025): 0.998, np.int64(2026): 0.998}"
+DQ-11,consistency,pitch,"client frame (pps name filter) minus its postseason rows == CF-2b, every Phillies season",PASS,19038 - 1065 = 17973
+DQ-30,consistency,window,"SR-2: exactly one six-start post-break window reconciles to the reported 8.51, and it is the stretch",PASS,"[{'first': '2026-07-27', 'last': '2026-08-24', 'r': 23, 'outs': 73}]"
+DQ-12,validity,game,OU-1: no inning credits more than 3 outs (2026),PASS,per game-inning
+DQ-13,consistency,game,every 2026 regular-season appearance is a start (entered in the 1st),PASS,28
+DQ-14,validity,pitch,"RHP arm-side FF pfx_x negative (catcher view, + = first-base side)",PASS,-0.945
+DQ-15,consistency,season,parent reproduction: uc-pps-020 first-half figures recomputed from CF-2b,PASS,6/6
+DQ-16,consistency,season,2026 strikeouts == carry-in 193,PASS,193
+DQ-17,consistency,season,2026 walks (+ IBB) == carry-in 47,PASS,47 + 0 IBB
+DQ-18,consistency,season,OU-2 outs == carry-in 162.0 IP (486 outs); OU-1 shown beside it,PASS,OU-2 486 · OU-1 480
+DQ-19,consistency,game,"Game 162 reconciles to carry-in (6 IP, 1 run)",PASS,"6.0 IP, 1 R on watch"
+DQ-20,consistency,game,"WC G3 relief reconciles to carry-in (4 IP, 2 R, Albies 2-run HR in the 4th)",PASS,"4.0 IP, 2 R, HR ['Ozzie Albies'] inn [4]"
+DQ-21,completeness,pitch,2026 swings carrying a tracked intercept (JR-1 denominator / house swings) >= 90%,PASS,0.979
+DQ-22,completeness,pitch,NULL zone share (governed in_zone uses tracked denominator),PASS,0.0
+DQ-23,completeness,pitch,FF arm_angle coverage 2026 (MX-1 arm angle published only with its n),WARN,0.56
+DQ-24,comparability,pitcher-season,KP-1 / CX-1b / tied-up populations are Phillies-only (permanent),WARN,198 / 41 / 45 pitcher-seasons
+DQ-25,validity,pitch,spring and exhibition rows excluded,PASS,0
+DQ-26,consistency,file,parent modules sha256-pinned; IX-1 segments sha256-pinned,PASS,"5 modules, 6 segments"
+DQ-27,validity,pitch,postseason pitches never enter a rate (ledger only),PASS,"1065 postseason pitches, 13 games"
+DQ-28,consistency,pitch,MI-1 exposure in the client's cell-22 frame (zw): AAA rehab rows in '2026',WARN,148
+DQ-29,consistency,pitch,O-26 exposure: Wheeler pitches the nphl name filter loses to keep-first dedup,WARN,283

@@ -1,0 +1,18 @@
+inning,at_bat_number,batter_name,stand,events,des,launch_speed,estimated_woba_using_speedangle,bat_score,post_bat_score,runs
+3,21,Ronald Acuña Jr.,R,single,"Ronald Acuña Jr. singles on a ground ball to left fielder Bryan De La Cruz, deflected by shortstop Trea Turner.",104.5,0.543,3,3,0
+3,22,Matt Olson,L,force_out,"Matt Olson grounds into a force out, second baseman Bryson Stott to shortstop Trea Turner. Ronald Acuña Jr. out at 2nd. Matt Olson to 1st.",81.3,0.043,3,3,0
+3,23,Michael Harris II,L,field_out,Michael Harris II pops out to third baseman Edmundo Sosa.,79.3,0.01,3,3,0
+3,24,Mauricio Dubón,R,field_out,Mauricio Dubón lines out to shortstop Trea Turner.,66.8,0.388,3,3,0
+4,29,Mike Yastrzemski,L,field_out,Mike Yastrzemski pops out to shortstop Trea Turner.,92.0,0.014,3,3,0
+4,30,Austin Riley,R,walk,Austin Riley walks.,,0.69822,3,3,0
+4,31,Ozzie Albies,L,home_run,Ozzie Albies homers (1) on a fly ball to right center field. Austin Riley scores.,106.0,1.737,3,5,2
+4,32,Dominic Smith,L,single,Dominic Smith singles on a sharp line drive to center fielder Justin Crawford.,100.8,0.915,5,5,0
+4,33,Drake Baldwin,L,grounded_into_double_play,"Drake Baldwin grounds into a double play, first baseman Alec Bohm to shortstop Trea Turner. Dominic Smith out at 2nd. Drake Baldwin out at 1st.",82.5,0.035,5,5,0
+5,38,Ronald Acuña Jr.,R,field_out,Ronald Acuña Jr. pops out to first baseman Bryce Harper.,67.6,0.014,5,5,0
+5,39,Matt Olson,L,field_out,Matt Olson pops out to shortstop Trea Turner.,63.1,0.0,5,5,0
+5,40,Michael Harris II,L,strikeout,Michael Harris II strikes out swinging.,,0.0,5,5,0
+6,46,Mauricio Dubón,R,field_out,Mauricio Dubón lines out to center fielder Justin Crawford.,82.2,0.139,5,5,0
+6,47,Mike Yastrzemski,L,strikeout,Mike Yastrzemski called out on strikes.,,0.0,5,5,0
+6,48,Austin Riley,R,walk,Austin Riley walks.,,0.69822,5,5,0
+6,49,Ozzie Albies,L,walk,Ozzie Albies walks. Austin Riley to 2nd.,,0.69822,5,5,0
+6,50,Dominic Smith,L,strikeout,"J.T. Realmuto challenged (pitch result), call on the field was overturned: Dominic Smith called out on strikes.",,0.0,5,5,0

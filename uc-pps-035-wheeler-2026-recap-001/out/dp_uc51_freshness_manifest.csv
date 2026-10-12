@@ -1,0 +1,10 @@
+source,max_game_date,rows,note
+data/phillies/phils_2015..2026.parquet,2026-09-27,556863,"regular-season anchor (Game 162, 2026-09-27); Wild Card rows through 2026-10-01; build refuses any other anchor"
+data/opponents/wheeler.parquet,2019-09-26,7604,"pitcher-keyed pull, NYM 2017-2019 (2013-14 not cached; 2015-16 missed, TJ)"
+data/opponents/* (id scan),,8784,"24 files hold pitcher==554430; lhvp26.parquet = AAA rehab (excluded, MI-1)"
+carry-in: MLB.com 2025-08 / Inquirer 2026-09-19,2025-09-23,0,"2025 season ended after 8/15/2025 (blood clot; venous thoracic outlet syndrome; first-rib resection 9/23/2025) — context only, never modeled"
+carry-in: Inquirer 2026-09-19,2026-09-19,0,"3-yr/$126M extension signed March 2024, one year left (2027); 8.51 ERA over six starts after the break, reported cause a mechanical flaw (dropping the glove, over-rotating), since fixed; FF ~96.5 (Jul 2025) vs ~95.5 (Sep 2026)"
+carry-in: StatMuse (season totals),2026-09-27,0,"2026 regular season: 14-5, 3.00 ERA, 28 GS, 162.0 IP, 193 K, 47 BB, 1.05 WHIP"
+carry-in: week-ahead-2026-09-28 / -10-05 / -10-12 (repo),2026-10-01,0,"Game 162 6 IP / 1 ER, WC clinched 9/27; WC G3 10/1 at ATL: Nola 1.2 IP (Harris 3-run HR), Wheeler relief, Albies 2-run HR in the 4th, ATL 6-2"
+carry-in: FOX 29 2026-10-01,2026-10-01,0,"WC G3: Wheeler four innings of relief, two runs; Phillies eliminated"
+client: October 2026.ipynb cell 21,2026-10-12,0,"Baseball Savant values quoted by the client: Edge% 42.4, xwOBA .263 (reconciled, never substituted)"

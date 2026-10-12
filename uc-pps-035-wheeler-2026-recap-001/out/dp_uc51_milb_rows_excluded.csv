@@ -1,0 +1,4 @@
+game_year,src,src_file,game_date,home_team,away_team,rows
+2026,NPHL_ID,lhvp26.parquet,2026-03-28,LHV,TOL,38
+2026,NPHL_ID,lhvp26.parquet,2026-04-03,DUR,LHV,49
+2026,NPHL_ID,lhvp26.parquet,2026-04-08,LHV,ROC,61

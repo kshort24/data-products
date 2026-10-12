@@ -1,0 +1,8 @@
+kpi,column,value,n,percentile,rank,staff_rank_2026,staff_n_2026
+K rate,krate,0.299,198,88,23,4,15
+BB rate,bbrate,0.073,198,53,88,6,15
+K-BB,k_minus_bb,0.22599999999999998,198,87,24,4,15
+wOBA,woba,0.278,198,78,39,4,15
+xwOBA,xwoba,0.26270962732919256,198,90,18,4,15
+Whiff rate,whiff_rate,0.30855855855855857,198,82,34,5,15
+Chase rate,chase_rate,0.362,198,95,7,2,15

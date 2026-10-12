@@ -1,0 +1,1876 @@
+{
+ "cf2_exposure": {
+  "rows_2026": 2797,
+  "milb_rows": 148,
+  "milb_games": 3,
+  "name_stamped": "Luzardo, Jes\u00fas"
+ },
+ "anchor": "2026-09-27",
+ "spring_rows_excluded": 0,
+ "career_pitches": 25577,
+ "seasons": [
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "dup_removed": 1994,
+ "opp_files_with_subject": 24,
+ "opp_files_name_matched": 2,
+ "first_appearance": "2026-04-25",
+ "last_appearance": "2026-09-27",
+ "games_2026": 28,
+ "pitches_2026": 2649,
+ "postseason_pitches": 1065,
+ "postseason_games": 13,
+ "line26": {
+  "pitches": 2649,
+  "plate_apps": 645,
+  "games": 28,
+  "strikeouts": 193,
+  "walks": 47,
+  "hrs": 21,
+  "hits": 123,
+  "ba": 0.208,
+  "obp": 0.27,
+  "slg": 0.36,
+  "ops": 0.63,
+  "woba": 0.278,
+  "xwoba": 0.263,
+  "xwobacon": 0.334,
+  "krate": 0.299,
+  "bbrate": 0.073,
+  "k_minus_bb": 0.226,
+  "whiff_rate": 0.309,
+  "chase_rate": 0.362,
+  "in_zone_rate": 0.421,
+  "edge_rate": 0.36,
+  "hard_hit_rate": 0.352,
+  "barrel_rate": 0.06,
+  "line_drive_rate": 0.232,
+  "jam_rate": 0.32,
+  "jams": 417,
+  "tracked_swings": 1304,
+  "barrels": 24,
+  "bips": 401,
+  "hard_hits": 141,
+  "bips_ld": 93,
+  "ff_velo": 95.22
+ },
+ "era_rank": {
+  "bbrate": {
+   "rank_best": 7,
+   "n": 7,
+   "era_min": 0.049,
+   "era_max": 0.073,
+   "prior_best": 0.049,
+   "prior_worst": 0.066
+  },
+  "krate": {
+   "rank_best": 2,
+   "n": 7,
+   "era_min": 0.185,
+   "era_max": 0.332,
+   "prior_best": 0.332,
+   "prior_worst": 0.185
+  },
+  "woba": {
+   "rank_best": 5,
+   "n": 7,
+   "era_min": 0.255,
+   "era_max": 0.29,
+   "prior_best": 0.255,
+   "prior_worst": 0.29
+  },
+  "xwoba": {
+   "rank_best": 3,
+   "n": 7,
+   "era_min": 0.253,
+   "era_max": 0.289,
+   "prior_best": 0.253,
+   "prior_worst": 0.289
+  },
+  "barrel_rate": {
+   "rank_best": 4,
+   "n": 7,
+   "era_min": 0.038,
+   "era_max": 0.083,
+   "prior_best": 0.038,
+   "prior_worst": 0.083
+  },
+  "hard_hit_rate": {
+   "rank_best": 6,
+   "n": 7,
+   "era_min": 0.285,
+   "era_max": 0.364,
+   "prior_best": 0.285,
+   "prior_worst": 0.364
+  },
+  "line_drive_rate": {
+   "rank_best": 2,
+   "n": 7,
+   "era_min": 0.209,
+   "era_max": 0.274,
+   "prior_best": 0.209,
+   "prior_worst": 0.274
+  },
+  "chase_rate": {
+   "rank_best": 1,
+   "n": 7,
+   "era_min": 0.304,
+   "era_max": 0.362,
+   "prior_best": 0.338,
+   "prior_worst": 0.304
+  },
+  "in_zone_rate": {
+   "rank_best": 7,
+   "n": 7,
+   "era_min": 0.421,
+   "era_max": 0.515,
+   "prior_best": 0.515,
+   "prior_worst": 0.492
+  },
+  "edge_rate": {
+   "rank_best": 6,
+   "n": 7,
+   "era_min": 0.355,
+   "era_max": 0.381,
+   "prior_best": 0.381,
+   "prior_worst": 0.355
+  },
+  "whiff_rate": {
+   "rank_best": 2,
+   "n": 7,
+   "era_min": 0.226,
+   "era_max": 0.315,
+   "prior_best": 0.315,
+   "prior_worst": 0.226
+  },
+  "ff_velo": {
+   "rank_best": 7,
+   "n": 7,
+   "era_min": 95.22,
+   "era_max": 97.176,
+   "prior_best": 97.176,
+   "prior_worst": 95.267
+  },
+  "k_minus_bb": {
+   "rank_best": 3,
+   "n": 7,
+   "era_min": 0.136,
+   "era_max": 0.276,
+   "prior_best": 0.276,
+   "prior_worst": 0.136
+  }
+ },
+ "era_seasons": {
+  "2020": {
+   "pa": 286,
+   "woba": 0.29,
+   "xwoba": 0.289,
+   "krate": 0.185,
+   "bbrate": 0.049,
+   "hh": 0.34,
+   "barrel": 0.038,
+   "ld": 0.274,
+   "edge": 0.366,
+   "in_zone": 0.492,
+   "chase": 0.327,
+   "whiff": 0.226,
+   "velo": 96.944,
+   "jam": null,
+   "games": 11
+  },
+  "2021": {
+   "pa": 849,
+   "woba": 0.255,
+   "xwoba": 0.257,
+   "krate": 0.291,
+   "bbrate": 0.053,
+   "hh": 0.285,
+   "barrel": 0.046,
+   "ld": 0.243,
+   "edge": 0.381,
+   "in_zone": 0.515,
+   "chase": 0.304,
+   "whiff": 0.268,
+   "velo": 97.176,
+   "jam": null,
+   "games": 32
+  },
+  "2022": {
+   "pa": 608,
+   "woba": 0.274,
+   "xwoba": 0.275,
+   "krate": 0.268,
+   "bbrate": 0.054,
+   "hh": 0.345,
+   "barrel": 0.077,
+   "ld": 0.243,
+   "edge": 0.364,
+   "in_zone": 0.502,
+   "chase": 0.328,
+   "whiff": 0.251,
+   "velo": 95.921,
+   "jam": null,
+   "games": 26
+  },
+  "2023": {
+   "pa": 787,
+   "woba": 0.278,
+   "xwoba": 0.278,
+   "krate": 0.268,
+   "bbrate": 0.05,
+   "hh": 0.364,
+   "barrel": 0.051,
+   "ld": 0.237,
+   "edge": 0.373,
+   "in_zone": 0.497,
+   "chase": 0.321,
+   "whiff": 0.286,
+   "velo": 95.792,
+   "jam": null,
+   "games": 32
+  },
+  "2024": {
+   "pa": 788,
+   "woba": 0.256,
+   "xwoba": 0.266,
+   "krate": 0.284,
+   "bbrate": 0.066,
+   "hh": 0.336,
+   "barrel": 0.083,
+   "ld": 0.209,
+   "edge": 0.366,
+   "in_zone": 0.494,
+   "chase": 0.338,
+   "whiff": 0.275,
+   "velo": 95.267,
+   "jam": null,
+   "games": 32
+  },
+  "2025": {
+   "pa": 587,
+   "woba": 0.262,
+   "xwoba": 0.253,
+   "krate": 0.332,
+   "bbrate": 0.056,
+   "hh": 0.341,
+   "barrel": 0.072,
+   "ld": 0.238,
+   "edge": 0.355,
+   "in_zone": 0.501,
+   "chase": 0.312,
+   "whiff": 0.315,
+   "velo": 96.073,
+   "jam": 0.33,
+   "games": 24
+  },
+  "2026": {
+   "pa": 645,
+   "woba": 0.278,
+   "xwoba": 0.263,
+   "krate": 0.299,
+   "bbrate": 0.073,
+   "hh": 0.352,
+   "barrel": 0.06,
+   "ld": 0.232,
+   "edge": 0.36,
+   "in_zone": 0.421,
+   "chase": 0.362,
+   "whiff": 0.309,
+   "velo": 95.22,
+   "jam": 0.32,
+   "games": 28
+  }
+ },
+ "client26": {
+  "pitches": 2717.0,
+  "plate_apps": 662.0,
+  "woba": 0.28,
+  "bbrate": 0.076,
+  "krate": 0.296,
+  "jam_rate": 0.323
+ },
+ "tests": {
+  "BB per PA \u00b7 2026 vs 2025": {
+   "r1": 0.073,
+   "r2": 0.056,
+   "p": 0.236,
+   "z": 1.185
+  },
+  "BB per PA \u00b7 2026 vs 2021-25": {
+   "r1": 0.073,
+   "r2": 0.056,
+   "p": 0.089,
+   "z": 1.701
+  },
+  "K per PA \u00b7 2026 vs 2025": {
+   "r1": 0.299,
+   "r2": 0.332,
+   "p": 0.213,
+   "z": -1.244
+  },
+  "K per PA \u00b7 2026 vs 2021-25": {
+   "r1": 0.299,
+   "r2": 0.287,
+   "p": 0.541,
+   "z": 0.612
+  },
+  "Hard-hit per BIP \u00b7 2026 vs 2025": {
+   "r1": 0.352,
+   "r2": 0.341,
+   "p": 0.76,
+   "z": 0.306
+  },
+  "Hard-hit per BIP \u00b7 2026 vs 2021-25": {
+   "r1": 0.352,
+   "r2": 0.333,
+   "p": 0.457,
+   "z": 0.744
+  },
+  "Barrel per BIP \u00b7 2026 vs 2025": {
+   "r1": 0.06,
+   "r2": 0.072,
+   "p": 0.515,
+   "z": -0.651
+  },
+  "Barrel per BIP \u00b7 2026 vs 2021-25": {
+   "r1": 0.06,
+   "r2": 0.064,
+   "p": 0.732,
+   "z": -0.343
+  },
+  "Line drive per BIP \u00b7 2026 vs 2025": {
+   "r1": 0.232,
+   "r2": 0.238,
+   "p": 0.849,
+   "z": -0.19
+  },
+  "Line drive per BIP \u00b7 2026 vs 2021-25": {
+   "r1": 0.232,
+   "r2": 0.233,
+   "p": 0.946,
+   "z": -0.068
+  },
+  "Chase (swings / out-of-zone) \u00b7 2026 vs 2025": {
+   "r1": 0.362,
+   "r2": 0.312,
+   "p": 0.006,
+   "z": 2.74
+  },
+  "Chase (swings / out-of-zone) \u00b7 2026 vs 2021-25": {
+   "r1": 0.362,
+   "r2": 0.321,
+   "p": 0.002,
+   "z": 3.13
+  },
+  "In-zone (tracked) \u00b7 2026 vs 2025": {
+   "r1": 0.421,
+   "r2": 0.501,
+   "p": 0.0,
+   "z": -5.715
+  },
+  "In-zone (tracked) \u00b7 2026 vs 2021-25": {
+   "r1": 0.421,
+   "r2": 0.502,
+   "p": 0.0,
+   "z": -7.682
+  },
+  "Edge (ER-1) \u00b7 2026 vs 2025": {
+   "r1": 0.36,
+   "r2": 0.355,
+   "p": 0.707,
+   "z": 0.376
+  },
+  "Edge (ER-1) \u00b7 2026 vs 2021-25": {
+   "r1": 0.36,
+   "r2": 0.369,
+   "p": 0.39,
+   "z": -0.859
+  }
+ },
+ "base": {
+  "bbrate": 0.056,
+  "krate": 0.287,
+  "pa": 3619,
+  "edge": 0.369,
+  "in_zone": 0.502,
+  "chase": 0.321
+ },
+ "kp": {
+  "krate": {
+   "value": 0.299,
+   "pct": 88,
+   "rank": 23,
+   "n": 198,
+   "staff_rank": 4,
+   "staff_n": 15
+  },
+  "bbrate": {
+   "value": 0.073,
+   "pct": 53,
+   "rank": 88,
+   "n": 198,
+   "staff_rank": 6,
+   "staff_n": 15
+  },
+  "k_minus_bb": {
+   "value": 0.226,
+   "pct": 87,
+   "rank": 24,
+   "n": 198,
+   "staff_rank": 4,
+   "staff_n": 15
+  },
+  "woba": {
+   "value": 0.278,
+   "pct": 78,
+   "rank": 39,
+   "n": 198,
+   "staff_rank": 4,
+   "staff_n": 15
+  },
+  "xwoba": {
+   "value": 0.263,
+   "pct": 90,
+   "rank": 18,
+   "n": 198,
+   "staff_rank": 4,
+   "staff_n": 15
+  },
+  "whiff_rate": {
+   "value": 0.309,
+   "pct": 82,
+   "rank": 34,
+   "n": 198,
+   "staff_rank": 5,
+   "staff_n": 15
+  },
+  "chase_rate": {
+   "value": 0.362,
+   "pct": 95,
+   "rank": 7,
+   "n": 198,
+   "staff_rank": 2,
+   "staff_n": 15
+  }
+ },
+ "ctx_sw": {
+  "n": 41,
+  "rank_xwoba": 6,
+  "rank_woba": 9,
+  "rank_k_minus_bb": 6,
+  "rank_bbrate": 25,
+  "rank_edge_rate": 24,
+  "rank_whiff_rate": 4,
+  "staff26": [
+   {
+    "name": "Luzardo, Jes\u00fas",
+    "pitches": 2864,
+    "xwoba": 0.261,
+    "woba": 0.273,
+    "bbrate": 0.071
+   },
+   {
+    "name": "Wheeler, Zack",
+    "pitches": 2649,
+    "xwoba": 0.263,
+    "woba": 0.278,
+    "bbrate": 0.073
+   },
+   {
+    "name": "S\u00e1nchez, Cristopher",
+    "pitches": 3158,
+    "xwoba": 0.286,
+    "woba": 0.294,
+    "bbrate": 0.053
+   },
+   {
+    "name": "Nola, Aaron",
+    "pitches": 2955,
+    "xwoba": 0.315,
+    "woba": 0.343,
+    "bbrate": 0.077
+   },
+   {
+    "name": "Painter, Andrew",
+    "pitches": 2127,
+    "xwoba": 0.322,
+    "woba": 0.336,
+    "bbrate": 0.085
+   }
+  ],
+  "wheeler_seasons_top10_xwoba": 6
+ },
+ "stretch_windows": [
+  {
+   "first": "2026-07-21",
+   "last": "2026-08-18",
+   "r27": 5.598
+  },
+  {
+   "first": "2026-07-27",
+   "last": "2026-08-24",
+   "r27": 8.507
+  },
+  {
+   "first": "2026-08-02",
+   "last": "2026-08-30",
+   "r27": 6.256
+  },
+  {
+   "first": "2026-08-07",
+   "last": "2026-09-05",
+   "r27": 5.745
+  },
+  {
+   "first": "2026-08-12",
+   "last": "2026-09-10",
+   "r27": 4.909
+  },
+  {
+   "first": "2026-08-18",
+   "last": "2026-09-16",
+   "r27": 3.343
+  },
+  {
+   "first": "2026-08-24",
+   "last": "2026-09-22",
+   "r27": 3.533
+  },
+  {
+   "first": "2026-08-30",
+   "last": "2026-09-27",
+   "r27": 1.673
+  }
+ ],
+ "stretch_dates": [
+  "2026-07-27",
+  "2026-08-02",
+  "2026-08-07",
+  "2026-08-12",
+  "2026-08-18",
+  "2026-08-24"
+ ],
+ "periods": {
+  "first_half": {
+   "starts": 15,
+   "pa": 355,
+   "krate": 0.304,
+   "bbrate": 0.062,
+   "woba": 0.245,
+   "xwoba": 0.254,
+   "edge": 0.366,
+   "in_zone": 0.426,
+   "chase": 0.362,
+   "whiff": 0.302,
+   "hh": 0.345,
+   "barrel": 0.058,
+   "r": 21,
+   "outs": 279,
+   "r27": 2.032,
+   "walks": 22,
+   "strikeouts": 108,
+   "velo": 95.272,
+   "first15": 95.822,
+   "clear_miss": 0.297,
+   "miss_arm": 0.195,
+   "miss_glove": 0.181,
+   "miss_high": 0.218,
+   "miss_low": 0.406,
+   "tied": 0.314
+  },
+  "opener": {
+   "starts": 1,
+   "pa": 25,
+   "krate": 0.36,
+   "bbrate": 0.0,
+   "woba": 0.239,
+   "xwoba": 0.227,
+   "edge": 0.398,
+   "in_zone": 0.516,
+   "chase": 0.311,
+   "whiff": 0.404,
+   "hh": 0.25,
+   "barrel": 0.062,
+   "r": 2,
+   "outs": 21,
+   "r27": 2.571,
+   "walks": 0,
+   "strikeouts": 9,
+   "velo": 94.911,
+   "first15": 95.343,
+   "clear_miss": 0.28,
+   "miss_arm": 0.269,
+   "miss_glove": 0.269,
+   "miss_high": 0.077,
+   "miss_low": 0.385,
+   "tied": 0.192
+  },
+  "stretch": {
+   "starts": 6,
+   "pa": 119,
+   "krate": 0.261,
+   "bbrate": 0.134,
+   "woba": 0.434,
+   "xwoba": 0.331,
+   "edge": 0.335,
+   "in_zone": 0.397,
+   "chase": 0.341,
+   "whiff": 0.301,
+   "hh": 0.437,
+   "barrel": 0.085,
+   "r": 23,
+   "outs": 73,
+   "r27": 8.507,
+   "walks": 16,
+   "strikeouts": 31,
+   "velo": 94.814,
+   "first15": 95.106,
+   "clear_miss": 0.297,
+   "miss_arm": 0.255,
+   "miss_glove": 0.154,
+   "miss_high": 0.121,
+   "miss_low": 0.47,
+   "tied": 0.335
+  },
+  "finish": {
+   "starts": 6,
+   "pa": 146,
+   "krate": 0.308,
+   "bbrate": 0.062,
+   "woba": 0.238,
+   "xwoba": 0.235,
+   "edge": 0.36,
+   "in_zone": 0.412,
+   "chase": 0.387,
+   "whiff": 0.312,
+   "hh": 0.319,
+   "barrel": 0.044,
+   "r": 7,
+   "outs": 113,
+   "r27": 1.673,
+   "walks": 9,
+   "strikeouts": 45,
+   "velo": 95.419,
+   "first15": 95.961,
+   "clear_miss": 0.284,
+   "miss_arm": 0.123,
+   "miss_glove": 0.205,
+   "miss_high": 0.187,
+   "miss_low": 0.485,
+   "tied": 0.342
+  }
+ },
+ "months": {
+  "4": {
+   "starts": 1,
+   "pa": 20,
+   "bbrate": 0.15,
+   "krate": 0.3,
+   "woba": 0.257,
+   "xwoba": 0.275,
+   "edge": 0.369,
+   "in_zone": 0.321,
+   "chase": 0.439,
+   "r27": 3.6,
+   "velo": 94.7,
+   "walks": 3
+  },
+  "5": {
+   "starts": 6,
+   "pa": 144,
+   "bbrate": 0.042,
+   "krate": 0.236,
+   "woba": 0.247,
+   "xwoba": 0.285,
+   "edge": 0.373,
+   "in_zone": 0.449,
+   "chase": 0.356,
+   "r27": 2.095,
+   "velo": 95.089,
+   "walks": 6
+  },
+  "6": {
+   "starts": 5,
+   "pa": 120,
+   "bbrate": 0.083,
+   "krate": 0.283,
+   "woba": 0.239,
+   "xwoba": 0.252,
+   "edge": 0.381,
+   "in_zone": 0.427,
+   "chase": 0.339,
+   "r27": 1.705,
+   "velo": 95.731,
+   "walks": 10
+  },
+  "7": {
+   "starts": 5,
+   "pa": 112,
+   "bbrate": 0.036,
+   "krate": 0.438,
+   "woba": 0.296,
+   "xwoba": 0.212,
+   "edge": 0.331,
+   "in_zone": 0.415,
+   "chase": 0.379,
+   "r27": 3.578,
+   "velo": 94.807,
+   "walks": 4
+  },
+  "8": {
+   "starts": 6,
+   "pa": 128,
+   "bbrate": 0.141,
+   "krate": 0.242,
+   "woba": 0.383,
+   "xwoba": 0.323,
+   "edge": 0.346,
+   "in_zone": 0.412,
+   "chase": 0.33,
+   "r27": 6.256,
+   "velo": 95.117,
+   "walks": 18
+  },
+  "9": {
+   "starts": 5,
+   "pa": 121,
+   "bbrate": 0.05,
+   "krate": 0.322,
+   "woba": 0.231,
+   "xwoba": 0.229,
+   "edge": 0.366,
+   "in_zone": 0.413,
+   "chase": 0.397,
+   "r27": 1.705,
+   "velo": 95.433,
+   "walks": 6
+  }
+ },
+ "halves": {
+  "first": {
+   "starts": 15,
+   "pa": 355,
+   "bbrate": 0.062,
+   "krate": 0.304,
+   "woba": 0.245,
+   "xwoba": 0.254,
+   "edge": 0.366,
+   "in_zone": 0.426,
+   "chase": 0.362,
+   "r27": 2.032,
+   "velo": 95.272,
+   "r": 21,
+   "outs": 279
+  },
+  "second": {
+   "starts": 13,
+   "pa": 290,
+   "bbrate": 0.086,
+   "krate": 0.293,
+   "woba": 0.319,
+   "xwoba": 0.274,
+   "edge": 0.353,
+   "in_zone": 0.414,
+   "chase": 0.362,
+   "r27": 4.174,
+   "velo": 95.157,
+   "r": 32,
+   "outs": 207
+  }
+ },
+ "stretch_tests": {
+  "BB per PA": {
+   "stretch": 0.134,
+   "rest": 0.059,
+   "p": 0.004,
+   "n1": 119,
+   "n2": 526
+  },
+  "K per PA": {
+   "stretch": 0.261,
+   "rest": 0.308,
+   "p": 0.307,
+   "n1": 119,
+   "n2": 526
+  },
+  "Edge": {
+   "stretch": 0.335,
+   "rest": 0.366,
+   "p": 0.199,
+   "n1": 501,
+   "n2": 2148
+  },
+  "In-zone": {
+   "stretch": 0.397,
+   "rest": 0.426,
+   "p": 0.24,
+   "n1": 501,
+   "n2": 2148
+  },
+  "Chase": {
+   "stretch": 0.341,
+   "rest": 0.367,
+   "p": 0.393,
+   "n1": 302,
+   "n2": 1233
+  },
+  "Clear miss": {
+   "stretch": 0.297,
+   "rest": 0.292,
+   "p": 0.823,
+   "n1": 501,
+   "n2": 2148
+  },
+  "Arm-side share of clear misses": {
+   "stretch": 0.255,
+   "rest": 0.178,
+   "p": 0.033,
+   "n1": 149,
+   "n2": 628
+  },
+  "FF release x (ft)": {
+   "stretch": -1.88,
+   "rest": -1.833,
+   "p": 0.278,
+   "n1": 6,
+   "n2": 22
+  },
+  "FF release height (ft)": {
+   "stretch": 4.97,
+   "rest": 4.997,
+   "p": 0.311,
+   "n1": 6,
+   "n2": 22
+  },
+  "FF arm angle (deg)": {
+   "stretch": 23.215,
+   "rest": 22.178,
+   "p": null,
+   "n1": 1,
+   "n2": 14
+  },
+  "FF extension (ft)": {
+   "stretch": 7.238,
+   "rest": 7.247,
+   "p": 0.888,
+   "n1": 6,
+   "n2": 22
+  },
+  "Release consistency RCI (in)": {
+   "stretch": 0.957,
+   "rest": 0.952,
+   "p": 0.929,
+   "n1": 5,
+   "n2": 22
+  },
+  "FF velocity (mph)": {
+   "stretch": 94.738,
+   "rest": 95.27,
+   "p": 0.144,
+   "n1": 6,
+   "n2": 22
+  }
+ },
+ "arm_angle_cov_2026": 0.56,
+ "savant_reconcile": {
+  "edge_client": 0.424,
+  "edge_er1": 0.36,
+  "xwoba_client": 0.263,
+  "xwoba_xw1": 0.263
+ },
+ "st": {
+  "2025": {
+   "tied": 0.33,
+   "centered": 0.44,
+   "flail": 0.23,
+   "n": 1174
+  },
+  "2026": {
+   "tied": 0.32,
+   "centered": 0.429,
+   "flail": 0.252,
+   "n": 1304
+  }
+ },
+ "st_pitch": [
+  {
+   "pt": "CU",
+   "stand": "L",
+   "tied": 0.337,
+   "n": 92,
+   "below_floor": false
+  },
+  {
+   "pt": "CU",
+   "stand": "R",
+   "tied": 0.273,
+   "n": 11,
+   "below_floor": true
+  },
+  {
+   "pt": "FC",
+   "stand": "L",
+   "tied": 0.576,
+   "n": 139,
+   "below_floor": false
+  },
+  {
+   "pt": "FC",
+   "stand": "R",
+   "tied": 0.0,
+   "n": 2,
+   "below_floor": true
+  },
+  {
+   "pt": "FF",
+   "stand": "L",
+   "tied": 0.272,
+   "n": 338,
+   "below_floor": false
+  },
+  {
+   "pt": "FF",
+   "stand": "R",
+   "tied": 0.22,
+   "n": 141,
+   "below_floor": false
+  },
+  {
+   "pt": "FS",
+   "stand": "L",
+   "tied": 0.101,
+   "n": 189,
+   "below_floor": false
+  },
+  {
+   "pt": "FS",
+   "stand": "R",
+   "tied": 0.429,
+   "n": 49,
+   "below_floor": true
+  },
+  {
+   "pt": "SI",
+   "stand": "L",
+   "tied": 0.061,
+   "n": 33,
+   "below_floor": true
+  },
+  {
+   "pt": "SI",
+   "stand": "R",
+   "tied": 0.717,
+   "n": 173,
+   "below_floor": false
+  },
+  {
+   "pt": "ST",
+   "stand": "L",
+   "tied": 0.333,
+   "n": 21,
+   "below_floor": true
+  },
+  {
+   "pt": "ST",
+   "stand": "R",
+   "tied": 0.06,
+   "n": 116,
+   "below_floor": false
+  }
+ ],
+ "tied_pop": {
+  "n": 45,
+  "rank": 11,
+  "value": 0.32,
+  "mean": 0.293,
+  "n_big": 14,
+  "rank_big": 6,
+  "leader": {
+   "name": "Alvarado, Jos\u00e9",
+   "game_year": "2026",
+   "tied_up_rate": "0.44752475247524753",
+   "tracked_swings": "505.0"
+  }
+ },
+ "si_jam": {
+  "swings": 124,
+  "bip": 55,
+  "not_in_play": 69,
+  "hits": 14,
+  "xwobacon": 0.268,
+  "ev": 75.839,
+  "gb_share": 0.564
+ },
+ "si_jam_client": {
+  "bip": 57,
+  "not_in_play": 71,
+  "bunts": 1,
+  "lhv_rows": 0,
+  "postseason_rows": 3
+ },
+ "zw": {
+  "rows": 26507,
+  "rows_2026": 2865,
+  "lhv_2026": 148,
+  "nphl_lost_to_dedup": 283
+ },
+ "zw_jam26": {
+  "jam_rate": 0.323,
+  "tracked": 1336
+ },
+ "zw_jam26_draft": 0.303,
+ "tied_pop_client": {
+  "n": 186,
+  "batter_seasons": 33,
+  "rank": 44,
+  "value": 0.323
+ },
+ "platoon": {
+  "2020L": {
+   "pa": 147,
+   "woba": 0.281,
+   "xwoba": 0.271,
+   "krate": 0.177,
+   "bbrate": 0.054,
+   "hh": 0.297,
+   "barrel": 0.009,
+   "whiff": 0.217,
+   "chase": 0.3,
+   "edge": 0.38,
+   "tied": null
+  },
+  "2020R": {
+   "pa": 139,
+   "woba": 0.3,
+   "xwoba": 0.308,
+   "krate": 0.194,
+   "bbrate": 0.043,
+   "hh": 0.386,
+   "barrel": 0.069,
+   "whiff": 0.236,
+   "chase": 0.356,
+   "edge": 0.35,
+   "tied": null
+  },
+  "2021L": {
+   "pa": 458,
+   "woba": 0.261,
+   "xwoba": 0.26,
+   "krate": 0.29,
+   "bbrate": 0.063,
+   "hh": 0.285,
+   "barrel": 0.038,
+   "whiff": 0.272,
+   "chase": 0.279,
+   "edge": 0.38,
+   "tied": null
+  },
+  "2021R": {
+   "pa": 391,
+   "woba": 0.248,
+   "xwoba": 0.252,
+   "krate": 0.292,
+   "bbrate": 0.041,
+   "hh": 0.284,
+   "barrel": 0.054,
+   "whiff": 0.261,
+   "chase": 0.337,
+   "edge": 0.383,
+   "tied": null
+  },
+  "2022L": {
+   "pa": 296,
+   "woba": 0.269,
+   "xwoba": 0.29,
+   "krate": 0.28,
+   "bbrate": 0.078,
+   "hh": 0.355,
+   "barrel": 0.075,
+   "whiff": 0.252,
+   "chase": 0.293,
+   "edge": 0.37,
+   "tied": null
+  },
+  "2022R": {
+   "pa": 312,
+   "woba": 0.279,
+   "xwoba": 0.261,
+   "krate": 0.256,
+   "bbrate": 0.032,
+   "hh": 0.336,
+   "barrel": 0.078,
+   "whiff": 0.251,
+   "chase": 0.361,
+   "edge": 0.359,
+   "tied": null
+  },
+  "2023L": {
+   "pa": 414,
+   "woba": 0.311,
+   "xwoba": 0.315,
+   "krate": 0.217,
+   "bbrate": 0.06,
+   "hh": 0.354,
+   "barrel": 0.061,
+   "whiff": 0.259,
+   "chase": 0.303,
+   "edge": 0.391,
+   "tied": null
+  },
+  "2023R": {
+   "pa": 373,
+   "woba": 0.241,
+   "xwoba": 0.237,
+   "krate": 0.324,
+   "bbrate": 0.038,
+   "hh": 0.378,
+   "barrel": 0.039,
+   "whiff": 0.315,
+   "chase": 0.339,
+   "edge": 0.355,
+   "tied": null
+  },
+  "2024L": {
+   "pa": 418,
+   "woba": 0.311,
+   "xwoba": 0.313,
+   "krate": 0.266,
+   "bbrate": 0.093,
+   "hh": 0.385,
+   "barrel": 0.121,
+   "whiff": 0.264,
+   "chase": 0.303,
+   "edge": 0.364,
+   "tied": null
+  },
+  "2024R": {
+   "pa": 370,
+   "woba": 0.193,
+   "xwoba": 0.211,
+   "krate": 0.305,
+   "bbrate": 0.035,
+   "hh": 0.282,
+   "barrel": 0.042,
+   "whiff": 0.288,
+   "chase": 0.384,
+   "edge": 0.37,
+   "tied": null
+  },
+  "2025L": {
+   "pa": 337,
+   "woba": 0.275,
+   "xwoba": 0.263,
+   "krate": 0.335,
+   "bbrate": 0.065,
+   "hh": 0.356,
+   "barrel": 0.088,
+   "whiff": 0.323,
+   "chase": 0.291,
+   "edge": 0.367,
+   "tied": 0.317
+  },
+  "2025R": {
+   "pa": 250,
+   "woba": 0.245,
+   "xwoba": 0.239,
+   "krate": 0.328,
+   "bbrate": 0.044,
+   "hh": 0.323,
+   "barrel": 0.052,
+   "whiff": 0.302,
+   "chase": 0.34,
+   "edge": 0.339,
+   "tied": 0.348
+  },
+  "2026L": {
+   "pa": 379,
+   "woba": 0.304,
+   "xwoba": 0.287,
+   "krate": 0.288,
+   "bbrate": 0.087,
+   "hh": 0.419,
+   "barrel": 0.064,
+   "whiff": 0.309,
+   "chase": 0.356,
+   "edge": 0.354,
+   "tied": 0.284
+  },
+  "2026R": {
+   "pa": 266,
+   "woba": 0.242,
+   "xwoba": 0.229,
+   "krate": 0.316,
+   "bbrate": 0.053,
+   "hh": 0.257,
+   "barrel": 0.054,
+   "whiff": 0.308,
+   "chase": 0.374,
+   "edge": 0.369,
+   "tied": 0.378
+  }
+ },
+ "platoon_gap": {
+  "2020": -0.019,
+  "2021": 0.013,
+  "2022": -0.01,
+  "2023": 0.07,
+  "2024": 0.118,
+  "2025": 0.03,
+  "2026": 0.062
+ },
+ "platoon_xgap": {
+  "2020": -0.036,
+  "2021": 0.008,
+  "2022": 0.029,
+  "2023": 0.077,
+  "2024": 0.102,
+  "2025": 0.024,
+  "2026": 0.058
+ },
+ "platoon_tests": {
+  "BB per PA": {
+   "L": 0.087,
+   "R": 0.053,
+   "p": 0.098
+  },
+  "K per PA": {
+   "L": 0.288,
+   "R": 0.316,
+   "p": 0.442
+  },
+  "Hard-hit": {
+   "L": 0.419,
+   "R": 0.257,
+   "p": 0.001
+  },
+  "Barrel": {
+   "L": 0.064,
+   "R": 0.054,
+   "p": 0.671
+  }
+ },
+ "ars": {
+  "2024": {
+   "FF": {
+    "usage": 0.414,
+    "velo": 95.267,
+    "whiff": 0.296,
+    "rv100": 1.252,
+    "n": 1298.0,
+    "ivb": 14.631,
+    "hb": -9.541,
+    "xwobacon": 0.374
+   },
+   "SI": {
+    "usage": 0.19,
+    "velo": 94.642,
+    "whiff": 0.142,
+    "rv100": 2.935,
+    "n": 595.0,
+    "ivb": 6.689,
+    "hb": -17.256,
+    "xwobacon": 0.291
+   },
+   "ST": {
+    "usage": 0.125,
+    "velo": 84.96,
+    "whiff": 0.335,
+    "rv100": 0.866,
+    "n": 392.0,
+    "ivb": 4.033,
+    "hb": 9.858,
+    "xwobacon": 0.287
+   },
+   "CU": {
+    "usage": 0.101,
+    "velo": 81.796,
+    "whiff": 0.387,
+    "rv100": -1.938,
+    "n": 317.0,
+    "ivb": -8.97,
+    "hb": 8.61,
+    "xwobacon": 0.408
+   },
+   "FC": {
+    "usage": 0.096,
+    "velo": 91.137,
+    "whiff": 0.183,
+    "rv100": -0.223,
+    "n": 301.0,
+    "ivb": 8.41,
+    "hb": 0.886,
+    "xwobacon": 0.337
+   },
+   "FS": {
+    "usage": 0.073,
+    "velo": 86.155,
+    "whiff": 0.402,
+    "rv100": 1.011,
+    "n": 230.0,
+    "ivb": 5.383,
+    "hb": -12.789,
+    "xwobacon": 0.252
+   }
+  },
+  "2025": {
+   "FF": {
+    "usage": 0.41,
+    "velo": 96.073,
+    "whiff": 0.305,
+    "rv100": 1.135,
+    "n": 981.0,
+    "ivb": 14.694,
+    "hb": -10.139,
+    "xwobacon": 0.374
+   },
+   "SI": {
+    "usage": 0.17,
+    "velo": 95.437,
+    "whiff": 0.159,
+    "rv100": 0.326,
+    "n": 407.0,
+    "ivb": 7.505,
+    "hb": -17.553,
+    "xwobacon": 0.328
+   },
+   "ST": {
+    "usage": 0.148,
+    "velo": 83.73,
+    "whiff": 0.424,
+    "rv100": 2.638,
+    "n": 354.0,
+    "ivb": 2.713,
+    "hb": 13.576,
+    "xwobacon": 0.342
+   },
+   "CU": {
+    "usage": 0.098,
+    "velo": 81.141,
+    "whiff": 0.547,
+    "rv100": 1.098,
+    "n": 234.0,
+    "ivb": -10.45,
+    "hb": 12.521,
+    "xwobacon": 0.253
+   },
+   "FS": {
+    "usage": 0.089,
+    "velo": 87.102,
+    "whiff": 0.375,
+    "rv100": 0.858,
+    "n": 212.0,
+    "ivb": 4.321,
+    "hb": -13.182,
+    "xwobacon": 0.34
+   },
+   "FC": {
+    "usage": 0.086,
+    "velo": 91.848,
+    "whiff": 0.204,
+    "rv100": -1.007,
+    "n": 206.0,
+    "ivb": 9.363,
+    "hb": 0.814,
+    "xwobacon": 0.311
+   }
+  },
+  "2026": {
+   "FF": {
+    "usage": 0.357,
+    "velo": 95.22,
+    "whiff": 0.3,
+    "rv100": 1.014,
+    "n": 945.0,
+    "ivb": 14.13,
+    "hb": -11.342,
+    "xwobacon": 0.353
+   },
+   "FS": {
+    "usage": 0.163,
+    "velo": 87.429,
+    "whiff": 0.455,
+    "rv100": 1.275,
+    "n": 431.0,
+    "ivb": 1.996,
+    "hb": -14.757,
+    "xwobacon": 0.333
+   },
+   "SI": {
+    "usage": 0.155,
+    "velo": 94.797,
+    "whiff": 0.108,
+    "rv100": 1.814,
+    "n": 410.0,
+    "ivb": 7.05,
+    "hb": -17.492,
+    "xwobacon": 0.306
+   },
+   "ST": {
+    "usage": 0.134,
+    "velo": 81.35,
+    "whiff": 0.376,
+    "rv100": -0.227,
+    "n": 354.0,
+    "ivb": -0.779,
+    "hb": 16.955,
+    "xwobacon": 0.352
+   },
+   "FC": {
+    "usage": 0.105,
+    "velo": 90.926,
+    "whiff": 0.214,
+    "rv100": 0.411,
+    "n": 279.0,
+    "ivb": 8.498,
+    "hb": 0.357,
+    "xwobacon": 0.338
+   },
+   "CU": {
+    "usage": 0.087,
+    "velo": 80.002,
+    "whiff": 0.458,
+    "rv100": 0.876,
+    "n": 230.0,
+    "ivb": -11.11,
+    "hb": 12.989,
+    "xwobacon": 0.304
+   }
+  }
+ },
+ "ars_stand": {
+  "L": {
+   "FF": {
+    "usage": 0.394,
+    "whiff": 0.276,
+    "n": 639,
+    "xwoba": 0.296
+   },
+   "FS": {
+    "usage": 0.214,
+    "whiff": 0.44,
+    "n": 347,
+    "xwoba": 0.251
+   },
+   "FC": {
+    "usage": 0.171,
+    "whiff": 0.21,
+    "n": 277,
+    "xwoba": 0.326
+   },
+   "CU": {
+    "usage": 0.132,
+    "whiff": 0.438,
+    "n": 215,
+    "xwoba": 0.189
+   },
+   "ST": {
+    "usage": 0.047,
+    "whiff": 0.174,
+    "n": 76,
+    "xwoba": 0.51
+   },
+   "SI": {
+    "usage": 0.043,
+    "whiff": 0.057,
+    "n": 69,
+    "xwoba": 0.335
+   }
+  },
+  "R": {
+   "SI": {
+    "usage": 0.332,
+    "whiff": 0.118,
+    "n": 341,
+    "xwoba": 0.264
+   },
+   "FF": {
+    "usage": 0.298,
+    "whiff": 0.357,
+    "n": 306,
+    "xwoba": 0.251
+   },
+   "ST": {
+    "usage": 0.271,
+    "whiff": 0.415,
+    "n": 278,
+    "xwoba": 0.222
+   },
+   "FS": {
+    "usage": 0.082,
+    "whiff": 0.51,
+    "n": 84,
+    "xwoba": 0.145
+   },
+   "CU": {
+    "usage": 0.015,
+    "whiff": 0.636,
+    "n": 15,
+    "xwoba": 0.008
+   },
+   "FC": {
+    "usage": 0.002,
+    "whiff": 0.5,
+    "n": 2,
+    "xwoba": 0.128
+   }
+  }
+ },
+ "sz": {
+  "top": 3.206,
+  "bot": 1.618
+ },
+ "velo": {
+  "jul25": 96.473,
+  "sep26": 95.433,
+  "apr26": 94.7,
+  "season26": 95.22,
+  "season25": 96.073,
+  "season21": 97.176,
+  "by_year": {
+   "2020": 96.944,
+   "2021": 97.176,
+   "2022": 95.921,
+   "2023": 95.792,
+   "2024": 95.267,
+   "2025": 96.073,
+   "2026": 95.22
+  }
+ },
+ "repro": "6/6",
+ "fh_in_zone_all_pitches": 0.426,
+ "carry": {
+  "outs": 486,
+  "outs_ou1": 480,
+  "ip": "162.0",
+  "k": 193,
+  "bb": 47,
+  "ibb": 0,
+  "starts": 28,
+  "r_on_watch": 53,
+  "g162": {
+   "date": "2026-09-27",
+   "ip": "6.0",
+   "r": 1,
+   "k": 5,
+   "bb": 0,
+   "pitches": 97,
+   "opp": "TB"
+  }
+ },
+ "post": [
+  {
+   "date": "2022-10-07",
+   "round": "Wild Card",
+   "opp": "STL",
+   "role": "start",
+   "ip": "6.1",
+   "outs": 19,
+   "pa": 22,
+   "h": 2,
+   "r": 0,
+   "bb": 1,
+   "k": 4,
+   "hr": 0,
+   "pitches": 96,
+   "gs": 76
+  },
+  {
+   "date": "2022-10-12",
+   "round": "Division Series",
+   "opp": "ATL",
+   "role": "start",
+   "ip": "6.0",
+   "outs": 18,
+   "pa": 24,
+   "h": 4,
+   "r": 3,
+   "bb": 1,
+   "k": 5,
+   "hr": 0,
+   "pitches": 79,
+   "gs": 62
+  },
+  {
+   "date": "2022-10-18",
+   "round": "LCS",
+   "opp": "SD",
+   "role": "start",
+   "ip": "7.0",
+   "outs": 21,
+   "pa": 23,
+   "h": 1,
+   "r": 0,
+   "bb": 1,
+   "k": 8,
+   "hr": 0,
+   "pitches": 83,
+   "gs": 86
+  },
+  {
+   "date": "2022-10-23",
+   "round": "LCS",
+   "opp": "SD",
+   "role": "start",
+   "ip": "6.0",
+   "outs": 18,
+   "pa": 22,
+   "h": 3,
+   "r": 1,
+   "bb": 0,
+   "k": 8,
+   "hr": 1,
+   "pitches": 87,
+   "gs": 69
+  },
+  {
+   "date": "2022-10-29",
+   "round": "World Series",
+   "opp": "HOU",
+   "role": "start",
+   "ip": "5.0",
+   "outs": 15,
+   "pa": 24,
+   "h": 6,
+   "r": 5,
+   "bb": 3,
+   "k": 3,
+   "hr": 1,
+   "pitches": 69,
+   "gs": 34
+  },
+  {
+   "date": "2022-11-05",
+   "round": "World Series",
+   "opp": "HOU",
+   "role": "start",
+   "ip": "5.1",
+   "outs": 16,
+   "pa": 20,
+   "h": 3,
+   "r": 0,
+   "bb": 1,
+   "k": 5,
+   "hr": 0,
+   "pitches": 70,
+   "gs": 69
+  },
+  {
+   "date": "2023-10-03",
+   "round": "Wild Card",
+   "opp": "MIA",
+   "role": "start",
+   "ip": "6.2",
+   "outs": 20,
+   "pa": 24,
+   "h": 5,
+   "r": 1,
+   "bb": 0,
+   "k": 8,
+   "hr": 0,
+   "pitches": 100,
+   "gs": 75
+  },
+  {
+   "date": "2023-10-09",
+   "round": "Division Series",
+   "opp": "ATL",
+   "role": "start",
+   "ip": "6.1",
+   "outs": 19,
+   "pa": 24,
+   "h": 3,
+   "r": 3,
+   "bb": 1,
+   "k": 10,
+   "hr": 1,
+   "pitches": 92,
+   "gs": 65
+  },
+  {
+   "date": "2023-10-16",
+   "round": "LCS",
+   "opp": "AZ",
+   "role": "start",
+   "ip": "6.0",
+   "outs": 18,
+   "pa": 21,
+   "h": 3,
+   "r": 2,
+   "bb": 0,
+   "k": 8,
+   "hr": 1,
+   "pitches": 81,
+   "gs": 66
+  },
+  {
+   "date": "2023-10-21",
+   "round": "LCS",
+   "opp": "AZ",
+   "role": "start",
+   "ip": "7.0",
+   "outs": 21,
+   "pa": 28,
+   "h": 6,
+   "r": 1,
+   "bb": 1,
+   "k": 8,
+   "hr": 1,
+   "pitches": 99,
+   "gs": 67
+  },
+  {
+   "date": "2023-10-24",
+   "round": "LCS",
+   "opp": "AZ",
+   "role": "relief",
+   "ip": "1.2",
+   "outs": 5,
+   "pa": 6,
+   "h": 0,
+   "r": 0,
+   "bb": 1,
+   "k": 1,
+   "hr": 0,
+   "pitches": 30,
+   "gs": 49
+  },
+  {
+   "date": "2024-10-05",
+   "round": "Division Series",
+   "opp": "NYM",
+   "role": "start",
+   "ip": "7.0",
+   "outs": 21,
+   "pa": 26,
+   "h": 1,
+   "r": 0,
+   "bb": 4,
+   "k": 9,
+   "hr": 0,
+   "pitches": 111,
+   "gs": 81
+  },
+  {
+   "date": "2026-10-01",
+   "round": "Wild Card",
+   "opp": "ATL",
+   "role": "relief",
+   "ip": "4.0",
+   "outs": 12,
+   "pa": 17,
+   "h": 3,
+   "r": 2,
+   "bb": 3,
+   "k": 3,
+   "hr": 1,
+   "pitches": 68,
+   "gs": 43
+  }
+ ],
+ "post_tot": {
+  "games": 13,
+  "starts": 11,
+  "pa": 281,
+  "woba": 0.212,
+  "krate": 0.285,
+  "bbrate": 0.06,
+  "outs": 223,
+  "r": 18
+ },
+ "wc": {
+  "date": "2026-10-01",
+  "ip": "4.0",
+  "r": 2,
+  "h": 3,
+  "bb": 3,
+  "k": 3,
+  "hr": 1,
+  "pitches": 68,
+  "pa": 17,
+  "inn_first": 3,
+  "inn_last": 6,
+  "hr_batters": [
+   "Ozzie Albies"
+  ],
+  "hr_innings": [
+   4
+  ],
+  "hr_runs": [
+   2
+  ],
+  "first15": 95.429,
+  "xwoba": 0.349,
+  "days_since_g162": 4
+ },
+ "card": {
+  "bars": {
+   "OC-A": 95.304,
+   "OC-B": 0.308,
+   "OC-C": 13.042,
+   "OC-D": 0.12
+  },
+  "bars_prime": {
+   "OC-A": 96.159,
+   "OC-B": 0.276,
+   "OC-C": 11.257,
+   "OC-D": 0.08
+  },
+  "medians": {
+   "OC-A": 95.693,
+   "OC-B": 0.388,
+   "OC-C": 15.023,
+   "OC-D": 0.046
+  },
+  "medians_prime": {
+   "OC-A": 96.722,
+   "OC-B": 0.315,
+   "OC-C": 13.592,
+   "OC-D": 0.043
+  },
+  "labels": {
+   "OC-A": "Arm: four-seam velocity over the first 15 pitches",
+   "OC-B": "The chase: share of out-of-zone pitches swung at",
+   "OC-C": "Swing-and-miss: whiffs per 100 pitches",
+   "OC-D": "Control: walks per plate appearance"
+  },
+  "backtest_by_period": {
+   "finish": "6/6",
+   "first_half": "10/15",
+   "opener": "1/1",
+   "stretch": "3/6"
+  },
+  "on": 20,
+  "off": 8,
+  "on_r27": 2.16,
+  "off_r27": 4.963,
+  "prime_on_share": 0.699,
+  "prime_starts": 146,
+  "wc_posthoc": {
+   "OC-A": "HOLD",
+   "OC-B": "HOLD",
+   "OC-C": "SLIP",
+   "OC-D": "SLIP",
+   "verdict": "OFF-SCRIPT"
+  },
+  "wc_values": {
+   "first_n_ff_velo": 95.429,
+   "chase_rate": 0.333,
+   "whiff_per_100": 8.824,
+   "bb_rate": 0.176
+  }
+ },
+ "dq": {
+  "PASS": 26,
+  "WARN": 4
+ },
+ "build_seconds": 14.4
+}
