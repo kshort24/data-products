@@ -1,0 +1,8 @@
+dataviz scripts/validate_palette.js, run 2026-10-18 (cloud sandbox; skill bundle 2.1.302)
+Pitch palette (house PL-3, UC51 values): SI #C77800, FC #6250D6
+  light (surface #fcfcfb): Lightness PASS · Chroma PASS · CVD worst adjacent dE 31.3 (protan), tritan 25.8 PASS · normal-vision dE 34.3 PASS · contrast >= 3:1 PASS -> ALL PASS
+  dark  (surface #1a1a19): Lightness PASS · Chroma PASS · CVD dE 31.3 PASS · normal-vision dE 34.3 PASS · contrast PASS -> ALL PASS
+Gray categorical trial for OD-1 bands (#D9D9D9,#8C8C8C,#E81828): FAILED (lightness, chroma floor, contrast WARN) -> rejected.
+OD-1 bands are ordinal severity -> single-hue sequential red ramp (#F4B6BB clean, #EE6F79 dented, #E81828 blow-up),
+  2px surface gaps between segments, every segment direct-labelled with its count (secondary encoding).
+Highlight convention (house): subject/2026 in Phillies red #E81828, context in muted grays, reference lines navy #002D72.

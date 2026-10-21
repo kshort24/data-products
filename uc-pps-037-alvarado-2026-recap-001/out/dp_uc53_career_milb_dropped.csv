@@ -1,0 +1,6 @@
+game_year,src,src_file,game_date,home_team,away_team,rows
+2025,NPHL_ID,lhvp25.parquet,2025-08-07,LHV,SWB,12
+2025,NPHL_ID,lhvp25.parquet,2025-08-10,LHV,SWB,14
+2025,NPHL_ID,lhvp25.parquet,2025-08-13,BUF,LHV,11
+2025,NPHL_ID,lhvp25.parquet,2025-08-15,BUF,LHV,19
+2025,NPHL_ID,lhvp25.parquet,2025-08-17,BUF,LHV,13

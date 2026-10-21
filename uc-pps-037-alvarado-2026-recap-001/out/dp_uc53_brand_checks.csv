@@ -1,0 +1,11 @@
+figure,claim_asserted,font_arial,has_title,has_subtitle,palette_ok,axis_titles,off_palette
+f01_tenure_leaderboard,True,True,True,True,True,True,
+f02_woba_xwoba_by_year,True,True,True,True,True,True,
+f03_cutter_putaway_context,True,True,True,True,True,True,
+f04_cutter_whiff_context,True,True,True,True,True,True,
+f05_cutter_metrics_by_year,True,True,True,True,True,True,
+f06_velocity_by_year,True,True,True,True,True,True,
+f07_command_by_year,True,True,True,True,True,True,
+f08_outing_bands,True,True,True,True,True,True,
+f09_cumulative_woba,True,True,True,True,True,True,
+f10_db1_ledger,True,True,True,True,True,True,

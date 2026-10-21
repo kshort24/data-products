@@ -1,0 +1,14 @@
+rule,dimension,rule_text,result,observed
+DQ-01,uniqueness,no duplicate pitch key in the tenure frame (pitch),PASS,0
+DQ-02,consistency,entity lock: every tenure row pitcher == 621237 (pitch),PASS,1
+DQ-03,validity,regular season only in the rate frames (pitch),PASS,['R']
+DQ-04,timeliness,phils_2026 file (all game types) current through the pinned anchor; regular season ends before it (file),PASS,"file 2026-10-01, regular 2026-09-27"
+DQ-05,consistency,ENT-1: no pitching-role rows for 621237 before 2021; raw 2018 rows exist under another name,PASS,"raw 9, in frame 0"
+DQ-06,completeness,release_speed non-null on every thrown pitch (tenure),PASS,0
+DQ-07,validity,AB-1: every row without a pitch_type is an automatic ball/strike (no pitch thrown),PASS,"16 rows, all [2026]"
+DQ-08,validity,zone null on tenure rows (K44 D-7 counts them in-zone; all are AB-1 rows),WARN,16 rows; 2026 zone on thrown pitches 0.414
+DQ-09,consistency,tenure frame == house log pitch counts by year,PASS,"{np.int64(2021): 1045, np.int64(2022): 881, np.int64(2023): 742, np.int64(2024): 1052, np.int64(2025): 457, np.int64(2026): 1145}"
+DQ-10,consistency,CM-1a cumulative endpoints == WB-1 by year (asserted in build),PASS,tol 1e-9
+DQ-11,consistency,OD-1 bands partition appearances; appearances == games by year,PASS,6/6 seasons
+DQ-12,consistency,"carry-in CI-7 (NBC: 68 G, 70 K) reconciles to the log",PASS,"68 G, 70 K"
+DQ-13,accuracy,CM-D1 exposure: PA ends with woba_value > 0 and woba_denom 0/NaN (tenure),WARN,9

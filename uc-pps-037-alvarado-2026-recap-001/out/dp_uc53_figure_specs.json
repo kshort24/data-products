@@ -1,0 +1,63 @@
+[
+ {
+  "figure": "f01_tenure_leaderboard",
+  "title": "#14 of 199: the most-used reliever of the era not named Neris",
+  "subtitle": "Plate appearances faced for the Phillies, regular season 2015-26 (top 15). Alvarado: 1,273 PA over 327 games (#2 in games). Relievers by RP-1 (starts <= 20% of games); Adam Morgan's 36 starts keep him in the reliever group.",
+  "receipt": "house_pa_leaderboard.csv"
+ },
+ {
+  "figure": "f02_woba_xwoba_by_year",
+  "title": "2026: the worst results of his Phillies tenure, about .040 worse than the contact deserved",
+  "subtitle": "Career wOBA against vs xwOBA on the same Statcast basis, regular season. 2026 actual .351 vs expected .311 (gap +.040); his 2022-24 gap averaged +.008. House wOBA (ranks): .342.",
+  "receipt": "career_by_year.csv"
+ },
+ {
+  "figure": "f03_cutter_putaway_context",
+  "title": "His cutter put hitters away at a top-decile rate over 858 two-strike pitches",
+  "subtitle": "Putaway rate (strikeouts per two-strike pitch), Phillies pitcher x pitch type, regular season 2015-26, >= 20 two-strike pitches (n=451). Alvarado FC 26.8%: #39 overall (91st percentile), #9 of 58 with 300+.",
+  "receipt": "house_putaway_pitcher_pitch.csv"
+ },
+ {
+  "figure": "f04_cutter_whiff_context",
+  "title": "From the best swing-and-miss pitch in the house to merely very good",
+  "subtitle": "Whiff rate per swing, Phillies pitcher x pitch x season, regular season 2015-26, >= 50 pitches (n=897). Alvarado's cutter: #1 in 2021 (66.2%), #8 in 2022, #101 in 2026 (88th percentile).",
+  "receipt": "house_whiff_pitcher_pitch_season.csv"
+ },
+ {
+  "figure": "f05_cutter_metrics_by_year",
+  "title": "The cutter lost velocity, not shape",
+  "subtitle": "Cutter by season, regular season 2018-26 (TB 2018-20, PHI 2021-26); 2026 in red, its middle 50% shaded on velocity. Mean velocity 91.5 mph in 2026, a tenure low, 2.6 mph under 2021. Break stays inside its prior range.",
+  "receipt": "fc_si_pitches.csv"
+ },
+ {
+  "figure": "f06_velocity_by_year",
+  "title": "Both fastballs are slower than at his peak, and they faded through 2026",
+  "subtitle": "Mean velocity by season, regular season 2018-26. Sinker 97.8 mph in 2026 (1.8 under 2022); cutter 91.5 (2.6 under 2021). Within 2026 the sinker went from 98.4 in June to 97.1 in September.",
+  "receipt": "pitch_types_by_year.csv"
+ },
+ {
+  "figure": "f07_command_by_year",
+  "title": "He lived outside the zone more than ever, and hitters chased about as often as usual",
+  "subtitle": "Phillies seasons, regular season, all pitches. 2026 zone rate 42.2% (tenure low), chase 31.7% (#4 lowest of 6), walks 9.9%, and 8 hit batters (tenure high). Zone counts unclassified pitches as in-zone (K44 D-7).",
+  "receipt": "career_by_year.csv"
+ },
+ {
+  "figure": "f08_outing_bands",
+  "title": "The ride: 10 blow-ups in 68 outings, the most of his tenure",
+  "subtitle": "OD-1 (provisional): regular-season appearances by runs on watch. 2026: 46 clean (68%, tenure low), 10 blow-ups. Segment labels are counts. The damage was spread out: his 5 worst outings held 39% of his runs, the smallest share of his tenure.",
+  "receipt": "outing_bands_by_year.csv"
+ },
+ {
+  "figure": "f09_cumulative_woba",
+  "title": "Never really settled: 2026 ran above every prior Phillies season for most of the year",
+  "subtitle": "Cumulative wOBA against by plate appearance, Statcast basis (CM-1a corrects CM-D1), regular season 2021-26; prior seasons in gray, dotted line = 2021-25 pooled. 2026 finished at .351. Lines start at 25 in the denominator.",
+  "receipt": "cumulative_woba.csv",
+  "share_pa_above_all_prior": 0.75
+ },
+ {
+  "figure": "f10_db1_ledger",
+  "title": "Decline or blip? The pre-registered ledger says: decline",
+  "subtitle": "DB-1 (provisional; bars registered before 2026 values were read). Move in the predicted direction, in units of each signature's threshold (PA-1: PRESENT >= 1). Baseline: pooled 2022-2024. Decline signatures SUPPORTED, blip signatures MIXED. Same call against 2021-25: DECLINE.",
+  "receipt": "db1_ledger.csv"
+ }
+]

@@ -1,0 +1,164 @@
+family,check,result,observed,expected
+A,sha256 dp_uc52_kernel.py,PASS,3667f8028acd,3667f8028acd
+A,sha256 cumulative_metric.py,PASS,a28887406d98,a28887406d98
+A,anchor = max game_date in phils_2026,PASS,2026-10-01,2026-10-01
+A,DQ scorecard has 0 FAIL,PASS,"{'PASS': 11, 'WARN': 2}",
+A,DB-1 registration note present in kernel,PASS,,
+A,DB-1 D1 bar == 03 spec,PASS,"('si_velo', -1, 1.0)","('si_velo', -1, 1.0)"
+A,DB-1 D2 bar == 03 spec,PASS,"('fc_velo', -1, 1.0)","('fc_velo', -1, 1.0)"
+A,DB-1 D3 bar == 03 spec,PASS,"('fc_whiff', -1, 0.06)","('fc_whiff', -1, 0.06)"
+A,DB-1 D4 bar == 03 spec,PASS,"('chase_rate', -1, 0.04)","('chase_rate', -1, 0.04)"
+A,DB-1 D5 bar == 03 spec,PASS,"('in_zone_rate', -1, 0.03)","('in_zone_rate', -1, 0.03)"
+A,DB-1 D6 bar == 03 spec,PASS,"('k_minus_bb', -1, 0.05)","('k_minus_bb', -1, 0.05)"
+A,DB-1 B1 bar == 03 spec,PASS,"('luck_gap', 1, 0.025)","('luck_gap', 1, 0.025)"
+A,DB-1 B2 bar == 03 spec,PASS,"('damage_top5', 1, 0.1)","('damage_top5', 1, 0.1)"
+B,tenure pitches by year,PASS,"{np.int64(2021): 1045, np.int64(2022): 881, np.int64(2023): 742, np.int64(2024): 1052, np.int64(2025): 457, np.int64(2026): 1145}","{'2021': 1045, '2022': 881, '2023': 742, '2024': 1052, '2025': 457, '2026': 1145}"
+B,no pre-2021 pitching rows for 621237,PASS,2021,
+B,"ENT-1 rows (2018, other name)",PASS,9,9
+B,spring 2026 pitches excluded,PASS,53,53
+B,own dedup removes nothing,PASS,0,0
+B,2026 games / first / last,PASS,"(68, '2026-03-28', '2026-09-26')",
+B,AB-1 rows are automatic ball/strike,PASS,16,
+B,2026 pa,PASS,274,274.0
+B,2026 k,PASS,70,70.0
+B,2026 bb,PASS,27,27.0
+B,2026 hbp,PASS,8,8.0
+B,2026 runs,PASS,36.0,36.0
+B,2026 krate,PASS,0.25547445255474455,0.255
+B,2026 bbrate,PASS,0.09854014598540146,0.099
+B,2026 k_minus_bb,PASS,0.15693430656934307,0.15693430656934307
+B,2026 whiff,PASS,0.2697495183044316,0.2697495183044316
+B,2026 chase,PASS,0.31722054380664655,0.317
+B,2026 zone,PASS,0.4218340611353712,0.422
+B,2026 csw,PASS,0.262882096069869,0.262882096069869
+B,2026 woba_sc,PASS,0.351123595505618,0.351123595505618
+B,2026 xwoba,PASS,0.31117602996254684,0.31117602996254684
+B,2026 hh,PASS,0.3170731707317073,0.3170731707317073
+B,AB-1 zone on thrown pitches,PASS,,
+B,FC velo 2021,PASS,94.115,
+B,FC velo 2022,PASS,93.814,
+B,FC velo 2023,PASS,93.068,
+B,FC velo 2024,PASS,92.521,
+B,FC velo 2025,PASS,93.179,
+B,FC velo 2026,PASS,91.5,
+B,SI velo 2021,PASS,99.374,
+B,SI velo 2022,PASS,99.627,
+B,SI velo 2023,PASS,98.686,
+B,SI velo 2024,PASS,97.817,
+B,SI velo 2025,PASS,99.062,
+B,SI velo 2026,PASS,97.844,
+C,PA leaderboard rank / n / PA,PASS,"(14, 199, 1273)",
+C,relievers above him (RP-1t),PASS,2,
+C,games rank,PASS,2,
+C,cutter putaway value / rank / n,PASS,"(np.float64(0.2681), 39, 451)",
+C,cutter putaway rank among 300+,PASS,"(9, 58)",
+C,cutter whiff 2021 value / rank,PASS,"(np.float64(0.6622), 1)",
+C,cutter whiff 2026 value / rank,PASS,"(np.float64(0.3908), 101)",
+C,whiff population n,PASS,897,897
+C,house RP population n,PASS,104,104
+D,OD-1 bands 2021,PASS,"(46, 11, 7)",
+D,OD-1 damage top-5 2021,PASS,0.4231,
+D,OD-1 bands 2022,PASS,"(46, 7, 6)",
+D,OD-1 damage top-5 2022,PASS,0.625,
+D,OD-1 bands 2023,PASS,"(32, 8, 2)",
+D,OD-1 damage top-5 2023,PASS,0.5833,
+D,OD-1 bands 2024,PASS,"(49, 10, 7)",
+D,OD-1 damage top-5 2024,PASS,0.4815,
+D,OD-1 bands 2025,PASS,"(20, 6, 2)",
+D,OD-1 damage top-5 2025,PASS,0.7273,
+D,OD-1 bands 2026,PASS,"(46, 12, 10)",
+D,OD-1 damage top-5 2026,PASS,0.3889,
+D,SI velo month 6,PASS,98.431,
+D,SI velo month 9,PASS,97.111,
+D,FC velo month 6,PASS,92.412,
+D,FC velo month 9,PASS,90.78,
+D,xwOBA month 8,PASS,0.344,
+D,BB% month 8,PASS,0.1778,
+D,xwOBA month 9,PASS,0.347,
+D,BB% month 9,PASS,0.1429,
+E,CM-1a endpoint 2021 == WB-1,PASS,0.3429,
+E,CM-1a endpoint 2022 == WB-1,PASS,0.2785,
+E,CM-1a endpoint 2023 == WB-1,PASS,0.2753,
+E,CM-1a endpoint 2024 == WB-1,PASS,0.2969,
+E,CM-1a endpoint 2025 == WB-1,PASS,0.3286,
+E,CM-1a endpoint 2026 == WB-1,PASS,0.3511,
+E,share of 2026 PAs above every prior season,PASS,0.75,
+E,2026 line never reaches the pooled 2021-25 level,PASS,0.3408,0.3043
+E,DB-1 D1 values + verdict,PASS,"(np.float64(98.6268), np.float64(97.8436), 'WEAK')","(98.62680077871512, 97.84361851332399, 'WEAK')"
+E,DB-1 D2 values + verdict,PASS,"(np.float64(93.1132), np.float64(91.5003), 'PRESENT')","(93.11317689530685, 91.50027472527472, 'PRESENT')"
+E,DB-1 D3 values + verdict,PASS,"(np.float64(0.4886), np.float64(0.3908), 'PRESENT')","(0.48857644991212656, 0.39080459770114945, 'PRESENT')"
+E,DB-1 D4 values + verdict,PASS,"(np.float64(0.3095), np.float64(0.3172), 'ABSENT')","(0.309, 0.317, 'ABSENT')"
+E,DB-1 D5 values + verdict,PASS,"(np.float64(0.4721), np.float64(0.4218), 'PRESENT')","(0.472, 0.422, 'PRESENT')"
+E,DB-1 D6 values + verdict,PASS,"(np.float64(0.2254), np.float64(0.1569), 'PRESENT')","(0.22535211267605634, 0.15693430656934307, 'PRESENT')"
+E,DB-1 B1 values + verdict,PASS,"(np.float64(0.0085), np.float64(0.0399), 'PRESENT')","(0.008452830188679261, 0.03994756554307116, 'PRESENT')"
+E,DB-1 B2 values + verdict,PASS,"(np.float64(0.5633), np.float64(0.3889), 'CONTRA')","(0.5632716049382717, 0.3888888888888889, 'CONTRA')"
+E,DB-1 roll-up and call,PASS,"('SUPPORTED', 'MIXED', 'DECLINE')",
+E,DB-1 sensitivity call (2021-25),PASS,"('SUPPORTED', 'MIXED')",
+F,report has 2026 wOBA Statcast basis '.351',PASS,,.351
+F,dashboard has 2026 wOBA Statcast basis '.351',PASS,,.351
+F,report has 2026 xwOBA '.311',PASS,,.311
+F,dashboard has 2026 xwOBA '.311',PASS,,.311
+F,report has luck gap '.040',PASS,,.040
+F,dashboard has luck gap '.040',PASS,,.040
+F,report has cutter velo 2026 '91.5',PASS,,91.5
+F,dashboard has cutter velo 2026 '91.5',PASS,,91.5
+F,report has sinker velo 2026 '97.8',PASS,,97.8
+F,dashboard has sinker velo 2026 '97.8',PASS,,97.8
+F,report has cutter whiff 2026 '39.1%',PASS,,39.1%
+F,dashboard has cutter whiff 2026 '39.1%',PASS,,39.1%
+F,report has cutter whiff 2021 '66.2%',PASS,,66.2%
+F,dashboard has cutter whiff 2021 '66.2%',PASS,,66.2%
+F,report has whiff rank 2026 '#101',PASS,,#101
+F,dashboard has whiff rank 2026 '#101',PASS,,#101
+F,"report has PA faced '1,273'",PASS,,"1,273"
+F,"dashboard has PA faced '1,273'",PASS,,"1,273"
+F,report has leaderboard rank '#14',PASS,,#14
+F,dashboard has leaderboard rank '#14',PASS,,#14
+F,report has zone 2026 '42.2%',PASS,,42.2%
+F,dashboard has zone 2026 '42.2%',PASS,,42.2%
+F,report has zone thrown 2026 '41.4%',PASS,,41.4%
+F,dashboard has zone thrown 2026 '41.4%',PASS,,41.4%
+F,report has chase 2026 '31.7%',PASS,,31.7%
+F,dashboard has chase 2026 '31.7%',PASS,,31.7%
+F,report has hard-hit 2026 '31.7%',PASS,,31.7%
+F,dashboard has hard-hit 2026 '31.7%',PASS,,31.7%
+F,report has K-BB 2026 '15.7%',PASS,,15.7%
+F,dashboard has K-BB 2026 '15.7%',PASS,,15.7%
+F,report has blow-ups '10 of 68 outings',PASS,,10 of 68 outings
+F,dashboard has blow-ups '10 of 68 outings',PASS,,10 of 68 outings
+F,report has clean outings '46 of 68 outings',PASS,,46 of 68 outings
+F,dashboard has clean outings '46 of 68 outings',PASS,,46 of 68 outings
+F,report has June sinker '98.4',PASS,,98.4
+F,dashboard has June sinker '98.4',PASS,,98.4
+F,report has Sept sinker '97.1',PASS,,97.1
+F,dashboard has Sept sinker '97.1',PASS,,97.1
+F,report has share above prior '75%',PASS,,75%
+F,dashboard has share above prior '75%',PASS,,75%
+F,report has putaway '26.8%',PASS,,26.8%
+F,dashboard has putaway '26.8%',PASS,,26.8%
+F,report has tenure K '378',PASS,,378
+F,dashboard has tenure K '378',PASS,,378
+F,report has HBP 'hit 8 batters',PASS,,hit 8 batters
+F,dashboard has HBP 'hit 8 batters',PASS,,hit 8 batters
+F,report has call 'DECLINE',PASS,,DECLINE
+F,dashboard has call 'DECLINE',PASS,,DECLINE
+F,report has decline roll-up 'SUPPORTED',PASS,,SUPPORTED
+F,dashboard has decline roll-up 'SUPPORTED',PASS,,SUPPORTED
+F,report has blip roll-up 'MIXED',PASS,,MIXED
+F,dashboard has blip roll-up 'MIXED',PASS,,MIXED
+F,banned 'bridge-to-Duran' absent from report,PASS,0,
+F,banned 'fucntion' absent from report,PASS,0,
+F,banned 'NaN' absent from report,PASS,0,
+F,banned 'nan%' absent from report,PASS,0,
+F,banned '{' absent from report,PASS,0,
+F,banned '}}' absent from report,PASS,0,
+F,HP table has 10 graded rows,PASS,,
+G,carry-in source labelled: CBS News,PASS,,
+G,carry-in source labelled: NBC Sports Philadelphia,PASS,,
+G,carry-in source labelled: 6abc,PASS,,
+G,carry-in source labelled: (SI),PASS,,
+G,carry-in source labelled: MLB.com,PASS,,
+G,carry-in source labelled: (client),PASS,,
+G,ERA appears only as a carry-in or a 'not ERA' note,PASS,2,
+G,no causal injury language,PASS,"['> - **No medical inference.** The log shows velocity and workload; it does not show an injury or the effect of the 2025 suspension.', ""| HP-03 | Best seasons 2022 and 2023; 2023 excellent; 'must hav",
+G,$9M only beside its carry-in source,PASS,,

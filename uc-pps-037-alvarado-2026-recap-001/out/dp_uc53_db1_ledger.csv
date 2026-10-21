@@ -1,0 +1,9 @@
+sig,hypothesis,metric,label,direction,threshold,baseline,season,delta,verdict
+D1,decline,si_velo,Sinker velocity (mph),-1,1.0,98.62680077871512,97.84361851332399,-0.7831822653911331,WEAK
+D2,decline,fc_velo,Cutter velocity (mph),-1,1.0,93.11317689530685,91.50027472527472,-1.6129021700321289,PRESENT
+D3,decline,fc_whiff,Cutter whiff rate,-1,0.06,0.48857644991212656,0.39080459770114945,-0.09777185221097712,PRESENT
+D4,decline,chase_rate,Chase rate (all pitches),-1,0.04,0.309,0.317,0.008000000000000007,ABSENT
+D5,decline,in_zone_rate,Zone rate (all pitches),-1,0.03,0.472,0.422,-0.04999999999999999,PRESENT
+D6,decline,k_minus_bb,K% minus BB%,-1,0.05,0.22535211267605634,0.15693430656934307,-0.06841780610671327,PRESENT
+B1,blip,luck_gap,"wOBA minus xwOBA, same basis (bad luck)",1,0.025,0.008452830188679261,0.03994756554307116,0.0314947353543919,PRESENT
+B2,blip,damage_top5,Share of runs on watch in his 5 worst outings,1,0.1,0.5632716049382717,0.3888888888888889,-0.17438271604938277,CONTRA
