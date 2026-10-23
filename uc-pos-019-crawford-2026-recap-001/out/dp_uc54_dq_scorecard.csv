@@ -1,0 +1,17 @@
+rule,status,detail
+LIN-1 lineage pins,PASS,12 files sha256-pinned
+ENT-1 id lock,PASS,batter==702222 & batting role: 1681 regular-season pitches
+ENT-2 wrong Crawford,PASS,"crawford.parquet (J.P. Crawford, 641487) is never read by the build"
+SRC-1 game types,PASS,excluded 125 spring + 25 postseason pitches from rates
+AB-1 automatic balls/strikes,PASS,0 subject rows without pitch_type
+DUP-1 pitch key,PASS,"0 duplicate (game_pk, at_bat_number, pitch_number) on the subject"
+REC-1 K40 vs K44 BA/SLG,PASS,K44 rounded 0.264/0.353 vs K40 0.2635/0.3529
+REC-2 OBP basis,WARN,K44 OBP 0.305 divides by PA (legacy get_stats; see K40 RF-2 note); K40 0.3094 uses AB+BB+HBP+SF = published .309 (CI-2)
+SRC-3 AAA tier,PASS,"1938 AAA pitches, labelled tier, never blended; 25 BIP without EV"
+CM-1 endpoint reconcile,PASS,BA/OBP/SLG/wOBA/GB%/HH% final points == K40 for every CX-1 series (tol 1e-9)
+RV-1 run value sign,PASS,mean delta_run_exp on walks +0.229 (batting side +)
+DR-1 spray convention,PASS,LHB pulled BIP median loc_x +63 ft (> 0 = RF side)
+XO-2 coverage,PASS,"449/488 opportunities scored (>= 10 neighbours), variant v3"
+TP-1 truncated_pa,WARN,34 truncated_pa PA ends in the pool frame are counted as PA/AB by K40 pa_rows (subject: 0)
+SF-1 sac-fly double play,WARN,2 sac_fly_double_play PA ends in the pool are excluded from K40's OBP/wOBA denominators (subject: 0)
+O-8 untracked BIP,WARN,4 subject BIP without EV counted as not-hard-hit (inherited D6/O-8)

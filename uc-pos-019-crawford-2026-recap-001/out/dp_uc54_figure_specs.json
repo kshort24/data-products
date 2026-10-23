@@ -1,0 +1,95 @@
+[
+ {
+  "figure": "f1_cumulative_slash",
+  "title": "A rookie line that climbed out of a June hole: .264 / .662 OPS / .294 wOBA",
+  "subtitle": "Cumulative by plate appearance, regular season, against the 8 other Phillies primary centre-field seasons of the Statcast era (CX-1: >80 games in CF, CF games only, so his line runs 464 of 465 PA). Bottom on June 13 (PA 210): BA .227, wOBA .274. At 465 PA he ranks 7th of 9 in BA and 8th in wOBA.",
+  "source": [
+   "cum_ba",
+   "cum_ops",
+   "cum_woba",
+   "cf_matched_volume"
+  ]
+ },
+ {
+  "figure": "f2_rolling_form",
+  "title": "The turn was a June-to-August surge, not a new level",
+  "subtitle": "Rolling wOBA bottomed at .205 on Jun 18 and peaked at .345 on Aug 09, then gave most of it back. A June 1 split gains only +0.014 wOBA (182 vs 283 PA); 4 of 10 candidate breakpoints show any gain (RC-5).",
+  "source": [
+   "rolling_100pa",
+   "breakpoint_scan"
+  ]
+ },
+ {
+  "figure": "f3_tr1_ledger",
+  "title": "TR-1 verdict: NO TURN. Batting average turned; the skills did not",
+  "subtitle": "Ten signatures registered in the BID before any split was computed; pre = Mar 26-May 31 (182 PA), post = Jun 1-Sep 27 (283 PA). Results UNSUPPORTED, process UNSUPPORTED. BABIP .285 \u2192 .336 carried the BA gain; walks went the wrong way (CONTRA) and chase did not move.",
+  "source": [
+   "tr1_ledger"
+  ]
+ },
+ {
+  "figure": "f4_profile",
+  "title": "The profile, scored: elite bat-to-ball, a chase habit, and the flattest swing in the house",
+  "subtitle": "Percentile = better than X% of 220 Phillies hitter-seasons 2015-2026 (\u226550 PA; launch angle n=189, bat tracking 2024+ n=31). Lower is better for chase, whiff, K% and GB%; swing rate is shown raw (no good direction). Red = top third, navy = bottom third. Value at right.",
+  "source": [
+   "profile_percentiles",
+   "hitter_pool"
+  ]
+ },
+ {
+  "figure": "f5_attack_regions",
+  "title": "He swings like a hitter who expects to make contact, because he does",
+  "subtitle": "UC22 attack regions (ball width 0.25 ft, per-pitch zone). Crawford swings at 32% of chase/waste pitches (house 27%) and 58% just off the edge (house 52%), yet whiffs on only 34% of those chase swings (house 53%). House = other Phillies hitters, 2026.",
+  "source": [
+   "attack_regions"
+  ]
+ },
+ {
+  "figure": "f6_cumulative_gb_hh",
+  "title": "Ground balls never let go: 58.9% GB rate, 35.1% hard-hit",
+  "subtitle": "Cumulative by plate appearance vs the CX-1 centre-field seasons. Hard contact was mid-pack (4th of 9 at matched volume); the grounders were not (8th of 9, lower is better). Mean launch angle 0.9\u00b0 against 13.1\u00b0 for the rest of the 2026 Phillies; average attack angle 1.7\u00b0, lowest of 31 tracked Phillies seasons.",
+  "source": [
+   "cum_gb_rate",
+   "cum_hard_hit_rate",
+   "cf_matched_volume"
+  ]
+ },
+ {
+  "figure": "f7_chase_map_rhp",
+  "title": "Where the walks went: righty spin below the zone, righty heat above it",
+  "subtitle": "Out-of-zone pitches from RHP, catcher's view; coloured dots are chases. He chases RHP breaking balls (47%) and changeups (44%), far above the house chase median (31%), but the costliest chases by volume are elevated fastballs. CC-1 = runs given up versus the house take in the same count: 29.0 of his 34.3 came against righties.",
+  "source": [
+   "ooz_pitches",
+   "cc1_by_hand_group"
+  ]
+ },
+ {
+  "figure": "f8_rhp_breaking",
+  "title": "Righty spin: the hangers stopped coming, and so did the hard contact",
+  "subtitle": "RHP breaking balls (SL/ST/CU/KC). Hard-hit 45% in AAA 2025 \u2192 32% in MLB 2026; average EV 89.7 \u2192 87.4 mph; chase 38% \u2192 47%. In AAA most of his hits came on breaking balls left in the heart (dotted box); in MLB only a few did. AAA is a supporting tier (different level, 25 untracked BIP). Stars = extra-base hits.",
+  "source": [
+   "rhp_breaking_bip",
+   "rhp_breaking_hits",
+   "rhp_breaking_by_level"
+  ]
+ },
+ {
+  "figure": "f9_spray_rhp_breaking",
+  "title": "Against righty spin he still pulls: 56% to right field, against 33% on everything else",
+  "subtitle": "Balls in play against RHP breaking balls, schematic field at CBP dimensions (329-374-401-369-330). Dotted lines are the house DR-1 pull/straightaway/oppo boundaries; shares are of classifiable BIP. On everything else his hits already go the other way (43% of 2026 hits went oppo). Stars = extra-base hits.",
+  "source": [
+   "spray_bip",
+   "direction_shares"
+  ]
+ },
+ {
+  "figure": "f10_centre_field",
+  "title": "Centre field: about 10 outs short of what the ball flight said, and the notebook's method could not see it",
+  "subtitle": "XO-2 proxy: 449 air balls \u2265150 ft within 15\u00b0 of dead centre with him in CF, each scored by the out share of similar balls (EV \u00b13, LA \u00b12, distance \u00b110 ft, direction \u00b110\u00b0) in 15,240 house comparisons. 261 outs vs 270.8 expected = -9.8, 6th of 9 Phillies CF seasons since 2015. Every neighbourhood variant is negative (-2.9 to -9.8). External: \u22128 OAA, \u22122 DRS (CI-2). No catch probability in the log; read the rank and the sign, not the decimal.",
+  "source": [
+   "xo2_opportunities",
+   "xo2_sensitivity",
+   "xo2_cf_context"
+  ]
+ }
+]

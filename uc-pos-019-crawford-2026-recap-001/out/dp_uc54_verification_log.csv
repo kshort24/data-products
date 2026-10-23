@@ -1,0 +1,158 @@
+family,check,expected,got,status
+A,sha256 dp_uc40_kernel.py,895c0edc70795d34,895c0edc70795d34,PASS
+A,sha256 dp_uc34_kernel.py,263e57d15e038f4e,263e57d15e038f4e,PASS
+A,sha256 dp_uc53_kernel.py,03d7e3805240c3c7,03d7e3805240c3c7,PASS
+A,sha256 cumulative_metric.py,a28887406d988809,a28887406d988809,PASS
+A,sha256 dp_uc22_harper_own_the_zone.py,530d05cdc1e4077a,530d05cdc1e4077a,PASS
+A,TR-1 bars unchanged since BID,True,True,PASS
+A,TR-1 table present in BID,True,True,PASS
+B,anchor (max game_date),2026-10-01,2026-10-01,PASS
+B,subject pitches,1681,1681,PASS
+B,subject games with a PA-pitch,144,144,PASS
+B,subject duplicate keys,0,0,PASS
+B,spring pitches excluded,125,125,PASS
+B,postseason pitches,25,25,PASS
+B,postseason games,3,3,PASS
+B,J.P. Crawford's PHI rows are 2017-18 under his own name,"([2017, 2018], ['Crawford, J.P.'])","([2017, 2018], ['Crawford, J.P.'])",PASS
+B,wrong-Crawford id never in the subject frame,0,0,PASS
+B,a 'Crawford' substring filter would leak (ENT-2 exposure),True,True,PASS
+B,crawford.parquet is J.P. Crawford (ENT-2),[641487],[641487],PASS
+B,first / last game,"('2026-03-26', '2026-09-27')","('2026-03-26', '2026-09-27')",PASS
+D,season pa,465,465,PASS
+D,season ab,425,425,PASS
+D,season h,112,112,PASS
+D,season hr,3,3,PASS
+D,season so,82,82,PASS
+D,season ba,0.2635294117647059,0.2635294117647059,PASS
+D,season obp,0.3093681917211329,0.3093681917211329,PASS
+D,season slg,0.35294117647058826,0.35294117647058826,PASS
+D,season woba,0.29361437908496735,0.29361437908496735,PASS
+D,season babip,0.3168604651162791,0.3168604651162791,PASS
+D,season iso,0.08941176470588236,0.08941176470588236,PASS
+D,season xwOBA (XW-1),0.28357582417582416,0.28357582417582416,PASS
+D,season swing_rate,0.5330160618679357,0.5330160618679357,PASS
+D,season chase_rate,0.3761792452830189,0.3761792452830189,PASS
+D,season whiff_rate,0.17745535714285715,0.17745535714285715,PASS
+D,season hard_hit_rate,0.35127478753541075,0.35127478753541075,PASS
+D,season gb_rate,0.5892351274787535,0.5892351274787535,PASS
+D,season mean_la,0.9197707736389685,0.9197707736389685,PASS
+D,out-of-zone contact,0.7178683385579938,0.7178683385579938,PASS
+D,RISP BA,0.3434343434343434,0.3434343434343434,PASS
+D,RISP PA,119,119,PASS
+D,out-of-zone BA,0.19148936170212766,0.19148936170212766,PASS
+D,attack angle,1.6605438819863563,1.6605438819863565,PASS
+C,house pool n (>=50 PA),220,220,PASS
+C,chase better-than pct,15,15,PASS
+C,whiff better-than pct,88,88,PASS
+C,GB better-than pct,7,7,PASS
+C,launch-angle pool n,189,189,PASS
+C,launch-angle rank from the bottom,2,2,PASS
+C,lowest launch angle among 100+ PA,1,1,PASS
+C,attack-angle rank from the bottom,1,1,PASS
+C,attack-angle pool n,31,31,PASS
+C,CX-1 seasons,9,9,PASS
+C,Crawford CF-games PA (CX-1 line),464,464,PASS
+C,matched-volume wOBA rank,8,8,PASS
+D,PA vs RHP,399,399,PASS
+D,chase vs LHP,0.4094488188976378,0.4094488188976378,PASS
+E,TR-1 R1 pre,0.28538461538461535,0.28538461538461535,PASS
+E,TR-1 R1 post,0.2990216606498195,0.2990216606498195,PASS
+E,TR-1 R1 verdict,WEAK,WEAK,PASS
+E,TR-1 R2 pre,0.23353293413173654,0.23353293413173654,PASS
+E,TR-1 R2 post,0.28294573643410853,0.28294573643410853,PASS
+E,TR-1 R2 verdict,PRESENT,PRESENT,PASS
+E,TR-1 R3 pre,0.2967032967032967,0.2967032967032967,PASS
+E,TR-1 R3 post,0.3176895306859206,0.3176895306859206,PASS
+E,TR-1 R3 verdict,WEAK,WEAK,PASS
+E,TR-1 R4 pre,0.3413173652694611,0.3413173652694611,PASS
+E,TR-1 R4 post,0.36046511627906974,0.36046511627906974,PASS
+E,TR-1 R4 verdict,WEAK,WEAK,PASS
+E,TR-1 P1 pre,0.27017582417582414,0.27017582417582414,PASS
+E,TR-1 P1 post,0.2925091575091575,0.29250915750915746,PASS
+E,TR-1 P1 verdict,WEAK,WEAK,PASS
+E,TR-1 P2 pre,0.19230769230769232,0.19230769230769232,PASS
+E,TR-1 P2 post,0.16607773851590105,0.16607773851590105,PASS
+E,TR-1 P2 verdict,WEAK,WEAK,PASS
+E,TR-1 P3 pre,0.07142857142857142,0.07142857142857142,PASS
+E,TR-1 P3 post,0.04946996466431095,0.04946996466431095,PASS
+E,TR-1 P3 verdict,CONTRA,CONTRA,PASS
+E,TR-1 P4 pre,0.37359550561797755,0.37359550561797755,PASS
+E,TR-1 P4 post,0.3780487804878049,0.3780487804878049,PASS
+E,TR-1 P4 verdict,ABSENT,ABSENT,PASS
+E,TR-1 P5 pre,0.36363636363636365,0.36363636363636365,PASS
+E,TR-1 P5 post,0.3438914027149321,0.3438914027149321,PASS
+E,TR-1 P5 verdict,ABSENT,ABSENT,PASS
+E,TR-1 P6 pre,0.18857142857142858,0.18857142857142858,PASS
+E,TR-1 P6 post,0.17032967032967034,0.17032967032967034,PASS
+E,TR-1 P6 verdict,WEAK,WEAK,PASS
+E,TR-1 call,NO TURN,NO TURN,PASS
+E,RC-5 d_wOBA at 2026-06-01,0.01363704526520415,0.01363704526520415,PASS
+E,RC-5 d_wOBA at 2026-06-15,0.03160961626662595,0.03160961626662595,PASS
+E,RC-5 d_wOBA at 2026-05-15,-0.054516049382716036,-0.054516049382716036,PASS
+E,rolling-100 min,0.20521,0.20521,PASS
+E,rolling-100 max,0.3447835051546392,0.3447835051546392,PASS
+E,rolling-100 min date,2026-06-18,2026-06-18,PASS
+E,CC-1 total runs,34.30590957320705,34.30590957320706,PASS
+E,CC-1 chases,319,319,PASS
+E,CC-1 runs vs RHP,28.968913227656955,28.96891322765696,PASS
+E,CC-1 2-strike runs,17.249666318943294,17.249666318943294,PASS
+E,three-ball reach rate,0.12043010752688173,0.12043010752688173,PASS
+E,XO-2 opportunities,488,488,PASS
+E,XO-2 scored,449,449,PASS
+E,XO-2 outs,261,261,PASS
+E,XO-2 OAE,-9.835415253551497,-9.83541525355156,PASS
+E,XO-2 pool size,15240,15240,PASS
+E,AAA 2025 RHP-BB hard-hit,0.45454545454545453,0.45454545454545453,PASS
+E,AAA 2025 RHP-BB hits in heart,15,15,PASS
+E,AAA 2025 RHP-BB hits,24,24,PASS
+E,AAA 2025 RHP-BB pull share (LHB),0.5113636363636364,0.5113636363636364,PASS
+E,MLB 2026 RHP-BB hard-hit,0.32051282051282054,0.32051282051282054,PASS
+E,MLB 2026 RHP-BB hits in heart,6,6,PASS
+E,MLB 2026 RHP-BB hits,22,22,PASS
+E,MLB 2026 RHP-BB pull share (LHB),0.5641025641025641,0.5641025641025641,PASS
+F,slash line [md],.264/.309/.353,present,PASS
+F,slash line [html],.264/.309/.353,present,PASS
+F,wOBA + xwOBA [md],.294 wOBA (xwOBA .284),present,PASS
+F,wOBA + xwOBA [html],.294 wOBA (xwOBA .284),present,PASS
+F,RISP [md],.343 (34 for 99),present,PASS
+F,RISP [html],.343 (34 for 99),present,PASS
+F,CF ranks [md],ranks 7th in BA and 8th in wOBA at 465 PA,present,PASS
+F,CF ranks [html],ranks 7th in BA and 8th in wOBA at 465 PA,present,PASS
+F,TR-1 call [md],NO TURN,present,PASS
+F,TR-1 call [html],NO TURN,present,PASS
+F,BA turn [md],.234 → .283,present,PASS
+F,BA turn [html],.234 → .283,present,PASS
+F,walk-rate fall [md],7.1% → 4.9%,present,PASS
+F,walk-rate fall [html],7.1% → 4.9%,present,PASS
+F,chase rate [md],chase 37.6%,present,PASS
+F,chase rate [html],chase 37.6%,present,PASS
+F,GB rate [md],58.9% grounders,present,PASS
+F,GB rate [html],58.9% grounders,present,PASS
+F,launch angle rank [md],0.9° average launch angle (2nd-lowest of 189,present,PASS
+F,launch angle rank [html],0.9° average launch angle (2nd-lowest of 189,present,PASS
+F,CC-1 total [md],34.3 runs over 319 chases,present,PASS
+F,CC-1 total [html],34.3 runs over 319 chases,present,PASS
+F,XO-2 line [html],261 outs against 270.8 expected: <b>-9.8</b>,present,PASS
+F,XO-2 line (md) [md],261 outs against 270.8 expected: **-9.8**,present,PASS
+F,client XO-1 [md],261 outs against 260.5 expected,present,PASS
+F,client XO-1 [html],261 outs against 260.5 expected,present,PASS
+F,heart hits AAA [md],15 of his 24 hits off righty spin,present,PASS
+F,heart hits AAA [html],15 of his 24 hits off righty spin,present,PASS
+F,three-ball reach [md],12.0% of plate appearances,present,PASS
+F,three-ball reach [html],12.0% of plate appearances,present,PASS
+F,rolling trough [md],.205,present,PASS
+F,rolling trough [html],.205,present,PASS
+F,figures shipped,10,10,PASS
+F,figure PNGs on disk,10,10,PASS
+F,brand + claim checks all true,True,True,PASS
+F,"dashboard loads plotly by CDN src, not inline (HC-2)",True,True,PASS
+F,dashboard payload has no NaN,True,True,PASS
+F,PDF page cap (<= 10),True,True,PASS
+F,DQ scorecard has no FAIL,0,0,PASS
+G,'−8 OAA' labelled CI-2 in report,True,True,PASS
+G,'149 G' labelled CI-2 in report,True,True,PASS
+G,'97th-percentile sprint speed' labelled CI-3 in report,True,True,PASS
+G,'debut 2026-03-26' labelled CI-1 in report,True,True,PASS
+G,no OAA/DRS/WAR value enters headlines,True,True,PASS
+G,no carry-in games count (149) in headlines,True,True,PASS
+G,kernel/build never read carry-in values,True,True,PASS

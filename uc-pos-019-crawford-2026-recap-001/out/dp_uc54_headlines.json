@@ -1,0 +1,1118 @@
+{
+ "lineage": {
+  "dp_uc53_kernel.py": "03d7e3805240c3c7",
+  "dp_uc40_kernel.py": "895c0edc70795d34",
+  "dp_uc34_kernel.py": "263e57d15e038f4e",
+  "dp_uc22_harper_own_the_zone.py": "530d05cdc1e4077a",
+  "dp_uc52_kernel.py": "3667f8028acd9974",
+  "cumulative_metric.py": "a28887406d988809",
+  "dp_uc51_kernel.py": "4845bae228615bf2",
+  "dp_uc49_kernel.py": "a4ad5191a6537f3a",
+  "dp_uc50_kernel.py": "8084cb172d0cf560",
+  "dp_uc48_kernel.py": "0f63857a103253ef",
+  "dp_uc44_kernel.py": "a2c119096db24fdb",
+  "barrel_rate.py": "6282f090394aaef8"
+ },
+ "ix1": {
+  "dp_uc22_harper_own_the_zone.py:tag_regions": "704f297af7e366c4",
+  "dp_uc22_harper_own_the_zone.py:region_profile": "c7689ffcb3b4468b",
+  "Baseball Functions.ipynb:find_similar_hits": "6d4154e9991d9bcb"
+ },
+ "anchor": "2026-10-01",
+ "data_max_date": "2026-10-01",
+ "first_game": "2026-03-26",
+ "last_game": "2026-09-27",
+ "games_with_pa": 144,
+ "pitches_seen": 1681,
+ "plate_apps": 465.0,
+ "at_bats": 425.0,
+ "hits": 112.0,
+ "doubles": 19.0,
+ "triples": 5.0,
+ "hrs": 3.0,
+ "walks": 27.0,
+ "strikeouts": 82.0,
+ "hbp": 3.0,
+ "sf": 4.0,
+ "ba": 0.2635294117647059,
+ "obp": 0.3093681917211329,
+ "slg": 0.35294117647058826,
+ "ops": 0.6623093681917211,
+ "iso": 0.08941176470588236,
+ "woba": 0.29361437908496735,
+ "babip": 0.3168604651162791,
+ "krate": 0.17634408602150536,
+ "bbrate": 0.05806451612903226,
+ "xwoba": 0.28357582417582416,
+ "woba_sc": 0.30516483516483517,
+ "swing_rate": 0.5330160618679357,
+ "chase_rate": 0.3761792452830189,
+ "whiff_rate": 0.17745535714285715,
+ "contact_rate": 0.8225446428571428,
+ "ooz_contact_rate": 0.7178683385579938,
+ "swing_rate_in_zone": 0.6926770708283313,
+ "whiff_rate_in_zone": 0.1195840554592721,
+ "hard_hit_rate": 0.35127478753541075,
+ "barrel_rate": 0.019830028328611898,
+ "gb_rate": 0.5892351274787535,
+ "ld_rate": 0.2096317280453258,
+ "fb_rate": 0.1643059490084986,
+ "pu_rate": 0.036827195467422094,
+ "mean_la": 0.9197707736389685,
+ "median_la": 3.0,
+ "mean_ev": 85.37191977077363,
+ "bips": 353.0,
+ "tracked_bips": 349.0,
+ "barrels": 7.0,
+ "hard_hits": 124.0,
+ "bat_speed_mu": 66.47340182648402,
+ "attack_angle_mu": 1.6605438819863563,
+ "tracked_swings": 876.0,
+ "risp_pa": 119.0,
+ "risp_ab": 99.0,
+ "risp_hits": 34.0,
+ "risp_ba": 0.3434343434343434,
+ "risp_obp": 0.4051724137931034,
+ "risp_slg": 0.45454545454545453,
+ "ooz": 848.0,
+ "chases": 319.0,
+ "k44_obp": 0.305,
+ "k44_woba": 0.29,
+ "split": {
+  "L": {
+   "pa": 66,
+   "ba": 0.23333333333333334,
+   "obp": 0.30303030303030304,
+   "slg": 0.3,
+   "woba": 0.27636363636363637,
+   "xwoba": 0.2972461538461538,
+   "krate": 0.19696969696969696,
+   "bbrate": 0.06060606060606061,
+   "chase": 0.4094488188976378
+  },
+  "R": {
+   "pa": 399,
+   "ba": 0.2684931506849315,
+   "obp": 0.3104325699745547,
+   "slg": 0.36164383561643837,
+   "woba": 0.29651145038167936,
+   "xwoba": 0.2812974358974359,
+   "krate": 0.17293233082706766,
+   "bbrate": 0.05764411027568922,
+   "chase": 0.37031900138696255
+  }
+ },
+ "post": {
+  "games": 3,
+  "pitches": 25,
+  "pa": 7,
+  "hits": 1,
+  "ab": 7,
+  "walks": 0,
+  "so": 0
+ },
+ "aaa": {
+  "plate_apps": 507.0,
+  "ba": 0.3333333333333333,
+  "obp": 0.4103585657370518,
+  "slg": 0.4512471655328798,
+  "ops": 0.8616057312699317,
+  "woba": 0.37820119521912354,
+  "krate": 0.1755424063116371,
+  "bbrate": 0.11439842209072978,
+  "swing_rate": 0.5061919504643962,
+  "chase_rate": 0.33992094861660077,
+  "whiff_rate": 0.18042813455657492,
+  "hard_hit_rate": 0.40730337078651685,
+  "gb_rate": 0.6067415730337079,
+  "mean_la": 1.163141993957704,
+  "mean_ev": 87.54682779456193,
+  "bips": 356.0,
+  "tracked_bips": 331.0,
+  "hrs": 7.0,
+  "ev_untracked_bip": 25
+ },
+ "pool_n": 220,
+ "la_rank_low": 2,
+ "la_rank_low_100pa": 1,
+ "la_lower_seasons": [
+  "Haseley, Adam 2020 (91 PA)"
+ ],
+ "aa_rank_low": 1,
+ "pool_years": "2015-2026",
+ "profile": {
+  "swing_rate": {
+   "value": 0.5330160618679357,
+   "median": 0.4869858650398916,
+   "n": 220,
+   "pct": 80,
+   "better": 80,
+   "rank_better": 43
+  },
+  "chase_rate": {
+   "value": 0.3761792452830189,
+   "median": 0.30130675526024364,
+   "n": 220,
+   "pct": 84,
+   "better": 15,
+   "rank_better": 186
+  },
+  "whiff_rate": {
+   "value": 0.17745535714285715,
+   "median": 0.25789024919550146,
+   "n": 220,
+   "pct": 11,
+   "better": 88,
+   "rank_better": 26
+  },
+  "ooz_contact_rate": {
+   "value": 0.7178683385579938,
+   "median": 0.5624674874284723,
+   "n": 220,
+   "pct": 94,
+   "better": 94,
+   "rank_better": 13
+  },
+  "krate": {
+   "value": 0.17634408602150536,
+   "median": 0.23529411764705882,
+   "n": 220,
+   "pct": 18,
+   "better": 80,
+   "rank_better": 42
+  },
+  "bbrate": {
+   "value": 0.05806451612903226,
+   "median": 0.07022144522144522,
+   "n": 220,
+   "pct": 32,
+   "better": 32,
+   "rank_better": 148
+  },
+  "hard_hit_rate": {
+   "value": 0.35127478753541075,
+   "median": 0.3638757314015046,
+   "n": 220,
+   "pct": 44,
+   "better": 44,
+   "rank_better": 122
+  },
+  "barrel_rate": {
+   "value": 0.019830028328611898,
+   "median": 0.060261707988980714,
+   "n": 220,
+   "pct": 13,
+   "better": 13,
+   "rank_better": 190
+  },
+  "gb_rate": {
+   "value": 0.5892351274787535,
+   "median": 0.4466185410334347,
+   "n": 220,
+   "pct": 92,
+   "better": 7,
+   "rank_better": 204
+  },
+  "mean_la": {
+   "value": 0.9197707736389685,
+   "median": 12.413333333333334,
+   "n": 189,
+   "pct": 0,
+   "better": 0,
+   "rank_better": 188
+  },
+  "babip": {
+   "value": 0.3168604651162791,
+   "median": 0.2965148886201518,
+   "n": 220,
+   "pct": 68,
+   "better": 68,
+   "rank_better": 69
+  },
+  "ba": {
+   "value": 0.2635294117647059,
+   "median": 0.24646660639869467,
+   "n": 220,
+   "pct": 72,
+   "better": 72,
+   "rank_better": 60
+  },
+  "obp": {
+   "value": 0.3093681917211329,
+   "median": 0.3073423313878081,
+   "n": 220,
+   "pct": 51,
+   "better": 51,
+   "rank_better": 106
+  },
+  "iso": {
+   "value": 0.08941176470588236,
+   "median": 0.1482911172796669,
+   "n": 220,
+   "pct": 16,
+   "better": 16,
+   "rank_better": 183
+  },
+  "woba": {
+   "value": 0.29361437908496735,
+   "median": 0.30835884130847624,
+   "n": 220,
+   "pct": 37,
+   "better": 37,
+   "rank_better": 138
+  },
+  "xwoba": {
+   "value": 0.28357582417582416,
+   "median": 0.3034893290649593,
+   "n": 220,
+   "pct": 32,
+   "better": 32,
+   "rank_better": 148
+  },
+  "attack_angle_mu": {
+   "value": 1.6605438819863563,
+   "median": 9.094226002304156,
+   "n": 31,
+   "pct": 0,
+   "better": 0,
+   "rank_better": 31
+  },
+  "bat_speed_mu": {
+   "value": 66.47340182648402,
+   "median": 69.87439379243453,
+   "n": 49,
+   "pct": 18,
+   "better": 18,
+   "rank_better": 40
+  }
+ },
+ "cx": {
+  "n": 9,
+  "seasons": [
+   "Crawford 2026",
+   "Herrera 2015",
+   "Herrera 2016",
+   "Herrera 2017",
+   "Herrera 2018",
+   "Herrera 2021",
+   "Marsh 2023",
+   "Marsh 2025",
+   "Rojas 2024"
+  ],
+  "matched_pa": 465,
+  "rank": {
+   "woba": 8,
+   "ops": 8,
+   "ba": 7,
+   "obp": 7,
+   "gb": 8,
+   "hh": 4
+  }
+ },
+ "cum_woba_min": {
+  "value": 0.2736142857142857,
+  "pa": 210,
+  "date": "2026-06-13"
+ },
+ "cum_ba_min": {
+  "value": 0.2268041237113402,
+  "pa": 210,
+  "date": "2026-06-13"
+ },
+ "cum_ba_at_jun1": 0.23353293413173654,
+ "cum_woba_at_jun1": 0.28538461538461535,
+ "cum_ops_at_jun1": 0.6380206619727578,
+ "tr1": {
+  "call": "NO TURN",
+  "results": "UNSUPPORTED",
+  "process": "UNSUPPORTED",
+  "pre_pa": 182,
+  "post_pa": 283,
+  "rows": {
+   "R1": {
+    "label": "wOBA",
+    "pre": 0.28538461538461535,
+    "post": 0.2990216606498195,
+    "delta": 0.01363704526520415,
+    "p": null,
+    "verdict": "WEAK"
+   },
+   "R2": {
+    "label": "Batting average",
+    "pre": 0.23353293413173654,
+    "post": 0.28294573643410853,
+    "delta": 0.049412802302371994,
+    "p": null,
+    "verdict": "PRESENT"
+   },
+   "R3": {
+    "label": "On-base percentage",
+    "pre": 0.2967032967032967,
+    "post": 0.3176895306859206,
+    "delta": 0.020986233982623892,
+    "p": null,
+    "verdict": "WEAK"
+   },
+   "R4": {
+    "label": "Slugging",
+    "pre": 0.3413173652694611,
+    "post": 0.36046511627906974,
+    "delta": 0.019147751009608638,
+    "p": null,
+    "verdict": "WEAK"
+   },
+   "P1": {
+    "label": "xwOBA (XW-1)",
+    "pre": 0.27017582417582414,
+    "post": 0.2925091575091575,
+    "delta": 0.02233333333333337,
+    "p": null,
+    "verdict": "WEAK"
+   },
+   "P2": {
+    "label": "Strikeout rate",
+    "pre": 0.19230769230769232,
+    "post": 0.16607773851590105,
+    "delta": -0.02622995379179127,
+    "p": 0.4688527959553914,
+    "verdict": "WEAK"
+   },
+   "P3": {
+    "label": "Walk rate",
+    "pre": 0.07142857142857142,
+    "post": 0.04946996466431095,
+    "delta": -0.021958606764260473,
+    "p": 0.3230587383999688,
+    "verdict": "CONTRA"
+   },
+   "P4": {
+    "label": "Chase rate",
+    "pre": 0.37359550561797755,
+    "post": 0.3780487804878049,
+    "delta": 0.004453274869827328,
+    "p": 0.8948910044482643,
+    "verdict": "ABSENT"
+   },
+   "P5": {
+    "label": "Hard-hit rate",
+    "pre": 0.36363636363636365,
+    "post": 0.3438914027149321,
+    "delta": -0.01974496092143152,
+    "p": 0.7069102632280257,
+    "verdict": "ABSENT"
+   },
+   "P6": {
+    "label": "Whiff rate",
+    "pre": 0.18857142857142858,
+    "post": 0.17032967032967034,
+    "delta": -0.01824175824175825,
+    "p": 0.4856159995512668,
+    "verdict": "WEAK"
+   }
+  },
+  "pre_babip": 0.2846153846153846,
+  "post_babip": 0.3364485981308411,
+  "pre_iso": 0.10778443113772457,
+  "post_iso": 0.07751937984496121
+ },
+ "scan": {
+  "2026-04-15": {
+   "pre_pa": 57,
+   "post_pa": 408,
+   "d_woba": -0.04657266300078555,
+   "d_xwoba": 0.02231922771753503
+  },
+  "2026-05-01": {
+   "pre_pa": 99,
+   "post_pa": 366,
+   "d_woba": -0.024510606060606066,
+   "d_xwoba": 0.004402394733855397
+  },
+  "2026-05-15": {
+   "pre_pa": 135,
+   "post_pa": 330,
+   "d_woba": -0.054516049382716036,
+   "d_xwoba": -0.004942476851851896
+  },
+  "2026-06-01": {
+   "pre_pa": 182,
+   "post_pa": 283,
+   "d_woba": 0.01363704526520415,
+   "d_xwoba": 0.02233333333333337
+  },
+  "2026-06-15": {
+   "pre_pa": 211,
+   "post_pa": 254,
+   "d_woba": 0.03160961626662595,
+   "d_xwoba": 0.03720227643539742
+  },
+  "2026-07-01": {
+   "pre_pa": 261,
+   "post_pa": 204,
+   "d_woba": 0.00312037108620028,
+   "d_xwoba": 0.016797986762272454
+  },
+  "2026-07-15": {
+   "pre_pa": 287,
+   "post_pa": 178,
+   "d_woba": -0.007699999999999985,
+   "d_xwoba": 0.011660139197759656
+  },
+  "2026-08-01": {
+   "pre_pa": 320,
+   "post_pa": 145,
+   "d_woba": 0.02139883580891211,
+   "d_xwoba": 0.02094508696840003
+  },
+  "2026-08-15": {
+   "pre_pa": 362,
+   "post_pa": 103,
+   "d_woba": -0.005938077994428914,
+   "d_xwoba": 0.007745498199279721
+  },
+  "2026-09-01": {
+   "pre_pa": 404,
+   "post_pa": 61,
+   "d_woba": -0.022122932330827016,
+   "d_xwoba": 0.0023831321115261317
+  }
+ },
+ "scan_positive": 4,
+ "scan_n": 10,
+ "roll_min": {
+  "woba": 0.20521,
+  "date": "2026-06-18"
+ },
+ "roll_max": {
+  "woba": 0.3447835051546392,
+  "date": "2026-08-09"
+ },
+ "roll_final": {
+  "woba": 0.28490721649484535,
+  "xwoba": 0.2924842105263158
+ },
+ "regions": {
+  "heart": {
+   "pitches": 445,
+   "swing": 0.742,
+   "whiff": 0.091,
+   "xwcon": 0.359
+  },
+  "shadow_in": {
+   "pitches": 308,
+   "swing": 0.63,
+   "whiff": 0.155,
+   "xwcon": 0.298
+  },
+  "shadow_out": {
+   "pitches": 281,
+   "swing": 0.577,
+   "whiff": 0.167,
+   "xwcon": 0.267
+  },
+  "waste": {
+   "pitches": 647,
+   "swing": 0.325,
+   "whiff": 0.343,
+   "xwcon": 0.286
+  }
+ },
+ "regions_house": {
+  "heart": {
+   "swing": 0.713,
+   "whiff": 0.13
+  },
+  "shadow_in": {
+   "swing": 0.614,
+   "whiff": 0.171
+  },
+  "shadow_out": {
+   "swing": 0.517,
+   "whiff": 0.275
+  },
+  "waste": {
+   "swing": 0.268,
+   "whiff": 0.526
+  }
+ },
+ "ooz_ba": 0.19148936170212766,
+ "ooz_ab": 141,
+ "ooz_hits": 27,
+ "ooz_hh": 0.1568627450980392,
+ "iz_ba": 0.2992957746478873,
+ "iz_hh": 0.4302788844621514,
+ "iz_woba": 0.3039550173010381,
+ "ooz_woba": 0.27603529411764705,
+ "pg": {
+  "L_breaking": {
+   "pitches": 70,
+   "pa": 21,
+   "chase": 0.4634146341463415,
+   "ooz": 41,
+   "whiff": 0.23255813953488372,
+   "hh": 0.13333333333333333,
+   "bips": 15,
+   "woba": 0.2875238095238095,
+   "xwoba": 0.3526190476190476,
+   "putaway": 0.161,
+   "ba": 0.3,
+   "slg": 0.3
+  },
+  "L_fastball": {
+   "pitches": 168,
+   "pa": 39,
+   "chase": 0.36585365853658536,
+   "ooz": 82,
+   "whiff": 0.14864864864864866,
+   "hh": 0.2222222222222222,
+   "bips": 27,
+   "woba": 0.2603333333333333,
+   "xwoba": 0.24897368421052632,
+   "putaway": 0.159,
+   "ba": 0.20588235294117646,
+   "slg": 0.23529411764705882
+  },
+  "L_offspeed": {
+   "pitches": 10,
+   "pa": 6,
+   "chase": 0.75,
+   "ooz": 4,
+   "whiff": 0.1111111111111111,
+   "hh": 0.2,
+   "bips": 5,
+   "woba": 0.34149999999999997,
+   "xwoba": 0.4091666666666667,
+   "putaway": 0.125,
+   "ba": 0.16666666666666666,
+   "slg": 0.6666666666666666
+  },
+  "R_breaking": {
+   "pitches": 312,
+   "pa": 103,
+   "chase": 0.46551724137931033,
+   "ooz": 174,
+   "whiff": 0.18292682926829268,
+   "hh": 0.32051282051282054,
+   "bips": 78,
+   "woba": 0.26055339805825245,
+   "xwoba": 0.2466893203883495,
+   "putaway": 0.2,
+   "ba": 0.22448979591836735,
+   "slg": 0.3673469387755102
+  },
+  "R_fastball": {
+   "pitches": 929,
+   "pa": 225,
+   "chase": 0.3087885985748218,
+   "ooz": 421,
+   "whiff": 0.1710794297352342,
+   "hh": 0.4311377245508982,
+   "bips": 167,
+   "woba": 0.3397077625570777,
+   "xwoba": 0.2990324074074074,
+   "putaway": 0.162,
+   "ba": 0.31,
+   "slg": 0.4
+  },
+  "R_offspeed": {
+   "pitches": 192,
+   "pa": 71,
+   "chase": 0.4444444444444444,
+   "ooz": 126,
+   "whiff": 0.2,
+   "hh": 0.29508196721311475,
+   "bips": 61,
+   "woba": 0.21543661971830985,
+   "xwoba": 0.2775492957746479,
+   "putaway": 0.093,
+   "ba": 0.208955223880597,
+   "slg": 0.23880597014925373
+  }
+ },
+ "cc1": {
+  "runs": 34.30590957320705,
+  "chases": 319,
+  "ooz": 848,
+  "per100chases": 10.754203627964595,
+  "per100ooz": 4.045508204387624,
+  "pool_n": 65,
+  "rank_costliest": 26,
+  "pool_years": "2023-2026",
+  "pool_median_per100ooz": 3.7940112942933695,
+  "by": {
+   "L_breaking": {
+    "runs": -0.5395644315861772,
+    "chases": 19,
+    "ooz": 41,
+    "chase": 0.4634146341463415
+   },
+   "L_fastball": {
+    "runs": 5.390802455583378,
+    "chases": 30,
+    "ooz": 82,
+    "chase": 0.36585365853658536
+   },
+   "L_offspeed": {
+    "runs": 0.48575832155289755,
+    "chases": 3,
+    "ooz": 4,
+    "chase": 0.75
+   },
+   "R_breaking": {
+    "runs": 7.213187068605462,
+    "chases": 81,
+    "ooz": 174,
+    "chase": 0.46551724137931033
+   },
+   "R_fastball": {
+    "runs": 14.393150012245918,
+    "chases": 130,
+    "ooz": 421,
+    "chase": 0.3087885985748218
+   },
+   "R_offspeed": {
+    "runs": 7.362576146805573,
+    "chases": 56,
+    "ooz": 126,
+    "chase": 0.4444444444444444
+   }
+  },
+  "by_strikes": {
+   "0": {
+    "runs": 8.737872767350805,
+    "chases": 89,
+    "chase": 0.28434504792332266
+   },
+   "1": {
+    "runs": 8.318370486912952,
+    "chases": 92,
+    "chase": 0.4
+   },
+   "2": {
+    "runs": 17.249666318943294,
+    "chases": 138,
+    "chase": 0.4524590163934426
+   }
+  },
+  "pool_chase_median": 0.3110236220472441,
+  "chases_above_median": 55.25196850393701,
+  "excess_runs": 5.9419092013722485
+ },
+ "reach3": {
+  "value": 0.12043010752688173,
+  "pool_median": 0.1744186046511628,
+  "n": 65,
+  "pct": 10
+ },
+ "three_ball_pa": 56,
+ "walks_of_three_ball": 27,
+ "sz_mean": {
+  "top": 3.2788142991112426,
+  "bot": 1.6547620693759668
+ },
+ "rhp_bb": {
+  "AAA 2025": {
+   "pitches": 377,
+   "pa": 125,
+   "hits": 24,
+   "ba": 0.21238938053097345,
+   "slg": 0.2831858407079646,
+   "woba": 0.257032,
+   "hh": 0.45454545454545453,
+   "bips": 88,
+   "chase": 0.3811881188118812,
+   "whiff": 0.21153846153846154,
+   "ev": 89.7025,
+   "ev_n": 80
+  },
+  "MLB 2026": {
+   "pitches": 312,
+   "pa": 103,
+   "hits": 22,
+   "ba": 0.22448979591836735,
+   "slg": 0.3673469387755102,
+   "woba": 0.26055339805825245,
+   "hh": 0.32051282051282054,
+   "bips": 78,
+   "chase": 0.46551724137931033,
+   "whiff": 0.18292682926829268,
+   "ev": 87.37692307692308,
+   "ev_n": 78
+  }
+ },
+ "rhp_bb_hits_heart": {
+  "AAA 2025": {
+   "hits": 24,
+   "heart": 15,
+   "share": 0.625,
+   "mean_plate_z": 2.393333333333333
+  },
+  "MLB 2026": {
+   "hits": 22,
+   "heart": 6,
+   "share": 0.2727272727272727,
+   "mean_plate_z": 1.8513865539974128
+  }
+ },
+ "direction": {
+  "AAA 2025|other|Oppo": {
+   "n": 125,
+   "share": 0.4664179104477612
+  },
+  "AAA 2025|other|Pull": {
+   "n": 93,
+   "share": 0.34701492537313433
+  },
+  "AAA 2025|other|Straightaway": {
+   "n": 50,
+   "share": 0.1865671641791045
+  },
+  "AAA 2025|rhpbb|Oppo": {
+   "n": 19,
+   "share": 0.2159090909090909
+  },
+  "AAA 2025|rhpbb|Pull": {
+   "n": 45,
+   "share": 0.5113636363636364
+  },
+  "AAA 2025|rhpbb|Straightaway": {
+   "n": 24,
+   "share": 0.2727272727272727
+  },
+  "MLB 2026|other|Oppo": {
+   "n": 119,
+   "share": 0.43272727272727274
+  },
+  "MLB 2026|other|Pull": {
+   "n": 90,
+   "share": 0.32727272727272727
+  },
+  "MLB 2026|other|Straightaway": {
+   "n": 66,
+   "share": 0.24
+  },
+  "MLB 2026|rhpbb|Oppo": {
+   "n": 16,
+   "share": 0.20512820512820512
+  },
+  "MLB 2026|rhpbb|Pull": {
+   "n": 44,
+   "share": 0.5641025641025641
+  },
+  "MLB 2026|rhpbb|Straightaway": {
+   "n": 18,
+   "share": 0.23076923076923078
+  }
+ },
+ "dir_mlb_all": {
+  "Pull": 0.37960339943342775,
+  "Straightaway": 0.23796033994334279,
+  "Oppo": 0.38243626062322944
+ },
+ "dir_mlb_hits": {
+  "Pull": 0.32142857142857145,
+  "Straightaway": 0.25,
+  "Oppo": 0.42857142857142855
+ },
+ "gb": {
+  "n": 208,
+  "hits": 57,
+  "ba": 0.27403846153846156,
+  "ev": 83.01421568627451,
+  "xba": 0.26996464646464646,
+  "halves": {
+   "post": {
+    "gb": 127,
+    "ba": 0.29133858267716534,
+    "ev": 81.6219512195122,
+    "xba": 0.2586581196581197
+   },
+   "pre": {
+    "gb": 81,
+    "ba": 0.24691358024691357,
+    "ev": 85.12839506172838,
+    "xba": 0.2862962962962963
+   }
+  }
+ },
+ "la_house_2026_mean": 13.0746190225959,
+ "gb_house_2026": 0.42085953878406707,
+ "sweet_spot": 0.3057142857142857,
+ "xo2": {
+  "opps": 488,
+  "scored": 449,
+  "unscored": 39,
+  "outs": 261,
+  "xouts": 270.8354152535515,
+  "oae": -9.835415253551497,
+  "pool_n": 15240,
+  "by_month": {
+   "3": {
+    "opps": 14,
+    "oae": -0.48004252508866285
+   },
+   "4": {
+    "opps": 92,
+    "oae": -6.31275901733558
+   },
+   "5": {
+    "opps": 83,
+    "oae": 0.5210799638366801
+   },
+   "6": {
+    "opps": 74,
+    "oae": 4.332816884832031
+   },
+   "7": {
+    "opps": 54,
+    "oae": -4.864620483072759
+   },
+   "8": {
+    "opps": 69,
+    "oae": -0.3228275728331691
+   },
+   "9": {
+    "opps": 63,
+    "oae": -2.7090625038900376
+   }
+  },
+  "per100": -2.190515646670712,
+  "ctx_rank": 6,
+  "ctx_n": 9
+ },
+ "xo2_sens": {
+  "v1": {
+   "cov": 0.4487704918032787,
+   "oae": -2.9064003254587303,
+   "per100": -1.3271234362825253
+  },
+  "v2": {
+   "cov": 0.7561475409836066,
+   "oae": -8.116626072210881,
+   "per100": -2.1996276618457675
+  },
+  "v3": {
+   "cov": 0.9200819672131147,
+   "oae": -9.835415253551497,
+   "per100": -2.190515646670712
+  },
+  "v4": {
+   "cov": 0.9651639344262295,
+   "oae": -7.03552473195648,
+   "per100": -1.4937419813071082
+  }
+ },
+ "xo2_sign_stable": true,
+ "xo2_ctx": [
+  {
+   "name": "Marsh, Brandon",
+   "year": 2023,
+   "games": 108,
+   "opps": 367,
+   "oae": 3.123631064642704,
+   "per100": 0.8511256306928349
+  },
+  {
+   "name": "Rojas, Johan",
+   "year": 2024,
+   "games": 116,
+   "opps": 375,
+   "oae": -4.438184447159815,
+   "per100": -1.1835158525759506
+  },
+  {
+   "name": "Herrera, Od\u00fabel",
+   "year": 2017,
+   "games": 133,
+   "opps": 496,
+   "oae": -6.273504917171263,
+   "per100": -1.264819539752271
+  },
+  {
+   "name": "Herrera, Od\u00fabel",
+   "year": 2015,
+   "games": 136,
+   "opps": 513,
+   "oae": -8.200029487219687,
+   "per100": -1.5984462938050075
+  },
+  {
+   "name": "Herrera, Od\u00fabel",
+   "year": 2021,
+   "games": 104,
+   "opps": 322,
+   "oae": -5.40112199457336,
+   "per100": -1.67736707906005
+  },
+  {
+   "name": "Crawford, Justin",
+   "year": 2026,
+   "games": 146,
+   "opps": 449,
+   "oae": -9.835415253551497,
+   "per100": -2.190515646670712
+  },
+  {
+   "name": "Marsh, Brandon",
+   "year": 2025,
+   "games": 84,
+   "opps": 282,
+   "oae": -6.9643111612206345,
+   "per100": -2.469613886957672
+  },
+  {
+   "name": "Herrera, Od\u00fabel",
+   "year": 2016,
+   "games": 155,
+   "opps": 593,
+   "oae": -17.944361770515002,
+   "per100": -3.026030652700675
+  },
+  {
+   "name": "Herrera, Od\u00fabel",
+   "year": 2018,
+   "games": 133,
+   "opps": 482,
+   "oae": -17.01193307278229,
+   "per100": -3.529446695597986
+  }
+ ],
+ "cf_games": 146,
+ "xo1_gov": {
+  "balls": 417,
+  "outs": 249,
+  "xouts": 244.54424892268543,
+  "nan": 10
+ },
+ "xo_selection": {
+  "sector_opps": 488,
+  "fielded_by_him": 368,
+  "not_fielded_hits": 37
+ },
+ "tp1_pool": 34,
+ "sf1_pool": 2,
+ "o8_untracked_bip": 4,
+ "build_seconds": 17.9,
+ "hp": {
+  "HP-01": {
+   "claim": "17.3% K rate",
+   "client": "17.5%",
+   "governed": "17.6%",
+   "grade": "REPRODUCED",
+   "evidence": "Governed 17.6% over 465 regular-season PA; 18th percentile of 220 Phillies hitter-seasons (low K)."
+  },
+  "HP-02": {
+   "claim": "53.3% swing rate",
+   "client": "53.9%",
+   "governed": "53.3%",
+   "grade": "REPRODUCED",
+   "evidence": "80th percentile of 220."
+  },
+  "HP-03": {
+   "claim": "37.7% chase rate",
+   "client": "38.3%",
+   "governed": "37.6%",
+   "grade": "REPRODUCED",
+   "evidence": "84th percentile of 220; 319.0 chases on 848.0 out-of-zone pitches."
+  },
+  "HP-04": {
+   "claim": "17.6% whiff rate",
+   "client": "18.0%",
+   "governed": "17.7%",
+   "grade": "REPRODUCED",
+   "evidence": "11th percentile (low whiff is good)."
+  },
+  "HP-05": {
+   "claim": "only 35% hard hits",
+   "client": "35.2%",
+   "governed": "35.1%",
+   "grade": "REPRODUCED",
+   "evidence": "44th percentile; mid-pack, not low. The weak link is launch angle, not exit velocity."
+  },
+  "HP-06": {
+   "claim": "BA .186 on pitches out of the zone",
+   "client": ".185",
+   "governed": ".191",
+   "grade": "REPRODUCED",
+   "evidence": "Governed .191 (27/141); in-zone .299. Out-of-zone hard-hit 15.7% vs 43.0% in zone."
+  },
+  "HP-07": {
+   "claim": "Out-of-zone contact is 'pretty impressive'",
+   "client": "72.4%",
+   "governed": "71.8%",
+   "grade": "SUPPORTED",
+   "evidence": "94th percentile of 220. Impressive, and the source of the problem: it turns chases into weak balls in play instead of walks."
+  },
+  "HP-08": {
+   "claim": "Better from ~June 1 on",
+   "client": "(chart)",
+   "governed": "TR-1: NO TURN",
+   "grade": "PARTLY",
+   "evidence": "BA rose .234 -> .283 (PRESENT) but wOBA moved only +0.014; walk rate fell (CONTRA). A BABIP turn, not a skill turn."
+  },
+  "HP-09": {
+   "claim": "Chased too much against RHP",
+   "client": "R 37.3% / L 43.4%",
+   "governed": "R 37.0% / L 40.9%",
+   "grade": "PARTLY",
+   "evidence": "By rate he chased more vs LHP; by volume RHP is the problem: 29 of 34 CC-1 runs came against righties."
+  },
+  "HP-10": {
+   "claim": "Needs to do damage vs RHP breaking balls",
+   "client": "(table)",
+   "governed": "HH 32.1% vs 43.1% on RHP fastballs",
+   "grade": "SUPPORTED",
+   "evidence": "wOBA .261 / xwOBA .247 on 103 PA; chase 46.6%."
+  },
+  "HP-11": {
+   "claim": "AAA hits on RHP breaking balls were hangers",
+   "client": "(pitch map)",
+   "governed": "heart of zone: AAA 15/24 vs MLB 6/22",
+   "grade": "SUPPORTED",
+   "evidence": "UC22 attack regions. Mean height of the hit pitch fell from 2.39 ft to 1.85 ft."
+  },
+  "HP-12": {
+   "claim": "He pulls RHP breaking balls; use the whole field",
+   "client": "(spray)",
+   "governed": "pull 56.4% vs 32.7% on everything else",
+   "grade": "SUPPORTED",
+   "evidence": "DR-1 on 78 classifiable BIP. On everything else he already uses the whole field."
+  },
+  "HP-13": {
+   "claim": "Defense: made all the plays I would have expected",
+   "client": "261 outs vs 260.5 expected",
+   "governed": "XO-2 261 vs 270.8 (-9.8)",
+   "grade": "NOT SUPPORTED",
+   "evidence": "The client's method only sees balls he fielded (DEF-3). Counting every CF-sector air ball with him in CF, he is -9.8; external CI-2: -8 OAA."
+  },
+  "HP-14": {
+   "claim": "'Pretty much the hitter we expected'",
+   "client": "(framing)",
+   "governed": "profile held vs UC34",
+   "grade": "SUPPORTED",
+   "evidence": "Swing 80th, chase 84th, whiff 11th, GB 92th; mean launch angle 2nd-lowest of 189 (lowest with 100+ PA)."
+  }
+ },
+ "hp_client_frame": {
+  "rows": 3772,
+  "dup_pitch_keys": 3,
+  "src2_rows": 3,
+  "spring_2026": 125,
+  "post_2026": 25,
+  "aaa_2025": 1938,
+  "pitches_2026": 1834,
+  "pa_2026": 514
+ },
+ "hp_xo1_client": {
+  "balls": 435,
+  "outs": 261,
+  "xouts": 260.4742663200798,
+  "searcher": 48917
+ },
+ "hp_grade_counts": {
+  "REPRODUCED": 6,
+  "SUPPORTED": 5,
+  "PARTLY": 2,
+  "NOT SUPPORTED": 1
+ }
+}

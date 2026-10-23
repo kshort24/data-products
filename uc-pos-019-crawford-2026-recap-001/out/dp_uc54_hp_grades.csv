@@ -1,0 +1,15 @@
+hp,claim,client_frame,governed,grade,evidence
+HP-01,17.3% K rate,17.5%,17.6%,REPRODUCED,Governed 17.6% over 465 regular-season PA; 18th percentile of 220 Phillies hitter-seasons (low K).
+HP-02,53.3% swing rate,53.9%,53.3%,REPRODUCED,80th percentile of 220.
+HP-03,37.7% chase rate,38.3%,37.6%,REPRODUCED,84th percentile of 220; 319.0 chases on 848.0 out-of-zone pitches.
+HP-04,17.6% whiff rate,18.0%,17.7%,REPRODUCED,11th percentile (low whiff is good).
+HP-05,only 35% hard hits,35.2%,35.1%,REPRODUCED,"44th percentile; mid-pack, not low. The weak link is launch angle, not exit velocity."
+HP-06,BA .186 on pitches out of the zone,.185,.191,REPRODUCED,Governed .191 (27/141); in-zone .299. Out-of-zone hard-hit 15.7% vs 43.0% in zone.
+HP-07,Out-of-zone contact is 'pretty impressive',72.4%,71.8%,SUPPORTED,"94th percentile of 220. Impressive, and the source of the problem: it turns chases into weak balls in play instead of walks."
+HP-08,Better from ~June 1 on,(chart),TR-1: NO TURN,PARTLY,"BA rose .234 -> .283 (PRESENT) but wOBA moved only +0.014; walk rate fell (CONTRA). A BABIP turn, not a skill turn."
+HP-09,Chased too much against RHP,R 37.3% / L 43.4%,R 37.0% / L 40.9%,PARTLY,By rate he chased more vs LHP; by volume RHP is the problem: 29 of 34 CC-1 runs came against righties.
+HP-10,Needs to do damage vs RHP breaking balls,(table),HH 32.1% vs 43.1% on RHP fastballs,SUPPORTED,wOBA .261 / xwOBA .247 on 103 PA; chase 46.6%.
+HP-11,AAA hits on RHP breaking balls were hangers,(pitch map),heart of zone: AAA 15/24 vs MLB 6/22,SUPPORTED,UC22 attack regions. Mean height of the hit pitch fell from 2.39 ft to 1.85 ft.
+HP-12,He pulls RHP breaking balls; use the whole field,(spray),pull 56.4% vs 32.7% on everything else,SUPPORTED,DR-1 on 78 classifiable BIP. On everything else he already uses the whole field.
+HP-13,Defense: made all the plays I would have expected,261 outs vs 260.5 expected,XO-2 261 vs 270.8 (-9.8),NOT SUPPORTED,"The client's method only sees balls he fielded (DEF-3). Counting every CF-sector air ball with him in CF, he is -9.8; external CI-2: -8 OAA."
+HP-14,'Pretty much the hitter we expected',(framing),profile held vs UC34,SUPPORTED,"Swing 80th, chase 84th, whiff 11th, GB 92th; mean launch angle 2nd-lowest of 189 (lowest with 100+ PA)."

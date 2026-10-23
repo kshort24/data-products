@@ -1,0 +1,11 @@
+figure,claim_asserted,font_arial,has_title,has_subtitle,palette_ok,off_palette
+f1_cumulative_slash,True,True,True,True,True,
+f2_rolling_form,True,True,True,True,True,
+f3_tr1_ledger,True,True,True,True,True,
+f4_profile,True,True,True,True,True,
+f5_attack_regions,True,True,True,True,True,
+f6_cumulative_gb_hh,True,True,True,True,True,
+f7_chase_map_rhp,True,True,True,True,True,
+f8_rhp_breaking,True,True,True,True,True,
+f9_spray_rhp_breaking,True,True,True,True,True,
+f10_centre_field,True,True,True,True,True,
