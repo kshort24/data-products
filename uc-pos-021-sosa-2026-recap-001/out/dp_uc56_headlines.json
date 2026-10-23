@@ -1,0 +1,1569 @@
+{
+ "lineage": {
+  "dp_uc55_kernel.py": "9bdcce59794e21aa",
+  "dp_uc46_kernel.py": "a45ac9a76395b2f8",
+  "barrel_rate.py": "6282f090394aaef8",
+  "dp_uc54_kernel.py": "1a31b30ac4abeb42",
+  "dp_uc40a_kernel.py": "807986c0396fcf56",
+  "dp_uc53_kernel.py": "03d7e3805240c3c7",
+  "dp_uc40_kernel.py": "895c0edc70795d34",
+  "dp_uc34_kernel.py": "263e57d15e038f4e",
+  "dp_uc22_harper_own_the_zone.py": "530d05cdc1e4077a",
+  "dp_uc52_kernel.py": "3667f8028acd9974",
+  "cumulative_metric.py": "a28887406d988809",
+  "dp_uc51_kernel.py": "4845bae228615bf2",
+  "dp_uc49_kernel.py": "a4ad5191a6537f3a",
+  "dp_uc50_kernel.py": "8084cb172d0cf560",
+  "dp_uc48_kernel.py": "0f63857a103253ef",
+  "dp_uc44_kernel.py": "a2c119096db24fdb"
+ },
+ "anchor": "2026-10-01",
+ "data_max_date": "2026-10-01",
+ "src4": {
+  "spring_2026_pa": 19,
+  "post_2026_pa": 7,
+  "nonR_all_pa": 45
+ },
+ "stl": {
+  "2021": {
+   "pa": 324,
+   "ba": 0.2708333333333333,
+   "obp": 0.3416149068322981,
+   "slg": 0.3888888888888889,
+   "woba": 0.3218757763975156,
+   "xwoba": 0.31011490683229814,
+   "chase": 0.34210526315789475,
+   "ooz_contact": 0.5480769230769231
+  },
+  "2022": {
+   "pa": 131,
+   "ba": 0.1885245901639344,
+   "obp": 0.24427480916030533,
+   "slg": 0.27049180327868855,
+   "woba": 0.23165648854961832,
+   "xwoba": 0.2501832061068702,
+   "chase": 0.4576271186440678,
+   "ooz_contact": 0.4814814814814815
+  }
+ },
+ "post": {
+  "2022": {
+   "pa": 10,
+   "ba": 0.25,
+   "ops": 0.675
+  },
+  "2023": {
+   "pa": 1,
+   "ba": 0.0,
+   "ops": 0.0
+  },
+  "2024": {
+   "pa": 5,
+   "ba": 0.25,
+   "ops": 0.65
+  },
+  "2025": {
+   "pa": 3,
+   "ba": 0.3333333333333333,
+   "ops": 0.6666666666666666
+  },
+  "2026": {
+   "pa": 7,
+   "ba": 0.2857142857142857,
+   "ops": 0.7142857142857142
+  }
+ },
+ "post_total_pa": 26,
+ "games_with_pa_2026": 83,
+ "first_game_2026": "2026-03-28",
+ "last_game_2026": "2026-09-27",
+ "pa_by_hand_2026": {
+  "L": 138,
+  "R": 112
+ },
+ "pool_n": 220,
+ "pool_years": "2015-2026",
+ "season": {
+  "2022": {
+   "plate_apps": 59,
+   "ba": 0.3148148148148148,
+   "obp": 0.3448275862068966,
+   "slg": 0.5925925925925926,
+   "ops": 0.9374201787994891,
+   "woba": 0.3946379310344827,
+   "xwoba": 0.3340862068965517,
+   "bbrate": 0.01694915254237288,
+   "krate": 0.2033898305084746,
+   "swing_rate": 0.5776699029126213,
+   "contact_rate": 0.7478991596638656,
+   "chase_rate": 0.4528301886792453,
+   "whiff_rate": 0.25210084033613445,
+   "ooz_contact_rate": 0.5,
+   "oz_ba": 0.23076923076923078,
+   "hard_hit_rate": 0.3409090909090909,
+   "barrel_rate": 0.09090909090909091,
+   "ev_mu": 84.34545454545454,
+   "ev50": 86.85,
+   "ev90": 103.31,
+   "ev_max": 107.6,
+   "pull_air_rate": 0.29545454545454547,
+   "bat_speed_mu": null,
+   "oz_xba": 0.197,
+   "oz_gap": 0.033769230769230774,
+   "oz_call": "RAN HOT",
+   "oz_pa": 30,
+   "n_ev": 44,
+   "zone_contact_rate": 0.9154929577464789,
+   "swing_rate_in_zone": 0.71,
+   "ld_rate": 0.3181818181818182,
+   "gb_rate": 0.4318181818181818,
+   "fb_rate": 0.20454545454545456,
+   "babip": 0.36585365853658536,
+   "iso": 0.27777777777777773,
+   "tracked_swings": 0
+  },
+  "2023": {
+   "plate_apps": 300,
+   "ba": 0.25089605734767023,
+   "obp": 0.29292929292929293,
+   "slg": 0.4265232974910394,
+   "ops": 0.7194525904203324,
+   "woba": 0.30945791245791243,
+   "xwoba": 0.28811744966442954,
+   "bbrate": 0.02666666666666667,
+   "krate": 0.24666666666666667,
+   "swing_rate": 0.5941385435168739,
+   "contact_rate": 0.7144992526158446,
+   "chase_rate": 0.43137254901960786,
+   "whiff_rate": 0.28550074738415543,
+   "ooz_contact_rate": 0.5909090909090908,
+   "oz_ba": 0.14893617021276595,
+   "hard_hit_rate": 0.32211538461538464,
+   "barrel_rate": 0.0673076923076923,
+   "ev_mu": 86.47874396135265,
+   "ev50": 88.4,
+   "ev90": 104.8,
+   "ev_max": 111.8,
+   "pull_air_rate": 0.24519230769230768,
+   "bat_speed_mu": null,
+   "oz_xba": 0.13367021276595745,
+   "oz_gap": 0.015265957446808504,
+   "oz_call": "EARNED",
+   "oz_pa": 112,
+   "n_ev": 207,
+   "zone_contact_rate": 0.7845433255269321,
+   "swing_rate_in_zone": 0.7557522123893805,
+   "ld_rate": 0.24519230769230768,
+   "gb_rate": 0.42788461538461536,
+   "fb_rate": 0.23557692307692307,
+   "babip": 0.30612244897959184,
+   "iso": 0.17562724014336917,
+   "tracked_swings": 0
+  },
+  "2024": {
+   "plate_apps": 275,
+   "ba": 0.256,
+   "obp": 0.31135531135531136,
+   "slg": 0.42,
+   "ops": 0.7313553113553113,
+   "woba": 0.3173516483516483,
+   "xwoba": 0.3107904411764706,
+   "bbrate": 0.04727272727272727,
+   "krate": 0.24,
+   "swing_rate": 0.5676190476190476,
+   "contact_rate": 0.686241610738255,
+   "chase_rate": 0.4050179211469534,
+   "whiff_rate": 0.313758389261745,
+   "ooz_contact_rate": 0.49557522123893805,
+   "oz_ba": 0.2087912087912088,
+   "hard_hit_rate": 0.41397849462365593,
+   "barrel_rate": 0.08602150537634409,
+   "ev_mu": 88.52000000000001,
+   "ev50": 91.6,
+   "ev90": 105.24,
+   "ev_max": 113.7,
+   "pull_air_rate": 0.17204301075268819,
+   "bat_speed_mu": 71.23928397482014,
+   "oz_xba": 0.1810769230769231,
+   "oz_gap": 0.02771428571428569,
+   "oz_call": "EARNED",
+   "oz_pa": 113,
+   "n_ev": 185,
+   "zone_contact_rate": 0.8027027027027027,
+   "swing_rate_in_zone": 0.7520325203252033,
+   "ld_rate": 0.20430107526881722,
+   "gb_rate": 0.45698924731182794,
+   "fb_rate": 0.25806451612903225,
+   "babip": 0.31843575418994413,
+   "iso": 0.16399999999999998,
+   "tracked_swings": 556
+  },
+  "2025": {
+   "plate_apps": 261,
+   "ba": 0.2757201646090535,
+   "obp": 0.30739299610894943,
+   "slg": 0.4691358024691358,
+   "ops": 0.7765287985780852,
+   "woba": 0.33188715953307396,
+   "xwoba": 0.30197665369649807,
+   "bbrate": 0.038314176245210725,
+   "krate": 0.21455938697318008,
+   "swing_rate": 0.5711252653927813,
+   "contact_rate": 0.7434944237918215,
+   "chase_rate": 0.45528455284552843,
+   "whiff_rate": 0.25650557620817843,
+   "ooz_contact_rate": 0.6116071428571428,
+   "oz_ba": 0.1485148514851485,
+   "hard_hit_rate": 0.3802083333333333,
+   "barrel_rate": 0.0625,
+   "ev_mu": 86.52041884816755,
+   "ev50": 90.4,
+   "ev90": 104.1,
+   "ev_max": 110.6,
+   "pull_air_rate": 0.203125,
+   "bat_speed_mu": 70.506463878327,
+   "oz_xba": 0.16155445544554456,
+   "oz_gap": -0.013039603960396051,
+   "oz_call": "EARNED",
+   "oz_pa": 113,
+   "n_ev": 191,
+   "zone_contact_rate": 0.8375796178343949,
+   "swing_rate_in_zone": 0.6977777777777778,
+   "ld_rate": 0.2552083333333333,
+   "gb_rate": 0.453125,
+   "fb_rate": 0.25,
+   "babip": 0.3146067415730337,
+   "iso": 0.19341563786008226,
+   "tracked_swings": 526
+  },
+  "2026": {
+   "plate_apps": 250,
+   "ba": 0.24675324675324675,
+   "obp": 0.2834008097165992,
+   "slg": 0.42857142857142855,
+   "ops": 0.7119722382880278,
+   "woba": 0.30734412955465584,
+   "xwoba": 0.3302289156626506,
+   "bbrate": 0.028,
+   "krate": 0.216,
+   "swing_rate": 0.6117908787541713,
+   "contact_rate": 0.7254545454545455,
+   "chase_rate": 0.5277207392197125,
+   "whiff_rate": 0.27454545454545454,
+   "ooz_contact_rate": 0.5758754863813229,
+   "oz_ba": 0.13829787234042554,
+   "hard_hit_rate": 0.39226519337016574,
+   "barrel_rate": 0.0718232044198895,
+   "ev_mu": 87.46022099447514,
+   "ev50": 91.3,
+   "ev90": 105.9,
+   "ev_max": 111.6,
+   "pull_air_rate": 0.16574585635359115,
+   "bat_speed_mu": 71.24613970588236,
+   "oz_xba": 0.16197872340425531,
+   "oz_gap": -0.023680851063829778,
+   "oz_call": "EARNED",
+   "oz_pa": 109,
+   "n_ev": 181,
+   "zone_contact_rate": 0.856655290102389,
+   "swing_rate_in_zone": 0.7128953771289538,
+   "ld_rate": 0.2541436464088398,
+   "gb_rate": 0.46408839779005523,
+   "fb_rate": 0.20441988950276244,
+   "babip": 0.2807017543859649,
+   "iso": 0.1818181818181818,
+   "tracked_swings": 544
+  }
+ },
+ "card_better": {
+  "2022": {
+   "plate_apps": null,
+   "ba": 97.0,
+   "obp": 80.0,
+   "slg": 98.0,
+   "ops": 97.0,
+   "woba": 98.0,
+   "xwoba": 75.0,
+   "bbrate": 2.0,
+   "krate": 70.0,
+   "swing_rate": null,
+   "contact_rate": 54.0,
+   "chase_rate": 3.0,
+   "whiff_rate": 54.0,
+   "ooz_contact_rate": 24.0,
+   "oz_ba": 91.0,
+   "hard_hit_rate": 40.0,
+   "barrel_rate": 76.0,
+   "ev_mu": 15.0,
+   "ev50": 18.0,
+   "ev90": 45.0,
+   "ev_max": 29.0,
+   "pull_air_rate": 94.0,
+   "bat_speed_mu": null
+  },
+  "2023": {
+   "plate_apps": null,
+   "ba": 55.0,
+   "obp": 35.0,
+   "slg": 63.0,
+   "ops": 54.0,
+   "woba": 51.0,
+   "xwoba": 34.0,
+   "bbrate": 6.0,
+   "krate": 40.0,
+   "swing_rate": null,
+   "contact_rate": 34.0,
+   "chase_rate": 5.0,
+   "whiff_rate": 34.0,
+   "ooz_contact_rate": 58.0,
+   "oz_ba": 51.0,
+   "hard_hit_rate": 35.0,
+   "barrel_rate": 56.0,
+   "ev_mu": 30.0,
+   "ev50": 29.0,
+   "ev90": 65.0,
+   "ev_max": 74.0,
+   "pull_air_rate": 82.0,
+   "bat_speed_mu": null
+  },
+  "2024": {
+   "plate_apps": null,
+   "ba": 62.0,
+   "obp": 53.0,
+   "slg": 59.0,
+   "ops": 59.0,
+   "woba": 58.0,
+   "xwoba": 59.0,
+   "bbrate": 17.0,
+   "krate": 45.0,
+   "swing_rate": null,
+   "contact_rate": 18.0,
+   "chase_rate": 8.0,
+   "whiff_rate": 18.0,
+   "ooz_contact_rate": 22.0,
+   "oz_ba": 86.0,
+   "hard_hit_rate": 69.0,
+   "barrel_rate": 72.0,
+   "ev_mu": 54.0,
+   "ev50": 65.0,
+   "ev90": 75.0,
+   "ev_max": 90.0,
+   "pull_air_rate": 44.0,
+   "bat_speed_mu": 73.0
+  },
+  "2025": {
+   "plate_apps": null,
+   "ba": 79.0,
+   "obp": 50.0,
+   "slg": 80.0,
+   "ops": 73.0,
+   "woba": 69.0,
+   "xwoba": 47.0,
+   "bbrate": 11.0,
+   "krate": 61.0,
+   "swing_rate": null,
+   "contact_rate": 51.0,
+   "chase_rate": 2.0,
+   "whiff_rate": 51.0,
+   "ooz_contact_rate": 66.0,
+   "oz_ba": 51.0,
+   "hard_hit_rate": 55.0,
+   "barrel_rate": 52.0,
+   "ev_mu": 30.0,
+   "ev50": 51.0,
+   "ev90": 54.0,
+   "ev_max": 59.0,
+   "pull_air_rate": 65.0,
+   "bat_speed_mu": 69.0
+  },
+  "2026": {
+   "plate_apps": null,
+   "ba": 50.0,
+   "obp": 27.0,
+   "slg": 65.0,
+   "ops": 50.0,
+   "woba": 47.0,
+   "xwoba": 74.0,
+   "bbrate": 7.0,
+   "krate": 61.0,
+   "swing_rate": null,
+   "contact_rate": 39.0,
+   "chase_rate": 0.0,
+   "whiff_rate": 39.0,
+   "ooz_contact_rate": 55.0,
+   "oz_ba": 42.0,
+   "hard_hit_rate": 60.0,
+   "barrel_rate": 62.0,
+   "ev_mu": 43.0,
+   "ev50": 62.0,
+   "ev90": 81.0,
+   "ev_max": 71.0,
+   "pull_air_rate": 40.0,
+   "bat_speed_mu": 75.0
+  }
+ },
+ "own_rank_2026": {
+  "ba": 4,
+  "obp": 4,
+  "slg": 2,
+  "ops": 4,
+  "woba": 4,
+  "xwoba": 1,
+  "bbrate": 3,
+  "krate": 2,
+  "contact_rate": 2,
+  "chase_rate": 4,
+  "whiff_rate": 2,
+  "ooz_contact_rate": 3,
+  "oz_ba": 4,
+  "hard_hit_rate": 2,
+  "barrel_rate": 2,
+  "ev_mu": 2,
+  "ev50": 2,
+  "ev90": 1,
+  "ev_max": 3,
+  "pull_air_rate": 4
+ },
+ "baseline": {
+  "plate_apps": 836,
+  "ba": 0.2603626943005181,
+  "obp": 0.30350665054413545,
+  "slg": 0.4378238341968912,
+  "ops": 0.7413304847410267,
+  "woba": 0.3190338573155986,
+  "xwoba": 0.2998814993954051,
+  "bbrate": 0.03708133971291866,
+  "krate": 0.23444976076555024,
+  "chase_rate": 0.42954686530105524,
+  "ooz_contact_rate": 0.5664739884393064,
+  "hard_hit_rate": 0.3703071672354949,
+  "barrel_rate": 0.07167235494880546,
+  "ev90": 104.7,
+  "oz_ba": 0.16783216783216784,
+  "oz_xba": 0.1586013986013986
+ },
+ "cum_ck": {
+  "woba_50": {
+   "v": 0.30476,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "woba_100": {
+   "v": 0.253050505050505,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "woba_150": {
+   "v": 0.27358389261744964,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "woba_200": {
+   "v": 0.2683147208121827,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "woba_250": {
+   "v": 0.3073441295546559,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "ops_50": {
+   "v": 0.6958333333333333,
+   "rank": 4,
+   "best": "2023",
+   "worst": "2026"
+  },
+  "ops_100": {
+   "v": 0.5757575757575757,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "ops_150": {
+   "v": 0.6291342764714403,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "ops_200": {
+   "v": 0.6101132370167903,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  },
+  "ops_250": {
+   "v": 0.7119722382880278,
+   "rank": 4,
+   "best": "2024",
+   "worst": "2026"
+  }
+ },
+ "cum_2026_last_of_4_share": 1.0,
+ "month26": {
+  "3": {
+   "pa": 7,
+   "ba": 0.0,
+   "ops": 0.14285714285714285,
+   "woba": 0.09971428571428571,
+   "xwoba": 0.25457142857142856,
+   "chase": 0.35714285714285715,
+   "hh": 0.5,
+   "krate": 0.2857142857142857
+  },
+  "4": {
+   "pa": 37,
+   "ba": 0.3055555555555556,
+   "ops": 0.7965465465465466,
+   "woba": 0.34486486486486484,
+   "xwoba": 0.3503513513513513,
+   "chase": 0.5125,
+   "hh": 0.4,
+   "krate": 0.16216216216216217
+  },
+  "5": {
+   "pa": 53,
+   "ba": 0.16666666666666666,
+   "ops": 0.5032051282051282,
+   "woba": 0.22296153846153846,
+   "xwoba": 0.3633396226415095,
+   "chase": 0.5739130434782609,
+   "hh": 0.4,
+   "krate": 0.2641509433962264
+  },
+  "6": {
+   "pa": 48,
+   "ba": 0.24444444444444444,
+   "ops": 0.7375,
+   "woba": 0.31279166666666663,
+   "xwoba": 0.32808333333333334,
+   "chase": 0.5697674418604651,
+   "hh": 0.3888888888888889,
+   "krate": 0.20833333333333334
+  },
+  "7": {
+   "pa": 43,
+   "ba": 0.15789473684210525,
+   "ops": 0.35301668806161746,
+   "woba": 0.16429268292682928,
+   "xwoba": 0.2799285714285714,
+   "chase": 0.5319148936170213,
+   "hh": 0.45454545454545453,
+   "krate": 0.16279069767441862
+  },
+  "8": {
+   "pa": 29,
+   "ba": 0.4230769230769231,
+   "ops": 1.3289124668435013,
+   "woba": 0.5535172413793104,
+   "xwoba": 0.4317241379310345,
+   "chase": 0.43636363636363634,
+   "hh": 0.35,
+   "krate": 0.20689655172413793
+  },
+  "9": {
+   "pa": 33,
+   "ba": 0.3125,
+   "ops": 0.9270833333333333,
+   "woba": 0.3957575757575757,
+   "xwoba": 0.24848484848484848,
+   "chase": 0.5116279069767442,
+   "hh": 0.30434782608695654,
+   "krate": 0.2727272727272727
+  }
+ },
+ "roll26": {
+  "first": 0.25052,
+  "last": 0.35505050505050506,
+  "min": 0.23876767676767674,
+  "min_date": "2026-07-28",
+  "max": 0.35505050505050506,
+  "max_date": "2026-09-27",
+  "x_first": 0.34451,
+  "x_last": 0.3066565656565657
+ },
+ "er1": {
+  "woba": {
+   "career": 0.3163454376163873,
+   "n_seg_2026": 1,
+   "segs_2026": [
+    {
+     "game_year": "2026",
+     "segment": "1",
+     "n_segments": "1",
+     "pa_from": "1",
+     "pa_to": "250",
+     "plate_apps": "250",
+     "date_from": "2026-03-28",
+     "date_to": "2026-09-27",
+     "rate": "0.3073441295546559",
+     "career": "0.3163454376163873",
+     "label": "Par"
+    }
+   ],
+   "splits_by_year": {
+    "2023": 1,
+    "2024": 1,
+    "2025": 1,
+    "2026": 1
+   },
+   "power_2026": {
+    "0.04": 0.17,
+    "0.06": 0.185,
+    "0.08": 0.295,
+    "0.10": 0.33,
+    "0.12": 0.555
+   }
+  },
+  "xwoba": {
+   "career": 0.30690427509293683,
+   "n_seg_2026": 1,
+   "segs_2026": [
+    {
+     "game_year": "2026",
+     "segment": "1",
+     "n_segments": "1",
+     "pa_from": "1",
+     "pa_to": "250",
+     "plate_apps": "250",
+     "date_from": "2026-03-28",
+     "date_to": "2026-09-27",
+     "rate": "0.3302289156626506",
+     "career": "0.30690427509293683",
+     "label": "Good"
+    }
+   ],
+   "splits_by_year": {
+    "2023": 1,
+    "2024": 2,
+    "2025": 1,
+    "2026": 1
+   },
+   "power_2026": {
+    "0.04": 0.225,
+    "0.06": 0.35,
+    "0.08": 0.48,
+    "0.10": 0.6,
+    "0.12": 0.83
+   }
+  }
+ },
+ "asb_first_game_2026": "2026-07-16",
+ "tr1": {
+  "call": "RESULTS TURN",
+  "results": "STRONG",
+  "process": "UNSUPPORTED",
+  "pre_pa": 162,
+  "post_pa": 88,
+  "rows": {
+   "R1": {
+    "metric": "woba",
+    "pre": 0.2719622641509434,
+    "post": 0.37127272727272725,
+    "delta": 0.09931046312178388,
+    "p": null,
+    "verdict": "PRESENT"
+   },
+   "R2": {
+    "metric": "ba",
+    "pre": 0.21768707482993196,
+    "post": 0.2976190476190476,
+    "delta": 0.07993197278911565,
+    "p": null,
+    "verdict": "PRESENT"
+   },
+   "R3": {
+    "metric": "obp",
+    "pre": 0.2578616352201258,
+    "post": 0.32954545454545453,
+    "delta": 0.07168381932532875,
+    "p": null,
+    "verdict": "PRESENT"
+   },
+   "R4": {
+    "metric": "slg",
+    "pre": 0.3673469387755102,
+    "post": 0.5357142857142857,
+    "delta": 0.16836734693877548,
+    "p": null,
+    "verdict": "PRESENT"
+   },
+   "P1": {
+    "metric": "xwoba",
+    "pre": 0.3442173913043478,
+    "post": 0.30463636363636365,
+    "delta": -0.03958102766798416,
+    "p": null,
+    "verdict": "CONTRA"
+   },
+   "P2": {
+    "metric": "krate",
+    "pre": 0.2037037037037037,
+    "post": 0.23863636363636365,
+    "delta": 0.034932659932659954,
+    "p": 0.5215058450518455,
+    "verdict": "CONTRA"
+   },
+   "P3": {
+    "metric": "bbrate",
+    "pre": 0.030864197530864196,
+    "post": 0.022727272727272728,
+    "delta": -0.008136924803591468,
+    "p": 0.7095520773999184,
+    "verdict": "ABSENT"
+   },
+   "P4": {
+    "metric": "chase_rate",
+    "pre": 0.5356037151702786,
+    "post": 0.5121951219512195,
+    "delta": -0.023408593219059082,
+    "p": 0.6248228504132269,
+    "verdict": "WEAK"
+   },
+   "P5": {
+    "metric": "hard_hit_rate",
+    "pre": 0.4067796610169492,
+    "post": 0.36507936507936506,
+    "delta": -0.04170029593758412,
+    "p": 0.5841391097976196,
+    "verdict": "CONTRA"
+   },
+   "P6": {
+    "metric": "whiff_rate",
+    "pre": 0.25274725274725274,
+    "post": 0.3172043010752688,
+    "delta": 0.06445704832801608,
+    "p": 0.10905653217165656,
+    "verdict": "CONTRA"
+   }
+  }
+ },
+ "platoon": {
+  "L|2023": {
+   "pa": 124,
+   "woba": 0.3380650406504065,
+   "xwoba": 0.30991129032258063,
+   "ops": 0.7917017101205495
+  },
+  "R|2023": {
+   "pa": 176,
+   "woba": 0.289235632183908,
+   "xwoba": 0.2725862068965517,
+   "ops": 0.6681122628869614
+  },
+  "L|2024": {
+   "pa": 121,
+   "woba": 0.36688429752066115,
+   "xwoba": 0.3400165289256198,
+   "ops": 0.8608689059064372
+  },
+  "R|2024": {
+   "pa": 154,
+   "woba": 0.27792105263157896,
+   "xwoba": 0.2873708609271523,
+   "ops": 0.6304124673385592
+  },
+  "L|2025": {
+   "pa": 116,
+   "woba": 0.38239655172413795,
+   "xwoba": 0.31514655172413797,
+   "ops": 0.894779245891073
+  },
+  "R|2025": {
+   "pa": 145,
+   "woba": 0.29033333333333333,
+   "xwoba": 0.29114184397163123,
+   "ops": 0.681528994576554
+  },
+  "L|2026": {
+   "pa": 138,
+   "woba": 0.36027007299270075,
+   "xwoba": 0.34139855072463765,
+   "ops": 0.8350011773016247
+  },
+  "R|2026": {
+   "pa": 112,
+   "woba": 0.24142727272727274,
+   "xwoba": 0.3163423423423423,
+   "ops": 0.5642310960067969
+  },
+  "L|base": {
+   "pa": 361,
+   "woba": 0.3620361111111111,
+   "xwoba": 0.3216842105263158,
+   "ops": 0.8479250334672022
+  },
+  "R|base": {
+   "pa": 475,
+   "woba": 0.2858843683083511,
+   "xwoba": 0.28299141630901287,
+   "ops": 0.6603221724742068
+  }
+ },
+ "rhb_platoon_woba": {
+  "L": 0.3308301323885885,
+  "R": 0.3069707188060829
+ },
+ "ci2_last50": {
+  "pa": 153,
+  "ba": 0.2695035460992908,
+  "obp": 0.304635761589404,
+  "slg": 0.48226950354609927,
+  "ops": 0.7869052651355033,
+  "first_date": "2026-06-05",
+  "games": 50
+ },
+ "df": {
+  "DF-1": {
+   "metric": "bat_speed_mu",
+   "label": "Bat speed (mph)",
+   "baseline": 70.87287392657356,
+   "v2026": 71.24613970588236,
+   "delta": 0.37326577930879523,
+   "bar": 1.0,
+   "flagged": false,
+   "years": "2024-2025"
+  },
+  "DF-2": {
+   "metric": "ev90",
+   "label": "EV90 (mph)",
+   "baseline": 104.71333333333332,
+   "v2026": 105.9,
+   "delta": 1.1866666666666816,
+   "bar": 1.0,
+   "flagged": false,
+   "years": "2023-2025"
+  },
+  "DF-3": {
+   "metric": "hard_hit_rate",
+   "label": "Hard-hit rate",
+   "baseline": 0.3721007375241246,
+   "v2026": 0.39226519337016574,
+   "delta": 0.02016445584604115,
+   "bar": 0.04,
+   "flagged": false,
+   "years": "2023-2025"
+  },
+  "DF-4": {
+   "metric": "barrel_rate",
+   "label": "Barrel / BIP",
+   "baseline": 0.0719430658946788,
+   "v2026": 0.0718232044198895,
+   "delta": -0.00011986147478930398,
+   "bar": 0.02,
+   "flagged": false,
+   "years": "2023-2025"
+  },
+  "DF-5": {
+   "metric": "xwoba",
+   "label": "xwOBA",
+   "baseline": 0.3002948481791327,
+   "v2026": 0.3302289156626506,
+   "delta": 0.0299340674835179,
+   "bar": 0.02,
+   "flagged": false,
+   "years": "2023-2025"
+  },
+  "DF-6": {
+   "metric": "ooz_contact_rate",
+   "label": "Out-of-zone contact",
+   "baseline": 0.5660304850017238,
+   "v2026": 0.5758754863813229,
+   "delta": 0.009845001379599094,
+   "bar": 0.03,
+   "flagged": false,
+   "years": "2023-2025"
+  }
+ },
+ "wa1": {
+  "floor": 4.4,
+  "ceiling": 6.0,
+  "comp_max_aav": 6.4,
+  "comp_min_aav": 2.5,
+  "df_count": 0,
+  "term": "up to 2 years",
+  "years": 2,
+  "walkaway_total": 12.0,
+  "rule": "walkaway AAV = top CI-5 comp AAV rounded down to $0.5M; term <= 2 years if DF <= 2, 1 year (+ club option) if DF >= 3; anything above = everyday money -> let him go",
+  "comps": [
+   {
+    "player": "Amed Rosario",
+    "team": "NYY",
+    "years": 1,
+    "total": 2.5,
+    "aav": 2.5
+   },
+   {
+    "player": "Miguel Rojas",
+    "team": "LAD",
+    "years": 1,
+    "total": 5.5,
+    "aav": 5.5
+   },
+   {
+    "player": "Isiah Kiner-Falefa",
+    "team": "BOS",
+    "years": 1,
+    "total": 6.0,
+    "aav": 6.0
+   },
+   {
+    "player": "Willi Castro",
+    "team": "COL",
+    "years": 2,
+    "total": 12.8,
+    "aav": 6.4
+   }
+  ],
+  "salary": {
+   "2022": 0.7156,
+   "2023": 0.95,
+   "2024": 1.7,
+   "2025": 3.0,
+   "2026": 4.4
+  }
+ },
+ "bat_speed_pct_2026": {
+  "pct": 68,
+  "rank": 5,
+  "n": 16,
+  "median": 69.77749401785144
+ },
+ "rhb_n": 42,
+ "rhb_ooz_contact_median": 0.5313106433796089,
+ "rhb_chase_median": 0.3253834423296871,
+ "rhb_swing_median": 0.5073012265202848,
+ "rhb_woba_median": 0.3185809835081459,
+ "hp09_corr": {
+  "r": 0.14165496636162375,
+  "r_pa_weighted": 0.07224211666912748,
+  "n": 42
+ },
+ "rhb_rank": {
+  "2022": {
+   "swing": {
+    "n": 42,
+    "percentile": 83,
+    "rank": 7
+   },
+   "woba": {
+    "n": 42,
+    "percentile": 97,
+    "rank": 1
+   },
+   "chase": {
+    "n": 42,
+    "percentile": 4,
+    "rank": 40
+   },
+   "ooz_contact": {
+    "n": 42,
+    "percentile": 28,
+    "rank": 29
+   },
+   "contact": {
+    "n": 42,
+    "percentile": 61,
+    "rank": 16
+   }
+  },
+  "2023": {
+   "swing": {
+    "n": 42,
+    "percentile": 95,
+    "rank": 2
+   },
+   "woba": {
+    "n": 42,
+    "percentile": 45,
+    "rank": 23
+   },
+   "chase": {
+    "n": 42,
+    "percentile": 9,
+    "rank": 38
+   },
+   "ooz_contact": {
+    "n": 42,
+    "percentile": 64,
+    "rank": 15
+   },
+   "contact": {
+    "n": 42,
+    "percentile": 33,
+    "rank": 28
+   }
+  },
+  "2024": {
+   "swing": {
+    "n": 42,
+    "percentile": 76,
+    "rank": 10
+   },
+   "woba": {
+    "n": 42,
+    "percentile": 47,
+    "rank": 22
+   },
+   "chase": {
+    "n": 42,
+    "percentile": 16,
+    "rank": 35
+   },
+   "ooz_contact": {
+    "n": 42,
+    "percentile": 26,
+    "rank": 31
+   },
+   "contact": {
+    "n": 42,
+    "percentile": 16,
+    "rank": 35
+   }
+  },
+  "2025": {
+   "swing": {
+    "n": 42,
+    "percentile": 80,
+    "rank": 8
+   },
+   "woba": {
+    "n": 42,
+    "percentile": 66,
+    "rank": 14
+   },
+   "chase": {
+    "n": 42,
+    "percentile": 2,
+    "rank": 41
+   },
+   "ooz_contact": {
+    "n": 42,
+    "percentile": 69,
+    "rank": 13
+   },
+   "contact": {
+    "n": 42,
+    "percentile": 59,
+    "rank": 17
+   }
+  },
+  "2026": {
+   "swing": {
+    "n": 42,
+    "percentile": 97,
+    "rank": 1
+   },
+   "woba": {
+    "n": 42,
+    "percentile": 38,
+    "rank": 26
+   },
+   "chase": {
+    "n": 42,
+    "percentile": 0,
+    "rank": 42
+   },
+   "ooz_contact": {
+    "n": 42,
+    "percentile": 61,
+    "rank": 16
+   },
+   "contact": {
+    "n": 42,
+    "percentile": 40,
+    "rank": 25
+   }
+  }
+ },
+ "oz_sustainable": {
+  "2023": true,
+  "2024": false,
+  "2025": true,
+  "2026": true
+ },
+ "cc1": {
+  "2022": {
+   "chases": 48,
+   "runs": 3.6709906358909232,
+   "per100": 7.64789715810609,
+   "per100_ooz": 3.463198713104645
+  },
+  "2023": {
+   "chases": 242,
+   "runs": 26.695858970150535,
+   "per100": 11.031346681880386,
+   "per100_ooz": 4.758620137281735
+  },
+  "2024": {
+   "chases": 226,
+   "runs": 20.36340339680245,
+   "per100": 9.01035548531082,
+   "per100_ooz": 3.6493554474556364
+  },
+  "2025": {
+   "chases": 224,
+   "runs": 23.96188956985486,
+   "per100": 10.697272129399492,
+   "per100_ooz": 4.870302758100582
+  },
+  "2026": {
+   "chases": 257,
+   "runs": 22.38564331246514,
+   "per100": 8.710367047651806,
+   "per100_ooz": 4.596641337261836
+  }
+ },
+ "cc1_rhb_median_per100": 11.29787681760271,
+ "cc1_rhb_median_per100_ooz": 3.7143319115438427,
+ "pg": {
+  "breaking|2022": {
+   "pitches": 73,
+   "pa": 26,
+   "woba": 0.26476923076923076,
+   "xwoba": 0.2722307692307692,
+   "whiff": 0.38461538461538464,
+   "swings": 52,
+   "chase": 0.6590909090909091,
+   "hh": 0.29411764705882354,
+   "bips": 17
+  },
+  "fastball 95+|2022": {
+   "pitches": 24,
+   "pa": 4,
+   "woba": 0.6305,
+   "xwoba": 0.52325,
+   "whiff": 0.3,
+   "swings": 10,
+   "chase": 0.21428571428571427,
+   "hh": 1.0,
+   "bips": 3
+  },
+  "fastball <95|2022": {
+   "pitches": 79,
+   "pa": 20,
+   "woba": 0.34810526315789475,
+   "xwoba": 0.29026315789473683,
+   "whiff": 0.15,
+   "swings": 40,
+   "chase": 0.30303030303030304,
+   "hh": 0.25,
+   "bips": 16
+  },
+  "offspeed|2022": {
+   "pitches": 27,
+   "pa": 7,
+   "woba": 0.8550000000000001,
+   "xwoba": 0.5728571428571428,
+   "whiff": 0.07142857142857142,
+   "swings": 14,
+   "chase": 0.35714285714285715,
+   "hh": 0.3333333333333333,
+   "bips": 6
+  },
+  "breaking|2023": {
+   "pitches": 348,
+   "pa": 91,
+   "woba": 0.24824175824175823,
+   "xwoba": 0.254032967032967,
+   "whiff": 0.330188679245283,
+   "swings": 212,
+   "chase": 0.48743718592964824,
+   "hh": 0.23076923076923078,
+   "bips": 65
+  },
+  "fastball 95+|2023": {
+   "pitches": 198,
+   "pa": 55,
+   "woba": 0.23912727272727272,
+   "xwoba": 0.2212181818181818,
+   "whiff": 0.2956521739130435,
+   "swings": 115,
+   "chase": 0.3695652173913043,
+   "hh": 0.3333333333333333,
+   "bips": 36
+  },
+  "fastball <95|2023": {
+   "pitches": 460,
+   "pa": 119,
+   "woba": 0.36243103448275865,
+   "xwoba": 0.3279145299145299,
+   "whiff": 0.24124513618677043,
+   "swings": 257,
+   "chase": 0.35784313725490197,
+   "hh": 0.3411764705882353,
+   "bips": 85
+  },
+  "offspeed|2023": {
+   "pitches": 117,
+   "pa": 33,
+   "woba": 0.36833333333333335,
+   "xwoba": 0.3281818181818182,
+   "whiff": 0.2976190476190476,
+   "swings": 84,
+   "chase": 0.59375,
+   "hh": 0.47619047619047616,
+   "bips": 21
+  },
+  "breaking|2024": {
+   "pitches": 339,
+   "pa": 88,
+   "woba": 0.23501149425287354,
+   "xwoba": 0.25639772727272725,
+   "whiff": 0.4256410256410256,
+   "swings": 195,
+   "chase": 0.49537037037037035,
+   "hh": 0.35185185185185186,
+   "bips": 54
+  },
+  "fastball 95+|2024": {
+   "pitches": 140,
+   "pa": 26,
+   "woba": 0.3854615384615384,
+   "xwoba": 0.35263999999999995,
+   "whiff": 0.23076923076923078,
+   "swings": 78,
+   "chase": 0.2830188679245283,
+   "hh": 0.5,
+   "bips": 16
+  },
+  "fastball <95|2024": {
+   "pitches": 421,
+   "pa": 116,
+   "woba": 0.38048695652173914,
+   "xwoba": 0.37398245614035086,
+   "whiff": 0.22666666666666666,
+   "swings": 225,
+   "chase": 0.2698412698412698,
+   "hh": 0.4772727272727273,
+   "bips": 88
+  },
+  "offspeed|2024": {
+   "pitches": 148,
+   "pa": 43,
+   "woba": 0.2719302325581396,
+   "xwoba": 0.21541860465116278,
+   "whiff": 0.36082474226804123,
+   "swings": 97,
+   "chase": 0.5353535353535354,
+   "hh": 0.25925925925925924,
+   "bips": 27
+  },
+  "breaking|2025": {
+   "pitches": 291,
+   "pa": 91,
+   "woba": 0.31922471910112354,
+   "xwoba": 0.2891222222222222,
+   "whiff": 0.33707865168539325,
+   "swings": 178,
+   "chase": 0.5465116279069767,
+   "hh": 0.4262295081967213,
+   "bips": 61
+  },
+  "fastball 95+|2025": {
+   "pitches": 206,
+   "pa": 45,
+   "woba": 0.3000227272727273,
+   "xwoba": 0.3274418604651163,
+   "whiff": 0.1810344827586207,
+   "swings": 116,
+   "chase": 0.37777777777777777,
+   "hh": 0.38461538461538464,
+   "bips": 39
+  },
+  "fastball <95|2025": {
+   "pitches": 328,
+   "pa": 85,
+   "woba": 0.3548928571428571,
+   "xwoba": 0.32166666666666666,
+   "whiff": 0.19047619047619047,
+   "swings": 168,
+   "chase": 0.33974358974358976,
+   "hh": 0.34375,
+   "bips": 64
+  },
+  "offspeed|2025": {
+   "pitches": 115,
+   "pa": 38,
+   "woba": 0.34184210526315784,
+   "xwoba": 0.25057894736842107,
+   "whiff": 0.33783783783783783,
+   "swings": 74,
+   "chase": 0.581081081081081,
+   "hh": 0.3076923076923077,
+   "bips": 26
+  },
+  "breaking|2026": {
+   "pitches": 288,
+   "pa": 83,
+   "woba": 0.2739259259259259,
+   "xwoba": 0.330433734939759,
+   "whiff": 0.3254437869822485,
+   "swings": 169,
+   "chase": 0.5416666666666666,
+   "hh": 0.3508771929824561,
+   "bips": 57
+  },
+  "fastball 95+|2026": {
+   "pitches": 157,
+   "pa": 43,
+   "woba": 0.2201428571428571,
+   "xwoba": 0.2803333333333333,
+   "whiff": 0.20754716981132076,
+   "swings": 106,
+   "chase": 0.5454545454545454,
+   "hh": 0.3939393939393939,
+   "bips": 33
+  },
+  "fastball <95|2026": {
+   "pitches": 307,
+   "pa": 78,
+   "woba": 0.35543589743589743,
+   "xwoba": 0.38308974358974357,
+   "whiff": 0.19411764705882353,
+   "swings": 170,
+   "chase": 0.41935483870967744,
+   "hh": 0.42857142857142855,
+   "bips": 63
+  },
+  "offspeed|2026": {
+   "pitches": 146,
+   "pa": 46,
+   "woba": 0.3642608695652174,
+   "xwoba": 0.28578260869565214,
+   "whiff": 0.3904761904761905,
+   "swings": 105,
+   "chase": 0.6632653061224489,
+   "hh": 0.39285714285714285,
+   "bips": 28
+  }
+ },
+ "pg_base": {
+  "breaking": {
+   "pa": 270,
+   "woba": 0.26759176029962545,
+   "xwoba": 0.266546468401487,
+   "whiff": 0.3641025641025641,
+   "swings": 585,
+   "whiffs": 213,
+   "whiff_p_vs_2026": 0.35504589036329826
+  },
+  "fastball 95+": {
+   "pa": 126,
+   "woba": 0.291,
+   "xwoba": 0.2850650406504065,
+   "whiff": 0.23624595469255663,
+   "swings": 309,
+   "whiffs": 73,
+   "whiff_p_vs_2026": 0.5439489959126784
+  },
+  "fastball <95": {
+   "pa": 320,
+   "woba": 0.36701269841269846,
+   "xwoba": 0.3429206349206349,
+   "whiff": 0.2230769230769231,
+   "swings": 650,
+   "whiffs": 145
+  },
+  "offspeed": {
+   "pa": 114,
+   "woba": 0.323140350877193,
+   "xwoba": 0.25978070175438595,
+   "whiff": 0.3333333333333333,
+   "swings": 255,
+   "whiffs": 85
+  }
+ },
+ "velo_seen": {
+  "2022": {
+   "n": 103,
+   "mu": 93.14271844660195,
+   "share95": 0.23300970873786409
+  },
+  "2023": {
+   "n": 658,
+   "mu": 93.009726443769,
+   "share95": 0.3009118541033435
+  },
+  "2024": {
+   "n": 561,
+   "mu": 93.11711229946523,
+   "share95": 0.24955436720142601
+  },
+  "2025": {
+   "n": 534,
+   "mu": 93.65955056179774,
+   "share95": 0.3857677902621723
+  },
+  "2026": {
+   "n": 464,
+   "mu": 93.59375,
+   "share95": 0.33836206896551724
+  }
+ },
+ "phi_career": {
+  "pa": 1145,
+  "ba": 0.26017029328287605,
+  "obp": 0.30123674911660775,
+  "slg": 0.44370860927152317,
+  "ops": 0.7449453583881309,
+  "woba": 0.3203568904593639,
+  "hr": 39,
+  "xbh": 106,
+  "games": 365
+ },
+ "tenure_board": {
+  "n": 9,
+  "woba_rank": 5,
+  "rhb_n": 5,
+  "rhb_woba_rank": 2
+ },
+ "pos_games": {
+  "2B|2023": 4,
+  "2B|2024": 20,
+  "2B|2025": 33,
+  "2B|2026": 14,
+  "3B|2022": 11,
+  "3B|2023": 82,
+  "3B|2024": 23,
+  "3B|2025": 33,
+  "3B|2026": 21,
+  "SS|2022": 8,
+  "SS|2023": 18,
+  "SS|2024": 48,
+  "SS|2025": 19,
+  "SS|2026": 18,
+  "LF|2022": 2,
+  "LF|2025": 2,
+  "LF|2026": 32,
+  "CF|2023": 1,
+  "CF|2025": 1
+ },
+ "pos_count_2026": 4,
+ "pos_count_career": 5,
+ "oz_xba_cov": 0.9827586206896551,
+ "dq": {
+  "pass": 12,
+  "warn": 5,
+  "fail": 0
+ },
+ "build_seconds": 12.0,
+ "hp": {
+  "HP-01": {
+   "claim": "2026 top-line 'should be below his results from prior years with the Phillies'",
+   "client": "wOBA 2026 .300 vs 2025 .345 (client frame, incl. spring + WC)",
+   "governed": "wOBA .307 (4th of 2023-26), OPS .712, OBP .283; but xwOBA .330 is his best Phillies season",
+   "grade": "SUPPORTED (results)",
+   "note": "Results were his worst full Phillies season; the expected line was his best. A results-down year, not a skills-down year."
+  },
+  "HP-02": {
+   "claim": "Cumulative wOBA/OPS 'highlighting 2026 as a down year overall'",
+   "client": "client frame: n/a (the notebook drew no cumulative chart)",
+   "governed": "2026 last of 2023-26 at 100% of 50-PA checkpoints (wOBA and OPS, 50-250 PA)",
+   "grade": "SUPPORTED",
+   "note": "The 2026 line never rose above any prior full Phillies season at any checkpoint."
+  },
+  "HP-03": {
+   "claim": "'An uptick in performance throughout the year'",
+   "client": "client frame: n/a",
+   "governed": "TR-1 at the break (2026-07-16): wOBA .272 -> .371, xwOBA .344 -> .305; call RESULTS TURN; ER-1: no 2026 change point",
+   "grade": "RESULTS ONLY",
+   "note": "Results turned; process did not (xwOBA, K%, hard-hit and whiff all moved the wrong way). The first half was unlucky, the second half less so."
+  },
+  "HP-04": {
+   "claim": "'A high-chase and high-contact guy'",
+   "client": "chase 53.3%, contact 73.0%, OOZ contact 57.8% (client frame)",
+   "governed": "chase 52.8% = highest of 42 Phillies RHB seasons 2022-26; contact 72.5% (40th pct); OOZ contact 57.6% (61th pct)",
+   "grade": "PARTLY",
+   "note": "High chase, yes - the highest in the pool. High contact only out of the zone; overall contact is below the RHB median."
+  },
+  "HP-05": {
+   "claim": "OOZ contact and OOZ BA - 'are those sustainable?'",
+   "client": "OOZ BA .146 (client frame)",
+   "governed": "OZ-1 2026: OZ-BA .138 vs OZ-xBA .162 -> EARNED; OOZ contact above RHB median (53.1%); CC-1 8.7 runs per 100 chases vs RHB median 11.3",
+   "grade": "SUSTAINABLE",
+   "note": "His out-of-zone damage is earned (it ran slightly cold in 2026). Each chase costs less than a typical RHB's; he just chases far more often."
+  },
+  "HP-06": {
+   "claim": "'Has he fallen off against velocity'",
+   "client": "client frame: not computed in this notebook",
+   "governed": "95+ fastballs 2026: wOBA .220 vs .291 (2023-25); xwOBA .280 vs .285; whiff 20.8% vs 23.6% (p=0.54)",
+   "grade": "NOT SUPPORTED (process)",
+   "note": "Results against 95+ fell; whiffs fell too and xwOBA matched his pooled 2023-25 line, though it sits below 2024-25 (.353, .327): a watch item. 43 PA."
+  },
+  "HP-07": {
+   "claim": "'Previously strong against breaking balls but not so much now'",
+   "client": "client frame: not computed in this notebook",
+   "governed": "breaking 2023-25: wOBA .268, whiff 36.4%; 2026: xwOBA .330, whiff 32.5%",
+   "grade": "CONTRADICTED",
+   "note": "He was never strong against breaking balls, and 2026 was his best expected year against them. Offspeed is where he swings and misses (whiff 39.0%, chase 66.3%)."
+  },
+  "HP-08": {
+   "claim": "'Edmundo swung the bat and had high wOBAs among Phillies RHB'",
+   "client": "client scatter: 80 RHB-seasons (no PA floor, every game type)",
+   "governed": "swing-rate pct by season: 2022 83, 2023 95, 2024 76, 2025 80, 2026 97; wOBA pct: 2022 97, 2023 45, 2024 47, 2025 66, 2026 38 (n=42)",
+   "grade": "PARTLY",
+   "note": "He always swung (top quartile every season). His wOBA was above the RHB median only in 2022 (59 PA) and 2025."
+  },
+  "HP-09": {
+   "claim": "'The Phillies put a premium on right handed hitters who swing the bat'",
+   "client": "client scatter r = nan (all rows); 0.05 at >=50 PA",
+   "governed": "house pool (RHB 2022-26, >=50 PA, n=42): r = 0.14; PA-weighted 0.07",
+   "grade": "NOT VISIBLE IN OUTCOMES",
+   "note": "A preference can't be graded from the log; the outcome link it implies is weak in this pool."
+  },
+  "HP-10": {
+   "claim": "'Reliable bench player going back to 2022 ... a true positive force'",
+   "client": "client frame: n/a",
+   "governed": "Phillies 2022-26: 1145 PA, .260/.301/.444, wOBA .320 = 5 of 9 Phillies with >=800 PA (2 of 5 RHB)",
+   "grade": "SUPPORTED",
+   "note": "Carry-in bWAR 0.8 / 0.6 / 2.2 / 2.3 / 1.0 (CI-4); four positions in 2026."
+  },
+  "HP-11": {
+   "claim": "'The Phillies should not pay him like an everyday player'",
+   "client": "client frame: n/a",
+   "governed": "vs RHP wOBA .286 (2023-25), .241 (2026) vs RHB pool .307; BB% 2.8% (7th pct); WA-1 walkaway $6.0M AAV, up to 2 years (DF 0/6)",
+   "grade": "SUPPORTED",
+   "note": "He crushes lefties and is a below-average bat against righties, with almost no walks. That is a bench/platoon profile."
+  }
+ },
+ "hp_client": {
+  "r": NaN,
+  "r50": 0.04750363757056097,
+  "n": 80,
+  "missing": [],
+  "woba26": 0.3,
+  "ev_mu26": 81.7,
+  "pa26": 279,
+  "sources": {
+   "edmundo.parquet|2018|R": 11,
+   "edmundo.parquet|2019|R": 26,
+   "edmundo.parquet|2021|F": 14,
+   "edmundo.parquet|2021|R": 1190,
+   "edmundo.parquet|2022|R": 447,
+   "giants-of-rangers-of-24.parquet|2024|R": 10,
+   "marlins-of-24-25.parquet|2024|R": 5,
+   "marlins-of-24-25.parquet|2025|R": 6,
+   "nats-of-23.parquet|2023|R": 7,
+   "pos|2022|D": 20,
+   "pos|2022|L": 6,
+   "pos|2022|R": 206,
+   "pos|2022|W": 22,
+   "pos|2023|L": 4,
+   "pos|2023|R": 1126,
+   "pos|2024|D": 16,
+   "pos|2024|R": 1050,
+   "pos|2025|D": 8,
+   "pos|2025|R": 942,
+   "pos|2026|F": 21,
+   "pos|2026|R": 899,
+   "pos|2026|S": 68,
+   "white-sox-of-25-26.parquet|2026|R": 3
+  }
+ }
+}

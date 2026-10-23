@@ -1,0 +1,18 @@
+rule,status,detail
+LIN-1 lineage pins,PASS,16 files sha256-pinned (K55 + K46 + barrel_rate.py + 14 through K55)
+ANC-1 pinned anchor,PASS,house log max game_date 2026-10-01 <= 2026-10-01
+ENT-1 id lock,PASS,batter==624641 & batting role & R: 4223 pitches 2022-26; name maps to one id; stand R
+SRC-4 client frame game types,WARN,client frame carries 45 non-regular PHI PA 2022-26 incl. 19 spring + 7 Wild Card PA in 2026; excluded from every governed rate
+SRC-5 two-team client frame,WARN,"client frame includes edmundo.parquet (STL 2018-2022, 1674 R pitches, no bat tracking); shown as labelled context only, never pooled"
+CM-1 endpoint reconcile,PASS,wOBA/OBP/SLG final points == K40 nresults for every season (tol 1e-9); OPS = OBP + SLG on the same rows
+POS-1 fielding games from the house log,WARN,"games where fielder_k == id on the Phillies fielding side; counts appearances at a position (incl. late-inning moves), so a game can count at two positions; B-Ref carry-in (CI-4) shown beside it"
+SEN-1 EV coverage on BIP,PASS,99.63% of 2022-26 BIP carry launch_speed; untracked BIP leave EV-1 denominators
+SEN-2 OZ-xBA coverage,PASS,98.28% of out-of-zone BIP carry estimated_ba (fallback: actual outcome)
+SEN-3 bat speed coverage 2024-26,PASS,96.6% of swings tracked (BT-1 floor 50 swings)
+GL-1 EV50 definition,WARN,"EV50 = median EV (client's definition); Statcast's public EV50 = mean of hardest 50% - disclosed, not substituted"
+SRC-6 2022 PHI sample,WARN,"2022 PHI = 59 PA; shown, never a baseline (baseline 2023-25 = 836 PA)"
+PAR-1 PA reconcile CI-1,PASS,2026 PA 250 vs B-Ref 250; slash .247/.283/.429 vs .247/.283/.429
+TR-1 date fixed,PASS,first post-break game 2026-07-16 from schedule gap (BID: never hand-keyed)
+OZ-1 bars unchanged,PASS,+/-.030 as pre-registered
+WA-1 bars unchanged,PASS,six DF bars as pre-registered
+"RATE-1 rates in [0,1]",PASS,season-level rate KPIs bounded

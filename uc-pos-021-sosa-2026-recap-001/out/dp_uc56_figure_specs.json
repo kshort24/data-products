@@ -1,0 +1,85 @@
+[
+ {
+  "figure": "f1_cumulative",
+  "title": "2026 trailed every prior Phillies season, start to finish: .307 wOBA, .712 OPS",
+  "subtitle": "Cumulative by plate appearance, 2026 against his 2022-25 Phillies seasons. At every 50-PA checkpoint (50 to 250) 2026 ranked last of his four full Phillies seasons in both wOBA and OPS. The late climb (from .268 at 200 PA) only got it back to the bottom of the pack.",
+  "source": [
+   "cum_woba",
+   "cum_ops",
+   "cum_checkpoints"
+  ]
+ },
+ {
+  "figure": "f2_season_card",
+  "title": "Results down, contact quality up: 2026 had his worst wOBA and his best xwOBA and EV90",
+  "subtitle": "Five Phillies seasons on the house KPI panel plus the client's batted-ball asks. Cell colour = share of 220 Phillies hitter-seasons (2015-2026, \u226550 PA) he beat; red = better, blue = worse (low K% and chase colour red). Of 2023-26, 2026 ranks 4th in wOBA, 1st in xwOBA and EV90, 4th (worst) in chase and pull-air. EV50 = median EV (client definition, GL-1). Bat speed ships from 2024.",
+  "source": [
+   "season_card"
+  ]
+ },
+ {
+  "figure": "f3_form_2026",
+  "title": "The second-half uptick was the results catching up, not a better hitter",
+  "subtitle": "Rolling 100-PA wOBA (red) and xwOBA (navy) through 2026; shaded from the first game after the All-Star break (fixed in the BID before looking). TR-1 call: RESULTS TURN - results improved on all four signatures, process on none (xwOBA, K%, hard-hit and whiff moved the wrong way). ER-1 finds no change point in 2026 (at 250 PA it would catch a .080 step only 30% of the time). Lines start at his 100th PA (early June).",
+  "source": [
+   "rolling_100pa",
+   "tr1_asb_ledger",
+   "er1_segments_woba"
+  ]
+ },
+ {
+  "figure": "f4_over_the_hump",
+  "title": "Over the hump? Not by the batted ball: 0 of 6 pre-registered decline flags tripped",
+  "subtitle": "Season values, 2026 in red (2022 = 59 PA, pale). Against his 2023-25 Phillies mean, 2026 bat speed +0.4 mph, EV90 +1.2 mph, hard-hit +2.0 pts, barrel flat, xwOBA +0.030. The one slide is shape, not force: pull-air 16.6% (his lowest) with ground balls at 46.4% (his highest).",
+  "source": [
+   "season_panel",
+   "wa1_decline_flags"
+  ]
+ },
+ {
+  "figure": "f5_approach",
+  "title": "The most aggressive chaser on the roster, and the out-of-zone contact is real",
+  "subtitle": "Left: 42 Phillies RHB seasons (\u226550 PA), dot size = PA; navy lines = medians. His 52.8% chase in 2026 is the highest in the pool; his out-of-zone contact (57.6%) sits above the median. Right: BA on PAs ending out of the zone vs the expected BA on the same at-bats (OZ-1). 2026 ran 24 points under expected - not luck carrying him. Each chase cost 8.7 runs per 100 (RHB median 11.3); the bill is volume.",
+  "source": [
+   "rhb_pool_2022_26",
+   "season_panel",
+   "cc1_chase_cost"
+  ]
+ },
+ {
+  "figure": "f6_pitch_groups",
+  "title": "Velocity and breaking balls held; offspeed is where he swings and misses",
+  "subtitle": "xwOBA on PAs ending on each pitch group, with whiff rate per swing under each bar; navy dotted = his 2023-25 pooled xwOBA. Against 95+ fastballs his whiff fell (23.6% \u2192 20.8%) and xwOBA matched the pooled line (.285 \u2192 .280), though below 2024-25 - a watch item, not a fall-off. Breaking balls were never a strength (.268 wOBA 2023-25) and 2026 was his best expected year against them. Offspeed: whiff 39.0% and chase 66.3%, both his worst - though the contact he made was fine. Samples are 28-83 PA per bar.",
+  "source": [
+   "pitch_group_by_season",
+   "pitch_group_baseline_2023_25"
+  ]
+ },
+ {
+  "figure": "f7_swing_woba",
+  "title": "Always a swinger; above the RHB wOBA median only in 2025 (and 2022's 59 PA)",
+  "subtitle": "Your scatter, rebuilt on the house pool: 42 Phillies RHB seasons 2022-26 with \u226550 PA, regular season only, dot size = PA, navy = medians. Sosa's swing rate sat in the top quartile every season (97th percentile in 2026). Across the pool, swing rate barely tracks wOBA (r = 0.14; 0.07 PA-weighted).",
+  "source": [
+   "rhb_pool_2022_26"
+  ]
+ },
+ {
+  "figure": "f8_tenure_platoon",
+  "title": "Five seasons, five positions, one job: hit left-handers",
+  "subtitle": "Phillies 2022-26: 1145 PA, .260/.301/.444, 39 HR, wOBA .320 - 5th of 9 Phillies with \u2265800 PA. Left: games at each position (a late move counts both; B-Ref carry-in beside it in the report). Right: vs LHP .362 in 2023-25, vs RHP .286; dotted = all Phillies RHB 2022-26 by hand.",
+  "source": [
+   "games_by_position",
+   "platoon_by_season",
+   "phi_2022_26_tenure_board"
+  ]
+ },
+ {
+  "figure": "f9_walkaway",
+  "title": "The walkaway: $6.0M a year, no more than 2 years",
+  "subtitle": "Gray: his arbitration salaries 2022-26 (carry-in CI-3). Navy: 2025-26 offseason utility deals, AAV (CI-5). Shaded: the WA-1 band from his 2026 salary to the top comp (&#36;6.4M, rounded down to &#36;0.5M). Term: 0 of 6 decline flags tripped, so up to 2 years. An offer above this line is everyday-player money; let it go. Carry-in arithmetic, not a valuation model.",
+  "source": [
+   "wa1_comps",
+   "wa1_decline_flags"
+  ]
+ }
+]
