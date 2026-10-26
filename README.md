@@ -1,30 +1,90 @@
-# uc-pos-022 · Trea Turner 2026 season recap: "Sounding the Alarm"
-**UC #57 · build `dp_uc57` v1.0.0 · Phillies Offense (`pos`) · Human DPO: Kellen Short · Delivered 2026-10-23 · READY-CONDITIONAL (C1-C6) · harness 34/34 · DQ 10/3/0**
+# Data Products
 
-## The answer in five lines
-1. Atrocious by his own standard: wOBA .298 / xwOBA .293 / OPS .675, last of his 10 full seasons on all three. Against the house pool: 40th percentile.
-2. Not a breaking-ball recognition problem. Against righty breaking balls his chase and contact were unchanged; he has never touched them off the plate (7th percentile).
-3. The recognition break is on fastballs: he took strikes. In-zone swing 73.9% → 68.9% (z −3.4), led by fastballs from both hands.
-4. The real decline is against righties (xwOBA .318 → .277). Against lefties the results fell but the expected line barely moved.
-5. Popups (5.0% → 8.0%) and a flatter swing (tilt net −1.4°, flattest of 12 Phillies) are both real, but breaking-ball popups were not flatter than his other contact (PP-1 PARTLY). Position change: not testable.
+This directory is the output layer of an agentified data-product organization: a defined roster of
+27 agents, sequenced across four governance layers (Intake & Discovery → Design → Build →
+Certify & Publish), that turns a business use case into a certified data product. The full agent
+roster, roles, and governance rules live in the [root `CLAUDE.md`](../CLAUDE.md); this README covers
+only what you're looking at once an agent run finishes and lands here.
 
-## Deliverables
-| What | Where |
+Each subfolder is one completed run of that pipeline against one business use case. Every folder is
+two things at once:
+
+**A deliverable.** A packaged answer to a specific business question — a report, a KPI set, a
+dashboard-ready dataset, a scouting note — written for the human who asked for it.
+
+**A receipt.** The full evidence trail that the deliverable earned the label "certified data
+product" rather than being a one-off chart someone made. Governance gate results, agent handoffs,
+data-quality scorecards, and independent verification runs are all preserved alongside the
+deliverable, not thrown away once the analysis shipped.
+
+If you're publishing this repo, both halves matter: the deliverable is what a consumer reads, and
+the receipts are what let a reviewer — or a future version of this same agent org — check that the
+answer was actually earned and reproduce it.
+
+## Folder naming
+
+`uc-<value-stream>-<id>-<slug>` (some early runs predate this convention and are named more loosely
+— see "Irregular folders" below).
+
+| Prefix | Value stream |
 |---|---|
-| Report (7 pp) | `MLB/dp_uc57_turner_2026_recap_report.pdf` (+ `.md`); copy here |
-| Dashboard | `MLB/dp_uc57_turner_2026_dashboard.html` (+ `_artifact.html`); copy here; Artifact "Sounding the Alarm" |
-| Code | `MLB/dp_uc57_kernel.py`, `_turner_recap.py`, `_hp.py`, `_build_figs.py`, `_narrative.py`, `_build_report.py`, `_build_pdf.py`, `_build_dashboard.py`, `_verification.py` |
-| Receipts | `MLB/out/dp_uc57_*` (63 files) · `MLB/eda/dp_uc57/` |
-| Trail | this folder: BID, `00`-`07`, README, contract and ledger patch copies |
+| `pos` | Position player / offense |
+| `pps` | Pitcher / pitching-and-defense scouting |
+| `def` | Defense |
+| `chk` | Cross-stream checkpoint (spans multiple value streams) |
 
-## Re-run
-```
-cd "C:\Users\Kellen\OneDrive\Documents\Python Scripts\MLB"
-python dp_uc57_turner_recap.py && python dp_uc57_hp.py && python dp_uc57_build_figs.py && python dp_uc57_build_report.py && python dp_uc57_build_pdf.py && python dp_uc57_build_dashboard.py && python dp_uc57_verification.py
-```
-Deterministic; ~31 s. The anchor guard refuses to run if the house log passes 2026-10-01.
+The trailing id is either a sequential use-case number (`uc-pps-019-...`) or a descriptive slug where
+the use case predates the numbered ledger (`uc-pos-marsh-xbh-001`).
 
-## Open items for the DPO
-1. **G2** was taken as the 2026-10-22 bat-tracking CDE read (BID default). Say so if "last night's conversation" meant something else.
-2. **Tier B** (reconstructed 3D swing) waits on the pilot's Gate 2 and the PL-1 fix (house-log intercepts; O-15 on `attack_direction`).
-3. **Ledger:** paste UC52-UC56 patches first, then UC57.
+## What's inside a package
+
+Every package is built from the same governance skeleton, even though department numbering has
+evolved slightly across runs (check the package's own `README.md` for its exact file map — it's the
+authoritative catalog card for that folder):
+
+| File | Layer | Contents |
+|---|---|---|
+| `00_*orchestration_record.md` / `00_*delivery_spine.md` | Orchestration | Sequencing, governance-gate checklist, publish recommendation |
+| `01_*` | Intake & Discovery | Use-case validation, source fitness, glossary/CDE definitions |
+| `02_*` | Design | Data model, KPI calculation specs, join validation |
+| `03_*`–`04_*` | Build | Technical lineage, pipeline build notes, reconciliation |
+| `05_*`–`06_*` | Certify | DQ scorecard, certification readiness verdict |
+| `07_*` | Publish / Operations | Persona-facing consumption notes, versioning, observability runbook |
+| `README.md` | Catalog card | One-page summary: what it answers, the read, publish status, file map |
+| build script(s) (`dp_uc*.py`) | Receipt | The actual transformation/analysis code that produced the numbers |
+| `*_verification.py` (+ results) | Receipt | Independent recompute harness — proves the reported numbers reconcile |
+| reader report (`.md`/`.pdf`) | Deliverable | The consumer-facing writeup |
+| `telemetry/`, `out_*` figures, CSVs | Receipt | Run economics, chart sources, intermediate outputs |
+
+This maps directly to the four governance layers and five governance principles in the root
+`CLAUDE.md`: no CDE gets defined outside the glossary agent, nothing gets built without an approved
+model and lineage doc, nothing publishes without a "ready" verdict from the certification agent,
+breaking changes are classified and DPO-acknowledged, and privacy review clears anything headed to
+an external audience. A package's `00`/`06` file is where you'll find each gate's result recorded.
+
+## Sibling directories referenced by these packages
+
+- `../contract/` — registered publish contracts (YAML) for packages that have graduated to a formal
+  contract, referenced from that package's `README.md`.
+- `../_contract_run_inputs/` — inputs captured at contract-run time for reproducibility.
+
+## Irregular folders
+
+- `_layer1-batch-validation-2026-07-09/` — not a delivered product. A batch intake-validation sweep
+  across multiple pending use cases; kept as a receipt of that governance pass.
+- `dp_uc7_wheeler_mets/` — an early run that predates the `uc-<stream>-<id>` naming convention and
+  the standardized `00`–`07` file map. Still a valid receipt trail, just in an older shape.
+
+## Reading a package
+
+Start with that folder's own `README.md` — it states what business question was answered, the
+headline result, publish/certification status, and a table pointing to every other file in the
+folder. Only open the numbered department files if you need the underlying governance detail (why a
+KPI is defined the way it is, what the DQ scorecard actually checked, what the verification harness
+recomputed independently).
+
+## Before treating anything here as public-safe
+
+Certification confirms internal consistency and completeness, not publish audience. Check the
+package's privacy-watchdog result (in its `03`/`06` file) before assuming a package's data is
+appropriate for an external or public audience — don't infer that from certification status alone.
