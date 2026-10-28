@@ -1,4 +1,4 @@
-# Claude Design brief: "Forty-Five and a Question Mark"
+# Claude Design brief: "Forty-Five and a Question Mark" (v1.0.1)
 ### Kyle Schwarber's 2026 home runs, animated · UC #58 · `uc-pos-023` · `dp_uc58`
 
 > **For Claude Design.** You are animating a data story that a video editor will splice with Baseball Savant home-run clips. Every number you put on screen is in the DATA block at the end; use those values exactly and invent none. Where this brief and your taste disagree on data, the brief wins; on motion and type, use your judgment inside the brand tokens.
@@ -17,6 +17,7 @@
 6. **Pitch maps are the catcher's view.** Draw the zone rectangle from `zone` (half-width 0.83 ft, 1.61–3.18 ft). Draw each ball **to scale** (0.242 ft across), never sized by velocity.
 7. **Colors carry meaning in one scene at a time.** Era colors (S1–S4), pitcher-hand colors (S5), pitch-group colors (S6–S7). S8 shows all three, each panel with its own key.
 8. Pitcher names appear only where the DATA gives one. Otherwise caption with date, opponent, exit velocity and distance.
+9. **Copy style (ST-1, DPO-approved).** Titles and subtitles appear exactly as written in §4: titles in Title Case, subtitles as context only. Put no method notes on screen (no rule IDs, no "chosen by", no legend explanations in subtitles). Legends and footnotes carry the marks' meanings.
 
 ## 2 · Brand tokens
 | Token | Value | Use |
@@ -40,11 +41,11 @@ Hand and pitch-group palettes pass the house colorblind validator against this s
 - **T4 · Consolidation (S8).** The three screens shrink into a 3-panel grid: cumulative left, spray centre, pitch maps stacked right (LHP over RHP). Use a 15-frame stagger.
 
 ## 4 · Scenes
-**S1 · Before Philadelphia (≈ 8 s).** Axes draw in. The seven pre-Phillies seasons (2015–21) draw **together**, left to right, as step lines in `era_pre`. End labels appear as each finishes, for example `2019 38`. Title: **"Before Philadelphia: seven seasons, 153 home runs"**. Subtitle: "Cubs 2015–20 · Nationals / Red Sox 2021".
+**S1 · Before Philadelphia (≈ 8 s).** Axes draw in. The seven pre-Phillies seasons (2015–21) draw **together**, left to right, as step lines in `era_pre`. End labels appear as each finishes, for example `2019 38`. Title: **"Before Philadelphia: Seven Seasons, 153 Home Runs"**. Subtitle: "Cubs 2015–20, Nationals/Red Sox 2021".
 
-**S2 · In Philadelphia (≈ 6 s).** 2022–25 draw together in `era_tenure` over S1. Title: **"In Philadelphia: 46, 47, 38, 56"**.
+**S2 · In Philadelphia (≈ 6 s).** 2022–25 draw together in `era_tenure` over S1. Title: **"In Philadelphia: 46, 47, 38, 56"**. Subtitle: "Phillies 2022–25".
 
-**S3 · 2026, deliberately (≈ 26 s across seg03–07).** 2026 draws in red, thicker (5 px vs 2–2.5 px), pacing about 1 s per 100 PA, and **stops four times**. At each stop, apply T1 (CUT to the clip), then T2 on return.
+**S3 · 2026, deliberately (≈ 26 s across seg03–07).** 2026 draws in red, thicker (5 px vs 2–2.5 px), pacing about 1 s per 100 PA, and **stops four times**. Title: **"2026: Forty-Five, and Four Stops on the Way"**. Subtitle: "2026 in red over every prior season". At each stop, apply T1 (CUT to the clip), then T2 on return.
 | Stop | At PA | HR # | Caption card (exact) |
 |---|---|---|---|
 | 1 | 31 | 3 | "460 ft at Coors Field (4/3) · his longest of 2026" |
@@ -53,7 +54,7 @@ Hand and pitch-group palettes pass the house colorblind validator against this s
 | 4 | 560 | 39 | "Two-out, two-run walk-off vs St. Louis (8/23), 459 ft · +0.446 WPA, his biggest swing of the year" |
 At stop 3, the line takes three steps within 4 PA. Ring all three, then do one push-in (clips 3–5 play back to back).
 
-**S4 · Hold, then where 45 ranks (≈ 9 s).** The 2026 line lands at **45** and the end labels hold for 1 s. Apply T3. Table columns: Rank · Season · Team · HR · PA, 12 rows sorted by HR (`s4_table`). Title: **"45 ranks 4th of his 12 seasons"**. Then two badges fade in: **"Tied for the MLB lead"** (with Pete Crow-Armstrong) and a smaller **"+1 in October: Wild Card Game 2, off Dylan Lee"** marked *postseason*.
+**S4 · Hold, then where 45 ranks (≈ 9 s).** The 2026 line lands at **45** and the end labels hold for 1 s. Apply T3. Table columns: Rank · Season · Team · HR · PA, 12 rows sorted by HR (`s4_table`). Title: **"45 Ranks 4th of His 12 Seasons"**. Subtitle: "Tied for the MLB lead with Pete Crow-Armstrong". Then a small badge fades in: **"+1 in October: Wild Card Game 2, off Dylan Lee"**, marked *postseason* (the MLB-lead fact is already in the subtitle).
 
 **S5 · Where they went, and the thump question (≈ 15 s).** The table wipes to the CBP outline: foul lines, infield diamond, and a wall through `outline_ft` (bearing −45° = LF line, 0° = CF, +45° = RF line), interpolated linearly. Dots land in date order, 3 per second, colored by pitcher hand, two of them hollow (§1.5). Key: "vs RHP 30 · vs LHP 15". Then the thump cards build one by one at the right, each with the 2022–25 range in secondary ink:
 1. "Hardest homer: 113.0 mph · lowest of his five Phillies seasons (113.8–116.7)"
@@ -62,18 +63,20 @@ At stop 3, the line takes three steps within 4 PA. Ring all three, then do one p
 4. "91% of homers were barrels · second-lowest (2023: 89%)"
 5. "Barrel rate 15.5% of balls in play · lowest of the five (2025: 20.8%)"
 6. "82% pulled · most of any Phillies season (54%–74%)"
-Title: **"Shorter, softer, and more pulled than any Phillies season"**. Closing line (secondary ink): "Still 45. The question is how much margin was left."
+Title: **"Shorter, Softer, and More Pulled Than Any Phillies Season"**. Subtitle: "Every park, drawn on the CBP outline". Closing line (secondary ink): "Still 45. The question is how much margin was left."
 
-**S6 · Lefties (≈ 13 s, seg09–11).** The spray wipes to the LHP pitch map: zone, then 15 balls by pitch group. Title: **"Lefties: 13 of 15 off fastballs"**. Subtitle: "258 PA vs LHP · one homer every 17.2 PA".
+**S6 · Lefties (≈ 13 s, seg09–11).** The spray wipes to the LHP pitch map: zone, then 15 balls by pitch group. Title: **"Lefties: 13 of 15 off Fastballs"**. Subtitle: "Two off breaking balls, in 258 PA vs LHP".
+- Stat chip (secondary ink): "One homer every 17.2 PA".
 - Push in (T1) on **clip 7**: vs NYM 6/20, 111.1 mph, off Cionel Pérez. Return (T2), then push in on **clip 8**: at CIN 7/7, 112.2 mph.
 - Return. Ring the two breaking-ball balls: "Only 2 off lefty breaking balls (2025: 7)" (4/26 at ATL, 9/15 at WSH).
 - Postscript: one **dotted-outline** ball fades in at `wc_postscript` with "October: Wild Card Game 2, off Dylan Lee, 447 ft · postseason". Clip 15 can follow (optional).
 
-**S7 · Righties (≈ 14 s, seg12–15).** Cross-fade to the RHP pitch map. Title: **"Righties: 30 homers, the softest fastball homers of his Phillies years"**. Subtitle: "443 PA vs RHP · one every 14.8 PA · fastball homers averaged 105.9 mph (2022–25: 108.2–110.0)".
+**S7 · Righties (≈ 14 s, seg12–15).** Cross-fade to the RHP pitch map. Title: **"Righties: 30 Homers, the Softest Fastball Homers of His Phillies Years"**. Subtitle: "Fastball homers averaged 105.9 mph, lowest of 2022–26".
+- Stat chip (secondary ink): "443 PA vs RHP · one every 14.8 PA · 2022–25 fastball homers: 108.2–110.0 mph".
 - Push in on the three hardest four-seamers in date order: clips 11–13 (vs COL 5/8 109.2 mph; at PIT 5/15 109.5 mph, off Braxton Ashcraft; at NYM 6/28 108.3 mph), applying T1/T2 each time.
 - Last, clip 14: "Labor Day vs Atlanta (9/7): 8th inning, two outs, the only run in a 1-0 win" (107.8 mph, 415 ft).
 
-**S8 · All three (≈ 8 s).** Apply T4. Title: **"Forty-five and a question mark"**. Subtitle: "45 HR · tied for the MLB lead · shorter, softer, more pulled · 30 off righties, 15 off lefties". Hold 3 s, then fade to surface.
+**S8 · All three (≈ 8 s).** Apply T4. Title: **"Forty-Five and a Question Mark"**. Subtitle: "45 HR, tied for the MLB lead". Hold 3 s, then fade to surface.
 
 ## 5 · Segment and clip map
 | Segment | Scene | Content | Clip after it |

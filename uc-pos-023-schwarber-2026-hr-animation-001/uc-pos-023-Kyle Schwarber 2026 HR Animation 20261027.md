@@ -3,11 +3,11 @@
 | Field | Value |
 |---|---|
 | UC # | 58 |
-| Build | `dp_uc58` v1.0.0 |
+| Build | `dp_uc58` v1.0.1 (copy-only over v1.0.0) |
 | Value stream | Phillies Offense (`pos`) |
 | Human DPO | Kellen Short |
 | Consumers | Claude Design (motion), the editor, the parent Schwarber 2026 recap UC |
-| Status | Delivered 2026-10-27 · READY-CONDITIONAL (C1-C7) · verified 28/28 · DQ 10/3/0 |
+| Status | Released v1.0.1 2026-10-27 · DPO-approved (Release Sign-Off) · READY-CONDITIONAL (C1-C7) · verified 31/31 · DQ 10/3/0 |
 | Location | Code and outputs at the MLB root (`dp_uc58_*`, `out/dp_uc58_*`, `eda/dp_uc58/`); trail in `Agents for Data Products/data-products/uc-pos-023-schwarber-2026-hr-animation-001/` |
 
 ## Business questions

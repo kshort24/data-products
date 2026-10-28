@@ -27,3 +27,6 @@ V25,feasibility brief carries its receipt-bound numbers,PASS,[],
 V26,DQ scorecard: 0 FAIL,PASS,"{'PASS': 10, 'WARN': 3}",
 V27,8 keyframes present,PASS,8,8
 V28,"design data: 45 spray points, 45 pitch-map points, 12 seasons",PASS,,
+V29,COPY-1: all 8 copy-deck titles/subtitles appear verbatim in the prompt,PASS,[],none missing
+V30,"ST-1: titles Title Case; subtitles context-only (no ·, no rule IDs, no parentheticals)",PASS,[],none
+V31,keyframes rendered from the current copy deck (rendered after it was written),PASS,,

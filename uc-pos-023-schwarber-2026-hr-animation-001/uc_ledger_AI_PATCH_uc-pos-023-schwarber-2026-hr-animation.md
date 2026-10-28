@@ -2,12 +2,13 @@
 
 Paste the row into the Tail table and replace the "Next available" line. Paste the UC52-UC57 patches first; they are still pending.
 
-| 58 | `uc-pos-023` | **Kyle Schwarber 2026 home runs, animated: "Forty-Five and a Question Mark"** (2026-10-27) | Delivered · READY-CONDITIONAL (C1-C7) · verified 28/28 · DQ 10/3/0 | `dp_uc58_*` + `uc-pos-023-Kyle Schwarber 2026 HR Animation 20261027.md`; primary consumables `dp_uc58_claude_design_prompt.md` (+ 8 keyframes `out/dp_uc58_k*.png`), `dp_uc58_technical_feasibility_brief.md`, `out/dp_uc58_clip_list.csv`. Code and outputs at the MLB root; trail in `Agents for Data Products/data-products/uc-pos-023-schwarber-2026-hr-animation-001/`. **First Claude Design handoff UC** (consumer is a model); third Schwarber product of 2026 (after UC21, UC33) |
+| 58 | `uc-pos-023` | **Kyle Schwarber 2026 home runs, animated: "Forty-Five and a Question Mark"** (2026-10-27) | Released v1.0.1 · DPO-approved 2026-10-27 (`RELEASE_SIGNOFF_2026-10-27_uc-pos-023_v1.0.1.md`) · READY-CONDITIONAL (C1-C7) · verified 31/31 · DQ 10/3/0 | `dp_uc58_*` + `uc-pos-023-Kyle Schwarber 2026 HR Animation 20261027.md`; primary consumables `dp_uc58_claude_design_prompt.md` (+ 8 keyframes `out/dp_uc58_k*.png`), `dp_uc58_technical_feasibility_brief.md`, `out/dp_uc58_clip_list.csv`. Code and outputs at the MLB root; trail in `Agents for Data Products/data-products/uc-pos-023-schwarber-2026-hr-animation-001/`. **First Claude Design handoff UC** (consumer is a model); third Schwarber product of 2026 (after UC21, UC33) |
 
 Pattern inheritance additions (UC58):
 - Cumulative engine `cumulative_metric` → **UC58** (first governed use with `reconcile=`; DH-1 and PA-X1 wrappers)
 - WPA sign `dp_uc51` (pitching) → **WP-1 (batting mirror)**
 - Spray K40 DR-1/PA-L1 + K54 `CBP_DIMS` → **SP-1/SP-2/SP-3** (HR placement at Statcast distance)
+- Copy style **ST-1** (Title Case titles, context-only subtitles; from the DPO's K1 markup) + **COPY-1** single copy deck (v1.0.1)
 - New, provisional: **HB-1** HR barrel share; rules **CP-1, HL-1, PM-1, GR-1**; handoff pattern **CD-1** (receipt-templated prompt + DATA block + keyframes + segment/clip map)
 
 Next available: **UC #59 / dp_uc59** (pps next `uc-pps-038` · pos next `uc-pos-024`) — as of 2026-10-27.

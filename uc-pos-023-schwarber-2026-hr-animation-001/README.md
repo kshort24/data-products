@@ -1,5 +1,5 @@
 # uc-pos-023 · Kyle Schwarber 2026 home runs, animated: "Forty-Five and a Question Mark"
-**UC #58 · build `dp_uc58` v1.0.0 · Phillies Offense (`pos`) · Human DPO: Kellen Short · Delivered 2026-10-27 · READY-CONDITIONAL (C1-C7) · harness 28/28 · DQ 10/3/0**
+**UC #58 · build `dp_uc58` v1.0.1 · Phillies Offense (`pos`) · Human DPO: Kellen Short · Released 2026-10-27 (DPO-approved, [Release Sign-Off](RELEASE_SIGNOFF_2026-10-27_uc-pos-023_v1.0.1.md)) · READY-CONDITIONAL (C1-C7) · harness 31/31 · DQ 10/3/0**
 
 ## The answer in five lines
 1. 45 regular-season HR, tied for the MLB lead, 4th-most of his 12 seasons (56 / 47 / 46 / **45**).
@@ -17,7 +17,8 @@
 | **Clip list** (`resolve_play_ids.py` schema, edit order) | `MLB/out/dp_uc58_clip_list.csv`; copy in `data/` |
 | Data package | `MLB/out/dp_uc58_*` (27 files) · `MLB/eda/dp_uc58/`; design data, grades, DQ, harness copies in `data/` |
 | Code | `MLB/dp_uc58_kernel.py`, `_build.py`, `_build_keyframes.py`, `_build_prompt.py`, `_verification.py` |
-| Trail | BID, `00`–`07`, contract and ledger-patch copies (this folder) |
+| Trail | BID, `00`–`07`, **Release Sign-Off v1.0.1**, contract and ledger-patch copies (this folder) |
+| Copy deck (v1.0.1, ST-1/COPY-1) | `MLB/out/dp_uc58_copy_deck.json`; copy in `data/` |
 
 ## Re-run
 ```
@@ -27,4 +28,4 @@ python resolve_play_ids.py out\dp_uc58_clip_list.csv && python download_clips.py
 ```
 
 ## Open items for the DPO
-G1 clip direction · clip 7 duplicate · `cumulative_metric` v1.1 (DH-1, PA-X1) · ratify the provisional rules · ledger paste UC52–UC58 · delete `MLB/out/_to_delete/`.
+Publish: **approved** (sign-off). Still open: G1 / clip 7 (defaults used in the approved cut) · house-wide promotion of the provisional rules · `cumulative_metric` v1.1 (DH-1, PA-X1) · ledger paste UC52–UC58 · delete `MLB/out/_to_delete/`.
