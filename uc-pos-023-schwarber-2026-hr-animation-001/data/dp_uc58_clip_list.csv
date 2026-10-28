@@ -1,0 +1,16 @@
+order,game_pk,inning,inning_topbot,at_bat_number,pitch_number,game_date,home_team,away_team,player_name,events,game_type,scene,beat,label,season_hr_no,pitcher,pitcher_name,p_throws,pitch_type,release_speed,launch_speed,hit_distance_sc,wpa,result
+1,824377,5,Top,45,1,2026-04-03,COL,PHI,Schwarber S3 stop 1,home_run,R,S3,stop 1,"max distance 460 ft, Coors",3.0,678368,MLBAM 678368,R,ST,80.4,110.7,460.0,0.006,W 10-1
+2,823472,1,Bot,9,6,2026-04-30,PHI,SF,Schwarber S3 stop 2,home_run,R,S3,stop 2,"max EV 113.0, DH Game 1 vs SF, 350th career HR",10.0,657277,Logan Webb,R,FC,91.0,113.0,406.0,0.091,W 3-2
+3,823447,3,Bot,24,3,2026-06-20,PHI,NYM,Schwarber S3 stop 3,home_run,R,S3,stop 3,"three-HR game, HR 1 of 3",26.0,642547,Freddy Peralta,R,CH,85.8,109.1,456.0,0.056,W 15-3
+4,823447,3,Bot,33,4,2026-06-20,PHI,NYM,Schwarber S3 stop 3,home_run,R,S3,stop 3,"three-HR game, HR 2 of 3",27.0,672335,Cionel Pérez,L,SI,97.1,111.1,457.0,0.012,W 15-3
+5,823447,7,Bot,67,3,2026-06-20,PHI,NYM,Schwarber S3 stop 3,home_run,R,S3,stop 3,"three-HR game, HR 3 of 3",28.0,668964,Tobias Myers,R,FC,87.3,103.3,352.0,0.0,W 15-3
+6,823421,9,Bot,74,6,2026-08-23,PHI,STL,Schwarber S3 stop 4,home_run,R,S3,stop 4,"walk-off vs STL, max WPA",39.0,676617,Riley O'Brien,R,SI,98.0,108.5,459.0,0.446,W 6-4
+7,823447,3,Bot,33,4,2026-06-20,PHI,NYM,Schwarber S6 LHP fastball clip,home_run,R,S6,LHP fastball clip,"LHP fastball, top-2 EV",27.0,672335,Cionel Pérez,L,SI,97.1,111.1,457.0,0.012,W 15-3
+8,824495,3,Top,18,4,2026-07-07,CIN,PHI,Schwarber S6 LHP fastball clip,home_run,R,S6,LHP fastball clip,"LHP fastball, top-2 EV",31.0,671096,MLBAM 671096,L,FF,92.0,112.2,408.0,0.169,W 4-1
+9,824934,8,Top,62,8,2026-04-26,ATL,PHI,Schwarber S6 LHP breaking beat,home_run,R,S6,LHP breaking beat,LHP breaking ball,9.0,607481,MLBAM 607481,L,CU,80.4,103.4,377.0,0.01,L 2-6
+10,822683,5,Top,36,5,2026-09-15,WSH,PHI,Schwarber S6 LHP breaking beat,home_run,R,S6,LHP breaking beat,LHP breaking ball,45.0,800600,MLBAM 800600,L,SL,84.9,98.3,366.0,0.142,L 3-6
+11,823466,6,Bot,47,2,2026-05-08,PHI,COL,Schwarber S7 RHP four-seam clip,home_run,R,S7,RHP four-seam clip,"RHP four-seam, top-3 EV",13.0,801403,MLBAM 801403,R,FF,97.5,109.2,415.0,0.023,L 7-9
+12,823384,5,Top,39,4,2026-05-15,PIT,PHI,Schwarber S7 RHP four-seam clip,home_run,R,S7,RHP four-seam clip,"RHP four-seam, top-3 EV",19.0,677952,Braxton Ashcraft,R,FF,97.7,109.5,400.0,0.075,W 11-9
+13,823608,7,Top,59,5,2026-06-28,NYM,PHI,Schwarber S7 RHP four-seam clip,home_run,R,S7,RHP four-seam clip,"RHP four-seam, top-3 EV",30.0,673540,MLBAM 673540,R,FF,96.5,108.3,408.0,0.371,W 5-4
+14,823415,8,Bot,54,5,2026-09-07,PHI,ATL,Schwarber S7 client pick,home_run,R,S7,client pick,Labor Day go-ahead vs ATL,43.0,800311,MLBAM 800311,R,FF,99.7,107.8,415.0,0.321,W 1-0
+15,849841,8,Top,61,7,2026-09-30,ATL,PHI,Schwarber S6 WC postscript,home_run,F,S6,WC postscript,WC Game 2 off Dylan Lee (postseason),,669276,Dylan Lee,L,SL,86.6,111.7,447.0,0.107,W 4-3

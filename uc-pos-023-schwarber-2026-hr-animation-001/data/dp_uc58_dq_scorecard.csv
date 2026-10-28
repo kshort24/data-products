@@ -1,0 +1,14 @@
+rule,dimension,check,result
+DQ-01,uniqueness,0 duplicate PITCH_KEY across house + opponent file,PASS
+DQ-02,consistency,"CP-1 curve endpoints == independent HR count, every season (reconcile=)",PASS
+DQ-03,consistency,career regular-season HR == 385 (CI-4) ,PASS
+DQ-04,consistency,2026 HR == 45 (CI-1),PASS
+DQ-05,completeness,2026 HR with hc coordinates,WARN
+DQ-06,validity,SP-1 hc radius / hit_distance_sc within 0.95-1.05 (median),PASS
+DQ-07,validity,DR-1 convention: LHB 2026 ground balls median loc_x > 0,PASS
+DQ-08,completeness,2026 HR plate_x/plate_z/launch_speed/hit_distance non-null,PASS
+DQ-09,consistency,HR register PA positions == CP-1 curve steps (2026),PASS
+DQ-10,validity,every clip row has the 5 resolve_play_ids keys,PASS
+DQ-11,consistency,PA grain excludes truncated_pa (2026: 1 row) ,WARN
+DQ-13,consistency,"season_hr_no == the count in the des text, every 2026 HR (DH-1 guard)",PASS
+DQ-12,validity,pitcher names resolved for every clip row,WARN

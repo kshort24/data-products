@@ -1,0 +1,29 @@
+id,check,result,got,want
+V01,lineage pins all PASS (K58 2 + K57 chain; unique files),PASS,18,>=18
+V02,"season HR (raw) == season_table, 12 seasons",PASS,"{2015: 16, 2016: 0, 2017: 30, 2018: 26, 2019: 38, 2020: 11, 2021: 32, 2022: 46, 2023: 47, 2024: 38, 2025: 56, 2026: 45}","{2025: 56, 2023: 47, 2022: 46, 2026: 45, 2019: 38, 2024: 38, 2021: 32, 2017: 30, 2018: 26, 2015: 16, 2020: 11, 2016: 0}"
+V03,season PA (raw) == curve pa_total,PASS,"{np.int64(2015): 273, np.int64(2016): 5, np.int64(2017): 485, np.int64(2018): 491, np.int64(2019): 606, np.int64(2020): 223, np.int64(2021): 470, np.int64(2022)",
+V04,career regular-season HR == 385 (CI-4) and 2026 == 45 (CI-1),PASS,"(385, 45)","(385, 45)"
+V05,2026 HR PA positions (independent DH order) == curve,PASS,"[1, 20, 31, 60, 67, 68, 89, 101, 125, 131, 135, 167]","[1, 20, 31, 60, 67, 68, 89, 101, 125, 131, 135, 167]"
+V06,DH-1: 4/30 Game 1 (823472) holds HR #10 at PA 131,PASS,,131
+V07,"CP-1 client 'cumulative_pa' 2026 == raw regular-season pitches (3,026)",PASS,3026,3026
+V08,"HR quality (max/mean EV, max/mean dist) raw == headlines, 2022-26",PASS,,
+V09,HB-1 HR barrel share raw == headlines,PASS,,
+V10,barrel rate per BIP raw == headlines,PASS,"{np.int64(2022): 0.2005, np.int64(2023): 0.1635, np.int64(2024): 0.1562, np.int64(2025): 0.2083, np.int64(2026): 0.1553}",
+V11,HP-01..05 grades consistent with raw ranks,PASS,"{'HP-01': 'SUPPORTED', 'HP-02': 'SUPPORTED', 'HP-03': 'SUPPORTED', 'HP-04': 'SUPPORTED', 'HP-05': 'SUPPORTED', 'HP-06': 'NOT SUPPORTED', 'HP-07': 'SUPPORTED', '",
+V12,15 HP rows graded,PASS,15,15
+V13,WP-1: max = 8/23 walk-off; 2nd = 6/28 ranks last on raw dHWE,PASS,,
+V14,"walk-off: bottom 9th, takes the lead, PHI win 6-4",PASS,,
+V15,"spray: 45 dots, 2 approx (no hc), SP-1 radius == hit_distance_sc",PASS,"(45, 2)","(45, 2)"
+V16,SP-1 validation: median hc radius / distance within 1% of headline,PASS,1.0103,
+V17,"pull count (bearing > atan(1/4.7), LHB) == 37 = headline",PASS,37,37
+V18,"pitch-map counts by hand x group (raw, client map) == headlines",PASS,"{('L', 'Breaking'): 2, ('L', 'Fastballs'): 13, ('R', 'Breaking'): 8, ('R', 'Fastballs'): 15, ('R', 'Offspeed'): 7}","{'L|Breaking': 2, 'L|Fastballs': 13, 'R|Breaking': 8, 'R|Fastballs': 15, 'R|Offspeed': 7}"
+V19,drawn zone = 2026 mean sz_top/sz_bot,PASS,,
+V20,PA and HR by hand 2026 (raw) == headlines,PASS,"{'L': (258, 15), 'R': (443, 30)}",
+V21,"every clip key (game_pk, at-bat, pitch) is a Schwarber HR pitch",PASS,15,15
+V22,postseason/spring never in a regular-season number (WC + spring HR excluded; 2026 curve = 45),PASS,,
+V23,prompt carries 18 receipt-bound strings,PASS,[],none missing
+V24,prompt DATA block == design_data.json,PASS,,
+V25,feasibility brief carries its receipt-bound numbers,PASS,[],
+V26,DQ scorecard: 0 FAIL,PASS,"{'PASS': 10, 'WARN': 3}",
+V27,8 keyframes present,PASS,8,8
+V28,"design data: 45 spray points, 45 pitch-map points, 12 seasons",PASS,,

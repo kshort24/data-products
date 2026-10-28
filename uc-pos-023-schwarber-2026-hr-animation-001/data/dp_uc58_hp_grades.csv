@@ -1,0 +1,16 @@
+hp,claim,governed_value,rank_among_phi_2022_26,bar,grade,note
+HP-01,113 mph max EV lowest of Phillies tenure,113.0,1 of 5,rank 1 (1 = lowest),SUPPORTED,2022 113.8; 2023 114.3; 2024 114.9; 2025 116.7; 2026 113.0
+HP-02,106.3 average EV also the lowest,106.3,1 of 5,rank 1 (1 = lowest),SUPPORTED,2022 107.1; 2023 106.7; 2024 108.2; 2025 107.7; 2026 106.3
+HP-03,average HR shorter than ever (Phillies era),402 ft,1 of 5,rank 1 (1 = lowest),SUPPORTED,2022 412; 2023 407; 2024 408; 2025 410; 2026 402
+HP-04,longest shorter than all but one season,460 ft,2 of 5,rank 2 (1 = lowest),SUPPORTED,2022 468; 2023 483; 2024 447; 2025 468; 2026 460
+HP-05,"91% barrels, second-lowest of Phillies tenure",91%,2 of 5,rank 2 (1 = lowest),SUPPORTED,2022 96%; 2023 89%; 2024 95%; 2025 93%; 2026 91% (HB-1 = barrels / HR)
+HP-06,ability to crush breaking balls even from lefties compromised,2 HR on LHP breaking balls,2 of 5 (count),count leg: rank 1 (1 = fewest); EV leg needs >= 5 HR,NOT SUPPORTED,2022 3; 2023 1; 2024 4; 2025 7; 2026 2; EV leg too few to call in every season
+HP-07,not absolutely crushing RHP fastballs; it is on FF from RHP,RHP fastballs mean EV 105.9 (n 15); RHP FF 105.4 (n 8),fastballs 1 of 5; FF 1 of 5,"mean EV in the bottom two, both legs",SUPPORTED,RHP FB: 2022 108.6/19; 2023 108.2/22; 2024 109.8/12; 2025 110.0/19; 2026 105.9/15 | RHP FF: 2022 109.1/14; 2023 108.0/10; 2024 111.1/9; 2025 109.0/14; 2026 105.4/8
+HP-08,max EV: 9th inning of a 4/30 doubleheader game vs SF,"113.0 mph, 2026-04-30 vs SF, inning 1 (game_pk 823472, DH game 1, off Logan Webb)",,"date, opponent, doubleheader, inning all match",PARTLY,"date/opponent/DH match; inning is the 1st, not the 9th (no 9th-inning HR on 4/30). Game 2 also had a 1st-inning HR (112.4 mph, 446 ft). DH order from sv_id (DH-1); MLB.com confirms Game 1 = 350th career HR off Logan Webb"
+HP-09,"max distance: Coors Field, 5th inning, April 3","460 ft, 2026-04-03 at COL, inning 5",,all match,SUPPORTED,no hc coordinates on this HR (SP-2)
+HP-10,max WPA = Cardinals walk-off 8/23,WP-1 +0.446 on 2026-08-23 vs STL,,top WP-1 is the 8/23 walk-off,SUPPORTED,"2nd: 2026-06-28 at NYM WP-1 +0.371, which raw dHWE ranks 45 of 45 (WP-1 trap)"
+HP-11,three HR vs the Mets 6/20,"3 HR on 2026-06-20 vs NYM (innings 3, 3, 7; W 15-3)",,"3 HR, that game",SUPPORTED,two in the 3rd inning (CI-3a); his only multi-HR inning of 2026
+HP-12,"LHP breaking-ball HRs: ATL 4/26, WSH 9/15 + ATL in the playoffs",2026-04-26 at ATL CU; 2026-09-15 at WSH SL; WC 2026-09-30 at ATL SL off Dylan Lee,,the two regular-season dates + the WC HR,SUPPORTED,
+HP-13,"RHP four-seam top EV: at PIT in May, home vs COL a week earlier, the 6/28 Mets one",2026-05-15 at PIT 109.5; 2026-05-08 vs COL 109.2; 2026-06-28 at NYM 108.3,,same three HRs,SUPPORTED,Labor Day (9/7) is the 4th-hardest RHP four-seam HR
+HP-14,"Labor Day vs the Braves, delivered a victory","2026-09-07 vs ATL, inning 8, 2 out, go-ahead, W 1-0, WP-1 +0.321",,go-ahead HR in a Phillies win,SUPPORTED,
+HP-15,place 45 dots for his home runs,"45 plotted: 43 from coordinates, 2 approximate (SP-2)",,"45 dots, each traceable",SUPPORTED WITH CONDITION,the two SP-2 dots are hollow and footnoted; one is the 460-ft max-distance HR

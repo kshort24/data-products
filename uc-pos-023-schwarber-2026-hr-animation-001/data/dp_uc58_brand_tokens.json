@@ -1,0 +1,25 @@
+{
+ "surface": "#0B1426",
+ "ink": "#E6E8EB",
+ "ink_secondary": "#9AA3AF",
+ "grid": "#1E2A40",
+ "red": "#E81828",
+ "navy": "#002D72",
+ "era_pre": "#5B6472",
+ "era_tenure": "#9AA3AF",
+ "hand": {
+  "R": "#4E8FD0",
+  "L": "#C2820E"
+ },
+ "pitch_group": {
+  "Fastballs": "#E81828",
+  "Breaking": "#8F74E0",
+  "Offspeed": "#1A9486",
+  "Other": "#5B6472"
+ },
+ "font": "Arial",
+ "size": [
+  1920,
+  1080
+ ]
+}
