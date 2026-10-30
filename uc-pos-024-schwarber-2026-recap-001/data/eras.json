@@ -1,0 +1,28 @@
+{
+ "_doc": "SD-2 (Tier 3 shared dependency, built in uc-pos-024 / dp_uc60, 2026-10-29). Governed era boundaries. Dates are inclusive unless named *_exclusive. Every consumer reads this file; constants in kernels must equal it (phillies_dp.recap_viz.era()).",
+ "asb_2026": {
+  "status": "APPROVED",
+  "break_window": ["2026-07-13", "2026-07-15"], "all_star_game": "2026-07-14", "venue": "Citizens Bank Park",
+  "first_half_last_date": "2026-07-12", "second_half_first_date": "2026-07-16",
+  "assertion": "no regular-season MLB games in the house log dated inside break_window (checked by recap_viz.check_asb)",
+  "reconciles": {"dp_uc49/K49 ALL_STAR_BREAK '2026-07-13' (first half = < it)": "equivalent", "ASB_2026 '2026-07-14'": "equivalent", "ASB_2026 / ASB '2026-07-16'": "equivalent"},
+  "note": "The three repo constants agree only because no games fall in the window; this registry is the single definition going forward."
+ },
+ "wheeler_2026_slide": {
+  "status": "APPROVED (uc-pps-035 SR-2)", "subject": 554430,
+  "pre_slide": ["2026-04-25", "2026-07-26"], "slide": ["2026-07-27", "2026-08-24"], "post_slide": ["2026-08-25", "2026-09-27"],
+  "definition": "the ONLY six-start post-break window that reconciles to the reported 8.51 ERA (dp_uc51 STRETCH_FIRST/STRETCH_LAST)",
+  "source": "dp_uc51_kernel.py STRETCH_FIRST, STRETCH_LAST", "note": "pre_slide start = 2026 debut (uc-pps-020); split pre-slide at asb_2026 if needed"
+ },
+ "schwarber_2026_back": {
+  "status": "APPROVED (this UC, CI-5)", "subject": 656941,
+  "event": "late scratch, lower back tightness while swinging", "scratch_date": "2026-06-23", "pinch_hit_date": "2026-06-24", "return_start": "2026-06-25",
+  "bk1_pre": ["2026-03-26", "2026-06-22"], "bk1_post": ["2026-06-25", "2026-09-27"], "no_il": true,
+  "source": "MLB.com 'Schwarber returns to starting lineup after bout with back tightness'; NBC Sports Philadelphia"
+ },
+ "schwarber_2026_absences": {
+  "status": "APPROVED (this UC, CI-5/CI-6; reconciled to the house log)", "subject": 656941,
+  "dates": {"2026-05-18": "illness (stomach)", "2026-05-19": "illness (stomach)", "2026-05-20": "illness (stomach)",
+            "2026-06-23": "back (late scratch)", "2026-07-28": "illness (GI)", "2026-07-29": "illness (GI)"}
+ }
+}

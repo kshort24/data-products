@@ -1,0 +1,522 @@
+{
+ "uc": "UC #60",
+ "contract": "uc-pos-024",
+ "build": "dp_uc60",
+ "kernel_version": "1.0.0",
+ "lineage": {
+  "dp_uc58_kernel.py": "d262136169db4bb1",
+  "recap_viz.py": "e6c9436a1beb7788",
+  "comparison_sets.json": "852b9765693d991e",
+  "eras.json": "3ace7b10e71f6900",
+  "dp_uc57_kernel.py": "601e958a9927313c",
+  "cumulative_metric.py": "a28887406d988809",
+  "dp_uc56_kernel.py": "2965b435ecdad004",
+  "dp_uc55_kernel.py": "9bdcce59794e21aa",
+  "dp_uc46_kernel.py": "a45ac9a76395b2f8",
+  "barrel_rate.py": "6282f090394aaef8",
+  "dp_uc54_kernel.py": "1a31b30ac4abeb42",
+  "dp_uc40a_kernel.py": "807986c0396fcf56",
+  "dp_uc53_kernel.py": "03d7e3805240c3c7",
+  "dp_uc40_kernel.py": "895c0edc70795d34",
+  "dp_uc34_kernel.py": "263e57d15e038f4e",
+  "dp_uc22_harper_own_the_zone.py": "530d05cdc1e4077a",
+  "dp_uc52_kernel.py": "3667f8028acd9974",
+  "dp_uc51_kernel.py": "4845bae228615bf2",
+  "dp_uc49_kernel.py": "a4ad5191a6537f3a",
+  "dp_uc50_kernel.py": "8084cb172d0cf560",
+  "dp_uc48_kernel.py": "0f63857a103253ef",
+  "dp_uc44_kernel.py": "a2c119096db24fdb"
+ },
+ "data_max_date": "2026-10-01",
+ "absences": {
+  "2026-05-18": "illness (stomach)",
+  "2026-05-19": "illness (stomach)",
+  "2026-05-20": "illness (stomach)",
+  "2026-06-23": "back (late scratch)",
+  "2026-07-28": "illness (GI)",
+  "2026-07-29": "illness (GI)"
+ },
+ "games": {
+  "team": 162,
+  "played": 156,
+  "missed": 6
+ },
+ "line26": {
+  "plate_apps": 702.0,
+  "at_bats": 582.0,
+  "hits": 135.0,
+  "hrs": 45.0,
+  "walks": 105.0,
+  "strikeouts": 220.0,
+  "ba": 0.231959,
+  "obp": 0.35378,
+  "slg": 0.501718,
+  "ops": 0.855499,
+  "iso": 0.269759,
+  "woba": 0.367432,
+  "xwoba": 0.366076,
+  "krate": 0.31339,
+  "bbrate": 0.149573,
+  "chase_rate": 0.261239,
+  "whiff_rate": 0.330572,
+  "swing_rate_in_zone": 0.664201,
+  "whiff_rate_in_zone": 0.224944,
+  "hard_hit_rate": 0.493188,
+  "barrel_rate": 0.155313,
+  "ev_mean": 92.327049,
+  "ev_p90": 108.6,
+  "damage_band_share": 0.163934,
+  "bat_speed_mu": 74.27573,
+  "bat_speed_p90": 81.1,
+  "swing_length_mu": 7.444009,
+  "xwobacon": 0.485675,
+  "bips": 367.0,
+  "tracking_coverage": 0.980422
+ },
+ "games_2026": 156,
+ "phi_seasons": {
+  "2022": {
+   "plate_apps": 666,
+   "hrs": 46,
+   "ba": 0.218371,
+   "obp": 0.31982,
+   "slg": 0.504333,
+   "ops": 0.824153,
+   "woba": 0.354605,
+   "xwoba": 0.378466,
+   "krate": 0.3003,
+   "bbrate": 0.124625,
+   "chase_rate": 0.216745,
+   "whiff_rate": 0.293059,
+   "barrel_rate": 0.200528,
+   "hard_hit_rate": 0.543536,
+   "ev_p90": 109.6,
+   "iso": 0.285962,
+   "damage_band_share": 0.18254,
+   "bat_speed_mu": "<NA>",
+   "hr_per_pa": 0.069069
+  },
+  "2023": {
+   "plate_apps": 714,
+   "hrs": 47,
+   "ba": 0.196918,
+   "obp": 0.338936,
+   "slg": 0.474315,
+   "ops": 0.813251,
+   "woba": 0.350629,
+   "xwoba": 0.364405,
+   "krate": 0.29972,
+   "bbrate": 0.169468,
+   "chase_rate": 0.215867,
+   "whiff_rate": 0.314879,
+   "barrel_rate": 0.163539,
+   "hard_hit_rate": 0.487936,
+   "ev_p90": 108.06,
+   "iso": 0.277397,
+   "damage_band_share": 0.19571,
+   "bat_speed_mu": "<NA>",
+   "hr_per_pa": 0.065826
+  },
+  "2024": {
+   "plate_apps": 689,
+   "hrs": 38,
+   "ba": 0.247387,
+   "obp": 0.361393,
+   "slg": 0.484321,
+   "ops": 0.845714,
+   "woba": 0.365298,
+   "xwoba": 0.381945,
+   "krate": 0.285922,
+   "bbrate": 0.148041,
+   "chase_rate": 0.209146,
+   "whiff_rate": 0.320457,
+   "barrel_rate": 0.15625,
+   "hard_hit_rate": 0.554688,
+   "ev_p90": 109.2,
+   "iso": 0.236934,
+   "damage_band_share": 0.138021,
+   "bat_speed_mu": 75.044716,
+   "hr_per_pa": 0.055152
+  },
+  "2025": {
+   "plate_apps": 719,
+   "hrs": 56,
+   "ba": 0.239274,
+   "obp": 0.357441,
+   "slg": 0.561056,
+   "ops": 0.918497,
+   "woba": 0.389732,
+   "xwoba": 0.414427,
+   "krate": 0.273992,
+   "bbrate": 0.140473,
+   "chase_rate": 0.215,
+   "whiff_rate": 0.330727,
+   "barrel_rate": 0.208333,
+   "hard_hit_rate": 0.595588,
+   "ev_p90": 109.8,
+   "iso": 0.321782,
+   "damage_band_share": 0.181373,
+   "bat_speed_mu": 74.211041,
+   "hr_per_pa": 0.077886
+  },
+  "2026": {
+   "plate_apps": 702,
+   "hrs": 45,
+   "ba": 0.231959,
+   "obp": 0.35378,
+   "slg": 0.501718,
+   "ops": 0.855499,
+   "woba": 0.367432,
+   "xwoba": 0.366076,
+   "krate": 0.31339,
+   "bbrate": 0.149573,
+   "chase_rate": 0.261239,
+   "whiff_rate": 0.330572,
+   "barrel_rate": 0.155313,
+   "hard_hit_rate": 0.493188,
+   "ev_p90": 108.6,
+   "iso": 0.269759,
+   "damage_band_share": 0.163934,
+   "bat_speed_mu": 74.27573,
+   "hr_per_pa": 0.064103
+  }
+ },
+ "pool": {
+  "n200": 122,
+  "n50": 220,
+  "n600": 33,
+  "years": [
+   2015,
+   2026
+  ]
+ },
+ "house_pct": {
+  "woba": {
+   "n": 220,
+   "percentile": 90,
+   "rank": 20
+  },
+  "xwoba": {
+   "n": 220,
+   "percentile": 92,
+   "rank": 17
+  },
+  "ops": {
+   "n": 220,
+   "percentile": 90,
+   "rank": 21
+  },
+  "iso": {
+   "n": 220,
+   "percentile": 93,
+   "rank": 14
+  },
+  "barrel_rate": {
+   "n": 220,
+   "percentile": 95,
+   "rank": 9
+  },
+  "hard_hit_rate": {
+   "n": 220,
+   "percentile": 95,
+   "rank": 9
+  },
+  "ev_p90": {
+   "n": 220,
+   "percentile": 96,
+   "rank": 7
+  },
+  "krate": {
+   "n": 220,
+   "percentile": 13,
+   "rank": 190
+  },
+  "chase_rate": {
+   "n": 220,
+   "percentile": 70,
+   "rank": 64
+  },
+  "whiff_rate": {
+   "n": 220,
+   "percentile": 12,
+   "rank": 192
+  },
+  "bbrate": {
+   "n": 220,
+   "percentile": 94,
+   "rank": 12
+  }
+ },
+ "months": {
+  "3": {
+   "plate_apps": 22,
+   "woba": 0.323318,
+   "xwoba": 0.272864,
+   "hrs": 2,
+   "krate": 0.409091,
+   "chase_rate": 0.240741,
+   "barrel_rate": 0.3,
+   "ev_p90": 103.71,
+   "bat_speed_mu": "<NA>"
+  },
+  "4": {
+   "plate_apps": 118,
+   "woba": 0.427847,
+   "xwoba": 0.422436,
+   "hrs": 9,
+   "krate": 0.262712,
+   "chase_rate": 0.203704,
+   "barrel_rate": 0.196721,
+   "ev_p90": 107.8,
+   "bat_speed_mu": 74.806806
+  },
+  "5": {
+   "plate_apps": 112,
+   "woba": 0.378518,
+   "xwoba": 0.359795,
+   "hrs": 11,
+   "krate": 0.410714,
+   "chase_rate": 0.30303,
+   "barrel_rate": 0.263158,
+   "ev_p90": 109.44,
+   "bat_speed_mu": 74.084234
+  },
+  "6": {
+   "plate_apps": 115,
+   "woba": 0.412946,
+   "xwoba": 0.404243,
+   "hrs": 8,
+   "krate": 0.330435,
+   "chase_rate": 0.251969,
+   "barrel_rate": 0.12069,
+   "ev_p90": 108.84,
+   "bat_speed_mu": 74.136564
+  },
+  "7": {
+   "plate_apps": 95,
+   "woba": 0.334832,
+   "xwoba": 0.302779,
+   "hrs": 3,
+   "krate": 0.357895,
+   "chase_rate": 0.253165,
+   "barrel_rate": 0.088889,
+   "ev_p90": 108.16,
+   "bat_speed_mu": 74.396023
+  },
+  "8": {
+   "plate_apps": 131,
+   "woba": 0.333346,
+   "xwoba": 0.351969,
+   "hrs": 7,
+   "krate": 0.274809,
+   "chase_rate": 0.269373,
+   "barrel_rate": 0.148649,
+   "ev_p90": 107.77,
+   "bat_speed_mu": 74.890179
+  },
+  "9": {
+   "plate_apps": 109,
+   "woba": 0.320899,
+   "xwoba": 0.363716,
+   "hrs": 5,
+   "krate": 0.238532,
+   "chase_rate": 0.287162,
+   "barrel_rate": 0.080645,
+   "ev_p90": 108.52,
+   "bat_speed_mu": 73.864286
+  }
+ },
+ "halves": {
+  "H1": {
+   "plate_apps": 415,
+   "ba": 0.253561,
+   "obp": 0.366265,
+   "slg": 0.558405,
+   "ops": 0.92467,
+   "woba": 0.394046,
+   "xwoba": 0.379566,
+   "hrs": 32,
+   "krate": 0.346988,
+   "chase_rate": 0.251572,
+   "whiff_rate": 0.352718,
+   "barrel_rate": 0.193237,
+   "ev_p90": 109.1,
+   "bat_speed_mu": 74.183959,
+   "xwobacon": 0.548165
+  },
+  "H2": {
+   "plate_apps": 287,
+   "ba": 0.199134,
+   "obp": 0.335664,
+   "slg": 0.415584,
+   "ops": 0.751249,
+   "woba": 0.328686,
+   "xwoba": 0.346602,
+   "hrs": 13,
+   "krate": 0.264808,
+   "chase_rate": 0.274566,
+   "whiff_rate": 0.297952,
+   "barrel_rate": 0.10625,
+   "ev_p90": 107.81,
+   "bat_speed_mu": 74.40983,
+   "xwobacon": 0.405219
+  }
+ },
+ "bk1": {
+  "pre": {
+   "plate_apps": 338,
+   "woba": 0.404072,
+   "xwoba": 0.387009,
+   "bat_speed_mu": 74.14685,
+   "bat_speed_p90": 80.9,
+   "swing_length_mu": 7.43958,
+   "ev_p90": 109.1,
+   "hard_hit_rate": 0.520468,
+   "barrel_rate": 0.210526,
+   "chase_rate": 0.247436,
+   "whiff_rate": 0.345369,
+   "xwobacon": 0.556318,
+   "krate": 0.340237,
+   "tracked_swings": 619
+  },
+  "post": {
+   "plate_apps": 363,
+   "woba": 0.33232,
+   "xwoba": 0.345786,
+   "bat_speed_mu": 74.35649,
+   "bat_speed_p90": 81.3,
+   "swing_length_mu": 7.445133,
+   "ev_p90": 108.2,
+   "hard_hit_rate": 0.469388,
+   "barrel_rate": 0.107143,
+   "chase_rate": 0.2741,
+   "whiff_rate": 0.317784,
+   "xwobacon": 0.424403,
+   "krate": 0.289256,
+   "tracked_swings": 678
+  },
+  "drops": {
+   "bat_speed_mean": -0.20964,
+   "bat_speed_p90": -0.4,
+   "ev_p90": 0.9
+  },
+  "physical_leg": false,
+  "best_xwoba_split": "2026-05-16",
+  "best_d_xwoba": -0.064618,
+  "best_pre_pa": 204,
+  "best_post_pa": 498,
+  "games_from_scratch": 33,
+  "timing_leg": false,
+  "best_woba_split": "2026-08-15",
+  "best_d_woba": -0.085286,
+  "grade": "NOT VISIBLE IN THE LOG"
+ },
+ "pop1": {
+  "legs": {
+   "ev_p90": {
+    "v2026": 108.6,
+    "tenure_low": 108.06,
+    "tenure_high": 109.8,
+    "at_or_below_low": false
+   },
+   "barrel_rate": {
+    "v2026": 0.155313,
+    "tenure_low": 0.15625,
+    "tenure_high": 0.208333,
+    "at_or_below_low": true
+   },
+   "iso": {
+    "v2026": 0.269759,
+    "tenure_low": 0.236934,
+    "tenure_high": 0.321782,
+    "at_or_below_low": false
+   },
+   "hr_per_pa": {
+    "v2026": 0.064103,
+    "tenure_low": 0.055152,
+    "tenure_high": 0.077886,
+    "at_or_below_low": false
+   }
+  },
+  "n_low": 1,
+  "grade": "PARTLY"
+ },
+ "cn1": {
+  "xwoba_2026": 0.366076,
+  "xwoba_tenure_low": 0.364405,
+  "pool600_median_xwoba": 0.329731,
+  "pool600_n": 33,
+  "xwoba_leg": false,
+  "k": {
+   "r1": 0.31339,
+   "r0": 0.289813,
+   "z": 1.22482,
+   "p": 0.220643,
+   "call": "LEANS",
+   "n1": 702,
+   "n0": 2788
+  },
+  "chase": {
+   "r1": 0.261239,
+   "r0": 0.21424,
+   "z": 4.064523,
+   "p": 4.8e-05,
+   "call": "CHANGED",
+   "n1": 1646,
+   "n0": 6194
+  },
+  "process_leg": false,
+  "grade": "NOT SUPPORTED"
+ },
+ "hand26": {
+  "L": {
+   "pa": 258,
+   "woba": 0.389151,
+   "xwoba": 0.387261,
+   "krate": 0.271318,
+   "hrs": 15
+  },
+  "R": {
+   "pa": 444,
+   "woba": 0.354609,
+   "xwoba": 0.353618,
+   "krate": 0.337838,
+   "hrs": 30
+  }
+ },
+ "repro": {
+  "h1": {
+   "ba": 0.253561,
+   "obp": 0.366265,
+   "slg": 0.558405,
+   "hrs": 32
+  },
+  "h2": {
+   "ba": 0.199134,
+   "obp": 0.335664,
+   "slg": 0.415584,
+   "hrs": 13
+  },
+  "krate": 0.31339,
+  "strikeouts": 220,
+  "krate_highest_since": 2016,
+  "chase": 0.261239,
+  "chase_2025": 0.215,
+  "chase_highest_since": 2020,
+  "sep_ba": 0.172414,
+  "sep_ops": 0.709586,
+  "ops": 0.855499
+ },
+ "post26": {
+  "F": {
+   "pa": 13,
+   "hrs": 1,
+   "woba": 0.470385
+  }
+ },
+ "dq": {
+  "PASS": 11,
+  "WARN": 2
+ },
+ "elapsed_s": 20.9
+}

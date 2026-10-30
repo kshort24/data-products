@@ -1,0 +1,9 @@
+figure,V1,V2,V3,V4,V5,V6,V7,source
+f1_season_woba,PASS,PASS,PASS,N-A,PASS,PASS,PASS,season_panel;context_pool_200
+f2_cum_woba,PASS,PASS,N-A,N-A,PASS,PASS,PASS,cum_woba_by_pa
+f3_by_month,PASS,PASS,N-A,N-A,PASS,PASS,PASS,by_month_2026;by_half_2026;season_panel
+f4_bat_speed,PASS,PASS,PASS,N-A,PASS,PASS,PASS,bat_speed_swings_2026;bk1_pre_post
+f5_exit_velo,PASS,PASS,PASS,N-A,PASS,PASS,PASS,ev_bip_2022_26;season_panel;by_half_2026
+f6_damage_band,PASS,PASS,PASS,N-A,PASS,PASS,PASS,season_panel;context_pool_200
+f7_k_vs_chase,PASS,PASS,N-A,PASS,PASS,PASS,PASS,context_pool_200;season_panel
+f8_hand_group,PASS,PASS,N-A,N-A,PASS,PASS,PASS,hand_group_2025_26

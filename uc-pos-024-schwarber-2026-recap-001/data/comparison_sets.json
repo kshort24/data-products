@@ -1,0 +1,32 @@
+{
+ "_doc": "SD-1 (Tier 3 shared dependency, built in uc-pos-024 / dp_uc60, 2026-10-29). Governed comparison sets for recap visuals. A visual names the set it uses; no notebook hardcodes a population. Status APPROVED = already governed in a delivered UC; DRAFT = definition carried from a delivered UC but not yet ratified as a recap-wide standard (DPO to ratify).",
+ "phi_hitter_seasons_200": {
+  "status": "APPROVED (uc-pos-022 PR-1 context pool; this UC)",
+  "grain": "batter x game_year", "source": "house log data/phillies/phils_YYYY.parquet", "years": [2015, 2026],
+  "filter": "phillies_role == 'batting' & game_type == 'R'", "min_sample": {"plate_apps": 200},
+  "builder": "K57.hitter_seasons(pos_r, woba_w, min_pa=200)", "key": "MLBAM batter id (never name)"
+ },
+ "phi_hitter_seasons_50": {
+  "status": "APPROVED (KP-1 house pool, K40/K54)",
+  "grain": "batter x game_year", "source": "house log", "years": [2015, 2026],
+  "filter": "phillies_role == 'batting' & game_type == 'R'", "min_sample": {"plate_apps": 50},
+  "builder": "K57.hitter_seasons(pos_r, woba_w)  # PA_FLOOR 50", "use": "percentile ranks (house_percentile)"
+ },
+ "phi_pitcher_seasons_house": {
+  "status": "APPROVED (CX-1, uc-pps-034 / K49.context_frame)",
+  "grain": "pitcher x game_year x p_throws", "source": "house log", "filter": "phillies_role == 'pitching' & game_type == 'R'",
+  "min_sample": {"pitches": 150}, "builder": "K49.context_frame(ph)"
+ },
+ "phi_sp_seasons": {
+  "status": "DRAFT for recap-wide use (CX-1b, uc-pps-034 / uc-pps-035)",
+  "grain": "pitcher x game_year", "source": "house log", "definition": "CX-1 members with >= 2000 pitches (STARTER_WORKLOAD)",
+  "min_sample": {"pitches": 2000}, "builder": "K49.context_frame(ph) filtered pitches >= K51.STARTER_WORKLOAD",
+  "open_question": "workload cut vs role cut (starts share) - DPO to choose for the Tier 3 redesign"
+ },
+ "phi_lhp_relief_seasons": {
+  "status": "DRAFT for recap-wide use (RP-1 + CX-1, uc-pps-036 / K52)",
+  "grain": "pitcher x game_year", "source": "house log",
+  "definition": "p_throws == 'L' & CX-1 (>= 150 pitches) & RP-1 reliever (starts <= 20% of games; start = first Phillies pitcher of the game)",
+  "min_sample": {"pitches": 150}, "builder": "K52.role_from_starts + K49.context_frame"
+ }
+}

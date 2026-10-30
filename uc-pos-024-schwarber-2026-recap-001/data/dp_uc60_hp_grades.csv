@@ -1,0 +1,9 @@
+hp,claim,rule,grade,evidence
+HP-01,"""Should we be concerned? Perhaps...""",CN-1,NOT SUPPORTED,"xwOBA .366 vs his 2022-25 low .364 and the Phillies ≥600-PA median .330 (n 33): above both. K% 31.3% vs 29.0% (z 1.22, LEANS); chase 26.1% vs 21.4% (z 4.06, CHANGED). One process flag (chase), not two"
+HP-02,"""It was his back?""",BK-1,NOT VISIBLE IN THE LOG,"Bat speed 74.1 → 74.4 mph (p90 80.9 → 81.3); EV p90 109.1 → 108.2 (bar 1.5 drop). Best xwOBA split 2026-05-16 (33 team games from 6/23; bar 15). Damage did fall after 6/23 (barrel 21.1% → 10.7%, xwOBAcon .556 → .424), but the swing itself did not slow"
+HP-03,"""Did he lose his pop?""",POP-1,PARTLY,1 of 4 legs at/below his 2022-25 low: barrel 15.5% (low 15.6%) YES; EV p90 108.6 (low 108.1) no; ISO .270 (low .237) no; HR/PA .064 (low .055) no. Second-half barrel 10.6% vs first 19.3%. UC58: his homers were the softest and shortest of his Phillies years
+HP-04,1st half .254/.367/.560 → 2nd half .199/.336/.416,repro (≤ .001 else definition gap),SUPPORTED,"House log: H1 .254/.366/.558 (gap ≤ 0.002: definition gap, CI cut 'through the break'), H2 .199/.336/.416 (exact)"
+HP-05,"K% 31.4%, his highest since 2017; 220 strikeouts",repro,SUPPORTED (stronger),"220 K; K% 31.3% on 702 PA (31.4% on 701 PA under PA-X1). Highest prior full season (≥ 200 PA): 2017 at 30.9%, so 2026 is a career high among full seasons, not just a high since 2017"
+HP-06,"Chase 26.1%, up from 21.5%, highest since 2020",repro (house chase_rate_g),SUPPORTED,26.1% vs 21.5%; latest season at or above it: 2020 (house definition matches Savant here)
+HP-07,"September .172 AVG, .710 OPS",repro,SUPPORTED,.172 / .710 OPS; xwOBA in September .364 vs wOBA .321
+HP-08,"32 HR through the break, 13 after",repro,SUPPORTED,32 / 13

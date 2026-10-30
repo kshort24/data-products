@@ -1,0 +1,14 @@
+rule,status,detail
+LIN-1 lineage pins,PASS,22 unique files sha256-pinned (K58 chain + SD-1/2/3)
+ANC-1 anchor,PASS,max game_date 2026-10-01 <= pinned 2026-10-01
+ENT-1 id lock,PASS,batter == 656941 across house log + opponent file; 25803 regular-season pitches 2015-26; 0 duplicate keys
+ER-1 ASB window,PASS,0 house-log games dated 2026-07-13..15; the repo's three ASB constants are equivalent (SD-2)
+AB-1 absence ledger,PASS,"6 missed team games == SD-2 schwarber_2026_absences (2026-05-18, 2026-05-19, 2026-05-20, 2026-06-23, 2026-07-28, 2026-07-29)"
+CS-1 comparison set,PASS,phi_hitter_seasons_200: 122 seasons 2015-26 (SD-1); ranks on _50: 220
+REC-1 season line vs CI-2,PASS,.0.232/0.354/0.502 vs .232/.354/.503
+REC-2 HR 45 (CI-1),PASS,45 HR
+REC-3 games 156 (CI-2),PASS,156 games
+OI-1 sensor boundary,PASS,"bat speed NULL (not measured) before 2024: 2015=n/m, 2016=n/m, 2017=n/m, 2018=n/m, 2019=n/m, 2020=n/m, 2021=n/m, 2022=n/m, 2023=n/m, 2024=ok, 2025=ok, 2026=ok"
+BK-SCAN floor,PASS,96 of 107 candidate cuts have >= 150 PA both sides
+SM-1 small cells,WARN,pitch-group x hand cells print PA; < 30 PA prints 'too few to call'
+CI-2 OPS print,WARN,CI-2 prints .853; log .855 (.232+.354+.503 = .857 incl. rounding)

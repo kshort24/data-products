@@ -1,0 +1,109 @@
+{
+ "specs": {
+  "f1_season_woba": {
+   "spec": {
+    "discrete": true,
+    "context": true,
+    "distribution": true
+   },
+   "source": [
+    "season_panel",
+    "context_pool_200"
+   ],
+   "title": "A Good Year by Any Phillies Standard: .367 wOBA, .366 xwOBA"
+  },
+  "f2_cum_woba": {
+   "spec": {
+    "discrete": false,
+    "cumulative": true,
+    "context": true
+   },
+   "source": [
+    "cum_woba_by_pa"
+   ],
+   "title": "Running With His Best Season Until July, Then Settling Into His Second-Best Phillies Year"
+  },
+  "f3_by_month": {
+   "spec": {
+    "discrete": true,
+    "context": true
+   },
+   "source": [
+    "by_month_2026",
+    "by_half_2026",
+    "season_panel"
+   ],
+   "title": "The Turn Came in July, and the Expected Line Came Back Before the Results Did"
+  },
+  "f4_bat_speed": {
+   "spec": {
+    "discrete": false,
+    "context": true,
+    "distribution": true
+   },
+   "source": [
+    "bat_speed_swings_2026",
+    "bk1_pre_post"
+   ],
+   "title": "If the Back Hurt His Swing, the Bat Never Said So"
+  },
+  "f5_exit_velo": {
+   "spec": {
+    "discrete": false,
+    "context": true,
+    "distribution": true
+   },
+   "source": [
+    "ev_bip_2022_26",
+    "season_panel",
+    "by_half_2026"
+   ],
+   "title": "The Pop Didn't Vanish, It Thinned Out After the Break"
+  },
+  "f6_damage_band": {
+   "spec": {
+    "discrete": true,
+    "context": true,
+    "distribution": true
+   },
+   "source": [
+    "season_panel",
+    "context_pool_200"
+   ],
+   "title": "Fewer Balls in His Damage Band: 16.4% in 2026, After 18.1% in 2025"
+  },
+  "f7_k_vs_chase": {
+   "spec": {
+    "discrete": true,
+    "context": true,
+    "trendline": true
+   },
+   "source": [
+    "context_pool_200",
+    "season_panel"
+   ],
+   "title": "Chase Rose to 26.1%, but Chase Barely Predicts Strikeouts Here"
+  },
+  "f8_hand_group": {
+   "spec": {
+    "discrete": true,
+    "context": true
+   },
+   "source": [
+    "hand_group_2025_26"
+   ],
+   "title": "The Leak Was Righty Fastballs: xwOBA .495 \u2192 .386"
+  }
+ },
+ "fit_f7": {
+  "r2": 0.00021295459220049828,
+  "n": 117,
+  "slope": 0.012393979609523294,
+  "intercept": 0.21189075557796186,
+  "position_2026": "above the line"
+ },
+ "bp0_bk": {
+  "pre": 74.40438311688312,
+  "post": 74.61570370370372
+ }
+}
