@@ -1,0 +1,674 @@
+{
+ "headline": {
+  "name": "Bryce Harper",
+  "number": "3",
+  "summary": "The Eye Carried a Softer Bat",
+  "full": "Bryce Harper | 3 | The Eye Carried a Softer Bat",
+  "dek": "2026 regular season · 162 G · 693 PA · .269/.380/.485 · 29 HR · .375 wOBA"
+ },
+ "bullets": [
+  {
+   "lead": "Still the Phillies' best bat.",
+   "text": ".269/.380/.485 with 29 HR, and he appeared in all 162 games. His .375 wOBA led the 10 Phillies with 200+ PA and sits in the 94th percentile of 122 Phillies hitter seasons since 2015."
+  },
+  {
+   "lead": "The eye did the heavy lifting.",
+   "text": "A 15.4% walk rate, his best since 2020, drove a .380 OBP. Chase (32.4%) and strikeouts (21.4%) stayed inside his Phillies range, and after the break he took even more pitches just off the plate (edge-take .411 → .446)."
+  },
+  {
+   "lead": "The thump stepped back.",
+   "text": "Hard-hit 42.8%, barrels 10.3%, 90th-percentile exit velocity 106.3 mph and a .485 SLG: all his lowest as a Phillie. After the break hard contact fell again (46.2% → 37.4%), and the walks held his OPS level (.862 → .868)."
+  },
+  {
+   "lead": "Lefties were the leak.",
+   "text": "Against righties, .997 OPS and 25 HR; against lefties, .657 and 4 HR, his lowest vs-LHP OPS in 12 Statcast seasons. The contact backs the results (xwOBA .314 vs wOBA .299): mostly earned, not bad luck."
+  }
+ ],
+ "cumulative": {
+  "title": "2026 Ran Inside His Phillies Range Almost All Year",
+  "subtitle": "Cumulative wOBA by plate appearance · 2026 in red over his 11 prior Statcast seasons · lines start at 25 PA",
+  "end_label": ".375",
+  "reference": "2019–25 pooled: .383",
+  "callout": "Inside his 2019–25 Phillies range on 89% of PA from 25 to 620; peaked at .407 (PA 167).",
+  "footnote": "No earlier Phillies season reached 693 PA (671 max), so the band ends at PA 620. Data for OPS, OBP, SLG, BA and HR ship in the same table."
+ },
+ "pitch_map": {
+  "title": "Righties Paid. Lefties Didn't.",
+  "subtitle": "Every 2026 pitch, catcher's view, by pitch group; solid balls = hard-hit (95+ mph) or home run",
+  "panels": {
+   "R": {
+    "header": "vs RHP · 425 PA · .997 OPS · 25 HR",
+    "callouts": [
+     "Fastballs paid: .482 xwOBA, 17 of his 25 HR",
+     "Breaking balls too: .420 xwOBA (2019–25: .333)",
+     "Damage lived in the heart: 58% of hard-hit balls and HR"
+    ]
+   },
+   "L": {
+    "header": "vs LHP · 268 PA · .657 OPS · 4 HR",
+    "callouts": [
+     "Lefty fastballs stopped paying: .320 xwOBA (2019–25: .410)",
+     "They lived low and away: 32% of pitches, 60% whiffs when he swung",
+     "3 of 4 HR off lefties came on breaking balls"
+    ]
+   }
+  },
+  "platoon": "1 HR every 17 PA vs RHP · every 67 PA vs LHP"
+ },
+ "spray": {
+  "title": "Pulling More, Hitting It Softer",
+  "subtitle": "All 155 hits, every park, drawn on one outline",
+  "callout": "His most pull-heavy year as a Phillie: 49.9% of balls in play pulled, oppo 25.6% (a tenure low). 13 of 29 HR pulled, 7 oppo.",
+  "kpis": [
+   {
+    "label": "Hard-hit",
+    "value": "42.8%",
+    "range": "45.6%–50.7%",
+    "key": "hard_hit_rate"
+   },
+   {
+    "label": "Barrel",
+    "value": "10.3%",
+    "range": "10.6%–18.1%",
+    "key": "barrel_rate"
+   },
+   {
+    "label": "Line drive",
+    "value": "25.9%",
+    "range": "22.0%–29.7%",
+    "key": "ld_rate"
+   },
+   {
+    "label": "Pull",
+    "value": "49.9%",
+    "range": "43.4%–48.0%",
+    "key": "pull_share"
+   },
+   {
+    "label": "Oppo",
+    "value": "25.6%",
+    "range": "28.4%–36.6%",
+    "key": "oppo_share"
+   },
+   {
+    "label": "Pull-air",
+    "value": "19.0%",
+    "range": "18.1%–20.4%",
+    "key": "pull_air_rate"
+   }
+  ],
+  "kpi_note": "2026 · 2019–25 Phillies range; rates of balls in play"
+ },
+ "caveats": [
+  "Regular season only; the 2026 postseason is excluded.",
+  "Washington seasons (2015–18) come from the opponent file; 2020 was a 58-game season and stays in every band.",
+  "Every park is drawn on one outline; no claim is made about where a ball would have landed in Philadelphia.",
+  "Lefty offspeed is a small cell (18 PA) and is never headlined."
+ ],
+ "numbers": [
+  {
+   "text": "162",
+   "key": "games.appeared",
+   "kind": "d",
+   "value": 162
+  },
+  {
+   "text": "693",
+   "key": "line.pa",
+   "kind": "d",
+   "value": 693.0
+  },
+  {
+   "text": ".269",
+   "key": "line.ba",
+   "kind": "f3",
+   "value": 0.268631
+  },
+  {
+   "text": ".380",
+   "key": "line.obp",
+   "kind": "f3",
+   "value": 0.379509
+  },
+  {
+   "text": ".485",
+   "key": "line.slg",
+   "kind": "f3",
+   "value": 0.485269
+  },
+  {
+   "text": "29",
+   "key": "line.hr",
+   "kind": "d",
+   "value": 29.0
+  },
+  {
+   "text": ".375",
+   "key": "line.woba",
+   "kind": "f3",
+   "value": 0.375177
+  },
+  {
+   "text": ".269",
+   "key": "line.ba",
+   "kind": "f3",
+   "value": 0.268631
+  },
+  {
+   "text": ".380",
+   "key": "line.obp",
+   "kind": "f3",
+   "value": 0.379509
+  },
+  {
+   "text": ".485",
+   "key": "line.slg",
+   "kind": "f3",
+   "value": 0.485269
+  },
+  {
+   "text": "29",
+   "key": "line.hr",
+   "kind": "d",
+   "value": 29.0
+  },
+  {
+   "text": "162",
+   "key": "games.appeared",
+   "kind": "d",
+   "value": 162
+  },
+  {
+   "text": ".375",
+   "key": "line.woba",
+   "kind": "f3",
+   "value": 0.375177
+  },
+  {
+   "text": "10",
+   "key": "team_2026_rank_woba.n",
+   "kind": "d",
+   "value": 10
+  },
+  {
+   "text": "94",
+   "key": "pool.woba.percentile",
+   "kind": "d",
+   "value": 94
+  },
+  {
+   "text": "122",
+   "key": "pool.woba.n",
+   "kind": "d",
+   "value": 122
+  },
+  {
+   "text": "15.4%",
+   "key": "season_2026.bbrate",
+   "kind": "pct",
+   "value": 0.154401
+  },
+  {
+   "text": "2020",
+   "key": "bb_rate_best_since",
+   "kind": "yr",
+   "value": 2020
+  },
+  {
+   "text": ".380",
+   "key": "line.obp",
+   "kind": "f3",
+   "value": 0.379509
+  },
+  {
+   "text": "32.4%",
+   "key": "season_2026.chase_rate",
+   "kind": "pct",
+   "value": 0.324359
+  },
+  {
+   "text": "21.4%",
+   "key": "season_2026.krate",
+   "kind": "pct",
+   "value": 0.213564
+  },
+  {
+   "text": ".411",
+   "key": "oz.h1_oz1",
+   "kind": "f3",
+   "value": 0.411
+  },
+  {
+   "text": ".446",
+   "key": "oz.h2_oz1",
+   "kind": "f3",
+   "value": 0.446
+  },
+  {
+   "text": "42.8%",
+   "key": "season_2026.hard_hit_rate",
+   "kind": "pct",
+   "value": 0.427918
+  },
+  {
+   "text": "10.3%",
+   "key": "season_2026.barrel_rate",
+   "kind": "pct",
+   "value": 0.102975
+  },
+  {
+   "text": "106.3",
+   "key": "season_2026.ev_p90",
+   "kind": "mph",
+   "value": 106.35
+  },
+  {
+   "text": ".485",
+   "key": "line.slg",
+   "kind": "f3",
+   "value": 0.485269
+  },
+  {
+   "text": "46.2%",
+   "key": "halves.H1.hard_hit_rate",
+   "kind": "pct",
+   "value": 0.462406
+  },
+  {
+   "text": "37.4%",
+   "key": "halves.H2.hard_hit_rate",
+   "kind": "pct",
+   "value": 0.374269
+  },
+  {
+   "text": ".862",
+   "key": "halves.H1.ops",
+   "kind": "f3",
+   "value": 0.862272
+  },
+  {
+   "text": ".868",
+   "key": "halves.H2.ops",
+   "kind": "f3",
+   "value": 0.868085
+  },
+  {
+   "text": ".997",
+   "key": "hand.R.ops",
+   "kind": "f3",
+   "value": 0.996992
+  },
+  {
+   "text": "25",
+   "key": "hand.R.hrs",
+   "kind": "d",
+   "value": 25.0
+  },
+  {
+   "text": ".657",
+   "key": "hand.L.ops",
+   "kind": "f3",
+   "value": 0.657247
+  },
+  {
+   "text": "4",
+   "key": "hand.L.hrs",
+   "kind": "d",
+   "value": 4.0
+  },
+  {
+   "text": ".314",
+   "key": "hand.L.xwoba",
+   "kind": "f3",
+   "value": 0.31367
+  },
+  {
+   "text": ".299",
+   "key": "hand.L.woba",
+   "kind": "f3",
+   "value": 0.298907
+  },
+  {
+   "text": ".375",
+   "key": "cum.final_woba",
+   "kind": "f3",
+   "value": 0.375177
+  },
+  {
+   "text": ".383",
+   "key": "derived.phi_pooled_woba",
+   "kind": "f3",
+   "value": 0.3832092383832829
+  },
+  {
+   "text": "89%",
+   "key": "derived.cum_share_in_phi_band",
+   "kind": "pct0",
+   "value": 0.889261744966443
+  },
+  {
+   "text": "620",
+   "key": "derived.cum_band_pa_max",
+   "kind": "d",
+   "value": 620
+  },
+  {
+   "text": ".407",
+   "key": "cum.woba_max_after_floor",
+   "kind": "f3",
+   "value": 0.406512
+  },
+  {
+   "text": "167",
+   "key": "cum.woba_max_pa",
+   "kind": "d",
+   "value": 167
+  },
+  {
+   "text": "693",
+   "key": "line.pa",
+   "kind": "d",
+   "value": 693.0
+  },
+  {
+   "text": "671",
+   "key": "derived.phi_max_pa_season",
+   "kind": "d",
+   "value": 671
+  },
+  {
+   "text": "620",
+   "key": "derived.cum_band_pa_max",
+   "kind": "d",
+   "value": 620
+  },
+  {
+   "text": "425",
+   "key": "hand.R.plate_apps",
+   "kind": "d",
+   "value": 425.0
+  },
+  {
+   "text": ".997",
+   "key": "hand.R.ops",
+   "kind": "f3",
+   "value": 0.996992
+  },
+  {
+   "text": "25",
+   "key": "hand.R.hrs",
+   "kind": "d",
+   "value": 25.0
+  },
+  {
+   "text": ".482",
+   "key": "hand_group.R_fastball.xwoba",
+   "kind": "f3",
+   "value": 0.482408
+  },
+  {
+   "text": "17",
+   "key": "hand_group.R_fastball.hrs",
+   "kind": "d",
+   "value": 17.0
+  },
+  {
+   "text": "25",
+   "key": "hand.R.hrs",
+   "kind": "d",
+   "value": 25.0
+  },
+  {
+   "text": ".420",
+   "key": "hand_group.R_breaking.xwoba",
+   "kind": "f3",
+   "value": 0.419509
+  },
+  {
+   "text": ".333",
+   "key": "hand_group.R_breaking.baseline_xwoba",
+   "kind": "f3",
+   "value": 0.333125
+  },
+  {
+   "text": "58%",
+   "key": "damage.R.heart_share",
+   "kind": "pct0",
+   "value": 0.580153
+  },
+  {
+   "text": "268",
+   "key": "hand.L.plate_apps",
+   "kind": "d",
+   "value": 268.0
+  },
+  {
+   "text": ".657",
+   "key": "hand.L.ops",
+   "kind": "f3",
+   "value": 0.657247
+  },
+  {
+   "text": "4",
+   "key": "hand.L.hrs",
+   "kind": "d",
+   "value": 4.0
+  },
+  {
+   "text": ".320",
+   "key": "hand_group.L_fastball.xwoba",
+   "kind": "f3",
+   "value": 0.319985
+  },
+  {
+   "text": ".410",
+   "key": "hand_group.L_fastball.baseline_xwoba",
+   "kind": "f3",
+   "value": 0.409921
+  },
+  {
+   "text": "32%",
+   "key": "derived.lhp_low_away_share",
+   "kind": "pct0",
+   "value": 0.31985294117647056
+  },
+  {
+   "text": "60%",
+   "key": "derived.lhp_low_away_whiff",
+   "kind": "pct0",
+   "value": 0.603448275862069
+  },
+  {
+   "text": "3",
+   "key": "hr_by_hand_group.L_breaking",
+   "kind": "d",
+   "value": 3
+  },
+  {
+   "text": "4",
+   "key": "hand.L.hrs",
+   "kind": "d",
+   "value": 4.0
+  },
+  {
+   "text": "17",
+   "key": "derived.pa_with_hr_r",
+   "kind": "d",
+   "value": 17.0
+  },
+  {
+   "text": "67",
+   "key": "derived.pa_with_hr_l",
+   "kind": "d",
+   "value": 67.0
+  },
+  {
+   "text": "155",
+   "key": "spray.hits",
+   "kind": "d",
+   "value": 155
+  },
+  {
+   "text": "49.9%",
+   "key": "season_2026.pull_share",
+   "kind": "pct",
+   "value": 0.498856
+  },
+  {
+   "text": "25.6%",
+   "key": "season_2026.oppo_share",
+   "kind": "pct",
+   "value": 0.256293
+  },
+  {
+   "text": "13",
+   "key": "spray.hr_direction.Pull",
+   "kind": "d",
+   "value": 13
+  },
+  {
+   "text": "29",
+   "key": "line.hr",
+   "kind": "d",
+   "value": 29.0
+  },
+  {
+   "text": "7",
+   "key": "spray.hr_direction.Oppo",
+   "kind": "d",
+   "value": 7
+  },
+  {
+   "text": "42.8%",
+   "key": "season_2026.hard_hit_rate",
+   "kind": "pct",
+   "value": 0.427918
+  },
+  {
+   "text": "45.6%",
+   "key": "tenure_range_2019_25.hard_hit_rate.min",
+   "kind": "pct",
+   "value": 0.45614
+  },
+  {
+   "text": "50.7%",
+   "key": "tenure_range_2019_25.hard_hit_rate.max",
+   "kind": "pct",
+   "value": 0.506667
+  },
+  {
+   "text": "10.3%",
+   "key": "season_2026.barrel_rate",
+   "kind": "pct",
+   "value": 0.102975
+  },
+  {
+   "text": "10.6%",
+   "key": "tenure_range_2019_25.barrel_rate.min",
+   "kind": "pct",
+   "value": 0.106024
+  },
+  {
+   "text": "18.1%",
+   "key": "tenure_range_2019_25.barrel_rate.max",
+   "kind": "pct",
+   "value": 0.180556
+  },
+  {
+   "text": "25.9%",
+   "key": "season_2026.ld_rate",
+   "kind": "pct",
+   "value": 0.258581
+  },
+  {
+   "text": "22.0%",
+   "key": "tenure_range_2019_25.ld_rate.min",
+   "kind": "pct",
+   "value": 0.22
+  },
+  {
+   "text": "29.7%",
+   "key": "tenure_range_2019_25.ld_rate.max",
+   "kind": "pct",
+   "value": 0.296552
+  },
+  {
+   "text": "49.9%",
+   "key": "season_2026.pull_share",
+   "kind": "pct",
+   "value": 0.498856
+  },
+  {
+   "text": "43.4%",
+   "key": "tenure_range_2019_25.pull_share.min",
+   "kind": "pct",
+   "value": 0.433735
+  },
+  {
+   "text": "48.0%",
+   "key": "tenure_range_2019_25.pull_share.max",
+   "kind": "pct",
+   "value": 0.480418
+  },
+  {
+   "text": "25.6%",
+   "key": "season_2026.oppo_share",
+   "kind": "pct",
+   "value": 0.256293
+  },
+  {
+   "text": "28.4%",
+   "key": "tenure_range_2019_25.oppo_share.min",
+   "kind": "pct",
+   "value": 0.283626
+  },
+  {
+   "text": "36.6%",
+   "key": "tenure_range_2019_25.oppo_share.max",
+   "kind": "pct",
+   "value": 0.366265
+  },
+  {
+   "text": "19.0%",
+   "key": "season_2026.pull_air_rate",
+   "kind": "pct",
+   "value": 0.189931
+  },
+  {
+   "text": "18.1%",
+   "key": "tenure_range_2019_25.pull_air_rate.min",
+   "kind": "pct",
+   "value": 0.181058
+  },
+  {
+   "text": "20.4%",
+   "key": "tenure_range_2019_25.pull_air_rate.max",
+   "kind": "pct",
+   "value": 0.203655
+  }
+ ],
+ "recipes": {
+  "lhp_low_away_share": "zone_damage_2026: LHP zone-13 pitches / all LHP pitches with a zone",
+  "lhp_low_away_whiff": "zone_damage_2026: LHP zone-13 whiffs / swings",
+  "lhp_low_away_pitches": "zone_damage_2026: LHP zone-13 pitches",
+  "cum_share_in_phi_band": "cum_slash x career_envelope: share of 2026 PAs (>= 25 PA, >= 2 Phillies seasons reaching that PA) where cumulative wOBA sits inside the 2019-25 min-max",
+  "cum_band_pa_max": "last PA with >= 2 Phillies seasons in the band",
+  "phi_max_pa_season": "most PA in any 2019-25 season (2019)",
+  "hits_pulled_share": "spray: pulled hits / hits",
+  "phi_pooled_woba": "2019-25 pooled wOBA, each season on its own weights (sum num / sum den)",
+  "pa_with_hr_r": "PA per HR vs RHP",
+  "pa_with_hr_l": "PA per HR vs LHP"
+ },
+ "derived": {
+  "lhp_low_away_share": 0.31985294117647056,
+  "lhp_low_away_whiff": 0.603448275862069,
+  "lhp_low_away_pitches": 348,
+  "cum_share_in_phi_band": 0.889261744966443,
+  "cum_band_pa_max": 620,
+  "phi_max_pa_season": 671,
+  "phi_pooled_woba": 0.3832092383832829,
+  "hits_pulled_share": 0.45806451612903226,
+  "pa_with_hr_r": 17.0,
+  "pa_with_hr_l": 67.0
+ }
+}

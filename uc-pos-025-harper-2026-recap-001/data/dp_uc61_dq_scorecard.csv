@@ -1,0 +1,15 @@
+rule,status,detail
+LIN-1,PASS,23 files pinned (K60 chain + dp_uc22 + cumulative_metric)
+ANC-1,PASS,max 2026 game_date 2026-09-27
+ENT-1,PASS,id 547180 across both sources; 0 dup keys
+DH-2,PASS,2026-04-30 DH order sourced (823472 G1); 27 earlier DH days on fallback
+REC-1,PASS,log 0.269/0.380/0.485 29 HR 577 AB vs CI-1
+AB-1,PASS,161 games with a PA + 1 defensive-only (2026-05-09) = 162 vs CI-1 162 G
+CS-1,PASS,122 Phillies hitter seasons >= 200 PA 2015-26; subject row reconciles
+CM-2,PASS,"every season's cumulative endpoint == nresults_unrounded (BA, OBP, SLG, wOBA, HR, PA) to 1e-9"
+CM-ENV,PASS,envelopes print n_seasons per PA; seasons that never reached a PA are not extrapolated
+SM-1,PASS,cells < 30 PA / < 15 BIP flagged: L_offspeed
+PG-1,PASS,"13 2026 pitches outside the three groups (pitch_type null/EP/PO), drawn grey, excluded from group KPIs"
+LOC-1,PASS,13 2026 pitches lack plate location / zone bounds (not drawn)
+OZ-REP,PASS,UC #23 parent reproduction: H1 OZ-1 0.411 vs .411 published
+SPR-1,PASS,155 hits (29 HR) on the spray frame == season line; 0 hits lack hc

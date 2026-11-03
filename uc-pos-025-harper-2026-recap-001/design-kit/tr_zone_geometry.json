@@ -1,0 +1,8 @@
+{
+ "half_width_ft": 0.83,
+ "ball_width_ft": 0.25,
+ "sz_top_mean_ft": 3.265,
+ "sz_bot_mean_ft": 1.648,
+ "view": "catcher",
+ "lhb_side": "+x"
+}

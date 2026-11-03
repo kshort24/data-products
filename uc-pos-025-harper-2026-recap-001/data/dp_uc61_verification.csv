@@ -1,0 +1,26 @@
+id,check,status,detail
+V01,lineage pins,PASS,23 pins
+V02,2026 slash from raw parquet,PASS,693 PA 577 AB 155 H 29 HR 148 SO 0.2686/0.3795/0.4853
+V03,wOBA re-derived == headline,PASS,0.375177 vs 0.375177
+V04,"games: 162 appearances, 161 with a PA",PASS,"team 162, appeared 162, with PA 161"
+V05,12 seasons: raw == season panel == cumulative endpoint (BA/OBP/SLG/wOBA/PA/HR),PASS,all 12
+V06,"2026 cumulative rows in date order, PA step 1; 4/30 DH G1 (823472) first",PASS,
+V07R,OPS vs RHP re-derived,PASS,"0.9970, 425 PA, 25 HR"
+V07L,OPS vs LHP re-derived,PASS,"0.6572, 268 PA, 4 HR"
+V08,hand x group xwOBA and HR re-derived,PASS,6 cells
+V09,"HC-1 legs re-derived (hard-hit, barrel, EV p90 at a tenure low)",PASS,"2026 0.4279/0.1030/106.35; legs [np.True_, np.True_, np.True_]"
+V10,AP-1 legs re-derived,PASS,"chase 0.3244, legs [np.True_, np.True_, np.True_]"
+V11,OZ-1 by half re-derived (H1 reproduces UC #23 .411),PASS,H1 0.4108 H2 0.4455
+V12,pull / oppo shares re-derived,PASS,pull 0.4989 oppo 0.2563
+V13,spray hits == 155 with coordinates; HR direction 13/9/7,PASS,"{'Pull': 13, 'Straightaway': 9, 'Oppo': 7}"
+V14,LHP zone-13 share and whiff re-derived,PASS,348/1088; whiff 70/116
+V15,wOBA percentile in the Phillies hitter-season pool,PASS,94 of 122
+V16,HR 29 on 9/27; 1 HR in the 27 prior games,PASS,1 HR in 27 games
+V17,NC-1: every printed number resolves to a headline key,PASS,mismatch 0; unregistered []
+V18,no causal / medical language,PASS,
+V19,"V1-V7 audit: 3 figures, 0 FAIL",PASS,"['f1_cum_woba', 'f2_pitch_map', 'f3_spray']"
+V20,PNGs newer than the copy they print,PASS,
+V21,design kit: manifest sha match; cumulative ships 6 metrics x 12 seasons,PASS,16 files
+V22,HP-01..06 graded on pre-registered rules,PASS,"{'HP-01': 'SUPPORTED (exact)', 'HP-02': 'SUPPORTED', 'HP-03': 'SUPPORTED', 'HP-04': 'SUPPORTED (exact)', 'HP-05': 'SUPPORTED (exact)', 'HP-06': 'SUPPORTED (HELD)'}"
+V23,DQ scorecard 0 FAIL,PASS,{'PASS': 14}
+V24,"Washington rows only 2015-18, house rows only 2019-26",PASS,

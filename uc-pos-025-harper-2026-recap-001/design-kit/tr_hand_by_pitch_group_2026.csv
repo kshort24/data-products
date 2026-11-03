@@ -1,0 +1,8 @@
+p_throws,pitch_group,pitches,pitch_share_in_hand,plate_apps,woba,xwoba,slg,hrs,whiff_rate,chase_rate,hard_hit_rate,barrel_rate,bips,small_pa,small_bip
+L,breaking,484,0.4449,117,0.2514,0.2966,0.3269,3,0.3759,0.3974,0.3205,0.1154,78,False,False
+L,fastball,546,0.5018,133,0.348,0.32,0.3611,1,0.3008,0.2852,0.3973,0.0274,73,False,False
+L,offspeed,58,0.0533,18,0.2451,0.3784,0.0769,0,0.3077,0.2778,0.2222,0.0,9,True,True
+R,breaking,492,0.2966,116,0.4409,0.4195,0.6146,6,0.3862,0.3762,0.4658,0.137,73,False,False
+R,fastball,769,0.4635,196,0.485,0.4824,0.7051,17,0.2117,0.2179,0.5574,0.1557,122,False,False
+R,offspeed,385,0.2321,110,0.296,0.3148,0.37,2,0.2985,0.3889,0.3537,0.061,82,False,False
+R,other,13,0.0078,3,,,,0,,,,,0,True,True

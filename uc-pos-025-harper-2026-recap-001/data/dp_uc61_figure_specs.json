@@ -1,0 +1,56 @@
+{
+ "specs": {
+  "f1_cum_woba": {
+   "spec": {
+    "discrete": false,
+    "cumulative": true,
+    "context": true,
+    "distribution": null,
+    "time_axis": false
+   },
+   "source": [
+    "cum_slash_2015_26",
+    "career_envelope",
+    "notecard_copy.cumulative"
+   ],
+   "title": "2026 Ran Inside His Phillies Range Almost All Year"
+  },
+  "f2_pitch_map": {
+   "spec": {
+    "discrete": true,
+    "cumulative": false,
+    "context": true,
+    "distribution": null,
+    "time_axis": false
+   },
+   "source": [
+    "pitch_map_2026",
+    "hand_2026",
+    "hand_group_2026",
+    "zone_damage_2026",
+    "notecard_copy.pitch_map"
+   ],
+   "title": "Righties Paid. Lefties Didn't."
+  },
+  "f3_spray": {
+   "spec": {
+    "discrete": true,
+    "cumulative": false,
+    "context": true,
+    "distribution": null,
+    "time_axis": false
+   },
+   "source": [
+    "spray_2026",
+    "season_panel",
+    "field_outline.json",
+    "notecard_copy.spray"
+   ],
+   "title": "Pulling More, Hitting It Softer"
+  }
+ },
+ "sz_mean": {
+  "top": 3.264765335215801,
+  "bot": 1.647640179670812
+ }
+}
