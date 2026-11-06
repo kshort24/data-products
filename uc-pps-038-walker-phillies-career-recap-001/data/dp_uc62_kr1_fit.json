@@ -1,0 +1,8 @@
+{
+  "slope": -0.4257533351022513,
+  "intercept": 0.41447450281161985,
+  "r2": 0.3435972779953179,
+  "n": 194,
+  "pool": "Phillies pitcher-seasons 2015-26, regular season, >= 100 PA, subject excluded",
+  "basis": "house wOBA (K44 nresults)"
+}

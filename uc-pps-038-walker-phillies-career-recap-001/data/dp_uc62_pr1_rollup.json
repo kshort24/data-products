@@ -1,0 +1,7 @@
+{
+  "H-S": "STRONG",
+  "H-L": "STRONG",
+  "H-R": "SUPPORTED",
+  "call": "both, and the price was set on a residual",
+  "rule": "H-S SUPPORTED/STRONG and H-L UNSUPPORTED -> 'the arm, not the luck' | H-L SUPPORTED/STRONG and H-S not -> 'a sound arm, unlucky' | both -> 'both' | neither -> 'no single story'; H-R SUPPORTED/STRONG appends 'and the price was set on a residual'"
+}

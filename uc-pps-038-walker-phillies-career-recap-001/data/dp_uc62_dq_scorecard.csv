@@ -1,0 +1,16 @@
+rule,name,status,severity,detail
+DQ-01,Entity lock: every career row pitcher == 592836,PASS,BLOCKING,20611 rows
+DQ-02,No duplicate pitch keys,PASS,BLOCKING,EN-2
+DQ-03,Regular season only,PASS,BLOCKING,['R']
+DQ-04,House anchor <= 2026-10-01,PASS,BLOCKING,2026-09-27
+DQ-05,Career frame PHI rows == house rows,PASS,BLOCKING,"{np.int64(2023): 2837, np.int64(2024): 1435, np.int64(2025): 2061, np.int64(2026): 424}"
+DQ-06,"OU-2 outs reconcile to public IP (2024, 2026, tenure)",PASS,BLOCKING,2024 251 / 2026 68 / tenure 1208
+DQ-07,2026 G / GS / HR match CI-1,PASS,BLOCKING,"5 G, 4 GS, 8.0 HR"
+DQ-08,CDE completeness: release_speed on typed pitches >= 99%,PASS,BLOCKING,1.0000
+DQ-09,woba_denom present on PA ends,PASS,BLOCKING,0.9936
+DQ-10,XW-1 fallback share <= 2% every season,PASS,WARNING,max 0.000
+DQ-11,AB-1 automatic-pitch rows,PASS,WARNING,0 rows
+DQ-12,KR-1 fit excludes the subject,PASS,BLOCKING,n 194 = 198 - 4
+DQ-13,All four tenure seasons in the KP-1 pool,PASS,BLOCKING,4
+DQ-14,Non-MLB rows dropped by CF-2b are receipted,PASS,INFO,0 rows dropped
+DQ-15,Lineage pins (10) hold,PASS,BLOCKING,dp_uc53 chain + recap_viz

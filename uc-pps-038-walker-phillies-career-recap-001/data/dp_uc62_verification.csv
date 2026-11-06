@@ -1,0 +1,48 @@
+family,check,status,detail
+A,pitches by season (raw == receipt),PASS,"{np.int64(2015): 0, np.int64(2016): 0, np.int64(2017): 0, np.int64(2018): 0, np.int64(2019): 0, np.int64(2020): 0, np.int64(2021): 0, np.int64(2022): 0, np.int64(2023): 0, np.int64(2024): 0, np.int64(2025): 0, np.int64(2026): 0}"
+A,PA by season (raw == receipt),PASS,"{np.int64(2015): 0, np.int64(2016): 0, np.int64(2017): 0, np.int64(2018): 0, np.int64(2019): 0, np.int64(2020): 0, np.int64(2021): 0, np.int64(2022): 0, np.int64(2023): 0, np.int64(2024): 0, np.int64(2025): 0, np.int64(2026): 0}"
+A,K% by season within .0005 (K44 rounds rates to 3 dp),PASS,
+A,HR by season,PASS,"{np.int64(2015): 25, np.int64(2016): 27, np.int64(2017): 17, np.int64(2018): 1, np.int64(2020): 8, np.int64(2021): 26, np.int64(2022): 15, np.int64(2023): 20, np.int64(2024): 24, np.int64(2025): 21, np.int64(2026): 8}"
+A,"tenure BF = 1,772",PASS,1772
+B,tenure outs 1208 = 402.2 IP (CI-2),PASS,1208
+B,2024 outs 251 = 83.2 IP,PASS,251
+B,2026 outs 68 = 22.2 IP (CI-1),PASS,68
+B,2026 5 G / 4 GS / 8 HR (CI-1),PASS,
+B,"Apr 22 = bulk relief (log), not a start",PASS,
+B,2025 34 G / 21 GS (swingman),PASS,
+C,KR-1 slope/intercept independent refit,PASS,"(np.float64(-0.4257533351022513), np.float64(0.41447450281161985))"
+C,KR-1 n = pool - subject,PASS,194
+C,"pool n = 198, all >= 100 PA, regular season pool",PASS,198
+C,"ranks 2026 #1, 2024 #3, 2023 #109, 2025 #68",PASS,"{2023: 109.0, 2024: 3.0, 2025: 68.0, 2026: 1.0}"
+C,season KR-1 residuals reproduce,PASS,
+D,PR-1 bars match the BID (10 signatures),PASS,
+D,PR-1 verdicts rescored independently,PASS,"{'S1': 'PRESENT', 'S2': 'PRESENT', 'S3': 'PRESENT', 'S4': 'PRESENT', 'S5': 'PRESENT', 'L1': 'PRESENT', 'L2': 'PRESENT', 'R1': 'PRESENT', 'R2': 'WEAK', 'R3': 'PRESENT'}"
+D,PR-1 call,PASS,"both, and the price was set on a residual"
+D,"seen/unseen disclosure matches BID (S1,S2,R1,R3 seen)",PASS,
+E,"report carries '1,772'",PASS,
+E,report carries '402.2',PASS,
+E,report carries '.455',PASS,
+E,report carries '.412',PASS,
+E,report carries '#8 of 199',PASS,
+E,report carries '$794K',PASS,
+E,report carries '$179K',PASS,
+E,report carries 'R² 0.34',PASS,
+E,report carries 'n = 194',PASS,
+E,"report carries 'both, and the price was set on a residual'",PASS,
+E,report carries '28.2%',PASS,
+E,report carries '21.6%',PASS,
+E,report carries '94.2',PASS,
+E,report carries '92.4',PASS,
+E,dashboard carries the same bottom line as the report,PASS,
+E,dashboard embeds all 9 figures,PASS,
+E,PDF exists and is newer than the report md,PASS,
+E,V1-V7 audit: no FAIL on 9 figures,PASS,
+E,every report figure PNG exists,PASS,
+E,"dashboard plotly from pinned CDN, not inlined",PASS,206066
+F,carry-in CI-1 labelled in report,PASS,
+F,carry-in CI-2 labelled in report,PASS,
+F,carry-in CI-4 labelled in report,PASS,
+F,no uncarried facts / medical claims in report,PASS,[]
+F,DQ: no FAIL,PASS,{'PASS': 15}
+F,HP rows graded (7),PASS,
+F,lineage: 10 pins hold,PASS,
