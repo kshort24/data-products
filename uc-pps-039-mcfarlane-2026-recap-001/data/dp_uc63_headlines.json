@@ -1,0 +1,615 @@
+{
+  "uc": "uc-pps-039",
+  "build": "dp_uc63",
+  "version": "1.0.0",
+  "anchor": "2026-10-01",
+  "subject_id": 686934,
+  "lineage": {
+    "dp_uc62_kernel.py": "2adc60059cfa",
+    "dp_uc53_kernel.py": "03d7e3805240",
+    "recap_viz.py": "e6c9436a1beb",
+    "dp_uc52_kernel.py": "3667f8028acd",
+    "cumulative_metric.py": "a28887406d98",
+    "dp_uc51_kernel.py": "4845bae22861",
+    "dp_uc49_kernel.py": "a4ad5191a653",
+    "dp_uc50_kernel.py": "8084cb172d0c",
+    "dp_uc48_kernel.py": "0f63857a1032",
+    "dp_uc44_kernel.py": "a2c119096db2",
+    "barrel_rate.py": "6282f090394a"
+  },
+  "frame": {
+    "pitches": 333,
+    "outings": 21,
+    "postseason_games": 2,
+    "regular_pitches": 313,
+    "regular_outings": 19,
+    "first": "2026-07-22",
+    "last": "2026-09-30"
+  },
+  "overall": {
+    "plate_apps": 85.0,
+    "bip": 56.0,
+    "hits": 17.0,
+    "hrs": 2.0,
+    "walks": 7.0,
+    "strikeouts": 22.0,
+    "ba": 0.221,
+    "obp": 0.282,
+    "slg": 0.351,
+    "ops": 0.633,
+    "woba": 0.28,
+    "krate": 0.259,
+    "bbrate": 0.082,
+    "hr_rate": 0.024,
+    "whiff_rate": 0.2911392405063291,
+    "chase_rate": 0.335,
+    "in_zone_rate": 0.48,
+    "hard_hit_rate": 0.4107142857142857,
+    "barrel_rate": 0.089,
+    "hard_hits": 23.0,
+    "barrels": 5.0,
+    "swings": 158.0,
+    "whiffs": 46.0,
+    "xwoba": 0.29929761904761903,
+    "woba_sc": 0.29404761904761906,
+    "k_bb_ratio": 3.142857142857143
+  },
+  "stand": {
+    "L": {
+      "pitches": 153.0,
+      "plate_apps": 39.0,
+      "ba": 0.263,
+      "obp": 0.282,
+      "slg": 0.342,
+      "ops": 0.624,
+      "woba": 0.274,
+      "krate": 0.333,
+      "bbrate": 0.026,
+      "walks": 1.0,
+      "strikeouts": 13.0,
+      "hard_hit_rate": 0.4,
+      "barrel_rate": 0.08,
+      "whiff_rate": 0.35526315789473684,
+      "chase_rate": 0.343,
+      "xwoba": 0.2572051282051282,
+      "bips": 25.0
+    },
+    "R": {
+      "pitches": 180.0,
+      "plate_apps": 46.0,
+      "ba": 0.179,
+      "obp": 0.283,
+      "slg": 0.359,
+      "ops": 0.642,
+      "woba": 0.285,
+      "krate": 0.196,
+      "bbrate": 0.13,
+      "walks": 6.0,
+      "strikeouts": 9.0,
+      "hard_hit_rate": 0.41935483870967744,
+      "barrel_rate": 0.097,
+      "whiff_rate": 0.23170731707317074,
+      "chase_rate": 0.33,
+      "xwoba": 0.3357777777777778,
+      "bips": 31.0
+    }
+  },
+  "stand_pitch": {
+    "L_FF": {
+      "count": 97.0,
+      "usage": 63.4,
+      "swings": 48.0,
+      "whiffs": 16.0,
+      "whiff_rate": 0.3333333333333333,
+      "chases": 12.0,
+      "ooz": 44.0,
+      "chase_rate": 0.273,
+      "putaway_rate": 0.269,
+      "pitches2strikes": 26.0,
+      "plate_apps": 21.0,
+      "woba": 0.236
+    },
+    "L_SI": {
+      "count": 8.0,
+      "usage": 5.2,
+      "swings": 6.0,
+      "whiffs": 2.0,
+      "whiff_rate": 0.3333333333333333,
+      "chases": 1.0,
+      "ooz": 1.0,
+      "chase_rate": 1.0,
+      "putaway_rate": 1.0,
+      "pitches2strikes": 1.0,
+      "plate_apps": 4.0,
+      "woba": 0.222
+    },
+    "L_SL": {
+      "count": 42.0,
+      "usage": 27.5,
+      "swings": 21.0,
+      "whiffs": 8.0,
+      "whiff_rate": 0.38095238095238093,
+      "chases": 11.0,
+      "ooz": 22.0,
+      "chase_rate": 0.5,
+      "putaway_rate": 0.267,
+      "pitches2strikes": 15.0,
+      "plate_apps": 13.0,
+      "woba": 0.371
+    },
+    "L_ST": {
+      "count": 5.0,
+      "usage": 3.3,
+      "swings": 1.0,
+      "whiffs": 1.0,
+      "whiff_rate": 1.0,
+      "chases": null,
+      "ooz": null,
+      "chase_rate": null,
+      "putaway_rate": 0.333,
+      "pitches2strikes": 3.0,
+      "plate_apps": 1.0,
+      "woba": 0.0
+    },
+    "R_FF": {
+      "count": 45.0,
+      "usage": 25.0,
+      "swings": 25.0,
+      "whiffs": 8.0,
+      "whiff_rate": 0.32,
+      "chases": 9.0,
+      "ooz": 25.0,
+      "chase_rate": 0.36,
+      "putaway_rate": 0.16,
+      "pitches2strikes": 25.0,
+      "plate_apps": 10.0,
+      "woba": 0.275
+    },
+    "R_SI": {
+      "count": 82.0,
+      "usage": 45.6,
+      "swings": 38.0,
+      "whiffs": 2.0,
+      "whiff_rate": 0.05263157894736842,
+      "chases": 11.0,
+      "ooz": 38.0,
+      "chase_rate": 0.289,
+      "putaway_rate": 0.2,
+      "pitches2strikes": 5.0,
+      "plate_apps": 25.0,
+      "woba": 0.323
+    },
+    "R_SL": {
+      "count": 28.0,
+      "usage": 15.6,
+      "swings": 9.0,
+      "whiffs": 4.0,
+      "whiff_rate": 0.4444444444444444,
+      "chases": 6.0,
+      "ooz": 20.0,
+      "chase_rate": 0.3,
+      "putaway_rate": 0.125,
+      "pitches2strikes": 8.0,
+      "plate_apps": 5.0,
+      "woba": 0.318
+    },
+    "R_ST": {
+      "count": 25.0,
+      "usage": 13.9,
+      "swings": 10.0,
+      "whiffs": 5.0,
+      "whiff_rate": 0.5,
+      "chases": 8.0,
+      "ooz": 20.0,
+      "chase_rate": 0.4,
+      "putaway_rate": 0.273,
+      "pitches2strikes": 11.0,
+      "plate_apps": 6.0,
+      "woba": 0.116
+    }
+  },
+  "arsenal": {
+    "FF": {
+      "n": 142.0,
+      "usage": 0.42771084337349397,
+      "velo": 99.41619718309859,
+      "velo_max": 102.2,
+      "spin": 2543.93661971831,
+      "ivb_mean": 14.748169014084509,
+      "ivb_p10": 12.852,
+      "ivb_p50": 14.879999999999999,
+      "ivb_p90": 16.548,
+      "ivb_max": 18.48,
+      "ivb_min": 9.48,
+      "hb_mean": -9.338873239436621,
+      "hb_abs_p10": 6.612000000000001,
+      "hb_abs_p50": 9.48,
+      "hb_abs_p90": 12.108000000000002,
+      "hb_abs_max": 13.559999999999999,
+      "arm_angle": 25.227586206896554,
+      "ext": 6.322535211267605
+    },
+    "SI": {
+      "n": 90.0,
+      "usage": 0.2710843373493976,
+      "velo": 99.15,
+      "velo_max": 101.6,
+      "spin": 2494.211111111111,
+      "ivb_mean": 9.648,
+      "ivb_p10": 7.668,
+      "ivb_p50": 9.540000000000001,
+      "ivb_p90": 11.544000000000002,
+      "ivb_max": 16.32,
+      "ivb_min": 5.76,
+      "hb_mean": -16.452,
+      "hb_abs_p10": 14.484,
+      "hb_abs_p50": 16.439999999999998,
+      "hb_abs_p90": 18.612000000000002,
+      "hb_abs_max": 21.96,
+      "arm_angle": 25.397727272727273,
+      "ext": 6.352222222222223
+    },
+    "SL": {
+      "n": 70.0,
+      "usage": 0.21084337349397592,
+      "velo": 87.05285714285714,
+      "velo_max": 89.1,
+      "spin": 2805.8142857142857,
+      "ivb_mean": -2.021142857142857,
+      "ivb_p10": -4.704,
+      "ivb_p50": -2.16,
+      "ivb_p90": 1.2240000000000004,
+      "ivb_max": 2.88,
+      "ivb_min": -7.32,
+      "hb_mean": 4.702285714285715,
+      "hb_abs_p10": 2.148,
+      "hb_abs_p50": 4.199999999999999,
+      "hb_abs_p90": 7.812000000000001,
+      "hb_abs_max": 11.16,
+      "arm_angle": 22.677142857142858,
+      "ext": 6.3428571428571425
+    },
+    "ST": {
+      "n": 30.0,
+      "usage": 0.09036144578313253,
+      "velo": 86.52,
+      "velo_max": 89.6,
+      "spin": 2881.5666666666666,
+      "ivb_mean": 1.648,
+      "ivb_p10": -0.7439999999999999,
+      "ivb_p50": 2.2800000000000002,
+      "ivb_p90": 3.516,
+      "ivb_max": 5.04,
+      "ivb_min": -3.5999999999999996,
+      "hb_mean": 12.356,
+      "hb_abs_p10": 7.152000000000001,
+      "hb_abs_p50": 12.9,
+      "hb_abs_p90": 16.584,
+      "hb_abs_max": 17.28,
+      "arm_angle": 23.455000000000002,
+      "ext": 6.33
+    }
+  },
+  "bs1r": {
+    "sliders": 70,
+    "hb_in": 4.702285714285714,
+    "ivb_in": -2.0211428571428574,
+    "bullet": false,
+    "rhp_pool_n": 110,
+    "rhp_pool_bullet": 19
+  },
+  "context": {
+    "whiff_rate": {
+      "value_rs": 0.2789115646258503,
+      "all": {
+        "n": 258,
+        "percentile": 73,
+        "rank": 70
+      },
+      "rp": {
+        "n": 156,
+        "percentile": 63,
+        "rank": 58
+      },
+      "pool_median": 0.24397502903600465,
+      "rp_median": 0.2572337962962963
+    },
+    "chase_rate": {
+      "value_rs": 0.317,
+      "all": {
+        "n": 258,
+        "percentile": 74,
+        "rank": 63
+      },
+      "rp": {
+        "n": 156,
+        "percentile": 75,
+        "rank": 37
+      },
+      "pool_median": 0.29,
+      "rp_median": 0.2865
+    },
+    "hard_hit_rate": {
+      "value_rs": 0.40384615384615385,
+      "all": {
+        "n": 258,
+        "percentile": 22,
+        "rank": 200
+      },
+      "rp": {
+        "n": 156,
+        "percentile": 28,
+        "rank": 113
+      },
+      "pool_median": 0.35714285714285715,
+      "rp_median": 0.35634920634920636
+    },
+    "barrel_rate": {
+      "value_rs": 0.077,
+      "all": {
+        "n": 258,
+        "percentile": 35,
+        "rank": 166
+      },
+      "rp": {
+        "n": 156,
+        "percentile": 37,
+        "rank": 99
+      },
+      "pool_median": 0.0695,
+      "rp_median": 0.068
+    },
+    "woba": {
+      "value_rs": 0.27,
+      "all": {
+        "n": 258,
+        "percentile": 86,
+        "rank": 34
+      },
+      "rp": {
+        "n": 156,
+        "percentile": 83,
+        "rank": 25
+      },
+      "pool_median": 0.3235,
+      "rp_median": 0.318
+    },
+    "krate": {
+      "value_rs": 0.253,
+      "all": {
+        "n": 258,
+        "percentile": 69,
+        "rank": 78
+      },
+      "rp": {
+        "n": 156,
+        "percentile": 66,
+        "rank": 52
+      },
+      "pool_median": 0.221,
+      "rp_median": 0.23399999999999999
+    },
+    "bbrate": {
+      "value_rs": 0.089,
+      "all": {
+        "n": 258,
+        "percentile": 34,
+        "rank": 165
+      },
+      "rp": {
+        "n": 156,
+        "percentile": 42,
+        "rank": 88
+      },
+      "pool_median": 0.079,
+      "rp_median": 0.08549999999999999
+    }
+  },
+  "context_desc": "Phillies pitcher-seasons 2015-26, regular season, >= 150 pitches (CX-1); subject = his 313 regular-season pitches",
+  "fo1": {
+    "n_pool": 238,
+    "n_ff": 142,
+    "velo": 99.41619718309859,
+    "spin": 2543.93661971831,
+    "velo_pct": 99,
+    "velo_rank": 3,
+    "spin_pct": 97,
+    "spin_rank": 6,
+    "both_at_or_above": 0,
+    "both_share": 0.0,
+    "both_names": [],
+    "elite": true,
+    "outlier": true,
+    "pitch_level_n": 137203,
+    "pitch_level_velo_pct_of_subject_mean": 0.9858845831358681,
+    "pitch_level_spin_pct_of_subject_mean": 0.9409794985272352,
+    "pitch_level_both_share": 0.0027417637708002157
+  },
+  "fo1_desc": "RHP four-seams in any Phillies game 2015-26 (pps + pos), game_type not S/E, pitcher-seasons >= 100 FF",
+  "bd1": {
+    "outings_rs": 19,
+    "bridge": 4,
+    "bridge_share": 0.21052631578947367,
+    "entered_ahead": 9,
+    "duran_later": 5,
+    "late_close": 4,
+    "bridge_lead_kept": 3,
+    "first_bridge": "2026-08-31",
+    "postseason": [
+      {
+        "game_date": "2026-09-29",
+        "game_type": "F",
+        "entry_inning": 6,
+        "entry_lead": 0,
+        "follow_later": true
+      },
+      {
+        "game_date": "2026-09-30",
+        "game_type": "F",
+        "entry_inning": 7,
+        "entry_lead": -2,
+        "follow_later": false
+      }
+    ]
+  },
+  "aaa": {
+    "outings": 4,
+    "first": "2026-07-29",
+    "last": "2026-08-08",
+    "pitches": 73,
+    "pa": 17,
+    "k": 8,
+    "bb": 2,
+    "whiff_rate": 0.32
+  },
+  "descriptive": {
+    "sz_bot": 1.6133386894186748,
+    "sz_top": 3.1968007365150606,
+    "ff_lhb_n": 97,
+    "ff_lhb_plate_z_mean": 2.4730318981447845,
+    "ff_lhb_upper_third_or_above": 0.422680412371134,
+    "ff_lhb_above_zone": 0.17525773195876287,
+    "ff_lhb_middle_third_x": 0.28865979381443296
+  },
+  "velo_ref": {
+    "phi_rhp_ff_2026_median": 96.97941176470589,
+    "phi_rhp_ff_2026_n": 9,
+    "pool_p90_velo": 97.17498535019065,
+    "pool_p90_spin": 2461.037031994554
+  },
+  "velo_windows": {
+    "ff_rs_first16": 99.96063829787231,
+    "ff_rs_last3": 98.05897435897437,
+    "ff_post": 99.6111111111111,
+    "si_rs_first16": 99.39701492537314,
+    "si_rs_last3": 97.9625
+  },
+  "stints": [
+    {
+      "stint": 1,
+      "tier": "MLB",
+      "first": "2026-07-22",
+      "last": "2026-07-22",
+      "outings": 1,
+      "pitches": 12
+    },
+    {
+      "stint": 2,
+      "tier": "AAA (supporting)",
+      "first": "2026-07-29",
+      "last": "2026-08-08",
+      "outings": 4,
+      "pitches": 73
+    },
+    {
+      "stint": 3,
+      "tier": "MLB",
+      "first": "2026-08-11",
+      "last": "2026-09-30",
+      "outings": 20,
+      "pitches": 321
+    }
+  ],
+  "s1": {
+    "Alex McFarlane": {
+      "pitches": 333.0,
+      "plate_apps": 85.0,
+      "bip": 56.0,
+      "hits": 17.0,
+      "hrs": 2.0,
+      "walks": 7.0,
+      "strikeouts": 22.0,
+      "ba": 0.221,
+      "obp": 0.282,
+      "slg": 0.351,
+      "ops": 0.633,
+      "woba": 0.28,
+      "krate": 0.259,
+      "bbrate": 0.082,
+      "hr_rate": 0.024,
+      "games": 21.0,
+      "hard_hits": 23.0,
+      "bips": 56.0,
+      "hard_hit_rate": 0.4107142857142857,
+      "barrels": 5.0,
+      "barrel_rate": 0.089,
+      "swings": 158.0,
+      "whiffs": 46.0,
+      "whiff_rate": 0.2911392405063291,
+      "chases": 58.0,
+      "ooz": 173.0,
+      "chase_rate": 0.335,
+      "in_zone_rate": 0.48,
+      "xwoba": 0.29929761904761903,
+      "woba_sc": 0.29404761904761906,
+      "outings": 21.0,
+      "postseason_outings": 2.0,
+      "first_date": "2026-07-22",
+      "last_date": "2026-09-30",
+      "late_close_entries": 9.0,
+      "entered_ahead": 9.0,
+      "ff_velo": 99.41619718309859,
+      "k_bb_ratio": 3.142857142857143
+    },
+    "Orion Kerkering": {
+      "pitches": 355.0,
+      "plate_apps": 85.0,
+      "bip": 55.0,
+      "hits": 17.0,
+      "hrs": 0.0,
+      "walks": 9.0,
+      "strikeouts": 20.0,
+      "ba": 0.227,
+      "obp": 0.306,
+      "slg": 0.253,
+      "ops": 0.559,
+      "woba": 0.258,
+      "krate": 0.235,
+      "bbrate": 0.106,
+      "hr_rate": 0.0,
+      "games": 21.0,
+      "hard_hits": 14.0,
+      "bips": 55.0,
+      "hard_hit_rate": 0.2545454545454545,
+      "barrels": 1.0,
+      "barrel_rate": 0.018,
+      "swings": 140.0,
+      "whiffs": 37.0,
+      "whiff_rate": 0.2642857142857143,
+      "chases": 38.0,
+      "ooz": 168.0,
+      "chase_rate": 0.226,
+      "in_zone_rate": 0.527,
+      "xwoba": 0.27738554216867467,
+      "woba_sc": 0.26867469879518074,
+      "outings": 21.0,
+      "postseason_outings": 7.0,
+      "first_date": "2023-09-24",
+      "last_date": "2024-05-13",
+      "late_close_entries": 8.0,
+      "entered_ahead": 13.0,
+      "ff_velo": 97.58833333333332,
+      "k_bb_ratio": 2.2222222222222223
+    }
+  },
+  "kerkering_ff_seasons": [
+    {
+      "game_year": 2024,
+      "n_ff": 326,
+      "velo": 97.56656441717791,
+      "spin": 2354.7798742138366
+    },
+    {
+      "game_year": 2025,
+      "n_ff": 378,
+      "velo": 97.55952380952381,
+      "spin": 2411.6613756613756
+    },
+    {
+      "game_year": 2026,
+      "n_ff": 372,
+      "velo": 97.1486559139785,
+      "spin": 2348.5134408602153
+    }
+  ]
+}

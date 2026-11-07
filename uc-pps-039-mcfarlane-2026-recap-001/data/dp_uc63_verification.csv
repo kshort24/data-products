@@ -1,0 +1,46 @@
+id,check,recomputed,published,tol,status
+V01,"pitches (id frame, all game types)",333,333,0.0,PASS
+V02,outings,21,21,0.0,PASS
+V03,postseason games,2,2,0.0,PASS
+V04,name frame == id frame,333,333,0.0,PASS
+V05,overall woba,0.2798,0.28,0.0015,PASS
+V06,overall ops,0.633,0.633,0.0015,PASS
+V07,overall krate,0.2588,0.259,0.0006,PASS
+V08,overall bbrate,0.0824,0.082,0.0006,PASS
+V09,overall whiff_rate,0.2911,0.2911392405063291,0.0006,PASS
+V10,overall chase_rate,0.3353,0.335,0.0006,PASS
+V11,overall hard_hit_rate,0.4107,0.4107142857142857,0.0006,PASS
+V12,overall barrel_rate,0.0893,0.089,0.0006,PASS
+V13,overall ba,0.2208,0.221,0.0006,PASS
+V14,K:BB counts,22:7,22:7,0.0,PASS
+V15,vs LHB K/BB/BA/HH/barrel,"[np.float64(0.333), np.float64(0.026), np.float64(0.263), np.float64(0.4), np.float64(0.08)]","[0.333, 0.026, 0.263, 0.4, 0.08]",0.0,PASS
+V16,vs RHB K/BB/BA/HH/barrel,"[np.float64(0.196), np.float64(0.13), np.float64(0.179), np.float64(0.419), np.float64(0.097)]","[0.196, 0.13, 0.179, 0.419, 0.097]",0.0,PASS
+V17,vs LHB usage (count / all pitches incl. AB-1 row),"{'FF': np.float64(63.4), 'SL': np.float64(27.5)}","{'FF': 63.4, 'SL': 27.5}",0.0,PASS
+V18,vs RHB usage (count / all pitches incl. AB-1 row),"{'SI': np.float64(45.6), 'FF': np.float64(25.0), 'SL': np.float64(15.6), 'ST': np.float64(13.9)}","{'SI': 45.6, 'FF': 25.0, 'SL': 15.6, 'ST': 13.9}",0.0,PASS
+V19,SL v LHB whiff,0.381,0.381,0.0,PASS
+V20,FF v RHB whiff,0.32,0.32,0.0,PASS
+V21,FF v LHB whiff,0.333,0.333,0.0,PASS
+V22,SL v LHB chase,0.5,0.5,0.0,PASS
+V23,FF IVB 10th/90th pct (in),"[np.float64(12.85), np.float64(16.55)]","[12.85, 16.55]",0.0,PASS
+V24,FF run median |HB| (in),9.48,9.48,0.0,PASS
+V25,SI run 90th pct |HB| (in),18.61,18.61,0.0,PASS
+V26,SL mean HB / IVB (BS-1r inputs),"[np.float64(4.7), np.float64(-2.02)]","[4.7, -2.02]",0.0,PASS
+V27,FO-1 pool size (others),238,238,0.0,PASS
+V28,FO-1 velo / spin rank,"[3, 6]","[3, 6]",0.0,PASS
+V29,FO-1 seasons at/above on both,0,0,0.0,PASS
+V30,FF mean velo / spin,"[np.float64(99.42), np.float64(2543.9)]","[99.42, 2543.9]",0.0,PASS
+V31,BD-1 bridge outings,4,4,0.0,PASS
+V32,BD-1 first bridge date,2026-08-31,2026-08-31,0.0,PASS
+V33,AAA pitches / outings / K,"[73, 4, 8]","[73, 4, 8]",0.0,PASS
+V34,Kerkering first 21: postseason outings / PA,"[7, 85]","[7, 85]",0.0,PASS
+V35,Kerkering first 21: K% / HH%,"[np.float64(0.235), np.float64(0.255)]","[0.235, 0.255]",0.0,PASS
+V36,"whiff percentile vs CX-1 pool (±1, RK-3)",73,73,1.0,PASS
+V37,"chase percentile vs CX-1 pool (±1, RK-3)",75,74,1.0,PASS
+V38,HP-09 verdict follows the filed bar,CONFIRMED,CONFIRMED,0.0,PASS
+V39,HP-10 verdict follows the filed bar,PARTLY,PARTLY,0.0,PASS
+V40,report body carries no uncorrected 'Central Florida',False,False,0.0,PASS
+V41,report body carries the client's verbatim anchor sentence,True,True,0.0,PASS
+V42,"dashboard loads plotly from the pinned CDN, not inline",True,True,0.0,PASS
+V43,V1-V7 audit (figures passing incl. 1 registered exception),8,8,0.0,PASS
+V44,NC-1: every on-screen string is registered,True,True,0.0,PASS
+V45,design-kit manifest sha256 matches files,True,True,0.0,PASS

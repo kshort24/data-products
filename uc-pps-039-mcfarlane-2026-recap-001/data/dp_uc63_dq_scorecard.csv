@@ -1,0 +1,17 @@
+id,rule,status,evidence
+DQ-01,entity lock: id rows == name rows (O-26),PASS,333 == 333
+DQ-02,dedup key unique in client frame,PASS,0 dupes
+DQ-03,game types in client frame,PASS,"F,R"
+DQ-04,anchor: max game_date <= 2026-10-01,PASS,2026-10-01
+DQ-05,"pitch_type non-null (automatic balls/strikes excepted, AB-1)",WARN,"1 null, all automatic balls/strikes; kept (client frame counts them)"
+DQ-06,release_speed / spin non-null,WARN,2
+DQ-07,pfx_x / pfx_z non-null,WARN,2
+DQ-08,"zone non-null (chase / in-zone denominators, D-7)",WARN,1
+DQ-09,BIP launch_speed tracked (O-8),PASS,0 of 56 untracked
+DQ-10,arm_angle coverage (display only),WARN,157 of 333
+DQ-11,wOBA weights joined for 2026,PASS,Season 2026 row present
+DQ-12,AAA tier kept separate (no blend),PASS,73 AAA rows in separate receipts
+DQ-13,Kerkering id == name 1:1,PASS,3544 rows
+DQ-14,FO-1 pool deduped across pps/pos,PASS,239 seasons
+DQ-16,EN-3: FO-1 names from pitching-role rows only (pos player_name is the batter),PASS,81 opponent seasons labelled by id
+DQ-15,AB-1 automatic ball/strike rows (no pitch thrown),WARN,1 row(s): counted in pitches (333) and as in-zone by K44 chase_rate (D-7); pitch_mix usage denominators include it (vs LHB shares sum to 99.4%)

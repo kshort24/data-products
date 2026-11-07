@@ -1,0 +1,21 @@
+hp,claim,evidence,verdict,correction
+HP-01,all 333 of his major league pitches across 21 outings including two postseason games,333 pitches / 21 outings / 2 postseason games,CONFIRMED,
+HP-02,.280 wOBA (good!) and .633 OPS (solid!),wOBA 0.280 · OPS 0.633,CONFIRMED,
+HP-03,26% K and 8.2% BB … ratio just exceeding 3:1,K 25.9% · BB 8.2% · K:BB 22:7 = 3.14,CONFIRMED,
+HP-04,"Decent chunk of hard hits and barrels, but very strong whiff in total and good chase",regular season vs 258 Phillies pitcher-seasons (CX-1): whiff 27.9% = 73th pct (bar 75th); chase 31.7% = 74th pct (bar 60th); hard-hit 40.4% vs pool median 35.7% (at/above = 'decent chunk'),PARTLY,"whiff is strong (73rd pct), one notch short of 'very strong' on the pre-registered bar"
+HP-05a,Lots of FF that ride between 12 and 18 inches,FF IVB 10th–90th pct 12.9–16.5 in (max 18.5),CONFIRMED,
+HP-05b,[FF] run about a foot,FF arm-side run median 9.5 in (90th pct 12.1 in),PARTLY,"runs about 9 inches, a foot only at the top end"
+HP-05c,His sinker runs up to 18 inches,"SI run median 16.4 in, 90th pct 18.6 in",CONFIRMED,
+HP-05d,Sweeper sweeps at least a foot but is fairly flat,ST sweep median 12.9 in; IVB median 2.3 in,CONFIRMED,
+HP-05e,Bullet slider,"BS-1r: SL mean |HB| 4.7 in, IVB -2.0 in over 70 SL; house line 4.0 / 4.0 in (19 of 110 Phillies RHP slider seasons qualify)",PARTLY,"bullet-adjacent: drop qualifies, 0.7 in of sweep past the house line"
+HP-06,vs LHB: 63.4% FF + 27.5% SL | quality K Rate (33%) and Elite Walks Rate (2%),FF 63.4% · SL 27.5% · K 33.3% · BB 2.6% (1 BB in 39 PA),PARTLY,"BB rate is 2.6% (rounds to 3%, not 2%)"
+HP-07,"vs RHB: 45.6% SI + 25% FF + 15.6% SL + 13.9% ST | Just .179 BAA but lots of hard contact in the underlyings (41% HH, 9% Barrel)","mix [45.6, 25.0, 15.6, 13.9] · BAA 0.179 · HH 41.9% · barrel 9.7%",PARTLY,HH 41.9% and barrel 9.7% (truncated in the draft; round to 42% / 10%)
+HP-08,Plus SL to LHB: 38% Whiff/50% Chase. FF gets 32% Whiff on Swings to RHB. (33% whiff vs LHB),SL v L 38.1% / 50.0% · FF v R 32.0% · FF v L 33.3%,CONFIRMED,
+HP-09,McFarlane has elite spin and elite velocity. His fastball is an outlier.,"FO-1 (239 RHP FF pitcher-seasons in Phillies games, ≥100 FF): velo 99.4 mph = 99th pct (#3); spin 2544 rpm = 97th pct (#6); seasons at/above on both: 0",CONFIRMED,
+HP-10,McFarlane emerged as a key plank in the Bridge to Duran,BD-1: 4 of 19 regular-season outings (21%) entered ahead with Duran to follow; first 2026-08-31; all in the last month. Entered ahead 9×; Duran followed 5× (once from a tie),PARTLY,'emerged' fits (every bridge outing came from 8/31 on); 'key plank' is ahead of the evidence (4 outings)
+HP-11a,the guy who was drafted in the round following McFarlane back in 2022,"McFarlane 4th round 2022 (Miami); Kerkering 5th round 2022 (MLB.com, MLBTR, school sites)",CONFIRMED,
+HP-11b,Orion Kerkering. Taken in the 5th round out of Central Florida,Kerkering pitched for the University of South Florida (USF Bulls),CORRECTED,"out of South Florida (USF), not Central Florida"
+HP-11c,Kerk was rushed to the majors back in 2023 to pitch in leverage situations,log: MLB debut 2023-09-24; 7 postseason outings within his first 10 MLB games,CONFIRMED,
+HP-11d,"During the fateful weekend in Atlanta which cost Rob Thomson his job, Alex McFarlane sat in the Phillies bullpen … He was not needed.",recalled from AA Reading 2026-04-24 before the Atlanta series; Thomson dismissed 2026-04-28; log has no McFarlane pitch before 2026-07-22,CONFIRMED,
+HP-11e,McFarlane dominated AA for most of 2026,"carry-in (MLBTR 7/20): 2.06 ERA, 35 IP, 32.9% K, 12.6% BB, 50% GB at AA; no AA Statcast in the plane",PARTLY,dominant on run prevention and strikeouts; the AA walk rate (12.6%) was not
+HP-12,Improved command in 2026 brought improved results,no pre-2026 pitch data for him in either plane; AA BB% 12.6% (carry-in) vs MLB 8.2%,NOT OBSERVABLE,

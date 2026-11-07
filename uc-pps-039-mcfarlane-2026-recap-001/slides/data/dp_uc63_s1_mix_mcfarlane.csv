@@ -1,0 +1,5 @@
+pitch_type,pitch_name,count,usage,release_speed,release_spin_rate,pfx_x,pfx_z,subject
+FF,4-Seam Fastball,142,42.6,99.4,2543.9,-0.8,1.2,Alex McFarlane
+SI,Sinker,90,27.0,99.2,2494.2,-1.4,0.8,Alex McFarlane
+SL,Slider,70,21.0,87.1,2805.8,0.4,-0.2,Alex McFarlane
+ST,Sweeper,30,9.0,86.5,2881.6,1.0,0.1,Alex McFarlane

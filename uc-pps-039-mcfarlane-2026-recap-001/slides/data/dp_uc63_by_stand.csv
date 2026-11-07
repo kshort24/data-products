@@ -1,0 +1,3 @@
+player_name,game_year,p_throws,stand,pitches,plate_apps,bip,hits,hrs,walks,strikeouts,ba,obp,slg,ops,woba,krate,bbrate,hr_rate,games,hard_hits,bips,hard_hit_rate,barrels,barrel_rate,swings,whiffs,whiff_rate,chases,ooz,chase_rate,in_zone_rate,xwoba,woba_sc
+"McFarlane, Alex",2026,R,L,153,39,25,10,0.0,1,13,0.263,0.282,0.342,0.624,0.274,0.333,0.026,0.0,19,10,25,0.4,2,0.08,76,27,0.35526315789473684,24,70,0.343,0.542,0.2572051282051282,0.2987179487179487
+"McFarlane, Alex",2026,R,R,180,46,31,7,2.0,6,9,0.179,0.283,0.359,0.642,0.285,0.196,0.13,0.043,20,13,31,0.41935483870967744,3,0.097,82,19,0.23170731707317074,34,103,0.33,0.428,0.3357777777777778,0.29000000000000004

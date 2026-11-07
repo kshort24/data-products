@@ -1,0 +1,5 @@
+game_pk,game_date,game_type,opp,entry_inning,entry_lead,entry_outs,exit_lead,first_ab,last_ab,pitches,pa,k,bb,velo_ff,velo_si,outing_no,tier
+816322,2026-07-29,R,LHV,9,-1,0,-1,73,76,20,4,2,0,99.31428571428572,99.1,1,AAA (supporting)
+816328,2026-07-31,R,LHV,9,5,0,5,74,76,13,3,3,0,99.86,99.2,2,AAA (supporting)
+815500,2026-08-04,R,WOR,6,1,2,1,63,72,29,7,1,2,98.76,98.76666666666667,3,AAA (supporting)
+815494,2026-08-08,R,WOR,6,-15,0,-16,61,63,11,3,2,0,99.26666666666667,98.75,4,AAA (supporting)

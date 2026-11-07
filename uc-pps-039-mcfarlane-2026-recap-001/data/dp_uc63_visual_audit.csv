@@ -1,0 +1,9 @@
+figure,V1,V2,V3,V4,V5,V6,V7
+f1_context,PASS,PASS,PASS,N-A,PASS,PASS,PASS
+f2_pitch_plot,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+f3_pitch_map,PASS,EXCEPTION (zone is the reference; client chart form),N-A,N-A,PASS,PASS,PASS
+f4_stand_pitch,PASS,PASS,PASS,N-A,PASS,PASS,PASS
+f5_velo_spin,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+f5b_fo1,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+f6_outings,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+s1_twins,PASS,PASS,PASS,N-A,PASS,PASS,PASS

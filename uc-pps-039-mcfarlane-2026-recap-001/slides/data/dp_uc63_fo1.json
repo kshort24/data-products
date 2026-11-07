@@ -1,0 +1,19 @@
+{
+  "n_pool": 238,
+  "n_ff": 142,
+  "velo": 99.41619718309859,
+  "spin": 2543.93661971831,
+  "velo_pct": 99,
+  "velo_rank": 3,
+  "spin_pct": 97,
+  "spin_rank": 6,
+  "both_at_or_above": 0,
+  "both_share": 0.0,
+  "both_names": [],
+  "elite": true,
+  "outlier": true,
+  "pitch_level_n": 137203,
+  "pitch_level_velo_pct_of_subject_mean": 0.9858845831358681,
+  "pitch_level_spin_pct_of_subject_mean": 0.9409794985272352,
+  "pitch_level_both_share": 0.0027417637708002157
+}
