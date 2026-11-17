@@ -1,0 +1,33 @@
+{
+ "uc": "uc-pps-041",
+ "build": "dp_uc65",
+ "files": {
+  "copy_registry.json": "955939d5d21e6ffb4714e5d04797c2b5883384028520829cd2712090c7fd6aab",
+  "data/dp_uc65_ch_kpis_by_year_stand.csv": "587ef84ce67de756742facd878458027db5fab6d4b39e08891ef2ece7a303d40",
+  "data/dp_uc65_ch_pool.csv": "db0498919d80f0648df45502124bd429c90674a7b4a5abe0c8e86a97e19a1576",
+  "data/dp_uc65_ch_usage_by_year.csv": "8d1acc8bd379ff408f92fead4c0ff1731c33ddb7fd6f66131cb150da0f46a258",
+  "data/dp_uc65_cz1_28.csv": "1c8e3339959c3cb54fced12eb7d81a9d04137ed933a91824845cde472a9dfad8",
+  "data/dp_uc65_fp1_first_pitch.csv": "b77fe5882fe6c62f82b7a60dd60c910dc0e3f87d26da11f99de126545b779af5",
+  "data/dp_uc65_headlines.json": "dcc82b042266f275607c90424f9e42712782a1d89d0e77c8063d08913fcbb2a6",
+  "data/dp_uc65_line_by_year_stand.csv": "f72e7fc1ececf8fddccb6847b209cee512846691abd825d9d1b5aa17779078cd",
+  "data/dp_uc65_pitchmap_2026.csv": "b22ece03e701fe9c62a443e39b1e8289cdedba6a7b5684ff464d8af1eb4bd596",
+  "data/dp_uc65_rec_client_frame.csv": "1820b17e45763c50c433066d05f732c0aac3eb9d4c9997d88cdfd34c2469db8e",
+  "data/dp_uc65_ts1_two_strike_groups.csv": "91d6cc2165afb8dd6e8e4b1177a9154fcebbe274f4174c298bcad5bc21c9617b",
+  "data/dp_uc65_zn1_location_by_year.csv": "036fc10f560bc37039fb630fd4b18b841e98cd81556eee36c4a7e6857bba4528",
+  "data/dp_uc65_zn1_location_by_year_stand.csv": "520a7fc592bd6d49008fb7470719b8c1a0a260f6de3db5e1f2f8c662682f0add",
+  "dp_uc65_claude_design_brief.md": "adc06270dead166bdd9e84085222c140ac17f98e5b85e58ba2a83b4c4935c3b2",
+  "ref/dp_uc65_r1_pitch_map.json": "52bd962692edc62597ce9951c5ec65065f8134db2d92e59f87f9ccee5b63160d",
+  "ref/dp_uc65_r1_pitch_map.png": "c72751aacb55c139868c22463cecf87a5ab17eb64d68a1995f28d5ec5ce6af0a",
+  "ref/dp_uc65_r2_pitch_map_raw.json": "ea9a70054604880717f5bd5d04e45a07a9f545b732a2db087ff91b3be33fefaf",
+  "ref/dp_uc65_r2_pitch_map_raw.png": "c316fbd254738a6750060d155863395ae51510fffaed6037e8fa780e69e8111f",
+  "ref/dp_uc65_r3_count_board.json": "1b3242a22da0dced54498587cfe7121c539b67d4a40c6d9e8e9a4a2e1fd7df39",
+  "ref/dp_uc65_r3_count_board.png": "cbbbe3082c5bc062b7fd5b31406d4e22f2fdc7922c5e618ff3e7f966fe87b542",
+  "ref/dp_uc65_r4_early_count.json": "2d7306aa3960711dac4178a764488a1d53f6ba686d3981350d6b3b9973c261d0",
+  "ref/dp_uc65_r4_early_count.png": "6dcea448fa383528a6e0c755639f87e78407435fe550dd355a3d87b375ef768c",
+  "ref/dp_uc65_r5_early_vs_late.json": "07f8644aa9705a7e3b5510ab45da935e5f948e76ebcc1ebc7417ae8bee38483e",
+  "ref/dp_uc65_r5_early_vs_late.png": "0ef8dcb9c13a81593d4a71fbf6439c17fbfbd56c9488e740a54a90995a288a1e",
+  "ref/dp_uc65_r6_first_pitch.json": "6df8642face89ae8c6dcd07604253dcc5ce4cc65a4be127051a11edfedbdc22e",
+  "ref/dp_uc65_r6_first_pitch.png": "fd3586867e2e92c06586fd370fe4183ab1d2ee2465313493e08045bfdc02bf01",
+  "slide_content.md": "9bc33de8e2e2886d0c75b0dfe2b1876b64db6ae3f182562b82065f05aadae3f2"
+ }
+}

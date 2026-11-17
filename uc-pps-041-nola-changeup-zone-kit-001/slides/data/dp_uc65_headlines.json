@@ -1,0 +1,96 @@
+{
+ "cz1_center_inside": 20,
+ "map_n": 489,
+ "map_r": 481,
+ "map_post": 8,
+ "cz1": 28,
+ "cz1_r": 27,
+ "cz1_post": 1,
+ "cz1_lhb": 25,
+ "cz1_rhb": 3,
+ "cz1_by_zone": {
+  "7": 11,
+  "8": 13,
+  "9": 4
+ },
+ "cz1_counts": {
+  "0-0": 9,
+  "1-0": 7,
+  "2-1": 6,
+  "0-1": 2,
+  "1-1": 2,
+  "3-1": 1,
+  "2-0": 1
+ },
+ "cz1_first_pitch": 9,
+ "cz1_velo": 86.01785714285714,
+ "mean_sz_bot": 1.6211726648077711,
+ "mean_sz_top": 3.2123262645010224,
+ "first": "2026-03-28",
+ "last": "2026-10-01",
+ "career_high_cz1": false,
+ "pool_ranks_2026": {
+  "cz1": {
+   "value": 27.0,
+   "rank": 7,
+   "n": 30
+  },
+  "cz1_per_100_ch": {
+   "value": 5.613305613305613,
+   "rank": 5,
+   "n": 30
+  },
+  "in_zone_share": {
+   "value": 0.3388773388773389,
+   "rank": 20,
+   "n": 30
+  },
+  "bottom_third_share": {
+   "value": 0.24324324324324326,
+   "rank": 10,
+   "n": 30
+  },
+  "take_rate_bottom_third": {
+   "value": 0.23076923076923078,
+   "rank": 5,
+   "n": 30
+  },
+  "ec1_lhb": {
+   "value": 0.23123123123123124,
+   "rank": 2,
+   "n": 30
+  },
+  "ch_usage": {
+   "value": 0.16277495769881556,
+   "rank": 16,
+   "n": 30
+  }
+ },
+ "pool_n": 30,
+ "inherited_uc64": {
+  "ch_share_thru_0704": 0.1263989466754443,
+  "ch_share_from_0705": 0.2012534818941504,
+  "ch_vs_lhb_woba_thru_0704": 0.192,
+  "ch_vs_lhb_woba_from_0705": 0.311,
+  "lift_ch_kc_lhb": 1.813676007544264,
+  "lift_ch_kc_lhb_n": 535,
+  "lift_ch_kc_lhb_lo": 0.1633383949473235,
+  "lift_ch_kc_lhb_hi": 3.251805212965913
+ },
+ "lineage": {
+  "dp_uc64_kernel.py": "32a83b8491dd628e3d44504a01dd25af9a30ed336a4ffa570c885889b9cf5390",
+  "dp_uc63_kernel.py": "c4c0eea4ead24fa992c2e3239750160509e71fc6d8ba1564d8552e43d4608e41",
+  "dp_uc62_kernel.py": "2adc60059cfaebd242b3f204d80e715048b51481b6689ebb98e67cce2605cab6",
+  "dp_uc53_kernel.py": "03d7e3805240c3c73feb51e2869686b82310b0d92b92c38ac1be2110a24aaead",
+  "recap_viz.py": "e6c9436a1beb77881fb8c03bb2788b288ef1380079ffaac0487cbbf7ad54980b",
+  "dp_uc52_kernel.py": "3667f8028acd9974412d2d1a64cda3c6c335e7495f9d803a4b8cb29afebaa284",
+  "cumulative_metric.py": "a28887406d98880993baa67aca5b3246db23e99615f3ffab28b1fb4ddf526365",
+  "dp_uc51_kernel.py": "4845bae228615bf2322532287015712f3b5235252f20c2f82929d53d70b0f555",
+  "dp_uc49_kernel.py": "a4ad5191a6537f3a64de8cd1e9adb4b794d24fcb3e606bc8319a08e08e795f60",
+  "dp_uc50_kernel.py": "8084cb172d0cf56089ebcdbe3e7d01aa2dfdcd60db3d65e737d0cfb4a7499463",
+  "dp_uc48_kernel.py": "0f63857a103253ef2675190b383e064237a5e3d3c84be9fafdd67d55ecb21d32",
+  "dp_uc44_kernel.py": "a2c119096db24fdbfca4ca7f79b9dcb32c379d6f1ec9566aa7376837711582e3",
+  "barrel_rate.py": "6282f090394aaef89101085ede5fae4b77c4663da95ed4274fadbc0e455a185c"
+ },
+ "runtime_s": 2.8
+}
