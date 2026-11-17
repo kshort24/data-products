@@ -1,0 +1,44 @@
+id,check,independent,receipt,tol,result
+V01,career regular-season pitches,30079.0,30079.0,0.0,PASS
+V02,2026 regular-season pitches,2955.0,2955.0,0.0,PASS
+V03,"pitching rows named 'Nola, Aaron' map to one id (EN-3: batting rows carry the hitter's name)",1.0,1.0,0.0,PASS
+V04,2026 strikeouts (REC-1),177.0,177.0,0.0,PASS
+V05,2026 walks + IBB (REC-1),59.0,59.0,0.0,PASS
+V06,2026 starts (distinct games),33.0,33.0,0.0,PASS
+V07,2026 K% (house PA rule),0.238,0.238,0.0011,PASS
+V08,2026 HR/PA,0.05,0.05,0.0011,PASS
+V09,2026 whiff per swing,0.27052785923753664,0.2705278592375366,0.002,PASS
+V10,2026 CSW,0.29780033840947545,0.2978003384094754,0.0005,PASS
+V11,2026 xwOBA (XW-1 by direct sum),0.3145675675675676,0.3145675675675676,0.0006,PASS
+V12,SQ-1 windows k=2,22251.0,22251.0,0.0,PASS
+V13,SQ-1 windows k=3,15342.0,15342.0,0.0,PASS
+V14,SQ-1 windows k=4,9528.0,9528.0,0.0,PASS
+V20,SQ-2 lift SI-CH vs RHB (career) — note: receipt mean over non-null rv windows,3.2,3.2,0.06,PASS
+V21,SQ-2 lift SI-FF vs RHB (career) — note: receipt mean over non-null rv windows,2.34,2.34,0.06,PASS
+V22,SQ-2 lift CH-KC vs LHB (career) — note: receipt mean over non-null rv windows,1.81,1.81,0.06,PASS
+V23,SQ-2 lift CH-FF vs RHB (career) — note: receipt mean over non-null rv windows,-2.39,-2.39,0.06,PASS
+V24,SQ-2 lift SI-KC-KC vs LHB (career) — note: receipt mean over non-null rv windows,-7.26,-7.26,0.06,PASS
+V25,SQ-2 lift FF-KC-KC vs RHB (career) — note: receipt mean over non-null rv windows,2.2,2.2,0.06,PASS
+V26,SQ-2 lift FF-KC-FF-FF vs LHB (career) — note: receipt mean over non-null rv windows,7.13,7.13,0.06,PASS
+V30,SQ-3 ending xwOBA KC-KC vs LHB,0.2224,0.2224,0.0006,PASS
+V30n,SQ-3 ending PA count KC-KC vs LHB,335.0,335.0,0.0,PASS
+V31,SQ-3 ending xwOBA KC-KC vs RHB,0.1736,0.1736,0.0006,PASS
+V31n,SQ-3 ending PA count KC-KC vs RHB,437.0,437.0,0.0,PASS
+V32,SQ-3 ending xwOBA FF-KC-KC vs LHB,0.1789,0.1789,0.0006,PASS
+V32n,SQ-3 ending PA count FF-KC-KC vs LHB,131.0,131.0,0.0,PASS
+V33,SQ-3 ending xwOBA FF-KC-KC vs RHB,0.1544,0.1544,0.0006,PASS
+V33n,SQ-3 ending PA count FF-KC-KC vs RHB,132.0,132.0,0.0,PASS
+V34,SQ-3 ending xwOBA CH-FF vs RHB,0.396,0.396,0.0006,PASS
+V34n,SQ-3 ending PA count CH-FF vs RHB,117.0,117.0,0.0,PASS
+V35,SQ-3 ending xwOBA SI-SI vs LHB,0.3659,0.3659,0.0006,PASS
+V35n,SQ-3 ending PA count SI-SI vs LHB,146.0,146.0,0.0,PASS
+V40,SQ-4 rankable count,176.0,176.0,0.0,PASS
+V41,SQ-4 clear count,28.0,28.0,0.0,PASS
+V42,SQ-5 verdicts reproduce from filed bar,124.0,124.0,0.0,PASS
+V43,"SQ-6 GJSD 2023-26 R vs S, LHB",0.0253,0.0253,0.0002,PASS
+V44,PI-1 2026 H(next | side),2.1715,2.1715,0.0002,PASS
+V45,report has no nan / None / FILL tokens (word-bounded),0.0,0.0,0.0,PASS
+V46,report figures exist,10.0,10.0,0.0,PASS
+V47,visual audit V1-V7 all PASS / N-A / registered exception,1.0,1.0,0.0,PASS
+V48,DQ scorecard has 0 FAIL,0.0,0.0,0.0,PASS
+V49,dashboard written,1.0,1.0,0.0,PASS

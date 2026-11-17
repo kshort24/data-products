@@ -1,0 +1,30 @@
+check,result,detail,severity
+anchor,PASS,2026-10-01,BLOCK
+entity_lock_O26,PASS,id rows == name rows == 31077,BLOCK
+dedup,PASS,"0 duplicate (game_pk, at_bat, pitch)",BLOCK
+hoffman_guard,PASS,"{'Hoffman, Nolan': [676510], 'Nola, Aaron': [605400]}",BLOCK
+cde_delta_run_exp,PASS,22.0 null of 30079,WARN
+cde_lsa_on_bip,PASS,43.0 untracked of 5164 BIP,WARN
+cde_fielder_2,PASS,0 null,WARN
+REC-1 strikeouts,PASS,log 177 vs public 177 (exact),WARN
+REC-1 walks (house nresults: events == 'walk'),WARN,"log 57 vs public 59 (house rule excludes 2 IBB (registered, not a defect))",WARN
+REC-1 walks + intent_walk,PASS,log 59 vs public 59 (exact),WARN
+REC-1 outs (OU-1 events) vs IP x 3,WARN,log 517 vs public 526 (OU-1 blind spot: outs on no-event rows),WARN
+REC-1 outs (inning-state reconstruction) vs IP x 3,WARN,log 524 vs public 526 (residual 2 outs (0.4%) after reconstruction),WARN
+REC-1 games started,PASS,log 33 vs public 33 (exact),WARN
+REC-1 games,PASS,log 33 vs public 33 (exact),WARN
+PT-H SL tag,INFO,"19 SL rows kept as tagged: [{'game_year': 2026, 'n': 19, 'velo': 83.1, 'ivb_in': -0.8, 'hb_in': 3.6, 'spin': 2322.7}]",INFO
+seasons_rows,PASS,12,BLOCK
+ASB SD-2,PASS,no games inside the break window,BLOCK
+catcher name 592663,PASS,"Realmuto, J.T.",WARN
+catcher name 596117,PASS,"Stubbs, Garrett",WARN
+catcher name 665561,PASS,"Marchán, Rafael",WARN
+SQ-0 vs SQ-1 token order,PASS,1.0000 of PAs identical,BLOCK
+PA ends,INFO,7767 batter PAs; non-PA terminal rows (pickoff/CS) excluded: 20,INFO
+SQ-1 k=2 XX windows dropped,INFO,25,INFO
+SQ-2 k=2 baseline join,PASS,0 unmatched,BLOCK
+SQ-1 k=3 XX windows dropped,INFO,21,INFO
+SQ-2 k=3 baseline join,PASS,0 unmatched,BLOCK
+SQ-1 k=4 XX windows dropped,INFO,14,INFO
+SQ-2 k=4 baseline join,PASS,0 unmatched,BLOCK
+SQ-2 centering k=2,PASS,mean lift 0.000 runs/100 (≈0 expected; first pitches excluded from windows),INFO

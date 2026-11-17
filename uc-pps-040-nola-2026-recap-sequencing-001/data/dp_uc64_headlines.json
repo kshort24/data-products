@@ -1,0 +1,64 @@
+{
+ "uc": "uc-pps-040",
+ "build": "dp_uc64",
+ "version": "1.0.0",
+ "anchor": "2026-10-01",
+ "lineage": {
+  "dp_uc63_kernel.py": "c4c0eea4ead24fa992c2e3239750160509e71fc6d8ba1564d8552e43d4608e41",
+  "dp_uc62_kernel.py": "2adc60059cfaebd242b3f204d80e715048b51481b6689ebb98e67cce2605cab6",
+  "dp_uc53_kernel.py": "03d7e3805240c3c73feb51e2869686b82310b0d92b92c38ac1be2110a24aaead",
+  "recap_viz.py": "e6c9436a1beb77881fb8c03bb2788b288ef1380079ffaac0487cbbf7ad54980b",
+  "dp_uc52_kernel.py": "3667f8028acd9974412d2d1a64cda3c6c335e7495f9d803a4b8cb29afebaa284",
+  "cumulative_metric.py": "a28887406d98880993baa67aca5b3246db23e99615f3ffab28b1fb4ddf526365",
+  "dp_uc51_kernel.py": "4845bae228615bf2322532287015712f3b5235252f20c2f82929d53d70b0f555",
+  "dp_uc49_kernel.py": "a4ad5191a6537f3a64de8cd1e9adb4b794d24fcb3e606bc8319a08e08e795f60",
+  "dp_uc50_kernel.py": "8084cb172d0cf56089ebcdbe3e7d01aa2dfdcd60db3d65e737d0cfb4a7499463",
+  "dp_uc48_kernel.py": "0f63857a103253ef2675190b383e064237a5e3d3c84be9fafdd67d55ecb21d32",
+  "dp_uc44_kernel.py": "a2c119096db24fdbfca4ca7f79b9dcb32c379d6f1ec9566aa7376837711582e3",
+  "barrel_rate.py": "6282f090394aaef89101085ede5fae4b77c4663da95ed4274fadbc0e455a185c"
+ },
+ "frame": {
+  "career_pitches": 30079,
+  "career_pa": 7767,
+  "pitches_2026": 2955,
+  "pa_2026": 745,
+  "starts_2026": 33,
+  "wc_pitches": 38
+ },
+ "season_2026": {
+  "woba": 0.343,
+  "xwoba": 0.3145675675675676,
+  "krate": 0.238,
+  "bbrate": 0.077,
+  "hr_rate": 0.05,
+  "whiff_rate": 0.27052785923753664,
+  "chase_rate": 0.333,
+  "csw_rate": 0.29780033840947545,
+  "rv100": -0.753632043448744,
+  "ba": 0.261,
+  "slg": 0.482,
+  "fpsr": 0.6407506702412868
+ },
+ "halves": {
+  "1H": {
+   "woba": 0.355,
+   "xwoba": 0.3180496453900709,
+   "krate": 0.239,
+   "bbrate": 0.073,
+   "pa": 426
+  },
+  "2H": {
+   "woba": 0.327,
+   "xwoba": 0.3099211356466877,
+   "krate": 0.235,
+   "bbrate": 0.082,
+   "pa": 319
+  }
+ },
+ "windows": {
+  "2": 22251,
+  "3": 15342,
+  "4": 9528
+ },
+ "runtime_s": 27.7
+}

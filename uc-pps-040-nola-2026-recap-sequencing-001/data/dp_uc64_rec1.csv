@@ -1,0 +1,8 @@
+item,log,public,match
+strikeouts,177,177,True
+walks (house nresults: events == 'walk'),57,59,False
+walks + intent_walk,59,59,True
+outs (OU-1 events) vs IP x 3,517,526,False
+outs (inning-state reconstruction) vs IP x 3,524,526,False
+games started,33,33,True
+games,33,33,True

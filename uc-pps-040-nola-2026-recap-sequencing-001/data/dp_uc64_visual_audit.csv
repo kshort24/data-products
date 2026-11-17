@@ -1,0 +1,11 @@
+figure,V1,V2,V3,V4,V5,V6,V7
+f1_context,PASS,PASS,PASS,N-A,PASS,PASS,PASS
+f2_career,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+f3_starts,PASS,PASS,PASS,N-A,PASS,PASS,PASS
+f4_pivot,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+f5_lift_grid,PASS,"EXCEPTION (comparison inside the measure: same pitch, same count, same side)",N-A,N-A,PASS,PASS,PASS
+f6_ranked,PASS,PASS,PASS,N-A,PASS,PASS,PASS
+f7_endings,PASS,PASS,PASS,N-A,PASS,PASS,PASS
+f8_eras,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+f9_battery,PASS,PASS,N-A,N-A,PASS,PASS,PASS
+s1_predictability,PASS,PASS,N-A,N-A,PASS,PASS,PASS
