@@ -1,0 +1,18 @@
+id,rule,status,evidence
+DQ-01,entity lock: id rows == name rows (O-26),PASS,944 == 944 (asserted in K64.subject_frame)
+DQ-02,dedup key unique in client frame,PASS,0 dupes
+DQ-03,FR-1 client frame game types,WARN,"{'R': 871, 'S': 73} - spring rows excluded from every grade"
+DQ-04,anchor: max game_date <= 2026-10-01,PASS,2026-10-01
+DQ-05,pitch_type non-null,WARN,4 null
+DQ-06,pfx / plate location non-null,WARN,16
+DQ-07,"zone non-null (chase / in-zone denominators, D-7)",WARN,4
+DQ-08,BIP launch_speed tracked (O-8),PASS,0 of 140 untracked
+DQ-09,wOBA weights joined for 2026,PASS,Season 2026 row
+DQ-10,"subject in CS-A (RP-1 reliever, >= 150 pitches)",PASS,starts 0 of 46 games
+DQ-11,CW-1 endpoints == house nresults / XW-1 (all + by stand),PASS,"asserted in cumulative_frame(reconcile=, tol=1e-9)"
+DQ-12,CU-1 final shares == pitch_type value_counts,PASS,final appearance
+DQ-13,D-1/D-2 whiff inner join (zero-whiff cells drop to NaN),PASS,0 stand x pitch cells
+DQ-14,AAA tier kept separate (no blend),PASS,115 AAA rows in headlines only
+DQ-15,CS-C excludes subject from its own pool,PASS,is_subject filtered before percentile
+DQ-16,"house PA rule (events not null, not pickoff_1b; IBB = PA not walk)",PASS,IBB in frame: 1
+DQ-17,AB-1 automatic-ball rows (no pitch thrown; pitch_type and zone null),WARN,"4 rows = a 4-pitch intentional walk on 2026-06-22; K44 chase_rate counts them in-zone (D-7, June zone +1.0 pt); excluded from CU-1 and pitch-type cells; K44 pitch_mix usage keeps them in its denominator"

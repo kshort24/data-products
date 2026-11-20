@@ -1,0 +1,35 @@
+id,check,recomputed,published,tol,status
+V01,"pitches (regular season, id-locked)",871,871.0,0.0,PASS
+V02,outings,46,46,0.0,PASS
+V03,PA,223,223.0,0.0,PASS
+V04,wOBA (FanGraphs weights / PA),0.31244843049327353,0.312,0.0015,PASS
+V05,SLG,0.43005181347150256,0.43,0.0015,PASS
+V06,K%,0.2645739910313901,0.265,0.0015,PASS
+V07,BB% (IBB excluded from walks),0.08520179372197309,0.085,0.0015,PASS
+V08,whiff% (whiffs / swings),0.2342857142857143,0.2342857142857143,0.0015,PASS
+V09,chase% (swings out of zone / pitches out of zone),0.25675675675675674,0.257,0.0015,PASS
+V10,barrel% (launch_speed_angle == 6 / BIP),0.1,0.1,0.0015,PASS
+V11,hard-hit% (EV >= 95 / BIP),0.3357142857142857,0.3357142857142857,0.0015,PASS
+V12L,wOBA vs LHB,0.3094095238095238,0.309,0.0015,PASS
+V13L,K% vs LHB,0.2857142857142857,0.286,0.0015,PASS
+V12R,wOBA vs RHB,0.3151525423728814,0.315,0.0015,PASS
+V13R,K% vs RHB,0.2457627118644068,0.246,0.0015,PASS
+V14,SI share of strikeouts (HP-07),0.5084745762711864,0.5084745762711864,1e-09,PASS
+V15,FC to LHB on inner third (plate_x >= 0.277) (HP-05),0.4172661870503597,0.4172661870503597,1e-09,PASS
+V16,June wOBA (HP-08),0.44052,0.441,0.0015,PASS
+V17,"June zone rate (pitches minus OOZ / pitches, K44 D-7 rule)",0.5208333333333333,0.521,0.0015,PASS
+V18,Sep FC share (HP-09),0.384,0.384,1e-09,PASS
+V19,Sep ST share vs RHB (HP-09),0.22413793103448276,0.22413793103448276,1e-09,PASS
+V20,"ST share vs LHB, April (report §6)",0.25,0.25,1e-09,PASS
+V21-1,stint 1 first-pitch strike%,0.544,0.544,0.0015,PASS
+V21-2,stint 2 first-pitch strike%,0.6428571428571429,0.6428571428571429,0.0015,PASS
+V22,CW-1 final wOBA (All) == headline,0.3124484304932735,0.312,0.0015,PASS
+V23,CU-1 final ST share vs LHB == raw share,0.1531100478468899,0.15311004784688995,1e-09,PASS
+V24,CS-A size excluding subject (independent RP-1),114,114,0.0,PASS
+V25,report prints '.312 wOBA',True,True,0.0015,PASS
+V26,report prints '26.5%',True,True,0.0015,PASS
+V27,report prints '10.0%',True,True,0.0015,PASS
+V28,report prints '.441',True,True,0.0015,PASS
+V29,report prints '6 of 46',True,True,0.0015,PASS
+V30,12 HP rows graded,12,12,0.0,PASS
+V31,"visual audits: 11 figures, no V-standard FAIL",11,11,0.0,PASS
