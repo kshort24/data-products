@@ -1,0 +1,12 @@
+rule,status,detail
+LIN-1,PASS,26 files pinned (K61 chain + K48 + K62 + parent K37)
+ANC-1,PASS,max 2026 game_date 2026-09-27
+ENT-1,PASS,"id 664761; 13,126 rows; 0 dup keys"
+REG-1,PASS,"regular season only; excluded {'2022_D': 53, '2022_F': 25, '2022_L': 64, '2022_W': 75, '2023_D': 67, '2023_F': 28, '2023_L': 89, '2024_D': 39, '2025_D': 60, '2026_E': 6, '2026_F': 41, '2026_S': 123}"
+SEA-1,PASS,"seasons [2020, 2021, 2022, 2023, 2024, 2025, 2026]"
+REC-1,PASS,"log 0.2487/0.3148/0.3827 (141 H / 567 AB), 15 HR, 29 2B vs CI-1 .249/.315/.383, 15 HR, 29 2B (TP-1 applied)"
+AB-1,PASS,153 games with a PA + 2 defensive-only = 155 vs CI-1 155 G
+REC-2,PASS,UC37 windows on today's log: PA 374/135 + TP-1 rows 3/0 = UC37 377/135; wOBA 0.280/0.374 (UC37 0.278/0.374)
+SPR-1,PASS,723 line drives on the spray frame == CR-1 count 723; 0 without hc
+GT-1,PASS,"1,842 regular-season games 2015-26; 0 ties"
+GW-1,PASS,927 deciding PAs for 927 wins (one per win)

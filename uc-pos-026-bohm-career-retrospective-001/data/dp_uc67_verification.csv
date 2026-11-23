@@ -1,0 +1,52 @@
+family,check,status,detail
+A,plate_apps by season = raw,PASS,"{2020: 180, 2021: 417, 2022: 631, 2023: 610, 2024: 604, 2025: 504, 2026: 629}"
+A,hits by season = raw,PASS,"{2020: 54, 2021: 94, 2022: 164, 2023: 153, 2024: 155, 2025: 133, 2026: 141}"
+A,hrs by season = raw,PASS,"{2020: 4, 2021: 7, 2022: 13, 2023: 20, 2024: 15, 2025: 11, 2026: 15}"
+A,doubles by season = raw,PASS,"{2020: 11, 2021: 15, 2022: 24, 2023: 31, 2024: 44, 2025: 18, 2026: 29}"
+A,LD share 2026 = raw (tracked BIP),PASS,120/484
+A,2026 LD share lowest of 7,PASS,"{2020: 0.254, 2021: 0.2821, 2022: 0.2716, 2023: 0.2851, 2024: 0.2574, 2025: 0.2732, 2026: 0.2479}"
+A,"2026 AB and hits (REC-1 basis, TP-1)",PASS,AB 567
+B,window PA post_audit,PASS,raw 120 vs 120
+B,window PA pre_break,PASS,raw 374 vs 374
+B,window PA uc37_post,PASS,raw 135 vs 135
+B,window BA post_audit,PASS,raw 0.2524 vs 0.252427
+B,window BA pre_break,PASS,raw 0.2153 vs 0.215339
+B,window BA uc37_post,PASS,raw 0.3360 vs 0.336
+B,post-audit hard-hit (tracked BIP),PASS,raw 0.5000 vs 0.5
+C,one deciding PA per win,PASS,927 vs 927 wins
+C,Bohm GW-1 2020-26 = 63 and by season,PASS,"{np.int64(2020): 4, np.int64(2021): 7, np.int64(2022): 14, np.int64(2023): 9, np.int64(2024): 8, np.int64(2025): 10, np.int64(2026): 11}"
+C,"Bohm #2, Schwarber (656941) #1",PASS,"{np.int64(656941): 69, np.int64(664761): 63, np.int64(547180): 55}"
+C,"Bohm 3,586 PA 2020-26",PASS,3575
+C,BA w/ RISP .314 and #1 of regulars,PASS,0.3139; regulars n = 11
+D,PR-1 verdicts re-scored,PASS,"{'F1': 'PRESENT', 'F2': 'CONTRA', 'F3': 'PRESENT', 'F4': 'WEAK', 'F5': 'WEAK', 'L1': 'PRESENT', 'L2': 'PRESENT', 'L3': 'ABSENT', 'R1': 'WEAK', 'R2': 'PRESENT', 'R3': 'ABSENT'}"
+D,PR-1 signatures and directions match the filed BID,PASS,directions per BID table
+D,PR-1 filed before T1 (BID stamp precedes kernel),PASS,file mtimes
+D,G-LD refit (corr²) and gate fails,PASS,"R² 0.0068, n 122"
+D,"RS-1 = 4 of 7, fails",PASS,"{2020: 0.098, 2021: -0.016, 2022: -0.014, 2023: 0.052, 2024: 0.061, 2025: -0.01, 2026: 0.137}"
+E,'.374' in report and dashboard,PASS,.374
+E,'.323' in report and dashboard,PASS,.323
+E,'.308' in report and dashboard,PASS,.308
+E,'63' in report and dashboard,PASS,63
+E,'.314' in report and dashboard,PASS,.314
+E,'0.007' in report and dashboard,PASS,0.007
+E,'50.0%' in report and dashboard,PASS,50.0%
+E,'15.3%' in report and dashboard,PASS,15.3%
+E,'110' in report and dashboard,PASS,110
+E,figure exists dp_uc67_f2_windows.png,PASS,out/dp_uc67_f2_windows.png
+E,figure exists dp_uc67_f1_career_woba.png,PASS,out/dp_uc67_f1_career_woba.png
+E,figure exists dp_uc67_f3_battedball_vs_woba.png,PASS,out/dp_uc67_f3_battedball_vs_woba.png
+E,figure exists dp_uc67_f5_platoon_rhp_breaking.png,PASS,out/dp_uc67_f5_platoon_rhp_breaking.png
+E,figure exists dp_uc67_f7_gw1.png,PASS,out/dp_uc67_f7_gw1.png
+E,figure exists dp_uc67_f6_risp.png,PASS,out/dp_uc67_f6_risp.png
+E,figure exists dp_uc67_f8_profile_drift.png,PASS,out/dp_uc67_f8_profile_drift.png
+E,PDF newer than its markdown,PASS,dp_uc67_bohm_career_retrospective_report.pdf
+E,"plotly by pinned CDN, not inlined",PASS,193603
+E,V1-V7 clean on all figures,PASS,8 figures
+E,same bottom-line call in report and dashboard,PASS,
+F,no medical inference,PASS,regex
+F,no GAP markers,PASS,
+F,RBI only as a carry-in,PASS,4
+F,carry-ins CI-1..CI-6 labelled,PASS,
+F,9 HP rows graded,PASS,"['CONFIRMED', 'CONFIRMED', 'PARTLY', 'CONFIRMED', 'CONFIRMED', 'CONFIRMED', 'CONFIRMED', 'CONFIRMED', 'NOT CONFIRMED (parent defect)']"
+F,DQ has no FAIL,PASS,{'PASS': 11}
+F,lineage pins hold,PASS,"{'dp_uc61_kernel.py': '0466c66e4ab42818', 'dp_uc48_kernel.py': '0f63857a103253ef', 'dp_uc62_kernel.py': '2adc60059cfaebd2', 'dp_uc37_kernel.py': '396c4600cb6f9b65'}"

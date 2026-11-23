@@ -1,0 +1,9 @@
+figure,V1,V2,V3,V4,V5,V6,V7,source
+f1_career_woba,PASS,PASS,PASS,N-A,PASS,PASS,PASS,season_panel;hitter_pool_kp1;headlines.kp1_2026
+f2_windows,PASS,PASS,PASS,N-A,PASS,PASS,PASS,windows_2026;season_panel;pr1_ledger
+f3_battedball_vs_woba,PASS,PASS,N-A,PASS,PASS,PASS,PASS,hitter_pool_kp1;g_ld_fit.json
+f4_ld_spray,PASS,PASS,N-A,N-A,PASS,PASS,PASS,ld_spray;ld_by_year;field_outline.json
+f5_platoon_rhp_breaking,PASS,PASS,PASS,N-A,PASS,PASS,PASS,platoon_by_year;rhp_breaking_by_year;pr1_ledger
+f6_risp,PASS,PASS,PASS,N-A,PASS,PASS,PASS,season_panel;phillies_leaderboard_2020_26;headlines.rs1
+f7_gw1,PASS,PASS,N-A,N-A,PASS,PASS,PASS,phillies_leaderboard_2020_26;gw1_bohm_log;headlines.gw1
+f8_profile_drift,PASS,PASS,PASS,N-A,PASS,PASS,PASS,season_panel;hitter_pool_kp1

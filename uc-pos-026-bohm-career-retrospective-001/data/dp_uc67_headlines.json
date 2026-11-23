@@ -1,0 +1,564 @@
+{
+ "excluded_non_regular": {
+  "2022_D": 53,
+  "2022_F": 25,
+  "2022_L": 64,
+  "2022_W": 75,
+  "2023_D": 67,
+  "2023_F": 28,
+  "2023_L": 89,
+  "2024_D": 39,
+  "2025_D": 60,
+  "2026_E": 6,
+  "2026_F": 41,
+  "2026_S": 123
+ },
+ "tp1": {
+  "rows": {
+   "2024_batting": 15,
+   "2024_pitching": 9,
+   "2025_batting": 13,
+   "2025_pitching": 10,
+   "2026_batting": 8,
+   "2026_pitching": 10
+  },
+  "bohm": 4,
+  "bohm_2026": 3,
+  "bohm_pre_break": 3
+ },
+ "rec1": {
+  "log_hits": 141,
+  "at_bats": 567,
+  "log_line": [
+   0.248677,
+   0.314785,
+   0.382716
+  ],
+  "ci_line": [
+   0.249,
+   0.315,
+   0.383
+  ]
+ },
+ "games": {
+  "with_pa": 153,
+  "fielded": 154,
+  "appeared": 155,
+  "defensive_only": 2,
+  "at_3b": 106,
+  "at_1b": 50
+ },
+ "uc37_printed": {
+  "pre_hard_hit": 0.407666,
+  "post_hard_hit": 0.469027
+ },
+ "hp01": {
+  "client_rows_2026": 11,
+  "client_games_2026": 11,
+  "gw1_2026": 11,
+  "client_only_games": [],
+  "gw1_only_games": [],
+  "client_rows_all": 63,
+  "gw1_all": 63,
+  "client_nonterminal_rows_2026": 0
+ },
+ "pr1": {
+  "families": {
+   "H-F": "MIXED",
+   "H-LD": "SUPPORTED",
+   "H-R": "UNSUPPORTED"
+  },
+  "call_turnaround": "mixed: faded on wOBA, in-zone whiff; held elsewhere",
+  "ld_angle_good": false,
+  "call_righties": "results, not process",
+  "g_ld": {
+   "intercept": 0.2975701376550081,
+   "slope": 0.09241765936549791,
+   "r2": 0.006832572532500469,
+   "n": 122,
+   "passes": false
+  },
+  "verdicts": {
+   "F1": "PRESENT",
+   "F2": "CONTRA",
+   "F3": "PRESENT",
+   "F4": "WEAK",
+   "F5": "WEAK",
+   "L1": "PRESENT",
+   "L2": "PRESENT",
+   "L3": "ABSENT",
+   "R1": "WEAK",
+   "R2": "PRESENT",
+   "R3": "ABSENT"
+  }
+ },
+ "rs1": {
+  "seasons_positive": 4,
+  "seasons": 7,
+  "passes": false,
+  "by_year": {
+   "2020": 0.097709,
+   "2021": -0.015721,
+   "2022": -0.014288,
+   "2023": 0.052167,
+   "2024": 0.060649,
+   "2025": -0.010026,
+   "2026": 0.137061
+  }
+ },
+ "kp1_2026": {
+  "woba": {
+   "value": 0.308451,
+   "rank": 110,
+   "percentile": 50,
+   "n": 220
+  },
+  "ld_rate": {
+   "value": 0.247934,
+   "rank": 108,
+   "percentile": 50,
+   "n": 220
+  },
+  "whiff_rate": {
+   "value": 0.165725,
+   "rank": 17,
+   "percentile": 92,
+   "n": 220
+  },
+  "krate": {
+   "value": 0.139905,
+   "rank": 13,
+   "percentile": 94,
+   "n": 220
+  },
+  "hard_hit_rate": {
+   "value": 0.438017,
+   "rank": 46,
+   "percentile": 79,
+   "n": 220
+  },
+  "chase_rate": {
+   "value": 0.25964,
+   "rank": 61,
+   "percentile": 72,
+   "n": 220
+  }
+ },
+ "kp1_pool_def": "Phillies hitter-seasons 2015-26, regular season, >= 50 PA (K54 hitter_seasons), n = 220",
+ "leaders_2020_26": {
+  "pool": "Phillies hitters 2020-26, regular season, >= 1,000 PA (n = 11)",
+  "gw1": {
+   "value": 63,
+   "rank": 2,
+   "leader": "Schwarber, Kyle",
+   "leader_value": 69
+  },
+  "runs_on_watch": {
+   "value": 504,
+   "rank": 3
+  },
+  "pa": {
+   "value": 3575,
+   "rank": 2
+  },
+  "ba_risp": {
+   "value": 0.313912,
+   "rank": 1,
+   "risp_pa": 968
+  },
+  "risp_lift": {
+   "value": 0.043917,
+   "rank": 1
+  }
+ },
+ "gw1": {
+  "career": 63,
+  "by_year": {
+   "2020": 4,
+   "2021": 7,
+   "2022": 14,
+   "2023": 9,
+   "2024": 8,
+   "2025": 10,
+   "2026": 11
+  },
+  "mechanism": {
+   "base hit": 31,
+   "home run": 16,
+   "sac fly": 7,
+   "out in play / other": 6,
+   "walk / HBP": 2,
+   "error": 1
+  },
+  "risp_share": 0.809524,
+  "team_wins_2020_26": 566
+ },
+ "season_panel": {
+  "2020": {
+   "plate_apps": 180,
+   "games_with_pa": 44,
+   "ba": 0.3375,
+   "obp": 0.4,
+   "slg": 0.48125,
+   "ops": 0.88125,
+   "woba": 0.381172,
+   "xwoba": 0.35445,
+   "woba_sc": 0.390833,
+   "luck_gap": 0.036383,
+   "krate": 0.2,
+   "bbrate": 0.088889,
+   "whiff_rate": 0.251592,
+   "whiff_rate_in_zone": 0.165939,
+   "chase_rate": 0.25,
+   "hard_hit_rate": 0.468254,
+   "barrel_rate": 0.103175,
+   "ld_rate": 0.253968,
+   "gb_rate": 0.539683,
+   "fb_rate": 0.198413,
+   "pu_rate": 0.007937,
+   "pull_air_rate": 0.039683,
+   "hrs": 4,
+   "doubles": 11,
+   "runs_on_watch": 26,
+   "row_per_pa": 0.144444,
+   "plate_apps_risp": 52,
+   "ba_risp": 0.452381,
+   "woba_risp": 0.450654,
+   "woba_nonrisp": 0.352945,
+   "risp_lift": 0.097709
+  },
+  "2021": {
+   "plate_apps": 417,
+   "games_with_pa": 115,
+   "ba": 0.247368,
+   "obp": 0.304556,
+   "slg": 0.342105,
+   "ops": 0.646662,
+   "woba": 0.285043,
+   "xwoba": 0.313289,
+   "woba_sc": 0.301566,
+   "luck_gap": -0.011723,
+   "krate": 0.266187,
+   "bbrate": 0.074341,
+   "whiff_rate": 0.266504,
+   "whiff_rate_in_zone": 0.234007,
+   "chase_rate": 0.260163,
+   "hard_hit_rate": 0.494505,
+   "barrel_rate": 0.065934,
+   "ld_rate": 0.282051,
+   "gb_rate": 0.527473,
+   "fb_rate": 0.164835,
+   "pu_rate": 0.025641,
+   "pull_air_rate": 0.095238,
+   "hrs": 7,
+   "doubles": 15,
+   "runs_on_watch": 52,
+   "row_per_pa": 0.1247,
+   "plate_apps_risp": 112,
+   "ba_risp": 0.26,
+   "woba_risp": 0.273545,
+   "woba_nonrisp": 0.289266,
+   "risp_lift": -0.015721
+  },
+  "2022": {
+   "plate_apps": 631,
+   "games_with_pa": 152,
+   "ba": 0.279387,
+   "obp": 0.313788,
+   "slg": 0.396934,
+   "ops": 0.710721,
+   "woba": 0.309301,
+   "xwoba": 0.334554,
+   "woba_sc": 0.33,
+   "luck_gap": -0.004554,
+   "krate": 0.174326,
+   "bbrate": 0.047544,
+   "whiff_rate": 0.210705,
+   "whiff_rate_in_zone": 0.16129,
+   "chase_rate": 0.313875,
+   "hard_hit_rate": 0.430041,
+   "barrel_rate": 0.067901,
+   "ld_rate": 0.271605,
+   "gb_rate": 0.462963,
+   "fb_rate": 0.209877,
+   "pu_rate": 0.055556,
+   "pull_air_rate": 0.133745,
+   "hrs": 13,
+   "doubles": 24,
+   "runs_on_watch": 78,
+   "row_per_pa": 0.123613,
+   "plate_apps_risp": 155,
+   "ba_risp": 0.281481,
+   "woba_risp": 0.298523,
+   "woba_nonrisp": 0.312811,
+   "risp_lift": -0.014288
+  },
+  "2023": {
+   "plate_apps": 610,
+   "games_with_pa": 145,
+   "ba": 0.274194,
+   "obp": 0.32623,
+   "slg": 0.437276,
+   "ops": 0.763505,
+   "woba": 0.329305,
+   "xwoba": 0.344133,
+   "woba_sc": 0.336803,
+   "luck_gap": -0.00733,
+   "krate": 0.154098,
+   "bbrate": 0.067213,
+   "whiff_rate": 0.180927,
+   "whiff_rate_in_zone": 0.118987,
+   "chase_rate": 0.300181,
+   "hard_hit_rate": 0.417021,
+   "barrel_rate": 0.057447,
+   "ld_rate": 0.285106,
+   "gb_rate": 0.425532,
+   "fb_rate": 0.238298,
+   "pu_rate": 0.051064,
+   "pull_air_rate": 0.134043,
+   "hrs": 20,
+   "doubles": 31,
+   "runs_on_watch": 99,
+   "row_per_pa": 0.162295,
+   "plate_apps_risp": 171,
+   "ba_risp": 0.344371,
+   "woba_risp": 0.366848,
+   "woba_nonrisp": 0.314681,
+   "risp_lift": 0.052167
+  },
+  "2024": {
+   "plate_apps": 604,
+   "games_with_pa": 143,
+   "ba": 0.279783,
+   "obp": 0.32947,
+   "slg": 0.447653,
+   "ops": 0.777124,
+   "woba": 0.335291,
+   "xwoba": 0.345337,
+   "woba_sc": 0.344186,
+   "luck_gap": -0.001151,
+   "krate": 0.142384,
+   "bbrate": 0.062914,
+   "whiff_rate": 0.176471,
+   "whiff_rate_in_zone": 0.104922,
+   "chase_rate": 0.272201,
+   "hard_hit_rate": 0.455696,
+   "barrel_rate": 0.067511,
+   "ld_rate": 0.257384,
+   "gb_rate": 0.464135,
+   "fb_rate": 0.234177,
+   "pu_rate": 0.044304,
+   "pull_air_rate": 0.147679,
+   "hrs": 15,
+   "doubles": 44,
+   "runs_on_watch": 98,
+   "row_per_pa": 0.162252,
+   "plate_apps_risp": 170,
+   "ba_risp": 0.30137,
+   "woba_risp": 0.378871,
+   "woba_nonrisp": 0.318221,
+   "risp_lift": 0.060649
+  },
+  "2025": {
+   "plate_apps": 504,
+   "games_with_pa": 120,
+   "ba": 0.286638,
+   "obp": 0.331349,
+   "slg": 0.409483,
+   "ops": 0.740832,
+   "woba": 0.322274,
+   "xwoba": 0.334082,
+   "woba_sc": 0.340637,
+   "luck_gap": 0.006556,
+   "krate": 0.162698,
+   "bbrate": 0.05754,
+   "whiff_rate": 0.146313,
+   "whiff_rate_in_zone": 0.096923,
+   "chase_rate": 0.262967,
+   "hard_hit_rate": 0.463918,
+   "barrel_rate": 0.061856,
+   "ld_rate": 0.273196,
+   "gb_rate": 0.497423,
+   "fb_rate": 0.208763,
+   "pu_rate": 0.020619,
+   "pull_air_rate": 0.095361,
+   "hrs": 11,
+   "doubles": 18,
+   "runs_on_watch": 61,
+   "row_per_pa": 0.121032,
+   "plate_apps_risp": 138,
+   "ba_risp": 0.284553,
+   "woba_risp": 0.314993,
+   "woba_nonrisp": 0.325019,
+   "risp_lift": -0.010026
+  },
+  "2026": {
+   "plate_apps": 629,
+   "games_with_pa": 153,
+   "ba": 0.248677,
+   "obp": 0.314785,
+   "slg": 0.382716,
+   "ops": 0.697501,
+   "woba": 0.308451,
+   "xwoba": 0.326986,
+   "woba_sc": 0.320016,
+   "luck_gap": -0.00697,
+   "krate": 0.139905,
+   "bbrate": 0.076312,
+   "whiff_rate": 0.165725,
+   "whiff_rate_in_zone": 0.113307,
+   "chase_rate": 0.25964,
+   "hard_hit_rate": 0.438017,
+   "barrel_rate": 0.059917,
+   "ld_rate": 0.247934,
+   "gb_rate": 0.47314,
+   "fb_rate": 0.231405,
+   "pu_rate": 0.047521,
+   "pull_air_rate": 0.109504,
+   "hrs": 15,
+   "doubles": 29,
+   "runs_on_watch": 90,
+   "row_per_pa": 0.143084,
+   "plate_apps_risp": 170,
+   "ba_risp": 0.347222,
+   "woba_risp": 0.408627,
+   "woba_nonrisp": 0.271566,
+   "risp_lift": 0.137061
+  }
+ },
+ "windows": {
+  "pre_break": {
+   "plate_apps": 374,
+   "games": 92,
+   "ba": 0.215339,
+   "obp": 0.278075,
+   "slg": 0.353982,
+   "woba": 0.280045,
+   "xwoba": 0.298324,
+   "xwobacon": 0.313199,
+   "hard_hit_rate": 0.407666,
+   "whiff_rate_in_zone": 0.119734,
+   "krate": 0.149733,
+   "woba_breaking": 0.189103,
+   "pa_breaking": 97,
+   "ld_rate": 0.240418,
+   "pa_risp": 92,
+   "ba_risp": 0.298701,
+   "runs_on_watch": 49,
+   "row_per_pa": 0.131016,
+   "first": "2026-03-26",
+   "last": "2026-07-12"
+  },
+  "uc37_post": {
+   "plate_apps": 135,
+   "games": 32,
+   "ba": 0.336,
+   "obp": 0.377778,
+   "slg": 0.488,
+   "woba": 0.374455,
+   "xwoba": 0.382582,
+   "xwobacon": 0.404124,
+   "hard_hit_rate": 0.469027,
+   "whiff_rate_in_zone": 0.067797,
+   "krate": 0.096296,
+   "woba_breaking": 0.339608,
+   "pa_breaking": 51,
+   "ld_rate": 0.247788,
+   "pa_risp": 42,
+   "ba_risp": 0.461538,
+   "runs_on_watch": 28,
+   "row_per_pa": 0.207407,
+   "first": "2026-07-16",
+   "last": "2026-08-22"
+  },
+  "post_audit": {
+   "plate_apps": 120,
+   "games": 29,
+   "ba": 0.252427,
+   "obp": 0.358333,
+   "slg": 0.349515,
+   "woba": 0.323275,
+   "xwoba": 0.353992,
+   "xwobacon": 0.364036,
+   "hard_hit_rate": 0.5,
+   "whiff_rate_in_zone": 0.152672,
+   "krate": 0.158333,
+   "woba_breaking": 0.29912,
+   "pa_breaking": 25,
+   "ld_rate": 0.27381,
+   "pa_risp": 36,
+   "ba_risp": 0.321429,
+   "runs_on_watch": 13,
+   "row_per_pa": 0.108333,
+   "first": "2026-08-24",
+   "last": "2026-09-27"
+  }
+ },
+ "_meta": {
+  "uc": "dp_uc67",
+  "version": "1.0.0",
+  "anchor": "2026-10-01",
+  "seasons": [
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "baseline": [
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "subject": 664761
+ },
+ "hp03": {
+  "lhp_2026": 0.3523645833333333,
+  "lhp_base": 0.3659747899159663,
+  "rhp_rank_low": 3,
+  "rhp_n": 7
+ },
+ "hp": {
+  "HP-01": {
+   "verdict": "CONFIRMED",
+   "result": "client 11 rows / 11 games vs GW-1 11; career 63 vs 63; 0 non-terminal-pitch rows"
+  },
+  "HP-02": {
+   "verdict": "CONFIRMED",
+   "result": "H-LD SUPPORTED (L1 PRESENT, L2 PRESENT, L3 ABSENT); G-LD R\u00b2 0.007 on n = 122"
+  },
+  "HP-03": {
+   "verdict": "PARTLY",
+   "result": "vs LHP 0.3524 vs bar 0.3510 (met); vs RHP 0.289 ranks 3 lowest of 7"
+  },
+  "HP-04": {
+   "verdict": "CONFIRMED",
+   "result": "HH 0.446 in [0.413, 0.522]; barrel 0.049 in [0.041, 0.086]; LD 0.251 vs 0.277"
+  },
+  "HP-05": {
+   "verdict": "CONFIRMED",
+   "result": "0.508 vs 0.488 = +2.0 pts"
+  },
+  "HP-06": {
+   "verdict": "CONFIRMED",
+   "result": "2026 0.237 (128 PA); lowest season = 2026 (0.237); xwOBA 2026 0.298 vs 2020-25 0.302"
+  },
+  "HP-07": {
+   "verdict": "CONFIRMED",
+   "result": "HH 0.430 rank 1 of 6; barrel 0.0600; LD 0.270 vs 0.243"
+  },
+  "HP-08": {
+   "verdict": "CONFIRMED",
+   "result": "22/29 = 0.759; rank 4 of 7 (1 = luckiest)"
+  },
+  "HP-09": {
+   "verdict": "NOT CONFIRMED (parent defect)",
+   "result": "4 of 6 completed seasons differ (2022: +64, 2023: +53, 2024: +15, 2025: +16); 2 exactly equal to that season's postseason PA"
+  }
+ }
+}

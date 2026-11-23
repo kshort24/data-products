@@ -1,0 +1,64 @@
+game_date,game_year,game_pk,inning,start_score,end_score,runs_for,runs_against,events,mechanism,risp,des
+2020-09-01,2020,631153,5,0,1,6,0,home_run,home run,False,Alec Bohm homers (2) on a fly ball to left center field.
+2020-09-03,2020,631146,10,5,6,6,5,sac_fly,sac fly,True,Alec Bohm out on a sacrifice fly to center fielder Victor Robles.   J.T. Realmuto scores.
+2020-09-08,2020,631149,7,4,6,6,5,single,base hit,True,Alec Bohm singles on a sharp line drive to left fielder Michael Chavis.   J.T. Realmuto scores.    Didi Gregorius scores.
+2020-09-18,2020,631122,6,7,8,8,7,single,base hit,True,Alec Bohm singles on a ground ball to second baseman Joe Panik.   Bryce Harper scores.  Missed catch error by pitcher Rafael Dolis.
+2021-04-04,2021,634617,8,1,2,2,1,single,base hit,True,Alec Bohm singles on a sharp line drive to center fielder Cristian Pache.   Rhys Hoskins scores.    Bryce Harper to 2nd.
+2021-04-05,2021,634606,8,2,4,5,3,fielders_choice,out in play / other,True,"Alec Bohm reaches on a fielder's choice, fielded by third baseman Luis Guillorme.   Rhys Hoskins scores.    Bryce Harper scores.    J.T. Realmuto to 3rd.    Alec Bohm to 2nd.  Throwing error by third baseman Luis Guillorme."
+2021-04-07,2021,634626,1,1,4,8,2,home_run,home run,True,Alec Bohm homers (1) on a fly ball to center field.   Bryce Harper scores.    J.T. Realmuto scores.
+2021-05-06,2021,634283,7,0,1,2,0,home_run,home run,False,Alec Bohm homers (4) on a fly ball to right center field.
+2021-07-08,2021,633397,2,0,1,8,0,strikeout,out in play / other,True,Alec Bohm strikes out swinging.  Didi Gregorius steals (2) 2nd base.  J.T. Realmuto steals (5) home.
+2021-07-10,2021,633344,2,1,3,11,2,home_run,home run,False,Alec Bohm homers (6) on a fly ball to left field.   Rhys Hoskins scores.
+2021-08-02,2021,633057,9,5,6,7,5,single,base hit,True,Alec Bohm singles on a line drive to left fielder Yadiel Hernandez.   Bryce Harper scores.    J.T. Realmuto to 3rd.
+2022-04-22,2022,661621,8,1,3,4,2,single,base hit,True,Alec Bohm singles on a sharp ground ball to right fielder Hunter Renfroe.   Bryce Harper scores.    Nick Castellanos scores.    J.T. Realmuto to 3rd.
+2022-04-26,2022,661567,4,3,4,10,3,single,base hit,True,Alec Bohm singles on a sharp line drive to right fielder Randal Grichuk.   J.T. Realmuto scores.
+2022-05-22,2022,661611,10,2,4,4,3,field_error,error,True,"Dodgers challenged (tag play), call on the field was upheld: Alec Bohm reaches on a fielding error by second baseman Max Muncy.   Garrett Stubbs scores.    Roman Quinn scores."
+2022-06-17,2022,662580,3,3,4,5,3,double,base hit,True,Alec Bohm doubles (9) on a sharp fly ball to right fielder Juan Soto.   Nick Castellanos scores.
+2022-07-08,2022,661136,6,0,1,2,0,home_run,home run,False,Alec Bohm homers (5) on a fly ball to center field.
+2022-07-09,2022,661137,9,0,1,1,0,sac_fly,sac fly,True,Alec Bohm out on a sacrifice fly to right fielder Tommy Edman.   Mickey Moniak scores.
+2022-07-17,2022,661373,4,0,1,4,0,double,base hit,False,Alec Bohm doubles (13) on a fly ball to right fielder Avisail Garcia.   J.T. Realmuto scores.
+2022-08-04,2022,661565,3,2,5,5,4,home_run,home run,True,Alec Bohm homers (8) on a fly ball to left center field.   Kyle Schwarber scores.    Rhys Hoskins scores.
+2022-08-07,2022,661558,3,1,2,13,1,walk,walk / HBP,True,Alec Bohm walks.   Nick Maton scores.    Kyle Schwarber to 3rd.    Rhys Hoskins to 2nd.
+2022-08-12,2022,662434,10,1,2,2,1,sac_fly,sac fly,True,Alec Bohm out on a sacrifice fly to right fielder Starling Marte.   Bryson Stott scores.
+2022-08-20,2022,661606,3,1,3,4,1,double,base hit,True,Alec Bohm doubles (19) on a sharp line drive to left fielder Mark Canha.   Nick Maton scores.    Kyle Schwarber scores.
+2022-08-24,2022,661605,3,5,6,7,5,single,base hit,True,Alec Bohm singles on a line drive to right fielder Aristides Aquino.   Matt Vierling scores.    Kyle Schwarber to 3rd.    Rhys Hoskins to 2nd.
+2022-09-11,2022,661592,7,5,7,7,5,home_run,home run,False,Alec Bohm homers (11) on a fly ball to right center field.    J.T. Realmuto scores.
+2022-10-01,2022,661098,3,2,4,8,2,home_run,home run,False,Alec Bohm homers (13) on a fly ball to left center field.   Bryce Harper scores.
+2023-04-10,2023,718633,3,3,5,15,3,single,base hit,True,Alec Bohm singles on a sharp line drive to left fielder Bryan De La Cruz.   Kyle Schwarber scores.    Nick Castellanos scores.
+2023-04-23,2023,718458,4,3,4,9,3,field_out,out in play / other,True,"Alec Bohm grounds out, shortstop Ezequiel Tovar to first baseman C.  J. Cron.   Nick Castellanos scores.    J.T. Realmuto to 3rd."
+2023-04-26,2023,718415,8,5,6,6,5,single,base hit,True,Alec Bohm singles on a ground ball to left fielder Jarred Kelenic.   Brandon Marsh scores.    J.T. Realmuto to 2nd.
+2023-05-24,2023,718043,10,5,6,6,5,single,base hit,True,Alec Bohm singles on a fly ball to right fielder Pavin Smith.   Dalton Guthrie scores.    Kyle Schwarber to 3rd.    Kody Clemens to 2nd.
+2023-06-13,2023,717775,1,3,4,15,3,field_out,out in play / other,True,"Alec Bohm grounds out, shortstop Geraldo Perdomo to first baseman Christian Walker.   J.T. Realmuto scores.    Bryson Stott to 2nd."
+2023-07-01,2023,717543,3,4,6,19,4,home_run,home run,False,Alec Bohm homers (8) on a fly ball to left center field.   J.T. Realmuto scores.
+2023-07-25,2023,717267,9,3,4,4,3,single,base hit,True,Alec Bohm singles on a ground ball to left fielder Austin Hays.   Bryson Stott scores.    J.T. Realmuto to 3rd.
+2023-09-22,2023,716481,10,4,5,5,4,single,base hit,True,Alec Bohm singles on a line drive to right fielder Jeff McNeil.   Trea Turner scores.    Bryce Harper to 2nd.
+2023-10-01,2023,716355,6,1,2,9,1,home_run,home run,False,Alec Bohm homers (20) on a fly ball to right field.
+2024-03-31,2024,745602,7,3,5,5,4,single,base hit,True,Alec Bohm singles on a line drive to left fielder Adam Duvall.   Kyle Schwarber scores.    Trea Turner scores.
+2024-04-08,2024,745194,10,3,4,5,3,double,base hit,True,Alec Bohm doubles (2) on a ground ball to left fielder Brendan Donovan.   Cristian Pache scores.    Bryce Harper to 3rd.
+2024-04-19,2024,745592,1,0,3,7,0,home_run,home run,True,Alec Bohm homers (2) on a fly ball to right center field.    Trea Turner scores.    Bryce Harper scores.
+2024-04-27,2024,745425,1,0,2,5,1,home_run,home run,False,Alec Bohm homers (4) on a fly ball to left center field.   Trea Turner scores.
+2024-05-14,2024,745821,3,0,1,4,0,hit_by_pitch,walk / HBP,True,Alec Bohm hit by pitch.    Johan Rojas scores.    Kyle Schwarber to 3rd.    Bryson Stott to 2nd.
+2024-06-01,2024,745575,1,0,2,6,1,double,base hit,True,Alec Bohm doubles (23) on a sharp line drive to left fielder Alec Burleson.   Kyle Schwarber scores.    Bryce Harper scores.
+2024-06-14,2024,747025,11,3,5,5,3,double,base hit,True,Alec Bohm doubles (24) on a sharp line drive to left fielder Austin Hays.   Whit Merrifield scores.    Bryce Harper scores.
+2024-08-17,2024,745537,6,1,2,5,1,single,base hit,True,Alec Bohm singles on a ground ball to right fielder Alex Call.   Trea Turner scores.
+2025-03-27,2025,778555,10,3,5,7,3,double,base hit,True,Alec Bohm doubles (1) on a sharp line drive to center fielder Jacob Young. Bryson Stott scores. Bryce Harper scores.
+2025-04-17,2025,778279,1,3,5,6,4,triple,base hit,True,Alec Bohm triples (1) on a sharp fly ball to center fielder Luis Matos. Nick Castellanos scores.
+2025-04-18,2025,778274,2,2,3,7,2,single,base hit,True,Alec Bohm singles on a line drive to center fielder Jesús Sánchez. Max Kepler scores. J.T. Realmuto to 3rd.
+2025-04-27,2025,778158,10,1,2,3,1,sac_fly,sac fly,True,Alec Bohm out on a sacrifice fly to right fielder Kyle Tucker. Nick Castellanos scores. J.T. Realmuto to 3rd.
+2025-05-16,2025,777905,7,4,5,8,4,sac_fly,sac fly,True,Alec Bohm out on a sacrifice fly to center fielder Matt Gorski. Kyle Schwarber scores.
+2025-05-19,2025,777852,8,2,4,9,3,home_run,home run,True,Alec Bohm homers (3) on a fly ball to center field. Nick Castellanos scores.
+2025-06-15,2025,777499,5,4,6,11,4,home_run,home run,False,Alec Bohm homers (7) on a fly ball to left field. Kyle Schwarber scores.
+2025-07-05,2025,777233,6,1,3,5,1,home_run,home run,False,Alec Bohm homers (8) on a fly ball to center field. Kyle Schwarber scores.
+2025-08-29,2025,776552,8,1,2,2,1,sac_fly,sac fly,True,Alec Bohm out on a sacrifice fly to right fielder Ronald Acuña Jr. Kyle Schwarber scores.
+2025-09-25,2025,776188,1,0,1,1,0,field_out,out in play / other,True,"Alec Bohm grounds out, third baseman Connor Norby to first baseman Graham Pauley. Harrison Bader scores. Bryce Harper to 2nd."
+2026-03-26,2026,823486,5,2,5,5,3,home_run,home run,True,Alec Bohm homers (1) on a fly ball to right field. Justin Crawford scores. Trea Turner scores.
+2026-04-03,2026,824377,1,0,2,10,1,single,base hit,True,Alec Bohm singles on a line drive to center fielder Brenton Doyle. Trea Turner scores. Kyle Schwarber scores. Bryce Harper to 3rd.
+2026-04-06,2026,823237,7,4,5,6,4,double,base hit,True,"Giants challenged (tag play), call on the field was upheld: Alec Bohm doubles (1) on a ground ball to right fielder Jung Hoo Lee. Kyle Schwarber scores. Bryce Harper to 3rd."
+2026-04-30,2026,823471,10,5,6,6,5,sac_fly,sac fly,True,Alec Bohm out on a sacrifice fly to center fielder Drew Gilbert. Adolis García scores.
+2026-05-26,2026,823294,3,3,4,4,3,single,base hit,True,Alec Bohm singles on a ground ball to center fielder Jackson Merrill. Bryce Harper scores. Brandon Marsh to 3rd.
+2026-06-02,2026,823460,6,2,3,3,2,grounded_into_double_play,out in play / other,True,"Alec Bohm grounds into a double play, shortstop Xander Bogaerts to second baseman Sung-Mun Song to first baseman Gavin Sheets. Bryce Harper scores. Brandon Marsh out at 2nd. Alec Bohm out at 1st."
+2026-06-08,2026,822806,3,2,3,5,2,single,base hit,True,Alec Bohm singles on a line drive to left fielder Yohendrick Piñango. Trea Turner scores. Bryce Harper to 3rd. Brandon Marsh to 2nd.
+2026-07-26,2026,823433,3,2,5,11,4,double,base hit,True,Alec Bohm doubles (16) on a line drive to center fielder Trent Grisham. Kyle Schwarber scores. Bryce Harper scores. Brandon Marsh scores.
+2026-08-17,2026,823427,8,5,6,6,5,single,base hit,True,Alec Bohm singles on a ground ball to center fielder Jakob Marsee. Bryce Harper scores.
+2026-08-21,2026,823420,10,5,7,7,6,triple,base hit,True,Alec Bohm triples (1) on a sharp fly ball to center fielder José Fermín. Bryce Harper scores. Edmundo Sosa scores.
+2026-09-16,2026,822680,1,0,1,3,0,single,base hit,True,Alec Bohm singles on a line drive to center fielder Dylan Crews. Trea Turner scores. Bryce Harper to 3rd. Luis Arraez to 2nd.
